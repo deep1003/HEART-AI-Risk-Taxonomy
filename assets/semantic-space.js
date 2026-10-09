@@ -152,7 +152,7 @@
     const sx = x => width/2 + (x-(lowX+highX)/2)*scale;
     const sy = y => height/2 - (y-(lowY+highY)/2)*scale;
     locations = new Map(data.points.map(point => [point.id, {x:sx(point.x),y:sy(point.y)}]));
-    let markup = '<title>L4 semantic proximity network</title><desc>Transformer-embedding neighbours, Louvain communities and ForceAtlas2 layout. Edges are not causal paths. Filtering does not change taxonomy assignments.</desc>';
+    let markup = '<desc>Transformer-embedding neighbours, Louvain communities and ForceAtlas2 layout. Edges are not causal paths. Filtering does not change taxonomy assignments.</desc>';
     for (let index = 0; index <= 8; index++) {
       const x = left + (right-left)*index/8, y = top + (bottom-top)*index/8;
       markup += `<line class="semantic-grid-line" x1="${x}" y1="${top}" x2="${x}" y2="${bottom}"/><line class="semantic-grid-line" x1="${left}" y1="${y}" x2="${right}" y2="${y}"/>`;
