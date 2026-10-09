@@ -133,6 +133,12 @@ el('taxonomy-tree').addEventListener('click', event => {
 el('show-all').addEventListener('click', () => { el('domain-filter').value = ''; el('l3-filter').value = ''; state.l2 = ''; applyFilters(); closeTreeOnMobile(); });
 el('tree-toggle').addEventListener('click', () => { const open = el('taxonomy-panel').classList.toggle('open'); el('tree-toggle').setAttribute('aria-expanded',String(open)); });
 el('tree-close').addEventListener('click', closeTreeOnMobile);
+document.querySelectorAll('a[href="#taxonomy-panel"]').forEach(link => link.addEventListener('click', () => {
+  if (window.matchMedia('(max-width: 840px)').matches) {
+    el('taxonomy-panel').classList.add('open');
+    el('tree-toggle').setAttribute('aria-expanded','true');
+  }
+}));
 el('load-more').addEventListener('click', () => { state.visible += 48; renderCards(); });
 el('card-grid').addEventListener('click', event => {
   const button = event.target.closest('[data-card-id]');

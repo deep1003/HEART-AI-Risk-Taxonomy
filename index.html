@@ -17,16 +17,19 @@
     <nav aria-label="Primary navigation">
       <a href="#explore">Taxonomy</a>
       <a href="#dataset">Dataset</a>
-      <a href="#about">About</a>
+      <a href="#about">About HEART</a>
+      <a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="about">
+      <div class="page-breadcrumb"><a href="./">HEART</a><span>›</span><span>AI risk taxonomy</span></div>
       <div class="hero-copy-block">
         <p class="eyebrow">Hybrid Evidence-based AI Risk Taxonomy</p>
         <h1>HEART for General, Agentic, and Physical AI</h1>
-        <p class="hero-copy">An evidence-linked taxonomy of 622 bilingual risk cards across a stable five-level hierarchy.</p>
+        <p class="hero-copy">HEART connects risk definitions with source evidence across General, Agentic, and Physical AI. Explore 622 bilingual risk cards organised within 47 categories and a stable five-level hierarchy.</p>
+        <a class="hero-action" href="#explore">Explore the taxonomy</a>
       </div>
       <div class="stats" aria-label="Dataset summary">
         <div><strong id="card-count">622</strong><span>L4 risk cards</span></div>
@@ -34,6 +37,8 @@
         <div><strong>3</strong><span>AI domains</span></div>
       </div>
     </section>
+
+    <nav class="section-nav" aria-label="Page sections"><a href="#about">Overview</a><a href="#explore">Risk cards</a><a href="#taxonomy-panel">Taxonomy navigator</a><a href="#dataset">Download data</a></nav>
 
     <section class="explorer" id="explore">
       <button id="tree-toggle" class="tree-toggle" type="button" aria-expanded="false" aria-controls="taxonomy-panel">Open taxonomy navigator</button>
@@ -81,7 +86,15 @@
     <article id="dialog-content"></article>
   </dialog>
 
-  <footer><p>HEART: Hybrid Evidence-based AI Risk Taxonomy</p></footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-identity"><strong>HEART</strong><p>Hybrid Evidence-based AI Risk Taxonomy</p><p>General, Agentic, and Physical AI</p></div>
+      <div><h2>Explore</h2><a href="#about">Overview</a><a href="#explore">Risk cards</a><a href="#taxonomy-panel">Taxonomy navigator</a></div>
+      <div><h2>Dataset</h2><a href="data/heart_l4_risk_cards.csv" download>CSV dataset</a><a href="data/HEART_L4_Risk_Cards.xlsx" download>Excel workbook</a><a href="data/data_dictionary.csv" download>Data dictionary</a></div>
+      <div><h2>Resources</h2><a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub repository</a><a href="data/manifest.json">Release manifest</a><a href="data/validation.json">Validation record</a></div>
+    </div>
+    <div class="footer-bottom"><span>HEART · 622 risk cards · 47 categories</span><a href="#about">Back to top</a></div>
+  </footer>
   <script src="assets/app.js" defer></script>
 </body>
 </html>
