@@ -11,7 +11,7 @@
 .semantic-heading h2{font-size:2rem;margin:0;color:#18213d;letter-spacing:-.025em}
 .semantic-heading p:not(.eyebrow){max-width:780px;color:#667085;margin:8px 0 0;font-size:.94rem}
 #semantic-reset,.semantic-more{padding:10px 16px;border:1px solid #ced5e0;background:#fff;color:#18213d;border-radius:4px;white-space:nowrap}
-.semantic-status{font-size:.9rem;color:#475467;margin-bottom:18px;min-height:24px}
+.semantic-status{font-size:.9rem;color:#475467;margin:0;padding:12px 16px;min-height:24px;line-height:1.5;text-align:left}
 .semantic-layout{display:grid;grid-template-columns:275px minmax(0,1fr);gap:34px;align-items:start}
 .semantic-lenses{padding:20px;background:#f3f5f8;border-radius:4px}
 .semantic-lenses h3,.semantic-keyword-head h3,.semantic-plot-heading h3,.semantic-results-heading h3{font-size:1rem;margin:0 0 14px;color:#18213d}

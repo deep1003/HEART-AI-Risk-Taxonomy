@@ -62,6 +62,8 @@ assert(Number.isFinite(nodeRadius(5,5,5)));
 assert(Math.abs(data.points.reduce((sum,p)=>sum+p.strength,0)-2*data.edges.reduce((sum,e)=>sum+e[2],0))<1e-4);
 assert(!escape('<script>').includes('<script>'));
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+assert(!html.includes('One keyword at a time'));
+assert(/semantic-plot-wrap[^\n]*id="semantic-status"[^\n]*id="semantic-plot"/.test(html));
 assert(!html.includes('id="semantic-context"'));
 assert(html.includes('<details><summary>Semantic communities</summary>'));
 assert.equal((html.match(/id="semantic-reset"/g)||[]).length,1);
