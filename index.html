@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HEART is a bilingual, evidence-linked taxonomy of risks across General, Agentic, and Physical AI.">
+  <title>HEART | Hybrid Evidence-based AI Risk Taxonomy</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="HEART home">
+      <span class="brand-mark">H</span>
+      <span><strong>HEART</strong><small>Hybrid Evidence-based AI Risk Taxonomy</small></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#explore">Explore</a>
+      <a href="#dataset">Dataset</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <p class="eyebrow">Evidence-linked AI risk classification</p>
+      <h1>A common risk language for General, Agentic, and Physical AI</h1>
+      <p class="hero-copy">HEART organises 622 bilingual risk cards within a stable five-level hierarchy. Each L4 card links a precise risk definition to source evidence and a direct quotation.</p>
+      <div class="stats" aria-label="Dataset summary">
+        <div><strong id="card-count">622</strong><span>L4 risk cards</span></div>
+        <div><strong id="l3-count">47</strong><span>L3 categories</span></div>
+        <div><strong>3</strong><span>AI domains</span></div>
+      </div>
+    </section>
+
+    <section class="explorer" id="explore">
+      <div class="section-heading">
+        <div><p class="eyebrow">Risk card explorer</p><h2>Browse the taxonomy</h2></div>
+        <p id="result-count" aria-live="polite">Loading cards</p>
+      </div>
+      <div class="controls">
+        <label class="search-label"><span>Search</span><input id="search" type="search" placeholder="Search by ID, name, definition, or evidence" autocomplete="off"></label>
+        <label><span>Domain</span><select id="domain-filter"><option value="">All domains</option></select></label>
+        <label><span>L3 category</span><select id="l3-filter"><option value="">All L3 categories</option></select></label>
+      </div>
+      <div id="card-grid" class="card-grid" aria-busy="true"></div>
+      <button id="load-more" class="load-more" type="button" hidden>Load more</button>
+    </section>
+
+    <section class="dataset" id="dataset">
+      <div><p class="eyebrow">Open dataset</p><h2>Download the canonical card data</h2></div>
+      <p>The CSV and JSON releases contain the complete hierarchy, bilingual names and definitions, optional attributes, evidence metadata, direct quotations, and empty Probability and Severity fields reserved for future assessment.</p>
+      <div class="download-links">
+        <a href="data/heart_l4_risk_cards.csv" download>Download CSV</a>
+        <a href="data/heart_l4_risk_cards.json" download>Download JSON</a>
+        <a href="data/HEART_L4_Risk_Cards.xlsx" download>Download XLSX</a>
+        <a href="data/data_dictionary.csv" download>Data dictionary</a>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="card-dialog" aria-labelledby="dialog-title">
+    <button id="close-dialog" class="close-dialog" type="button" aria-label="Close risk card">Close</button>
+    <article id="dialog-content"></article>
+  </dialog>
+
+  <footer><p>HEART: Hybrid Evidence-based AI Risk Taxonomy</p></footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "dataset_name": "HEART L4 Risk Card Dataset",
+  "taxonomy_name": "HEART: Hybrid Evidence-based AI Risk Taxonomy",
+  "schema_version": "1.0.0",
+  "generated_at_utc": "2026-10-09T06:49:05+00:00",
+  "card_count": 622,
+  "l3_count": 47,
+  "domain_counts": {
+    "General AI": 492,
+    "Agentic AI": 67,
+    "Physical AI": 63
+  },
+  "language": "English primary with Korean parallel fields",
+  "probability_status": "Reserved field; values intentionally blank",
+  "severity_status": "Reserved field; values intentionally blank",
+  "human_review_workflow_included": false,
+  "evidence_coverage": {
+    "references": 622,
+    "urls": 622,
+    "direct_quotes": 622
+  },
+  "files": {
+    "csv": {
+      "path": "heart_l4_risk_cards.csv",
+      "sha256": "41dfec88afa934f9879ce0906fdd481622ccd80a123714485cc5862cb46a22f7"
+    },
+    "json": {
+      "path": "heart_l4_risk_cards.json",
+      "sha256": "840cf6d4dc5dd0160db94c14004b0dee80ce85c3e1a31ed765048408e91c1516"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+Field,Definition,Required,Current_Status
+L4_ID,Stable identifier for the L4 risk card,Yes,Populated
+L4_Name_en,English L4 risk name,Yes,Populated
+L4_Name_ko,Korean L4 risk name,Yes,Populated
+L1_ID,Identifier of the L1 operating domain,Yes,Populated
+L1_Name_en,English L1 operating domain name,Yes,Populated
+L1_Name_ko,Korean L1 operating domain name,Yes,Populated
+L2_ID,Identifier of the L2 risk area,Yes,Populated
+L2_Name_en,English L2 risk area name,Yes,Populated
+L2_Name_ko,Korean L2 risk area name,Yes,Populated
+L3_ID,Identifier of the L3 risk category,Yes,Populated
+L3_Name_en,English L3 risk category name,Yes,Populated
+L3_Name_ko,Korean L3 risk category name,Yes,Populated
+Risk_Definition_en,English L4 risk definition,Yes,Populated
+Risk_Definition_ko,Korean L4 risk definition,Yes,Populated
+Facet,Optional L4 facet attribute,No,Populated when available
+Act_Type,Optional L4 act-type attribute,No,Populated when available
+Evidence_Reference_Title,Title of the evidence source,Yes,Populated
+Evidence_Reference_Authors,Author or issuing body of the evidence source,Yes,Populated
+Evidence_Reference_Year,Publication year of the evidence source,Yes,Populated
+Evidence_Reference_Type,Publication or source type,Yes,Populated
+Evidence_DOI,DOI or DOI URL when available,No,Populated when available
+Evidence_URL,Verified link to the evidence source,Yes,Populated
+Evidence_Quote,Direct quotation supporting the risk card,Yes,Populated
+Evidence_Quote_Location,Locator or source evidence row for the quotation,Yes,Populated
+Evidence_Source_ID,Source evidence identifier,Yes,Populated
+Evidence_Source_Quality_Tier,Source-quality classification,Yes,Populated
+Evidence_Verification_Status,Recorded link-access verification status,Yes,Populated
+Evidence_Accessed_At,Recorded evidence access timestamp,Yes,Populated
+Probability,Reserved future probability assessment field,No,Intentionally blank
+Severity,Reserved future severity assessment field,No,Intentionally blank

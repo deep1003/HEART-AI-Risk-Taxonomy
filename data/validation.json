@@ -1,0 +1,20 @@
+{
+  "validated_at_utc": "2026-10-09T06:49:13+00:00",
+  "card_count": 622,
+  "unique_l4_ids": 622,
+  "l3_count": 47,
+  "domain_counts": {
+    "Agentic AI": 67,
+    "General AI": 492,
+    "Physical AI": 63
+  },
+  "missing_required_rows": [],
+  "probability_nonblank": 0,
+  "severity_nonblank": 0,
+  "distinct_evidence_urls": 43,
+  "url_results": {
+    "reachable": 27,
+    "access_controlled": 16
+  },
+  "passed_structural_validation": true
+}
