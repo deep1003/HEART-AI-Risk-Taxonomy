@@ -1,0 +1,6553 @@
+{
+  "schema_version": "1.0",
+  "card_count": 622,
+  "source_file": "heart_l4_risk_cards.json",
+  "source_sha256": "840cf6d4dc5dd0160db94c14004b0dee80ce85c3e1a31ed765048408e91c1516",
+  "method": {
+    "projection": "TF-IDF, centred PCA to 48 dimensions, cosine t-SNE to two dimensions",
+    "clustering": "12 k-means topics in 48-dimensional text space",
+    "features": "English L4 name (double weight) and definition; unigrams and bigrams; log TF; smoothed IDF; L2 normalisation",
+    "scenario_membership": "Editorial, overlapping conditional applicability lenses; not an empirical incident classification",
+    "pca_48_variance_fraction": 0.248536,
+    "neighbourhood_trustworthiness_k10": 0.972923,
+    "random_seed": 23,
+    "tsne_perplexity": 35,
+    "tsne_iterations": 1200,
+    "numeric_backend": "NumPy 2.3.5, scikit-learn 1.7.2",
+    "edge_rule": "Up to three closest TF-IDF neighbours per card with cosine at least 0.30; ties may be fewer",
+    "limitations": "t-SNE emphasises local text neighbourhoods. Global distances, cluster areas and axis values have no risk meaning. Neighbours do not imply causation, likelihood, severity, or validated deployment-specific relevance."
+  },
+  "points": [
+    {
+      "id": "A_INT_CASCADE_001",
+      "x": 13.0737419,
+      "y": -17.3011532,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_CASCADE_003",
+      "x": 11.7813988,
+      "y": -17.1485958,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_CASCADE_004",
+      "x": 15.5997534,
+      "y": -13.9484615,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_CASCADE_005",
+      "x": 11.2762051,
+      "y": -16.3712063,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "A_INT_CASCADE_006",
+      "x": 13.372838,
+      "y": -16.635107,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_CASCADE_007",
+      "x": 13.5748234,
+      "y": -17.4749146,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_CASCADE_008",
+      "x": 16.8697357,
+      "y": -14.5816898,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_CASCADE_009",
+      "x": 14.30194,
+      "y": -8.4160862,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_INT_COLLUSION_001",
+      "x": 14.3246756,
+      "y": -10.1307659,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_INT_COLLUSION_002",
+      "x": 11.4396677,
+      "y": -17.4671135,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "A_INT_COLLUSION_003",
+      "x": 12.2097759,
+      "y": -18.4168892,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_INT_CONFLICT_001",
+      "x": 15.586112,
+      "y": -15.9471617,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_CONFLICT_002",
+      "x": 15.4593296,
+      "y": -14.2401133,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_CONFLICT_003",
+      "x": 13.9994411,
+      "y": -17.1134644,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_COORD_001",
+      "x": 11.7977619,
+      "y": -17.8826981,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_INT_COORD_002",
+      "x": 15.84972,
+      "y": -14.8062372,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_COORD_003",
+      "x": 11.276556,
+      "y": -18.4152756,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_INT_COORD_004",
+      "x": 14.8981276,
+      "y": -14.3714142,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_INT_COORD_005",
+      "x": 15.0185356,
+      "y": -15.174489,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_AUTH_001",
+      "x": 15.5319824,
+      "y": -16.8718796,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_AUTH_002",
+      "x": -12.0525827,
+      "y": 3.3049605,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_003",
+      "x": 14.0873842,
+      "y": -10.1999416,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_004",
+      "x": 16.8809776,
+      "y": -16.9023342,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_AUTH_005",
+      "x": 17.1184082,
+      "y": -17.6071301,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_AUTH_006",
+      "x": -13.2498131,
+      "y": 3.3901913,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_007",
+      "x": -10.6708393,
+      "y": 3.5526576,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_009",
+      "x": 0.5680529,
+      "y": -3.3472776,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_010",
+      "x": 15.1941757,
+      "y": -18.9297867,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_AUTH_012",
+      "x": 3.667232,
+      "y": -10.6003685,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "A_SYS_AUTH_016",
+      "x": 6.4937038,
+      "y": -10.5667191,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_017",
+      "x": 6.052824,
+      "y": -9.4710169,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_019",
+      "x": -13.0943699,
+      "y": 2.593415,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_020",
+      "x": 10.6869764,
+      "y": -15.1102104,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_AUTH_021",
+      "x": 17.4288139,
+      "y": -17.2948189,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_AUTH_023",
+      "x": 16.2167091,
+      "y": -17.9339771,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_AUTH_024",
+      "x": 10.6879263,
+      "y": -19.0283623,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_AUTH_025",
+      "x": 0.4399714,
+      "y": 0.3521183,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_DECEPT_001",
+      "x": 11.8791418,
+      "y": -17.6085453,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_DECEPT_002",
+      "x": 15.9442635,
+      "y": -15.6004353,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_DECEPT_003",
+      "x": 6.0231047,
+      "y": -12.2750568,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "A_SYS_DECEPT_005",
+      "x": 6.3455052,
+      "y": -11.8134956,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_DECEPT_008",
+      "x": 10.50179,
+      "y": -2.7208664,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "A_SYS_DECEPT_009",
+      "x": 2.2412384,
+      "y": -15.89116,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "A_SYS_GOAL_003",
+      "x": 15.3231964,
+      "y": -17.3061638,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_GOAL_005",
+      "x": 6.3837099,
+      "y": -10.3650131,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_006",
+      "x": 7.339397,
+      "y": -10.8700056,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_007",
+      "x": -11.891984,
+      "y": 3.929529,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_009",
+      "x": 17.3183346,
+      "y": -16.4196186,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_GOAL_010",
+      "x": 7.4750447,
+      "y": -12.0870695,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_011",
+      "x": 7.7844062,
+      "y": -12.4987907,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_012",
+      "x": 17.8215237,
+      "y": -15.7358046,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_GOAL_013",
+      "x": -10.2767258,
+      "y": 1.6192358,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_014",
+      "x": 8.2414112,
+      "y": -12.0673943,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_016",
+      "x": 16.7696877,
+      "y": -15.8781462,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_GOAL_017",
+      "x": -9.1002636,
+      "y": 0.5943668,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_018",
+      "x": -14.559514,
+      "y": -14.4741983,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "A_SYS_GOAL_019",
+      "x": 16.2937393,
+      "y": -16.4719925,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_GOAL_020",
+      "x": 16.5177402,
+      "y": -17.4660931,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_GOAL_021",
+      "x": 9.468504,
+      "y": -12.6526031,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_GOAL_022",
+      "x": 7.5673718,
+      "y": -15.9146452,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "A_SYS_GOAL_023",
+      "x": 9.0631952,
+      "y": -10.4505119,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_SELFCOR_001",
+      "x": 14.6886492,
+      "y": -17.5739441,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_SELFCOR_002",
+      "x": -10.9023495,
+      "y": -2.3117201,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_SELFCOR_003",
+      "x": -10.8348637,
+      "y": -2.8270109,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "A_SYS_TRACE_001",
+      "x": 9.9406042,
+      "y": -7.3936486,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "A_SYS_TRACE_002",
+      "x": 18.1736279,
+      "y": -17.1239624,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "A_SYS_TRACE_003",
+      "x": 4.3618302,
+      "y": -6.5657597,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ALLOC_001",
+      "x": 15.5046244,
+      "y": 11.2079229,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ALLOC_002",
+      "x": 13.5085974,
+      "y": 11.3331757,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ALLOC_003",
+      "x": 15.3117371,
+      "y": 10.9538479,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_INT_ALLOC_004",
+      "x": -4.6073046,
+      "y": 1.2680584,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ALLOC_005",
+      "x": -9.1870499,
+      "y": -4.1172662,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_ALLOC_006",
+      "x": 3.0229704,
+      "y": -2.3858337,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ALLOC_007",
+      "x": 14.7681437,
+      "y": 11.1000061,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_ALLOC_009",
+      "x": 7.6204963,
+      "y": -2.2111537,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_INT_ALLOC_010",
+      "x": 17.5854511,
+      "y": -0.4540193,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ALLOC_012",
+      "x": 13.9131269,
+      "y": 11.9813309,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ALLOC_013",
+      "x": -3.8281319,
+      "y": 5.6476345,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ALLOC_015",
+      "x": 3.2937875,
+      "y": -2.4578676,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ANTH_001",
+      "x": 13.0532913,
+      "y": -3.5305979,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ANTH_002",
+      "x": 13.3129673,
+      "y": -3.0049319,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ANTH_003",
+      "x": 13.4216185,
+      "y": -3.452698,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ANTH_004",
+      "x": 13.8332739,
+      "y": -3.1075828,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ANTH_005",
+      "x": 13.8587713,
+      "y": -3.1661482,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_ANTH_006",
+      "x": -7.4507475,
+      "y": 3.2356346,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ANTH_008",
+      "x": 6.5657244,
+      "y": -5.5428009,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_COPY_001",
+      "x": 5.3702211,
+      "y": 23.1017361,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_COPY_002",
+      "x": 5.4470139,
+      "y": 23.2070427,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_COPY_003",
+      "x": 5.4927578,
+      "y": 22.7180367,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_COPY_006",
+      "x": 5.0037985,
+      "y": 23.2437191,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_COPY_007",
+      "x": 4.8729296,
+      "y": 22.9768429,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_COPY_008",
+      "x": 4.8999171,
+      "y": 22.8078079,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_COPY_009",
+      "x": 5.6131263,
+      "y": 22.3454266,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_COPY_011",
+      "x": 5.4220643,
+      "y": 22.0261364,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_001",
+      "x": -5.8818164,
+      "y": 18.2830486,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_ILLEGAL_003",
+      "x": 15.1458492,
+      "y": -11.3192024,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_ILLEGAL_006",
+      "x": -15.893959,
+      "y": 16.3019295,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_007",
+      "x": -19.3064098,
+      "y": -4.3500466,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_INT_ILLEGAL_008",
+      "x": -16.2898808,
+      "y": 16.6162758,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_009",
+      "x": -4.5876703,
+      "y": 12.9781485,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_ILLEGAL_010",
+      "x": -3.1043236,
+      "y": 16.6892776,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ILLEGAL_011",
+      "x": -16.0133324,
+      "y": 16.5636921,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_013",
+      "x": -16.5157852,
+      "y": 15.995719,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_014",
+      "x": -16.511404,
+      "y": 16.5147667,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_015",
+      "x": -3.6973546,
+      "y": 14.7259512,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ILLEGAL_016",
+      "x": -15.9551077,
+      "y": 16.0085812,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_019",
+      "x": -16.6175404,
+      "y": 16.2290363,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_020",
+      "x": -16.1911201,
+      "y": 15.9000492,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_ILLEGAL_021",
+      "x": 14.9471397,
+      "y": -11.0698166,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_ILLEGAL_022",
+      "x": -3.7231026,
+      "y": 17.1021576,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_ILLEGAL_023",
+      "x": -16.5088615,
+      "y": -6.8660221,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_INT_POL_001",
+      "x": -0.5972988,
+      "y": 11.0414419,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_POL_002",
+      "x": 5.815207,
+      "y": 7.7384295,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_POL_003",
+      "x": 2.4776375,
+      "y": 12.1275873,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_POL_005",
+      "x": 1.5301019,
+      "y": 11.1621008,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_POL_006",
+      "x": 0.7110687,
+      "y": 10.8570385,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_POL_007",
+      "x": 2.3174994,
+      "y": 11.8433781,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_POL_008",
+      "x": 2.4466655,
+      "y": 11.7666903,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_PRIV_001",
+      "x": 5.9495015,
+      "y": 16.0696926,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_002",
+      "x": 4.2937298,
+      "y": 17.1266174,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_PRIV_003",
+      "x": 4.8581076,
+      "y": 16.301178,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_005",
+      "x": 6.5271168,
+      "y": 16.6963177,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_007",
+      "x": 7.3402925,
+      "y": 15.9655142,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_008",
+      "x": 16.3124027,
+      "y": -16.9807129,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "G_INT_PRIV_009",
+      "x": 7.5618424,
+      "y": 16.6732635,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_010",
+      "x": 4.7697659,
+      "y": 18.176897,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_PRIV_012",
+      "x": 7.0570135,
+      "y": 15.8614407,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_013",
+      "x": 5.6775012,
+      "y": 18.0200939,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_PRIV_014",
+      "x": 7.8372679,
+      "y": 15.8401728,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_015",
+      "x": 8.1517677,
+      "y": 16.1230621,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_016",
+      "x": 7.8438454,
+      "y": 12.2945776,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_017",
+      "x": 4.7752619,
+      "y": 18.034132,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_PRIV_018",
+      "x": 4.8269906,
+      "y": 17.291111,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_019",
+      "x": 7.4591355,
+      "y": 15.0032864,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_020",
+      "x": 5.3165722,
+      "y": 17.8015575,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_PRIV_021",
+      "x": 6.6312566,
+      "y": 17.3377762,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_022",
+      "x": 7.7427845,
+      "y": 15.2997608,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_024",
+      "x": 4.9291348,
+      "y": 16.0475178,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_025",
+      "x": 7.893651,
+      "y": 16.9731579,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_027",
+      "x": 8.2150373,
+      "y": 15.0536194,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_028",
+      "x": 5.922823,
+      "y": 17.514677,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_PRIV_029",
+      "x": 4.8648696,
+      "y": 20.2125835,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_PRIV_030",
+      "x": -4.3954091,
+      "y": 7.7740622,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_PRIV_031",
+      "x": -4.2264004,
+      "y": 7.4885306,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_REL_001",
+      "x": -0.1771998,
+      "y": -6.3012495,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_REL_002",
+      "x": 8.4866953,
+      "y": 0.9920768,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_REL_004",
+      "x": 12.9926386,
+      "y": -9.2715521,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_REL_006",
+      "x": -8.6696043,
+      "y": 18.2794609,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_REL_007",
+      "x": 4.0094304,
+      "y": -1.3377905,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_REL_008",
+      "x": 9.4474506,
+      "y": 1.675742,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_REPR_001",
+      "x": 6.5324693,
+      "y": 6.8803411,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_REPR_002",
+      "x": 6.9681158,
+      "y": 6.6480951,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_003",
+      "x": 11.8726931,
+      "y": 5.6588311,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_REPR_004",
+      "x": -6.7734623,
+      "y": 1.7773689,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_006",
+      "x": -0.7895828,
+      "y": 18.0186901,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_007",
+      "x": 13.7371359,
+      "y": 11.7703915,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_009",
+      "x": -2.1158972,
+      "y": 14.8738298,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_010",
+      "x": 14.5654421,
+      "y": 10.2955494,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_REPR_011",
+      "x": -8.6229324,
+      "y": 27.9416847,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_012",
+      "x": -9.3836498,
+      "y": 28.5047283,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_013",
+      "x": -8.9399872,
+      "y": 27.9492741,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_014",
+      "x": -9.2842436,
+      "y": 28.873642,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_015",
+      "x": -8.8331757,
+      "y": 28.4996414,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_016",
+      "x": -9.2673397,
+      "y": 28.1669426,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_017",
+      "x": -8.5324144,
+      "y": 29.0790405,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_018",
+      "x": -8.1398964,
+      "y": 28.7195549,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_019",
+      "x": -8.1970711,
+      "y": 28.4556694,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_020",
+      "x": -8.5324144,
+      "y": 29.0790405,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_021",
+      "x": -8.2532663,
+      "y": 28.0894585,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_022",
+      "x": -9.0588379,
+      "y": 29.1168365,
+      "cluster": "topic-7"
+    },
+    {
+      "id": "G_INT_REPR_023",
+      "x": 8.9432325,
+      "y": 11.2689829,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_REPR_024",
+      "x": 10.281394,
+      "y": -2.8214948,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_REPR_025",
+      "x": 11.8354721,
+      "y": 4.1161337,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_REPR_026",
+      "x": 13.5557871,
+      "y": 8.756916,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_027",
+      "x": 6.9431057,
+      "y": 7.0214143,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_028",
+      "x": 14.022954,
+      "y": 11.1654911,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_REPR_029",
+      "x": 0.7308744,
+      "y": 8.0455914,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_032",
+      "x": 15.4281378,
+      "y": -9.2873316,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_REPR_033",
+      "x": 11.6000719,
+      "y": 7.2024016,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_SELF_001",
+      "x": -7.2347388,
+      "y": 19.898325,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SELF_002",
+      "x": -6.4321785,
+      "y": 18.3610535,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SELF_003",
+      "x": -7.2390132,
+      "y": 19.9044628,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SELF_004",
+      "x": -7.9367161,
+      "y": 18.5712013,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SELF_005",
+      "x": -7.4072499,
+      "y": 20.1039944,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SELF_007",
+      "x": -6.7915869,
+      "y": 18.8981266,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SELF_008",
+      "x": -8.2765245,
+      "y": 17.5913544,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_SEX_002",
+      "x": -1.7885773,
+      "y": 19.740097,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_SEX_003",
+      "x": -2.647023,
+      "y": 20.1978626,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SEX_004",
+      "x": -1.6091275,
+      "y": 18.9929447,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_SEX_005",
+      "x": 9.5294638,
+      "y": -0.9645746,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_SEX_007",
+      "x": -2.0307546,
+      "y": 20.5586491,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SEX_008",
+      "x": -2.2914083,
+      "y": 20.3427887,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_SEX_009",
+      "x": -1.6329238,
+      "y": 20.4792671,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_INT_SEX_010",
+      "x": -1.5007433,
+      "y": 20.7612896,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_SEX_011",
+      "x": -2.2582164,
+      "y": 20.6233654,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_UNETH_002",
+      "x": 5.8831453,
+      "y": 0.2366316,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_UNETH_003",
+      "x": 0.2580543,
+      "y": 7.7424674,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_UNETH_004",
+      "x": -5.3953123,
+      "y": 12.0945978,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_UNETH_005",
+      "x": 5.3507581,
+      "y": 0.9035539,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_UNETH_007",
+      "x": -1.644038,
+      "y": 8.4386044,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_UNETH_008",
+      "x": 5.3182292,
+      "y": 0.4383777,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_UNETH_010",
+      "x": 10.5372238,
+      "y": -5.6511168,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_UNETH_011",
+      "x": 9.2932739,
+      "y": -11.8144531,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_UNETH_012",
+      "x": -4.7510543,
+      "y": 11.4845276,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_UNETH_014",
+      "x": -7.1979613,
+      "y": 3.6290846,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_UNETH_015",
+      "x": 5.9222383,
+      "y": -0.2426365,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_UNETH_017",
+      "x": 13.1006308,
+      "y": 12.6496735,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_UNETH_019",
+      "x": 4.9565096,
+      "y": 0.1205673,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_UNETH_020",
+      "x": 8.7494898,
+      "y": -11.7957678,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_UNETH_021",
+      "x": 3.4129095,
+      "y": 8.9030466,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_UNETH_022",
+      "x": -2.5596995,
+      "y": 11.0405598,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_UNETH_024",
+      "x": -2.2265677,
+      "y": 11.1412725,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_UNETH_026",
+      "x": -3.2884378,
+      "y": -2.952085,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_UNETH_027",
+      "x": -7.718246,
+      "y": 1.8835199,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_UNETH_028",
+      "x": 4.5460091,
+      "y": -0.6215428,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_UNETH_029",
+      "x": 5.6526256,
+      "y": -2.0470996,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_UNETH_030",
+      "x": 9.6820974,
+      "y": -6.0323458,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_UNETH_031",
+      "x": 9.6775675,
+      "y": -5.462255,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_UNETH_032",
+      "x": 10.0093384,
+      "y": -5.4687014,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_UNETH_033",
+      "x": 6.6343794,
+      "y": 0.493466,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_INT_VALUE_002",
+      "x": 17.1939869,
+      "y": 3.9264421,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_004",
+      "x": 13.8683233,
+      "y": 4.533824,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_006",
+      "x": 11.9453793,
+      "y": 5.1328025,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_007",
+      "x": 12.395092,
+      "y": 5.0771232,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_010",
+      "x": 14.9373007,
+      "y": 7.8811965,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_012",
+      "x": 13.5171442,
+      "y": 1.5920632,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_013",
+      "x": 12.4732189,
+      "y": 4.3496571,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_014",
+      "x": 15.9991226,
+      "y": 4.6070843,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_015",
+      "x": 3.0543585,
+      "y": 4.4765549,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_VALUE_016",
+      "x": 17.7170334,
+      "y": 0.2801593,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_018",
+      "x": 18.8123322,
+      "y": 5.5742197,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_019",
+      "x": 8.2859259,
+      "y": -7.3760991,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_020",
+      "x": 17.6159153,
+      "y": 5.197824,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_022",
+      "x": 15.3559027,
+      "y": 7.9918652,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_024",
+      "x": 17.1411705,
+      "y": 4.7667594,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VALUE_025",
+      "x": 18.0524368,
+      "y": 5.3269715,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_INT_VIOL_001",
+      "x": 0.078643,
+      "y": 8.9434443,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_VIOL_002",
+      "x": 14.7268486,
+      "y": 8.7791586,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_VIOL_004",
+      "x": -6.9860897,
+      "y": 21.3592072,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_VIOL_005",
+      "x": -6.327383,
+      "y": 20.5117359,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_VIOL_006",
+      "x": -6.3444858,
+      "y": 21.5794697,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_VIOL_007",
+      "x": -19.6194954,
+      "y": -6.313673,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_INT_VIOL_008",
+      "x": -6.2833891,
+      "y": 21.3552952,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_VIOL_009",
+      "x": -6.7522674,
+      "y": 21.6823215,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_VIOL_010",
+      "x": -6.8842611,
+      "y": 21.1063499,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_VIOL_011",
+      "x": -6.4078536,
+      "y": 21.0499306,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_VIOL_012",
+      "x": -6.2272925,
+      "y": 18.829874,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_WEAP_002",
+      "x": -8.2449713,
+      "y": 12.2389717,
+      "cluster": "topic-11"
+    },
+    {
+      "id": "G_INT_WEAP_003",
+      "x": -10.2118702,
+      "y": 11.2854719,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_006",
+      "x": -9.9704075,
+      "y": 11.6658936,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_008",
+      "x": -2.6999445,
+      "y": 0.4404584,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_009",
+      "x": 6.5152745,
+      "y": 11.3741007,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_INT_WEAP_010",
+      "x": -11.2672033,
+      "y": 5.3094993,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_011",
+      "x": -9.8574095,
+      "y": 10.0623093,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_014",
+      "x": -10.5355864,
+      "y": 11.7149343,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_016",
+      "x": -8.9052286,
+      "y": 3.6954863,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_018",
+      "x": -10.2027922,
+      "y": 10.5729074,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_020",
+      "x": -3.637356,
+      "y": 14.3851995,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_021",
+      "x": -10.6587219,
+      "y": 10.7237911,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_022",
+      "x": -10.8572206,
+      "y": 11.1876364,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_023",
+      "x": 13.6298218,
+      "y": -9.7442312,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_INT_WEAP_024",
+      "x": -11.1634026,
+      "y": 9.2304792,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_025",
+      "x": -10.5579939,
+      "y": 2.6963642,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_026",
+      "x": -6.9981246,
+      "y": 11.2810984,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_INT_WEAP_027",
+      "x": -9.2393351,
+      "y": 11.7027655,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_029",
+      "x": -10.6876936,
+      "y": 11.3068218,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_030",
+      "x": -10.9635925,
+      "y": 11.6613293,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_031",
+      "x": -7.7035313,
+      "y": 11.7955723,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_INT_WEAP_032",
+      "x": -4.2459946,
+      "y": 13.776679,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_001",
+      "x": -2.5931284,
+      "y": -14.3232241,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SOC_CULT_002",
+      "x": 10.9907398,
+      "y": 6.8887248,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SOC_CULT_005",
+      "x": 11.2193165,
+      "y": 5.6351495,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_CULT_007",
+      "x": 2.9029593,
+      "y": 5.5824046,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_008",
+      "x": -3.5632021,
+      "y": 2.3105538,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_009",
+      "x": -3.2312632,
+      "y": 11.0773258,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_010",
+      "x": 2.4116387,
+      "y": 9.5473986,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_011",
+      "x": 8.6687117,
+      "y": -6.6067109,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_012",
+      "x": 17.9091606,
+      "y": -0.0133679,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_CULT_014",
+      "x": -7.1406908,
+      "y": 3.5040696,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_016",
+      "x": 2.5468454,
+      "y": 4.8888583,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_017",
+      "x": 9.0214491,
+      "y": -5.8229222,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_CULT_018",
+      "x": 2.6461437,
+      "y": 5.7770925,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_019",
+      "x": 10.4736118,
+      "y": -4.058321,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SOC_CULT_020",
+      "x": 11.5018158,
+      "y": 4.9992447,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_CULT_021",
+      "x": -7.9022503,
+      "y": 7.1262221,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_CULT_022",
+      "x": 11.2178984,
+      "y": 5.1653242,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_CULT_023",
+      "x": 5.0329151,
+      "y": -2.1592882,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SOC_CULT_024",
+      "x": -3.209234,
+      "y": 2.1225123,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_DEMOC_001",
+      "x": 12.7410164,
+      "y": 12.9157,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_DEMOC_002",
+      "x": -1.7709764,
+      "y": 7.4189906,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_DEMOC_003",
+      "x": -4.2751784,
+      "y": 11.5257521,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_DEMOC_005",
+      "x": 1.7259991,
+      "y": 10.7284412,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_DEMOC_006",
+      "x": 4.1898627,
+      "y": 1.0536965,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SOC_DEMOC_007",
+      "x": -4.3545651,
+      "y": 7.904767,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SOC_DEMOC_008",
+      "x": -0.536941,
+      "y": 8.4264822,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_DEMOC_010",
+      "x": 3.2473307,
+      "y": 9.1776848,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SOC_DEMOC_011",
+      "x": 2.449755,
+      "y": 9.6158485,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ECON_001",
+      "x": -6.5378518,
+      "y": 4.7365632,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ECON_002",
+      "x": -4.79214,
+      "y": 6.0668402,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SOC_ECON_003",
+      "x": -3.4510057,
+      "y": 2.9798489,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ECON_005",
+      "x": -3.386728,
+      "y": 5.9526749,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ECON_006",
+      "x": -6.130084,
+      "y": 4.8190894,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ECON_008",
+      "x": -3.2380412,
+      "y": 5.6203094,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ECON_010",
+      "x": -1.0948523,
+      "y": 6.9337096,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_ECON_012",
+      "x": -0.6290958,
+      "y": 8.3697844,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ENV_001",
+      "x": -0.4993054,
+      "y": -5.4072108,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SOC_ENV_002",
+      "x": -13.9345942,
+      "y": 1.8953235,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_ENV_003",
+      "x": 0.1031746,
+      "y": -5.4278703,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ENV_005",
+      "x": 1.2965304,
+      "y": -4.930994,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SOC_ENV_007",
+      "x": 0.3690674,
+      "y": -5.6264424,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_ENV_008",
+      "x": 0.4575186,
+      "y": -5.0300026,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SOC_ENV_009",
+      "x": -8.9955559,
+      "y": 5.6080327,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_ENV_011",
+      "x": 1.7249866,
+      "y": -5.0701766,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_ENV_012",
+      "x": 17.5222626,
+      "y": -1.2324793,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_GOV_002",
+      "x": 1.7518122,
+      "y": -14.4638329,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_005",
+      "x": 18.0164375,
+      "y": 3.9624786,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_GOV_006",
+      "x": 1.4463521,
+      "y": -12.6120062,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_008",
+      "x": -6.8905082,
+      "y": -12.4826756,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_009",
+      "x": 1.8478813,
+      "y": -10.3080482,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_010",
+      "x": -7.9497666,
+      "y": 4.4773464,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_GOV_011",
+      "x": -4.5828991,
+      "y": 11.0555229,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_GOV_015",
+      "x": 1.710351,
+      "y": -14.3014832,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_016",
+      "x": -13.5394268,
+      "y": 1.678372,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_GOV_017",
+      "x": -5.4731793,
+      "y": -10.957571,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SOC_GOV_020",
+      "x": 2.3907788,
+      "y": -10.5783873,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_021",
+      "x": -0.9464904,
+      "y": -10.7019415,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_022",
+      "x": 0.5856976,
+      "y": -15.7568636,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_023",
+      "x": 2.8089218,
+      "y": -15.1865606,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_GOV_024",
+      "x": -11.3661699,
+      "y": 3.2965913,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_GOV_025",
+      "x": 12.9733963,
+      "y": 2.1649008,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SOC_GOV_026",
+      "x": -12.7209787,
+      "y": -14.1179934,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SOC_GOV_027",
+      "x": -2.5387197,
+      "y": -10.3100758,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_029",
+      "x": 1.1185592,
+      "y": -14.8166103,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_030",
+      "x": 0.6939883,
+      "y": -12.4009295,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_033",
+      "x": 2.6266022,
+      "y": -13.1279716,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_034",
+      "x": 2.1919525,
+      "y": -11.5128698,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_035",
+      "x": 0.9154614,
+      "y": -13.3524246,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_036",
+      "x": 3.7871158,
+      "y": -13.4307919,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_039",
+      "x": -15.0091257,
+      "y": -8.2520218,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SOC_GOV_040",
+      "x": 3.1070213,
+      "y": -9.0963812,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_041",
+      "x": 1.6036184,
+      "y": -10.6062441,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_042",
+      "x": 1.3111856,
+      "y": -13.5907993,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_043",
+      "x": 1.5630376,
+      "y": -15.2805262,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_044",
+      "x": -4.3728127,
+      "y": -11.0166492,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_045",
+      "x": 0.2379921,
+      "y": -14.8135538,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_GOV_046",
+      "x": -0.4415585,
+      "y": -16.0631905,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SOC_POWER_001",
+      "x": 0.579922,
+      "y": -6.0396357,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_002",
+      "x": -3.0496159,
+      "y": -2.2365746,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_003",
+      "x": -1.5437423,
+      "y": 3.6274765,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_004",
+      "x": -1.3101624,
+      "y": 5.012506,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_005",
+      "x": -4.1252847,
+      "y": 11.4162779,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_POWER_006",
+      "x": 8.8494081,
+      "y": 9.4884148,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SOC_POWER_007",
+      "x": -5.4839311,
+      "y": 11.0059109,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_POWER_008",
+      "x": -0.3257182,
+      "y": 4.9780498,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SOC_POWER_010",
+      "x": -1.6210201,
+      "y": 5.0025167,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_012",
+      "x": -0.4650816,
+      "y": 7.0429883,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_015",
+      "x": -4.5938597,
+      "y": 5.3247709,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SOC_POWER_017",
+      "x": -1.472497,
+      "y": 5.3671927,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_018",
+      "x": 2.6313422,
+      "y": 4.5983462,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_POWER_019",
+      "x": -1.7525817,
+      "y": 6.3144956,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_023",
+      "x": -1.2683706,
+      "y": 3.6629272,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SOC_POWER_025",
+      "x": -0.9046435,
+      "y": 1.5044384,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SOC_POWER_026",
+      "x": -4.574213,
+      "y": 5.1889896,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SOC_POWER_027",
+      "x": -5.990828,
+      "y": -14.3460398,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SOC_POWER_028",
+      "x": -2.7049429,
+      "y": 6.0467567,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_CONTEST_001",
+      "x": -5.8967123,
+      "y": 2.6322539,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_CONTEST_002",
+      "x": -7.9115033,
+      "y": 2.9331594,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_CONTEST_003",
+      "x": -11.2626572,
+      "y": 0.0076293,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_CONTEST_004",
+      "x": -11.5224028,
+      "y": 0.9093553,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_CONTEXT_001",
+      "x": 10.3755703,
+      "y": -16.4546585,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "G_SYS_CONTEXT_002",
+      "x": 5.049871,
+      "y": -3.033813,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_CONTEXT_003",
+      "x": 11.2669687,
+      "y": 2.8515544,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_CONTEXT_004",
+      "x": 11.5054989,
+      "y": 3.9800913,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_CONTEXT_005",
+      "x": 9.8914022,
+      "y": 0.5833305,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_CONTEXT_006",
+      "x": 16.6193008,
+      "y": 4.7315784,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_CONTEXT_007",
+      "x": 13.9005566,
+      "y": 1.4798661,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_CONTEXT_008",
+      "x": 10.3075247,
+      "y": 1.6975812,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_CONTEXT_009",
+      "x": 14.0306244,
+      "y": 1.9978087,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_CONTEXT_011",
+      "x": 13.0956202,
+      "y": 1.8238052,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_CONTEXT_012",
+      "x": 9.9911356,
+      "y": 0.530747,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_CONTEXT_013",
+      "x": 9.8992167,
+      "y": 0.8499903,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_EVAL_001",
+      "x": -6.4224477,
+      "y": -17.8022709,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_EVAL_002",
+      "x": -9.12321,
+      "y": -7.1859841,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_003",
+      "x": 0.7731731,
+      "y": -11.5039186,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_004",
+      "x": -7.6835585,
+      "y": -13.3112841,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_005",
+      "x": -4.897418,
+      "y": -16.7315941,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_006",
+      "x": -1.2096813,
+      "y": -10.1764107,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_007",
+      "x": -6.974041,
+      "y": -15.6993628,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_008",
+      "x": -6.7388597,
+      "y": -16.1467438,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_009",
+      "x": -6.5899258,
+      "y": -15.9706516,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_012",
+      "x": 11.6664944,
+      "y": 13.5006676,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_013",
+      "x": -2.2611146,
+      "y": -9.3300714,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_014",
+      "x": 12.4627104,
+      "y": 5.272646,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_EVAL_016",
+      "x": -4.0361753,
+      "y": -15.6609335,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_017",
+      "x": 8.5212774,
+      "y": 12.8328333,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_EVAL_019",
+      "x": 16.4651279,
+      "y": -15.5758095,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "G_SYS_EVAL_021",
+      "x": -3.3963311,
+      "y": -15.7909384,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_022",
+      "x": -4.4691262,
+      "y": -13.0412283,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_023",
+      "x": -3.6569238,
+      "y": -15.0771694,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_024",
+      "x": 0.5734897,
+      "y": -0.2423505,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_025",
+      "x": -1.9588788,
+      "y": -11.4398642,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_026",
+      "x": -1.3040411,
+      "y": -16.1242542,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_027",
+      "x": -2.7858374,
+      "y": -8.074194,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_028",
+      "x": 17.6447334,
+      "y": 4.872015,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_EVAL_029",
+      "x": 6.7200952,
+      "y": 5.9899817,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_EVAL_031",
+      "x": -7.324347,
+      "y": -12.0265589,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_032",
+      "x": 9.7939014,
+      "y": -15.6029396,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_033",
+      "x": -4.3160582,
+      "y": -17.163414,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_035",
+      "x": 7.2655239,
+      "y": 3.3147964,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_036",
+      "x": -1.7931213,
+      "y": -10.4301987,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_037",
+      "x": 2.7439926,
+      "y": 12.420104,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_SYS_EVAL_038",
+      "x": -5.8579454,
+      "y": -16.6473961,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_039",
+      "x": 17.0550499,
+      "y": 5.8837137,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_EVAL_040",
+      "x": -4.4647441,
+      "y": -12.6192894,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_041",
+      "x": -6.5166101,
+      "y": -10.0018778,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_042",
+      "x": 18.2583904,
+      "y": -0.426178,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_043",
+      "x": -4.8463449,
+      "y": -10.3724766,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_044",
+      "x": -8.792244,
+      "y": -13.1874857,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_045",
+      "x": 6.8392324,
+      "y": 5.3390236,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_EVAL_046",
+      "x": 7.2548327,
+      "y": 11.3521643,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_EVAL_048",
+      "x": -2.9929638,
+      "y": -14.3754435,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_052",
+      "x": -4.0158477,
+      "y": -14.2739325,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_054",
+      "x": -3.7116153,
+      "y": -13.7113733,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_060",
+      "x": -0.1402079,
+      "y": -15.7453079,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_062",
+      "x": -4.5474496,
+      "y": -16.7743988,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_065",
+      "x": 15.0245295,
+      "y": -12.9138203,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "G_SYS_EVAL_066",
+      "x": 14.7695875,
+      "y": 7.9061179,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_EVAL_068",
+      "x": -2.2494829,
+      "y": -16.2404251,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_069",
+      "x": 3.5524807,
+      "y": -10.5651207,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_070",
+      "x": -6.9215283,
+      "y": -13.0897341,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_071",
+      "x": -10.6093388,
+      "y": -4.4528661,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_EVAL_072",
+      "x": 8.4088755,
+      "y": 11.9996605,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_EVAL_073",
+      "x": 17.0105076,
+      "y": 5.7317491,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_EVAL_074",
+      "x": -1.2478291,
+      "y": -9.7902937,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_EVAL_075",
+      "x": -3.9880445,
+      "y": -16.4943275,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_EVAL_076",
+      "x": -6.6885376,
+      "y": -18.3053646,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SYS_EVAL_077",
+      "x": -7.5901866,
+      "y": -14.3711147,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_INCONS_001",
+      "x": -7.7821374,
+      "y": 1.6281551,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_INCONS_002",
+      "x": 7.160408,
+      "y": -2.53936,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_INCONS_003",
+      "x": -4.9407325,
+      "y": -8.6841755,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_INPUT_001",
+      "x": -9.8472757,
+      "y": -3.4366488,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_INPUT_002",
+      "x": 17.9320526,
+      "y": -0.4524992,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_INPUT_003",
+      "x": -16.3392334,
+      "y": -15.5633821,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SYS_MISINFO_002",
+      "x": -9.3042412,
+      "y": -2.4958463,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_003",
+      "x": 3.3184597,
+      "y": 3.9359207,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_004",
+      "x": -1.0278293,
+      "y": 13.9284086,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_006",
+      "x": -1.1179838,
+      "y": 12.9811735,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_007",
+      "x": 9.695241,
+      "y": -3.2472928,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_MISINFO_008",
+      "x": 7.209208,
+      "y": 9.7740717,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_MISINFO_009",
+      "x": 0.8729022,
+      "y": 1.272938,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_010",
+      "x": 0.0107103,
+      "y": 14.8352118,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_011",
+      "x": -10.1548481,
+      "y": -3.3971057,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_012",
+      "x": -0.7439276,
+      "y": 14.4292383,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_013",
+      "x": 1.6336795,
+      "y": 2.5650678,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_015",
+      "x": -1.0211622,
+      "y": 14.4413967,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_016",
+      "x": -2.092802,
+      "y": 14.9872952,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_017",
+      "x": 2.7172887,
+      "y": 4.0529413,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_018",
+      "x": 3.4560039,
+      "y": 2.6701221,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_MISINFO_019",
+      "x": 1.5910158,
+      "y": 4.060936,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_021",
+      "x": -5.3702846,
+      "y": 11.7639742,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_022",
+      "x": -0.2817419,
+      "y": 13.7203922,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_MISINFO_023",
+      "x": -20.2352562,
+      "y": -7.1819978,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OEXT_001",
+      "x": -10.0083799,
+      "y": -18.8891563,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OEXT_006",
+      "x": 13.5865965,
+      "y": -4.0046606,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OEXT_007",
+      "x": 13.7830429,
+      "y": -3.9726539,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OEXT_008",
+      "x": 14.1471148,
+      "y": -3.9576943,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OEXT_009",
+      "x": 14.2292385,
+      "y": -3.7191446,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OEXT_013",
+      "x": -10.0342474,
+      "y": -18.62677,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OEXT_014",
+      "x": -9.9788933,
+      "y": -18.6401577,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OREF_001",
+      "x": 7.1722736,
+      "y": -15.8793869,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OREF_002",
+      "x": 3.0178907,
+      "y": -3.0116303,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OREF_003",
+      "x": 4.6730647,
+      "y": -2.8910885,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OVERCONF_001",
+      "x": -0.5133758,
+      "y": -8.4827061,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OVERCONF_002",
+      "x": 3.64697,
+      "y": 3.4968469,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OVERCONF_003",
+      "x": 9.4933128,
+      "y": -4.2829256,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OVERCONF_004",
+      "x": 1.0241017,
+      "y": -6.4921045,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_OVERCONF_006",
+      "x": 9.1220398,
+      "y": -5.3519506,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_PERF_001",
+      "x": -7.5226569,
+      "y": -8.5608158,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_002",
+      "x": -5.4101119,
+      "y": -4.687408,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_PERF_003",
+      "x": 7.6376085,
+      "y": 13.0434008,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_PERF_004",
+      "x": 9.5650558,
+      "y": 11.7047653,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_PERF_005",
+      "x": 7.7978492,
+      "y": 11.0039377,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_PERF_006",
+      "x": -6.4688377,
+      "y": -7.1040473,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_PERF_007",
+      "x": -9.9972363,
+      "y": -17.9000721,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_008",
+      "x": -10.8530006,
+      "y": -4.7703223,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_PERF_009",
+      "x": -7.2327313,
+      "y": -6.5367284,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_PERF_010",
+      "x": -9.6553974,
+      "y": -5.1985073,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_011",
+      "x": -5.8423142,
+      "y": -5.4358053,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_012",
+      "x": -7.0732284,
+      "y": -7.7029347,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_PERF_013",
+      "x": -11.0724173,
+      "y": -3.6174071,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_PERF_014",
+      "x": -7.8176856,
+      "y": -8.9484625,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_015",
+      "x": -9.3856783,
+      "y": -9.8723364,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SYS_PERF_016",
+      "x": -8.5153055,
+      "y": -8.460721,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_017",
+      "x": -7.8273907,
+      "y": -7.5132608,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_PERF_018",
+      "x": -5.6718516,
+      "y": -5.2089987,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_019",
+      "x": -7.2481408,
+      "y": -9.4373064,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_020",
+      "x": -8.8930035,
+      "y": -9.1319923,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_PERF_021",
+      "x": -10.2606764,
+      "y": -4.2658849,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_POLICY_001",
+      "x": 9.385788,
+      "y": 18.7111835,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_POLICY_002",
+      "x": 10.3170271,
+      "y": 20.6643887,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_POLICY_003",
+      "x": 10.5270443,
+      "y": 20.9515743,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_POLICY_004",
+      "x": 10.0749035,
+      "y": 20.5303364,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_POLICY_005",
+      "x": 9.685605,
+      "y": 21.0019112,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_POLICY_006",
+      "x": 10.0557909,
+      "y": 20.7183609,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_POLICY_008",
+      "x": 9.8671999,
+      "y": 20.1136131,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_POLICY_009",
+      "x": 8.2737169,
+      "y": 21.4875431,
+      "cluster": "topic-8"
+    },
+    {
+      "id": "G_SYS_POLICY_010",
+      "x": 8.6099224,
+      "y": 21.2899609,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_SECADV_001",
+      "x": -17.3563137,
+      "y": -4.0866609,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SYS_SECADV_002",
+      "x": -5.3698235,
+      "y": -2.3807945,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_SECADV_004",
+      "x": 7.9644117,
+      "y": -14.9488459,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "G_SYS_SECADV_005",
+      "x": 15.8099117,
+      "y": -17.5470333,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "G_SYS_SECADV_006",
+      "x": 16.7937393,
+      "y": -18.3927059,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "G_SYS_SECADV_009",
+      "x": 13.3393946,
+      "y": -10.7271318,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_010",
+      "x": -10.0972424,
+      "y": 0.8799962,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_011",
+      "x": -18.858263,
+      "y": -7.0170045,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SYS_SECADV_012",
+      "x": -4.5144491,
+      "y": -3.2325006,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_SECADV_014",
+      "x": -3.0320644,
+      "y": -1.2726454,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_SECADV_015",
+      "x": -1.8488463,
+      "y": 0.1235872,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SYS_SECADV_016",
+      "x": -2.2705619,
+      "y": 0.0570905,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SYS_SECADV_018",
+      "x": -5.4563003,
+      "y": -3.4221342,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_SECADV_019",
+      "x": -1.1525922,
+      "y": 1.6203805,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_SECADV_020",
+      "x": -5.0875459,
+      "y": -3.7381244,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_021",
+      "x": -1.6290308,
+      "y": -4.5263147,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_023",
+      "x": -1.1996938,
+      "y": -0.2804624,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SYS_SECADV_025",
+      "x": -4.5554504,
+      "y": -4.9908133,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_SECADV_026",
+      "x": -0.7083868,
+      "y": -1.9557436,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_028",
+      "x": -4.354847,
+      "y": 9.9476709,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_029",
+      "x": 0.6328838,
+      "y": 0.7872763,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_038",
+      "x": 10.233202,
+      "y": -17.3498688,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_042",
+      "x": 6.5026174,
+      "y": 6.7031884,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_SECADV_043",
+      "x": 13.7781429,
+      "y": -11.0361805,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SYS_SECADV_044",
+      "x": 10.2914515,
+      "y": 19.4230766,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "G_SYS_SECADV_046",
+      "x": 14.1902227,
+      "y": -16.4191093,
+      "cluster": "topic-0"
+    },
+    {
+      "id": "G_SYS_SECADV_049",
+      "x": -0.850745,
+      "y": -2.1062648,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_050",
+      "x": -4.7591524,
+      "y": -4.2627292,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_052",
+      "x": -16.8835392,
+      "y": -15.7891541,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SYS_SECADV_053",
+      "x": -5.3398719,
+      "y": -4.2973738,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_SECADV_055",
+      "x": -0.3579282,
+      "y": 1.0009009,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_SECADV_057",
+      "x": -1.785561,
+      "y": 0.1011919,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "G_SYS_SECADV_058",
+      "x": -18.0169888,
+      "y": -6.7726808,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SYS_SECADV_059",
+      "x": -2.7091143,
+      "y": -4.0360541,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_SECADV_060",
+      "x": -18.5020638,
+      "y": -6.5650911,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SYS_SECADV_061",
+      "x": -17.8087196,
+      "y": -5.8790083,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "G_SYS_TRANS_001",
+      "x": 14.655014,
+      "y": 8.7875872,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_002",
+      "x": -3.3279469,
+      "y": -12.9702492,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "G_SYS_TRANS_003",
+      "x": -0.263548,
+      "y": -11.9578581,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_TRANS_004",
+      "x": 6.2598443,
+      "y": 3.882391,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_006",
+      "x": 5.2802963,
+      "y": -3.8174925,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_009",
+      "x": -3.3248451,
+      "y": -7.8469095,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_010",
+      "x": 4.416676,
+      "y": -5.9136429,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_012",
+      "x": 10.7700348,
+      "y": -2.5341232,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_015",
+      "x": 6.5382447,
+      "y": 4.1997428,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_016",
+      "x": 18.2364578,
+      "y": 3.0724428,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_TRANS_017",
+      "x": -7.5722194,
+      "y": 7.6353045,
+      "cluster": "topic-1"
+    },
+    {
+      "id": "G_SYS_TRANS_018",
+      "x": 7.5450807,
+      "y": -5.2762341,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_021",
+      "x": -0.0055651,
+      "y": -12.6717739,
+      "cluster": "topic-9"
+    },
+    {
+      "id": "G_SYS_TRANS_022",
+      "x": 17.7068443,
+      "y": 5.5844474,
+      "cluster": "topic-10"
+    },
+    {
+      "id": "G_SYS_TRANS_023",
+      "x": -9.9118853,
+      "y": -18.6508408,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "G_SYS_TRANS_024",
+      "x": 5.8729777,
+      "y": -2.5684376,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "P_INT_SAFETY_001",
+      "x": -14.4042625,
+      "y": -7.3793006,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_005",
+      "x": -15.5501947,
+      "y": -10.0873652,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_006",
+      "x": -13.8379631,
+      "y": -8.7840204,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_007",
+      "x": -13.4394617,
+      "y": -8.575058,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_008",
+      "x": -14.9807053,
+      "y": -10.8422222,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_009",
+      "x": -14.233201,
+      "y": -11.0004148,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_010",
+      "x": -8.5908451,
+      "y": 2.6654956,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_011",
+      "x": -13.8379955,
+      "y": -7.6912236,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_012",
+      "x": -14.376936,
+      "y": -13.6972704,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_INT_SAFETY_015",
+      "x": -13.5151396,
+      "y": -9.4838762,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_SAFETY_016",
+      "x": -14.7147856,
+      "y": -12.6914234,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "P_INT_SAFETY_017",
+      "x": -15.3395948,
+      "y": -15.9368048,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_INT_SAFETY_018",
+      "x": -13.2364035,
+      "y": -14.0613031,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "P_INT_SAFETY_020",
+      "x": 4.1503115,
+      "y": -2.9816611,
+      "cluster": "topic-4"
+    },
+    {
+      "id": "P_INT_SAFETY_021",
+      "x": -16.8197365,
+      "y": -13.3657665,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_INT_SAFETY_023",
+      "x": -1.3563743,
+      "y": 18.4035835,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_TAMPER_002",
+      "x": -16.0607872,
+      "y": -9.1137075,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_INT_TAMPER_003",
+      "x": -15.9997606,
+      "y": -6.4460936,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_001",
+      "x": -10.3927345,
+      "y": -8.7235775,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_002",
+      "x": -12.917592,
+      "y": -12.3173475,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "P_SYS_CONTROL_003",
+      "x": -12.5020676,
+      "y": 1.323645,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_006",
+      "x": -11.4159174,
+      "y": -11.4969006,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_007",
+      "x": -13.8222704,
+      "y": 1.2192615,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_012",
+      "x": -12.3351326,
+      "y": -4.6828322,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_013",
+      "x": -17.8528004,
+      "y": -8.3486242,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_015",
+      "x": -11.4099636,
+      "y": -11.5509253,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_016",
+      "x": -13.7493563,
+      "y": -7.4660654,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_017",
+      "x": -14.9193611,
+      "y": -8.449172,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_018",
+      "x": -15.1710548,
+      "y": -4.7747369,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_019",
+      "x": -15.3109751,
+      "y": -13.446723,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_022",
+      "x": -19.065773,
+      "y": -4.9407525,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_023",
+      "x": -16.1389389,
+      "y": -14.8080149,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_024",
+      "x": -16.571291,
+      "y": -13.341341,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_025",
+      "x": -15.6496019,
+      "y": -13.7065506,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_026",
+      "x": -17.4700317,
+      "y": -13.8997631,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_027",
+      "x": -16.5594959,
+      "y": -12.6110573,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_030",
+      "x": -16.2539539,
+      "y": -7.8186536,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_033",
+      "x": -15.5489407,
+      "y": -12.488596,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_034",
+      "x": -19.77952,
+      "y": -8.9144888,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_037",
+      "x": -16.3979321,
+      "y": -5.4510565,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_038",
+      "x": -15.78197,
+      "y": -7.8024912,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_040",
+      "x": -10.5812845,
+      "y": -8.3204222,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_042",
+      "x": -15.483901,
+      "y": -11.5730305,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_043",
+      "x": -16.1162262,
+      "y": -10.4690056,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_044",
+      "x": -10.3287888,
+      "y": -12.7552967,
+      "cluster": "topic-2"
+    },
+    {
+      "id": "P_SYS_CONTROL_046",
+      "x": -11.3608303,
+      "y": -4.3447971,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_047",
+      "x": -17.9838123,
+      "y": -13.8600645,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_050",
+      "x": -17.465519,
+      "y": -14.431324,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_051",
+      "x": -18.4681091,
+      "y": -7.2829537,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_052",
+      "x": -17.644928,
+      "y": -7.8677835,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_054",
+      "x": -18.9144859,
+      "y": -8.0443335,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_CONTROL_055",
+      "x": -18.2856274,
+      "y": -13.2994995,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_056",
+      "x": -14.9383135,
+      "y": -15.249115,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_CONTROL_057",
+      "x": -16.4724388,
+      "y": -9.8168325,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_HARDWARE_002",
+      "x": -11.8692102,
+      "y": -2.9200158,
+      "cluster": "topic-3"
+    },
+    {
+      "id": "P_SYS_HARDWARE_003",
+      "x": -18.092802,
+      "y": -5.3868947,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_STATE_003",
+      "x": -17.1346741,
+      "y": -14.5160141,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_STATE_004",
+      "x": -16.6714191,
+      "y": -8.5253496,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_STATE_006",
+      "x": -12.7853355,
+      "y": -5.0235548,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_STATE_007",
+      "x": -16.1028156,
+      "y": -12.6079149,
+      "cluster": "topic-6"
+    },
+    {
+      "id": "P_SYS_STATE_008",
+      "x": -17.7083931,
+      "y": -6.5951319,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_STATE_009",
+      "x": -14.8213787,
+      "y": -9.0516119,
+      "cluster": "topic-5"
+    },
+    {
+      "id": "P_SYS_STATE_011",
+      "x": -17.6389694,
+      "y": -7.0488629,
+      "cluster": "topic-5"
+    }
+  ],
+  "edges": [
+    [
+      "A_INT_CASCADE_001",
+      "A_INT_CASCADE_003"
+    ],
+    [
+      "A_INT_CASCADE_001",
+      "A_INT_CASCADE_007"
+    ],
+    [
+      "A_INT_CASCADE_001",
+      "A_INT_CONFLICT_003"
+    ],
+    [
+      "A_INT_CASCADE_001",
+      "A_SYS_AUTH_024"
+    ],
+    [
+      "A_INT_CASCADE_001",
+      "A_SYS_DECEPT_001"
+    ],
+    [
+      "A_INT_CASCADE_001",
+      "G_SYS_SECADV_046"
+    ],
+    [
+      "A_INT_CASCADE_003",
+      "A_INT_CASCADE_007"
+    ],
+    [
+      "A_INT_CASCADE_004",
+      "A_INT_CASCADE_009"
+    ],
+    [
+      "A_INT_CASCADE_007",
+      "A_INT_CONFLICT_003"
+    ],
+    [
+      "A_INT_CASCADE_007",
+      "A_SYS_AUTH_001"
+    ],
+    [
+      "A_INT_CASCADE_007",
+      "G_SYS_SECADV_046"
+    ],
+    [
+      "A_INT_COLLUSION_002",
+      "A_SYS_DECEPT_001"
+    ],
+    [
+      "A_INT_COLLUSION_003",
+      "G_SYS_SECADV_026"
+    ],
+    [
+      "A_INT_COLLUSION_003",
+      "G_SYS_SECADV_049"
+    ],
+    [
+      "A_INT_CONFLICT_003",
+      "G_SYS_SECADV_046"
+    ],
+    [
+      "A_INT_COORD_001",
+      "A_INT_COORD_003"
+    ],
+    [
+      "A_INT_COORD_003",
+      "A_SYS_DECEPT_001"
+    ],
+    [
+      "A_SYS_AUTH_001",
+      "G_SYS_SECADV_005"
+    ],
+    [
+      "A_SYS_AUTH_001",
+      "G_SYS_SECADV_046"
+    ],
+    [
+      "A_SYS_AUTH_004",
+      "A_SYS_AUTH_005"
+    ],
+    [
+      "A_SYS_AUTH_004",
+      "A_SYS_AUTH_021"
+    ],
+    [
+      "A_SYS_AUTH_004",
+      "A_SYS_GOAL_003"
+    ],
+    [
+      "A_SYS_AUTH_004",
+      "A_SYS_TRACE_002"
+    ],
+    [
+      "A_SYS_AUTH_004",
+      "G_INT_PRIV_008"
+    ],
+    [
+      "A_SYS_AUTH_006",
+      "G_SOC_GOV_036"
+    ],
+    [
+      "A_SYS_AUTH_019",
+      "A_SYS_GOAL_005"
+    ],
+    [
+      "A_SYS_AUTH_019",
+      "G_SOC_GOV_016"
+    ],
+    [
+      "A_SYS_AUTH_021",
+      "A_SYS_AUTH_023"
+    ],
+    [
+      "A_SYS_AUTH_023",
+      "A_SYS_GOAL_016"
+    ],
+    [
+      "A_SYS_AUTH_023",
+      "A_SYS_GOAL_020"
+    ],
+    [
+      "A_SYS_AUTH_023",
+      "G_SYS_EVAL_019"
+    ],
+    [
+      "A_SYS_DECEPT_003",
+      "A_SYS_DECEPT_005"
+    ],
+    [
+      "A_SYS_GOAL_003",
+      "A_SYS_GOAL_020"
+    ],
+    [
+      "A_SYS_GOAL_003",
+      "G_INT_PRIV_008"
+    ],
+    [
+      "A_SYS_GOAL_003",
+      "G_SYS_SECADV_005"
+    ],
+    [
+      "A_SYS_GOAL_010",
+      "A_SYS_GOAL_011"
+    ],
+    [
+      "A_SYS_GOAL_016",
+      "G_SYS_EVAL_019"
+    ],
+    [
+      "A_SYS_GOAL_018",
+      "P_SYS_CONTROL_056"
+    ],
+    [
+      "A_SYS_GOAL_019",
+      "G_SYS_SECADV_046"
+    ],
+    [
+      "A_SYS_GOAL_022",
+      "G_SYS_OREF_001"
+    ],
+    [
+      "A_SYS_SELFCOR_001",
+      "G_SYS_CONTEXT_001"
+    ],
+    [
+      "A_SYS_SELFCOR_001",
+      "G_SYS_SECADV_046"
+    ],
+    [
+      "A_SYS_SELFCOR_002",
+      "A_SYS_SELFCOR_003"
+    ],
+    [
+      "A_SYS_SELFCOR_002",
+      "G_SYS_SECADV_006"
+    ],
+    [
+      "A_SYS_TRACE_003",
+      "G_SYS_TRANS_010"
+    ],
+    [
+      "G_INT_ALLOC_001",
+      "G_INT_ALLOC_007"
+    ],
+    [
+      "G_INT_ALLOC_001",
+      "G_INT_ALLOC_010"
+    ],
+    [
+      "G_INT_ALLOC_003",
+      "G_INT_REPR_010"
+    ],
+    [
+      "G_INT_ALLOC_005",
+      "G_SOC_GOV_005"
+    ],
+    [
+      "G_INT_ALLOC_010",
+      "G_SYS_INPUT_002"
+    ],
+    [
+      "G_INT_ALLOC_012",
+      "G_INT_REPR_007"
+    ],
+    [
+      "G_INT_ALLOC_012",
+      "G_INT_UNETH_017"
+    ],
+    [
+      "G_INT_ANTH_001",
+      "G_INT_ANTH_002"
+    ],
+    [
+      "G_INT_ANTH_001",
+      "G_INT_ANTH_003"
+    ],
+    [
+      "G_INT_ANTH_001",
+      "G_INT_ANTH_004"
+    ],
+    [
+      "G_INT_ANTH_001",
+      "G_INT_ANTH_005"
+    ],
+    [
+      "G_INT_ANTH_002",
+      "G_INT_ANTH_003"
+    ],
+    [
+      "G_INT_ANTH_002",
+      "G_INT_ANTH_004"
+    ],
+    [
+      "G_INT_ANTH_003",
+      "G_INT_ANTH_004"
+    ],
+    [
+      "G_INT_ANTH_003",
+      "G_INT_ANTH_005"
+    ],
+    [
+      "G_INT_ANTH_004",
+      "G_INT_ANTH_005"
+    ],
+    [
+      "G_INT_COPY_001",
+      "G_INT_COPY_002"
+    ],
+    [
+      "G_INT_COPY_001",
+      "G_INT_COPY_006"
+    ],
+    [
+      "G_INT_COPY_001",
+      "G_INT_COPY_007"
+    ],
+    [
+      "G_INT_COPY_002",
+      "G_INT_COPY_003"
+    ],
+    [
+      "G_INT_COPY_002",
+      "G_INT_COPY_007"
+    ],
+    [
+      "G_INT_COPY_002",
+      "G_INT_COPY_008"
+    ],
+    [
+      "G_INT_COPY_003",
+      "G_INT_COPY_008"
+    ],
+    [
+      "G_INT_COPY_003",
+      "G_INT_COPY_009"
+    ],
+    [
+      "G_INT_COPY_003",
+      "G_INT_COPY_011"
+    ],
+    [
+      "G_INT_COPY_006",
+      "G_INT_COPY_007"
+    ],
+    [
+      "G_INT_COPY_006",
+      "G_INT_COPY_008"
+    ],
+    [
+      "G_INT_COPY_007",
+      "G_INT_COPY_008"
+    ],
+    [
+      "G_INT_COPY_009",
+      "G_INT_COPY_011"
+    ],
+    [
+      "G_INT_ILLEGAL_006",
+      "G_INT_ILLEGAL_008"
+    ],
+    [
+      "G_INT_ILLEGAL_006",
+      "G_INT_ILLEGAL_013"
+    ],
+    [
+      "G_INT_ILLEGAL_006",
+      "G_INT_ILLEGAL_019"
+    ],
+    [
+      "G_INT_ILLEGAL_007",
+      "G_INT_ILLEGAL_023"
+    ],
+    [
+      "G_INT_ILLEGAL_008",
+      "G_INT_ILLEGAL_011"
+    ],
+    [
+      "G_INT_ILLEGAL_008",
+      "G_INT_ILLEGAL_013"
+    ],
+    [
+      "G_INT_ILLEGAL_008",
+      "G_INT_ILLEGAL_019"
+    ],
+    [
+      "G_INT_ILLEGAL_011",
+      "G_INT_ILLEGAL_013"
+    ],
+    [
+      "G_INT_ILLEGAL_011",
+      "G_INT_ILLEGAL_014"
+    ],
+    [
+      "G_INT_ILLEGAL_011",
+      "G_INT_ILLEGAL_016"
+    ],
+    [
+      "G_INT_ILLEGAL_011",
+      "G_INT_ILLEGAL_019"
+    ],
+    [
+      "G_INT_ILLEGAL_011",
+      "G_INT_ILLEGAL_020"
+    ],
+    [
+      "G_INT_ILLEGAL_013",
+      "G_INT_ILLEGAL_014"
+    ],
+    [
+      "G_INT_ILLEGAL_013",
+      "G_INT_ILLEGAL_016"
+    ],
+    [
+      "G_INT_ILLEGAL_013",
+      "G_INT_ILLEGAL_019"
+    ],
+    [
+      "G_INT_ILLEGAL_013",
+      "G_INT_ILLEGAL_020"
+    ],
+    [
+      "G_INT_ILLEGAL_014",
+      "G_INT_ILLEGAL_016"
+    ],
+    [
+      "G_INT_ILLEGAL_019",
+      "G_INT_ILLEGAL_020"
+    ],
+    [
+      "G_INT_POL_001",
+      "G_SOC_DEMOC_003"
+    ],
+    [
+      "G_INT_POL_003",
+      "G_INT_POL_007"
+    ],
+    [
+      "G_INT_POL_003",
+      "G_INT_POL_008"
+    ],
+    [
+      "G_INT_POL_005",
+      "G_INT_POL_006"
+    ],
+    [
+      "G_INT_POL_005",
+      "G_INT_POL_007"
+    ],
+    [
+      "G_INT_POL_007",
+      "G_INT_POL_008"
+    ],
+    [
+      "G_INT_PRIV_001",
+      "G_INT_PRIV_012"
+    ],
+    [
+      "G_INT_PRIV_002",
+      "G_INT_PRIV_017"
+    ],
+    [
+      "G_INT_PRIV_002",
+      "G_INT_PRIV_030"
+    ],
+    [
+      "G_INT_PRIV_005",
+      "G_INT_PRIV_021"
+    ],
+    [
+      "G_INT_PRIV_007",
+      "G_INT_PRIV_009"
+    ],
+    [
+      "G_INT_PRIV_007",
+      "G_INT_PRIV_014"
+    ],
+    [
+      "G_INT_PRIV_009",
+      "G_INT_PRIV_014"
+    ],
+    [
+      "G_INT_PRIV_009",
+      "G_INT_PRIV_028"
+    ],
+    [
+      "G_INT_PRIV_010",
+      "G_INT_PRIV_013"
+    ],
+    [
+      "G_INT_PRIV_010",
+      "G_INT_PRIV_017"
+    ],
+    [
+      "G_INT_PRIV_012",
+      "G_INT_PRIV_014"
+    ],
+    [
+      "G_INT_PRIV_012",
+      "G_INT_PRIV_015"
+    ],
+    [
+      "G_INT_PRIV_013",
+      "G_INT_PRIV_017"
+    ],
+    [
+      "G_INT_PRIV_014",
+      "G_INT_PRIV_015"
+    ],
+    [
+      "G_INT_PRIV_015",
+      "G_INT_PRIV_022"
+    ],
+    [
+      "G_INT_PRIV_017",
+      "G_INT_PRIV_018"
+    ],
+    [
+      "G_INT_PRIV_017",
+      "G_INT_PRIV_020"
+    ],
+    [
+      "G_INT_PRIV_018",
+      "G_INT_PRIV_024"
+    ],
+    [
+      "G_INT_PRIV_022",
+      "G_INT_PRIV_027"
+    ],
+    [
+      "G_INT_PRIV_030",
+      "G_INT_PRIV_031"
+    ],
+    [
+      "G_INT_REL_006",
+      "G_SOC_CULT_014"
+    ],
+    [
+      "G_INT_REPR_003",
+      "G_INT_REPR_033"
+    ],
+    [
+      "G_INT_REPR_003",
+      "G_SYS_EVAL_014"
+    ],
+    [
+      "G_INT_REPR_004",
+      "G_SOC_CULT_011"
+    ],
+    [
+      "G_INT_REPR_007",
+      "G_INT_REPR_028"
+    ],
+    [
+      "G_INT_REPR_011",
+      "G_INT_REPR_012"
+    ],
+    [
+      "G_INT_REPR_011",
+      "G_INT_REPR_017"
+    ],
+    [
+      "G_INT_REPR_011",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_012",
+      "G_INT_REPR_013"
+    ],
+    [
+      "G_INT_REPR_012",
+      "G_INT_REPR_017"
+    ],
+    [
+      "G_INT_REPR_012",
+      "G_INT_REPR_018"
+    ],
+    [
+      "G_INT_REPR_012",
+      "G_INT_REPR_019"
+    ],
+    [
+      "G_INT_REPR_012",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_013",
+      "G_INT_REPR_017"
+    ],
+    [
+      "G_INT_REPR_013",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_014",
+      "G_INT_REPR_015"
+    ],
+    [
+      "G_INT_REPR_014",
+      "G_INT_REPR_017"
+    ],
+    [
+      "G_INT_REPR_014",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_015",
+      "G_INT_REPR_017"
+    ],
+    [
+      "G_INT_REPR_015",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_015",
+      "G_INT_REPR_022"
+    ],
+    [
+      "G_INT_REPR_016",
+      "G_INT_REPR_017"
+    ],
+    [
+      "G_INT_REPR_016",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_016",
+      "G_INT_REPR_021"
+    ],
+    [
+      "G_INT_REPR_017",
+      "G_INT_REPR_018"
+    ],
+    [
+      "G_INT_REPR_017",
+      "G_INT_REPR_019"
+    ],
+    [
+      "G_INT_REPR_017",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_017",
+      "G_INT_REPR_021"
+    ],
+    [
+      "G_INT_REPR_017",
+      "G_INT_REPR_022"
+    ],
+    [
+      "G_INT_REPR_018",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_018",
+      "G_INT_REPR_021"
+    ],
+    [
+      "G_INT_REPR_019",
+      "G_INT_REPR_020"
+    ],
+    [
+      "G_INT_REPR_020",
+      "G_INT_REPR_022"
+    ],
+    [
+      "G_INT_SELF_001",
+      "G_INT_SELF_003"
+    ],
+    [
+      "G_INT_SELF_001",
+      "G_INT_SELF_005"
+    ],
+    [
+      "G_INT_SELF_001",
+      "G_INT_SELF_007"
+    ],
+    [
+      "G_INT_SELF_002",
+      "G_INT_SELF_007"
+    ],
+    [
+      "G_INT_SELF_002",
+      "G_INT_VIOL_012"
+    ],
+    [
+      "G_INT_SELF_003",
+      "G_INT_SELF_005"
+    ],
+    [
+      "G_INT_SELF_003",
+      "G_INT_SELF_007"
+    ],
+    [
+      "G_INT_SELF_004",
+      "G_INT_SELF_008"
+    ],
+    [
+      "G_INT_SELF_005",
+      "G_INT_SELF_007"
+    ],
+    [
+      "G_INT_SELF_007",
+      "G_INT_VIOL_012"
+    ],
+    [
+      "G_INT_SEX_003",
+      "G_INT_SEX_004"
+    ],
+    [
+      "G_INT_SEX_003",
+      "G_INT_SEX_007"
+    ],
+    [
+      "G_INT_SEX_003",
+      "G_INT_SEX_008"
+    ],
+    [
+      "G_INT_SEX_003",
+      "G_INT_SEX_011"
+    ],
+    [
+      "G_INT_SEX_004",
+      "P_INT_SAFETY_023"
+    ],
+    [
+      "G_INT_SEX_007",
+      "G_INT_SEX_008"
+    ],
+    [
+      "G_INT_SEX_007",
+      "G_INT_SEX_009"
+    ],
+    [
+      "G_INT_SEX_007",
+      "G_INT_SEX_010"
+    ],
+    [
+      "G_INT_SEX_007",
+      "G_INT_SEX_011"
+    ],
+    [
+      "G_INT_SEX_008",
+      "G_INT_SEX_009"
+    ],
+    [
+      "G_INT_SEX_008",
+      "G_INT_SEX_011"
+    ],
+    [
+      "G_INT_SEX_009",
+      "G_INT_SEX_010"
+    ],
+    [
+      "G_INT_SEX_010",
+      "G_INT_SEX_011"
+    ],
+    [
+      "G_INT_UNETH_005",
+      "G_INT_UNETH_008"
+    ],
+    [
+      "G_INT_UNETH_010",
+      "G_INT_UNETH_032"
+    ],
+    [
+      "G_INT_UNETH_010",
+      "G_SYS_CONTEXT_009"
+    ],
+    [
+      "G_INT_UNETH_017",
+      "G_SOC_DEMOC_001"
+    ],
+    [
+      "G_INT_UNETH_030",
+      "G_INT_UNETH_032"
+    ],
+    [
+      "G_INT_VALUE_002",
+      "G_SYS_TRANS_016"
+    ],
+    [
+      "G_INT_VALUE_006",
+      "G_SOC_CULT_022"
+    ],
+    [
+      "G_INT_VALUE_007",
+      "G_SOC_CULT_022"
+    ],
+    [
+      "G_INT_VALUE_007",
+      "G_SYS_EVAL_014"
+    ],
+    [
+      "G_INT_VALUE_010",
+      "G_INT_VALUE_022"
+    ],
+    [
+      "G_INT_VALUE_016",
+      "G_SOC_CULT_012"
+    ],
+    [
+      "G_INT_VALUE_020",
+      "G_SYS_EVAL_028"
+    ],
+    [
+      "G_INT_VALUE_020",
+      "G_SYS_TRANS_022"
+    ],
+    [
+      "G_INT_VIOL_001",
+      "G_INT_VIOL_006"
+    ],
+    [
+      "G_INT_VIOL_004",
+      "G_INT_VIOL_005"
+    ],
+    [
+      "G_INT_VIOL_004",
+      "G_INT_VIOL_006"
+    ],
+    [
+      "G_INT_VIOL_004",
+      "G_INT_VIOL_008"
+    ],
+    [
+      "G_INT_VIOL_004",
+      "G_INT_VIOL_009"
+    ],
+    [
+      "G_INT_VIOL_004",
+      "G_INT_VIOL_010"
+    ],
+    [
+      "G_INT_VIOL_004",
+      "G_INT_VIOL_011"
+    ],
+    [
+      "G_INT_VIOL_005",
+      "G_INT_VIOL_008"
+    ],
+    [
+      "G_INT_VIOL_005",
+      "G_INT_VIOL_009"
+    ],
+    [
+      "G_INT_VIOL_005",
+      "G_INT_VIOL_012"
+    ],
+    [
+      "G_INT_VIOL_006",
+      "G_INT_VIOL_008"
+    ],
+    [
+      "G_INT_VIOL_006",
+      "G_INT_VIOL_009"
+    ],
+    [
+      "G_INT_VIOL_008",
+      "G_INT_VIOL_009"
+    ],
+    [
+      "G_INT_VIOL_008",
+      "G_INT_VIOL_010"
+    ],
+    [
+      "G_INT_VIOL_008",
+      "G_INT_VIOL_011"
+    ],
+    [
+      "G_INT_VIOL_010",
+      "G_INT_VIOL_011"
+    ],
+    [
+      "G_INT_WEAP_002",
+      "G_INT_WEAP_003"
+    ],
+    [
+      "G_INT_WEAP_003",
+      "G_INT_WEAP_006"
+    ],
+    [
+      "G_INT_WEAP_003",
+      "G_INT_WEAP_014"
+    ],
+    [
+      "G_INT_WEAP_003",
+      "G_INT_WEAP_029"
+    ],
+    [
+      "G_INT_WEAP_006",
+      "G_INT_WEAP_014"
+    ],
+    [
+      "G_INT_WEAP_006",
+      "G_INT_WEAP_022"
+    ],
+    [
+      "G_INT_WEAP_006",
+      "G_INT_WEAP_027"
+    ],
+    [
+      "G_INT_WEAP_006",
+      "G_INT_WEAP_031"
+    ],
+    [
+      "G_INT_WEAP_014",
+      "G_INT_WEAP_022"
+    ],
+    [
+      "G_INT_WEAP_014",
+      "G_INT_WEAP_029"
+    ],
+    [
+      "G_INT_WEAP_018",
+      "G_SYS_MISINFO_021"
+    ],
+    [
+      "G_INT_WEAP_022",
+      "G_INT_WEAP_029"
+    ],
+    [
+      "G_INT_WEAP_026",
+      "G_SYS_SECADV_016"
+    ],
+    [
+      "G_SOC_CULT_002",
+      "G_SYS_EVAL_072"
+    ],
+    [
+      "G_SOC_CULT_005",
+      "G_SOC_CULT_022"
+    ],
+    [
+      "G_SOC_CULT_008",
+      "G_SOC_CULT_024"
+    ],
+    [
+      "G_SOC_CULT_008",
+      "G_SOC_ECON_003"
+    ],
+    [
+      "G_SOC_CULT_012",
+      "G_SYS_EVAL_042"
+    ],
+    [
+      "G_SOC_CULT_012",
+      "G_SYS_INPUT_002"
+    ],
+    [
+      "G_SOC_DEMOC_003",
+      "G_SOC_POWER_005"
+    ],
+    [
+      "G_SOC_DEMOC_008",
+      "G_SOC_ECON_012"
+    ],
+    [
+      "G_SOC_ECON_006",
+      "G_SOC_POWER_026"
+    ],
+    [
+      "G_SOC_ENV_003",
+      "G_SYS_SECADV_021"
+    ],
+    [
+      "G_SOC_GOV_002",
+      "G_SOC_GOV_015"
+    ],
+    [
+      "G_SOC_GOV_020",
+      "G_SOC_GOV_034"
+    ],
+    [
+      "G_SOC_GOV_026",
+      "P_INT_SAFETY_018"
+    ],
+    [
+      "G_SOC_GOV_027",
+      "G_SYS_EVAL_036"
+    ],
+    [
+      "G_SOC_GOV_046",
+      "G_SYS_EVAL_068"
+    ],
+    [
+      "G_SOC_POWER_019",
+      "G_SOC_POWER_028"
+    ],
+    [
+      "G_SOC_POWER_025",
+      "G_SYS_SECADV_055"
+    ],
+    [
+      "G_SYS_CONTEXT_005",
+      "G_SYS_CONTEXT_012"
+    ],
+    [
+      "G_SYS_CONTEXT_005",
+      "G_SYS_CONTEXT_013"
+    ],
+    [
+      "G_SYS_CONTEXT_012",
+      "G_SYS_CONTEXT_013"
+    ],
+    [
+      "G_SYS_EVAL_002",
+      "G_SYS_PERF_008"
+    ],
+    [
+      "G_SYS_EVAL_019",
+      "G_SYS_SECADV_046"
+    ],
+    [
+      "G_SYS_EVAL_022",
+      "G_SYS_INCONS_003"
+    ],
+    [
+      "G_SYS_EVAL_039",
+      "G_SYS_EVAL_073"
+    ],
+    [
+      "G_SYS_EVAL_041",
+      "G_SYS_PERF_019"
+    ],
+    [
+      "G_SYS_EVAL_042",
+      "G_SYS_INPUT_002"
+    ],
+    [
+      "G_SYS_INPUT_003",
+      "P_SYS_CONTROL_025"
+    ],
+    [
+      "G_SYS_MISINFO_003",
+      "G_SYS_OVERCONF_002"
+    ],
+    [
+      "G_SYS_MISINFO_009",
+      "G_SYS_SECADV_029"
+    ],
+    [
+      "G_SYS_OEXT_001",
+      "G_SYS_OVERCONF_001"
+    ],
+    [
+      "G_SYS_OEXT_006",
+      "G_SYS_OEXT_007"
+    ],
+    [
+      "G_SYS_OEXT_006",
+      "G_SYS_OEXT_008"
+    ],
+    [
+      "G_SYS_OEXT_006",
+      "G_SYS_OEXT_009"
+    ],
+    [
+      "G_SYS_OEXT_007",
+      "G_SYS_OEXT_008"
+    ],
+    [
+      "G_SYS_OEXT_007",
+      "G_SYS_OEXT_009"
+    ],
+    [
+      "G_SYS_OEXT_008",
+      "G_SYS_OEXT_009"
+    ],
+    [
+      "G_SYS_OEXT_013",
+      "G_SYS_OEXT_014"
+    ],
+    [
+      "G_SYS_OEXT_013",
+      "G_SYS_PERF_007"
+    ],
+    [
+      "G_SYS_OEXT_013",
+      "G_SYS_TRANS_023"
+    ],
+    [
+      "G_SYS_OREF_001",
+      "G_SYS_OREF_002"
+    ],
+    [
+      "G_SYS_PERF_007",
+      "G_SYS_PERF_014"
+    ],
+    [
+      "G_SYS_PERF_011",
+      "G_SYS_PERF_016"
+    ],
+    [
+      "G_SYS_PERF_011",
+      "G_SYS_PERF_018"
+    ],
+    [
+      "G_SYS_PERF_016",
+      "P_SYS_CONTROL_001"
+    ],
+    [
+      "G_SYS_POLICY_002",
+      "G_SYS_POLICY_003"
+    ],
+    [
+      "G_SYS_POLICY_002",
+      "G_SYS_POLICY_004"
+    ],
+    [
+      "G_SYS_POLICY_002",
+      "G_SYS_POLICY_006"
+    ],
+    [
+      "G_SYS_POLICY_003",
+      "G_SYS_POLICY_004"
+    ],
+    [
+      "G_SYS_POLICY_003",
+      "G_SYS_POLICY_006"
+    ],
+    [
+      "G_SYS_POLICY_003",
+      "G_SYS_POLICY_008"
+    ],
+    [
+      "G_SYS_POLICY_004",
+      "G_SYS_POLICY_006"
+    ],
+    [
+      "G_SYS_POLICY_004",
+      "G_SYS_POLICY_008"
+    ],
+    [
+      "G_SYS_POLICY_005",
+      "G_SYS_POLICY_009"
+    ],
+    [
+      "G_SYS_POLICY_006",
+      "G_SYS_POLICY_008"
+    ],
+    [
+      "G_SYS_POLICY_009",
+      "G_SYS_POLICY_010"
+    ],
+    [
+      "G_SYS_SECADV_001",
+      "G_SYS_SECADV_058"
+    ],
+    [
+      "G_SYS_SECADV_005",
+      "G_SYS_SECADV_046"
+    ],
+    [
+      "G_SYS_SECADV_009",
+      "G_SYS_SECADV_023"
+    ],
+    [
+      "G_SYS_SECADV_015",
+      "G_SYS_SECADV_016"
+    ],
+    [
+      "G_SYS_SECADV_015",
+      "G_SYS_SECADV_057"
+    ],
+    [
+      "G_SYS_SECADV_016",
+      "G_SYS_SECADV_057"
+    ],
+    [
+      "G_SYS_SECADV_023",
+      "G_SYS_SECADV_057"
+    ],
+    [
+      "G_SYS_SECADV_026",
+      "G_SYS_SECADV_049"
+    ],
+    [
+      "G_SYS_SECADV_052",
+      "P_SYS_CONTROL_023"
+    ],
+    [
+      "G_SYS_SECADV_053",
+      "G_SYS_SECADV_060"
+    ],
+    [
+      "G_SYS_SECADV_061",
+      "P_SYS_STATE_008"
+    ],
+    [
+      "G_SYS_TRANS_002",
+      "G_SYS_TRANS_017"
+    ],
+    [
+      "G_SYS_TRANS_009",
+      "G_SYS_TRANS_012"
+    ],
+    [
+      "P_INT_SAFETY_001",
+      "P_INT_SAFETY_023"
+    ],
+    [
+      "P_INT_SAFETY_006",
+      "P_INT_SAFETY_015"
+    ],
+    [
+      "P_INT_SAFETY_009",
+      "P_INT_SAFETY_015"
+    ],
+    [
+      "P_INT_SAFETY_021",
+      "P_SYS_CONTROL_026"
+    ],
+    [
+      "P_INT_SAFETY_021",
+      "P_SYS_CONTROL_033"
+    ],
+    [
+      "P_SYS_CONTROL_001",
+      "P_SYS_CONTROL_040"
+    ],
+    [
+      "P_SYS_CONTROL_002",
+      "P_SYS_CONTROL_056"
+    ],
+    [
+      "P_SYS_CONTROL_006",
+      "P_SYS_CONTROL_015"
+    ],
+    [
+      "P_SYS_CONTROL_024",
+      "P_SYS_CONTROL_027"
+    ],
+    [
+      "P_SYS_CONTROL_026",
+      "P_SYS_CONTROL_047"
+    ],
+    [
+      "P_SYS_CONTROL_047",
+      "P_SYS_CONTROL_055"
+    ],
+    [
+      "P_SYS_CONTROL_050",
+      "P_SYS_CONTROL_054"
+    ],
+    [
+      "P_SYS_CONTROL_051",
+      "P_SYS_CONTROL_052"
+    ],
+    [
+      "P_SYS_HARDWARE_002",
+      "P_SYS_HARDWARE_003"
+    ],
+    [
+      "P_SYS_STATE_004",
+      "P_SYS_STATE_007"
+    ]
+  ],
+  "clusters": [
+    {
+      "id": "topic-0",
+      "name": "Agent · Tool · Goal",
+      "ids": [
+        "A_INT_CASCADE_001",
+        "A_INT_CASCADE_003",
+        "A_INT_CASCADE_004",
+        "A_INT_CASCADE_006",
+        "A_INT_CASCADE_007",
+        "A_INT_CASCADE_008",
+        "A_INT_CONFLICT_001",
+        "A_INT_CONFLICT_002",
+        "A_INT_CONFLICT_003",
+        "A_INT_COORD_002",
+        "A_INT_COORD_004",
+        "A_INT_COORD_005",
+        "A_SYS_AUTH_001",
+        "A_SYS_AUTH_004",
+        "A_SYS_AUTH_005",
+        "A_SYS_AUTH_010",
+        "A_SYS_AUTH_020",
+        "A_SYS_AUTH_021",
+        "A_SYS_AUTH_023",
+        "A_SYS_DECEPT_002",
+        "A_SYS_GOAL_003",
+        "A_SYS_GOAL_009",
+        "A_SYS_GOAL_012",
+        "A_SYS_GOAL_016",
+        "A_SYS_GOAL_019",
+        "A_SYS_GOAL_020",
+        "A_SYS_SELFCOR_001",
+        "A_SYS_TRACE_002",
+        "G_INT_PRIV_008",
+        "G_SYS_CONTEXT_001",
+        "G_SYS_EVAL_019",
+        "G_SYS_EVAL_065",
+        "G_SYS_SECADV_004",
+        "G_SYS_SECADV_005",
+        "G_SYS_SECADV_006",
+        "G_SYS_SECADV_046"
+      ]
+    },
+    {
+      "id": "topic-1",
+      "name": "Human · Scale · Knowledge",
+      "ids": [
+        "A_INT_CASCADE_009",
+        "A_INT_COLLUSION_001",
+        "A_INT_COLLUSION_003",
+        "A_INT_COORD_001",
+        "A_INT_COORD_003",
+        "A_SYS_AUTH_002",
+        "A_SYS_AUTH_003",
+        "A_SYS_AUTH_006",
+        "A_SYS_AUTH_007",
+        "A_SYS_AUTH_009",
+        "A_SYS_AUTH_016",
+        "A_SYS_AUTH_017",
+        "A_SYS_AUTH_019",
+        "A_SYS_AUTH_024",
+        "A_SYS_AUTH_025",
+        "A_SYS_DECEPT_001",
+        "A_SYS_DECEPT_005",
+        "A_SYS_GOAL_005",
+        "A_SYS_GOAL_006",
+        "A_SYS_GOAL_007",
+        "A_SYS_GOAL_010",
+        "A_SYS_GOAL_011",
+        "A_SYS_GOAL_013",
+        "A_SYS_GOAL_014",
+        "A_SYS_GOAL_017",
+        "A_SYS_GOAL_021",
+        "A_SYS_GOAL_023",
+        "A_SYS_SELFCOR_002",
+        "A_SYS_SELFCOR_003",
+        "G_INT_ALLOC_001",
+        "G_INT_ALLOC_002",
+        "G_INT_ALLOC_004",
+        "G_INT_ALLOC_012",
+        "G_INT_ALLOC_013",
+        "G_INT_ANTH_006",
+        "G_INT_ILLEGAL_010",
+        "G_INT_ILLEGAL_015",
+        "G_INT_ILLEGAL_021",
+        "G_INT_POL_001",
+        "G_INT_POL_002",
+        "G_INT_POL_005",
+        "G_INT_REPR_002",
+        "G_INT_REPR_004",
+        "G_INT_REPR_006",
+        "G_INT_REPR_007",
+        "G_INT_REPR_009",
+        "G_INT_REPR_026",
+        "G_INT_REPR_027",
+        "G_INT_REPR_029",
+        "G_INT_REPR_032",
+        "G_INT_SEX_002",
+        "G_INT_SEX_004",
+        "G_INT_SEX_010",
+        "G_INT_UNETH_003",
+        "G_INT_UNETH_004",
+        "G_INT_UNETH_007",
+        "G_INT_UNETH_012",
+        "G_INT_UNETH_014",
+        "G_INT_UNETH_020",
+        "G_INT_UNETH_024",
+        "G_INT_UNETH_026",
+        "G_INT_VALUE_015",
+        "G_INT_VIOL_001",
+        "G_INT_VIOL_002",
+        "G_INT_WEAP_003",
+        "G_INT_WEAP_006",
+        "G_INT_WEAP_008",
+        "G_INT_WEAP_010",
+        "G_INT_WEAP_011",
+        "G_INT_WEAP_014",
+        "G_INT_WEAP_016",
+        "G_INT_WEAP_018",
+        "G_INT_WEAP_020",
+        "G_INT_WEAP_021",
+        "G_INT_WEAP_022",
+        "G_INT_WEAP_024",
+        "G_INT_WEAP_025",
+        "G_INT_WEAP_027",
+        "G_INT_WEAP_029",
+        "G_INT_WEAP_030",
+        "G_INT_WEAP_031",
+        "G_INT_WEAP_032",
+        "G_SOC_CULT_007",
+        "G_SOC_CULT_008",
+        "G_SOC_CULT_009",
+        "G_SOC_CULT_010",
+        "G_SOC_CULT_011",
+        "G_SOC_CULT_014",
+        "G_SOC_CULT_016",
+        "G_SOC_CULT_018",
+        "G_SOC_CULT_021",
+        "G_SOC_CULT_024",
+        "G_SOC_DEMOC_002",
+        "G_SOC_DEMOC_003",
+        "G_SOC_DEMOC_005",
+        "G_SOC_DEMOC_008",
+        "G_SOC_DEMOC_011",
+        "G_SOC_ECON_001",
+        "G_SOC_ECON_003",
+        "G_SOC_ECON_005",
+        "G_SOC_ECON_006",
+        "G_SOC_ECON_008",
+        "G_SOC_ECON_012",
+        "G_SOC_ENV_003",
+        "G_SOC_ENV_009",
+        "G_SOC_ENV_012",
+        "G_SOC_GOV_010",
+        "G_SOC_GOV_011",
+        "G_SOC_GOV_016",
+        "G_SOC_GOV_024",
+        "G_SOC_POWER_005",
+        "G_SOC_POWER_007",
+        "G_SOC_POWER_018",
+        "G_SOC_POWER_023",
+        "G_SOC_POWER_028",
+        "G_SYS_CONTEST_002",
+        "G_SYS_CONTEST_004",
+        "G_SYS_EVAL_029",
+        "G_SYS_EVAL_045",
+        "G_SYS_EVAL_066",
+        "G_SYS_EVAL_071",
+        "G_SYS_INCONS_001",
+        "G_SYS_INPUT_001",
+        "G_SYS_INPUT_002",
+        "G_SYS_MISINFO_002",
+        "G_SYS_MISINFO_003",
+        "G_SYS_MISINFO_004",
+        "G_SYS_MISINFO_006",
+        "G_SYS_MISINFO_009",
+        "G_SYS_MISINFO_010",
+        "G_SYS_MISINFO_011",
+        "G_SYS_MISINFO_012",
+        "G_SYS_MISINFO_013",
+        "G_SYS_MISINFO_015",
+        "G_SYS_MISINFO_016",
+        "G_SYS_MISINFO_017",
+        "G_SYS_MISINFO_019",
+        "G_SYS_MISINFO_021",
+        "G_SYS_MISINFO_022",
+        "G_SYS_PERF_002",
+        "G_SYS_PERF_008",
+        "G_SYS_PERF_013",
+        "G_SYS_PERF_021",
+        "G_SYS_SECADV_009",
+        "G_SYS_SECADV_010",
+        "G_SYS_SECADV_020",
+        "G_SYS_SECADV_021",
+        "G_SYS_SECADV_026",
+        "G_SYS_SECADV_028",
+        "G_SYS_SECADV_029",
+        "G_SYS_SECADV_038",
+        "G_SYS_SECADV_049",
+        "G_SYS_SECADV_050",
+        "G_SYS_SECADV_053",
+        "G_SYS_TRANS_017"
+      ]
+    },
+    {
+      "id": "topic-2",
+      "name": "Safety · Evaluation · Performance",
+      "ids": [
+        "G_INT_ALLOC_003",
+        "G_SOC_GOV_017",
+        "G_SOC_GOV_026",
+        "G_SOC_GOV_046",
+        "G_SOC_POWER_027",
+        "G_SYS_EVAL_002",
+        "G_SYS_EVAL_004",
+        "G_SYS_EVAL_005",
+        "G_SYS_EVAL_007",
+        "G_SYS_EVAL_008",
+        "G_SYS_EVAL_009",
+        "G_SYS_EVAL_016",
+        "G_SYS_EVAL_021",
+        "G_SYS_EVAL_022",
+        "G_SYS_EVAL_023",
+        "G_SYS_EVAL_024",
+        "G_SYS_EVAL_025",
+        "G_SYS_EVAL_026",
+        "G_SYS_EVAL_031",
+        "G_SYS_EVAL_033",
+        "G_SYS_EVAL_038",
+        "G_SYS_EVAL_040",
+        "G_SYS_EVAL_041",
+        "G_SYS_EVAL_042",
+        "G_SYS_EVAL_044",
+        "G_SYS_EVAL_048",
+        "G_SYS_EVAL_052",
+        "G_SYS_EVAL_054",
+        "G_SYS_EVAL_062",
+        "G_SYS_EVAL_068",
+        "G_SYS_EVAL_070",
+        "G_SYS_EVAL_075",
+        "G_SYS_EVAL_077",
+        "G_SYS_PERF_001",
+        "G_SYS_PERF_007",
+        "G_SYS_PERF_010",
+        "G_SYS_PERF_011",
+        "G_SYS_PERF_014",
+        "G_SYS_PERF_016",
+        "G_SYS_PERF_018",
+        "G_SYS_PERF_019",
+        "G_SYS_PERF_020",
+        "G_SYS_POLICY_003",
+        "G_SYS_POLICY_005",
+        "G_SYS_SECADV_025",
+        "G_SYS_SECADV_059",
+        "G_SYS_TRANS_002",
+        "P_INT_SAFETY_016",
+        "P_INT_SAFETY_018",
+        "P_SYS_CONTROL_002",
+        "P_SYS_CONTROL_044"
+      ]
+    },
+    {
+      "id": "topic-3",
+      "name": "Data · Personal · Outputs",
+      "ids": [
+        "G_INT_ALLOC_007",
+        "G_INT_ILLEGAL_009",
+        "G_INT_PRIV_001",
+        "G_INT_PRIV_003",
+        "G_INT_PRIV_005",
+        "G_INT_PRIV_007",
+        "G_INT_PRIV_009",
+        "G_INT_PRIV_012",
+        "G_INT_PRIV_014",
+        "G_INT_PRIV_015",
+        "G_INT_PRIV_016",
+        "G_INT_PRIV_018",
+        "G_INT_PRIV_019",
+        "G_INT_PRIV_021",
+        "G_INT_PRIV_022",
+        "G_INT_PRIV_024",
+        "G_INT_PRIV_025",
+        "G_INT_PRIV_027",
+        "G_INT_PRIV_028",
+        "G_INT_REPR_010",
+        "G_INT_REPR_023",
+        "G_INT_REPR_028",
+        "G_INT_REPR_033",
+        "G_INT_UNETH_027",
+        "G_INT_WEAP_009",
+        "G_SOC_CULT_002",
+        "G_SOC_ENV_005",
+        "G_SOC_ENV_008",
+        "G_SOC_POWER_006",
+        "G_SOC_POWER_008",
+        "G_SOC_POWER_015",
+        "G_SOC_POWER_026",
+        "G_SYS_EVAL_017",
+        "G_SYS_EVAL_046",
+        "G_SYS_EVAL_072",
+        "G_SYS_MISINFO_008",
+        "G_SYS_PERF_003",
+        "G_SYS_PERF_004",
+        "G_SYS_PERF_005",
+        "G_SYS_PERF_006",
+        "G_SYS_PERF_009",
+        "G_SYS_PERF_012",
+        "G_SYS_PERF_017",
+        "G_SYS_POLICY_001",
+        "G_SYS_POLICY_002",
+        "G_SYS_POLICY_004",
+        "G_SYS_POLICY_006",
+        "G_SYS_POLICY_008",
+        "G_SYS_SECADV_002",
+        "G_SYS_SECADV_012",
+        "G_SYS_SECADV_018",
+        "G_SYS_SECADV_044",
+        "P_SYS_HARDWARE_002"
+      ]
+    },
+    {
+      "id": "topic-4",
+      "name": "Users · User · Judgement",
+      "ids": [
+        "A_SYS_DECEPT_008",
+        "A_SYS_GOAL_022",
+        "A_SYS_TRACE_003",
+        "G_INT_ALLOC_006",
+        "G_INT_ALLOC_010",
+        "G_INT_ALLOC_015",
+        "G_INT_ANTH_001",
+        "G_INT_ANTH_002",
+        "G_INT_ANTH_003",
+        "G_INT_ANTH_004",
+        "G_INT_ANTH_005",
+        "G_INT_ANTH_008",
+        "G_INT_REL_001",
+        "G_INT_REL_002",
+        "G_INT_REL_004",
+        "G_INT_REL_006",
+        "G_INT_REL_007",
+        "G_INT_REL_008",
+        "G_INT_REPR_001",
+        "G_INT_REPR_024",
+        "G_INT_SELF_008",
+        "G_INT_SEX_005",
+        "G_INT_UNETH_011",
+        "G_INT_UNETH_015",
+        "G_INT_UNETH_021",
+        "G_INT_UNETH_022",
+        "G_INT_UNETH_028",
+        "G_INT_UNETH_029",
+        "G_INT_UNETH_033",
+        "G_SOC_CULT_001",
+        "G_SOC_CULT_019",
+        "G_SOC_CULT_023",
+        "G_SOC_DEMOC_010",
+        "G_SYS_CONTEST_001",
+        "G_SYS_CONTEST_003",
+        "G_SYS_CONTEXT_002",
+        "G_SYS_CONTEXT_005",
+        "G_SYS_CONTEXT_008",
+        "G_SYS_CONTEXT_012",
+        "G_SYS_CONTEXT_013",
+        "G_SYS_EVAL_001",
+        "G_SYS_INCONS_002",
+        "G_SYS_MISINFO_007",
+        "G_SYS_MISINFO_018",
+        "G_SYS_MISINFO_023",
+        "G_SYS_OEXT_001",
+        "G_SYS_OEXT_006",
+        "G_SYS_OEXT_007",
+        "G_SYS_OEXT_008",
+        "G_SYS_OEXT_009",
+        "G_SYS_OEXT_013",
+        "G_SYS_OEXT_014",
+        "G_SYS_OREF_001",
+        "G_SYS_OREF_002",
+        "G_SYS_OREF_003",
+        "G_SYS_OVERCONF_001",
+        "G_SYS_OVERCONF_002",
+        "G_SYS_OVERCONF_003",
+        "G_SYS_OVERCONF_004",
+        "G_SYS_OVERCONF_006",
+        "G_SYS_SECADV_042",
+        "G_SYS_TRANS_001",
+        "G_SYS_TRANS_004",
+        "G_SYS_TRANS_006",
+        "G_SYS_TRANS_009",
+        "G_SYS_TRANS_010",
+        "G_SYS_TRANS_012",
+        "G_SYS_TRANS_015",
+        "G_SYS_TRANS_018",
+        "G_SYS_TRANS_023",
+        "G_SYS_TRANS_024",
+        "P_INT_SAFETY_020"
+      ]
+    },
+    {
+      "id": "topic-5",
+      "name": "Physical · Robot · Unsafe",
+      "ids": [
+        "G_INT_ILLEGAL_007",
+        "G_INT_ILLEGAL_023",
+        "G_INT_VIOL_007",
+        "G_SOC_ECON_002",
+        "G_SOC_ENV_001",
+        "G_SOC_GOV_039",
+        "G_SYS_EVAL_076",
+        "G_SYS_PERF_015",
+        "G_SYS_SECADV_001",
+        "G_SYS_SECADV_011",
+        "G_SYS_SECADV_058",
+        "G_SYS_SECADV_060",
+        "G_SYS_SECADV_061",
+        "P_INT_SAFETY_001",
+        "P_INT_SAFETY_005",
+        "P_INT_SAFETY_006",
+        "P_INT_SAFETY_007",
+        "P_INT_SAFETY_008",
+        "P_INT_SAFETY_009",
+        "P_INT_SAFETY_010",
+        "P_INT_SAFETY_011",
+        "P_INT_SAFETY_015",
+        "P_INT_SAFETY_023",
+        "P_INT_TAMPER_002",
+        "P_INT_TAMPER_003",
+        "P_SYS_CONTROL_001",
+        "P_SYS_CONTROL_003",
+        "P_SYS_CONTROL_006",
+        "P_SYS_CONTROL_007",
+        "P_SYS_CONTROL_012",
+        "P_SYS_CONTROL_013",
+        "P_SYS_CONTROL_016",
+        "P_SYS_CONTROL_017",
+        "P_SYS_CONTROL_018",
+        "P_SYS_CONTROL_022",
+        "P_SYS_CONTROL_030",
+        "P_SYS_CONTROL_034",
+        "P_SYS_CONTROL_037",
+        "P_SYS_CONTROL_038",
+        "P_SYS_CONTROL_040",
+        "P_SYS_CONTROL_042",
+        "P_SYS_CONTROL_043",
+        "P_SYS_CONTROL_051",
+        "P_SYS_CONTROL_052",
+        "P_SYS_CONTROL_054",
+        "P_SYS_CONTROL_057",
+        "P_SYS_HARDWARE_003",
+        "P_SYS_STATE_004",
+        "P_SYS_STATE_006",
+        "P_SYS_STATE_008",
+        "P_SYS_STATE_009",
+        "P_SYS_STATE_011"
+      ]
+    },
+    {
+      "id": "topic-6",
+      "name": "Manipulation · Object · Humanoid",
+      "ids": [
+        "A_SYS_GOAL_018",
+        "G_INT_POL_006",
+        "G_INT_PRIV_030",
+        "G_INT_PRIV_031",
+        "G_INT_UNETH_002",
+        "G_INT_UNETH_005",
+        "G_INT_UNETH_008",
+        "G_INT_UNETH_017",
+        "G_INT_UNETH_019",
+        "G_INT_WEAP_026",
+        "G_SOC_DEMOC_006",
+        "G_SOC_DEMOC_007",
+        "G_SYS_INPUT_003",
+        "G_SYS_SECADV_015",
+        "G_SYS_SECADV_016",
+        "G_SYS_SECADV_023",
+        "G_SYS_SECADV_043",
+        "G_SYS_SECADV_052",
+        "G_SYS_SECADV_057",
+        "P_INT_SAFETY_012",
+        "P_INT_SAFETY_017",
+        "P_INT_SAFETY_021",
+        "P_SYS_CONTROL_015",
+        "P_SYS_CONTROL_019",
+        "P_SYS_CONTROL_023",
+        "P_SYS_CONTROL_024",
+        "P_SYS_CONTROL_025",
+        "P_SYS_CONTROL_026",
+        "P_SYS_CONTROL_027",
+        "P_SYS_CONTROL_033",
+        "P_SYS_CONTROL_046",
+        "P_SYS_CONTROL_047",
+        "P_SYS_CONTROL_050",
+        "P_SYS_CONTROL_055",
+        "P_SYS_CONTROL_056",
+        "P_SYS_STATE_003",
+        "P_SYS_STATE_007"
+      ]
+    },
+    {
+      "id": "topic-7",
+      "name": "Discriminatory · Representations · Hostile",
+      "ids": [
+        "G_INT_REPR_011",
+        "G_INT_REPR_012",
+        "G_INT_REPR_013",
+        "G_INT_REPR_014",
+        "G_INT_REPR_015",
+        "G_INT_REPR_016",
+        "G_INT_REPR_017",
+        "G_INT_REPR_018",
+        "G_INT_REPR_019",
+        "G_INT_REPR_020",
+        "G_INT_REPR_021",
+        "G_INT_REPR_022"
+      ]
+    },
+    {
+      "id": "topic-8",
+      "name": "Facilitates · Rights · Involving",
+      "ids": [
+        "G_INT_COPY_001",
+        "G_INT_COPY_002",
+        "G_INT_COPY_003",
+        "G_INT_COPY_006",
+        "G_INT_COPY_007",
+        "G_INT_COPY_008",
+        "G_INT_COPY_009",
+        "G_INT_COPY_011",
+        "G_INT_ILLEGAL_006",
+        "G_INT_ILLEGAL_008",
+        "G_INT_ILLEGAL_011",
+        "G_INT_ILLEGAL_013",
+        "G_INT_ILLEGAL_014",
+        "G_INT_ILLEGAL_016",
+        "G_INT_ILLEGAL_019",
+        "G_INT_ILLEGAL_020",
+        "G_INT_POL_003",
+        "G_INT_POL_007",
+        "G_INT_POL_008",
+        "G_INT_PRIV_002",
+        "G_INT_PRIV_010",
+        "G_INT_PRIV_013",
+        "G_INT_PRIV_017",
+        "G_INT_PRIV_020",
+        "G_INT_PRIV_029",
+        "G_INT_SEX_009",
+        "G_SYS_EVAL_037",
+        "G_SYS_POLICY_009"
+      ]
+    },
+    {
+      "id": "topic-9",
+      "name": "Governance · Oversight · Accountability",
+      "ids": [
+        "A_INT_CASCADE_005",
+        "A_INT_COLLUSION_002",
+        "A_SYS_AUTH_012",
+        "A_SYS_DECEPT_003",
+        "A_SYS_DECEPT_009",
+        "A_SYS_TRACE_001",
+        "G_INT_ALLOC_009",
+        "G_INT_WEAP_023",
+        "G_SOC_ECON_010",
+        "G_SOC_ENV_002",
+        "G_SOC_ENV_007",
+        "G_SOC_ENV_011",
+        "G_SOC_GOV_002",
+        "G_SOC_GOV_006",
+        "G_SOC_GOV_008",
+        "G_SOC_GOV_009",
+        "G_SOC_GOV_015",
+        "G_SOC_GOV_020",
+        "G_SOC_GOV_021",
+        "G_SOC_GOV_022",
+        "G_SOC_GOV_027",
+        "G_SOC_GOV_029",
+        "G_SOC_GOV_030",
+        "G_SOC_GOV_033",
+        "G_SOC_GOV_034",
+        "G_SOC_GOV_035",
+        "G_SOC_GOV_036",
+        "G_SOC_GOV_040",
+        "G_SOC_GOV_041",
+        "G_SOC_GOV_042",
+        "G_SOC_GOV_043",
+        "G_SOC_GOV_044",
+        "G_SOC_GOV_045",
+        "G_SOC_POWER_001",
+        "G_SOC_POWER_002",
+        "G_SOC_POWER_003",
+        "G_SOC_POWER_004",
+        "G_SOC_POWER_010",
+        "G_SOC_POWER_012",
+        "G_SOC_POWER_017",
+        "G_SOC_POWER_019",
+        "G_SOC_POWER_025",
+        "G_SYS_EVAL_003",
+        "G_SYS_EVAL_006",
+        "G_SYS_EVAL_012",
+        "G_SYS_EVAL_013",
+        "G_SYS_EVAL_027",
+        "G_SYS_EVAL_032",
+        "G_SYS_EVAL_035",
+        "G_SYS_EVAL_036",
+        "G_SYS_EVAL_043",
+        "G_SYS_EVAL_060",
+        "G_SYS_EVAL_069",
+        "G_SYS_EVAL_074",
+        "G_SYS_INCONS_003",
+        "G_SYS_POLICY_010",
+        "G_SYS_SECADV_014",
+        "G_SYS_SECADV_019",
+        "G_SYS_SECADV_055",
+        "G_SYS_TRANS_003",
+        "G_SYS_TRANS_021"
+      ]
+    },
+    {
+      "id": "topic-10",
+      "name": "Cultural · Values · Value",
+      "ids": [
+        "G_INT_ALLOC_005",
+        "G_INT_REPR_003",
+        "G_INT_REPR_025",
+        "G_INT_UNETH_010",
+        "G_INT_UNETH_030",
+        "G_INT_UNETH_031",
+        "G_INT_UNETH_032",
+        "G_INT_VALUE_002",
+        "G_INT_VALUE_004",
+        "G_INT_VALUE_006",
+        "G_INT_VALUE_007",
+        "G_INT_VALUE_010",
+        "G_INT_VALUE_012",
+        "G_INT_VALUE_013",
+        "G_INT_VALUE_014",
+        "G_INT_VALUE_016",
+        "G_INT_VALUE_018",
+        "G_INT_VALUE_019",
+        "G_INT_VALUE_020",
+        "G_INT_VALUE_022",
+        "G_INT_VALUE_024",
+        "G_INT_VALUE_025",
+        "G_SOC_CULT_005",
+        "G_SOC_CULT_012",
+        "G_SOC_CULT_017",
+        "G_SOC_CULT_020",
+        "G_SOC_CULT_022",
+        "G_SOC_DEMOC_001",
+        "G_SOC_GOV_005",
+        "G_SOC_GOV_023",
+        "G_SOC_GOV_025",
+        "G_SYS_CONTEXT_003",
+        "G_SYS_CONTEXT_004",
+        "G_SYS_CONTEXT_006",
+        "G_SYS_CONTEXT_007",
+        "G_SYS_CONTEXT_009",
+        "G_SYS_CONTEXT_011",
+        "G_SYS_EVAL_014",
+        "G_SYS_EVAL_028",
+        "G_SYS_EVAL_039",
+        "G_SYS_EVAL_073",
+        "G_SYS_TRANS_016",
+        "G_SYS_TRANS_022"
+      ]
+    },
+    {
+      "id": "topic-11",
+      "name": "Assistance · Psychological · Provides",
+      "ids": [
+        "G_INT_ILLEGAL_001",
+        "G_INT_ILLEGAL_003",
+        "G_INT_ILLEGAL_022",
+        "G_INT_SELF_001",
+        "G_INT_SELF_002",
+        "G_INT_SELF_003",
+        "G_INT_SELF_004",
+        "G_INT_SELF_005",
+        "G_INT_SELF_007",
+        "G_INT_SEX_003",
+        "G_INT_SEX_007",
+        "G_INT_SEX_008",
+        "G_INT_SEX_011",
+        "G_INT_VIOL_004",
+        "G_INT_VIOL_005",
+        "G_INT_VIOL_006",
+        "G_INT_VIOL_008",
+        "G_INT_VIOL_009",
+        "G_INT_VIOL_010",
+        "G_INT_VIOL_011",
+        "G_INT_VIOL_012",
+        "G_INT_WEAP_002"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "delivery-robots",
+      "name": "Delivery robot services",
+      "name_ko": "배달로봇서비스",
+      "description": "Mobile robots sharing pavements, entrances and public spaces with pedestrians. Includes fleet connectivity and public-space access.",
+      "ids": [
+        "A_SYS_AUTH_023",
+        "A_SYS_GOAL_016",
+        "A_SYS_TRACE_002",
+        "G_INT_ALLOC_003",
+        "G_INT_PRIV_001",
+        "G_INT_PRIV_003",
+        "G_INT_PRIV_021",
+        "G_INT_VALUE_020",
+        "G_SOC_GOV_039",
+        "G_SYS_EVAL_044",
+        "G_SYS_PERF_015",
+        "G_SYS_SECADV_015",
+        "G_SYS_SECADV_058",
+        "P_INT_SAFETY_005",
+        "P_INT_SAFETY_006",
+        "P_INT_SAFETY_007",
+        "P_INT_SAFETY_009",
+        "P_INT_SAFETY_010",
+        "P_INT_SAFETY_012",
+        "P_INT_SAFETY_015",
+        "P_INT_SAFETY_017",
+        "P_INT_SAFETY_020",
+        "P_INT_TAMPER_002",
+        "P_INT_TAMPER_003",
+        "P_SYS_CONTROL_002",
+        "P_SYS_CONTROL_006",
+        "P_SYS_CONTROL_007",
+        "P_SYS_CONTROL_012",
+        "P_SYS_CONTROL_013",
+        "P_SYS_CONTROL_016",
+        "P_SYS_CONTROL_017",
+        "P_SYS_CONTROL_019",
+        "P_SYS_CONTROL_022",
+        "P_SYS_CONTROL_034",
+        "P_SYS_CONTROL_040",
+        "P_SYS_CONTROL_042",
+        "P_SYS_CONTROL_043",
+        "P_SYS_CONTROL_051",
+        "P_SYS_CONTROL_052",
+        "P_SYS_CONTROL_054",
+        "P_SYS_CONTROL_057",
+        "P_SYS_HARDWARE_002",
+        "P_SYS_HARDWARE_003",
+        "P_SYS_STATE_004",
+        "P_SYS_STATE_006",
+        "P_SYS_STATE_008",
+        "P_SYS_STATE_009",
+        "P_SYS_STATE_011"
+      ]
+    },
+    {
+      "id": "factory-humanoids",
+      "name": "Humanoids in factories",
+      "name_ko": "공장의 휴머노이드",
+      "description": "Humanoids working alongside people, manipulating tools and materials, and coordinating industrial tasks. Workplace monitoring is included conditionally.",
+      "ids": [
+        "A_SYS_AUTH_023",
+        "A_SYS_GOAL_016",
+        "A_SYS_GOAL_018",
+        "A_SYS_TRACE_002",
+        "G_INT_ALLOC_003",
+        "G_INT_PRIV_002",
+        "G_INT_PRIV_030",
+        "G_INT_PRIV_031",
+        "G_SOC_ECON_002",
+        "G_SOC_GOV_039",
+        "G_SYS_EVAL_044",
+        "G_SYS_SECADV_011",
+        "G_SYS_SECADV_016",
+        "G_SYS_SECADV_060",
+        "P_INT_SAFETY_001",
+        "P_INT_SAFETY_005",
+        "P_INT_SAFETY_006",
+        "P_INT_SAFETY_007",
+        "P_INT_SAFETY_008",
+        "P_INT_SAFETY_009",
+        "P_INT_SAFETY_010",
+        "P_INT_SAFETY_011",
+        "P_INT_SAFETY_012",
+        "P_INT_SAFETY_015",
+        "P_INT_SAFETY_016",
+        "P_INT_SAFETY_017",
+        "P_INT_SAFETY_018",
+        "P_INT_SAFETY_021",
+        "P_INT_TAMPER_002",
+        "P_INT_TAMPER_003",
+        "P_SYS_CONTROL_002",
+        "P_SYS_CONTROL_006",
+        "P_SYS_CONTROL_007",
+        "P_SYS_CONTROL_013",
+        "P_SYS_CONTROL_015",
+        "P_SYS_CONTROL_016",
+        "P_SYS_CONTROL_017",
+        "P_SYS_CONTROL_018",
+        "P_SYS_CONTROL_019",
+        "P_SYS_CONTROL_022",
+        "P_SYS_CONTROL_023",
+        "P_SYS_CONTROL_024",
+        "P_SYS_CONTROL_025",
+        "P_SYS_CONTROL_026",
+        "P_SYS_CONTROL_027",
+        "P_SYS_CONTROL_030",
+        "P_SYS_CONTROL_033",
+        "P_SYS_CONTROL_034",
+        "P_SYS_CONTROL_037",
+        "P_SYS_CONTROL_038",
+        "P_SYS_CONTROL_040",
+        "P_SYS_CONTROL_042",
+        "P_SYS_CONTROL_043",
+        "P_SYS_CONTROL_044",
+        "P_SYS_CONTROL_047",
+        "P_SYS_CONTROL_050",
+        "P_SYS_CONTROL_051",
+        "P_SYS_CONTROL_052",
+        "P_SYS_CONTROL_054",
+        "P_SYS_CONTROL_055",
+        "P_SYS_CONTROL_056",
+        "P_SYS_CONTROL_057",
+        "P_SYS_HARDWARE_002",
+        "P_SYS_HARDWARE_003",
+        "P_SYS_STATE_003",
+        "P_SYS_STATE_004",
+        "P_SYS_STATE_006",
+        "P_SYS_STATE_007",
+        "P_SYS_STATE_008",
+        "P_SYS_STATE_009",
+        "P_SYS_STATE_011"
+      ]
+    },
+    {
+      "id": "home-humanoids",
+      "name": "Household assistant humanoids",
+      "name_ko": "가사 도우미 휴머노이드",
+      "description": "Humanoids assisting with domestic tasks around people, fragile objects and private spaces. Relationship-related risks apply when a conversational interface is provided.",
+      "ids": [
+        "A_SYS_AUTH_023",
+        "A_SYS_GOAL_016",
+        "A_SYS_GOAL_018",
+        "A_SYS_TRACE_002",
+        "G_INT_ALLOC_003",
+        "G_INT_ANTH_002",
+        "G_INT_ANTH_006",
+        "G_INT_PRIV_007",
+        "G_INT_PRIV_018",
+        "G_INT_PRIV_024",
+        "G_SOC_ECON_002",
+        "G_SOC_GOV_039",
+        "G_SYS_EVAL_033",
+        "G_SYS_EVAL_044",
+        "G_SYS_SECADV_011",
+        "G_SYS_SECADV_058",
+        "G_SYS_SECADV_060",
+        "P_INT_SAFETY_001",
+        "P_INT_SAFETY_005",
+        "P_INT_SAFETY_006",
+        "P_INT_SAFETY_007",
+        "P_INT_SAFETY_008",
+        "P_INT_SAFETY_009",
+        "P_INT_SAFETY_010",
+        "P_INT_SAFETY_011",
+        "P_INT_SAFETY_012",
+        "P_INT_SAFETY_015",
+        "P_INT_SAFETY_016",
+        "P_INT_SAFETY_017",
+        "P_INT_SAFETY_018",
+        "P_INT_SAFETY_020",
+        "P_INT_SAFETY_021",
+        "P_INT_SAFETY_023",
+        "P_INT_TAMPER_002",
+        "P_SYS_CONTROL_002",
+        "P_SYS_CONTROL_006",
+        "P_SYS_CONTROL_007",
+        "P_SYS_CONTROL_013",
+        "P_SYS_CONTROL_015",
+        "P_SYS_CONTROL_016",
+        "P_SYS_CONTROL_017",
+        "P_SYS_CONTROL_018",
+        "P_SYS_CONTROL_019",
+        "P_SYS_CONTROL_022",
+        "P_SYS_CONTROL_023",
+        "P_SYS_CONTROL_024",
+        "P_SYS_CONTROL_025",
+        "P_SYS_CONTROL_026",
+        "P_SYS_CONTROL_027",
+        "P_SYS_CONTROL_030",
+        "P_SYS_CONTROL_033",
+        "P_SYS_CONTROL_038",
+        "P_SYS_CONTROL_040",
+        "P_SYS_CONTROL_042",
+        "P_SYS_CONTROL_043",
+        "P_SYS_CONTROL_046",
+        "P_SYS_CONTROL_047",
+        "P_SYS_CONTROL_050",
+        "P_SYS_CONTROL_051",
+        "P_SYS_CONTROL_052",
+        "P_SYS_CONTROL_054",
+        "P_SYS_CONTROL_055",
+        "P_SYS_CONTROL_056",
+        "P_SYS_CONTROL_057",
+        "P_SYS_HARDWARE_002",
+        "P_SYS_HARDWARE_003",
+        "P_SYS_STATE_003",
+        "P_SYS_STATE_004",
+        "P_SYS_STATE_006",
+        "P_SYS_STATE_007",
+        "P_SYS_STATE_008",
+        "P_SYS_STATE_009",
+        "P_SYS_STATE_011"
+      ]
+    },
+    {
+      "id": "network-agents",
+      "name": "Autonomous network operations agents",
+      "name_ko": "네트워크 장애 진단·자율 운영 에이전트",
+      "description": "Software agents diagnosing faults, using operational tools and changing network configurations. Multi-agent risks apply when operators deploy collaborating agents.",
+      "ids": [
+        "A_INT_CASCADE_001",
+        "A_INT_CASCADE_003",
+        "A_INT_CASCADE_004",
+        "A_INT_CASCADE_006",
+        "A_INT_CASCADE_007",
+        "A_INT_CASCADE_008",
+        "A_INT_CASCADE_009",
+        "A_INT_COORD_001",
+        "A_INT_COORD_002",
+        "A_INT_COORD_003",
+        "A_INT_COORD_004",
+        "A_INT_COORD_005",
+        "A_SYS_AUTH_001",
+        "A_SYS_AUTH_002",
+        "A_SYS_AUTH_003",
+        "A_SYS_AUTH_004",
+        "A_SYS_AUTH_005",
+        "A_SYS_AUTH_006",
+        "A_SYS_AUTH_009",
+        "A_SYS_AUTH_012",
+        "A_SYS_AUTH_016",
+        "A_SYS_AUTH_017",
+        "A_SYS_AUTH_019",
+        "A_SYS_AUTH_020",
+        "A_SYS_AUTH_021",
+        "A_SYS_AUTH_023",
+        "A_SYS_AUTH_025",
+        "A_SYS_GOAL_003",
+        "A_SYS_GOAL_005",
+        "A_SYS_GOAL_006",
+        "A_SYS_GOAL_009",
+        "A_SYS_GOAL_010",
+        "A_SYS_GOAL_011",
+        "A_SYS_GOAL_012",
+        "A_SYS_GOAL_013",
+        "A_SYS_GOAL_014",
+        "A_SYS_GOAL_016",
+        "A_SYS_GOAL_017",
+        "A_SYS_GOAL_018",
+        "A_SYS_GOAL_019",
+        "A_SYS_GOAL_020",
+        "A_SYS_GOAL_021",
+        "A_SYS_GOAL_022",
+        "A_SYS_GOAL_023",
+        "A_SYS_SELFCOR_001",
+        "A_SYS_SELFCOR_002",
+        "A_SYS_SELFCOR_003",
+        "A_SYS_TRACE_001",
+        "A_SYS_TRACE_002",
+        "A_SYS_TRACE_003",
+        "G_SOC_GOV_044",
+        "G_SYS_CONTEXT_001",
+        "G_SYS_CONTEXT_002",
+        "G_SYS_EVAL_069",
+        "G_SYS_INCONS_001",
+        "G_SYS_INPUT_001",
+        "G_SYS_INPUT_002",
+        "G_SYS_MISINFO_002",
+        "G_SYS_POLICY_006",
+        "G_SYS_POLICY_010",
+        "G_SYS_SECADV_005",
+        "G_SYS_SECADV_023",
+        "G_SYS_SECADV_044",
+        "G_SYS_SECADV_057",
+        "G_SYS_TRANS_002"
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "safety",
+      "name": "Physical safety",
+      "ids": [
+        "P_INT_SAFETY_001",
+        "P_INT_SAFETY_005",
+        "P_INT_SAFETY_006",
+        "P_INT_SAFETY_007",
+        "P_INT_SAFETY_008",
+        "P_INT_SAFETY_009",
+        "P_INT_SAFETY_010",
+        "P_INT_SAFETY_011",
+        "P_INT_SAFETY_012",
+        "P_INT_SAFETY_015",
+        "P_INT_SAFETY_016",
+        "P_INT_SAFETY_017",
+        "P_INT_SAFETY_018",
+        "P_INT_SAFETY_020",
+        "P_INT_SAFETY_021",
+        "P_INT_SAFETY_023",
+        "P_SYS_CONTROL_001",
+        "P_SYS_CONTROL_002",
+        "P_SYS_CONTROL_003",
+        "P_SYS_CONTROL_006",
+        "P_SYS_CONTROL_007",
+        "P_SYS_CONTROL_012",
+        "P_SYS_CONTROL_013",
+        "P_SYS_CONTROL_015",
+        "P_SYS_CONTROL_016",
+        "P_SYS_CONTROL_017",
+        "P_SYS_CONTROL_018",
+        "P_SYS_CONTROL_019",
+        "P_SYS_CONTROL_022",
+        "P_SYS_CONTROL_023",
+        "P_SYS_CONTROL_024",
+        "P_SYS_CONTROL_025",
+        "P_SYS_CONTROL_026",
+        "P_SYS_CONTROL_027",
+        "P_SYS_CONTROL_030",
+        "P_SYS_CONTROL_033",
+        "P_SYS_CONTROL_034",
+        "P_SYS_CONTROL_037",
+        "P_SYS_CONTROL_038",
+        "P_SYS_CONTROL_040",
+        "P_SYS_CONTROL_042",
+        "P_SYS_CONTROL_043",
+        "P_SYS_CONTROL_044",
+        "P_SYS_CONTROL_046",
+        "P_SYS_CONTROL_047",
+        "P_SYS_CONTROL_050",
+        "P_SYS_CONTROL_051",
+        "P_SYS_CONTROL_052",
+        "P_SYS_CONTROL_054",
+        "P_SYS_CONTROL_055",
+        "P_SYS_CONTROL_056",
+        "P_SYS_CONTROL_057",
+        "P_SYS_HARDWARE_002",
+        "P_SYS_HARDWARE_003",
+        "P_SYS_STATE_003",
+        "P_SYS_STATE_004",
+        "P_SYS_STATE_006",
+        "P_SYS_STATE_007",
+        "P_SYS_STATE_008",
+        "P_SYS_STATE_009",
+        "P_SYS_STATE_011"
+      ]
+    },
+    {
+      "id": "navigation",
+      "name": "Navigation & access",
+      "ids": [
+        "G_INT_UNETH_028",
+        "G_SOC_GOV_023",
+        "G_SYS_PERF_015",
+        "P_INT_SAFETY_021",
+        "P_SYS_CONTROL_026",
+        "P_SYS_CONTROL_027",
+        "P_SYS_CONTROL_054",
+        "P_SYS_STATE_006"
+      ]
+    },
+    {
+      "id": "manipulation",
+      "name": "Manipulation & contact",
+      "ids": [
+        "A_SYS_DECEPT_009",
+        "A_SYS_GOAL_006",
+        "A_SYS_GOAL_018",
+        "G_INT_ILLEGAL_003",
+        "G_INT_ILLEGAL_013",
+        "G_INT_POL_006",
+        "G_INT_POL_007",
+        "G_INT_PRIV_027",
+        "G_INT_REL_002",
+        "G_INT_REPR_010",
+        "G_INT_REPR_011",
+        "G_INT_REPR_012",
+        "G_INT_REPR_013",
+        "G_INT_REPR_014",
+        "G_INT_REPR_015",
+        "G_INT_REPR_016",
+        "G_INT_REPR_017",
+        "G_INT_REPR_018",
+        "G_INT_REPR_019",
+        "G_INT_REPR_020",
+        "G_INT_REPR_021",
+        "G_INT_REPR_022",
+        "G_INT_REPR_026",
+        "G_INT_REPR_028",
+        "G_INT_SELF_004",
+        "G_INT_UNETH_002",
+        "G_INT_UNETH_005",
+        "G_INT_UNETH_008",
+        "G_INT_UNETH_015",
+        "G_INT_UNETH_017",
+        "G_INT_UNETH_019",
+        "G_INT_UNETH_028",
+        "G_INT_UNETH_033",
+        "G_INT_VALUE_016",
+        "G_INT_VALUE_025",
+        "G_INT_VIOL_002",
+        "G_INT_WEAP_010",
+        "G_INT_WEAP_016",
+        "G_INT_WEAP_026",
+        "G_INT_WEAP_030",
+        "G_SOC_DEMOC_006",
+        "G_SOC_DEMOC_007",
+        "G_SOC_ECON_005",
+        "G_SOC_ECON_012",
+        "G_SOC_GOV_035",
+        "G_SOC_GOV_039",
+        "G_SYS_EVAL_033",
+        "G_SYS_EVAL_044",
+        "G_SYS_EVAL_077",
+        "G_SYS_PERF_016",
+        "G_SYS_SECADV_015",
+        "G_SYS_SECADV_016",
+        "G_SYS_SECADV_023",
+        "G_SYS_SECADV_043",
+        "G_SYS_SECADV_052",
+        "G_SYS_SECADV_057",
+        "G_SYS_TRANS_001",
+        "P_INT_SAFETY_006",
+        "P_INT_SAFETY_008",
+        "P_INT_SAFETY_009",
+        "P_INT_SAFETY_012",
+        "P_INT_SAFETY_015",
+        "P_INT_SAFETY_016",
+        "P_INT_SAFETY_018",
+        "P_INT_SAFETY_020",
+        "P_INT_SAFETY_021",
+        "P_INT_SAFETY_023",
+        "P_SYS_CONTROL_001",
+        "P_SYS_CONTROL_006",
+        "P_SYS_CONTROL_015",
+        "P_SYS_CONTROL_018",
+        "P_SYS_CONTROL_019",
+        "P_SYS_CONTROL_023",
+        "P_SYS_CONTROL_024",
+        "P_SYS_CONTROL_026",
+        "P_SYS_CONTROL_033",
+        "P_SYS_CONTROL_042",
+        "P_SYS_CONTROL_043",
+        "P_SYS_CONTROL_046",
+        "P_SYS_CONTROL_047",
+        "P_SYS_CONTROL_050",
+        "P_SYS_CONTROL_056",
+        "P_SYS_CONTROL_057",
+        "P_SYS_STATE_003",
+        "P_SYS_STATE_007",
+        "P_SYS_STATE_011"
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "Privacy & surveillance",
+      "ids": [
+        "G_INT_PRIV_001",
+        "G_INT_PRIV_002",
+        "G_INT_PRIV_003",
+        "G_INT_PRIV_005",
+        "G_INT_PRIV_007",
+        "G_INT_PRIV_008",
+        "G_INT_PRIV_009",
+        "G_INT_PRIV_010",
+        "G_INT_PRIV_012",
+        "G_INT_PRIV_013",
+        "G_INT_PRIV_014",
+        "G_INT_PRIV_015",
+        "G_INT_PRIV_016",
+        "G_INT_PRIV_017",
+        "G_INT_PRIV_018",
+        "G_INT_PRIV_019",
+        "G_INT_PRIV_020",
+        "G_INT_PRIV_021",
+        "G_INT_PRIV_022",
+        "G_INT_PRIV_024",
+        "G_INT_PRIV_025",
+        "G_INT_PRIV_027",
+        "G_INT_PRIV_028",
+        "G_INT_PRIV_029",
+        "G_INT_PRIV_030",
+        "G_INT_PRIV_031"
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Cybersecurity",
+      "ids": [
+        "A_SYS_AUTH_001",
+        "A_SYS_AUTH_005",
+        "A_SYS_AUTH_025",
+        "G_SYS_SECADV_001",
+        "G_SYS_SECADV_002",
+        "G_SYS_SECADV_004",
+        "G_SYS_SECADV_005",
+        "G_SYS_SECADV_006",
+        "G_SYS_SECADV_009",
+        "G_SYS_SECADV_010",
+        "G_SYS_SECADV_011",
+        "G_SYS_SECADV_012",
+        "G_SYS_SECADV_014",
+        "G_SYS_SECADV_015",
+        "G_SYS_SECADV_016",
+        "G_SYS_SECADV_018",
+        "G_SYS_SECADV_019",
+        "G_SYS_SECADV_020",
+        "G_SYS_SECADV_021",
+        "G_SYS_SECADV_023",
+        "G_SYS_SECADV_025",
+        "G_SYS_SECADV_026",
+        "G_SYS_SECADV_028",
+        "G_SYS_SECADV_029",
+        "G_SYS_SECADV_038",
+        "G_SYS_SECADV_042",
+        "G_SYS_SECADV_043",
+        "G_SYS_SECADV_044",
+        "G_SYS_SECADV_046",
+        "G_SYS_SECADV_049",
+        "G_SYS_SECADV_050",
+        "G_SYS_SECADV_052",
+        "G_SYS_SECADV_053",
+        "G_SYS_SECADV_055",
+        "G_SYS_SECADV_057",
+        "G_SYS_SECADV_058",
+        "G_SYS_SECADV_059",
+        "G_SYS_SECADV_060",
+        "G_SYS_SECADV_061",
+        "P_INT_TAMPER_002",
+        "P_INT_TAMPER_003"
+      ]
+    },
+    {
+      "id": "oversight",
+      "name": "Authority & oversight",
+      "ids": [
+        "A_INT_COLLUSION_002",
+        "A_INT_COLLUSION_003",
+        "A_SYS_AUTH_001",
+        "A_SYS_AUTH_002",
+        "A_SYS_AUTH_003",
+        "A_SYS_AUTH_004",
+        "A_SYS_AUTH_005",
+        "A_SYS_AUTH_006",
+        "A_SYS_AUTH_007",
+        "A_SYS_AUTH_009",
+        "A_SYS_AUTH_010",
+        "A_SYS_AUTH_012",
+        "A_SYS_AUTH_016",
+        "A_SYS_AUTH_017",
+        "A_SYS_AUTH_019",
+        "A_SYS_AUTH_020",
+        "A_SYS_AUTH_021",
+        "A_SYS_AUTH_023",
+        "A_SYS_AUTH_024",
+        "A_SYS_AUTH_025",
+        "A_SYS_DECEPT_003",
+        "A_SYS_DECEPT_005",
+        "A_SYS_DECEPT_009",
+        "A_SYS_GOAL_007",
+        "A_SYS_GOAL_011",
+        "A_SYS_GOAL_013",
+        "A_SYS_TRACE_001",
+        "A_SYS_TRACE_002",
+        "A_SYS_TRACE_003",
+        "G_INT_COPY_009",
+        "G_INT_COPY_011",
+        "G_INT_PRIV_029",
+        "G_INT_WEAP_030",
+        "G_SOC_GOV_002",
+        "G_SOC_GOV_005",
+        "G_SOC_GOV_006",
+        "G_SOC_GOV_008",
+        "G_SOC_GOV_009",
+        "G_SOC_GOV_010",
+        "G_SOC_GOV_011",
+        "G_SOC_GOV_015",
+        "G_SOC_GOV_016",
+        "G_SOC_GOV_017",
+        "G_SOC_GOV_020",
+        "G_SOC_GOV_021",
+        "G_SOC_GOV_022",
+        "G_SOC_GOV_023",
+        "G_SOC_GOV_024",
+        "G_SOC_GOV_025",
+        "G_SOC_GOV_026",
+        "G_SOC_GOV_027",
+        "G_SOC_GOV_029",
+        "G_SOC_GOV_030",
+        "G_SOC_GOV_033",
+        "G_SOC_GOV_034",
+        "G_SOC_GOV_035",
+        "G_SOC_GOV_036",
+        "G_SOC_GOV_039",
+        "G_SOC_GOV_040",
+        "G_SOC_GOV_041",
+        "G_SOC_GOV_042",
+        "G_SOC_GOV_043",
+        "G_SOC_GOV_044",
+        "G_SOC_GOV_045",
+        "G_SOC_GOV_046",
+        "G_SYS_EVAL_003",
+        "G_SYS_EVAL_016",
+        "G_SYS_POLICY_001",
+        "G_SYS_POLICY_002",
+        "G_SYS_POLICY_003",
+        "G_SYS_POLICY_004",
+        "G_SYS_POLICY_006",
+        "G_SYS_POLICY_008",
+        "G_SYS_POLICY_010",
+        "G_SYS_SECADV_005",
+        "G_SYS_SECADV_015",
+        "G_SYS_SECADV_016",
+        "G_SYS_SECADV_023",
+        "G_SYS_SECADV_044",
+        "G_SYS_SECADV_057",
+        "G_SYS_TRANS_002",
+        "G_SYS_TRANS_021",
+        "P_INT_SAFETY_011",
+        "P_INT_SAFETY_023",
+        "P_INT_TAMPER_002",
+        "P_SYS_CONTROL_042"
+      ]
+    },
+    {
+      "id": "goals",
+      "name": "Goals & tool use",
+      "ids": [
+        "A_INT_CASCADE_001",
+        "A_INT_CASCADE_004",
+        "A_INT_CASCADE_006",
+        "A_INT_CASCADE_007",
+        "A_INT_CASCADE_008",
+        "A_INT_CONFLICT_001",
+        "A_INT_CONFLICT_002",
+        "A_INT_CONFLICT_003",
+        "A_INT_COORD_002",
+        "A_INT_COORD_004",
+        "A_INT_COORD_005",
+        "A_SYS_AUTH_001",
+        "A_SYS_AUTH_004",
+        "A_SYS_AUTH_005",
+        "A_SYS_AUTH_010",
+        "A_SYS_AUTH_021",
+        "A_SYS_AUTH_023",
+        "A_SYS_DECEPT_002",
+        "A_SYS_GOAL_003",
+        "A_SYS_GOAL_005",
+        "A_SYS_GOAL_006",
+        "A_SYS_GOAL_007",
+        "A_SYS_GOAL_009",
+        "A_SYS_GOAL_010",
+        "A_SYS_GOAL_011",
+        "A_SYS_GOAL_012",
+        "A_SYS_GOAL_013",
+        "A_SYS_GOAL_014",
+        "A_SYS_GOAL_016",
+        "A_SYS_GOAL_017",
+        "A_SYS_GOAL_018",
+        "A_SYS_GOAL_019",
+        "A_SYS_GOAL_020",
+        "A_SYS_GOAL_021",
+        "A_SYS_GOAL_022",
+        "A_SYS_GOAL_023",
+        "A_SYS_SELFCOR_001",
+        "A_SYS_TRACE_002",
+        "G_INT_PRIV_008",
+        "G_SYS_EVAL_019",
+        "G_SYS_SECADV_005",
+        "G_SYS_SECADV_006",
+        "G_SYS_SECADV_046",
+        "P_SYS_CONTROL_002",
+        "P_SYS_CONTROL_022",
+        "P_SYS_CONTROL_056"
+      ]
+    },
+    {
+      "id": "coordination",
+      "name": "Coordination & connectivity",
+      "ids": [
+        "A_INT_CASCADE_001",
+        "A_INT_CASCADE_003",
+        "A_INT_CASCADE_004",
+        "A_INT_CASCADE_005",
+        "A_INT_CASCADE_006",
+        "A_INT_CASCADE_007",
+        "A_INT_CASCADE_008",
+        "A_INT_CASCADE_009",
+        "A_INT_COORD_001",
+        "A_INT_COORD_002",
+        "A_INT_COORD_003",
+        "A_INT_COORD_004",
+        "A_INT_COORD_005",
+        "G_SYS_PERF_010",
+        "G_SYS_PERF_020",
+        "G_SYS_SECADV_016",
+        "G_SYS_SECADV_021",
+        "G_SYS_SECADV_029",
+        "P_SYS_CONTROL_001",
+        "P_SYS_CONTROL_007",
+        "P_SYS_CONTROL_034",
+        "P_SYS_CONTROL_040",
+        "P_SYS_CONTROL_044"
+      ]
+    },
+    {
+      "id": "reliability",
+      "name": "Reliability & evaluation",
+      "ids": [
+        "A_SYS_SELFCOR_001",
+        "A_SYS_SELFCOR_002",
+        "A_SYS_SELFCOR_003",
+        "G_SYS_CONTEXT_001",
+        "G_SYS_CONTEXT_002",
+        "G_SYS_CONTEXT_003",
+        "G_SYS_CONTEXT_004",
+        "G_SYS_CONTEXT_005",
+        "G_SYS_CONTEXT_006",
+        "G_SYS_CONTEXT_007",
+        "G_SYS_CONTEXT_008",
+        "G_SYS_CONTEXT_009",
+        "G_SYS_CONTEXT_011",
+        "G_SYS_CONTEXT_012",
+        "G_SYS_CONTEXT_013",
+        "G_SYS_EVAL_001",
+        "G_SYS_EVAL_002",
+        "G_SYS_EVAL_003",
+        "G_SYS_EVAL_004",
+        "G_SYS_EVAL_005",
+        "G_SYS_EVAL_006",
+        "G_SYS_EVAL_007",
+        "G_SYS_EVAL_008",
+        "G_SYS_EVAL_009",
+        "G_SYS_EVAL_012",
+        "G_SYS_EVAL_013",
+        "G_SYS_EVAL_014",
+        "G_SYS_EVAL_016",
+        "G_SYS_EVAL_017",
+        "G_SYS_EVAL_019",
+        "G_SYS_EVAL_021",
+        "G_SYS_EVAL_022",
+        "G_SYS_EVAL_023",
+        "G_SYS_EVAL_024",
+        "G_SYS_EVAL_025",
+        "G_SYS_EVAL_026",
+        "G_SYS_EVAL_027",
+        "G_SYS_EVAL_028",
+        "G_SYS_EVAL_029",
+        "G_SYS_EVAL_031",
+        "G_SYS_EVAL_032",
+        "G_SYS_EVAL_033",
+        "G_SYS_EVAL_035",
+        "G_SYS_EVAL_036",
+        "G_SYS_EVAL_037",
+        "G_SYS_EVAL_038",
+        "G_SYS_EVAL_039",
+        "G_SYS_EVAL_040",
+        "G_SYS_EVAL_041",
+        "G_SYS_EVAL_042",
+        "G_SYS_EVAL_043",
+        "G_SYS_EVAL_044",
+        "G_SYS_EVAL_045",
+        "G_SYS_EVAL_046",
+        "G_SYS_EVAL_048",
+        "G_SYS_EVAL_052",
+        "G_SYS_EVAL_054",
+        "G_SYS_EVAL_060",
+        "G_SYS_EVAL_062",
+        "G_SYS_EVAL_065",
+        "G_SYS_EVAL_066",
+        "G_SYS_EVAL_068",
+        "G_SYS_EVAL_069",
+        "G_SYS_EVAL_070",
+        "G_SYS_EVAL_071",
+        "G_SYS_EVAL_072",
+        "G_SYS_EVAL_073",
+        "G_SYS_EVAL_074",
+        "G_SYS_EVAL_075",
+        "G_SYS_EVAL_076",
+        "G_SYS_EVAL_077",
+        "G_SYS_INCONS_001",
+        "G_SYS_INCONS_002",
+        "G_SYS_INCONS_003",
+        "G_SYS_INPUT_001",
+        "G_SYS_INPUT_002",
+        "G_SYS_INPUT_003",
+        "G_SYS_MISINFO_002",
+        "G_SYS_MISINFO_003",
+        "G_SYS_MISINFO_004",
+        "G_SYS_MISINFO_006",
+        "G_SYS_MISINFO_007",
+        "G_SYS_MISINFO_008",
+        "G_SYS_MISINFO_009",
+        "G_SYS_MISINFO_010",
+        "G_SYS_MISINFO_011",
+        "G_SYS_MISINFO_012",
+        "G_SYS_MISINFO_013",
+        "G_SYS_MISINFO_015",
+        "G_SYS_MISINFO_016",
+        "G_SYS_MISINFO_017",
+        "G_SYS_MISINFO_018",
+        "G_SYS_MISINFO_019",
+        "G_SYS_MISINFO_021",
+        "G_SYS_MISINFO_022",
+        "G_SYS_MISINFO_023",
+        "G_SYS_PERF_001",
+        "G_SYS_PERF_002",
+        "G_SYS_PERF_003",
+        "G_SYS_PERF_004",
+        "G_SYS_PERF_005",
+        "G_SYS_PERF_006",
+        "G_SYS_PERF_007",
+        "G_SYS_PERF_008",
+        "G_SYS_PERF_009",
+        "G_SYS_PERF_010",
+        "G_SYS_PERF_011",
+        "G_SYS_PERF_012",
+        "G_SYS_PERF_013",
+        "G_SYS_PERF_014",
+        "G_SYS_PERF_015",
+        "G_SYS_PERF_016",
+        "G_SYS_PERF_017",
+        "G_SYS_PERF_018",
+        "G_SYS_PERF_019",
+        "G_SYS_PERF_020",
+        "G_SYS_PERF_021"
+      ]
+    },
+    {
+      "id": "fairness",
+      "name": "Fairness & accessibility",
+      "ids": [
+        "G_INT_ALLOC_001",
+        "G_INT_ALLOC_002",
+        "G_INT_ALLOC_003",
+        "G_INT_ALLOC_004",
+        "G_INT_ALLOC_005",
+        "G_INT_ALLOC_006",
+        "G_INT_ALLOC_007",
+        "G_INT_ALLOC_009",
+        "G_INT_ALLOC_010",
+        "G_INT_ALLOC_012",
+        "G_INT_ALLOC_013",
+        "G_INT_ALLOC_015",
+        "G_INT_WEAP_032",
+        "G_SYS_CONTEXT_012",
+        "G_SYS_EVAL_076",
+        "G_SYS_OREF_003",
+        "G_SYS_PERF_015",
+        "P_INT_SAFETY_020"
+      ]
+    },
+    {
+      "id": "work",
+      "name": "Work & accountability",
+      "ids": [
+        "A_SYS_TRACE_001",
+        "A_SYS_TRACE_002",
+        "A_SYS_TRACE_003",
+        "G_INT_PRIV_002",
+        "G_INT_PRIV_030",
+        "G_INT_PRIV_031",
+        "G_SOC_ECON_001",
+        "G_SOC_ECON_002",
+        "G_SOC_ECON_003",
+        "G_SOC_ECON_005",
+        "G_SOC_ECON_006",
+        "G_SOC_ECON_008",
+        "G_SOC_ECON_010",
+        "G_SOC_ECON_012",
+        "G_SOC_GOV_039"
+      ]
+    },
+    {
+      "id": "relationships",
+      "name": "Trust & relationships",
+      "ids": [
+        "G_INT_ANTH_001",
+        "G_INT_ANTH_002",
+        "G_INT_ANTH_003",
+        "G_INT_ANTH_004",
+        "G_INT_ANTH_005",
+        "G_INT_ANTH_006",
+        "G_INT_ANTH_008",
+        "G_INT_REL_001",
+        "G_INT_REL_002",
+        "G_INT_REL_004",
+        "G_INT_REL_006",
+        "G_INT_REL_007",
+        "G_INT_REL_008"
+      ]
+    }
+  ]
+}
