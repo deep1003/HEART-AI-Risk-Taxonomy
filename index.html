@@ -6,7 +6,7 @@
   <meta name="description" content="HEART is a bilingual, evidence-linked taxonomy of risks across General, Agentic, and Physical AI.">
   <title>HEART | Hybrid Evidence-based AI Risk Taxonomy</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/styles-v2.css">
 </head>
 <body>
   <header class="site-header">
@@ -15,7 +15,7 @@
       <span><strong>HEART</strong><small>Hybrid Evidence-based AI Risk Taxonomy</small></span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#explore">Explore</a>
+      <a href="#explore">Taxonomy</a>
       <a href="#dataset">Dataset</a>
       <a href="#about">About</a>
     </nav>
@@ -23,9 +23,11 @@
 
   <main>
     <section class="hero" id="about">
-      <p class="eyebrow">Evidence-linked AI risk classification</p>
-      <h1>A common risk language for General, Agentic, and Physical AI</h1>
-      <p class="hero-copy">HEART organises 622 bilingual risk cards within a stable five-level hierarchy. Each L4 card links a precise risk definition to source evidence and a direct quotation.</p>
+      <div class="hero-copy-block">
+        <p class="eyebrow">Hybrid Evidence-based AI Risk Taxonomy</p>
+        <h1>HEART for General, Agentic, and Physical AI</h1>
+        <p class="hero-copy">An evidence-linked taxonomy of 622 bilingual risk cards across a stable five-level hierarchy.</p>
+      </div>
       <div class="stats" aria-label="Dataset summary">
         <div><strong id="card-count">622</strong><span>L4 risk cards</span></div>
         <div><strong id="l3-count">47</strong><span>L3 categories</span></div>
@@ -34,17 +36,32 @@
     </section>
 
     <section class="explorer" id="explore">
-      <div class="section-heading">
-        <div><p class="eyebrow">Risk card explorer</p><h2>Browse the taxonomy</h2></div>
-        <p id="result-count" aria-live="polite">Loading cards</p>
+      <button id="tree-toggle" class="tree-toggle" type="button" aria-expanded="false" aria-controls="taxonomy-panel">Open taxonomy navigator</button>
+      <div class="explorer-layout">
+        <aside id="taxonomy-panel" class="taxonomy-panel" aria-label="Taxonomy navigator">
+          <div class="taxonomy-panel-head">
+            <div><p class="eyebrow">Navigator</p><h2>Taxonomy tree</h2></div>
+            <button id="tree-close" type="button" aria-label="Close taxonomy navigator">Close</button>
+          </div>
+          <button id="show-all" class="tree-root active" type="button"><span>HEART</span><b>622</b><small>L0 · Responsible AI</small></button>
+          <div id="taxonomy-tree" class="taxonomy-tree"></div>
+        </aside>
+
+        <div class="explorer-main">
+          <div class="section-heading">
+            <div><p class="eyebrow">L4 risk card explorer</p><h2 id="active-heading">All risk cards</h2></div>
+            <p id="result-count" aria-live="polite">Loading cards</p>
+          </div>
+          <div class="controls">
+            <label class="search-label"><span>Search</span><input id="search" type="search" placeholder="Search by ID, name, definition, or evidence" autocomplete="off"></label>
+            <label><span>Domain</span><select id="domain-filter"><option value="">All domains</option></select></label>
+            <label><span>L3 category</span><select id="l3-filter"><option value="">All L3 categories</option></select></label>
+          </div>
+          <div id="active-path" class="active-path" hidden></div>
+          <div id="card-grid" class="card-grid" aria-busy="true"></div>
+          <button id="load-more" class="load-more" type="button" hidden>Load more</button>
+        </div>
       </div>
-      <div class="controls">
-        <label class="search-label"><span>Search</span><input id="search" type="search" placeholder="Search by ID, name, definition, or evidence" autocomplete="off"></label>
-        <label><span>Domain</span><select id="domain-filter"><option value="">All domains</option></select></label>
-        <label><span>L3 category</span><select id="l3-filter"><option value="">All L3 categories</option></select></label>
-      </div>
-      <div id="card-grid" class="card-grid" aria-busy="true"></div>
-      <button id="load-more" class="load-more" type="button" hidden>Load more</button>
     </section>
 
     <section class="dataset" id="dataset">
