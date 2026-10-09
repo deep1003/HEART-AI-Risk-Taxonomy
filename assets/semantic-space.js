@@ -18,8 +18,8 @@
   }
   function edgePath(p, q) {
     const dx = q.x - p.x, dy = q.y - p.y;
-    const cx = (p.x + q.x)/2 - dy*.12;
-    const cy = (p.y + q.y)/2 + dx*.12;
+    const cx = (p.x + q.x)/2 - dy*.22;
+    const cy = (p.y + q.y)/2 + dx*.22;
     return `M ${p.x} ${p.y} Q ${cx} ${cy} ${q.x} ${q.y}`;
   }
   if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath};
