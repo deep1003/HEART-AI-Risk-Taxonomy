@@ -25284,20 +25284,6 @@
       ]
     },
     {
-      "id": "self-harm",
-      "name": "Self-harm",
-      "ids": [
-        "G_INT_SELF_001",
-        "G_INT_SELF_002",
-        "G_INT_SELF_003",
-        "G_INT_SELF_004",
-        "G_INT_SELF_005",
-        "G_INT_SELF_007",
-        "G_INT_SELF_008",
-        "G_SYS_OREF_003"
-      ]
-    },
-    {
       "id": "security",
       "name": "Cybersecurity",
       "ids": [
@@ -25342,78 +25328,6 @@
         "G_SYS_SECADV_061",
         "P_INT_TAMPER_002",
         "P_INT_TAMPER_003"
-      ]
-    },
-    {
-      "id": "democracy",
-      "name": "Democracy",
-      "ids": [
-        "A_INT_CONFLICT_001",
-        "A_INT_CONFLICT_003",
-        "G_INT_POL_001",
-        "G_INT_POL_002",
-        "G_INT_POL_003",
-        "G_INT_POL_005",
-        "G_INT_POL_006",
-        "G_INT_POL_007",
-        "G_INT_POL_008",
-        "G_INT_REPR_002",
-        "G_INT_WEAP_002",
-        "G_INT_WEAP_027",
-        "G_INT_WEAP_031",
-        "G_SOC_DEMOC_001",
-        "G_SOC_DEMOC_002",
-        "G_SOC_DEMOC_003",
-        "G_SOC_DEMOC_005",
-        "G_SOC_DEMOC_006",
-        "G_SOC_DEMOC_007",
-        "G_SOC_DEMOC_008",
-        "G_SOC_DEMOC_010",
-        "G_SOC_DEMOC_011",
-        "G_SYS_EVAL_006",
-        "G_SYS_EVAL_032",
-        "G_SYS_EVAL_037",
-        "G_SYS_EVAL_041",
-        "G_SYS_MISINFO_015",
-        "G_SYS_PERF_019"
-      ]
-    },
-    {
-      "id": "education",
-      "name": "Education",
-      "ids": [
-        "G_INT_PRIV_024",
-        "G_INT_REPR_013",
-        "G_INT_UNETH_003",
-        "G_SOC_CULT_018",
-        "G_SOC_ECON_008",
-        "G_SYS_MISINFO_016",
-        "G_SYS_OREF_002"
-      ]
-    },
-    {
-      "id": "labour",
-      "name": "Labour",
-      "ids": [
-        "G_INT_ALLOC_013",
-        "G_INT_PRIV_002",
-        "G_INT_PRIV_018",
-        "G_INT_PRIV_024",
-        "G_INT_PRIV_030",
-        "G_INT_PRIV_031",
-        "G_INT_UNETH_014",
-        "G_INT_VALUE_010",
-        "G_SOC_ECON_001",
-        "G_SOC_ECON_002",
-        "G_SOC_ECON_003",
-        "G_SOC_ECON_005",
-        "G_SOC_ECON_006",
-        "G_SOC_ECON_008",
-        "G_SOC_ECON_010",
-        "G_SOC_ECON_012",
-        "G_SOC_POWER_015",
-        "G_SOC_POWER_026",
-        "G_SOC_POWER_028"
       ]
     },
     {
@@ -26248,6 +26162,62 @@
         "P_SYS_STATE_007",
         "P_SYS_STATE_008",
         "P_SYS_STATE_009",
+        "P_SYS_STATE_011"
+      ]
+    },
+    {
+      "id": "agi",
+      "name": "AGI",
+      "ids": [
+        "A_SYS_AUTH_024",
+        "G_SYS_OEXT_006"
+      ]
+    },
+    {
+      "id": "asi",
+      "name": "ASI",
+      "ids": [
+        "A_SYS_GOAL_007"
+      ]
+    },
+    {
+      "id": "humanoid",
+      "name": "Humanoid",
+      "ids": [
+        "G_SOC_ECON_002",
+        "G_SOC_GOV_039",
+        "G_SYS_EVAL_004",
+        "G_SYS_SECADV_060",
+        "P_INT_SAFETY_001",
+        "P_INT_SAFETY_007",
+        "P_INT_SAFETY_008",
+        "P_INT_SAFETY_009",
+        "P_INT_SAFETY_011",
+        "P_INT_SAFETY_015",
+        "P_INT_SAFETY_021",
+        "P_INT_SAFETY_023",
+        "P_SYS_CONTROL_012",
+        "P_SYS_CONTROL_013",
+        "P_SYS_CONTROL_017",
+        "P_SYS_CONTROL_023",
+        "P_SYS_CONTROL_024",
+        "P_SYS_CONTROL_025",
+        "P_SYS_CONTROL_026",
+        "P_SYS_CONTROL_027",
+        "P_SYS_CONTROL_030",
+        "P_SYS_CONTROL_033",
+        "P_SYS_CONTROL_042",
+        "P_SYS_CONTROL_043",
+        "P_SYS_CONTROL_044",
+        "P_SYS_CONTROL_047",
+        "P_SYS_CONTROL_054",
+        "P_SYS_CONTROL_055",
+        "P_SYS_CONTROL_057",
+        "P_SYS_HARDWARE_003",
+        "P_SYS_STATE_004",
+        "P_SYS_STATE_006",
+        "P_SYS_STATE_007",
+        "P_SYS_STATE_008",
         "P_SYS_STATE_011"
       ]
     }

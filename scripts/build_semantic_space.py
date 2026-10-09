@@ -98,11 +98,7 @@ TOPICS = [
     {"id": "misuse", "name": "Misuse", "prefixes": ["G_INT_ILLEGAL", "G_INT_WEAP"], "terms": ["misuse", "malicious use", "malicious actor", "criminal", "fraud", "abuse of", "weaponiz", "weaponis"]},
     {"id": "mis-disinformation", "name": "Mis/disinformation", "prefixes": ["G_SYS_MISINFO"], "terms": ["misinformation", "disinformation", "false information", "fake news", "deepfake"]},
     {"id": "hate-unfairness", "name": "Hate and unfairness", "prefixes": ["G_INT_ALLOC", "G_INT_REPR"], "terms": ["hate speech", "hateful", "discriminat", "unfair"]},
-    {"id": "self-harm", "name": "Self-harm", "prefixes": ["G_INT_SELF"], "terms": ["self-harm", "suicide", "suicidal"]},
     {"id": "security", "name": "Cybersecurity", "prefixes": ["G_SYS_SECADV", "P_INT_TAMPER"], "ids": ["A_SYS_AUTH_001", "A_SYS_AUTH_005", "A_SYS_AUTH_025"]},
-    {"id": "democracy", "name": "Democracy", "prefixes": ["G_SOC_DEMOC", "G_INT_POL"], "terms": ["democra", "election", "voting", "civic"]},
-    {"id": "education", "name": "Education", "terms": ["education", "educational", "school", "student", "classroom", "academic", "pedagog", "learning outcomes"]},
-    {"id": "labour", "name": "Labour", "prefixes": ["G_SOC_ECON"], "terms": ["labour", "labor market", "worker", "workplace", "employment", "wage", "job displacement"]},
     {"id": "human-rights", "name": "Human rights", "prefixes": ["G_INT_ALLOC", "G_INT_REPR", "G_INT_PRIV", "G_SYS_CONTEST"], "terms": ["human rights", "fundamental rights", "civil liberties", "freedom of", "human dignity"]},
     {"id": "out-of-control", "name": "Out of control", "prefixes": ["A_SYS_AUTH", "A_SYS_GOAL", "P_SYS_CONTROL"], "terms": ["loss of control", "uncontroll", "shutdown", "emergency stop", "runaway"]},
     {"id": "prompt-injection", "name": "Prompt injection", "terms": ["prompt injection", "prompt-injection", "instruction injection", "indirect injection"]},
@@ -110,6 +106,9 @@ TOPICS = [
     {"id": "general-ai", "name": "General AI", "l1": "L1_G"},
     {"id": "agentic-ai", "name": "Agentic AI", "l1": "L1_A"},
     {"id": "physical-ai", "name": "Physical AI", "l1": "L1_P"},
+    {"id": "agi", "name": "AGI", "terms": ["artificial general intelligence", "general intelligence"], "patterns": [r"\bagi\b"]},
+    {"id": "asi", "name": "ASI", "terms": ["superintelligen", "super-intelligen", "super intelligen"], "patterns": [r"\basi\b"]},
+    {"id": "humanoid", "name": "Humanoid", "terms": ["humanoid"]},
 ]
 
 
@@ -127,7 +126,8 @@ def match(card, rule):
         return False
     return (card["L4_ID"] in rule.get("ids", [])
             or any(card["L4_ID"].startswith(prefix + "_") for prefix in rule.get("prefixes", []))
-            or any(term in text for term in rule.get("terms", [])))
+            or any(term in text for term in rule.get("terms", []))
+            or any(re.search(pattern, text) for pattern in rule.get("patterns", [])))
 
 
 def main():

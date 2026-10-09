@@ -43,7 +43,7 @@ assert(activeIds(data, {scenario:'home-humanoids'}).has('P_SYS_CONTROL_046'));
 assert(!activeIds(data, {scenario:'home-humanoids'}).has('G_INT_PRIV_031'));
 assert(activeIds(data, {scenario:'network-agents', keyword:'security'}).has('A_SYS_AUTH_001'));
 assert.equal(activeIds(data, {scenario:'missing'}).size, 0);
-assert.deepEqual(data.keywords.map(item => item.name), ['Misuse', 'Mis/disinformation', 'Hate and unfairness', 'Self-harm', 'Cybersecurity', 'Democracy', 'Education', 'Labour', 'Human rights', 'Out of control', 'Prompt injection', 'Human-robot interaction', 'General AI', 'Agentic AI', 'Physical AI']);
+assert.deepEqual(data.keywords.map(item => item.name), ['Misuse', 'Mis/disinformation', 'Hate and unfairness', 'Cybersecurity', 'Human rights', 'Out of control', 'Prompt injection', 'Human-robot interaction', 'General AI', 'Agentic AI', 'Physical AI', 'AGI', 'ASI', 'Humanoid']);
 for (const [keyword,domain] of [['general-ai','L1_G'],['agentic-ai','L1_A'],['physical-ai','L1_P']]) {
   assert.deepEqual([...activeIds(data,{keyword})].sort(), cards.filter(card=>card.L1_ID===domain).map(card=>card.L4_ID).sort());
 }
