@@ -96,6 +96,11 @@ def main():
                          'ids':[cards[i]['L4_ID'] for i in sorted(members)],
                          'dominant_l3': [{'name':name, 'count':count} for name,count in dominant]})
     degrees = dict(graph.degree())
+    strengths = dict.fromkeys(graph.nodes(), 0.0)
+    for a,b,attrs in graph.edges(data=True):
+        weight = round(attrs['weight'],6)
+        strengths[a] += weight
+        strengths[b] += weight
     result = {'schema_version':'2.0', 'card_count':len(cards), 'source_file':source.name,
               'source_sha256':hashlib.sha256(raw).hexdigest(),
               'method': {'embedding_model':MODEL, 'model_revision':REVISION, 'embedding_dimensions':384,
@@ -103,7 +108,7 @@ def main():
                          'projection':'Weighted ForceAtlas2 network layout, no clipping of outlying nodes',
                          'clustering':'Weighted Louvain graph communities, resolution 1.0, seed 23',
                          'edge_rule':'Union of each card’s eight closest cosine neighbours, cosine >= 0.45; no artificial links',
-                         'node_size':'Square-root scaled graph degree, not severity or probability',
+                         'node_size':'Weighted degree (strength): sum of published incident cosine weights; area linearly scaled over the full-network min/max to radii 3 to 15 display pixels. Fixed across filters, not severity or probability.',
                          'scenario_membership':'Editorial overlapping conditional applicability lenses',
                          'random_seed':SEED, 'edge_count':graph.number_of_edges(),
                          'isolated_nodes':len(list(nx.isolates(graph))),
@@ -112,7 +117,7 @@ def main():
                          'text_sha256':text_hash, 'embedding_sha256':hashlib.sha256(vectors_path.read_bytes()).hexdigest(),
                          'limitations':'Exploratory semantic proximity only, not causal propagation or validated deployment applicability. Graph communities are not reassigned L3 categories. No EM is run.'},
               'points':[{'id':card['L4_ID'], 'x':round(float(xy[i,0]),7), 'y':round(float(xy[i,1]),7),
-                         'cluster':f'community-{membership[i]}', 'degree':degrees[i]} for i,card in enumerate(cards)],
+                         'cluster':f'community-{membership[i]}', 'degree':degrees[i], 'strength':round(strengths[i],6)} for i,card in enumerate(cards)],
               'edges':[[cards[a]['L4_ID'],cards[b]['L4_ID'],round(attrs['weight'],6)]
                        for a,b,attrs in sorted(graph.edges(data=True))],
               'clusters':clusters,

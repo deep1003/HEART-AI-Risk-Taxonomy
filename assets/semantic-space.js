@@ -12,7 +12,11 @@
     }
     return ids;
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape};
+  function nodeRadius(strength, minimum, maximum) {
+    const ratio = maximum > minimum ? Math.max(0,Math.min(1,(strength-minimum)/(maximum-minimum))) : .5;
+    return Math.sqrt(9 + (225-9)*ratio);
+  }
+  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius};
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
@@ -84,7 +88,8 @@
     get('semantic-scenarios').innerHTML = data.scenarios.map(item => `<button class="semantic-community" type="button" aria-pressed="false" data-scenario="${escape(item.id)}"><strong>${escape(item.name)}</strong><small lang="ko">${escape(item.name_ko)}</small><small>${item.ids.length} potentially relevant risks</small></button>`).join('');
     get('semantic-clusters').innerHTML = data.clusters.map(item => `<button class="semantic-community" type="button" aria-pressed="false" data-cluster="${escape(item.id)}"><i class="community-dot" style="background:${escape(item.color)}"></i>${escape(item.name)} <small>${item.ids.length} risks</small></button>`).join('');
     get('semantic-clusters').parentElement.open = !window.matchMedia('(max-width:760px)').matches;
-    get('semantic-legend').textContent = `Colour: ${data.clusters.length} semantic communities · Node size: network degree · Lines: cosine-weighted semantic proximity · Pale nodes: inactive`;
+    const strengths = data.points.map(point=>point.strength);
+    get('semantic-legend').textContent = `Colour: ${data.clusters.length} semantic communities · Node size: weighted degree (sum of link weights), ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)} · Diameter: 6–30 px at 100% zoom · Pale nodes: inactive`;
     get('semantic-keywords').innerHTML = `<button type="button" aria-pressed="true" data-keyword="">All keywords</button>` + data.keywords.map(item => `<button type="button" aria-pressed="false" data-keyword="${escape(item.id)}">${escape(item.name)}</button>`).join('');
     for (const [container, kind] of [['semantic-scenarios','scenario'],['semantic-clusters','cluster'],['semantic-keywords','keyword']]) {
       get(container).addEventListener('click', event => {
@@ -144,12 +149,14 @@
       markup += `<line class="semantic-edge${incident?' selected-edge':''}" data-source="${escape(a)}" data-target="${escape(b)}" x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" style="opacity:${incident?.7:.08+weight*.12};stroke-width:${incident?1.8:.4+weight*.5}"/>`;
     }
     const showContext = get('semantic-context').checked;
+    const strengths = data.points.map(point=>point.strength);
+    const minStrength = Math.min(...strengths), maxStrength = Math.max(...strengths);
     const points = [...data.points].sort((a,b) => Number(enabledIds.has(a.id)) - Number(enabledIds.has(b.id)));
     for (const point of points) {
       const active = enabledIds.has(point.id);
       if (!active && !showContext) continue;
       const card = byId.get(point.id), p = locations.get(point.id);
-      const radius = active ? 3.5 + Math.sqrt(Math.min(point.degree,30)/30)*4.8 : 2.7;
+      const radius = nodeRadius(point.strength,minStrength,maxStrength);
       const cluster = data.clusters.find(item=>item.id===point.cluster);
       if (point.id===selectedId && active) markup += `<circle class="semantic-halo" cx="${p.x}" cy="${p.y}" r="${radius+5}"/>`;
       markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="${escape(cluster.color)}"><title>${escape(point.id + ': ' + card.L4_Name_en)}</title></circle>`;
@@ -207,7 +214,7 @@
     if (!point || !enabledIds.has(point.dataset.risk)) {tooltip.hidden = true; return;}
     const card = byId.get(point.dataset.risk);
     const node=data.points.find(item=>item.id===card.L4_ID), cluster=data.clusters.find(item=>item.id===node.cluster);
-    tooltip.innerHTML = `<strong>${escape(card.L4_Name_en)}</strong><span>${escape(card.L4_ID)} · ${escape(card.L1_Name_en)} · ${escape(card.L3_Name_en)}</span><span>Community: ${escape(cluster.name)} · ${node.degree} links</span><span>Click to open the risk card</span>`;
+    tooltip.innerHTML = `<strong>${escape(card.L4_Name_en)}</strong><span>${escape(card.L4_ID)} · ${escape(card.L1_Name_en)} · ${escape(card.L3_Name_en)}</span><span>Community: ${escape(cluster.name)} · ${node.degree} links · Weighted degree: ${node.strength.toFixed(3)}</span><span>Click to open the risk card</span>`;
     tooltip.hidden = false;
     const bounds = get('semantic-plot').getBoundingClientRect();
     tooltip.style.left = `${Math.max(8, Math.min(event.clientX-bounds.left+14, bounds.width-tooltip.offsetWidth-8))}px`;

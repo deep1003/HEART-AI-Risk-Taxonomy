@@ -14,7 +14,7 @@ Install `scripts/semantic_requirements.txt` in a task-local environment and run 
 2. Retain the undirected union of eight nearest cosine neighbours per card at similarity >= 0.45. No artificial links are inserted. Edge weights are measured cosine similarity.
 3. Weighted Louvain, resolution 1.0 and seed 23, produces 10 communities and 3,803 edges, one connected component and no isolates. Modularity 0.583259 describes graph partitioning, not classification accuracy.
 4. A seeded weighted spring layout initialises ForceAtlas2, 350 iterations, scaling ratio 8, gravity 0.15, linlog attraction. Uniform centring and rescaling preserve all outliers without clipping. Filters never recompute positions.
-5. Colours identify graph communities. Labels summarise dominant existing L3 names and do not reassign cards. Node radius scales with square-root graph degree, not severity, probability or EM confidence.
+5. Colours identify graph communities. Labels summarise dominant existing L3 names and do not reassign cards. Node strength is the sum of published incident cosine weights. Node area is linearly scaled over the full-network strength range to radii 3 to 15 display pixels: r = sqrt(9 + 216 × (strength − min)/(max − min)). Equal-strength networks use the midpoint area. Sizes remain fixed across filters, including pale inactive nodes. This is not severity, probability or EM confidence.
 
 ## Reference analysis
 

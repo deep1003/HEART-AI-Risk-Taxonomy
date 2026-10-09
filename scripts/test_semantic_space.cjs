@@ -3,7 +3,7 @@ const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
 const path = require('node:path');
 const root = path.join(__dirname, '..');
-const {activeIds, escape} = require(path.join(root, 'assets/semantic-space.js'));
+const {activeIds, escape, nodeRadius} = require(path.join(root, 'assets/semantic-space.js'));
 const raw = fs.readFileSync(path.join(root, 'data/heart_l4_risk_cards.json'));
 const cards = JSON.parse(raw);
 const data = JSON.parse(fs.readFileSync(path.join(root, 'data/semantic_space.json')));
@@ -46,8 +46,15 @@ assert.equal(activeIds(data, {scenario:'missing'}).size, 0);
 assert.equal(activeIds(data, {scenario:'network-agents', keyword:'navigation'}).size, 0);
 assert(data.edges.every(([a,b,weight]) => a !== b && sourceIds.has(a) && sourceIds.has(b) && weight >= .45 && weight <= 1));
 const degrees = new Map([...sourceIds].map(id=>[id,0]));
-for(const [a,b] of data.edges){degrees.set(a,degrees.get(a)+1);degrees.set(b,degrees.get(b)+1);}
+const strengths = new Map([...sourceIds].map(id=>[id,0]));
+for(const [a,b,w] of data.edges){degrees.set(a,degrees.get(a)+1);degrees.set(b,degrees.get(b)+1);strengths.set(a,strengths.get(a)+w);strengths.set(b,strengths.get(b)+w);}
 assert(data.points.every(point=>degrees.get(point.id)===point.degree));
+assert(data.points.every(point=>Math.abs(strengths.get(point.id)-point.strength)<1e-5));
+assert.equal(nodeRadius(5,5,40),3);
+assert.equal(nodeRadius(40,5,40),15);
+assert(nodeRadius(20,5,40)>nodeRadius(10,5,40));
+assert(Number.isFinite(nodeRadius(5,5,5)));
+assert(Math.abs(data.points.reduce((sum,p)=>sum+p.strength,0)-2*data.edges.reduce((sum,e)=>sum+e[2],0))<1e-4);
 assert(!escape('<script>').includes('<script>'));
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 assert(html.includes('aria-controls="semantic-space" aria-selected="true"'));
