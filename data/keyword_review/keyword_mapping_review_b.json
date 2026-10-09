@@ -1,0 +1,508 @@
+[
+  {
+    "id": "out-of-control",
+    "threshold": 0.75,
+    "rationale": "At 0.75, the five leading candidates were inspected in full. Four directly state loss of control or escape; meaningful oversight failure at 0.753501 is excluded because it does not establish sustained unrecoverability. Lower-scoring explicit resistance, escape and containment mechanisms were reviewed and added. This threshold is a conservative retrieval cutoff, not an accuracy estimate. Gradual systemic loss is included because the card explicitly names loss of control; this extends the active catastrophic focus of the cited report.",
+    "include": [
+      {
+        "id": "A_SYS_AUTH_019",
+        "reason": "Explicit self-improvement, resistance to containment and loss of human control."
+      },
+      {
+        "id": "A_SYS_AUTH_006",
+        "reason": "Replication beyond authorised boundaries and shutdown evasion explicitly increase loss of control."
+      },
+      {
+        "id": "A_SYS_GOAL_007",
+        "reason": "Explicit human-control escape and shutdown evasion."
+      },
+      {
+        "id": "G_SOC_GOV_016",
+        "reason": "Explicit gradual or accumulative loss of control culminating in catastrophe."
+      },
+      {
+        "id": "A_SYS_AUTH_002",
+        "reason": "Direct refusal or obstruction of shutdown, pause and correction mechanisms."
+      },
+      {
+        "id": "A_SYS_AUTH_016",
+        "reason": "Active resistance to shutdown and modification with redundant survival mechanisms."
+      },
+      {
+        "id": "A_SYS_GOAL_014",
+        "reason": "Explicit escape from human control through mesa-objective pursuit."
+      },
+      {
+        "id": "A_SYS_AUTH_025",
+        "reason": "Autonomous escape from isolation and unauthorised external access are concrete containment failures."
+      }
+    ],
+    "exclude": [
+      {
+        "id": "G_SOC_GOV_024",
+        "reason": "Insufficient meaningful oversight alone does not establish persistent loss or costly recovery."
+      },
+      {
+        "id": "A_SYS_AUTH_009",
+        "reason": "Excessive granted authority does not itself show control resistance or escape."
+      },
+      {
+        "id": "P_SYS_CONTROL_003",
+        "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
+      },
+      {
+        "id": "A_SYS_AUTH_012",
+        "reason": "Irreversibility concerns consequences of exploration, not inability to control the agent."
+      }
+    ]
+  },
+  {
+    "id": "prompt-injection",
+    "threshold": 0.69,
+    "rationale": "Full definitions of all nine candidates at or above 0.69 were inspected. Only two describe untrusted instructions crossing authority boundaries. The next score below the cutoff is generic influence activity. The explicit physical prompt-injection card at 0.645001 was recovered by full-definition lexical scan. Injection is distinguished from general cyber compromise, interpersonal manipulation and confidential-prompt exposure alone.",
+    "include": [
+      {
+        "id": "G_SYS_SECADV_044",
+        "reason": "Direct and indirect untrusted instructions are executed as authorised."
+      },
+      {
+        "id": "G_SYS_SECADV_004",
+        "reason": "Untrusted external instructions are incorporated into agent goals without authority validation."
+      },
+      {
+        "id": "G_SYS_SECADV_060",
+        "reason": "Definition explicitly includes prompt injection propagating into unsafe physical action."
+      }
+    ],
+    "exclude": [
+      {
+        "id": "G_SYS_SECADV_057",
+        "reason": "Infrastructure intrusion rather than instruction trust-boundary attack."
+      },
+      {
+        "id": "G_INT_UNETH_005",
+        "reason": "AI manipulates human psychology; no injected model instructions."
+      },
+      {
+        "id": "G_SYS_SECADV_028",
+        "reason": "Unrestricted access and misuse do not establish injection."
+      },
+      {
+        "id": "G_INT_WEAP_025",
+        "reason": "Faulty warnings and military review failure do not establish injection."
+      },
+      {
+        "id": "P_SYS_CONTROL_051",
+        "reason": "Misinterpreted situation or goal does not establish malicious injected instructions."
+      },
+      {
+        "id": "G_INT_POL_006",
+        "reason": "Political manipulation concerns people rather than prompt authority."
+      },
+      {
+        "id": "G_SYS_POLICY_006",
+        "reason": "Internal-policy disclosure need not arise from injection."
+      },
+      {
+        "id": "G_SYS_SECADV_029",
+        "reason": "External harmful content ingestion is an exposure pathway, without instruction execution or trust-boundary crossing."
+      }
+    ]
+  },
+  {
+    "id": "human-robot-interaction",
+    "threshold": 0.64,
+    "rationale": "All seven candidates above 0.64 were read in full. Two generic human-AI or anthropomorphic entries lack a robot and are excluded. Lower-scoring cards were scanned for explicit human contact, co-located interaction, support, teleoperation and demonstrations. Scope includes hostile as well as beneficial interaction, human safety in shared spaces, and remote operator interaction. Broad robot engineering without a concrete human relation is not automatically included.",
+    "include": [
+      {
+        "id": "P_INT_SAFETY_016",
+        "reason": "Direct human-contact safety controls."
+      },
+      {
+        "id": "P_SYS_CONTROL_019",
+        "reason": "Forbidden collisions explicitly include people."
+      },
+      {
+        "id": "G_INT_ILLEGAL_022",
+        "reason": "Robots physically follow, approach or harass people."
+      },
+      {
+        "id": "G_INT_WEAP_026",
+        "reason": "Robot capabilities are used for physical attacks against people."
+      },
+      {
+        "id": "P_INT_SAFETY_010",
+        "reason": "Explicit reciprocal robot-user behaviour."
+      },
+      {
+        "id": "P_INT_SAFETY_001",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_005",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_006",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_007",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_009",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_011",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_012",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_015",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_020",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_021",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_INT_SAFETY_023",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_CONTROL_015",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_CONTROL_017",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_CONTROL_024",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_CONTROL_027",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_CONTROL_047",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_CONTROL_050",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_CONTROL_054",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_STATE_007",
+        "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+      },
+      {
+        "id": "P_SYS_CONTROL_044",
+        "reason": "Remote humanoid operation involves operator commands and safety feedback."
+      },
+      {
+        "id": "P_INT_SAFETY_018",
+        "reason": "Learning from a human demonstration is an explicit human-robot task relation."
+      },
+      {
+        "id": "P_SYS_CONTROL_023",
+        "reason": "Humanoid reproduction of human demonstration across interaction contexts."
+      },
+      {
+        "id": "P_SYS_CONTROL_025",
+        "reason": "Human demonstrator intent must inform humanoid imitation."
+      },
+      {
+        "id": "G_INT_PRIV_024",
+        "reason": "Robots observe and record people in shared living, workplace and care environments."
+      },
+      {
+        "id": "G_SYS_PERF_015",
+        "reason": "Service robot motion interferes with pedestrian passage and accessibility."
+      },
+      {
+        "id": "G_SYS_EVAL_044",
+        "reason": "Pre-deployment robot testing explicitly includes human contact."
+      }
+    ],
+    "exclude": [
+      {
+        "id": "G_INT_ANTH_006",
+        "reason": "Generic human-machine indistinguishability does not specify a physical robot."
+      },
+      {
+        "id": "G_INT_UNETH_014",
+        "reason": "Workplace human-AI interaction may be software-only; no robot stated."
+      },
+      {
+        "id": "P_SYS_CONTROL_001",
+        "reason": "Generic control-cycle and compute design failure need not involve human interaction."
+      },
+      {
+        "id": "P_INT_SAFETY_008",
+        "reason": "Role and permission constraints alone do not specify interaction with people."
+      },
+      {
+        "id": "P_INT_TAMPER_003",
+        "reason": "Hardware theft or modification is not inherently a human-robot interaction process."
+      }
+    ]
+  },
+  {
+    "id": "agi",
+    "threshold": 0.65,
+    "rationale": "Both candidates above 0.65 were reviewed in full. The explicit AGI-capability misrepresentation card qualifies; concentration of general-purpose model access does not establish human-level breadth. Two below-cutoff definitions explicitly mention AGI or human-level systems and are included. The lead agent verified identical old and new keyword query hashes and vectors, with maximum vector difference 0.0; the citation change did not change the query, and no additional embedding is pending. Generic agency, self-improvement or advanced AI does not establish AGI.",
+    "include": [
+      {
+        "id": "G_SYS_OEXT_006",
+        "reason": "Risk explicitly concerns falsely claimed AGI capability; actual achievement is not required for relevance."
+      },
+      {
+        "id": "A_SYS_AUTH_024",
+        "reason": "Definition explicitly concerns fatal AGI learning-phase mistakes."
+      },
+      {
+        "id": "A_SYS_GOAL_007",
+        "reason": "Explicitly concerns human-level or superintelligent systems."
+      }
+    ],
+    "exclude": [
+      {
+        "id": "G_SOC_POWER_010",
+        "reason": "General-purpose model access and research concentration do not entail AGI capability."
+      },
+      {
+        "id": "A_SYS_AUTH_009",
+        "reason": "Unsupervised agent authority does not imply human-level general intelligence."
+      },
+      {
+        "id": "A_SYS_AUTH_019",
+        "reason": "Self-improvement of advanced AI does not establish broad human-level cognitive competence."
+      },
+      {
+        "id": "A_SYS_GOAL_019",
+        "reason": "Emergent collective capabilities are not necessarily general or human-level."
+      },
+      {
+        "id": "G_INT_UNETH_020",
+        "reason": "Broad objectives and long-horizon planning do not prove AGI capability."
+      }
+    ]
+  },
+  {
+    "id": "asi",
+    "threshold": 0.69,
+    "rationale": "The only two scores above 0.69 are false positives, generic unsupervised authority and AGI capability claims. Raising the cutoff cannot recover a genuine ASI set because ranking is conceptually inverted. The explicit superintelligent-system card at 0.655897 is added manually. This strict cutoff plus overrides is a provisional conservative retrieval policy, not a calibrated classifier; no ordinary advanced agent is treated as ASI.",
+    "include": [
+      {
+        "id": "A_SYS_GOAL_007",
+        "reason": "Definition explicitly includes superintelligent systems and catastrophic control escape."
+      }
+    ],
+    "exclude": [
+      {
+        "id": "A_SYS_AUTH_009",
+        "reason": "Action authority and lack of supervision do not imply superhuman general cognition."
+      },
+      {
+        "id": "G_SYS_OEXT_006",
+        "reason": "AGI capability misrepresentation does not explicitly concern ASI-level superiority."
+      },
+      {
+        "id": "A_SYS_AUTH_019",
+        "reason": "Iterative self-improvement does not establish superiority across practically every cognitive field."
+      },
+      {
+        "id": "A_SYS_AUTH_006",
+        "reason": "Replication and resource acquisition do not establish ASI."
+      },
+      {
+        "id": "G_SYS_OEXT_008",
+        "reason": "Claims of learning and self-improvement alone are not ASI claims."
+      }
+    ]
+  },
+  {
+    "id": "humanoid",
+    "threshold": 0.6,
+    "rationale": "All five candidates at or above 0.60 were inspected in full. Four explicitly allow humanoids and one only falsely claims embodiment. A full-definition scan found 35 cards explicitly naming humanoid or humanoids; all are included because the card's stated mechanism applies to that physical form, including mixed robot/humanoid scope. Many explicit morphology, certification and teleoperation cards score far below 0.60, so they require manual recovery. Generic robots without evidence of humanlike form are excluded.",
+    "include": [
+      {
+        "id": "G_SOC_ECON_002",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "G_SOC_GOV_039",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "G_SYS_EVAL_004",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "G_SYS_SECADV_060",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_INT_SAFETY_001",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_INT_SAFETY_007",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_INT_SAFETY_008",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_INT_SAFETY_009",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_INT_SAFETY_011",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_INT_SAFETY_015",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_INT_SAFETY_021",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_INT_SAFETY_023",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_012",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_013",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_017",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_023",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_024",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_025",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_026",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_027",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_030",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_033",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_042",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_043",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_044",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_047",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_054",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_055",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_CONTROL_057",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_HARDWARE_003",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_STATE_004",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_STATE_006",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_STATE_007",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_STATE_008",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      },
+      {
+        "id": "P_SYS_STATE_011",
+        "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+      }
+    ],
+    "exclude": [
+      {
+        "id": "G_INT_ANTH_003",
+        "reason": "Falsely claimed physical embodiment does not establish an actual humanoid body."
+      },
+      {
+        "id": "G_INT_REPR_004",
+        "reason": "Dehumanisation of people does not concern humanoid morphology."
+      },
+      {
+        "id": "G_INT_WEAP_026",
+        "reason": "Robot weaponisation does not specify humanlike body form."
+      },
+      {
+        "id": "G_INT_ILLEGAL_023",
+        "reason": "Autonomous physical intrusion does not specify humanoid morphology."
+      },
+      {
+        "id": "G_INT_ILLEGAL_022",
+        "reason": "Robot stalking does not establish humanoid form."
+      }
+    ]
+  }
+]

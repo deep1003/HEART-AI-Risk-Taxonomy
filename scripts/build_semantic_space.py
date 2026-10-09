@@ -240,4 +240,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # Keep the historical lexical prototype callable, but publish only the
+    # current embedding network and source-grounded keyword artifact.
+    from build_semantic_network import main as build_current_network
+    build_current_network()

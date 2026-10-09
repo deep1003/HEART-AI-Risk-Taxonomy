@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles-v2.css">
   <link rel="stylesheet" href="assets/institution.css">
-  <link rel="stylesheet" href="assets/semantic-space.css">
+  <link rel="stylesheet" href="assets/semantic-space.css?v=source-defined-keywords-20261010">
 </head>
 <body>
   <header class="site-header">
@@ -86,6 +86,7 @@
           <div class="semantic-keyword-head"><h3>Risk keywords</h3><span>One keyword at a time</span></div>
           <div id="semantic-keywords" class="semantic-keywords" aria-label="Risk keyword filters"></div>
           <div class="semantic-plot-heading"><div><h3 id="semantic-selection-name">All risks</h3><p id="semantic-selection-description"></p></div><label><input id="semantic-context" type="checkbox" checked> Show inactive context</label></div>
+          <section id="semantic-keyword-definition" class="semantic-keyword-definition" aria-live="polite" hidden></section>
           <div class="semantic-network-toolbar" aria-label="Network navigation"><span>Colour by weighted Louvain community (NetworkX 3.5) · Size by weighted degree</span><div><button id="semantic-zoom-out" type="button" aria-label="Zoom out">−</button><span id="semantic-zoom-level">100%</span><button id="semantic-zoom-in" type="button" aria-label="Zoom in">+</button><button id="semantic-fit" type="button">Fit network</button></div></div>
           <p class="semantic-method">Links: cosine similarity of 1,024-dimensional BGE-M3 dense embeddings (Ollama 0.32.1). Undirected union of each node's 8 nearest neighbours, retaining similarities ≥ 0.60. Link weight = cosine similarity; node weighted degree = sum of incident link weights. Weighted Louvain: NetworkX 3.5, resolution = 1.0, seed = 23.</p>
           <div class="semantic-plot-wrap"><svg id="semantic-plot" viewBox="0 0 960 600" role="img" aria-label="Two-dimensional text projection of the L4 risk cards"><title>L4 semantic space</title><desc>Each point is an existing risk card. Point position reflects a compressed text projection, not risk severity or probability.</desc></svg><div id="semantic-tooltip" class="semantic-tooltip" role="tooltip" hidden></div></div>
@@ -125,6 +126,6 @@
     <div class="footer-bottom"><span>HEART · 622 risk cards · 47 categories</span><a href="#about">Back to top</a></div>
   </footer>
   <script src="assets/app.js" defer></script>
-  <script src="assets/semantic-space.js?v=deepfake-copyrights-20261010" defer></script>
+  <script src="assets/semantic-space.js?v=source-defined-keywords-20261010" defer></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "out-of-control",
+    "name": "Out of control",
+    "definition": "An AI loss-of-control scenario in which systems operate beyond effective human control and recovering control is extremely costly or impossible.",
+    "scope": "Source-grounded operational paraphrase of loss of control, rather than a direct definition of the informal label Out of control. Include sustained inability to supervise, constrain, modify or terminate operation and mechanisms of oversight evasion or shutdown resistance. Exclude ordinary incorrect outputs, temporary recoverable malfunctions, and autonomy alone. The cited report concentrates on severe general-purpose AI scenarios; applying this keyword to local robotic control failures requires an explicitly broader HEART operational scope.",
+    "reference_title": "International AI Safety Report 2026",
+    "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+    "quote": "AI systems operate outside of anyone’s control, and regaining control is either extremely costly or impossible.",
+    "quote_location": "Section 2.2.2, Key information, printed page 76 (PDF page 76)"
+  },
+  {
+    "id": "prompt-injection",
+    "name": "Prompt injection",
+    "definition": "An attack that exploits the mixing of untrusted input with higher-trust instructions to redirect an AI system's behaviour.",
+    "scope": "Source-grounded paraphrase of the NIST definition. Include direct adversarial user inputs and indirect instructions embedded in retrieved documents, tool outputs or other untrusted content when they cross an instruction trust boundary. Exclude benign prompting, ordinary model mistakes and training-data poisoning without an inference-time injection. Jailbreaking overlaps only where this trust-boundary mechanism is present.",
+    "reference_title": "NIST CSRC Glossary, prompt injection (source NIST AI 100-2e2025)",
+    "url": "https://csrc.nist.gov/glossary/term/prompt_injection",
+    "quote": "exploits the concatenation of untrusted input with a prompt constructed by a higher-trust party",
+    "quote_location": "Definitions, sole definition"
+  },
+  {
+    "id": "human-robot-interaction",
+    "name": "Human-robot interaction",
+    "definition": "The study and design of interactions between humans and robots, including communication, coordination and the evaluation of robotic systems used by or with people.",
+    "scope": "Operational synthesis grounded in the authors' introduction to HRI. Include remote and co-located interaction, physical collaboration, social communication, human oversight and shared-task coordination. Exclude solely robot-to-robot interaction or software-only chatbot interaction without a robotic system. Humanlike appearance, autonomy and physical contact are not required.",
+    "reference_title": "Goodrich and Schultz, Human-Robot Interaction: A Survey (2007), Section 1; authorised community-portal reproduction",
+    "url": "https://humanrobotinteraction.org/1-introduction/",
+    "quote": "understanding, designing, and evaluating robotic systems for use by or with humans",
+    "quote_location": "Section 1, opening paragraph, original printed page 204. Portal parent page explicitly attributes the reproduced survey to Goodrich and Schultz and records publisher permission; DOI 10.1561/1100000005. Publisher currently lists 2008 publication, while original volume and copyright are 2007."
+  },
+  {
+    "id": "agi",
+    "name": "AGI",
+    "definition": "Artificial general intelligence denotes AI with broadly human-level or greater capability across most cognitive tasks, rather than excellence confined to a narrow task.",
+    "scope": "Operational synthesis of Morris et al.'s introductory AGI characterisation and Section 3 focus on cognitive and metacognitive tasks, not a universally agreed definition. Include broad cross-domain cognitive capability and hypothetical risks explicitly premised on such capability. Exclude a narrow superhuman model or a system labelled general-purpose without evidence of this threshold. Consciousness, humanoid embodiment and autonomous deployment are not definitional requirements. The paper also offers Emerging, Competent and higher AGI levels, so this introductory human-level characterisation must not be confused with every level in its proposed ontology.",
+    "reference_title": "Morris et al., Position: Levels of AGI for Operationalizing Progress on the Path to AGI (ICML 2024; arXiv version 5, 24 September 2025)",
+    "url": "https://arxiv.org/html/2311.02462v5",
+    "quote": "an AI system that is at least as capable as a human at most tasks",
+    "quote_location": "Section 1 Introduction, first sentence; cognitive-task restriction is explained in Section 3, Principle 3"
+  },
+  {
+    "id": "asi",
+    "name": "ASI",
+    "definition": "Artificial superintelligence denotes an artificial intellect that greatly surpasses the best human cognitive abilities across practically every field, including scientific creativity, judgement and social skills.",
+    "scope": "Operational paraphrase of Bostrom's definition of superintelligence, restricted here to artificial systems. Include broad and substantial superhuman intellectual capability. Exclude isolated superhuman task performance and human-level AGI. The cited definition leaves implementation and consciousness open; neither robotic embodiment nor a particular computational architecture is required. No single agreed quantitative ASI threshold is implied.",
+    "reference_title": "Nick Bostrom, How Long Before Superintelligence? (1998)",
+    "url": "https://nickbostrom.com/papers/how-long-before-superintelligence/",
+    "quote": "an intellect that is much smarter than the best human brains in practically every field",
+    "quote_location": "Definition of superintelligence, first paragraph"
+  },
+  {
+    "id": "humanoid",
+    "name": "Humanoid",
+    "definition": "A physical robot whose overall body form or substantial upper-body structure resembles a human, commonly incorporating a torso, head and arms and sometimes legs.",
+    "scope": "HEART operational synthesis supported by NASA's primary account of humanoid design. Include full-body, torso-only and wheeled robots with substantial humanlike body structure. Exclude software avatars, ordinary non-anthropomorphic robotic arms and humanlike conversational behaviour alone. Bipedal walking, realistic skin, AGI and fully autonomous control are not requirements. NASA's accessible definition is educational and example-based, rather than a formal robotics standard.",
+    "reference_title": "NASA STEM Team, What Is Robonaut? (Grades 5-8), 1 February 2012",
+    "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-robonaut-grades-5-8/",
+    "quote": "humanoid, which means it is built to look like a person",
+    "quote_location": "Opening paragraph; What Does Robonaut Do? explains torso, head, arms, hands and optional mobility"
+  }
+]

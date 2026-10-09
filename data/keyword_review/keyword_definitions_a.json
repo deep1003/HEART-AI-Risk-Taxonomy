@@ -1,0 +1,82 @@
+[
+  {
+    "id": "misuse",
+    "name": "Misuse",
+    "definition": "Operational synthesis for HEART: deliberate use of AI capabilities to facilitate harmful, abusive or unlawful objectives, including digital, physical and political attacks.",
+    "scope": "Include malicious repurposing, fraud, coercion, weaponisation and deliberate evasion of safeguards. Exclude ordinary accidental model errors or benign unexpected use without a harmful objective. Brundage et al. discuss malicious use rather than supply a universal definition of misuse.",
+    "reference_title": "Brundage et al. (2018), The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation",
+    "url": "https://arxiv.org/abs/1802.07228",
+    "quote": "potential security threats from malicious uses of AI",
+    "quote_location": "Abstract, first sentence"
+  },
+  {
+    "id": "mis-disinformation",
+    "name": "Mis/disinformation",
+    "definition": "Operational synthesis for HEART: AI-generated, altered or amplified false or misleading information. Misinformation is shared without a deceptive intention; disinformation is deliberately disseminated to deceive or manipulate.",
+    "scope": "Include fabricated claims, misleading contextualisation and deceptive information campaigns. Exclude clearly identified fiction, satire and uncertain claims faithfully described as uncertain. Intent must be evidenced rather than inferred from falsity alone. UNESCO's introductory page states that definitions vary; this is an explicit intent-based convention.",
+    "reference_title": "UNESCO, What is Disinformation? Meaning, Definition",
+    "url": "https://www.unesco.org/en/query-list/d/disinformation",
+    "quote": "Misinformation has a neutral or good underlying intent",
+    "quote_location": "Opening explanatory paragraph"
+  },
+  {
+    "id": "hate-unfairness",
+    "name": "Hate and unfairness",
+    "definition": "Operational composite for HEART: AI-mediated identity-based hostility, demeaning representation or discriminatory treatment of people or groups. The hate component is grounded in the UN account; the broader unfairness component is a HEART synthesis.",
+    "scope": "Include identity-directed hate, harmful stereotypes, discriminatory exclusion and adverse treatment. Exclude disagreement, criticism or personal insult lacking an identity-based or discriminatory component. This composite is not a source-defined academic construct; wider distributive and procedural fairness belongs additionally under Fairness.",
+    "reference_title": "OHCHR / United Nations in Ukraine (2022), What is hate speech and how to combat it",
+    "url": "https://ukraine.un.org/en/168160-what-hate-speech-and-how-combat-it",
+    "quote": "aggressive, degrading or discriminatory against a person or group of people, simply because of who they are",
+    "quote_location": "What is hate speech?, opening paragraph"
+  },
+  {
+    "id": "security",
+    "name": "Cybersecurity",
+    "definition": "Operational synthesis for HEART: risks to the confidentiality, integrity or availability of AI systems, data and connected digital infrastructure, including attacks against AI and AI-enabled attacks.",
+    "scope": "Include prompt injection with security consequences, adversarial manipulation, data poisoning, model extraction, credential theft, intrusion and denial of service. Exclude purely physical accidents or privacy concerns without a digital security mechanism. NIST's cited section primarily defines security of AI; the AI-enabled attack extension is the operational scope.",
+    "reference_title": "NIST (2023), AI Risk Management Framework 1.0, Section 3.3 Secure and Resilient",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/",
+    "quote": "maintain confidentiality, integrity, and availability",
+    "quote_location": "Section 3.3, second paragraph"
+  },
+  {
+    "id": "human-rights",
+    "name": "Human rights",
+    "definition": "Operational synthesis for HEART: risks that AI practices interfere with internationally recognised rights and freedoms belonging to people, including equality, liberty, privacy, expression, education and social protection.",
+    "scope": "Include surveillance, discrimination, coercion, restrictions on expression, denial of due process and barriers to basic rights. Identify the specific right and mechanism. Exclude general dissatisfaction or commercial inconvenience without a rights connection. UN Geneva explains that the UDHR is not legally binding while ratified Covenants bind States.",
+    "reference_title": "United Nations Office at Geneva, Human rights",
+    "url": "https://www.ungeneva.org/en/about/topics/human-rights",
+    "quote": "The “International Bill of Human Rights” is the baseline for all international human rights law.",
+    "quote_location": "Introduction, third paragraph"
+  },
+  {
+    "id": "fairness",
+    "name": "Fairness",
+    "definition": "Operational synthesis for HEART: risks of unjust or inequitable AI-related treatment, access, decisions or distributions of benefits and burdens, assessed against an explicit context-dependent fairness standard.",
+    "scope": "Include harmful bias, discrimination, unequal access, group disparities and unfair decision procedures. Exclude numerical imbalance alone when no normative or contextual unfairness is demonstrated. Fairness may overlap Hate and unfairness, but does not require hostile speech or intentional prejudice. NIST explicitly warns that bias mitigation alone does not ensure fairness.",
+    "reference_title": "NIST (2023), AI Risk Management Framework 1.0, Section 3.7 Fair with Harmful Bias Managed",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/",
+    "quote": "Fairness in AI includes concerns for equality and equity",
+    "quote_location": "Section 3.7, opening sentence"
+  },
+  {
+    "id": "deepfake",
+    "name": "Deepfake",
+    "definition": "Operational paraphrase of EU AI Act Article 3(60): AI-generated or manipulated images, audio or video resembling existing people, objects, places, entities or events and liable to appear falsely authentic or truthful.",
+    "scope": "Include deceptive voice clones, face swaps, fabricated recordings and realistic audiovisual impersonation. Exclude text-only falsehoods and obviously fictional synthetic content without a false appearance of authenticity. A deepfake is not automatically unlawful; harmfulness and legal status require separate assessment.",
+    "reference_title": "European Parliament and Council (2024), Regulation (EU) 2024/1689, Article 3(60)",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "quote": "would falsely appear to a person to be authentic or truthful",
+    "quote_location": "Article 3, definition (60)"
+  },
+  {
+    "id": "copyrights",
+    "name": "Copyrights",
+    "definition": "Operational synthesis for HEART: risks to creators' economic or moral rights over protected literary and artistic expression arising from AI training, generation, reproduction, adaptation or distribution.",
+    "scope": "Include potential unauthorised copying, infringing outputs, licensing conflicts and failures to respect authorship or integrity rights. Exclude ideas, procedures and mathematical concepts as such, and uses established as licensed, public-domain or permitted by an applicable exception. AI training is not presumed infringing; protection and exceptions depend on jurisdiction.",
+    "reference_title": "World Intellectual Property Organization, Copyright",
+    "url": "https://www.wipo.int/en/web/copyright",
+    "quote": "the rights that creators have over their literary and artistic works",
+    "quote_location": "What is copyright?, first paragraph"
+  }
+]

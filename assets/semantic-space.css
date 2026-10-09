@@ -85,3 +85,7 @@
 @media(max-width:360px){#semantic-scenarios{grid-template-columns:1fr}.site-header nav a[href="#explore"]{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(pointer:coarse){.semantic-plot-heading label{min-height:44px}.semantic-keywords button{min-height:44px}}
+.semantic-keyword-definition { margin: 12px 0 20px; padding: 18px 22px; border: 1px solid #dce3ed; border-radius: 12px; background: #f8fafc; }
+.semantic-keyword-definition h4 { margin: 0 0 10px; font-size: 18px; }
+.semantic-keyword-definition p { line-height: 1.6; }
+.semantic-keyword-definition blockquote { margin: 12px 0; padding: 8px 16px; border-left: 3px solid #3867df; }

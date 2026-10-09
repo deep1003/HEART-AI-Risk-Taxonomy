@@ -133,6 +133,16 @@ def main():
                            {'ids':[card['L4_ID'] for card in cards if match(card,rule) and card['L4_ID'] not in rule.get('exclude',[])]}
                            for rule in SCENARIOS],
               'keywords':[{'id':rule['id'],'name':rule['name'],'ids':[card['L4_ID'] for card in cards if match(card,rule)]} for rule in TOPICS]}
+    keyword_path = ROOT / 'data/keyword_semantics.json'
+    if keyword_path.exists():
+        keyword_data = json.loads(keyword_path.read_text())
+        assert keyword_data['source_sha256'] == hashlib.sha256(raw).hexdigest()
+        assert keyword_data['model_revision'] == revision
+        assert keyword_data['definitions_sha256'] == hashlib.sha256((ROOT / 'data/keyword_definitions.json').read_bytes()).hexdigest()
+        assert [item['id'] for item in keyword_data['keywords']] == [rule['id'] for rule in TOPICS]
+        result['keywords'] = keyword_data['keywords']
+        result['method']['keyword_mapping'] = keyword_data['limitations']
+        result['method']['keyword_query_sha256'] = keyword_data['query_sha256']
     assert np.isfinite(xy).all() and len(cards)==622
     assert source.read_bytes()==raw
     (ROOT/'data/semantic_space.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')

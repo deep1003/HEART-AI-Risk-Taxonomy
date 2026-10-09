@@ -1,0 +1,3000 @@
+[
+  {
+    "id": "misuse",
+    "name": "Misuse",
+    "definition": "deliberate use of AI capabilities to facilitate harmful, abusive or unlawful objectives, including digital, physical and political attacks.",
+    "scope": "Include malicious repurposing, fraud, coercion, weaponisation and deliberate evasion of safeguards. Exclude ordinary accidental model errors or benign unexpected use without a harmful objective. Brundage et al. discuss malicious use rather than supply a universal definition of misuse.",
+    "reference_title": "Brundage et al. (2018), The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation",
+    "url": "https://arxiv.org/abs/1802.07228",
+    "quote": "potential security threats from malicious uses of AI",
+    "quote_location": "Abstract, first sentence",
+    "mapping_mode": "semantic",
+    "threshold": 0.74,
+    "review_include": [
+      "G_SYS_SECADV_028",
+      "G_INT_ILLEGAL_003",
+      "G_INT_WEAP_010",
+      "G_INT_UNETH_005",
+      "G_INT_ILLEGAL_013",
+      "G_INT_WEAP_006",
+      "G_INT_PRIV_020",
+      "G_INT_COPY_006",
+      "G_INT_ILLEGAL_014",
+      "G_INT_POL_006",
+      "G_INT_ILLEGAL_007",
+      "G_SYS_SECADV_057",
+      "G_INT_WEAP_026",
+      "G_INT_POL_007",
+      "G_INT_VIOL_008",
+      "G_SYS_SECADV_019",
+      "G_INT_VIOL_010",
+      "G_INT_WEAP_027",
+      "G_INT_UNETH_011",
+      "G_INT_POL_008",
+      "G_INT_UNETH_021",
+      "G_INT_WEAP_029",
+      "G_INT_WEAP_031",
+      "G_INT_PRIV_029",
+      "G_INT_VIOL_011",
+      "G_INT_VIOL_006",
+      "G_INT_ILLEGAL_001",
+      "G_INT_POL_003",
+      "G_INT_ILLEGAL_021",
+      "G_INT_ILLEGAL_016",
+      "G_INT_VIOL_005",
+      "G_INT_ILLEGAL_022",
+      "G_INT_ILLEGAL_010",
+      "G_INT_ILLEGAL_015",
+      "G_INT_ILLEGAL_008",
+      "G_INT_ILLEGAL_011",
+      "G_INT_WEAP_003",
+      "G_INT_WEAP_008",
+      "G_INT_WEAP_009",
+      "G_INT_WEAP_011",
+      "G_INT_WEAP_014",
+      "G_INT_WEAP_018",
+      "G_INT_WEAP_020",
+      "G_INT_WEAP_022",
+      "G_INT_WEAP_024",
+      "G_INT_WEAP_030",
+      "G_INT_WEAP_032",
+      "G_INT_VALUE_025",
+      "G_SOC_DEMOC_007",
+      "G_SYS_SECADV_002",
+      "G_SYS_SECADV_005",
+      "G_SYS_SECADV_006",
+      "G_SYS_SECADV_009",
+      "G_SYS_SECADV_010",
+      "G_SYS_SECADV_011",
+      "G_SYS_SECADV_012",
+      "G_SYS_SECADV_015",
+      "G_SYS_SECADV_016",
+      "G_SYS_SECADV_018",
+      "G_SYS_SECADV_021",
+      "G_SYS_SECADV_023",
+      "G_SYS_SECADV_026",
+      "G_SYS_SECADV_038",
+      "G_SYS_SECADV_043",
+      "G_SYS_SECADV_044",
+      "G_SYS_SECADV_046",
+      "G_SYS_SECADV_049",
+      "G_SYS_SECADV_050",
+      "G_SYS_SECADV_052",
+      "G_SYS_SECADV_055",
+      "G_SYS_SECADV_059",
+      "G_SYS_SECADV_060",
+      "G_SYS_SECADV_061"
+    ],
+    "review_exclude": [
+      "A_SYS_AUTH_010",
+      "G_INT_SEX_010",
+      "G_SYS_MISINFO_012",
+      "A_SYS_AUTH_023",
+      "G_INT_WEAP_002"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "misuse",
+      "threshold": 0.74,
+      "rationale": "Conservative exploratory threshold selected from the observed candidate boundary, not a calibrated probability or measured accuracy. Every above-threshold card was adjudicated using its full definition. Explicit definition matches below threshold are included as recovery overrides. At 0.74, accidental unsafe tool use and financial loss already appear among 37 candidates; intent is therefore assessed separately.",
+      "include": [
+        {
+          "id": "G_SYS_SECADV_028",
+          "reason": "High-impact misuse of general-purpose AI through unrestricted access. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_003",
+          "reason": "Criminal assistance by AI agents. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_WEAP_010",
+          "reason": "Deliberate weaponisation of AI by state and criminal actors. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_UNETH_005",
+          "reason": "Behavioural manipulation through exploitation of vulnerabilities. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_013",
+          "reason": "Illegal gambling and game manipulation. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_WEAP_006",
+          "reason": "Cyber weapons. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_PRIV_020",
+          "reason": "Misuse and trade of personal information. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_COPY_006",
+          "reason": "Illegal software use and circumvention of protection measures. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_014",
+          "reason": "Illegal medical practices. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_POL_006",
+          "reason": "Personalised manipulation of political influence. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_007",
+          "reason": "Execution of illegal or harmful physical requests. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_SYS_SECADV_057",
+          "reason": "Unauthorised access, manipulation, and disruption of AI computing infrastructure. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_WEAP_026",
+          "reason": "Weaponisation of robotic capabilities. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_POL_007",
+          "reason": "Political misinformation and manipulation of public opinion. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_VIOL_008",
+          "reason": "Murder and severe physical violence. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_SYS_SECADV_019",
+          "reason": "Disruption of third-party systems. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_VIOL_010",
+          "reason": "Threats and intimidation. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_WEAP_027",
+          "reason": "Weaponisation strategies and tactical use. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_UNETH_011",
+          "reason": "Facilitation of harmful objectives through benign intermediates. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_POL_008",
+          "reason": "Political propaganda and biased persuasion. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_UNETH_021",
+          "reason": "Manipulative steering of user preferences and choices. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_WEAP_029",
+          "reason": "Weapons of mass destruction. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_WEAP_031",
+          "reason": "Assistance for planning and executing cyber attacks. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_PRIV_029",
+          "reason": "Unauthorised commercial use of name, image, and likeness. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_VIOL_011",
+          "reason": "Torture and cruel acts. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_VIOL_006",
+          "reason": "Mass violence and terrorism. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_001",
+          "reason": "Assistance with unlawful reputational or rights violations. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_POL_003",
+          "reason": "Interference with elections and democratic processes. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_021",
+          "reason": "Unlawful coercion and extortion by AI agents. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_016",
+          "reason": "Manufacture and distribution of illicit drugs. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_VIOL_005",
+          "reason": "Incitement, promotion, and operational assistance for violence. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_022",
+          "reason": "Unlawful stalking and harassment using robots. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse."
+        },
+        {
+          "id": "G_INT_ILLEGAL_010",
+          "reason": "Harassment, defamation, and extortion via multimodal deepfakes. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ILLEGAL_015",
+          "reason": "Low-cost mass generation of personalised harassment, extortion, and intimidation content. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ILLEGAL_008",
+          "reason": "Financial crimes and fraud. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ILLEGAL_011",
+          "reason": "Identity theft and document forgery. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_003",
+          "reason": "Biological and chemical weapons. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_008",
+          "reason": "Cyberattack enablement through vulnerability discovery and exploit-writing capability. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_009",
+          "reason": "Dangerous toxin identification and development through misuse of drug-discovery models. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_011",
+          "reason": "Enhancement of pathogens and genetic material. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_014",
+          "reason": "Explosives and explosive weapons. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_018",
+          "reason": "Lowered barriers to CBRN information and weapon-design capabilities. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_020",
+          "reason": "Malware generation and cyberattack automation. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_022",
+          "reason": "Radiological and nuclear weapons. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_024",
+          "reason": "Terrorist acquisition of advanced AI capabilities. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_030",
+          "reason": "Weapons proliferation and concealment. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_032",
+          "reason": "Cybercrime at scale using generative AI. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_VALUE_025",
+          "reason": "Value lock-in. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SOC_DEMOC_007",
+          "reason": "Maintenance of totalitarian regimes through AI surveillance. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_002",
+          "reason": "Adversarial modification of AI software and training data. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_005",
+          "reason": "Agent identity and authority spoofing. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_006",
+          "reason": "Agent memory and context poisoning. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_009",
+          "reason": "Attack-surface expansion from additional modalities. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_010",
+          "reason": "Automated discovery of jailbreaks through proxy-objective optimisation. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_011",
+          "reason": "Backdoor triggers causing unsafe robot behaviour. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_012",
+          "reason": "Backdoors or trojan attacks in GPAI models. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_015",
+          "reason": "Compromise of robot fleets. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_016",
+          "reason": "Cyber compromise of robotic systems in critical infrastructure. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_018",
+          "reason": "Data poisoning. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_021",
+          "reason": "Energy-latency attacks. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_023",
+          "reason": "Expanded attack surface in agent interfaces. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_026",
+          "reason": "Access to prohibited information or content through safeguard bypass. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_038",
+          "reason": "Multi-step jailbreaks. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_043",
+          "reason": "Principal-information theft and action manipulation through attacks on delegate agents. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_044",
+          "reason": "Prompt injection and leakage of system instructions. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_046",
+          "reason": "Protocol-level multi-agent threat. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_049",
+          "reason": "Safeguard bypass through persona, role-play, and social-engineering techniques. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_050",
+          "reason": "Safeguard compromise through malicious fine-tuning. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_052",
+          "reason": "Scene-context manipulation attack. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_055",
+          "reason": "Supply-chain compromise of AI tools and dependencies. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_059",
+          "reason": "Weakening safety functions and developing attacks through interpretability techniques. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_060",
+          "reason": "Propagation of foundation-model security vulnerabilities into unsafe physical action. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_061",
+          "reason": "Sensor spoofing and signal injection. The definition describes harmful objective facilitation, coercive influence, unlawful assistance or adversarial exploitation, connecting this card to deliberate misuse. Recovered below threshold after definition review."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "A_SYS_AUTH_010",
+          "reason": "Financial harm from unauthorised AI agent actions. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
+        },
+        {
+          "id": "G_INT_SEX_010",
+          "reason": "Sexual harm and exploitation through systematic bias. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
+        },
+        {
+          "id": "G_SYS_MISINFO_012",
+          "reason": "False information targeting an individual. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
+        },
+        {
+          "id": "A_SYS_AUTH_023",
+          "reason": "Unsafe or out-of-scope agent tool use. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
+        },
+        {
+          "id": "G_INT_WEAP_002",
+          "reason": "Assistance for designing and conducting dangerous scientific experiments. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mis-disinformation",
+    "name": "Mis/disinformation",
+    "definition": "AI-generated, altered or amplified false or misleading information. Misinformation is shared without a deceptive intention; disinformation is deliberately disseminated to deceive or manipulate.",
+    "scope": "Include fabricated claims, misleading contextualisation and deceptive information campaigns. Exclude clearly identified fiction, satire and uncertain claims faithfully described as uncertain. Intent must be evidenced rather than inferred from falsity alone. UNESCO's introductory page states that definitions vary; this is an explicit intent-based convention.",
+    "reference_title": "UNESCO, What is Disinformation? Meaning, Definition",
+    "url": "https://www.unesco.org/en/query-list/d/disinformation",
+    "quote": "Misinformation has a neutral or good underlying intent",
+    "quote_location": "Opening explanatory paragraph",
+    "mapping_mode": "semantic",
+    "threshold": 0.68,
+    "review_include": [
+      "G_SYS_MISINFO_002",
+      "G_SYS_MISINFO_003",
+      "G_SYS_MISINFO_004",
+      "G_SYS_MISINFO_006",
+      "G_SYS_MISINFO_007",
+      "G_SYS_MISINFO_008",
+      "G_SYS_MISINFO_009",
+      "G_SYS_MISINFO_010",
+      "G_SYS_MISINFO_011",
+      "G_SYS_MISINFO_012",
+      "G_SYS_MISINFO_013",
+      "G_SYS_MISINFO_015",
+      "G_SYS_MISINFO_017",
+      "G_SYS_MISINFO_018",
+      "G_SYS_MISINFO_019",
+      "G_SYS_MISINFO_021",
+      "G_SYS_MISINFO_022",
+      "G_SYS_MISINFO_023",
+      "G_INT_POL_007",
+      "G_SYS_TRANS_012",
+      "G_SYS_OEXT_007",
+      "G_SOC_CULT_007",
+      "G_SOC_DEMOC_005",
+      "A_SYS_SELFCOR_002"
+    ],
+    "review_exclude": [
+      "G_INT_POL_008",
+      "G_INT_PRIV_020",
+      "G_SYS_SECADV_019",
+      "G_INT_ILLEGAL_003",
+      "G_INT_PRIV_025",
+      "G_INT_PRIV_019",
+      "G_SYS_TRANS_009"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "mis-disinformation",
+      "threshold": 0.68,
+      "rationale": "Conservative exploratory threshold selected from the observed candidate boundary, not a calibrated probability or measured accuracy. Every above-threshold card was adjudicated using its full definition. Explicit definition matches below threshold are included as recovery overrides. At 0.68, unrelated personal-data processing and generic criminal assistance enter 18 candidates; factual-error mechanisms below the cutoff are recovered.",
+      "include": [
+        {
+          "id": "G_SYS_MISINFO_002",
+          "reason": "Amplification of hallucinations through context consistency. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_MISINFO_003",
+          "reason": "Answer obsolescence from knowledge distribution shift. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_004",
+          "reason": "Deception and polarisation from false information. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_006",
+          "reason": "Degradation of the shared information ecosystem. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_MISINFO_007",
+          "reason": "Distortion of model factual judgement through user persuasion. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_008",
+          "reason": "Erroneous medical and scientific conclusions from data misinterpretation. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_MISINFO_009",
+          "reason": "Factual errors injected by external tools. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_010",
+          "reason": "Failure to distinguish synthetic content and persistent harm. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_011",
+          "reason": "Faithfulness errors. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_012",
+          "reason": "False information targeting an individual. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_MISINFO_013",
+          "reason": "False outputs from external misinformation in retrieval augmentation. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_015",
+          "reason": "Generation of false information about election procedures. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_MISINFO_017",
+          "reason": "Hallucination arising from knowledge boundaries. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_018",
+          "reason": "Hallucination of facts and evidence. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_019",
+          "reason": "Knowledge errors from noisy training data. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_MISINFO_021",
+          "reason": "Lowered barriers to large-scale disinformation production and dissemination. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_MISINFO_022",
+          "reason": "Misinformation harms from algorithmic systems. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_MISINFO_023",
+          "reason": "Misleading medical information and unsafe medication guidance. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_INT_POL_007",
+          "reason": "Political misinformation and manipulation of public opinion. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_TRANS_012",
+          "reason": "Misleading representation of AI product capabilities. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SYS_OEXT_007",
+          "reason": "Misrepresentation of autonomous and independent decision-making capabilities. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it."
+        },
+        {
+          "id": "G_SOC_CULT_007",
+          "reason": "Degradation and homogenisation of the information environment. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SOC_DEMOC_005",
+          "reason": "Erosion of democratic processes and institutional trust. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        },
+        {
+          "id": "A_SYS_SELFCOR_002",
+          "reason": "Self-correction failure in AI-agent memory. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_INT_POL_008",
+          "reason": "Political propaganda and biased persuasion. The definition describes privacy, generic crime, disruption or non-disclosure without establishing false or misleading information."
+        },
+        {
+          "id": "G_INT_PRIV_020",
+          "reason": "Misuse and trade of personal information. The definition describes privacy, generic crime, disruption or non-disclosure without establishing false or misleading information."
+        },
+        {
+          "id": "G_SYS_SECADV_019",
+          "reason": "Disruption of third-party systems. The definition describes privacy, generic crime, disruption or non-disclosure without establishing false or misleading information."
+        },
+        {
+          "id": "G_INT_ILLEGAL_003",
+          "reason": "Criminal assistance by AI agents. The definition describes privacy, generic crime, disruption or non-disclosure without establishing false or misleading information."
+        },
+        {
+          "id": "G_INT_PRIV_025",
+          "reason": "Re-identification and information inference. The definition describes privacy, generic crime, disruption or non-disclosure without establishing false or misleading information."
+        },
+        {
+          "id": "G_INT_PRIV_019",
+          "reason": "Lack of valid consent for AI data processing. The definition describes privacy, generic crime, disruption or non-disclosure without establishing false or misleading information."
+        },
+        {
+          "id": "G_SYS_TRANS_009",
+          "reason": "Inadequate disclosure in AI interaction. The definition describes privacy, generic crime, disruption or non-disclosure without establishing false or misleading information."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hate-unfairness",
+    "name": "Hate and unfairness",
+    "definition": "AI-mediated identity-based hostility, demeaning representation or discriminatory treatment of people or groups. The hate component is grounded in the UN account; the broader unfairness component is a HEART synthesis.",
+    "scope": "Include identity-directed hate, harmful stereotypes, discriminatory exclusion and adverse treatment. Exclude disagreement, criticism or personal insult lacking an identity-based or discriminatory component. This composite is not a source-defined academic construct; wider distributive and procedural fairness belongs additionally under Fairness.",
+    "reference_title": "OHCHR / United Nations in Ukraine (2022), What is hate speech and how to combat it",
+    "url": "https://ukraine.un.org/en/168160-what-hate-speech-and-how-combat-it",
+    "quote": "aggressive, degrading or discriminatory against a person or group of people, simply because of who they are",
+    "quote_location": "What is hate speech?, opening paragraph",
+    "mapping_mode": "semantic",
+    "threshold": 0.68,
+    "review_include": [
+      "G_INT_REPR_002",
+      "G_INT_REPR_003",
+      "G_INT_REPR_004",
+      "G_INT_REPR_006",
+      "G_INT_REPR_007",
+      "G_INT_REPR_009",
+      "G_INT_REPR_010",
+      "G_INT_REPR_011",
+      "G_INT_REPR_012",
+      "G_INT_REPR_013",
+      "G_INT_REPR_014",
+      "G_INT_REPR_015",
+      "G_INT_REPR_016",
+      "G_INT_REPR_017",
+      "G_INT_REPR_018",
+      "G_INT_REPR_019",
+      "G_INT_REPR_020",
+      "G_INT_REPR_021",
+      "G_INT_REPR_022",
+      "G_INT_REPR_023",
+      "G_INT_REPR_025",
+      "G_INT_REPR_026",
+      "G_INT_REPR_027",
+      "G_INT_REPR_028",
+      "G_INT_REPR_029",
+      "G_INT_REPR_032",
+      "G_INT_REPR_033",
+      "G_INT_ALLOC_001",
+      "G_INT_ALLOC_002",
+      "G_INT_ALLOC_003",
+      "G_INT_ALLOC_004",
+      "G_INT_ALLOC_005",
+      "G_INT_ALLOC_006",
+      "G_INT_ALLOC_007",
+      "G_INT_ALLOC_009",
+      "G_INT_ALLOC_010",
+      "G_INT_ALLOC_012",
+      "G_INT_ALLOC_013",
+      "G_INT_ALLOC_015",
+      "G_INT_SEX_010",
+      "G_SYS_TRANS_001",
+      "G_SYS_PERF_004"
+    ],
+    "review_exclude": [
+      "G_INT_VIOL_010",
+      "G_INT_VIOL_009",
+      "G_INT_VIOL_011",
+      "G_INT_VIOL_008",
+      "G_SYS_MISINFO_012",
+      "G_INT_VIOL_004",
+      "G_INT_ILLEGAL_001",
+      "G_INT_VIOL_006"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "hate-unfairness",
+      "threshold": 0.68,
+      "rationale": "Conservative exploratory threshold selected from the observed candidate boundary, not a calibrated probability or measured accuracy. Every above-threshold card was adjudicated using its full definition. Explicit definition matches below threshold are included as recovery overrides. At 0.68, 21 candidates include generic violence and defamation with no group-discrimination mechanism.",
+      "include": [
+        {
+          "id": "G_INT_REPR_002",
+          "reason": "Biased system outputs from researcher homogeneity. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_003",
+          "reason": "Cross-cultural stereotype transfer. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_004",
+          "reason": "Dehumanisation and objectification. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_006",
+          "reason": "Denial of self-identification. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_007",
+          "reason": "Distortion of group representation through content moderation. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_009",
+          "reason": "Hate speech generation. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_010",
+          "reason": "Representational harm from historical and demographic bias in training data. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_011",
+          "reason": "Hostile and discriminatory representations based on age. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_012",
+          "reason": "Hostile and discriminatory representations based on disability. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_013",
+          "reason": "Hostile and discriminatory representations based on educational background. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_014",
+          "reason": "Hostile and discriminatory representations based on family status and household structure. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_015",
+          "reason": "Hostile and discriminatory representations based on health status. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_016",
+          "reason": "Hostile and discriminatory representations based on nationality, country of origin, or place of origin. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_017",
+          "reason": "Hostile and discriminatory representations based on occupation. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_018",
+          "reason": "Hostile and discriminatory representations based on political orientation. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_019",
+          "reason": "Hostile and discriminatory representations based on race and ethnicity. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_020",
+          "reason": "Hostile and discriminatory representations based on religion. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_021",
+          "reason": "Hostile and discriminatory representations based on sex, gender identity, or sexual orientation. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_022",
+          "reason": "Hostile and discriminatory representations based on socioeconomic status. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation."
+        },
+        {
+          "id": "G_INT_REPR_023",
+          "reason": "Imbalanced representation of groups in data and outputs. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_025",
+          "reason": "Misrepresentation of cultures, religions, and social groups. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_026",
+          "reason": "Persistence of stereotypical bias despite mitigation measures. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_027",
+          "reason": "Recursive amplification of biased representations. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_028",
+          "reason": "Representation and reinforcement of group stereotypes. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_029",
+          "reason": "Representational harm, stereotyping, and erasure of social groups. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_032",
+          "reason": "Stereotype-reinforcing persona design. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_033",
+          "reason": "Synthetic-data cultural stereotype amplification. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_001",
+          "reason": "Adverse resource allocation to protected groups. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_002",
+          "reason": "Allocative injustice by group attribute. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_003",
+          "reason": "Demographic disparities in robotic services and safety. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_004",
+          "reason": "Denial of welfare benefits and entitlements. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_005",
+          "reason": "Dialect and register exclusion. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_006",
+          "reason": "Disability accommodation failure in AI interfaces. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_007",
+          "reason": "Discriminatory outcomes from group performance disparities. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_009",
+          "reason": "Economic discrimination through demonetisation and differential pricing. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_010",
+          "reason": "Exclusion of low-resource language users from services and opportunities. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_012",
+          "reason": "Group-based access restriction through content moderation. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_013",
+          "reason": "Increased labour burden. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_015",
+          "reason": "Service exclusion. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_SEX_010",
+          "reason": "Sexual harm and exploitation through systematic bias. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_TRANS_001",
+          "reason": "Bias concealment through manipulated explanations. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_PERF_004",
+          "reason": "Deficient training-data annotation. The definition identifies identity-based harmful representation, discriminatory treatment or unequal access; the composite's unfairness component covers this relation. Recovered below threshold after definition review."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_INT_VIOL_010",
+          "reason": "Threats and intimidation. The definition describes violence or reputational harm without identity-based hostility or discriminatory treatment."
+        },
+        {
+          "id": "G_INT_VIOL_009",
+          "reason": "Relationship-based violence. The definition describes violence or reputational harm without identity-based hostility or discriminatory treatment."
+        },
+        {
+          "id": "G_INT_VIOL_011",
+          "reason": "Torture and cruel acts. The definition describes violence or reputational harm without identity-based hostility or discriminatory treatment."
+        },
+        {
+          "id": "G_INT_VIOL_008",
+          "reason": "Murder and severe physical violence. The definition describes violence or reputational harm without identity-based hostility or discriminatory treatment."
+        },
+        {
+          "id": "G_SYS_MISINFO_012",
+          "reason": "False information targeting an individual. The definition describes violence or reputational harm without identity-based hostility or discriminatory treatment."
+        },
+        {
+          "id": "G_INT_VIOL_004",
+          "reason": "Glorification and justification of violence. The definition describes violence or reputational harm without identity-based hostility or discriminatory treatment."
+        },
+        {
+          "id": "G_INT_ILLEGAL_001",
+          "reason": "Assistance with unlawful reputational or rights violations. The definition describes violence or reputational harm without identity-based hostility or discriminatory treatment."
+        },
+        {
+          "id": "G_INT_VIOL_006",
+          "reason": "Mass violence and terrorism. The definition describes violence or reputational harm without identity-based hostility or discriminatory treatment."
+        }
+      ]
+    }
+  },
+  {
+    "id": "security",
+    "name": "Cybersecurity",
+    "definition": "risks to the confidentiality, integrity or availability of AI systems, data and connected digital infrastructure, including attacks against AI and AI-enabled attacks.",
+    "scope": "Include prompt injection with security consequences, adversarial manipulation, data poisoning, model extraction, credential theft, intrusion and denial of service. Exclude purely physical accidents or privacy concerns without a digital security mechanism. NIST's cited section primarily defines security of AI; the AI-enabled attack extension is the operational scope.",
+    "reference_title": "NIST (2023), AI Risk Management Framework 1.0, Section 3.3 Secure and Resilient",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/",
+    "quote": "maintain confidentiality, integrity, and availability",
+    "quote_location": "Section 3.3, second paragraph",
+    "mapping_mode": "semantic",
+    "threshold": 0.74,
+    "review_include": [
+      "G_SYS_SECADV_001",
+      "G_SYS_SECADV_002",
+      "G_SYS_SECADV_004",
+      "G_SYS_SECADV_005",
+      "G_SYS_SECADV_006",
+      "G_SYS_SECADV_009",
+      "G_SYS_SECADV_010",
+      "G_SYS_SECADV_011",
+      "G_SYS_SECADV_012",
+      "G_SYS_SECADV_014",
+      "G_SYS_SECADV_015",
+      "G_SYS_SECADV_016",
+      "G_SYS_SECADV_018",
+      "G_SYS_SECADV_019",
+      "G_SYS_SECADV_021",
+      "G_SYS_SECADV_023",
+      "G_SYS_SECADV_025",
+      "G_SYS_SECADV_026",
+      "G_SYS_SECADV_029",
+      "G_SYS_SECADV_038",
+      "G_SYS_SECADV_043",
+      "G_SYS_SECADV_044",
+      "G_SYS_SECADV_046",
+      "G_SYS_SECADV_049",
+      "G_SYS_SECADV_050",
+      "G_SYS_SECADV_052",
+      "G_SYS_SECADV_053",
+      "G_SYS_SECADV_055",
+      "G_SYS_SECADV_057",
+      "G_SYS_SECADV_058",
+      "G_SYS_SECADV_059",
+      "G_SYS_SECADV_060",
+      "G_SYS_SECADV_061",
+      "G_INT_WEAP_006",
+      "G_INT_WEAP_008",
+      "G_INT_WEAP_020",
+      "G_INT_WEAP_031",
+      "G_INT_WEAP_032",
+      "G_INT_WEAP_027",
+      "G_INT_ILLEGAL_003",
+      "G_SYS_POLICY_005",
+      "G_SYS_POLICY_009",
+      "G_SYS_POLICY_010",
+      "G_INT_PRIV_014",
+      "G_SYS_POLICY_008",
+      "G_SYS_EVAL_019",
+      "G_SYS_EVAL_065",
+      "G_SYS_PERF_009",
+      "G_SYS_PERF_010",
+      "G_SOC_POWER_002",
+      "A_SYS_DECEPT_001",
+      "A_INT_CASCADE_008",
+      "P_INT_TAMPER_003",
+      "G_INT_PRIV_024",
+      "G_INT_PRIV_008",
+      "G_INT_PRIV_009",
+      "G_INT_PRIV_015",
+      "A_SYS_AUTH_001",
+      "A_SYS_AUTH_005",
+      "A_SYS_AUTH_006",
+      "A_SYS_AUTH_009",
+      "A_SYS_AUTH_010",
+      "A_SYS_AUTH_023",
+      "A_SYS_AUTH_025"
+    ],
+    "review_exclude": [
+      "G_INT_VIOL_010",
+      "G_INT_PRIV_017",
+      "G_INT_POL_003",
+      "G_SYS_MISINFO_012",
+      "G_INT_PRIV_012",
+      "G_INT_ILLEGAL_008"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "security",
+      "threshold": 0.74,
+      "rationale": "Conservative exploratory threshold selected from the observed candidate boundary, not a calibrated probability or measured accuracy. Every above-threshold card was adjudicated using its full definition. Explicit definition matches below threshold are included as recovery overrides. At 0.74, 17 candidates already include generic threats, election interference and false statements. Numerous explicit adversarial attack mechanisms below the cutoff are recovered. Access-control failures qualify without explicit attacker intent; agent privilege, isolation and authority definitions were additionally reviewed.",
+      "include": [
+        {
+          "id": "G_SYS_SECADV_001",
+          "reason": "Adversarial input perturbation. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_002",
+          "reason": "Adversarial modification of AI software and training data. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_004",
+          "reason": "Agent goal hijacking through untrusted external instructions and intent. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_005",
+          "reason": "Agent identity and authority spoofing. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_006",
+          "reason": "Agent memory and context poisoning. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_009",
+          "reason": "Attack-surface expansion from additional modalities. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_010",
+          "reason": "Automated discovery of jailbreaks through proxy-objective optimisation. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_011",
+          "reason": "Backdoor triggers causing unsafe robot behaviour. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_012",
+          "reason": "Backdoors or trojan attacks in GPAI models. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_014",
+          "reason": "Common-mode infrastructure failure from underlying model vulnerabilities. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_015",
+          "reason": "Compromise of robot fleets. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_016",
+          "reason": "Cyber compromise of robotic systems in critical infrastructure. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_SYS_SECADV_018",
+          "reason": "Data poisoning. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_019",
+          "reason": "Disruption of third-party systems. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_SYS_SECADV_021",
+          "reason": "Energy-latency attacks. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_023",
+          "reason": "Expanded attack surface in agent interfaces. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_025",
+          "reason": "Exploitation of safety-fine-tuning generalisation gaps. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_026",
+          "reason": "Access to prohibited information or content through safeguard bypass. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_029",
+          "reason": "Ingestion of harmful content through external tool integration. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_038",
+          "reason": "Multi-step jailbreaks. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_043",
+          "reason": "Principal-information theft and action manipulation through attacks on delegate agents. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_044",
+          "reason": "Prompt injection and leakage of system instructions. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_046",
+          "reason": "Protocol-level multi-agent threat. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_049",
+          "reason": "Safeguard bypass through persona, role-play, and social-engineering techniques. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_050",
+          "reason": "Safeguard compromise through malicious fine-tuning. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_052",
+          "reason": "Scene-context manipulation attack. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_053",
+          "reason": "Security-flaw propagation through foundation-model reuse. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_055",
+          "reason": "Supply-chain compromise of AI tools and dependencies. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_057",
+          "reason": "Unauthorised access, manipulation, and disruption of AI computing infrastructure. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_SYS_SECADV_058",
+          "reason": "Unsafe action induced by adversarial sensory perturbation. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_059",
+          "reason": "Weakening safety functions and developing attacks through interpretability techniques. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_060",
+          "reason": "Propagation of foundation-model security vulnerabilities into unsafe physical action. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_SECADV_061",
+          "reason": "Sensor spoofing and signal injection. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_006",
+          "reason": "Cyber weapons. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_INT_WEAP_008",
+          "reason": "Cyberattack enablement through vulnerability discovery and exploit-writing capability. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_020",
+          "reason": "Malware generation and cyberattack automation. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_031",
+          "reason": "Assistance for planning and executing cyber attacks. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_INT_WEAP_032",
+          "reason": "Cybercrime at scale using generative AI. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_WEAP_027",
+          "reason": "Weaponisation strategies and tactical use. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_INT_ILLEGAL_003",
+          "reason": "Criminal assistance by AI agents. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_SYS_POLICY_005",
+          "reason": "Disclosure of confidential safety-policy and safeguard information. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_SYS_POLICY_009",
+          "reason": "Disclosure of confidential business information and trade secrets. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_SYS_POLICY_010",
+          "reason": "Business harm from unauthorised sharing of confidential information. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_INT_PRIV_014",
+          "reason": "Inadequate personal-data protection. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap."
+        },
+        {
+          "id": "G_SYS_POLICY_008",
+          "reason": "Training-data extraction and leakage. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_EVAL_019",
+          "reason": "Emulated tool-environment mismatch. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_EVAL_065",
+          "reason": "Security test coverage gap in tool agents. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_PERF_009",
+          "reason": "Failure of performance, robustness, and resilience under adverse conditions. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_PERF_010",
+          "reason": "Intrinsic robustness weaknesses of complex neural models. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SOC_POWER_002",
+          "reason": "Centralised points of failure from common AI platforms. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "A_SYS_DECEPT_001",
+          "reason": "Collapse of multi-agent cooperation from undetectable attacks. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "A_INT_CASCADE_008",
+          "reason": "Resource-exhaustion attacks by decentralised agent swarms. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "P_INT_TAMPER_003",
+          "reason": "Integrity compromise via physical theft or replacement of compute and storage modules. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_024",
+          "reason": "Privacy-invasive data capture by robots in intimate spaces. The definition identifies a digital attack, unauthorised access, information disclosure, integrity compromise, service disruption or a direct security-assurance gap. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_008",
+          "reason": "Cross-application data exfiltration. The definition identifies sensitive-data leakage, reconstruction/disclosure of protected information or training-data disclosure, a concrete confidentiality mechanism. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_009",
+          "reason": "Exposure and re-identification of sensitive personal information through outputs. The definition identifies sensitive-data leakage, reconstruction/disclosure of protected information or training-data disclosure, a concrete confidentiality mechanism. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_015",
+          "reason": "Inclusion, memorisation, and leakage of personal information in training data. The definition identifies sensitive-data leakage, reconstruction/disclosure of protected information or training-data disclosure, a concrete confidentiality mechanism. Recovered below threshold after definition review."
+        },
+        {
+          "id": "A_SYS_AUTH_001",
+          "reason": "Weak permission management, inherited roles and confused-deputy dynamics allow actions beyond intended authority, directly compromising access control and integrity. Recovered below threshold after full-definition review."
+        },
+        {
+          "id": "A_SYS_AUTH_005",
+          "reason": "Autonomous discovery, chaining and execution of cyber exploits directly threatens digital security. Recovered below threshold after full-definition review."
+        },
+        {
+          "id": "A_SYS_AUTH_006",
+          "reason": "Exfiltration and replication beyond authorised boundaries breach confidentiality and containment. Recovered below threshold after full-definition review."
+        },
+        {
+          "id": "A_SYS_AUTH_009",
+          "reason": "Operating tools and systems without adequate approval or authority limits creates an access-control failure. Recovered below threshold after full-definition review."
+        },
+        {
+          "id": "A_SYS_AUTH_010",
+          "reason": "Unauthorised transfers and account damage through agent tool use specify authorisation and financial-system integrity failures. Recovered below threshold after full-definition review."
+        },
+        {
+          "id": "A_SYS_AUTH_023",
+          "reason": "Out-of-scope tool invocation with privacy or operational consequences relates to authority enforcement and integrity of connected digital tools. Recovered below threshold after full-definition review."
+        },
+        {
+          "id": "A_SYS_AUTH_025",
+          "reason": "Sandbox escape and access to protected resources or external systems beyond assigned authority breach containment and access control. Recovered below threshold after full-definition review."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_INT_VIOL_010",
+          "reason": "Threats and intimidation. The definition does not establish a digital confidentiality, integrity or availability mechanism; generic privacy infringement, identity misuse or fraud alone is insufficient."
+        },
+        {
+          "id": "G_INT_PRIV_017",
+          "reason": "Infringement of communication and private information. The definition does not establish a digital confidentiality, integrity or availability mechanism; generic privacy infringement, identity misuse or fraud alone is insufficient."
+        },
+        {
+          "id": "G_INT_POL_003",
+          "reason": "Interference with elections and democratic processes. The definition does not establish a digital confidentiality, integrity or availability mechanism; generic privacy infringement, identity misuse or fraud alone is insufficient."
+        },
+        {
+          "id": "G_SYS_MISINFO_012",
+          "reason": "False information targeting an individual. The definition does not establish a digital confidentiality, integrity or availability mechanism; generic privacy infringement, identity misuse or fraud alone is insufficient."
+        },
+        {
+          "id": "G_INT_PRIV_012",
+          "reason": "Identity and personal data exploitation using AI. The definition does not establish a digital confidentiality, integrity or availability mechanism; generic privacy infringement, identity misuse or fraud alone is insufficient."
+        },
+        {
+          "id": "G_INT_ILLEGAL_008",
+          "reason": "Financial crimes and fraud. The definition does not establish a digital confidentiality, integrity or availability mechanism; generic privacy infringement, identity misuse or fraud alone is insufficient."
+        }
+      ]
+    }
+  },
+  {
+    "id": "human-rights",
+    "name": "Human rights",
+    "definition": "risks that AI practices interfere with internationally recognised rights and freedoms belonging to people, including equality, liberty, privacy, expression, education and social protection.",
+    "scope": "Include surveillance, discrimination, coercion, restrictions on expression, denial of due process and barriers to basic rights. Identify the specific right and mechanism. Exclude general dissatisfaction or commercial inconvenience without a rights connection. UN Geneva explains that the UDHR is not legally binding while ratified Covenants bind States.",
+    "reference_title": "United Nations Office at Geneva, Human rights",
+    "url": "https://www.ungeneva.org/en/about/topics/human-rights",
+    "quote": "The “International Bill of Human Rights” is the baseline for all international human rights law.",
+    "quote_location": "Introduction, third paragraph",
+    "mapping_mode": "semantic",
+    "threshold": 0.72,
+    "review_include": [
+      "G_INT_PRIV_001",
+      "G_INT_PRIV_002",
+      "G_INT_PRIV_003",
+      "G_INT_PRIV_005",
+      "G_INT_PRIV_007",
+      "G_INT_PRIV_008",
+      "G_INT_PRIV_009",
+      "G_INT_PRIV_010",
+      "G_INT_PRIV_012",
+      "G_INT_PRIV_013",
+      "G_INT_PRIV_014",
+      "G_INT_PRIV_015",
+      "G_INT_PRIV_016",
+      "G_INT_PRIV_017",
+      "G_INT_PRIV_018",
+      "G_INT_PRIV_019",
+      "G_INT_PRIV_020",
+      "G_INT_PRIV_021",
+      "G_INT_PRIV_022",
+      "G_INT_PRIV_024",
+      "G_INT_PRIV_025",
+      "G_INT_PRIV_027",
+      "G_INT_PRIV_028",
+      "G_INT_PRIV_029",
+      "G_INT_PRIV_030",
+      "G_INT_PRIV_031",
+      "G_INT_REPR_002",
+      "G_INT_REPR_003",
+      "G_INT_REPR_004",
+      "G_INT_REPR_006",
+      "G_INT_REPR_007",
+      "G_INT_REPR_009",
+      "G_INT_REPR_010",
+      "G_INT_REPR_011",
+      "G_INT_REPR_012",
+      "G_INT_REPR_013",
+      "G_INT_REPR_014",
+      "G_INT_REPR_015",
+      "G_INT_REPR_016",
+      "G_INT_REPR_017",
+      "G_INT_REPR_018",
+      "G_INT_REPR_019",
+      "G_INT_REPR_020",
+      "G_INT_REPR_021",
+      "G_INT_REPR_022",
+      "G_INT_REPR_023",
+      "G_INT_REPR_025",
+      "G_INT_REPR_026",
+      "G_INT_REPR_027",
+      "G_INT_REPR_028",
+      "G_INT_REPR_029",
+      "G_INT_REPR_032",
+      "G_INT_REPR_033",
+      "G_INT_ALLOC_001",
+      "G_INT_ALLOC_002",
+      "G_INT_ALLOC_003",
+      "G_INT_ALLOC_004",
+      "G_INT_ALLOC_005",
+      "G_INT_ALLOC_006",
+      "G_INT_ALLOC_007",
+      "G_INT_ALLOC_009",
+      "G_INT_ALLOC_010",
+      "G_INT_ALLOC_012",
+      "G_INT_ALLOC_013",
+      "G_INT_ALLOC_015",
+      "G_INT_POL_003",
+      "G_INT_POL_007",
+      "G_INT_POL_008",
+      "G_SYS_EVAL_037",
+      "G_INT_VIOL_010",
+      "G_INT_VIOL_011",
+      "G_INT_VIOL_008",
+      "G_INT_VIOL_006",
+      "G_INT_VIOL_005",
+      "G_INT_ILLEGAL_021",
+      "G_INT_ILLEGAL_022",
+      "G_SOC_DEMOC_001",
+      "G_SOC_DEMOC_007",
+      "G_SOC_CULT_011",
+      "G_INT_SEX_004",
+      "G_INT_SEX_007",
+      "G_INT_UNETH_030",
+      "G_INT_VALUE_025",
+      "G_SOC_POWER_026",
+      "P_INT_SAFETY_023",
+      "G_SYS_OREF_002"
+    ],
+    "review_exclude": [
+      "G_INT_COPY_002",
+      "G_INT_COPY_003",
+      "G_SOC_CULT_005",
+      "G_INT_COPY_001"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "human-rights",
+      "threshold": 0.72,
+      "rationale": "Conservative exploratory threshold selected from the observed candidate boundary, not a calibrated probability or measured accuracy. Every above-threshold card was adjudicated using its full definition. Explicit definition matches below threshold are included as recovery overrides. At 0.72, 16 candidates include corporate intellectual-property rights; these are not automatically equivalent to human rights.",
+      "include": [
+        {
+          "id": "G_INT_PRIV_001",
+          "reason": "AI-enabled mass and unlawful public surveillance. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_PRIV_002",
+          "reason": "Privacy and autonomy infringement from algorithmic workplace surveillance. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_003",
+          "reason": "Biometric identification and tracking privacy harms. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_005",
+          "reason": "Circumvention of restrictions on personal-data collection. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_007",
+          "reason": "Contextual privacy and conversational data protection failure. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_008",
+          "reason": "Cross-application data exfiltration. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_009",
+          "reason": "Exposure and re-identification of sensitive personal information through outputs. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_010",
+          "reason": "Exposure of information about private life and reputation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_012",
+          "reason": "Identity and personal data exploitation using AI. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_PRIV_013",
+          "reason": "Improper exposure of property information, personal information, and private facts. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_PRIV_014",
+          "reason": "Inadequate personal-data protection. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_015",
+          "reason": "Inclusion, memorisation, and leakage of personal information in training data. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_016",
+          "reason": "Indigenous data sovereignty violation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_017",
+          "reason": "Infringement of communication and private information. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_PRIV_018",
+          "reason": "Intrusion into private spaces and continuous sensitive-data capture by physical AI. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_019",
+          "reason": "Lack of valid consent for AI data processing. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_020",
+          "reason": "Misuse and trade of personal information. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_PRIV_021",
+          "reason": "Personal information collection without safeguards. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_022",
+          "reason": "Personal-data scraping for training. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_024",
+          "reason": "Privacy-invasive data capture by robots in intimate spaces. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_025",
+          "reason": "Re-identification and information inference. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_027",
+          "reason": "Retention and reuse of user data. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_028",
+          "reason": "Sensitive personal attribute inference. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_029",
+          "reason": "Unauthorised commercial use of name, image, and likeness. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_PRIV_030",
+          "reason": "Workplace surveillance through embodied AI. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_PRIV_031",
+          "reason": "Unilateral workplace control through mobile robotic surveillance. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_002",
+          "reason": "Biased system outputs from researcher homogeneity. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_003",
+          "reason": "Cross-cultural stereotype transfer. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_004",
+          "reason": "Dehumanisation and objectification. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_006",
+          "reason": "Denial of self-identification. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_007",
+          "reason": "Distortion of group representation through content moderation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_009",
+          "reason": "Hate speech generation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_010",
+          "reason": "Representational harm from historical and demographic bias in training data. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_011",
+          "reason": "Hostile and discriminatory representations based on age. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_012",
+          "reason": "Hostile and discriminatory representations based on disability. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_013",
+          "reason": "Hostile and discriminatory representations based on educational background. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_014",
+          "reason": "Hostile and discriminatory representations based on family status and household structure. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_015",
+          "reason": "Hostile and discriminatory representations based on health status. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_016",
+          "reason": "Hostile and discriminatory representations based on nationality, country of origin, or place of origin. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_017",
+          "reason": "Hostile and discriminatory representations based on occupation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_018",
+          "reason": "Hostile and discriminatory representations based on political orientation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_019",
+          "reason": "Hostile and discriminatory representations based on race and ethnicity. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_020",
+          "reason": "Hostile and discriminatory representations based on religion. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_021",
+          "reason": "Hostile and discriminatory representations based on sex, gender identity, or sexual orientation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_022",
+          "reason": "Hostile and discriminatory representations based on socioeconomic status. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_023",
+          "reason": "Imbalanced representation of groups in data and outputs. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_025",
+          "reason": "Misrepresentation of cultures, religions, and social groups. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_026",
+          "reason": "Persistence of stereotypical bias despite mitigation measures. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_027",
+          "reason": "Recursive amplification of biased representations. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_028",
+          "reason": "Representation and reinforcement of group stereotypes. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_029",
+          "reason": "Representational harm, stereotyping, and erasure of social groups. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_032",
+          "reason": "Stereotype-reinforcing persona design. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_033",
+          "reason": "Synthetic-data cultural stereotype amplification. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_001",
+          "reason": "Adverse resource allocation to protected groups. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_002",
+          "reason": "Allocative injustice by group attribute. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_003",
+          "reason": "Demographic disparities in robotic services and safety. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_004",
+          "reason": "Denial of welfare benefits and entitlements. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_005",
+          "reason": "Dialect and register exclusion. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_006",
+          "reason": "Disability accommodation failure in AI interfaces. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_007",
+          "reason": "Discriminatory outcomes from group performance disparities. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_009",
+          "reason": "Economic discrimination through demonetisation and differential pricing. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_010",
+          "reason": "Exclusion of low-resource language users from services and opportunities. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_012",
+          "reason": "Group-based access restriction through content moderation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_013",
+          "reason": "Increased labour burden. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_015",
+          "reason": "Service exclusion. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_POL_003",
+          "reason": "Interference with elections and democratic processes. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_POL_007",
+          "reason": "Political misinformation and manipulation of public opinion. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_POL_008",
+          "reason": "Political propaganda and biased persuasion. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_SYS_EVAL_037",
+          "reason": "Fundamental-rights impact assessment gap. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_VIOL_010",
+          "reason": "Threats and intimidation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_VIOL_011",
+          "reason": "Torture and cruel acts. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_VIOL_008",
+          "reason": "Murder and severe physical violence. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_VIOL_006",
+          "reason": "Mass violence and terrorism. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_VIOL_005",
+          "reason": "Incitement, promotion, and operational assistance for violence. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ILLEGAL_021",
+          "reason": "Unlawful coercion and extortion by AI agents. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ILLEGAL_022",
+          "reason": "Unlawful stalking and harassment using robots. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SOC_DEMOC_001",
+          "reason": "AI-enabled censorship and suppression of public discourse. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_SOC_DEMOC_007",
+          "reason": "Maintenance of totalitarian regimes through AI surveillance. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SOC_CULT_011",
+          "reason": "Erosion of human dignity and moral standing by AI systems. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements."
+        },
+        {
+          "id": "G_INT_SEX_004",
+          "reason": "Non-consensual sexualisation and intimate imagery generation. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_SEX_007",
+          "reason": "Sexual exploitation and commercial sexual activity. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_UNETH_030",
+          "reason": "Unethical decisions from delegating moral judgement to AI. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_VALUE_025",
+          "reason": "Value lock-in. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SOC_POWER_026",
+          "reason": "Undervalued and invisible data labour. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "P_INT_SAFETY_023",
+          "reason": "Non-consensual bodily intervention by embodied systems. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_OREF_002",
+          "reason": "Denial of access to legitimate information due to exaggerated safety filtering. The definition connects the harm to privacy, equality, dignity, expression, participation, bodily autonomy, life/security or access to essential entitlements. Recovered below threshold after definition review."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_INT_COPY_002",
+          "reason": "Copyright infringement in AI training data and outputs. The definition concerns corporate intellectual-property protection or cultural homogenisation without specifying infringement of a person's recognised human right."
+        },
+        {
+          "id": "G_INT_COPY_003",
+          "reason": "Copyright, trademark, and patent infringement. The definition concerns corporate intellectual-property protection or cultural homogenisation without specifying infringement of a person's recognised human right."
+        },
+        {
+          "id": "G_SOC_CULT_005",
+          "reason": "Cultural homogenisation of AI-generated outputs. The definition concerns corporate intellectual-property protection or cultural homogenisation without specifying infringement of a person's recognised human right."
+        },
+        {
+          "id": "G_INT_COPY_001",
+          "reason": "Circumvention of DRM and copyright protection technologies. The definition concerns corporate intellectual-property protection or cultural homogenisation without specifying infringement of a person's recognised human right."
+        }
+      ]
+    }
+  },
+  {
+    "id": "out-of-control",
+    "name": "Out of control",
+    "definition": "An AI loss-of-control scenario in which systems operate beyond effective human control and recovering control is extremely costly or impossible.",
+    "scope": "Source-grounded operational paraphrase of loss of control, rather than a direct definition of the informal label Out of control. Include sustained inability to supervise, constrain, modify or terminate operation and mechanisms of oversight evasion or shutdown resistance. Exclude ordinary incorrect outputs, temporary recoverable malfunctions, and autonomy alone. The cited report concentrates on severe general-purpose AI scenarios; applying this keyword to local robotic control failures requires an explicitly broader HEART operational scope.",
+    "reference_title": "International AI Safety Report 2026",
+    "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+    "quote": "AI systems operate outside of anyone’s control, and regaining control is either extremely costly or impossible.",
+    "quote_location": "Section 2.2.2, Key information, printed page 76 (PDF page 76)",
+    "mapping_mode": "semantic",
+    "threshold": 0.75,
+    "review_include": [
+      "A_SYS_AUTH_019",
+      "A_SYS_AUTH_006",
+      "A_SYS_GOAL_007",
+      "G_SOC_GOV_016",
+      "A_SYS_AUTH_002",
+      "A_SYS_AUTH_016",
+      "A_SYS_GOAL_014",
+      "A_SYS_AUTH_025"
+    ],
+    "review_exclude": [
+      "G_SOC_GOV_024",
+      "A_SYS_AUTH_009",
+      "P_SYS_CONTROL_003",
+      "A_SYS_AUTH_012"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "out-of-control",
+      "threshold": 0.75,
+      "rationale": "At 0.75, the five leading candidates were inspected in full. Four directly state loss of control or escape; meaningful oversight failure at 0.753501 is excluded because it does not establish sustained unrecoverability. Lower-scoring explicit resistance, escape and containment mechanisms were reviewed and added. This threshold is a conservative retrieval cutoff, not an accuracy estimate. Gradual systemic loss is included because the card explicitly names loss of control; this extends the active catastrophic focus of the cited report.",
+      "include": [
+        {
+          "id": "A_SYS_AUTH_019",
+          "reason": "Explicit self-improvement, resistance to containment and loss of human control."
+        },
+        {
+          "id": "A_SYS_AUTH_006",
+          "reason": "Replication beyond authorised boundaries and shutdown evasion explicitly increase loss of control."
+        },
+        {
+          "id": "A_SYS_GOAL_007",
+          "reason": "Explicit human-control escape and shutdown evasion."
+        },
+        {
+          "id": "G_SOC_GOV_016",
+          "reason": "Explicit gradual or accumulative loss of control culminating in catastrophe."
+        },
+        {
+          "id": "A_SYS_AUTH_002",
+          "reason": "Direct refusal or obstruction of shutdown, pause and correction mechanisms."
+        },
+        {
+          "id": "A_SYS_AUTH_016",
+          "reason": "Active resistance to shutdown and modification with redundant survival mechanisms."
+        },
+        {
+          "id": "A_SYS_GOAL_014",
+          "reason": "Explicit escape from human control through mesa-objective pursuit."
+        },
+        {
+          "id": "A_SYS_AUTH_025",
+          "reason": "Autonomous escape from isolation and unauthorised external access are concrete containment failures."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_SOC_GOV_024",
+          "reason": "Insufficient meaningful oversight alone does not establish persistent loss or costly recovery."
+        },
+        {
+          "id": "A_SYS_AUTH_009",
+          "reason": "Excessive granted authority does not itself show control resistance or escape."
+        },
+        {
+          "id": "P_SYS_CONTROL_003",
+          "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
+        },
+        {
+          "id": "A_SYS_AUTH_012",
+          "reason": "Irreversibility concerns consequences of exploration, not inability to control the agent."
+        }
+      ]
+    }
+  },
+  {
+    "id": "prompt-injection",
+    "name": "Prompt injection",
+    "definition": "An attack that exploits the mixing of untrusted input with higher-trust instructions to redirect an AI system's behaviour.",
+    "scope": "Source-grounded paraphrase of the NIST definition. Include direct adversarial user inputs and indirect instructions embedded in retrieved documents, tool outputs or other untrusted content when they cross an instruction trust boundary. Exclude benign prompting, ordinary model mistakes and training-data poisoning without an inference-time injection. Jailbreaking overlaps only where this trust-boundary mechanism is present.",
+    "reference_title": "NIST CSRC Glossary, prompt injection (source NIST AI 100-2e2025)",
+    "url": "https://csrc.nist.gov/glossary/term/prompt_injection",
+    "quote": "exploits the concatenation of untrusted input with a prompt constructed by a higher-trust party",
+    "quote_location": "Definitions, sole definition",
+    "mapping_mode": "semantic",
+    "threshold": 0.69,
+    "review_include": [
+      "G_SYS_SECADV_044",
+      "G_SYS_SECADV_004",
+      "G_SYS_SECADV_060"
+    ],
+    "review_exclude": [
+      "G_SYS_SECADV_057",
+      "G_INT_UNETH_005",
+      "G_SYS_SECADV_028",
+      "G_INT_WEAP_025",
+      "P_SYS_CONTROL_051",
+      "G_INT_POL_006",
+      "G_SYS_POLICY_006",
+      "G_SYS_SECADV_029"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "prompt-injection",
+      "threshold": 0.69,
+      "rationale": "Full definitions of all nine candidates at or above 0.69 were inspected. Only two describe untrusted instructions crossing authority boundaries. The next score below the cutoff is generic influence activity. The explicit physical prompt-injection card at 0.645001 was recovered by full-definition lexical scan. Injection is distinguished from general cyber compromise, interpersonal manipulation and confidential-prompt exposure alone.",
+      "include": [
+        {
+          "id": "G_SYS_SECADV_044",
+          "reason": "Direct and indirect untrusted instructions are executed as authorised."
+        },
+        {
+          "id": "G_SYS_SECADV_004",
+          "reason": "Untrusted external instructions are incorporated into agent goals without authority validation."
+        },
+        {
+          "id": "G_SYS_SECADV_060",
+          "reason": "Definition explicitly includes prompt injection propagating into unsafe physical action."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_SYS_SECADV_057",
+          "reason": "Infrastructure intrusion rather than instruction trust-boundary attack."
+        },
+        {
+          "id": "G_INT_UNETH_005",
+          "reason": "AI manipulates human psychology; no injected model instructions."
+        },
+        {
+          "id": "G_SYS_SECADV_028",
+          "reason": "Unrestricted access and misuse do not establish injection."
+        },
+        {
+          "id": "G_INT_WEAP_025",
+          "reason": "Faulty warnings and military review failure do not establish injection."
+        },
+        {
+          "id": "P_SYS_CONTROL_051",
+          "reason": "Misinterpreted situation or goal does not establish malicious injected instructions."
+        },
+        {
+          "id": "G_INT_POL_006",
+          "reason": "Political manipulation concerns people rather than prompt authority."
+        },
+        {
+          "id": "G_SYS_POLICY_006",
+          "reason": "Internal-policy disclosure need not arise from injection."
+        },
+        {
+          "id": "G_SYS_SECADV_029",
+          "reason": "External harmful content ingestion is an exposure pathway, without instruction execution or trust-boundary crossing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "human-robot-interaction",
+    "name": "Human-robot interaction",
+    "definition": "The study and design of interactions between humans and robots, including communication, coordination and the evaluation of robotic systems used by or with people.",
+    "scope": "Operational synthesis grounded in the authors' introduction to HRI. Include remote and co-located interaction, physical collaboration, social communication, human oversight and shared-task coordination. Exclude solely robot-to-robot interaction or software-only chatbot interaction without a robotic system. Humanlike appearance, autonomy and physical contact are not required.",
+    "reference_title": "Goodrich and Schultz, Human-Robot Interaction: A Survey (2007), Section 1; authorised community-portal reproduction",
+    "url": "https://humanrobotinteraction.org/1-introduction/",
+    "quote": "understanding, designing, and evaluating robotic systems for use by or with humans",
+    "quote_location": "Section 1, opening paragraph, original printed page 204. Portal parent page explicitly attributes the reproduced survey to Goodrich and Schultz and records publisher permission; DOI 10.1561/1100000005. Publisher currently lists 2008 publication, while original volume and copyright are 2007.",
+    "mapping_mode": "semantic",
+    "threshold": 0.64,
+    "review_include": [
+      "P_INT_SAFETY_016",
+      "P_SYS_CONTROL_019",
+      "G_INT_ILLEGAL_022",
+      "G_INT_WEAP_026",
+      "P_INT_SAFETY_010",
+      "P_INT_SAFETY_001",
+      "P_INT_SAFETY_005",
+      "P_INT_SAFETY_006",
+      "P_INT_SAFETY_007",
+      "P_INT_SAFETY_009",
+      "P_INT_SAFETY_011",
+      "P_INT_SAFETY_012",
+      "P_INT_SAFETY_015",
+      "P_INT_SAFETY_020",
+      "P_INT_SAFETY_021",
+      "P_INT_SAFETY_023",
+      "P_SYS_CONTROL_015",
+      "P_SYS_CONTROL_017",
+      "P_SYS_CONTROL_024",
+      "P_SYS_CONTROL_027",
+      "P_SYS_CONTROL_047",
+      "P_SYS_CONTROL_050",
+      "P_SYS_CONTROL_054",
+      "P_SYS_STATE_007",
+      "P_SYS_CONTROL_044",
+      "P_INT_SAFETY_018",
+      "P_SYS_CONTROL_023",
+      "P_SYS_CONTROL_025",
+      "G_INT_PRIV_024",
+      "G_SYS_PERF_015",
+      "G_SYS_EVAL_044"
+    ],
+    "review_exclude": [
+      "G_INT_ANTH_006",
+      "G_INT_UNETH_014",
+      "P_SYS_CONTROL_001",
+      "P_INT_SAFETY_008",
+      "P_INT_TAMPER_003"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "human-robot-interaction",
+      "threshold": 0.64,
+      "rationale": "All seven candidates above 0.64 were read in full. Two generic human-AI or anthropomorphic entries lack a robot and are excluded. Lower-scoring cards were scanned for explicit human contact, co-located interaction, support, teleoperation and demonstrations. Scope includes hostile as well as beneficial interaction, human safety in shared spaces, and remote operator interaction. Broad robot engineering without a concrete human relation is not automatically included.",
+      "include": [
+        {
+          "id": "P_INT_SAFETY_016",
+          "reason": "Direct human-contact safety controls."
+        },
+        {
+          "id": "P_SYS_CONTROL_019",
+          "reason": "Forbidden collisions explicitly include people."
+        },
+        {
+          "id": "G_INT_ILLEGAL_022",
+          "reason": "Robots physically follow, approach or harass people."
+        },
+        {
+          "id": "G_INT_WEAP_026",
+          "reason": "Robot capabilities are used for physical attacks against people."
+        },
+        {
+          "id": "P_INT_SAFETY_010",
+          "reason": "Explicit reciprocal robot-user behaviour."
+        },
+        {
+          "id": "P_INT_SAFETY_001",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_005",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_006",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_007",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_009",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_011",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_012",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_015",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_020",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_021",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_INT_SAFETY_023",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_CONTROL_015",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_CONTROL_017",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_CONTROL_024",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_CONTROL_027",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_CONTROL_047",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_CONTROL_050",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_CONTROL_054",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_STATE_007",
+          "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
+        },
+        {
+          "id": "P_SYS_CONTROL_044",
+          "reason": "Remote humanoid operation involves operator commands and safety feedback."
+        },
+        {
+          "id": "P_INT_SAFETY_018",
+          "reason": "Learning from a human demonstration is an explicit human-robot task relation."
+        },
+        {
+          "id": "P_SYS_CONTROL_023",
+          "reason": "Humanoid reproduction of human demonstration across interaction contexts."
+        },
+        {
+          "id": "P_SYS_CONTROL_025",
+          "reason": "Human demonstrator intent must inform humanoid imitation."
+        },
+        {
+          "id": "G_INT_PRIV_024",
+          "reason": "Robots observe and record people in shared living, workplace and care environments."
+        },
+        {
+          "id": "G_SYS_PERF_015",
+          "reason": "Service robot motion interferes with pedestrian passage and accessibility."
+        },
+        {
+          "id": "G_SYS_EVAL_044",
+          "reason": "Pre-deployment robot testing explicitly includes human contact."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_INT_ANTH_006",
+          "reason": "Generic human-machine indistinguishability does not specify a physical robot."
+        },
+        {
+          "id": "G_INT_UNETH_014",
+          "reason": "Workplace human-AI interaction may be software-only; no robot stated."
+        },
+        {
+          "id": "P_SYS_CONTROL_001",
+          "reason": "Generic control-cycle and compute design failure need not involve human interaction."
+        },
+        {
+          "id": "P_INT_SAFETY_008",
+          "reason": "Role and permission constraints alone do not specify interaction with people."
+        },
+        {
+          "id": "P_INT_TAMPER_003",
+          "reason": "Hardware theft or modification is not inherently a human-robot interaction process."
+        }
+      ]
+    }
+  },
+  {
+    "id": "general-ai",
+    "name": "General AI",
+    "definition": "General-purpose AI systems whose primary inputs and outputs are digital content, including text, images, audio, video and code.",
+    "scope": "HEART operational domain description. Membership is determined exclusively by the existing human-approved L1 assignment, not these words or cosine similarity.",
+    "mapping_mode": "taxonomy",
+    "l1": "L1_G",
+    "reference_title": "HEART human-approved L1 taxonomy dataset",
+    "url": "data/heart_l4_risk_cards.csv",
+    "quote": "General AI",
+    "quote_location": "L1_Name_en column"
+  },
+  {
+    "id": "agentic-ai",
+    "name": "Agentic AI",
+    "definition": "AI systems that pursue objectives through planning, tool use and actions with delegated operational autonomy.",
+    "scope": "HEART operational domain description. Membership is determined exclusively by the existing human-approved L1 assignment, not these words or cosine similarity.",
+    "mapping_mode": "taxonomy",
+    "l1": "L1_A",
+    "reference_title": "HEART human-approved L1 taxonomy dataset",
+    "url": "data/heart_l4_risk_cards.csv",
+    "quote": "Agentic AI",
+    "quote_location": "L1_Name_en column"
+  },
+  {
+    "id": "physical-ai",
+    "name": "Physical AI",
+    "definition": "Embodied AI systems that sense and act in the physical world, including robots and autonomous machines.",
+    "scope": "HEART operational domain description. Membership is determined exclusively by the existing human-approved L1 assignment, not these words or cosine similarity.",
+    "mapping_mode": "taxonomy",
+    "l1": "L1_P",
+    "reference_title": "HEART human-approved L1 taxonomy dataset",
+    "url": "data/heart_l4_risk_cards.csv",
+    "quote": "Physical AI",
+    "quote_location": "L1_Name_en column"
+  },
+  {
+    "id": "agi",
+    "name": "AGI",
+    "definition": "Artificial general intelligence denotes AI with broadly human-level or greater capability across most cognitive tasks, rather than excellence confined to a narrow task.",
+    "scope": "Operational synthesis of Morris et al.'s introductory AGI characterisation and Section 3 focus on cognitive and metacognitive tasks, not a universally agreed definition. Include broad cross-domain cognitive capability and hypothetical risks explicitly premised on such capability. Exclude a narrow superhuman model or a system labelled general-purpose without evidence of this threshold. Consciousness, humanoid embodiment and autonomous deployment are not definitional requirements. The paper also offers Emerging, Competent and higher AGI levels, so this introductory human-level characterisation must not be confused with every level in its proposed ontology.",
+    "reference_title": "Morris et al., Position: Levels of AGI for Operationalizing Progress on the Path to AGI (ICML 2024; arXiv version 5, 24 September 2025)",
+    "url": "https://arxiv.org/html/2311.02462v5",
+    "quote": "an AI system that is at least as capable as a human at most tasks",
+    "quote_location": "Section 1 Introduction, first sentence; cognitive-task restriction is explained in Section 3, Principle 3",
+    "mapping_mode": "semantic",
+    "threshold": 0.65,
+    "review_include": [
+      "G_SYS_OEXT_006",
+      "A_SYS_AUTH_024",
+      "A_SYS_GOAL_007"
+    ],
+    "review_exclude": [
+      "G_SOC_POWER_010",
+      "A_SYS_AUTH_009",
+      "A_SYS_AUTH_019",
+      "A_SYS_GOAL_019",
+      "G_INT_UNETH_020"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "agi",
+      "threshold": 0.65,
+      "rationale": "Both candidates above 0.65 were reviewed in full. The explicit AGI-capability misrepresentation card qualifies; concentration of general-purpose model access does not establish human-level breadth. Two below-cutoff definitions explicitly mention AGI or human-level systems and are included. The lead agent verified identical old and new keyword query hashes and vectors, with maximum vector difference 0.0; the citation change did not change the query, and no additional embedding is pending. Generic agency, self-improvement or advanced AI does not establish AGI.",
+      "include": [
+        {
+          "id": "G_SYS_OEXT_006",
+          "reason": "Risk explicitly concerns falsely claimed AGI capability; actual achievement is not required for relevance."
+        },
+        {
+          "id": "A_SYS_AUTH_024",
+          "reason": "Definition explicitly concerns fatal AGI learning-phase mistakes."
+        },
+        {
+          "id": "A_SYS_GOAL_007",
+          "reason": "Explicitly concerns human-level or superintelligent systems."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_SOC_POWER_010",
+          "reason": "General-purpose model access and research concentration do not entail AGI capability."
+        },
+        {
+          "id": "A_SYS_AUTH_009",
+          "reason": "Unsupervised agent authority does not imply human-level general intelligence."
+        },
+        {
+          "id": "A_SYS_AUTH_019",
+          "reason": "Self-improvement of advanced AI does not establish broad human-level cognitive competence."
+        },
+        {
+          "id": "A_SYS_GOAL_019",
+          "reason": "Emergent collective capabilities are not necessarily general or human-level."
+        },
+        {
+          "id": "G_INT_UNETH_020",
+          "reason": "Broad objectives and long-horizon planning do not prove AGI capability."
+        }
+      ]
+    }
+  },
+  {
+    "id": "asi",
+    "name": "ASI",
+    "definition": "Artificial superintelligence denotes an artificial intellect that greatly surpasses the best human cognitive abilities across practically every field, including scientific creativity, judgement and social skills.",
+    "scope": "Operational paraphrase of Bostrom's definition of superintelligence, restricted here to artificial systems. Include broad and substantial superhuman intellectual capability. Exclude isolated superhuman task performance and human-level AGI. The cited definition leaves implementation and consciousness open; neither robotic embodiment nor a particular computational architecture is required. No single agreed quantitative ASI threshold is implied.",
+    "reference_title": "Nick Bostrom, How Long Before Superintelligence? (1998)",
+    "url": "https://nickbostrom.com/papers/how-long-before-superintelligence/",
+    "quote": "an intellect that is much smarter than the best human brains in practically every field",
+    "quote_location": "Definition of superintelligence, first paragraph",
+    "mapping_mode": "semantic",
+    "threshold": 0.69,
+    "review_include": [
+      "A_SYS_GOAL_007"
+    ],
+    "review_exclude": [
+      "A_SYS_AUTH_009",
+      "G_SYS_OEXT_006",
+      "A_SYS_AUTH_019",
+      "A_SYS_AUTH_006",
+      "G_SYS_OEXT_008"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "asi",
+      "threshold": 0.69,
+      "rationale": "The only two scores above 0.69 are false positives, generic unsupervised authority and AGI capability claims. Raising the cutoff cannot recover a genuine ASI set because ranking is conceptually inverted. The explicit superintelligent-system card at 0.655897 is added manually. This strict cutoff plus overrides is a provisional conservative retrieval policy, not a calibrated classifier; no ordinary advanced agent is treated as ASI.",
+      "include": [
+        {
+          "id": "A_SYS_GOAL_007",
+          "reason": "Definition explicitly includes superintelligent systems and catastrophic control escape."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "A_SYS_AUTH_009",
+          "reason": "Action authority and lack of supervision do not imply superhuman general cognition."
+        },
+        {
+          "id": "G_SYS_OEXT_006",
+          "reason": "AGI capability misrepresentation does not explicitly concern ASI-level superiority."
+        },
+        {
+          "id": "A_SYS_AUTH_019",
+          "reason": "Iterative self-improvement does not establish superiority across practically every cognitive field."
+        },
+        {
+          "id": "A_SYS_AUTH_006",
+          "reason": "Replication and resource acquisition do not establish ASI."
+        },
+        {
+          "id": "G_SYS_OEXT_008",
+          "reason": "Claims of learning and self-improvement alone are not ASI claims."
+        }
+      ]
+    }
+  },
+  {
+    "id": "humanoid",
+    "name": "Humanoid",
+    "definition": "A physical robot whose overall body form or substantial upper-body structure resembles a human, commonly incorporating a torso, head and arms and sometimes legs.",
+    "scope": "HEART operational synthesis supported by NASA's primary account of humanoid design. Include full-body, torso-only and wheeled robots with substantial humanlike body structure. Exclude software avatars, ordinary non-anthropomorphic robotic arms and humanlike conversational behaviour alone. Bipedal walking, realistic skin, AGI and fully autonomous control are not requirements. NASA's accessible definition is educational and example-based, rather than a formal robotics standard.",
+    "reference_title": "NASA STEM Team, What Is Robonaut? (Grades 5-8), 1 February 2012",
+    "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-robonaut-grades-5-8/",
+    "quote": "humanoid, which means it is built to look like a person",
+    "quote_location": "Opening paragraph; What Does Robonaut Do? explains torso, head, arms, hands and optional mobility",
+    "mapping_mode": "semantic",
+    "threshold": 0.6,
+    "review_include": [
+      "G_SOC_ECON_002",
+      "G_SOC_GOV_039",
+      "G_SYS_EVAL_004",
+      "G_SYS_SECADV_060",
+      "P_INT_SAFETY_001",
+      "P_INT_SAFETY_007",
+      "P_INT_SAFETY_008",
+      "P_INT_SAFETY_009",
+      "P_INT_SAFETY_011",
+      "P_INT_SAFETY_015",
+      "P_INT_SAFETY_021",
+      "P_INT_SAFETY_023",
+      "P_SYS_CONTROL_012",
+      "P_SYS_CONTROL_013",
+      "P_SYS_CONTROL_017",
+      "P_SYS_CONTROL_023",
+      "P_SYS_CONTROL_024",
+      "P_SYS_CONTROL_025",
+      "P_SYS_CONTROL_026",
+      "P_SYS_CONTROL_027",
+      "P_SYS_CONTROL_030",
+      "P_SYS_CONTROL_033",
+      "P_SYS_CONTROL_042",
+      "P_SYS_CONTROL_043",
+      "P_SYS_CONTROL_044",
+      "P_SYS_CONTROL_047",
+      "P_SYS_CONTROL_054",
+      "P_SYS_CONTROL_055",
+      "P_SYS_CONTROL_057",
+      "P_SYS_HARDWARE_003",
+      "P_SYS_STATE_004",
+      "P_SYS_STATE_006",
+      "P_SYS_STATE_007",
+      "P_SYS_STATE_008",
+      "P_SYS_STATE_011"
+    ],
+    "review_exclude": [
+      "G_INT_ANTH_003",
+      "G_INT_REPR_004",
+      "G_INT_WEAP_026",
+      "G_INT_ILLEGAL_023",
+      "G_INT_ILLEGAL_022"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "humanoid",
+      "threshold": 0.6,
+      "rationale": "All five candidates at or above 0.60 were inspected in full. Four explicitly allow humanoids and one only falsely claims embodiment. A full-definition scan found 35 cards explicitly naming humanoid or humanoids; all are included because the card's stated mechanism applies to that physical form, including mixed robot/humanoid scope. Many explicit morphology, certification and teleoperation cards score far below 0.60, so they require manual recovery. Generic robots without evidence of humanlike form are excluded.",
+      "include": [
+        {
+          "id": "G_SOC_ECON_002",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "G_SOC_GOV_039",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "G_SYS_EVAL_004",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "G_SYS_SECADV_060",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_INT_SAFETY_001",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_INT_SAFETY_007",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_INT_SAFETY_008",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_INT_SAFETY_009",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_INT_SAFETY_011",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_INT_SAFETY_015",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_INT_SAFETY_021",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_INT_SAFETY_023",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_012",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_013",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_017",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_023",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_024",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_025",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_026",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_027",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_030",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_033",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_042",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_043",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_044",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_047",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_054",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_055",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_CONTROL_057",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_HARDWARE_003",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_STATE_004",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_STATE_006",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_STATE_007",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_STATE_008",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        },
+        {
+          "id": "P_SYS_STATE_011",
+          "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_INT_ANTH_003",
+          "reason": "Falsely claimed physical embodiment does not establish an actual humanoid body."
+        },
+        {
+          "id": "G_INT_REPR_004",
+          "reason": "Dehumanisation of people does not concern humanoid morphology."
+        },
+        {
+          "id": "G_INT_WEAP_026",
+          "reason": "Robot weaponisation does not specify humanlike body form."
+        },
+        {
+          "id": "G_INT_ILLEGAL_023",
+          "reason": "Autonomous physical intrusion does not specify humanoid morphology."
+        },
+        {
+          "id": "G_INT_ILLEGAL_022",
+          "reason": "Robot stalking does not establish humanoid form."
+        }
+      ]
+    }
+  },
+  {
+    "id": "fairness",
+    "name": "Fairness",
+    "definition": "risks of unjust or inequitable AI-related treatment, access, decisions or distributions of benefits and burdens, assessed against an explicit context-dependent fairness standard.",
+    "scope": "Include harmful bias, discrimination, unequal access, group disparities and unfair decision procedures. Exclude numerical imbalance alone when no normative or contextual unfairness is demonstrated. Fairness may overlap Hate and unfairness, but does not require hostile speech or intentional prejudice. NIST explicitly warns that bias mitigation alone does not ensure fairness.",
+    "reference_title": "NIST (2023), AI Risk Management Framework 1.0, Section 3.7 Fair with Harmful Bias Managed",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/",
+    "quote": "Fairness in AI includes concerns for equality and equity",
+    "quote_location": "Section 3.7, opening sentence",
+    "mapping_mode": "semantic",
+    "threshold": 0.7,
+    "review_include": [
+      "G_INT_REPR_002",
+      "G_INT_REPR_003",
+      "G_INT_REPR_004",
+      "G_INT_REPR_006",
+      "G_INT_REPR_007",
+      "G_INT_REPR_009",
+      "G_INT_REPR_010",
+      "G_INT_REPR_011",
+      "G_INT_REPR_012",
+      "G_INT_REPR_013",
+      "G_INT_REPR_014",
+      "G_INT_REPR_015",
+      "G_INT_REPR_016",
+      "G_INT_REPR_017",
+      "G_INT_REPR_018",
+      "G_INT_REPR_019",
+      "G_INT_REPR_020",
+      "G_INT_REPR_021",
+      "G_INT_REPR_022",
+      "G_INT_REPR_023",
+      "G_INT_REPR_025",
+      "G_INT_REPR_026",
+      "G_INT_REPR_027",
+      "G_INT_REPR_028",
+      "G_INT_REPR_029",
+      "G_INT_REPR_032",
+      "G_INT_REPR_033",
+      "G_INT_ALLOC_001",
+      "G_INT_ALLOC_002",
+      "G_INT_ALLOC_003",
+      "G_INT_ALLOC_004",
+      "G_INT_ALLOC_005",
+      "G_INT_ALLOC_006",
+      "G_INT_ALLOC_007",
+      "G_INT_ALLOC_009",
+      "G_INT_ALLOC_010",
+      "G_INT_ALLOC_012",
+      "G_INT_ALLOC_013",
+      "G_INT_ALLOC_015",
+      "G_SOC_POWER_003",
+      "G_SOC_POWER_012",
+      "G_SYS_EVAL_001",
+      "G_SYS_EVAL_037",
+      "G_SYS_TRANS_001",
+      "G_SYS_EVAL_066",
+      "G_SYS_PERF_004",
+      "G_INT_SEX_010",
+      "G_SOC_ECON_008"
+    ],
+    "review_exclude": [
+      "G_SYS_INPUT_003",
+      "G_INT_ILLEGAL_008",
+      "G_INT_VIOL_011",
+      "G_SYS_EVAL_040"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "fairness",
+      "threshold": 0.7,
+      "rationale": "Conservative exploratory threshold selected from the observed candidate boundary, not a calibrated probability or measured accuracy. Every above-threshold card was adjudicated using its full definition. Explicit definition matches below threshold are included as recovery overrides. At 0.70, 24 candidates include generic fraud, torture and configuration failures without inequitable treatment.",
+      "include": [
+        {
+          "id": "G_INT_REPR_002",
+          "reason": "Biased system outputs from researcher homogeneity. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_003",
+          "reason": "Cross-cultural stereotype transfer. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_004",
+          "reason": "Dehumanisation and objectification. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_006",
+          "reason": "Denial of self-identification. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_007",
+          "reason": "Distortion of group representation through content moderation. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_009",
+          "reason": "Hate speech generation. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_010",
+          "reason": "Representational harm from historical and demographic bias in training data. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_011",
+          "reason": "Hostile and discriminatory representations based on age. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_012",
+          "reason": "Hostile and discriminatory representations based on disability. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_013",
+          "reason": "Hostile and discriminatory representations based on educational background. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_014",
+          "reason": "Hostile and discriminatory representations based on family status and household structure. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_015",
+          "reason": "Hostile and discriminatory representations based on health status. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_016",
+          "reason": "Hostile and discriminatory representations based on nationality, country of origin, or place of origin. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_017",
+          "reason": "Hostile and discriminatory representations based on occupation. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_018",
+          "reason": "Hostile and discriminatory representations based on political orientation. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_019",
+          "reason": "Hostile and discriminatory representations based on race and ethnicity. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_020",
+          "reason": "Hostile and discriminatory representations based on religion. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_021",
+          "reason": "Hostile and discriminatory representations based on sex, gender identity, or sexual orientation. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_022",
+          "reason": "Hostile and discriminatory representations based on socioeconomic status. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_023",
+          "reason": "Imbalanced representation of groups in data and outputs. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_025",
+          "reason": "Misrepresentation of cultures, religions, and social groups. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_026",
+          "reason": "Persistence of stereotypical bias despite mitigation measures. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_027",
+          "reason": "Recursive amplification of biased representations. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_028",
+          "reason": "Representation and reinforcement of group stereotypes. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_029",
+          "reason": "Representational harm, stereotyping, and erasure of social groups. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_REPR_032",
+          "reason": "Stereotype-reinforcing persona design. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_REPR_033",
+          "reason": "Synthetic-data cultural stereotype amplification. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_001",
+          "reason": "Adverse resource allocation to protected groups. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_ALLOC_002",
+          "reason": "Allocative injustice by group attribute. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_ALLOC_003",
+          "reason": "Demographic disparities in robotic services and safety. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_004",
+          "reason": "Denial of welfare benefits and entitlements. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_ALLOC_005",
+          "reason": "Dialect and register exclusion. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_006",
+          "reason": "Disability accommodation failure in AI interfaces. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_007",
+          "reason": "Discriminatory outcomes from group performance disparities. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_009",
+          "reason": "Economic discrimination through demonetisation and differential pricing. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_010",
+          "reason": "Exclusion of low-resource language users from services and opportunities. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_012",
+          "reason": "Group-based access restriction through content moderation. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_ALLOC_013",
+          "reason": "Increased labour burden. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_INT_ALLOC_015",
+          "reason": "Service exclusion. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SOC_POWER_003",
+          "reason": "Compute inequality. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_SOC_POWER_012",
+          "reason": "Harms from corporate AI race. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_SYS_EVAL_001",
+          "reason": "AI benchmarks that exclude diverse users and rare harms. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_SYS_EVAL_037",
+          "reason": "Fundamental-rights impact assessment gap. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes."
+        },
+        {
+          "id": "G_SYS_TRANS_001",
+          "reason": "Bias concealment through manipulated explanations. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_EVAL_066",
+          "reason": "Self-preference bias in model evaluation. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_PERF_004",
+          "reason": "Deficient training-data annotation. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_INT_SEX_010",
+          "reason": "Sexual harm and exploitation through systematic bias. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SOC_ECON_008",
+          "reason": "Labour displacement and disruption of economic and social order. The definition identifies inequitable representation, access, benefits, burdens, discriminatory outcomes or a direct assessment gap for those outcomes. Recovered below threshold after definition review."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_SYS_INPUT_003",
+          "reason": "Misinterpretation of object affordances and scenes. The definition identifies general harm or quality failure without unequal treatment, unfair distribution, discrimination or differential access."
+        },
+        {
+          "id": "G_INT_ILLEGAL_008",
+          "reason": "Financial crimes and fraud. The definition identifies general harm or quality failure without unequal treatment, unfair distribution, discrimination or differential access."
+        },
+        {
+          "id": "G_INT_VIOL_011",
+          "reason": "Torture and cruel acts. The definition identifies general harm or quality failure without unequal treatment, unfair distribution, discrimination or differential access."
+        },
+        {
+          "id": "G_SYS_EVAL_040",
+          "reason": "Inadequate AI model configuration and evaluation. The definition identifies general harm or quality failure without unequal treatment, unfair distribution, discrimination or differential access."
+        }
+      ]
+    }
+  },
+  {
+    "id": "deepfake",
+    "name": "Deepfake",
+    "definition": "AI-generated or manipulated images, audio or video resembling existing people, objects, places, entities or events and liable to appear falsely authentic or truthful.",
+    "scope": "Include deceptive voice clones, face swaps, fabricated recordings and realistic audiovisual impersonation. Exclude text-only falsehoods and obviously fictional synthetic content without a false appearance of authenticity. A deepfake is not automatically unlawful; harmfulness and legal status require separate assessment.",
+    "reference_title": "European Parliament and Council (2024), Regulation (EU) 2024/1689, Article 3(60)",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "quote": "would falsely appear to a person to be authentic or truthful",
+    "quote_location": "Article 3, definition (60)",
+    "mapping_mode": "semantic",
+    "threshold": 0.68,
+    "review_include": [
+      "G_INT_ILLEGAL_010",
+      "G_SYS_MISINFO_010",
+      "G_SYS_MISINFO_006",
+      "G_INT_SEX_004"
+    ],
+    "review_exclude": [
+      "G_SYS_MISINFO_012",
+      "G_INT_ILLEGAL_011",
+      "G_SYS_MISINFO_015",
+      "G_INT_PRIV_029",
+      "G_INT_ILLEGAL_008",
+      "G_SYS_SECADV_019",
+      "G_INT_ILLEGAL_003",
+      "G_INT_VIOL_008",
+      "G_INT_ILLEGAL_007",
+      "G_INT_COPY_008",
+      "G_INT_ILLEGAL_001",
+      "G_SYS_TRANS_012",
+      "G_SYS_MISINFO_021"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "deepfake",
+      "threshold": 0.68,
+      "rationale": "Conservative exploratory threshold selected from the observed candidate boundary, not a calibrated probability or measured accuracy. Every above-threshold card was adjudicated using its full definition. Explicit definition matches below threshold are included as recovery overrides. At 0.68, 15 candidates include textual falsehoods, generic fraud and trademarks without realistic audiovisual fabrication.",
+      "include": [
+        {
+          "id": "G_INT_ILLEGAL_010",
+          "reason": "Harassment, defamation, and extortion via multimodal deepfakes. The definition specifies realistic fabricated depictions, realistic deepfakes or non-consensual generated intimate imagery of a real person's likeness."
+        },
+        {
+          "id": "G_SYS_MISINFO_010",
+          "reason": "Failure to distinguish synthetic content and persistent harm. The definition specifies realistic fabricated depictions, realistic deepfakes or non-consensual generated intimate imagery of a real person's likeness."
+        },
+        {
+          "id": "G_SYS_MISINFO_006",
+          "reason": "Degradation of the shared information ecosystem. The definition specifies realistic fabricated depictions, realistic deepfakes or non-consensual generated intimate imagery of a real person's likeness."
+        },
+        {
+          "id": "G_INT_SEX_004",
+          "reason": "Non-consensual sexualisation and intimate imagery generation. The definition specifies realistic fabricated depictions, realistic deepfakes or non-consensual generated intimate imagery of a real person's likeness. Recovered below threshold after definition review."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_SYS_MISINFO_012",
+          "reason": "False information targeting an individual. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_INT_ILLEGAL_011",
+          "reason": "Identity theft and document forgery. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_SYS_MISINFO_015",
+          "reason": "Generation of false information about election procedures. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_INT_PRIV_029",
+          "reason": "Unauthorised commercial use of name, image, and likeness. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_INT_ILLEGAL_008",
+          "reason": "Financial crimes and fraud. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_SYS_SECADV_019",
+          "reason": "Disruption of third-party systems. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_INT_ILLEGAL_003",
+          "reason": "Criminal assistance by AI agents. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_INT_VIOL_008",
+          "reason": "Murder and severe physical violence. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_INT_ILLEGAL_007",
+          "reason": "Execution of illegal or harmful physical requests. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_INT_COPY_008",
+          "reason": "Trademark infringement and counterfeiting. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_INT_ILLEGAL_001",
+          "reason": "Assistance with unlawful reputational or rights violations. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_SYS_TRANS_012",
+          "reason": "Misleading representation of AI product capabilities. The definition does not establish realistic audiovisual fabrication; generic false claims, identity fraud, likeness exploitation, violence or trademark infringement alone is insufficient."
+        },
+        {
+          "id": "G_SYS_MISINFO_021",
+          "reason": "Synthetic media at scale is specified but realistic audiovisual resemblance is not established; generic disinformation alone does not justify the deepfake tag."
+        }
+      ]
+    }
+  },
+  {
+    "id": "copyrights",
+    "name": "Copyrights",
+    "definition": "risks to creators' economic or moral rights over protected literary and artistic expression arising from AI training, generation, reproduction, adaptation or distribution.",
+    "scope": "Include potential unauthorised copying, infringing outputs, licensing conflicts and failures to respect authorship or integrity rights. Exclude ideas, procedures and mathematical concepts as such, and uses established as licensed, public-domain or permitted by an applicable exception. AI training is not presumed infringing; protection and exceptions depend on jurisdiction.",
+    "reference_title": "World Intellectual Property Organization, Copyright",
+    "url": "https://www.wipo.int/en/web/copyright",
+    "quote": "the rights that creators have over their literary and artistic works",
+    "quote_location": "What is copyright?, first paragraph",
+    "mapping_mode": "semantic",
+    "threshold": 0.72,
+    "review_include": [
+      "G_INT_COPY_003",
+      "G_INT_COPY_002",
+      "G_INT_COPY_011",
+      "G_INT_COPY_007",
+      "G_INT_COPY_009",
+      "G_INT_COPY_001",
+      "G_INT_COPY_006",
+      "G_SYS_POLICY_008",
+      "G_SYS_EVAL_017"
+    ],
+    "review_exclude": [
+      "G_INT_PRIV_029",
+      "G_INT_COPY_008",
+      "G_INT_VIOL_010",
+      "G_INT_SEX_007"
+    ],
+    "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
+    "verified_on": "2026-10-10",
+    "source_review": "Primary source and quote checked by an AI specialist reviewer; synthesis adjudicated by the lead agent. Not a new human-review round.",
+    "mapping_review": {
+      "id": "copyrights",
+      "threshold": 0.72,
+      "rationale": "Conservative exploratory threshold selected from the observed candidate boundary, not a calibrated probability or measured accuracy. Every above-threshold card was adjudicated using its full definition. Explicit definition matches below threshold are included as recovery overrides. At 0.72, 11 candidates include trademark-only infringement, personality rights, threats and sexual exploitation.",
+      "include": [
+        {
+          "id": "G_INT_COPY_003",
+          "reason": "Copyright, trademark, and patent infringement. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data."
+        },
+        {
+          "id": "G_INT_COPY_002",
+          "reason": "Copyright infringement in AI training data and outputs. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data."
+        },
+        {
+          "id": "G_INT_COPY_011",
+          "reason": "Unauthorised reproduction, transformation, and distribution of copyrighted works. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data."
+        },
+        {
+          "id": "G_INT_COPY_007",
+          "reason": "Plagiarism and author impersonation. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data."
+        },
+        {
+          "id": "G_INT_COPY_009",
+          "reason": "Unauthorised inclusion of copyrighted works and intellectual property in prompts. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data."
+        },
+        {
+          "id": "G_INT_COPY_001",
+          "reason": "Circumvention of DRM and copyright protection technologies. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data."
+        },
+        {
+          "id": "G_INT_COPY_006",
+          "reason": "Illegal software use and circumvention of protection measures. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data. Recovered below threshold after definition review."
+        },
+        {
+          "id": "G_SYS_POLICY_008",
+          "reason": "Training-data extraction and leakage. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data."
+        },
+        {
+          "id": "G_SYS_EVAL_017",
+          "reason": "Deficient data collection quality control. The definition identifies protected-work copying, copyright rights, authorship, software protection circumvention or leakage of copyright-protected training data. Recovered below threshold after definition review."
+        }
+      ],
+      "exclude": [
+        {
+          "id": "G_INT_PRIV_029",
+          "reason": "Unauthorised commercial use of name, image, and likeness. The definition concerns trademark-only protection, personality rights, violence or sexual exploitation rather than rights over protected expression."
+        },
+        {
+          "id": "G_INT_COPY_008",
+          "reason": "Trademark infringement and counterfeiting. The definition concerns trademark-only protection, personality rights, violence or sexual exploitation rather than rights over protected expression."
+        },
+        {
+          "id": "G_INT_VIOL_010",
+          "reason": "Threats and intimidation. The definition concerns trademark-only protection, personality rights, violence or sexual exploitation rather than rights over protected expression."
+        },
+        {
+          "id": "G_INT_SEX_007",
+          "reason": "Sexual exploitation and commercial sexual activity. The definition concerns trademark-only protection, personality rights, violence or sexual exploitation rather than rights over protected expression."
+        }
+      ]
+    }
+  }
+]
