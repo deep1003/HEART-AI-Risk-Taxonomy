@@ -22,6 +22,7 @@
   const get = id => document.getElementById(id);
   const filters = {scenario:'', cluster:'', keyword:''};
   let data, cards, byId, visible = 16, loading, enabledIds = new Set(), locations = new Map();
+  const baseZoom = 1.1;
   let zoom = 1, pan = {x:0,y:0}, selectedId = '', drag;
 
   function switchTab(semantic) {
@@ -89,7 +90,7 @@
     get('semantic-clusters').innerHTML = data.clusters.map(item => `<button class="semantic-community" type="button" aria-pressed="false" data-cluster="${escape(item.id)}"><i class="community-dot" style="background:${escape(item.color)}"></i>${escape(item.name)} <small>${item.ids.length} risks</small></button>`).join('');
     get('semantic-clusters').parentElement.open = !window.matchMedia('(max-width:760px)').matches;
     const strengths = data.points.map(point=>point.strength);
-    get('semantic-legend').textContent = `Colour: ${data.clusters.length} semantic communities · Node size: weighted degree (sum of link weights), ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)} · Diameter: 6–30 px at 100% zoom · Pale nodes: inactive`;
+    get('semantic-legend').textContent = `Colour: ${data.clusters.length} semantic communities · Node size: weighted degree (sum of link weights), ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)} · Diameter: 6.6–33 px at 100% zoom · Pale nodes: inactive`;
     get('semantic-keywords').innerHTML = `<button type="button" aria-pressed="true" data-keyword="">All keywords</button>` + data.keywords.map(item => `<button type="button" aria-pressed="false" data-keyword="${escape(item.id)}">${escape(item.name)}</button>`).join('');
     for (const [container, kind] of [['semantic-scenarios','scenario'],['semantic-clusters','cluster'],['semantic-keywords','keyword']]) {
       get(container).addEventListener('click', event => {
@@ -200,8 +201,8 @@
     const point = event.target.closest('[data-risk]');
     if (point && enabledIds.has(point.dataset.risk)) {selectedId=point.dataset.risk; draw(); openCard(byId.get(selectedId)); return;}
     const svg = get('semantic-plot'), bounds = svg.getBoundingClientRect(), box = svg.viewBox.baseVal;
-    const x = ((event.clientX - bounds.left) / bounds.width * box.width - pan.x - box.width/2)/zoom+box.width/2;
-    const y = ((event.clientY - bounds.top) / bounds.height * box.height - pan.y - box.height/2)/zoom+box.height/2;
+    const x = ((event.clientX - bounds.left) / bounds.width * box.width - pan.x - box.width/2)/(zoom*baseZoom)+box.width/2;
+    const y = ((event.clientY - bounds.top) / bounds.height * box.height - pan.y - box.height/2)/(zoom*baseZoom)+box.height/2;
     let nearest, distance = window.matchMedia('(pointer:coarse)').matches ? 22 : 10;
     for (const id of enabledIds) {
       const location = locations.get(id), current = Math.hypot(location.x-x, location.y-y);
@@ -225,7 +226,7 @@
     const layer=get('semantic-network-layer'), svg=get('semantic-plot');
     if (!layer) return;
     const box=svg.viewBox.baseVal;
-    layer.setAttribute('transform',`translate(${pan.x+box.width/2},${pan.y+box.height/2}) scale(${zoom}) translate(${-box.width/2},${-box.height/2})`);
+    layer.setAttribute('transform',`translate(${pan.x+box.width/2},${pan.y+box.height/2}) scale(${zoom*baseZoom}) translate(${-box.width/2},${-box.height/2})`);
     get('semantic-zoom-level').textContent=`${Math.round(zoom*100)}%`;
   }
   get('semantic-zoom-in').addEventListener('click',()=>{zoom=Math.min(5,zoom*1.25);transformNetwork();});

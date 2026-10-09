@@ -34,3 +34,6 @@ Links indicate semantic proximity, not causal propagation. Layout distances are 
 - [Weighted Louvain](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.louvain.louvain_communities.html)
 - [ForceAtlas2](https://networkx.org/documentation/stable/reference/generated/networkx.drawing.layout.forceatlas2_layout.html)
 - [Reference visualisation](https://deep1003.github.io/RAI-Risk-Taxonomy-2.0/risk-taxonomy-space.html)
+# Display baseline
+
+The default 100% zoom uses a 1.10 display multiplier, equivalent to the previous 110% view. Fit network restores this baseline. Weighted-degree radii remain unchanged in graph coordinates; displayed diameters are 6.6–33 pixels at the new default. Pointer hit testing uses the same multiplier.
