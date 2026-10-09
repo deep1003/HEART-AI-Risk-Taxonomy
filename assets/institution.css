@@ -1,0 +1,10 @@
+/* Use the unmodified official KT mark on a white clear-space plate. */
+.brand-mark.kt-brand-mark{width:60px;height:56px;padding:8px;background:#fff;border-radius:4px;flex-shrink:0}
+.kt-brand-mark img,.kt-logo-link img{display:block;width:40px;height:40px;object-fit:contain}
+.publisher-line{margin:18px 0 0;color:#d6dbe7;font-size:.9rem;line-height:1.6}
+.publisher-line strong{color:#fff;font-weight:600}
+.publisher-identity{display:flex;align-items:center;gap:16px;margin-top:28px}
+.footer-inner .kt-logo-link{display:flex;align-items:center;justify-content:center;flex:0 0 60px;width:60px;height:56px;margin:0;padding:8px;background:#fff;border-radius:4px}
+.publisher-name{margin:0!important;color:#fff!important;font-size:.9rem!important;line-height:1.5}
+.footer-inner .publisher-contact{display:inline-block;margin:6px 0 0;font-size:.85rem;overflow-wrap:anywhere}
+@media(max-width:600px){.brand-mark.kt-brand-mark{width:44px;height:44px;padding:6px}.kt-brand-mark img{width:32px;height:32px}.publisher-line{font-size:.85rem}.publisher-identity{gap:12px}}
