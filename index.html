@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles-v2.css">
   <link rel="stylesheet" href="assets/institution.css">
-  <link rel="stylesheet" href="assets/semantic-space.css?v=graph-status-20261010">
+  <link rel="stylesheet" href="assets/semantic-space.css?v=l1-l3-colours-20261010">
 </head>
 <body>
   <header class="site-header">
@@ -79,7 +79,7 @@
         <aside class="semantic-lenses" aria-label="Semantic community filters">
           <h3>Application communities</h3><div id="semantic-scenarios"></div>
           <p class="semantic-caution">Overlapping scenario lenses, not changes to the taxonomy. Applicability depends on the system's actual capabilities and deployment.</p>
-          <details><summary>Semantic communities</summary><div id="semantic-clusters"></div></details>
+          <details><summary>L3 categories</summary><div id="semantic-clusters"></div></details>
         </aside>
         <div class="semantic-main">
           <div class="semantic-keyword-head"><h3>Risk keywords</h3></div>
@@ -90,7 +90,7 @@
           <p class="semantic-method">Links: cosine similarity of 1,024-dimensional BGE-M3 dense embeddings (Ollama 0.32.1). Undirected union of each node's 8 nearest neighbours, retaining similarities ≥ 0.60. Link weight = cosine similarity; node weighted degree = sum of incident link weights. Weighted Louvain: NetworkX 3.5, resolution = 1.0, seed = 23.</p>
           <div class="semantic-plot-wrap"><div id="semantic-status" class="semantic-status" role="status" aria-live="polite">Loading the semantic network…</div><svg id="semantic-plot" viewBox="0 0 960 600" role="img" aria-label="Two-dimensional text projection of the L4 risk cards"><title>L4 semantic space</title><desc>Each point is an existing risk card. Point position reflects a compressed text projection, not risk severity or probability.</desc></svg><div id="semantic-tooltip" class="semantic-tooltip" role="tooltip" hidden></div></div>
           <div id="semantic-legend" class="semantic-legend">Colours identify semantic communities. Links indicate semantic proximity, not causal propagation.</div>
-          <details class="semantic-method"><summary>Method and interpretation</summary><p>Current English L4 names and definitions are encoded locally by BGE-M3 through Ollama, with the exact model digest recorded in network metadata. Dense 1,024-dimensional embeddings are L2 normalised. Cosine-weighted nearest-neighbour links define a graph. Weighted Louvain detects communities and ForceAtlas2 places nodes. Colours identify graph communities; node area reflects the sum of incident cosine weights (weighted degree). Labels summarise dominant existing L3 families, not new category assignments.</p><p id="semantic-method-stats"></p><p>Application communities remain overlapping editorial lenses. Links and paths express semantic proximity, not causal propagation, probability or severity. Coordinates are exploratory layout units. Filtering never changes the original taxonomy.</p><a href="data/semantic_space_methods.md">Read methods and provenance</a> · <a href="data/semantic_space.json" download>Download network data</a></details>
+          <details class="semantic-method"><summary>Method and interpretation</summary><p>Current English L4 names and definitions are encoded locally by BGE-M3 through Ollama. Dense 1,024-dimensional embeddings are L2 normalised. Cosine-weighted nearest-neighbour links define a graph and ForceAtlas2 places nodes. Colour follows each card's human-approved L3 assignment. The 47 L3 titles and definitions use the same model; three fixed L1 colour anchors, bounded cross-domain blends and within-domain PCA variations encode approximate semantic relationships. Boundary shades do not mean assignment uncertainty. Node area reflects weighted degree, not risk severity.</p><p id="semantic-method-stats"></p><p>Application communities remain overlapping editorial lenses. Links and paths express semantic proximity, not causal propagation, probability or severity. Louvain partitions remain diagnostic metadata only. Filtering and colouring never change the original taxonomy.</p><a href="data/semantic_space_methods.md">Read methods and provenance</a> · <a href="data/semantic_space.json" download>Download network data</a></details>
           <section id="semantic-card-detail" aria-labelledby="semantic-card-title" hidden><button id="semantic-card-close" type="button">Close selected card</button><div id="semantic-card-content" aria-live="polite"></div></section>
           <div class="semantic-results-heading"><h3>Active risk cards</h3><span id="semantic-list-count"></span></div>
           <div id="semantic-risk-list" class="semantic-risk-list"></div><button id="semantic-more" class="semantic-more" type="button" hidden>Show more active risks</button>
@@ -125,6 +125,6 @@
     <div class="footer-bottom"><span>HEART · 622 risk cards · 47 categories</span><a href="#about">Back to top</a></div>
   </footer>
   <script src="assets/app.js" defer></script>
-  <script src="assets/semantic-space.js?v=graph-status-20261010" defer></script>
+  <script src="assets/semantic-space.js?v=l1-l3-colours-20261010" defer></script>
 </body>
 </html>

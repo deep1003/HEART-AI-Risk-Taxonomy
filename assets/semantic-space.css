@@ -89,3 +89,6 @@
 .semantic-keyword-definition h4 { margin: 0 0 10px; font-size: 18px; }
 .semantic-keyword-definition p { line-height: 1.6; }
 .semantic-keyword-definition blockquote { margin: 12px 0; padding: 8px 16px; border-left: 3px solid #3867df; }
+.semantic-l1-group h4{font-size:.9rem;margin:18px 0 12px;display:flex;align-items:center;gap:8px}
+.semantic-l2-group h5{font-size:.8rem;color:#667085;margin:14px 0 8px}
+.semantic-domain-key{display:inline-flex;align-items:center;gap:6px;margin-right:18px;font-weight:650}

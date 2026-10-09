@@ -143,6 +143,24 @@ def main():
         result['keywords'] = keyword_data['keywords']
         result['method']['keyword_mapping'] = keyword_data['limitations']
         result['method']['keyword_query_sha256'] = keyword_data['query_sha256']
+    colour_data = json.loads((ROOT / 'data/l3_semantic_colours.json').read_text())
+    assert colour_data['source_sha256'] == hashlib.sha256(raw).hexdigest()
+    assert colour_data['model_revision'] == revision
+    result['graph_communities'] = result['clusters']
+    result['clusters'] = []
+    for category in colour_data['categories']:
+        indexes = [i for i, card in enumerate(cards) if card['L3_ID'] == category['L3_ID']]
+        centroid = xy[indexes].mean(axis=0)
+        name = category['L3_Title_en']
+        result['clusters'].append(dict(category, id=category['L3_ID'], name=name,
+                                       label=short_names.get(name, name), x=float(centroid[0]), y=float(centroid[1]),
+                                       ids=[cards[i]['L4_ID'] for i in indexes]))
+    for point, card in zip(result['points'], cards):
+        point['graph_community'] = point['cluster']
+        point['cluster'] = card['L3_ID']
+    result['l1_colors'] = colour_data['base_colors']
+    result['method']['node_colour'] = colour_data['method']
+    result['method']['colour_limitations'] = colour_data['limitations']
     assert np.isfinite(xy).all() and len(cards)==622
     assert source.read_bytes()==raw
     (ROOT/'data/semantic_space.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')

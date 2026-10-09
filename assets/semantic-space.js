@@ -77,7 +77,7 @@
     get('semantic-status').textContent = 'Loading the risk text projection…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=source-defined-keywords-20261010'), fetch('data/heart_l4_risk_cards.json')]);
+      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=l1-l3-colours-20261010'), fetch('data/heart_l4_risk_cards.json')]);
       if (!spaceResponse.ok || !cardResponse.ok) throw new Error('The semantic-space data could not be loaded.');
       const cardText = await cardResponse.text();
       const space = await spaceResponse.json();
@@ -91,7 +91,7 @@
       if (space.points.length !== sourceCards.length || space.points.some(point => !lookup.has(point.id))) throw new Error('Projection/card IDs do not match.');
       data = space; cards = sourceCards; byId = lookup;
       buildControls();
-      get('semantic-method-stats').textContent = `${data.card_count} unchanged risk cards; ${data.clusters.length} graph communities; ${data.edges.length.toLocaleString()} weighted links. Embeddings: BGE-M3, ${data.method.embedding_dimensions} dimensions; Ollama ${data.method.ollama_version}; model digest ${data.method.model_revision}. Louvain communities and ForceAtlas2 layout are exploratory, not new taxonomy assignments.`;
+      get('semantic-method-stats').textContent = `${data.card_count} unchanged risk cards; ${data.clusters.length} human-defined L3 colour groups; ${data.edges.length.toLocaleString()} weighted links. Embeddings: BGE-M3, ${data.method.embedding_dimensions} dimensions; Ollama ${data.method.ollama_version}; model digest ${data.method.model_revision}. L1 anchors and L3 definition similarity determine colour; ForceAtlas2 determines layout. Louvain communities remain diagnostic metadata, not displayed colour groups or new taxonomy assignments.`;
       render();
     } catch (error) {
       get('semantic-status').textContent = error.message;
@@ -101,10 +101,13 @@
 
   function buildControls() {
     get('semantic-scenarios').innerHTML = data.scenarios.map(item => `<button class="semantic-community" type="button" aria-pressed="false" data-scenario="${escape(item.id)}"><strong>${escape(item.name)}</strong><small lang="ko">${escape(item.name_ko)}</small><small>${item.ids.length} potentially relevant risks</small></button>`).join('');
-    get('semantic-clusters').innerHTML = data.clusters.map(item => `<button class="semantic-community" type="button" aria-pressed="false" data-cluster="${escape(item.id)}"><i class="community-dot" style="background:${escape(item.color)}"></i>${escape(item.name)} <small>${item.ids.length} risks</small></button>`).join('');
+    get('semantic-clusters').innerHTML = ['L1_G','L1_A','L1_P'].map(domain=>{
+      const categories=data.clusters.filter(item=>item.L1_ID===domain);
+      return `<section class="semantic-l1-group"><h4><i class="community-dot" style="background:${escape(data.l1_colors[domain])}"></i>${escape(categories[0].L1_Title_en)}</h4>${[...new Set(categories.map(item=>item.L2_ID))].map(area=>`<div class="semantic-l2-group"><h5>${escape(categories.find(item=>item.L2_ID===area).L2_Title_en)}</h5>${categories.filter(item=>item.L2_ID===area).map(item=>`<button class="semantic-community" type="button" aria-pressed="false" data-cluster="${escape(item.id)}"><i class="community-dot" style="background:${escape(item.color)}"></i>${escape(item.name)}<small>${escape(item.id)} · ${item.ids.length} risks</small></button>`).join('')}</div>`).join('')}</section>`;
+    }).join('');
     get('semantic-clusters').parentElement.open = false;
     const strengths = data.points.map(point=>point.strength);
-    get('semantic-legend').textContent = `Colour: ${data.clusters.length} semantic communities · Node size: weighted degree (sum of link weights), ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)} · Diameter: 6.6–33 px at 100% zoom · Pale nodes: inactive`;
+    get('semantic-legend').innerHTML = Object.entries(data.l1_colors).map(([id,color])=>`<span class="semantic-domain-key"><i class="community-dot" style="background:${escape(color)}"></i>${escape(data.clusters.find(item=>item.L1_ID===id).L1_Title_en)}</span>`).join(' ') + `<p>Colour: 47 L3 categories within 3 L1 anchors; boundary blends show semantic proximity, not assignment uncertainty. Similarity-based shades are approximate, not a distance-preserving map. Size: weighted degree, ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)}. Pale nodes: inactive.</p>`;
     get('semantic-keywords').innerHTML = `<button type="button" aria-pressed="true" data-keyword="">All keywords</button>` + data.keywords.map(item => `<button type="button" aria-pressed="false" data-keyword="${escape(item.id)}">${escape(item.name)}</button>`).join('');
     for (const [container, kind] of [['semantic-scenarios','scenario'],['semantic-clusters','cluster'],['semantic-keywords','keyword']]) {
       get(container).addEventListener('click', event => {
@@ -180,7 +183,8 @@
       markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" aria-label="${escape(point.id + ': ' + card.L4_Name_en)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="${escape(cluster.color)}"/>`;
     }
     const labelBoxes = [];
-    const labels = data.clusters.filter(cluster=>cluster.ids.some(id=>enabledIds.has(id))).slice(0,width<600?4:12);
+    const eligible = data.clusters.filter(cluster=>cluster.ids.some(id=>enabledIds.has(id)));
+    const labels = Object.keys(data.l1_colors).flatMap(domain=>eligible.filter(item=>item.L1_ID===domain).sort((a,b)=>b.ids.length-a.ids.length).slice(0,width<600?2:4));
     for (const cluster of labels) {
       const x = sx(cluster.x), y = sy(cluster.y);
       const label = cluster.label || cluster.name;
@@ -190,7 +194,7 @@
       const box = {x:tx,y:ty-16,w:textWidth,h:26};
       if (labelBoxes.some(b=>box.x<b.x+b.w && box.x+box.w>b.x && box.y<b.y+b.h && box.y+box.h>b.y)) continue;
       labelBoxes.push(box);
-      markup += `<g class="semantic-community-label" data-cluster-label="${escape(cluster.id)}" role="button" tabindex="0" aria-label="Filter community: ${escape(cluster.name)}"><circle cx="${tx}" cy="${ty-4}" r="6" stroke="${escape(cluster.color)}"/><text x="${tx+12}" y="${ty}">${escape(text)}</text><title>${escape(cluster.name)}</title></g>`;
+      markup += `<g class="semantic-community-label" data-cluster-label="${escape(cluster.id)}" role="button" tabindex="0" aria-label="Filter L3 category: ${escape(cluster.name)}"><circle cx="${tx}" cy="${ty-4}" r="6" stroke="${escape(cluster.color)}"/><text x="${tx+12}" y="${ty}">${escape(text)}</text><title>${escape(cluster.name)}</title></g>`;
     }
     markup += '</g>';
     svg.innerHTML = markup;
@@ -232,7 +236,7 @@
     if (!point || !enabledIds.has(point.dataset.risk)) {tooltip.hidden = true; return;}
     const card = byId.get(point.dataset.risk);
     const node=data.points.find(item=>item.id===card.L4_ID), cluster=data.clusters.find(item=>item.id===node.cluster);
-    tooltip.innerHTML = `<strong>${escape(card.L4_Name_en)}</strong><span>${escape(card.L4_ID)} · ${escape(card.L1_Name_en)} · ${escape(card.L3_Name_en)}</span><span>Community: ${escape(cluster.name)} · ${node.degree} links · Weighted degree: ${node.strength.toFixed(3)}</span><span>Click to open the risk card</span>`;
+    tooltip.innerHTML = `<strong>${escape(card.L4_Name_en)}</strong><span>${escape(card.L4_ID)} · ${escape(card.L1_Name_en)} · ${escape(card.L3_Name_en)}</span><span>L3: ${escape(cluster.name)} · ${node.degree} links · Weighted degree: ${node.strength.toFixed(3)}</span><span>Click to open the risk card</span>`;
     tooltip.hidden = false;
     const bounds = get('semantic-plot').parentElement.getBoundingClientRect();
     tooltip.style.left = `${Math.max(8, Math.min(event.clientX-bounds.left+14, bounds.width-tooltip.offsetWidth-8))}px`;

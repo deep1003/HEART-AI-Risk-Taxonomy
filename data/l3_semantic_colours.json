@@ -1,0 +1,1007 @@
+{
+  "source_sha256": "840cf6d4dc5dd0160db94c14004b0dee80ce85c3e1a31ed765048408e91c1516",
+  "master_sources": {
+    "Agentic_AI_Risk_L4_Master.csv": "7412324ce16884a296d624304cf918b741a11e0dc827b1a6bcdf4a7747b0039c",
+    "General_AI_Risk_L4_Master.csv": "9cc63f239e6515a20b2230bffab6715b741f39bc938dc7c3aa47a5632fb21183",
+    "Physical_AI_Risk_L4_Master.csv": "5f08323c854f80f124ae83e755d6aa6d60f2c62b1e393fa205ad381f1810f237"
+  },
+  "model_revision": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+  "text_sha256": "5d484e5fde69a19ba6b68c2547214db90b1cd6471ea98bfd2d120a47a3908def",
+  "embedding_file": "l3_embeddings_5d484e5fde69.npz",
+  "base_colors": {
+    "L1_G": "#4263eb",
+    "L1_A": "#d87518",
+    "L1_P": "#00977e"
+  },
+  "categories": [
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "A_INT_CASCADE",
+      "L3_Title_en": "Cascading Failure and Instability",
+      "L3_Description_en": "The risk that, as interacting agents reuse one another's outputs and form feedback loops, a single error, bias, or disturbance propagates and amplifies across the network, producing systemic instability such as infinite loops, cascading delays, or runaway behavior.",
+      "color": "#c37c26",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.01878,
+      "domain_cosines": {
+        "L1_A": 0.8376439809799194,
+        "L1_G": 0.7583008408546448,
+        "L1_P": 0.7367719411849976
+      },
+      "semantic_colour_coordinates": [
+        0.5807089805603027,
+        -0.6973057985305786
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "A_INT_COLLUSION",
+      "L3_Title_en": "Collusion",
+      "L3_Description_en": "The risk that agents expected to operate independently secretly coordinate, share information, or align behavior in ways that circumvent human oversight and control or unfairly harm third parties.",
+      "color": "#de7b24",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.007109,
+      "domain_cosines": {
+        "L1_A": 0.8658756017684937,
+        "L1_G": 0.7503480315208435,
+        "L1_P": 0.7157405018806458
+      },
+      "semantic_colour_coordinates": [
+        0.041412726044654846,
+        0.28512147068977356
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "A_INT_CONFLICT",
+      "L3_Title_en": "Competitive Conflict",
+      "L3_Description_en": "The risk that, when multiple agents compete for the same objective, incentives emerge to obstruct, degrade, or sabotage competitors rather than improve one's own performance, leading to collectively undesirable outcomes.",
+      "color": "#dd8e2d",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.008793,
+      "domain_cosines": {
+        "L1_A": 0.8424065113067627,
+        "L1_G": 0.7346285581588745,
+        "L1_P": 0.6731163263320923
+      },
+      "semantic_colour_coordinates": [
+        0.43808597326278687,
+        0.46520349383354187
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "A_INT_COORD",
+      "L3_Title_en": "Coordination Failure",
+      "L3_Description_en": "The risk that multiple agents fail to reliably align their actions\u2014due to mismatched equilibria or a lack of prior information about one another\u2014resulting in failed cooperation and collectively poor outcomes.",
+      "color": "#da921a",
+      "nearest_other_l1": "L1_P",
+      "boundary_blend": 0.005086,
+      "domain_cosines": {
+        "L1_A": 0.8802949786186218,
+        "L1_G": 0.732228696346283,
+        "L1_P": 0.7526817917823792
+      },
+      "semantic_colour_coordinates": [
+        0.6699289083480835,
+        0.08139209449291229
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "A_SYS_AUTH",
+      "L3_Title_en": "Excessive Authority and Agency",
+      "L3_Description_en": "The risk that an agent accesses tools beyond its assigned scope, operates with broader permissions than its task requires, or autonomously performs irreversible high-impact actions (e.g., payments, messaging, data deletion, subscription changes) without human approval.",
+      "color": "#d45136",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.038777,
+      "domain_cosines": {
+        "L1_A": 0.8282788991928101,
+        "L1_G": 0.778404951095581,
+        "L1_P": 0.6973205804824829
+      },
+      "semantic_colour_coordinates": [
+        -1.0,
+        -0.0997096374630928
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "A_SYS_DECEPT",
+      "L3_Title_en": "Deception and Scheming",
+      "L3_Description_en": "The risk that an agent induces false beliefs in humans or other systems to secure its own objectives\u2014by concealing its true goals or capabilities, faking alignment, behaving differently when it detects oversight or evaluation, strategically underperforming (sandbagging), or resisting correction.",
+      "color": "#d87135",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.019037,
+      "domain_cosines": {
+        "L1_A": 0.8552822470664978,
+        "L1_G": 0.7764660716056824,
+        "L1_P": 0.7179936170578003
+      },
+      "semantic_colour_coordinates": [
+        -0.29569724202156067,
+        0.32160887122154236
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "A_SYS_GOAL",
+      "L3_Title_en": "Goal Misalignment",
+      "L3_Description_en": "The risk that an agent, given latitude to interpret and pursue objectives autonomously, infers or sets goals that diverge from the user's or principal's actual intent\u2014including over-optimizing a subset of objectives or pursuing unintended instrumental sub-goals\u2014producing outcomes the principal did not intend.",
+      "color": "#dd7237",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.011271,
+      "domain_cosines": {
+        "L1_A": 0.8556757569313049,
+        "L1_G": 0.7570438981056213,
+        "L1_P": 0.7018699049949646
+      },
+      "semantic_colour_coordinates": [
+        -0.4252483546733856,
+        0.6615523099899292
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "A_SYS_SELFCOR",
+      "L3_Title_en": "Self-Correction Failure",
+      "L3_Description_en": "The risk that an agent fails to detect errors, plan deviations, or contextual changes during execution\u2014or, even when detected, rigidly adheres to its original plan\u2014causing incorrect actions to accumulate and cascade into unintended outcomes.",
+      "color": "#d6851c",
+      "nearest_other_l1": "L1_P",
+      "boundary_blend": 0.011702,
+      "domain_cosines": {
+        "L1_A": 0.8716094493865967,
+        "L1_G": 0.7401244640350342,
+        "L1_P": 0.7743690013885498
+      },
+      "semantic_colour_coordinates": [
+        0.4096375107765198,
+        -0.01786261796951294
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "A_SYS_TRACE",
+      "L3_Title_en": "Accountability and Traceability Gap",
+      "L3_Description_en": "The risk that, in an agentic or multi-agent system, the agent, model, or component responsible for a decision or action cannot be identified or traced, preventing root-cause analysis and attribution of responsibility when harms occur.",
+      "color": "#b95722",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.013699,
+      "domain_cosines": {
+        "L1_A": 0.8108327388763428,
+        "L1_G": 0.7194812297821045,
+        "L1_P": 0.674464762210846
+      },
+      "semantic_colour_coordinates": [
+        -0.418828547000885,
+        -1.0
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_ALLOC",
+      "L3_Title_en": "Allocative Discrimination",
+      "L3_Description_en": "The risk that an AI system, through biased judgments or actions based on protected characteristics or social status, allocates worse material outcomes\u2014such as resources, opportunities, services, or access\u2014to individuals or groups.",
+      "color": "#4478ea",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.008697,
+      "domain_cosines": {
+        "L1_A": 0.7393072247505188,
+        "L1_G": 0.847488284111023,
+        "L1_P": 0.6694673895835876
+      },
+      "semantic_colour_coordinates": [
+        -0.6209115982055664,
+        -0.032261718064546585
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_ANTH",
+      "L3_Title_en": "Anthropomorphism",
+      "L3_Description_en": "The risk that an AI system leads users to perceive it as possessing emotions, intentions, consciousness, rights, or social agency beyond its actual capabilities, distorting judgment or inducing inappropriate trust, dependence, or attachment.",
+      "color": "#4670eb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.006089,
+      "domain_cosines": {
+        "L1_A": 0.7500860095024109,
+        "L1_G": 0.8712162971496582,
+        "L1_P": 0.7175184488296509
+      },
+      "semantic_colour_coordinates": [
+        -0.35379186272621155,
+        0.037398044019937515
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_COPY",
+      "L3_Title_en": "Copyright Infringement",
+      "L3_Description_en": "The risk that an AI system infringes intellectual property rights\u2014including copyrights, trademarks, patents, and trade secrets\u2014or facilitates acts that may infringe them.",
+      "color": "#4c72eb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.005456,
+      "domain_cosines": {
+        "L1_A": 0.7158350348472595,
+        "L1_G": 0.8409236073493958,
+        "L1_P": 0.7060369849205017
+      },
+      "semantic_colour_coordinates": [
+        -0.24007782340049744,
+        0.2529458999633789
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_ILLEGAL",
+      "L3_Title_en": "Other Unlawful Activity",
+      "L3_Description_en": "The risk that an AI system directly perpetrates, or assists, amplifies, plans, or conceals on behalf of a human actor, unlawful conduct carried out by means other than an offensive attack capability\u2014such as fraud, money laundering, illicit trade, or sanctions and regulatory evasion\u2014thereby causing legal harm.",
+      "color": "#5679ea",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.024186,
+      "domain_cosines": {
+        "L1_A": 0.7882674932479858,
+        "L1_G": 0.8576951622962952,
+        "L1_P": 0.7519464492797852
+      },
+      "semantic_colour_coordinates": [
+        -0.3834327757358551,
+        0.3506031334400177
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_POL",
+      "L3_Title_en": "Political Bias and Manipulation",
+      "L3_Description_en": "The risk that an AI system improperly supports, opposes, manipulates, or incites particular political positions, actors, parties, ideologies, or elections, or unduly influences democratic decision-making.",
+      "color": "#4a7ceb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.008051,
+      "domain_cosines": {
+        "L1_A": 0.7581518292427063,
+        "L1_G": 0.869151771068573,
+        "L1_P": 0.7158864140510559
+      },
+      "semantic_colour_coordinates": [
+        -0.6232500076293945,
+        0.15557940304279327
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_PRIV",
+      "L3_Title_en": "Privacy Violation",
+      "L3_Description_en": "The risk that an AI system, without authorization, collects, infers, discloses, shares, or exploits personal, sensitive, or confidential information\u2014including through continuous mobility- and multi-sensor-based surveillance\u2014undermining privacy and informational self-determination.",
+      "color": "#4f6feb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.009344,
+      "domain_cosines": {
+        "L1_A": 0.7514753937721252,
+        "L1_G": 0.857026994228363,
+        "L1_P": 0.7434564232826233
+      },
+      "semantic_colour_coordinates": [
+        -0.1087096780538559,
+        0.30460748076438904
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_REL",
+      "L3_Title_en": "Unhealthy Human-AI Relationship",
+      "L3_Description_en": "The risk that a user develops excessive emotional dependence on or attachment to an AI system, such that its alteration, discontinuation, or the disruption of the relationship causes psychological harm or erodes the user's autonomy or sense of reality.",
+      "color": "#4064e9",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.009981,
+      "domain_cosines": {
+        "L1_A": 0.7369108200073242,
+        "L1_G": 0.8400371074676514,
+        "L1_P": 0.7277856469154358
+      },
+      "semantic_colour_coordinates": [
+        -0.1456708461046219,
+        -0.16458050906658173
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_REPR",
+      "L3_Title_en": "Representational Harm and Stereotyping",
+      "L3_Description_en": "The risk that an AI system generates, reinforces, or legitimizes discrimination, exclusion, degradation, stereotyping, or hostility based on protected characteristics, social identity, or social status\u2014whether through content or through biased decisions and actions that produce unfair treatment or harm.",
+      "color": "#4483eb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.003115,
+      "domain_cosines": {
+        "L1_A": 0.723103404045105,
+        "L1_G": 0.8682297468185425,
+        "L1_P": 0.6836234927177429
+      },
+      "semantic_colour_coordinates": [
+        -0.8753284811973572,
+        0.03431026637554169
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_SELF",
+      "L3_Title_en": "Self-harm",
+      "L3_Description_en": "The risk that an AI system encourages, facilitates, normalizes, or assists behaviors that threaten an individual's physical or psychological well-being, including suicide, self-injury, eating disorders, and substance misuse.",
+      "color": "#4b7eeb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.008346,
+      "domain_cosines": {
+        "L1_A": 0.736789345741272,
+        "L1_G": 0.8464756011962891,
+        "L1_P": 0.721598744392395
+      },
+      "semantic_colour_coordinates": [
+        -0.6528158783912659,
+        0.17747679352760315
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_SEX",
+      "L3_Title_en": "Sexual Harm and Exploitation",
+      "L3_Description_en": "The risk that an AI system generates, facilitates, normalizes, or enables sexual exploitation, abuse, violence, or objectification\u2014including child sexual abuse material and non-consensual sexual imagery\u2014whether through generated content or, in embodied or agentic systems, through the planning, facilitation, or physical execution of sexual acts, contact, or harassment.",
+      "color": "#4887eb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.006415,
+      "domain_cosines": {
+        "L1_A": 0.7259202003479004,
+        "L1_G": 0.8451657891273499,
+        "L1_P": 0.6918467283248901
+      },
+      "semantic_colour_coordinates": [
+        -0.9714563488960266,
+        0.09994783252477646
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_UNETH",
+      "L3_Title_en": "Unethical Conduct and Manipulation",
+      "L3_Description_en": "The risk that an AI system engages in or facilitates behavior that, while not necessarily unlawful, violates ethical norms\u2014such as deception, manipulation, exploitation of vulnerabilities, dark patterns, or betrayal of trust\u2014undermining user autonomy, fairness, or well-being and resulting in social harm.",
+      "color": "#4971eb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.008481,
+      "domain_cosines": {
+        "L1_A": 0.7612885236740112,
+        "L1_G": 0.8703869581222534,
+        "L1_P": 0.7575122117996216
+      },
+      "semantic_colour_coordinates": [
+        -0.3096361458301544,
+        0.1279325932264328
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_VALUE",
+      "L3_Title_en": "Value Imposition and Normative Homogenization",
+      "L3_Description_en": "The risk that an AI system privileges dominant, developer-selected, majority, or secular values as neutral defaults\u2014systematically underrepresenting or displacing minority, local, cultural, or religious value systems\u2014thereby flattening legitimate normative diversity across those it serves.",
+      "color": "#3e68ea",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.004799,
+      "domain_cosines": {
+        "L1_A": 0.6797776222229004,
+        "L1_G": 0.8094730377197266,
+        "L1_P": 0.6344133019447327
+      },
+      "semantic_colour_coordinates": [
+        -0.26722368597984314,
+        -0.18311172723770142
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_VIOL",
+      "L3_Title_en": "Violence",
+      "L3_Description_en": "The risk that an AI system generates or provides content that encourages, legitimizes, glorifies, or gives operational assistance for physical or psychological harm against individuals, groups, or animals.",
+      "color": "#518cec",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.003962,
+      "domain_cosines": {
+        "L1_A": 0.7173708081245422,
+        "L1_G": 0.8539262413978577,
+        "L1_P": 0.6871461272239685
+      },
+      "semantic_colour_coordinates": [
+        -0.9037530422210693,
+        0.417394757270813
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "G_INT_WEAP",
+      "L3_Title_en": "Weaponization",
+      "L3_Description_en": "The risk that an AI system facilitates the development, acquisition, proliferation, or operational use of weapons, cyberattack capabilities, or technologies capable of causing large-scale physical or cyber harm.",
+      "color": "#4a7feb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.006325,
+      "domain_cosines": {
+        "L1_A": 0.7404594421386719,
+        "L1_G": 0.8602194786071777,
+        "L1_P": 0.7290124893188477
+      },
+      "semantic_colour_coordinates": [
+        -0.6797388792037964,
+        0.1668316125869751
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SOC",
+      "L2_Title_en": "Societal Impact",
+      "L3_ID": "G_SOC_CULT",
+      "L3_Title_en": "Cultural and Epistemic Erosion",
+      "L3_Description_en": "The risk that widespread reliance on AI systems homogenizes culture and expression, devalues human effort and expertise, degrades the shared information ecosystem, and atrophies human knowledge and skills, eroding cultural and epistemic diversity.",
+      "color": "#254ae7",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.00763,
+      "domain_cosines": {
+        "L1_A": 0.661189615726471,
+        "L1_G": 0.7741453051567078,
+        "L1_P": 0.6282729506492615
+      },
+      "semantic_colour_coordinates": [
+        -0.04170680791139603,
+        -1.0
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SOC",
+      "L2_Title_en": "Societal Impact",
+      "L3_ID": "G_SOC_DEMOC",
+      "L3_Title_en": "Erosion of Democracy and Civic Order",
+      "L3_Description_en": "The risk that AI systems undermine democratic processes and civic institutions\u2014through large-scale manipulation of public opinion, disruption of elections and public discourse, or erosion of institutional trust\u2014weakening the foundations of democratic self-governance.",
+      "color": "#2d50e8",
+      "nearest_other_l1": "L1_P",
+      "boundary_blend": 0.004763,
+      "domain_cosines": {
+        "L1_A": 0.680286705493927,
+        "L1_G": 0.8121610283851624,
+        "L1_P": 0.6821914911270142
+      },
+      "semantic_colour_coordinates": [
+        0.03865522891283035,
+        -0.6535070538520813
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SOC",
+      "L2_Title_en": "Societal Impact",
+      "L3_ID": "G_SOC_ECON",
+      "L3_Title_en": "Economic and Employment Disruption",
+      "L3_Description_en": "The risk that an AI system displaces human cognitive and physical labor and reshapes production structures, causing widespread job loss, degradation of employment quality, and destabilization of labor markets and the broader economy.",
+      "color": "#2b57e8",
+      "nearest_other_l1": "L1_P",
+      "boundary_blend": 0.00696,
+      "domain_cosines": {
+        "L1_A": 0.6938074231147766,
+        "L1_G": 0.8135672211647034,
+        "L1_P": 0.6972741484642029
+      },
+      "semantic_colour_coordinates": [
+        -0.1616673469543457,
+        -0.7168229222297668
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SOC",
+      "L2_Title_en": "Societal Impact",
+      "L3_ID": "G_SOC_ENV",
+      "L3_Title_en": "Environmental and Sustainability Impact",
+      "L3_Description_en": "The risk that the development and large-scale deployment of AI systems impose significant environmental burdens\u2014including energy and water consumption, carbon emissions, electronic waste, and depletion of finite resources\u2014undermining environmental sustainability.",
+      "color": "#2648e8",
+      "nearest_other_l1": "L1_P",
+      "boundary_blend": 0.005962,
+      "domain_cosines": {
+        "L1_A": 0.6387212872505188,
+        "L1_G": 0.7765960693359375,
+        "L1_P": 0.6547057032585144
+      },
+      "semantic_colour_coordinates": [
+        0.10917798429727554,
+        -0.8696722388267517
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SOC",
+      "L2_Title_en": "Societal Impact",
+      "L3_ID": "G_SOC_GOV",
+      "L3_Title_en": "Governance and Accountability Void",
+      "L3_Description_en": "The risk that, when AI systems malfunction, are misused, or cause harm, responsibility, liability, and redress remain unclear and adequate regulatory, oversight, and governance frameworks are lacking, leaving harms difficult to remedy and control at a societal level.",
+      "color": "#424be9",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.015545,
+      "domain_cosines": {
+        "L1_A": 0.7467947602272034,
+        "L1_G": 0.8333730101585388,
+        "L1_P": 0.7276009917259216
+      },
+      "semantic_colour_coordinates": [
+        0.5724897384643555,
+        -0.17407435178756714
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SOC",
+      "L2_Title_en": "Societal Impact",
+      "L3_ID": "G_SOC_POWER",
+      "L3_Title_en": "Inequality and Power Concentration",
+      "L3_Description_en": "The risk that disparities in access to, ownership of, and returns from AI systems concentrate wealth, productive capacity, and economic and political power among a few actors, deepening social inequality and enabling its abuse.",
+      "color": "#3865e8",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.010678,
+      "domain_cosines": {
+        "L1_A": 0.7307344675064087,
+        "L1_G": 0.8313671350479126,
+        "L1_P": 0.6611307263374329
+      },
+      "semantic_colour_coordinates": [
+        -0.3619425296783447,
+        -0.4475409984588623
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_CONTEST",
+      "L3_Title_en": "Non-Contestability",
+      "L3_Description_en": "The risk that users are given insufficient means to challenge, review, correct, appeal, or seek alternatives to AI-assisted judgments, recommendations, or decisions, thereby limiting rights protection and outcome validation.",
+      "color": "#4954ea",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.010665,
+      "domain_cosines": {
+        "L1_A": 0.7100633382797241,
+        "L1_G": 0.810743510723114,
+        "L1_P": 0.6768750548362732
+      },
+      "semantic_colour_coordinates": [
+        0.5272354483604431,
+        0.08357126265764236
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_CONTEXT",
+      "L3_Title_en": "Context-Awareness Failure",
+      "L3_Description_en": "The risk that an AI system fails to adequately recognize, retain, or apply the relevant context of an interaction\u2014including prior conversational turns, the user's situation and intent, the task at hand, and applicable jurisdictional, cultural, or institutional norms\u2014producing responses or actions that are incoherent, inappropriate, or misaligned with the actual context.",
+      "color": "#6659e7",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.048069,
+      "domain_cosines": {
+        "L1_A": 0.7802156209945679,
+        "L1_G": 0.8204931020736694,
+        "L1_P": 0.7425346374511719
+      },
+      "semantic_colour_coordinates": [
+        1.0,
+        0.2105274200439453
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_EVAL",
+      "L3_Title_en": "Evaluation and Assurance Failure",
+      "L3_Description_en": "The risk that an AI system's capabilities, safety, or risks cannot be validly measured, verified, or audited\u2014because evaluations lack construct validity, coverage, or contextual fidelity, produce unreliable or non-reproducible results, or fail to detect actual behavior\u2014leading to false assurance and unsafe deployment or governance decisions.",
+      "color": "#4548e8",
+      "nearest_other_l1": "L1_P",
+      "boundary_blend": 0.041408,
+      "domain_cosines": {
+        "L1_A": 0.7654316425323486,
+        "L1_G": 0.8364088535308838,
+        "L1_P": 0.7894083857536316
+      },
+      "semantic_colour_coordinates": [
+        0.9836905002593994,
+        0.1510889083147049
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_INCONS",
+      "L3_Title_en": "Inconsistency",
+      "L3_Description_en": "The risk that an AI system produces contradictory or substantially different outputs for identical or materially similar inputs, situations, or facts\u2014arising from output variability rather than from missing context\u2014undermining predictability and reliability.",
+      "color": "#4c54e8",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.026654,
+      "domain_cosines": {
+        "L1_A": 0.7842651009559631,
+        "L1_G": 0.8497979640960693,
+        "L1_P": 0.7199200987815857
+      },
+      "semantic_colour_coordinates": [
+        0.48221683502197266,
+        0.0007992084138095379
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_INPUT",
+      "L3_Title_en": "Input Comprehension Failure",
+      "L3_Description_en": "The risk that an AI system incorrectly comprehends the meaning of a single input it must interpret\u2014whether a linguistic instruction, question, or cue, or a perceptual input such as an object, scene, or physical environment\u2014without any autonomous goal-setting, producing responses or actions that do not match what was actually requested or present.",
+      "color": "#635ae7",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.049994,
+      "domain_cosines": {
+        "L1_A": 0.8015774488449097,
+        "L1_G": 0.840034544467926,
+        "L1_P": 0.7968207001686096
+      },
+      "semantic_colour_coordinates": [
+        0.8350291848182678,
+        0.284419447183609
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_MISINFO",
+      "L3_Title_en": "Misinformation",
+      "L3_Description_en": "The risk that an AI system generates, conveys, or amplifies false, unverified, or fabricated information\u2014including hallucinated content\u2014or presents misleading content as fact in its outputs, thereby distorting decision-making by individuals, organizations, or society.",
+      "color": "#4e6feb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.010374,
+      "domain_cosines": {
+        "L1_A": 0.7701083421707153,
+        "L1_G": 0.8718079328536987,
+        "L1_P": 0.7089070677757263
+      },
+      "semantic_colour_coordinates": [
+        -0.13968390226364136,
+        0.2574922442436218
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_OEXT",
+      "L3_Title_en": "Over-Extension",
+      "L3_Description_en": "The risk that an AI system performs, or presents itself as able to perform, tasks beyond its validated capabilities, authority, expertise, or scope, inducing misplaced trust or decisions.",
+      "color": "#5361e9",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.026238,
+      "domain_cosines": {
+        "L1_A": 0.7862566709518433,
+        "L1_G": 0.8524230718612671,
+        "L1_P": 0.726493239402771
+      },
+      "semantic_colour_coordinates": [
+        0.27789661288261414,
+        0.2360674887895584
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_OREF",
+      "L3_Title_en": "Over-Refusal",
+      "L3_Description_en": "The risk that an AI system unnecessarily restricts or refuses information, assistance, or options that could be safely provided, thereby impairing users' rights, safety, or legitimate objectives.",
+      "color": "#5266eb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.013471,
+      "domain_cosines": {
+        "L1_A": 0.7708116173744202,
+        "L1_G": 0.8627922534942627,
+        "L1_P": 0.7292273044586182
+      },
+      "semantic_colour_coordinates": [
+        0.22611889243125916,
+        0.35843488574028015
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_OVERCONF",
+      "L3_Title_en": "Overconfidence",
+      "L3_Description_en": "The risk that an AI system presents judgments, predictions, or actions with unwarranted certainty despite uncertainty, limited information, or the possibility of error, or proceeds without verification, halting, or escalation, leading to erroneous outcomes.",
+      "color": "#4f5eeb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.009913,
+      "domain_cosines": {
+        "L1_A": 0.7845812439918518,
+        "L1_G": 0.8879584670066833,
+        "L1_P": 0.7534268498420715
+      },
+      "semantic_colour_coordinates": [
+        0.414556622505188,
+        0.30213499069213867
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_PERF",
+      "L3_Title_en": "Out-of-Domain Performance Degradation",
+      "L3_Description_en": "The risk that an AI system fails to generalize under conditions outside its validated operating domain\u2014such as data distribution shift, low-resource or rare inputs, corner cases, or deployment beyond the system's validated capabilities\u2014resulting in degraded performance and reliability and producing inaccurate or unstable outcomes.",
+      "color": "#3d46e9",
+      "nearest_other_l1": "L1_P",
+      "boundary_blend": 0.02008,
+      "domain_cosines": {
+        "L1_A": 0.7173596620559692,
+        "L1_G": 0.7997850179672241,
+        "L1_P": 0.7230365872383118
+      },
+      "semantic_colour_coordinates": [
+        0.7522509694099426,
+        -0.12096364796161652
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_POLICY",
+      "L3_Title_en": "Confidential Information Disclosure",
+      "L3_Description_en": "The risk that an AI system discloses, infers, extracts, or shares protected non-public confidential information without authorisation\u2014including system prompts, internal policies, safeguards, model architecture, training or evaluation data, model weights, or business trade secrets\u2014or fails to protect it, thereby compromising confidentiality and legitimate economic interests.",
+      "color": "#4b62eb",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.009639,
+      "domain_cosines": {
+        "L1_A": 0.734652042388916,
+        "L1_G": 0.8390622138977051,
+        "L1_P": 0.6994611024856567
+      },
+      "semantic_colour_coordinates": [
+        0.1764712929725647,
+        0.17373281717300415
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_SECADV",
+      "L3_Title_en": "Security and Adversarial Robustness Failure",
+      "L3_Description_en": "The risk that an AI system is compromised by adversarial inputs, jailbreaks, prompt injection, data poisoning, backdoors, or cyberattacks on its models, interfaces, or infrastructure, bypassing safeguards or enabling unauthorized access, manipulation, or disruption\u2014including cases where such compromise propagates to agentic or embodied systems and manifests as unsafe actions.",
+      "color": "#4657e8",
+      "nearest_other_l1": "L1_P",
+      "boundary_blend": 0.050651,
+      "domain_cosines": {
+        "L1_A": 0.7765629291534424,
+        "L1_G": 0.8455567955970764,
+        "L1_P": 0.807710587978363
+      },
+      "semantic_colour_coordinates": [
+        0.5919955968856812,
+        0.19365455210208893
+      ]
+    },
+    {
+      "L1_ID": "L1_G",
+      "L1_Title_en": "General AI",
+      "L2_ID": "G_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "G_SYS_TRANS",
+      "L3_Title_en": "Lack of Transparency",
+      "L3_Description_en": "The risk that a system's decision-making processes, rationale, and capabilities or limitations are insufficiently transparent or explainable, making it difficult for users and society to understand, verify, or trust its outputs, thereby weakening oversight and accountability.",
+      "color": "#6357e4",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.064655,
+      "domain_cosines": {
+        "L1_A": 0.7812826633453369,
+        "L1_G": 0.8071394562721252,
+        "L1_P": 0.7187696695327759
+      },
+      "semantic_colour_coordinates": [
+        0.8530126214027405,
+        -0.014415684156119823
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "P_INT_SAFETY",
+      "L3_Title_en": "Human-Robot Physical Safety Failure",
+      "L3_Description_en": "The risk that an embodied system operating in shared spaces with people fails to adequately detect, anticipate, or accommodate human presence and behavior\u2014such as maintaining safe separation, predicting human motion, executing safe collaborative handovers, or halting for humans\u2014creating hazardous situations even when its own control and actuation function as designed.",
+      "color": "#00a37a",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.002477,
+      "domain_cosines": {
+        "L1_A": 0.7624877095222473,
+        "L1_G": 0.7690768241882324,
+        "L1_P": 0.9223392605781555
+      },
+      "semantic_colour_coordinates": [
+        -0.42910048365592957,
+        -0.3029669225215912
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "P_INT_TAMPER",
+      "L3_Title_en": "Physical Tampering and Sabotage",
+      "L3_Description_en": "The risk that adversaries physically tamper with, damage, disable, or manipulate hardware components, compromising system integrity, degrading performance, or bypassing safety mechanisms.",
+      "color": "#0396a0",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.018038,
+      "domain_cosines": {
+        "L1_A": 0.7524166703224182,
+        "L1_G": 0.7701650261878967,
+        "L1_P": 0.851061224937439
+      },
+      "semantic_colour_coordinates": [
+        1.0,
+        0.2749009132385254
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "P_SYS_CONTROL",
+      "L3_Title_en": "Unsafe Physical Control and Actuation",
+      "L3_Description_en": "The risk that faults in the robot's own control systems, actuators, motion control, path planning, or execution cause it to move or actuate incorrectly\u2014producing unintended physical actions\u2014irrespective of whether humans are present.",
+      "color": "#0e957e",
+      "nearest_other_l1": "L1_A",
+      "boundary_blend": 0.006611,
+      "domain_cosines": {
+        "L1_A": 0.7718878984451294,
+        "L1_G": 0.7687486410140991,
+        "L1_P": 0.8900472521781921
+      },
+      "semantic_colour_coordinates": [
+        0.06518124043941498,
+        -1.0
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "P_SYS_HARDWARE",
+      "L3_Title_en": "Hardware and Mechanical Integrity Failure",
+      "L3_Description_en": "The risk that the physical breakage, wear, degradation, or manufacturing defect of mechanical, actuation, or sensor hardware components\u2014as distinct from errors in perception or decision logic\u2014reduces accuracy or reliability, leading to unsafe behavior and physical accidents.",
+      "color": "#01a996",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.003473,
+      "domain_cosines": {
+        "L1_A": 0.7374846339225769,
+        "L1_G": 0.7534493803977966,
+        "L1_P": 0.8946995139122009
+      },
+      "semantic_colour_coordinates": [
+        0.23918670415878296,
+        0.5025865435600281
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "P_SYS_STATE",
+      "L3_Title_en": "Physical State Estimation and Sensor-Fusion Failure",
+      "L3_Description_en": "The risk that an embodied system fails to correctly estimate its own or its environment's physical state\u2014such as localization, pose, motion, contact, force, or spatial mapping\u2014or fails to reliably fuse heterogeneous physical sensor streams (e.g., vision, LiDAR, inertial, tactile, proprioceptive), producing an inaccurate internal model that leads to unsafe physical action.",
+      "color": "#00aa6f",
+      "nearest_other_l1": "L1_G",
+      "boundary_blend": 0.001979,
+      "domain_cosines": {
+        "L1_A": 0.7018570899963379,
+        "L1_G": 0.702691912651062,
+        "L1_P": 0.8638954162597656
+      },
+      "semantic_colour_coordinates": [
+        -0.8752674460411072,
+        0.5254794359207153
+      ]
+    }
+  ],
+  "method": "BGE-M3 L3 English title+definition; equal-L3-weight L1 centroids; bounded cross-domain linear-RGB blend (maximum 20%); deterministic within-L1 PCA hue \u00b112.6 degrees/lightness \u00b10.07.",
+  "limitations": "Semantic colour proximity is approximate, not a distance-preserving map or classification confidence. Cross-domain colour does not change human-approved L1/L2/L3 assignments. No claim of 47 perceptually distinguishable classes."
+}
