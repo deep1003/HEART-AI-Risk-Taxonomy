@@ -15,7 +15,7 @@ assert.equal(data.points.length, 622);
 assert.equal(new Set(data.points.map(point => point.id)).size, 622);
 assert(data.points.every(point => sourceIds.has(point.id) && Number.isFinite(point.x) && Number.isFinite(point.y)));
 assert.equal(activeIds(data, {}).size, 622);
-assert.equal(data.scenarios.length, 4);
+assert.equal(data.scenarios.length, 3);
 assert(data.clusters.length > 1);
 assert.equal(data.method.embedding_dimensions, 1024);
 assert.equal(data.method.edge_count, data.edges.length);
@@ -38,7 +38,7 @@ for (const scenario of data.scenarios) {
   }
 }
 assert(activeIds(data, {scenario:'delivery-robots'}).has('G_SYS_PERF_015'));
-assert(activeIds(data, {scenario:'factory-humanoids'}).has('P_SYS_CONTROL_037'));
+assert(!data.scenarios.some(item=>item.id==='factory-humanoids'));
 assert(activeIds(data, {scenario:'home-humanoids'}).has('P_SYS_CONTROL_046'));
 assert(!activeIds(data, {scenario:'home-humanoids'}).has('G_INT_PRIV_031'));
 assert(!data.scenarios.some(item=>item.id==='network-agents'));

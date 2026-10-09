@@ -94,6 +94,9 @@ SCENARIOS = [
      "terms": ["accessibility", "digital divide", "public service", "consumer", "payment", "booking"]},
 ]
 
+# Retain the historical rule above for provenance, but do not publish this lens.
+SCENARIOS = [rule for rule in SCENARIOS if rule['id'] != 'factory-humanoids']
+
 TOPICS = [
     {"id": "misuse", "name": "Misuse", "prefixes": ["G_INT_ILLEGAL", "G_INT_WEAP"], "terms": ["misuse", "malicious use", "malicious actor", "criminal", "fraud", "abuse of", "weaponiz", "weaponis"]},
     {"id": "mis-disinformation", "name": "Mis/disinformation", "prefixes": ["G_SYS_MISINFO"], "terms": ["misinformation", "disinformation", "false information", "fake news", "deepfake"]},
