@@ -2,6 +2,7 @@
 """Recompute the read-only HEART semantic graph from the current card text."""
 import hashlib
 import json
+from importlib.metadata import version
 from collections import Counter
 from pathlib import Path
 
@@ -107,6 +108,9 @@ def main():
                          'features':'English L4 name and definition, mean-pooled transformer sentence embeddings, L2 normalised',
                          'projection':'Weighted ForceAtlas2 network layout, no clipping of outlying nodes',
                          'clustering':'Weighted Louvain graph communities, resolution 1.0, seed 23',
+                         'networkx_version':nx.__version__,
+                         'sentence_transformers_version':version('sentence-transformers'),
+                         'community_function':'networkx.algorithms.community.louvain_communities',
                          'edge_rule':'Union of each card’s eight closest cosine neighbours, cosine >= 0.45; no artificial links',
                          'node_size':'Weighted degree (strength): sum of published incident cosine weights; area linearly scaled over the full-network min/max to radii 3 to 15 display pixels. Fixed across filters, not severity or probability.',
                          'scenario_membership':'Editorial overlapping conditional applicability lenses',
