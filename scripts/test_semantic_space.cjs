@@ -16,7 +16,11 @@ assert.equal(new Set(data.points.map(point => point.id)).size, 622);
 assert(data.points.every(point => sourceIds.has(point.id) && Number.isFinite(point.x) && Number.isFinite(point.y)));
 assert.equal(activeIds(data, {}).size, 622);
 assert.equal(data.scenarios.length, 4);
-assert.equal(data.clusters.length, 12);
+assert(data.clusters.length > 1);
+assert.equal(data.method.embedding_dimensions, 384);
+assert.equal(data.method.edge_count, data.edges.length);
+assert(data.points.every(point => Number.isInteger(point.degree) && point.degree >= 0));
+assert(data.clusters.every(cluster => /^#[a-f0-9]{6}$/i.test(cluster.color)));
 assert.equal(data.clusters.flatMap(cluster => cluster.ids).length, 622);
 assert.equal(new Set(data.clusters.flatMap(cluster => cluster.ids)).size, 622);
 for (const scenario of data.scenarios) {
@@ -28,6 +32,10 @@ for (const scenario of data.scenarios) {
     assert([...selected].every(id => active.has(id) && keyword.ids.includes(id)));
     assert.equal(selected.size, scenario.ids.filter(id => keyword.ids.includes(id)).length);
   }
+  for(const cluster of data.clusters){
+    const selected=activeIds(data,{scenario:scenario.id,cluster:cluster.id});
+    assert.equal(selected.size,scenario.ids.filter(id=>cluster.ids.includes(id)).length);
+  }
 }
 assert(activeIds(data, {scenario:'delivery-robots'}).has('G_SYS_PERF_015'));
 assert(activeIds(data, {scenario:'factory-humanoids'}).has('P_SYS_CONTROL_037'));
@@ -36,6 +44,16 @@ assert(!activeIds(data, {scenario:'home-humanoids'}).has('G_INT_PRIV_031'));
 assert(activeIds(data, {scenario:'network-agents', keyword:'security'}).has('A_SYS_AUTH_001'));
 assert.equal(activeIds(data, {scenario:'missing'}).size, 0);
 assert.equal(activeIds(data, {scenario:'network-agents', keyword:'navigation'}).size, 0);
-assert(data.edges.every(([a,b]) => a !== b && sourceIds.has(a) && sourceIds.has(b)));
+assert(data.edges.every(([a,b,weight]) => a !== b && sourceIds.has(a) && sourceIds.has(b) && weight >= .45 && weight <= 1));
+const degrees = new Map([...sourceIds].map(id=>[id,0]));
+for(const [a,b] of data.edges){degrees.set(a,degrees.get(a)+1);degrees.set(b,degrees.get(b)+1);}
+assert(data.points.every(point=>degrees.get(point.id)===point.degree));
 assert(!escape('<script>').includes('<script>'));
-console.log('Semantic-space smoke tests passed: 622 IDs, 47 L3, 4 overlapping scenarios, 12 topics, all keyword intersections, source hash and finite fixed coordinates.');
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+assert(html.includes('aria-controls="semantic-space" aria-selected="true"'));
+assert(html.includes('aria-labelledby="risk-cards-tab" hidden'));
+assert(!html.includes('src="assets/kt-logo.svg"'));
+const original=fs.readFileSync(path.join(root,'assets/kt-logo.svg'),'utf8');
+const reverse=fs.readFileSync(path.join(root,'assets/kt-logo-light.svg'),'utf8');
+assert.equal(reverse.trim(),original.replace('fill="black"','fill="white"').trim());
+console.log(`Semantic-network smoke tests passed: 622 IDs, 47 L3, ${data.clusters.length} communities, ${data.edges.length} weighted links, degree counts, scenario/keyword intersections and unchanged source hash.`);

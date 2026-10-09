@@ -32,11 +32,26 @@
 .semantic-plot-heading p{color:#667085;font-size:.84rem;max-width:620px;margin:0 0 12px}
 .semantic-plot-heading label{font-size:.8rem;color:#667085;white-space:nowrap;display:flex;gap:6px;align-items:center}
 .semantic-plot-heading input[type=checkbox]{width:16px;height:16px;min-width:16px;flex:0 0 16px;margin:0;padding:0;accent-color:#3867d6}
-.semantic-plot-wrap{position:relative;background:#fafbfe;border:1px solid #e2e7ef;border-radius:4px}
+.semantic-plot-wrap{position:relative;background:#fafbfe;border:1px solid #e2e7ef;border-radius:18px;overflow:hidden}
 #semantic-plot{display:block;width:100%;height:auto;min-height:300px;overflow:visible;touch-action:pan-y}
 .semantic-grid-line{stroke:#e5eaf2;stroke-width:1}
 .semantic-axis-label,.semantic-tick{fill:#667085;font-size:12px}
-.semantic-edge{stroke:#c5d2e7;stroke-width:1;opacity:.35;pointer-events:none}
+.semantic-edge{stroke:#8496ad;stroke-width:1;opacity:.2;pointer-events:none}
+.semantic-edge.selected-edge{stroke:#273750}
+.semantic-halo{fill:#fff;stroke:#18213d;stroke-width:2;pointer-events:none}
+.semantic-community-label{cursor:pointer}
+.semantic-community-label circle{fill:#fff;stroke-width:2.5}
+.semantic-community-label text{fill:#18213d;font-size:15px;font-weight:750;stroke:#fff;stroke-width:4px;paint-order:stroke;stroke-linejoin:round}
+.semantic-community-label:focus text{fill:#214aa8;text-decoration:underline}
+.community-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;flex-shrink:0}
+.semantic-network-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:8px 0 12px;color:#667085;font-size:.8rem}
+.semantic-network-toolbar div{display:flex;align-items:center;gap:8px}
+.semantic-network-toolbar button{border:1px solid #d8dee8;background:#fff;border-radius:5px;padding:6px 11px;color:#18213d;cursor:pointer;min-height:36px}
+#semantic-zoom-level{min-width:42px;text-align:center}
+.semantic-legend{line-height:1.7}
+#semantic-plot{cursor:grab}
+#semantic-plot:active{cursor:grabbing}
+@media(max-width:600px){.semantic-network-toolbar{align-items:flex-start;flex-direction:column}.semantic-community-label text{font-size:12px}.semantic-network-toolbar button{min-height:44px}}
 .semantic-point{stroke:#fff;stroke-width:1;cursor:pointer}
 .semantic-point.inactive{fill:#d4dbe5!important;stroke:transparent;opacity:.38;pointer-events:none}
 .semantic-point.active{opacity:.95}

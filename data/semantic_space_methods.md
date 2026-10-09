@@ -1,29 +1,36 @@
-# HEART semantic-space explorer
+# HEART semantic proximity network
 
-The space reads the unchanged canonical `heart_l4_risk_cards.json`. Every point is an existing L4 ID. The generated JSON contains the exact source SHA256, coordinates, communities, keyword membership and neighbour edges. A source-hash mismatch disables this view rather than displaying a stale projection.
+The 622 canonical L4 cards and their 47 L3 assignments remain unchanged. Semantic space is the default home view, with a separate card-explorer tab.
 
-## Text geometry
+## Reproduction and provenance
 
-The English name is included twice and the English definition once. The builder removes common English and repetitive risk-framing words, retains unigrams and bigrams occurring in at least two cards and at most 75% of cards, applies sublinear term frequency and smoothed inverse document frequency, and L2-normalises each row. A centred PCA representation retains 48 dimensions. Cosine t-SNE produces the two-dimensional display, with perplexity 35, 1,200 iterations and seed 23. Twelve k-means communities are constructed in the 48-dimensional space and named with their three highest-weight unigram terms.
+Install `scripts/semantic_requirements.txt` in a task-local environment and run `python scripts/build_semantic_network.py`, followed by `node scripts/test_semantic_space.cjs`. The older `build_semantic_space.py` is retained for historical lexical-projection reproduction and shared scenario rules, not as the current network builder.
 
-This is a lexical semantic space, not a contextual neural embedding. t-SNE emphasises local neighbourhoods. Global separation, cluster area, density and axis values must not be interpreted as risk severity, incidence, probability or validated semantic boundaries. Clustering is an exploration layer and does not reassign the master taxonomy. The generated neighbourhood trustworthiness diagnostic assesses projection fidelity, not correct risk classification.
+`semantic_space.json` records the canonical source SHA-256, checked by the browser before rendering. `semantic_embeddings.npz` preserves 384-dimensional vectors, ordered IDs, model revision and text hash. Inference runs locally on CPU; card text is not sent to a hosted inference service.
 
-Edges represent up to three nearest other cards with TF-IDF cosine similarity at least 0.30. They are shown only for focused subsets of at most 150 active cards. They do not indicate causal relationships or risk propagation.
+## Current pipeline
 
-## Application communities
+1. Sort by L4 ID, concatenate the English name and definition, and encode using `sentence-transformers/all-MiniLM-L6-v2`, revision `1110a243fdf4706b3f48f1d95db1a4f5529b4d41`. Mean pooling and L2 normalisation produce 384-dimensional embeddings. Input is limited to 256 word pieces; longer text is truncated. Korean translations are displayed but not encoded.
+2. Retain the undirected union of eight nearest cosine neighbours per card at similarity >= 0.45. No artificial links are inserted. Edge weights are measured cosine similarity.
+3. Weighted Louvain, resolution 1.0 and seed 23, produces 10 communities and 3,803 edges, one connected component and no isolates. Modularity 0.583259 describes graph partitioning, not classification accuracy.
+4. A seeded weighted spring layout initialises ForceAtlas2, 350 iterations, scaling ratio 8, gravity 0.15, linlog attraction. Uniform centring and rescaling preserve all outliers without clipping. Filters never recompute positions.
+5. Colours identify graph communities. Labels summarise dominant existing L3 names and do not reassign cards. Node radius scales with square-root graph degree, not severity, probability or EM confidence.
 
-Four overlapping editorial lenses represent delivery robot services, factory humanoids, household assistant humanoids and autonomous network operations agents. Explicit ID membership and the limited prefix-based network-agent scope are preserved in `scripts/build_semantic_space.py`. Application membership describes potential relevance conditional on capabilities and deployment, not that every listed harm occurs in every system. Examples include robot navigation and pedestrian access, industrial manipulation and worker monitoring, household manipulation and intimate-space privacy, and agent authority, tools, correction and multi-agent coordination in network operations. Workplace-only monitoring is not assigned to the domestic lens.
+## Reference analysis
 
-The twelve keyword filters combine explicit category membership with documented mechanism terms. Choosing a scenario, text-derived community and keyword applies their intersection. A point has the same coordinates before and after filtering. Inactive points can remain as pale context or be hidden. Selecting an active point or keyboard-accessible list entry opens the existing card, without adding a card, changing its definition, or displaying EM scores.
+The supplied reference page, its live `assets/risk-space.js`, and local `scripts/build_semantic_proximity_network.py` were inspected. The historical implementation uses BGE-M3, seeded graph-regularised spherical EM, L3-profile similarity (0.65) plus direct semantic similarity (0.35), and ForceAtlas2. Its 54-community claim concerns a different release.
 
-## Reproduction
+HEART reuses the node-link presentation, community colours, weighted connections and network layout, not stale IDs or old EM responsibilities. Current embeddings are recomputed from current HEART text. Links use direct embedding cosine only, and communities use Louvain, not EM. No taxonomy remapping is performed. Community totals are dependent on model and graph parameters, not validated counts of risk types.
 
-Install the pinned packages in a task-specific virtual environment, then run `python scripts/build_semantic_space.py`. Run `node scripts/test_semantic_space.cjs` to verify identities, scenario membership, all keyword intersections, coordinate validity and source preservation. The canonical card file is read-only throughout this process. Record runtime versions from the generated method metadata; floating-point results can differ slightly across numerical backends.
+## Interaction and limits
 
-## Method references
+The four overlapping application lenses retain explicit editorial rules for delivery robots, factory humanoids, household assistant humanoids and autonomous network operations agents. These are conditional applicability filters, not empirically validated scenario labels. Scenario, community and keyword selections intersect. Inactive cards are pale or hidden; active nodes and the keyboard-accessible list open original cards. Community labels are clickable. Zoom and background dragging change only the viewport.
 
-- TF-IDF text features: https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction
-- t-SNE and interpretation: https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html
-- Projection trustworthiness: https://scikit-learn.org/stable/modules/generated/sklearn.manifold.trustworthiness.html
+Links indicate semantic proximity, not causal propagation. Layout distances are not exact embedding distances. Community membership does not establish identical mechanisms, legal equivalence, probability or severity. No new risk cards, revised definitions, assignments or EM scores are generated. Encoder and threshold sensitivity has not been validated as classification accuracy.
 
-This release adds an exploratory view only. It does not promote the separate, unfinished evidence-revision dataset to the golden master.
+## Technical sources
+
+- [Sentence-transformer model and pooling](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+- [Weighted Louvain](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.louvain.louvain_communities.html)
+- [ForceAtlas2](https://networkx.org/documentation/stable/reference/generated/networkx.drawing.layout.forceatlas2_layout.html)
+- [Reference visualisation](https://deep1003.github.io/RAI-Risk-Taxonomy-2.0/risk-taxonomy-space.html)
