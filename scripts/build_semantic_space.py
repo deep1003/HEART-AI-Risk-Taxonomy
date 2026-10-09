@@ -130,6 +130,7 @@ TOPICS = [
     {"id": "agi", "name": "AGI", "terms": ["artificial general intelligence", "general intelligence"], "patterns": [r"\bagi\b"]},
     {"id": "asi", "name": "ASI", "terms": ["superintelligen", "super-intelligen", "super intelligen"], "patterns": [r"\basi\b"]},
     {"id": "humanoid", "name": "Humanoid", "terms": ["humanoid"]},
+    {"id": "fairness", "name": "Fairness", "prefixes": ["G_INT_ALLOC", "G_INT_REPR"], "terms": ["fairness", "unfair", "discriminat", "algorithmic bias", "biased representations", "unequal access"]},
 ]
 
 
