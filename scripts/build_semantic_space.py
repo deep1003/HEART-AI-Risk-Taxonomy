@@ -95,18 +95,15 @@ SCENARIOS = [
 ]
 
 TOPICS = [
-    {"id": "safety", "name": "Physical safety", "prefixes": ["P_INT_SAFETY", "P_SYS_CONTROL", "P_SYS_STATE", "P_SYS_HARDWARE"]},
-    {"id": "navigation", "name": "Navigation & access", "terms": ["navigation", "localisation", "trajectory", "locomotion", "walking", "path-planning", "pavements", "pedestrians", "position-keeping"], "domains": ["L1_P", "L1_G"]},
-    {"id": "manipulation", "name": "Manipulation & contact", "terms": ["manipulation", "force", "end-effector", "bimanual", "bodily", "fine motor", "contact", "household"]},
-    {"id": "privacy", "name": "Privacy & surveillance", "prefixes": ["G_INT_PRIV"]},
+    {"id": "hate-unfairness", "name": "Hate and unfairness", "prefixes": ["G_INT_ALLOC", "G_INT_REPR"], "terms": ["hate speech", "hateful", "discriminat", "unfair"]},
+    {"id": "self-harm", "name": "Self-harm", "prefixes": ["G_INT_SELF"], "terms": ["self-harm", "suicide", "suicidal"]},
     {"id": "security", "name": "Cybersecurity", "prefixes": ["G_SYS_SECADV", "P_INT_TAMPER"], "ids": ["A_SYS_AUTH_001", "A_SYS_AUTH_005", "A_SYS_AUTH_025"]},
-    {"id": "oversight", "name": "Authority & oversight", "prefixes": ["A_SYS_AUTH", "A_SYS_TRACE", "G_SOC_GOV"], "terms": ["oversight", "authorised", "shutdown", "emergency stop", "safety monitor"]},
-    {"id": "goals", "name": "Goals & tool use", "prefixes": ["A_SYS_GOAL"], "terms": ["tool use", "tool-action", "tool-action", "goal underspecification", "high-level safety instruction", "language-action"]},
-    {"id": "coordination", "name": "Coordination & connectivity", "prefixes": ["A_INT_CASCADE", "A_INT_COORD"], "terms": ["network", "connectivity", "latency", "synchronisation", "telemetry"]},
-    {"id": "reliability", "name": "Reliability & evaluation", "prefixes": ["G_SYS_EVAL", "G_SYS_PERF", "G_SYS_CONTEXT", "G_SYS_INPUT", "G_SYS_INCONS", "A_SYS_SELFCOR", "G_SYS_MISINFO"]},
-    {"id": "fairness", "name": "Fairness & accessibility", "prefixes": ["G_INT_ALLOC"], "terms": ["accessibility", "disabled", "vulnerable users"]},
-    {"id": "work", "name": "Work & accountability", "prefixes": ["G_SOC_ECON", "A_SYS_TRACE"], "ids": ["G_INT_PRIV_002", "G_INT_PRIV_030", "G_INT_PRIV_031", "G_SOC_GOV_039"]},
-    {"id": "relationships", "name": "Trust & relationships", "prefixes": ["G_INT_ANTH", "G_INT_REL"]},
+    {"id": "democracy", "name": "Democracy", "prefixes": ["G_SOC_DEMOC", "G_INT_POL"], "terms": ["democra", "election", "voting", "civic"]},
+    {"id": "education", "name": "Education", "terms": ["education", "educational", "school", "student", "classroom", "academic", "pedagog", "learning outcomes"]},
+    {"id": "labour", "name": "Labour", "prefixes": ["G_SOC_ECON"], "terms": ["labour", "labor market", "worker", "workplace", "employment", "wage", "job displacement"]},
+    {"id": "human-rights", "name": "Human rights", "prefixes": ["G_INT_ALLOC", "G_INT_REPR", "G_INT_PRIV", "G_SYS_CONTEST"], "terms": ["human rights", "fundamental rights", "civil liberties", "freedom of", "human dignity"]},
+    {"id": "out-of-control", "name": "Out of control", "prefixes": ["A_SYS_AUTH", "A_SYS_GOAL", "P_SYS_CONTROL"], "terms": ["loss of control", "uncontroll", "shutdown", "emergency stop", "runaway"]},
+    {"id": "prompt-injection", "name": "Prompt injection", "terms": ["prompt injection", "prompt-injection", "instruction injection", "indirect injection"]},
 ]
 
 
