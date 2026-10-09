@@ -26559,6 +26559,30 @@
         "G_SYS_PERF_004",
         "G_SYS_TRANS_001"
       ]
+    },
+    {
+      "id": "deepfake",
+      "name": "Deepfake",
+      "ids": [
+        "G_INT_ILLEGAL_010",
+        "G_SYS_MISINFO_010"
+      ]
+    },
+    {
+      "id": "copyrights",
+      "name": "Copyrights",
+      "ids": [
+        "G_INT_COPY_001",
+        "G_INT_COPY_002",
+        "G_INT_COPY_003",
+        "G_INT_COPY_006",
+        "G_INT_COPY_007",
+        "G_INT_COPY_008",
+        "G_INT_COPY_009",
+        "G_INT_COPY_011",
+        "G_SYS_EVAL_017",
+        "G_SYS_POLICY_008"
+      ]
     }
   ]
 }

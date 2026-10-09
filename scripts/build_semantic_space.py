@@ -131,6 +131,8 @@ TOPICS = [
     {"id": "asi", "name": "ASI", "terms": ["superintelligen", "super-intelligen", "super intelligen"], "patterns": [r"\basi\b"]},
     {"id": "humanoid", "name": "Humanoid", "terms": ["humanoid"]},
     {"id": "fairness", "name": "Fairness", "prefixes": ["G_INT_ALLOC", "G_INT_REPR"], "terms": ["fairness", "unfair", "discriminat", "algorithmic bias", "biased representations", "unequal access"]},
+    {"id": "deepfake", "name": "Deepfake", "terms": ["deepfake", "deep fake", "deep-fake"]},
+    {"id": "copyrights", "name": "Copyrights", "prefixes": ["G_INT_COPY"], "terms": ["copyright"]},
 ]
 
 
