@@ -16,7 +16,13 @@
     const ratio = maximum > minimum ? Math.max(0,Math.min(1,(strength-minimum)/(maximum-minimum))) : .5;
     return Math.sqrt(9 + (225-9)*ratio);
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius};
+  function edgePath(p, q) {
+    const dx = q.x - p.x, dy = q.y - p.y;
+    const cx = (p.x + q.x)/2 - dy*.12;
+    const cy = (p.y + q.y)/2 + dx*.12;
+    return `M ${p.x} ${p.y} Q ${cx} ${cy} ${q.x} ${q.y}`;
+  }
+  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath};
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
@@ -147,7 +153,7 @@
       if (!enabledIds.has(a) || !enabledIds.has(b)) continue;
       const p = locations.get(a), q = locations.get(b);
       const incident = a === selectedId || b === selectedId;
-      markup += `<line class="semantic-edge${incident?' selected-edge':''}" data-source="${escape(a)}" data-target="${escape(b)}" x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" style="opacity:${incident?.7:.08+weight*.12};stroke-width:${incident?1.8:.4+weight*.5}"/>`;
+      markup += `<path class="semantic-edge${incident?' selected-edge':''}" data-source="${escape(a)}" data-target="${escape(b)}" d="${edgePath(p,q)}" fill="none" stroke-linecap="round" style="opacity:${incident?.7:.08+weight*.12};stroke-width:${incident?1.8:.4+weight*.5}"/>`;
     }
     const showContext = get('semantic-context').checked;
     const strengths = data.points.map(point=>point.strength);
