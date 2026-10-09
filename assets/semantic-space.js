@@ -166,7 +166,7 @@
       const radius = nodeRadius(point.strength,minStrength,maxStrength);
       const cluster = data.clusters.find(item=>item.id===point.cluster);
       if (point.id===selectedId && active) markup += `<circle class="semantic-halo" cx="${p.x}" cy="${p.y}" r="${radius+5}"/>`;
-      markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="${escape(cluster.color)}"><title>${escape(point.id + ': ' + card.L4_Name_en)}</title></circle>`;
+      markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" aria-label="${escape(point.id + ': ' + card.L4_Name_en)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="${escape(cluster.color)}"/>`;
     }
     const labelBoxes = [];
     const labels = data.clusters.filter(cluster=>cluster.ids.some(id=>enabledIds.has(id))).slice(0,width<600?4:12);
