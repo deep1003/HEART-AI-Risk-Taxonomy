@@ -95,6 +95,8 @@ SCENARIOS = [
 ]
 
 TOPICS = [
+    {"id": "misuse", "name": "Misuse", "prefixes": ["G_INT_ILLEGAL", "G_INT_WEAP"], "terms": ["misuse", "malicious use", "malicious actor", "criminal", "fraud", "abuse of", "weaponiz", "weaponis"]},
+    {"id": "mis-disinformation", "name": "Mis/disinformation", "prefixes": ["G_SYS_MISINFO"], "terms": ["misinformation", "disinformation", "false information", "fake news", "deepfake"]},
     {"id": "hate-unfairness", "name": "Hate and unfairness", "prefixes": ["G_INT_ALLOC", "G_INT_REPR"], "terms": ["hate speech", "hateful", "discriminat", "unfair"]},
     {"id": "self-harm", "name": "Self-harm", "prefixes": ["G_INT_SELF"], "terms": ["self-harm", "suicide", "suicidal"]},
     {"id": "security", "name": "Cybersecurity", "prefixes": ["G_SYS_SECADV", "P_INT_TAMPER"], "ids": ["A_SYS_AUTH_001", "A_SYS_AUTH_005", "A_SYS_AUTH_025"]},
