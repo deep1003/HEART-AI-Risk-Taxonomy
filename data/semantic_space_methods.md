@@ -20,7 +20,7 @@ Install `scripts/semantic_requirements.txt` in a task-local environment and run 
 
 The supplied reference page, its live `assets/risk-space.js`, and local `scripts/build_semantic_proximity_network.py` were inspected. The historical implementation uses BGE-M3, seeded graph-regularised spherical EM, L3-profile similarity (0.65) plus direct semantic similarity (0.35), and ForceAtlas2. Its 54-community claim concerns a different release.
 
-HEART reuses the node-link presentation, community colours, weighted connections and network layout, not stale IDs or old EM responsibilities. Current embeddings are recomputed from current HEART text. Links use direct embedding cosine only, and communities use Louvain, not EM. No taxonomy remapping is performed. Community totals are dependent on model and graph parameters, not validated counts of risk types.
+HEART reuses the node-link presentation, weighted connections and network layout, not stale IDs or old EM responsibilities. Current embeddings are recomputed from current HEART text. Links use direct embedding cosine only; diagnostic communities use Louvain, not EM. Displayed colours now use human-approved L3 assignments and L1-anchored semantic shades. No taxonomy remapping is performed. Diagnostic community totals depend on model and graph parameters, not validated counts of risk types.
 
 ## Interaction and limits
 
