@@ -69,7 +69,7 @@
     get('semantic-status').textContent = 'Loading the risk text projection…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=bge-m3-20261009'), fetch('data/heart_l4_risk_cards.json')]);
+      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=domain-keywords-20261010'), fetch('data/heart_l4_risk_cards.json')]);
       if (!spaceResponse.ok || !cardResponse.ok) throw new Error('The semantic-space data could not be loaded.');
       const cardText = await cardResponse.text();
       const space = await spaceResponse.json();

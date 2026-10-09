@@ -43,7 +43,10 @@ assert(activeIds(data, {scenario:'home-humanoids'}).has('P_SYS_CONTROL_046'));
 assert(!activeIds(data, {scenario:'home-humanoids'}).has('G_INT_PRIV_031'));
 assert(activeIds(data, {scenario:'network-agents', keyword:'security'}).has('A_SYS_AUTH_001'));
 assert.equal(activeIds(data, {scenario:'missing'}).size, 0);
-assert.deepEqual(data.keywords.map(item => item.name), ['Misuse', 'Mis/disinformation', 'Hate and unfairness', 'Self-harm', 'Cybersecurity', 'Democracy', 'Education', 'Labour', 'Human rights', 'Out of control', 'Prompt injection', 'Human-robot interaction']);
+assert.deepEqual(data.keywords.map(item => item.name), ['Misuse', 'Mis/disinformation', 'Hate and unfairness', 'Self-harm', 'Cybersecurity', 'Democracy', 'Education', 'Labour', 'Human rights', 'Out of control', 'Prompt injection', 'Human-robot interaction', 'General AI', 'Agentic AI', 'Physical AI']);
+for (const [keyword,domain] of [['general-ai','L1_G'],['agentic-ai','L1_A'],['physical-ai','L1_P']]) {
+  assert.deepEqual([...activeIds(data,{keyword})].sort(), cards.filter(card=>card.L1_ID===domain).map(card=>card.L4_ID).sort());
+}
 assert(data.keywords.every(item => item.ids.length > 0));
 assert(data.edges.every(([a,b,weight]) => a !== b && sourceIds.has(a) && sourceIds.has(b) && weight >= .45 && weight <= 1));
 const degrees = new Map([...sourceIds].map(id=>[id,0]));

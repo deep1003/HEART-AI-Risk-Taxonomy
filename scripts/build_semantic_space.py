@@ -107,6 +107,9 @@ TOPICS = [
     {"id": "out-of-control", "name": "Out of control", "prefixes": ["A_SYS_AUTH", "A_SYS_GOAL", "P_SYS_CONTROL"], "terms": ["loss of control", "uncontroll", "shutdown", "emergency stop", "runaway"]},
     {"id": "prompt-injection", "name": "Prompt injection", "terms": ["prompt injection", "prompt-injection", "instruction injection", "indirect injection"]},
     {"id": "human-robot-interaction", "name": "Human-robot interaction", "prefixes": ["P_INT_SAFETY"], "terms": ["human-robot", "human robot", "human–robot", "robot-human", "collaborative robot", "human proximity", "physical interaction"]},
+    {"id": "general-ai", "name": "General AI", "l1": "L1_G"},
+    {"id": "agentic-ai", "name": "Agentic AI", "l1": "L1_A"},
+    {"id": "physical-ai", "name": "Physical AI", "l1": "L1_P"},
 ]
 
 
@@ -117,6 +120,8 @@ def tokens(card):
 
 
 def match(card, rule):
+    if rule.get("l1"):
+        return card["L1_ID"] == rule["l1"]
     text = (card["L4_Name_en"] + " " + card["Risk_Definition_en"]).lower()
     if rule.get("domains") and card["L1_ID"] not in rule["domains"]:
         return False
