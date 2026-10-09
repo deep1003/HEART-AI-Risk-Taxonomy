@@ -26,6 +26,15 @@
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
+  function showInlineCard(card) {
+    const attributes = [card.Facet ? `Facet: ${card.Facet}` : '', card.Act_Type ? `Act-type: ${card.Act_Type}` : ''].filter(Boolean);
+    const evidence = typeof renderEvidence === 'function' ? renderEvidence(card) :
+      (card.Evidence_URL ? `<a class="evidence-link" href="${escape(card.Evidence_URL)}" target="_blank" rel="noopener noreferrer">${escape(card.Evidence_Reference_Title)}</a><p>${escape([card.Evidence_Reference_Authors,card.Evidence_Reference_Year,card.Evidence_Reference_Type].filter(Boolean).join(' · '))}</p><blockquote>${escape(card.Evidence_Quote)}</blockquote><p class="source-note">${escape(card.Evidence_Quote_Location)}</p>` : '<p>No reference available.</p>');
+    get('semantic-card-content').innerHTML = `<div class="card-meta"><span class="badge">${escape(card.L4_ID)}</span><span class="badge domain">${escape(card.L1_Name_en)}</span></div><h2 id="semantic-card-title">${escape(card.L4_Name_en)} (${escape(card.L4_Name_ko)})</h2><div class="hierarchy">${escape(hierarchy(card))}</div><section class="detail-section"><h3>Risk definition</h3><p>${escape(card.Risk_Definition_en)}</p><p lang="ko">${escape(card.Risk_Definition_ko)}</p></section>${attributes.length ? `<section class="detail-section"><h3>L4 attributes</h3><div class="attributes">${attributes.map(item=>`<span class="badge">${escape(item)}</span>`).join('')}</div></section>` : ''}<section class="detail-section"><h3>Evidence references</h3>${evidence}</section><section class="detail-section"><h3>Future assessment fields</h3><div class="future-fields"><div class="future-field"><span>Probability</span></div><div class="future-field"><span>Severity</span></div></div></section>`;
+    get('semantic-card-detail').hidden = false;
+    get('semantic-tooltip').hidden = true;
+  }
+  get('semantic-card-close').addEventListener('click',()=>{get('semantic-card-detail').hidden=true; selectedId=''; draw();});
   const filters = {scenario:'', cluster:'', keyword:''};
   let data, cards, byId, visible = 16, loading, enabledIds = new Set(), locations = new Map();
   const baseZoom = 1.1;
@@ -198,14 +207,14 @@
   }
   get('semantic-risk-list').addEventListener('click', event => {
     const button = event.target.closest('[data-card]');
-    if (button) {selectedId=button.dataset.card; draw(); openCard(byId.get(selectedId));}
+    if (button) {selectedId=button.dataset.card; draw(); showInlineCard(byId.get(selectedId));}
   });
   get('semantic-plot').addEventListener('click', event => {
     if (drag?.moved) {drag=null; return;}
     const cluster = event.target.closest('[data-cluster-label]');
     if (cluster) {filters.cluster=filters.cluster===cluster.dataset.clusterLabel?'':cluster.dataset.clusterLabel; visible=16; render(); return;}
     const point = event.target.closest('[data-risk]');
-    if (point && enabledIds.has(point.dataset.risk)) {selectedId=point.dataset.risk; draw(); openCard(byId.get(selectedId)); return;}
+    if (point && enabledIds.has(point.dataset.risk)) {selectedId=point.dataset.risk; draw(); showInlineCard(byId.get(selectedId)); return;}
     const svg = get('semantic-plot'), bounds = svg.getBoundingClientRect(), box = svg.viewBox.baseVal;
     const x = ((event.clientX - bounds.left) / bounds.width * box.width - pan.x - box.width/2)/(zoom*baseZoom)+box.width/2;
     const y = ((event.clientY - bounds.top) / bounds.height * box.height - pan.y - box.height/2)/(zoom*baseZoom)+box.height/2;
@@ -214,7 +223,7 @@
       const location = locations.get(id), current = Math.hypot(location.x-x, location.y-y);
       if (current < distance) {nearest = id; distance = current;}
     }
-    if (nearest) {selectedId=nearest; draw(); openCard(byId.get(nearest));}
+    if (nearest) {selectedId=nearest; draw(); showInlineCard(byId.get(nearest));}
   });
   get('semantic-plot').addEventListener('pointermove', event => {
     const point = event.target.closest('[data-risk]'), tooltip = get('semantic-tooltip');

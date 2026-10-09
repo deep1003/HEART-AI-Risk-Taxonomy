@@ -1,4 +1,8 @@
 .explorer-tabs{display:flex;gap:28px;align-items:center}
+#semantic-card-detail{margin:24px 0;padding:26px;background:#fff;border:1px solid #d8dee8;border-radius:14px;scroll-margin-top:150px}
+#semantic-card-detail[hidden]{display:none}
+#semantic-card-close{float:right;padding:8px 12px;border:1px solid #d8dee8;background:#fff;border-radius:8px;cursor:pointer}
+#semantic-card-title{clear:both;font-size:1.5rem;line-height:1.35;margin:16px 0}
 .explorer-tabs button{border:0;background:transparent;padding:0;color:#475467;font:inherit;font-weight:650;white-space:nowrap;cursor:pointer}
 .explorer-tabs button[aria-selected=true]{color:#18213d;text-decoration:underline;text-underline-offset:8px;text-decoration-thickness:2px}
 .semantic-section[hidden],.explorer[hidden]{display:none!important}
