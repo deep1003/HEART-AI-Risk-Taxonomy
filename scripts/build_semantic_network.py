@@ -129,7 +129,7 @@ def main():
                        for a,b,attrs in sorted(graph.edges(data=True))],
               'clusters':clusters,
               'scenarios':[{k:rule[k] for k in ('id','name','name_ko','description')} |
-                           {k:rule[k] for k in ('source_url','source_label') if k in rule} |
+                           {k:rule[k] for k in ('source_url','source_label','additional_sources') if k in rule} |
                            {'ids':[card['L4_ID'] for card in cards if match(card,rule) and card['L4_ID'] not in rule.get('exclude',[])]}
                            for rule in SCENARIOS],
               'keywords':[{'id':rule['id'],'name':rule['name'],'ids':[card['L4_ID'] for card in cards if match(card,rule)]} for rule in TOPICS]}

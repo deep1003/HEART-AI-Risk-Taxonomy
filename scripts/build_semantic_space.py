@@ -95,7 +95,25 @@ SCENARIOS = [
 ]
 
 # Retain the historical rule above for provenance, but do not publish this lens.
-SCENARIOS = [rule for rule in SCENARIOS if rule['id'] != 'factory-humanoids']
+SCENARIOS = [rule for rule in SCENARIOS if rule['id'] == 'ai-for-everyone'] + [
+    {"id": "legal-assistance", "name": "Legal assistance AI", "name_ko": "법률지원 AI",
+     "description": "AI supporting legal-help intake, document review, eligibility screening, legal research and draft preparation under qualified human supervision. Stanford Legal Design Lab's 2026 report describes scoped prototypes, not systems approved for unrestricted use. Potential risks include inaccurate legal information, misread facts and jurisdiction, confidential client-data disclosure, biased access, unsupported claims and inadequate traceability. This lens concerns assistance, not autonomous adjudication or a replacement for a lawyer; risks are editorial applicability assessments, not observed failures of a particular service.",
+     "source_url": "https://justiceinnovation.law.stanford.edu/ai-for-legal-help-2026-class-report-scoping-building-and-testing-new-legal-aid-tech-systems/",
+     "source_label": "Stanford Legal Design Lab, AI for Legal Help 2026 report (21 August 2026)",
+     "domains": ["L1_G", "L1_A"],
+     "prefixes": ["G_SYS_MISINFO", "G_SYS_CONTEXT", "G_SYS_INPUT", "G_SYS_INCONS", "G_SYS_OVERCONF", "G_SYS_TRANS", "G_SYS_CONTEST", "G_SYS_POLICY", "G_INT_PRIV", "G_INT_ALLOC", "A_SYS_TRACE"],
+     "terms": ["legal advice", "legal research", "legal assistance", "court", "judicial", "jurisdiction", "client confidentiality"],
+     "exclude": ["G_INT_PRIV_031", "G_INT_PRIV_030"]},
+    {"id": "financial-chatbots", "name": "Financial chatbots", "name_ko": "금융 챗봇",
+     "description": "Conversational AI providing consumer-facing explanations and guidance about savings, financial products and personal financial decisions. FCA chatbot pilots distinguish guidance from regulated personalised advice; its 2026 investor survey supplies newer evidence of consumer use. Potential risks include misleading financial information, overconfidence, unsuitable or manipulative guidance, disclosure of personal financial data, unequal access and unclear responsibility. This lens does not assume autonomous trading, lending decisions or payment execution. Risk associations are conditional editorial assessments, not evidence of failures in the cited pilots.",
+     "source_url": "https://www.fca.org.uk/publications/research-notes/money-talks-lessons-2-llm-pilots-consumer-guidance",
+     "source_label": "FCA, Money talks: lessons from two LLM pilots (2025 research note)",
+     "additional_sources": [{"url": "https://www.fca.org.uk/news/press-releases/young-investors-trust-ai-more-tv-or-celebrities", "label": "FCA, 2026 investor survey findings"}],
+     "domains": ["L1_G"],
+     "prefixes": ["G_SYS_MISINFO", "G_SYS_CONTEXT", "G_SYS_INPUT", "G_SYS_INCONS", "G_SYS_OVERCONF", "G_SYS_TRANS", "G_SYS_POLICY", "G_INT_PRIV", "G_INT_UNETH", "G_INT_ALLOC"],
+     "terms": ["financial advice", "financial guidance", "investment advice", "financial fraud", "consumer-autonomy", "personalised advertising"],
+     "exclude": ["G_INT_PRIV_031", "G_INT_PRIV_030"]},
+]
 
 TOPICS = [
     {"id": "misuse", "name": "Misuse", "prefixes": ["G_INT_ILLEGAL", "G_INT_WEAP"], "terms": ["misuse", "malicious use", "malicious actor", "criminal", "fraud", "abuse of", "weaponiz", "weaponis"]},

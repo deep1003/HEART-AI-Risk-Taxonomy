@@ -37,10 +37,9 @@ for (const scenario of data.scenarios) {
     assert.equal(selected.size,scenario.ids.filter(id=>cluster.ids.includes(id)).length);
   }
 }
-assert(activeIds(data, {scenario:'delivery-robots'}).has('G_SYS_PERF_015'));
-assert(!data.scenarios.some(item=>item.id==='factory-humanoids'));
-assert(activeIds(data, {scenario:'home-humanoids'}).has('P_SYS_CONTROL_046'));
-assert(!activeIds(data, {scenario:'home-humanoids'}).has('G_INT_PRIV_031'));
+assert.deepEqual(data.scenarios.map(item=>item.name), ['AI for Everyone (Korea)','Legal assistance AI','Financial chatbots']);
+assert([...activeIds(data,{scenario:'financial-chatbots'})].every(id=>id.startsWith('G_')));
+assert([...activeIds(data,{scenario:'legal-assistance'})].every(id=>!id.startsWith('P_')));
 assert(!data.scenarios.some(item=>item.id==='network-agents'));
 assert(activeIds(data, {scenario:'ai-for-everyone', keyword:'security'}).has('A_SYS_AUTH_001'));
 assert([...activeIds(data, {scenario:'ai-for-everyone'})].every(id=>!id.startsWith('P_')));
