@@ -234,7 +234,7 @@
     const node=data.points.find(item=>item.id===card.L4_ID), cluster=data.clusters.find(item=>item.id===node.cluster);
     tooltip.innerHTML = `<strong>${escape(card.L4_Name_en)}</strong><span>${escape(card.L4_ID)} · ${escape(card.L1_Name_en)} · ${escape(card.L3_Name_en)}</span><span>Community: ${escape(cluster.name)} · ${node.degree} links · Weighted degree: ${node.strength.toFixed(3)}</span><span>Click to open the risk card</span>`;
     tooltip.hidden = false;
-    const bounds = get('semantic-plot').getBoundingClientRect();
+    const bounds = get('semantic-plot').parentElement.getBoundingClientRect();
     tooltip.style.left = `${Math.max(8, Math.min(event.clientX-bounds.left+14, bounds.width-tooltip.offsetWidth-8))}px`;
     tooltip.style.top = `${Math.max(8, Math.min(event.clientY-bounds.top+14, bounds.height-tooltip.offsetHeight-8))}px`;
   });
