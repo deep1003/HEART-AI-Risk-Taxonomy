@@ -69,7 +69,6 @@
     visible = 16;
     if (data) render();
   });
-  get('semantic-context').addEventListener('change', () => data && draw());
   get('semantic-more').addEventListener('click', () => {visible += 16; renderList();});
 
   async function load() {
@@ -103,7 +102,7 @@
   function buildControls() {
     get('semantic-scenarios').innerHTML = data.scenarios.map(item => `<button class="semantic-community" type="button" aria-pressed="false" data-scenario="${escape(item.id)}"><strong>${escape(item.name)}</strong><small lang="ko">${escape(item.name_ko)}</small><small>${item.ids.length} potentially relevant risks</small></button>`).join('');
     get('semantic-clusters').innerHTML = data.clusters.map(item => `<button class="semantic-community" type="button" aria-pressed="false" data-cluster="${escape(item.id)}"><i class="community-dot" style="background:${escape(item.color)}"></i>${escape(item.name)} <small>${item.ids.length} risks</small></button>`).join('');
-    get('semantic-clusters').parentElement.open = !window.matchMedia('(max-width:760px)').matches;
+    get('semantic-clusters').parentElement.open = false;
     const strengths = data.points.map(point=>point.strength);
     get('semantic-legend').textContent = `Colour: ${data.clusters.length} semantic communities · Node size: weighted degree (sum of link weights), ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)} · Diameter: 6.6–33 px at 100% zoom · Pale nodes: inactive`;
     get('semantic-keywords').innerHTML = `<button type="button" aria-pressed="true" data-keyword="">All keywords</button>` + data.keywords.map(item => `<button type="button" aria-pressed="false" data-keyword="${escape(item.id)}">${escape(item.name)}</button>`).join('');
@@ -131,7 +130,7 @@
     definitionPanel.hidden = !keyword;
     definitionPanel.innerHTML = keyword ? `<h4>${escape(keyword.name)} · Concept definition</h4><p>${escape(keyword.definition)}</p>${keyword.url ? `<blockquote>“${escape(keyword.quote)}”</blockquote><p><a href="${escape(keyword.url)}" target="_blank" rel="noopener noreferrer">${escape(keyword.reference_title)}</a> · ${escape(keyword.quote_location)}</p>` : ''}<details><summary>Concept scope and mapping method</summary><p class="source-note">${escape(keyword.scope)}</p><p class="source-note">${keyword.mapping_mode === 'taxonomy' ? 'Existing human-approved L1 assignments. No similarity-based reassignment.' : `Operational synthesis based on the cited source, not a verbatim source definition. BGE-M3 definition-to-card cosine retrieval; threshold ${escape(keyword.threshold)} with documented AI-specialist scope corrections. Exploratory relevance, not validated classification accuracy.`}</p></details>` : '';
     get('semantic-selection-description').innerHTML = escape(scenario?.description || 'A connected semantic network of the current L4 cards. Select a community or keyword, zoom, or drag the background to explore.') + (scenario?.source_url ? [{url:scenario.source_url,label:scenario.source_label},...(scenario.additional_sources||[])].map(source=>` <a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.label)}</a>`).join(' · ') : '');
-    get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}. Inactive risks ${get('semantic-context').checked ? 'remain as pale context' : 'are hidden'}.`;
+    get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}. Inactive risks remain as pale context.`;
     for (const kind of ['scenario','cluster','keyword']) {
       document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind])));
     }
@@ -167,7 +166,7 @@
       const incident = a === selectedId || b === selectedId;
       markup += `<path class="semantic-edge${incident?' selected-edge':''}" data-source="${escape(a)}" data-target="${escape(b)}" d="${edgePath(p,q)}" fill="none" stroke-linecap="round" style="opacity:${incident?.7:.08+weight*.12};stroke-width:${incident?1.8:.4+weight*.5}"/>`;
     }
-    const showContext = get('semantic-context').checked;
+    const showContext = true;
     const strengths = data.points.map(point=>point.strength);
     const minStrength = Math.min(...strengths), maxStrength = Math.max(...strengths);
     const points = [...data.points].sort((a,b) => Number(enabledIds.has(a.id)) - Number(enabledIds.has(b.id)));

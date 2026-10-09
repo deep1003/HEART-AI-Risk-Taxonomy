@@ -74,18 +74,18 @@
     </section>
 
     <section id="semantic-space" class="semantic-section" role="tabpanel" aria-labelledby="semantic-space-tab">
-      <div class="semantic-heading"><div><p class="eyebrow">Connected risk exploration</p><h2>Semantic space</h2><p>Select an application community or a keyword to activate related risks. Select a point or list entry to open its existing L4 card.</p></div><button id="semantic-reset" type="button">Reset filters</button></div>
+      <div class="semantic-heading"><div><p class="eyebrow">Connected risk exploration</p><h2>Semantic space</h2><p>Select an application community or a keyword to activate related risks. Select a point or list entry to open its existing L4 card.</p></div></div>
       <div id="semantic-status" class="semantic-status" role="status" aria-live="polite">Loading the semantic network…</div>
       <div class="semantic-layout">
         <aside class="semantic-lenses" aria-label="Semantic community filters">
           <h3>Application communities</h3><div id="semantic-scenarios"></div>
           <p class="semantic-caution">Overlapping scenario lenses, not changes to the taxonomy. Applicability depends on the system's actual capabilities and deployment.</p>
-          <details open><summary>Semantic communities</summary><div id="semantic-clusters"></div></details>
+          <details><summary>Semantic communities</summary><div id="semantic-clusters"></div></details>
         </aside>
         <div class="semantic-main">
           <div class="semantic-keyword-head"><h3>Risk keywords</h3><span>One keyword at a time</span></div>
           <div id="semantic-keywords" class="semantic-keywords" aria-label="Risk keyword filters"></div>
-          <div class="semantic-plot-heading"><div><h3 id="semantic-selection-name">All risks</h3><p id="semantic-selection-description"></p></div><label><input id="semantic-context" type="checkbox" checked> Show inactive context</label></div>
+          <div class="semantic-plot-heading"><div><h3 id="semantic-selection-name">All risks</h3><p id="semantic-selection-description"></p></div><button id="semantic-reset" type="button">Reset filters</button></div>
           <section id="semantic-keyword-definition" class="semantic-keyword-definition" aria-live="polite" hidden></section>
           <div class="semantic-network-toolbar" aria-label="Network navigation"><span>Colour by weighted Louvain community (NetworkX 3.5) · Size by weighted degree</span><div><button id="semantic-zoom-out" type="button" aria-label="Zoom out">−</button><span id="semantic-zoom-level">100%</span><button id="semantic-zoom-in" type="button" aria-label="Zoom in">+</button><button id="semantic-fit" type="button">Fit network</button></div></div>
           <p class="semantic-method">Links: cosine similarity of 1,024-dimensional BGE-M3 dense embeddings (Ollama 0.32.1). Undirected union of each node's 8 nearest neighbours, retaining similarities ≥ 0.60. Link weight = cosine similarity; node weighted degree = sum of incident link weights. Weighted Louvain: NetworkX 3.5, resolution = 1.0, seed = 23.</p>
@@ -126,6 +126,6 @@
     <div class="footer-bottom"><span>HEART · 622 risk cards · 47 categories</span><a href="#about">Back to top</a></div>
   </footer>
   <script src="assets/app.js" defer></script>
-  <script src="assets/semantic-space.js?v=source-defined-keywords-20261010" defer></script>
+  <script src="assets/semantic-space.js?v=collapsed-communities-20261010" defer></script>
 </body>
 </html>
