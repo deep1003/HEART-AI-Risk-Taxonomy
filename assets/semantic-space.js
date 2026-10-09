@@ -69,7 +69,7 @@
     get('semantic-status').textContent = 'Loading the risk text projection…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=agi-asi-humanoid-20261010'), fetch('data/heart_l4_risk_cards.json')]);
+      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=ai-for-everyone-20261010'), fetch('data/heart_l4_risk_cards.json')]);
       if (!spaceResponse.ok || !cardResponse.ok) throw new Error('The semantic-space data could not be loaded.');
       const cardText = await cardResponse.text();
       const space = await spaceResponse.json();
@@ -118,7 +118,7 @@
     const keyword = data.keywords.find(item => item.id === filters.keyword);
     const labels = [scenario?.name, cluster?.name, keyword?.name].filter(Boolean);
     get('semantic-selection-name').textContent = labels.join(' / ') || 'All risk cards';
-    get('semantic-selection-description').textContent = scenario?.description || 'A connected semantic network of the current L4 cards. Select a community or keyword, zoom, or drag the background to explore.';
+    get('semantic-selection-description').innerHTML = escape(scenario?.description || 'A connected semantic network of the current L4 cards. Select a community or keyword, zoom, or drag the background to explore.') + (scenario?.source_url ? ` <a href="${escape(scenario.source_url)}" target="_blank" rel="noopener noreferrer">${escape(scenario.source_label)}</a>` : '');
     get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}. Inactive risks ${get('semantic-context').checked ? 'remain as pale context' : 'are hidden'}.`;
     for (const kind of ['scenario','cluster','keyword']) {
       document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind])));

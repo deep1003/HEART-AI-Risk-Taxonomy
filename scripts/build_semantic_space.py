@@ -84,14 +84,14 @@ SCENARIOS = [
      G_INT_PRIV_024 G_SOC_ECON_002 G_SOC_GOV_039 G_SYS_EVAL_033
      G_SYS_EVAL_044 G_SYS_SECADV_011 G_SYS_SECADV_058 G_SYS_SECADV_060
      A_SYS_AUTH_023 A_SYS_GOAL_016 A_SYS_GOAL_018 A_SYS_TRACE_002""".split()},
-    {"id": "network-agents", "name": "Autonomous network operations agents", "name_ko": "네트워크 장애 진단·자율 운영 에이전트",
-     "description": "Software agents diagnosing faults, using operational tools and changing network configurations. Multi-agent risks apply when operators deploy collaborating agents.",
-     "prefixes": ["A_SYS_AUTH", "A_SYS_GOAL", "A_SYS_SELFCOR", "A_SYS_TRACE", "A_INT_COORD", "A_INT_CASCADE"],
-     "exclude": ["A_SYS_AUTH_007", "A_SYS_AUTH_010", "A_SYS_AUTH_024", "A_SYS_GOAL_007", "A_INT_CASCADE_005"],
-     "ids": """G_SYS_CONTEXT_001 G_SYS_CONTEXT_002 G_SYS_INPUT_001 G_SYS_INPUT_002
-     G_SYS_INCONS_001 G_SYS_POLICY_006 G_SYS_POLICY_010 G_SYS_SECADV_005
-     G_SYS_SECADV_023 G_SYS_SECADV_044 G_SYS_SECADV_057 G_SYS_TRANS_002
-     G_SYS_MISINFO_002 G_SOC_GOV_044 G_SYS_EVAL_069""".split()},
+    {"id": "ai-for-everyone", "name": "AI for Everyone (Korea)", "name_ko": "모두의 AI",
+     "description": "Korea's planned citizen-facing domestic-AI services: general-purpose chatbots and public or specialised agents for information search, applications, bookings and payments, accessible through familiar messaging, telephone and text channels. The English label is a descriptive translation, not a verified official name. Potential risks cover response reliability, harmful content, privacy, security, inclusion, misleading human-like interaction and delegated digital actions. Agent risks apply only when those capabilities are enabled; physical robot-control risks are excluded. This is an editorial applicability lens, not evidence of failures in the programme.",
+     "source_url": "https://www.yna.co.kr/view/AKR20260904048352017",
+     "source_label": "Yonhap News, 4 September 2026: announced service plans",
+     "domains": ["L1_G", "L1_A"],
+     "prefixes": ["G_INT_ALLOC", "G_INT_ANTH", "G_INT_REL", "G_INT_PRIV", "G_INT_REPR", "G_INT_SELF", "G_INT_SEX", "G_INT_UNETH", "G_SYS_CONTEST", "G_SYS_CONTEXT", "G_SYS_INPUT", "G_SYS_INCONS", "G_SYS_MISINFO", "G_SYS_OEXT", "G_SYS_OREF", "G_SYS_OVERCONF", "G_SYS_PERF", "G_SYS_POLICY", "G_SYS_SECADV", "G_SYS_TRANS", "A_SYS_AUTH", "A_SYS_GOAL", "A_SYS_SELFCOR", "A_SYS_TRACE"],
+     "exclude": ["A_SYS_AUTH_007", "A_SYS_AUTH_010", "A_SYS_AUTH_024", "A_SYS_GOAL_007", "A_SYS_AUTH_023", "A_SYS_GOAL_016", "A_SYS_GOAL_018", "G_SYS_SECADV_058", "G_SYS_SECADV_060"],
+     "terms": ["accessibility", "digital divide", "public service", "consumer", "payment", "booking"]},
 ]
 
 TOPICS = [
