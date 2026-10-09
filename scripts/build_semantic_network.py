@@ -8,12 +8,11 @@ from pathlib import Path
 
 import networkx as nx
 import numpy as np
-from sentence_transformers import SentenceTransformer
 from build_semantic_space import SCENARIOS, TOPICS, match
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL = 'sentence-transformers/all-MiniLM-L6-v2'
-REVISION = '1110a243fdf4706b3f48f1d95db1a4f5529b4d41'
+MODEL = 'BAAI/bge-m3 (Ollama bge-m3:latest)'
+THRESHOLD = .60
 SEED = 23
 
 
@@ -23,23 +22,26 @@ def main():
     cards = sorted(json.loads(raw), key=lambda card: card['L4_ID'])
     texts = [f"{card['L4_Name_en']}. {card['Risk_Definition_en']}" for card in cards]
     text_hash = hashlib.sha256(json.dumps(texts).encode()).hexdigest()
-    cache = ROOT / 'evidence_work/semantic_model'
-    cache.mkdir(parents=True, exist_ok=True)
+    experiment = ROOT / 'evidence_work/bge_m3_comparison_20261009'
+    if (experiment / 'provenance.json').exists():
+        provenance = json.loads((experiment / 'provenance.json').read_text())
+        revision = provenance['model']['digest']
+        ollama_version = provenance['ollama']['version']
+        cached = np.load(experiment / 'bge_m3_embeddings.npz', allow_pickle=False)
+        assert str(cached['model_digest']) == revision
+    else:
+        published = json.loads((ROOT / 'data/semantic_space.json').read_text())['method']
+        assert published['embedding_model'] == MODEL
+        revision, ollama_version = published['model_revision'], published['ollama_version']
+        cached = np.load(ROOT / 'data/semantic_embeddings.npz', allow_pickle=False)
+        assert str(cached['model_revision']) == revision
+    assert str(cached['text_sha256']) == text_hash
+    assert cached['ids'].tolist() == [card['L4_ID'] for card in cards]
+    vectors = cached['vectors']
+    assert vectors.shape == (622, 1024) and np.isfinite(vectors).all()
     vectors_path = ROOT / 'data/semantic_embeddings.npz'
-    if vectors_path.exists():
-        cached = np.load(vectors_path, allow_pickle=False)
-        usable = (str(cached['text_sha256']) == text_hash and str(cached['model_revision']) == REVISION
-                  and cached['ids'].tolist() == [card['L4_ID'] for card in cards])
-    else:
-        usable = False
-    if usable:
-        vectors = cached['vectors']
-    else:
-        encoder = SentenceTransformer(MODEL, revision=REVISION, cache_folder=str(cache), device='cpu')
-        encoder.max_seq_length = 256
-        vectors = encoder.encode(texts, batch_size=32, normalize_embeddings=True, show_progress_bar=True)
-        np.savez_compressed(vectors_path, vectors=vectors, ids=np.array([c['L4_ID'] for c in cards]),
-                            text_sha256=text_hash, model_revision=REVISION)
+    np.savez_compressed(vectors_path, vectors=vectors, ids=cached['ids'],
+                        text_sha256=text_hash, model_revision=revision)
     similarities = vectors @ vectors.T
     np.fill_diagonal(similarities, -1)
     graph = nx.Graph()
@@ -47,7 +49,7 @@ def main():
     for index in range(len(cards)):
         for other in np.argsort(-similarities[index], kind='stable')[:8]:
             weight = float(similarities[index, other])
-            if weight >= .45:
+            if weight >= THRESHOLD:
                 graph.add_edge(index, int(other), weight=weight)
     groups = nx.community.louvain_communities(graph, weight='weight', resolution=1.0, seed=SEED)
     groups = sorted(groups, key=lambda group: (-len(group), min(group)))
@@ -104,14 +106,15 @@ def main():
         strengths[b] += weight
     result = {'schema_version':'2.0', 'card_count':len(cards), 'source_file':source.name,
               'source_sha256':hashlib.sha256(raw).hexdigest(),
-              'method': {'embedding_model':MODEL, 'model_revision':REVISION, 'embedding_dimensions':384,
-                         'features':'English L4 name and definition, mean-pooled transformer sentence embeddings, L2 normalised',
+              'method': {'embedding_model':MODEL, 'model_revision':revision, 'embedding_dimensions':1024,
+                         'features':'English L4 name and definition; Ollama dense embeddings, no truncation, L2 normalised',
                          'projection':'Weighted ForceAtlas2 network layout, no clipping of outlying nodes',
                          'clustering':'Weighted Louvain graph communities, resolution 1.0, seed 23',
                          'networkx_version':nx.__version__,
-                         'sentence_transformers_version':version('sentence-transformers'),
+                         'ollama_version':ollama_version,
                          'community_function':'networkx.algorithms.community.louvain_communities',
-                         'edge_rule':'Union of each card’s eight closest cosine neighbours, cosine >= 0.45; no artificial links',
+                         'edge_rule':'Union of each card’s eight closest cosine neighbours, cosine >= 0.60; no artificial links',
+                         'cosine_threshold':THRESHOLD,
                          'node_size':'Weighted degree (strength): sum of published incident cosine weights; area linearly scaled over the full-network min/max to radii 3 to 15 display pixels. Fixed across filters, not severity or probability.',
                          'scenario_membership':'Editorial overlapping conditional applicability lenses',
                          'random_seed':SEED, 'edge_count':graph.number_of_edges(),

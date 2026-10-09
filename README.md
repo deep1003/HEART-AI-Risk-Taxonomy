@@ -30,3 +30,6 @@ python3 scripts/build_heart_dataset.py
 ```
 
 The build performs one-to-one L4 ID matching between the hierarchy masters and the evidence ledger, rejects duplicate identifiers, verifies required fields, checks L3 consistency, and keeps Probability and Severity blank.
+# Semantic embedding release
+
+The current semantic network uses BGE-M3 dense embeddings, 1,024 dimensions, served locally by Ollama 0.32.1. Model digest and source checksums are recorded in `data/semantic_space.json`. Weighted Louvain (NetworkX 3.5) yields 9 communities and 3,807 cosine-weighted links; approved taxonomy assignments remain unchanged. See `data/semantic_space_methods.md` for parameters, reproducibility and the previous MiniLM comparison.

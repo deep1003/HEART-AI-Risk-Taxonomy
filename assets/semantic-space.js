@@ -63,7 +63,7 @@
     get('semantic-status').textContent = 'Loading the risk text projection…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=keywords12-20261009'), fetch('data/heart_l4_risk_cards.json')]);
+      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=bge-m3-20261009'), fetch('data/heart_l4_risk_cards.json')]);
       if (!spaceResponse.ok || !cardResponse.ok) throw new Error('The semantic-space data could not be loaded.');
       const cardText = await cardResponse.text();
       const space = await spaceResponse.json();
@@ -77,7 +77,7 @@
       if (space.points.length !== sourceCards.length || space.points.some(point => !lookup.has(point.id))) throw new Error('Projection/card IDs do not match.');
       data = space; cards = sourceCards; byId = lookup;
       buildControls();
-      get('semantic-method-stats').textContent = `${data.card_count} unchanged risk cards; ${data.clusters.length} graph communities; ${data.edges.length.toLocaleString()} weighted links. Sentence embeddings: all-MiniLM-L6-v2, 384 dimensions. Louvain communities and ForceAtlas2 layout are exploratory, not new taxonomy assignments.`;
+      get('semantic-method-stats').textContent = `${data.card_count} unchanged risk cards; ${data.clusters.length} graph communities; ${data.edges.length.toLocaleString()} weighted links. Embeddings: BGE-M3, ${data.method.embedding_dimensions} dimensions; Ollama ${data.method.ollama_version}; model digest ${data.method.model_revision}. Louvain communities and ForceAtlas2 layout are exploratory, not new taxonomy assignments.`;
       render();
     } catch (error) {
       get('semantic-status').textContent = error.message;

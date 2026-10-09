@@ -17,7 +17,7 @@ assert(data.points.every(point => sourceIds.has(point.id) && Number.isFinite(poi
 assert.equal(activeIds(data, {}).size, 622);
 assert.equal(data.scenarios.length, 4);
 assert(data.clusters.length > 1);
-assert.equal(data.method.embedding_dimensions, 384);
+assert.equal(data.method.embedding_dimensions, 1024);
 assert.equal(data.method.edge_count, data.edges.length);
 assert(data.points.every(point => Number.isInteger(point.degree) && point.degree >= 0));
 assert(data.clusters.every(cluster => /^#[a-f0-9]{6}$/i.test(cluster.color)));

@@ -9,7 +9,7 @@ data = json.loads((root/'data/semantic_space.json').read_text())
 archive = np.load(root/'data/semantic_embeddings.npz', allow_pickle=False)
 vectors = archive['vectors']
 ids = archive['ids'].tolist()
-assert vectors.shape == (622,384) and np.isfinite(vectors).all()
+assert vectors.shape == (622,1024) and np.isfinite(vectors).all()
 assert np.allclose(np.linalg.norm(vectors,axis=1),1,atol=1e-5)
 assert len(set(ids))==622 and ids==[point['id'] for point in data['points']]
 assert str(archive['text_sha256'])==data['method']['text_sha256']
@@ -21,7 +21,7 @@ np.fill_diagonal(cosine,-1)
 expected = set()
 for index in range(len(ids)):
     for other in np.argsort(-cosine[index],kind='stable')[:8]:
-        if cosine[index,other]>=.45:
+        if cosine[index,other]>=data['method']['cosine_threshold']:
             expected.add(tuple(sorted((index,int(other)))))
 actual = set()
 for a,b,weight in data['edges']:
