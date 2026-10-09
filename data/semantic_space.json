@@ -25587,6 +25587,28 @@
         "G_SYS_SECADV_044",
         "G_SYS_SECADV_060"
       ]
+    },
+    {
+      "id": "human-robot-interaction",
+      "name": "Human-robot interaction",
+      "ids": [
+        "P_INT_SAFETY_001",
+        "P_INT_SAFETY_005",
+        "P_INT_SAFETY_006",
+        "P_INT_SAFETY_007",
+        "P_INT_SAFETY_008",
+        "P_INT_SAFETY_009",
+        "P_INT_SAFETY_010",
+        "P_INT_SAFETY_011",
+        "P_INT_SAFETY_012",
+        "P_INT_SAFETY_015",
+        "P_INT_SAFETY_016",
+        "P_INT_SAFETY_017",
+        "P_INT_SAFETY_018",
+        "P_INT_SAFETY_020",
+        "P_INT_SAFETY_021",
+        "P_INT_SAFETY_023"
+      ]
     }
   ]
 }

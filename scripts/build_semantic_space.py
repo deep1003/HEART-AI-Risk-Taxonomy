@@ -106,6 +106,7 @@ TOPICS = [
     {"id": "human-rights", "name": "Human rights", "prefixes": ["G_INT_ALLOC", "G_INT_REPR", "G_INT_PRIV", "G_SYS_CONTEST"], "terms": ["human rights", "fundamental rights", "civil liberties", "freedom of", "human dignity"]},
     {"id": "out-of-control", "name": "Out of control", "prefixes": ["A_SYS_AUTH", "A_SYS_GOAL", "P_SYS_CONTROL"], "terms": ["loss of control", "uncontroll", "shutdown", "emergency stop", "runaway"]},
     {"id": "prompt-injection", "name": "Prompt injection", "terms": ["prompt injection", "prompt-injection", "instruction injection", "indirect injection"]},
+    {"id": "human-robot-interaction", "name": "Human-robot interaction", "prefixes": ["P_INT_SAFETY"], "terms": ["human-robot", "human robot", "human–robot", "robot-human", "collaborative robot", "human proximity", "physical interaction"]},
 ]
 
 
