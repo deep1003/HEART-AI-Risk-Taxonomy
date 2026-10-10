@@ -23,7 +23,7 @@
 @media(max-width:1000px){.semantic-workspace.has-selected-card{grid-template-columns:minmax(0,1fr)}.semantic-workspace #semantic-card-detail{position:static;max-height:65dvh}}
 .semantic-plot-heading{position:relative;display:block}
 .semantic-plot-heading>div{width:100%;min-width:0}
-.semantic-plot-heading h3{padding-right:140px}
+.semantic-plot-heading h3{padding-right:140px;min-height:44px;margin-bottom:6px;display:flex;align-items:center}
 .semantic-plot-heading #semantic-reset{position:absolute;right:0;top:0;margin-top:0}
 .semantic-plot-heading p{max-width:none;width:100%;font-size:.94rem;line-height:1.7}
 .filter-definition,.filter-references{display:inline}
