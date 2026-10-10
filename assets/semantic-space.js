@@ -93,7 +93,7 @@
   document.querySelector('.explorer-tabs').addEventListener('keydown', event => {
     if (event.target.getAttribute('role') === 'tab' && ['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) {
       event.preventDefault();
-      const semantic = event.key === 'Home' || (event.key !== 'End' && event.target.id === 'risk-cards-tab');
+      const semantic = event.key === 'End' || (event.key !== 'Home' && event.target.id === 'risk-cards-tab');
       switchTab(semantic);
       get(semantic ? 'semantic-space-tab' : 'risk-cards-tab').focus();
     }

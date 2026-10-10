@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/styles-v2.css">
   <link rel="stylesheet" href="assets/institution.css">
   <link rel="stylesheet" href="assets/semantic-space.css?v=weighted-l4-labels-click-20261010">
-  <link rel="stylesheet" href="assets/explorer-layout.css?v=shared-card-scroll-20261010">
+  <link rel="stylesheet" href="assets/explorer-layout.css?v=incidents-navigation-20261010">
 </head>
 <body>
   <header class="site-header">
@@ -23,7 +23,7 @@
   </header>
 
   <main>
-    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs" role="tablist" aria-label="Risk exploration views"><button id="semantic-space-tab" type="button" role="tab" aria-controls="semantic-space" aria-selected="true">AI risk space</button><button id="risk-cards-tab" type="button" role="tab" aria-controls="explore" aria-selected="false" tabindex="-1">Risk cards</button></div><span class="exploration-hint">Filter by keyword or application · Select a node to view its card</span></nav>
+    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs"><div class="explorer-view-tabs" role="tablist" aria-label="Risk exploration views"><button id="risk-cards-tab" type="button" role="tab" aria-controls="explore" aria-selected="false" tabindex="-1">AI risk taxonomy</button><button id="semantic-space-tab" type="button" role="tab" aria-controls="semantic-space" aria-selected="true">AI risk space</button></div><a href="incidents.html">AI risk incidents</a></div><span class="exploration-hint">Filter by keyword or application · Select a node to view its card</span></nav>
 
     <section class="explorer" id="explore" role="tabpanel" aria-labelledby="risk-cards-tab" hidden>
       <button id="tree-toggle" class="tree-toggle" type="button" aria-expanded="false" aria-controls="taxonomy-panel">Open taxonomy navigator</button>
@@ -77,6 +77,6 @@
   <footer class="site-footer publisher-footer"><div class="publisher-identity"><a class="kt-logo-link" href="https://corp.kt.com/eng/" target="_blank" rel="noopener noreferrer" aria-label="KT Corporation official website"><img src="assets/kt-logo-light.svg" alt="KT" width="40" height="40"></a><div><p class="publisher-name">Frontier AI Lab, KT Corporation</p><a class="publisher-contact" href="mailto:responsible.ai@kt.com">responsible.ai@kt.com</a></div></div></footer>
   <script src="assets/evidence-pdf-links.js?v=verified-20261010" defer></script>
   <script src="assets/app.js?v=pdf-sync-20261010" defer></script>
-  <script src="assets/semantic-space.js?v=pdf-sync-20261010" defer></script>
+  <script src="assets/semantic-space.js?v=incidents-navigation-20261010" defer></script>
 </body>
 </html>
