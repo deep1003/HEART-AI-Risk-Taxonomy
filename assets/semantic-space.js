@@ -118,7 +118,7 @@
       referenceCatalog = await referenceResponse.json();
       const cardText = await cardResponse.text();
       const space = await spaceResponse.json();
-      const sourceCards = JSON.parse(cardText);
+      const sourceCards = JSON.parse(cardText).map(preferEvidencePDF);
       if (globalThis.crypto?.subtle) {
         const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(cardText));
         const hash = [...new Uint8Array(digest)].map(value => value.toString(16).padStart(2,'0')).join('');

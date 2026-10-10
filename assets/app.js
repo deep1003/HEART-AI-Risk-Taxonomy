@@ -109,7 +109,7 @@ function openCard(card) {
 async function start() {
   const response = await fetch('data/heart_l4_risk_cards.json');
   if (!response.ok) throw new Error(`Dataset request failed: ${response.status}`);
-  state.cards = await response.json();
+  state.cards = (await response.json()).map(preferEvidencePDF);
   state.cards.sort((a,b) => domainOrder[a.L1_Name_en] - domainOrder[b.L1_Name_en] || a.L3_ID.localeCompare(b.L3_ID) || a.L4_ID.localeCompare(b.L4_ID));
   state.filtered = state.cards;
   if (el('card-count')) el('card-count').textContent = state.cards.length.toLocaleString();
