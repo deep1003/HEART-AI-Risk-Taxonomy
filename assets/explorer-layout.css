@@ -1,4 +1,11 @@
 /* Shared exploration shell. Taxonomy navigation remains inside Risk cards. */
+.site-header{height:auto;min-height:178px;padding-block:22px;gap:24px}
+.heart-brand-copy{display:block}
+.brand-kicker{display:flex;align-items:center;gap:10px;color:#fff;font-size:.95rem;font-weight:650;line-height:1.5}
+.brand-gold-dot{flex:none;width:10px;height:10px;border-radius:50%;background:#f5a900;box-shadow:0 0 0 6px rgb(245 169 0 / 18%);margin-inline:6px}
+.brand .heart-brand-copy strong{font-size:4.2rem;line-height:1.08;letter-spacing:.025em;margin-top:10px}
+.brand .heart-brand-copy small{display:block;font-size:1.05rem;line-height:1.5;margin-top:4px;color:#c3c9da}
+@media(max-width:760px){.site-header{min-height:160px;flex-wrap:wrap;gap:16px}.brand-kicker{font-size:.78rem}.brand .heart-brand-copy strong{font-size:3.4rem}.brand .heart-brand-copy small{font-size:.9rem}.site-header nav{display:flex}}
 .site-header nav a{display:inline!important}
 .semantic-section{max-width:none;padding:30px max(24px,calc((100vw - 1680px)/2)) 64px}
 .semantic-layout{display:block}
