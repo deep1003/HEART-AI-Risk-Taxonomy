@@ -164,7 +164,7 @@
     const labels = [scenario?.name, cluster?.name, keyword?.name].filter(Boolean);
     get('semantic-selection-name').textContent = labels.join(' / ') || 'All risk cards';
     get('semantic-selection-description').innerHTML = scenario || keyword ? filterDescription(scenario || keyword, referenceCatalog) : 'Explore the current L4 cards by keyword or application. Filters highlight relevance without changing the taxonomy.';
-    get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}. Inactive risks remain as pale context.`;
+    get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}`;
     for (const kind of ['scenario','cluster','keyword']) {
       document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind] && !(kind === 'keyword' && !button.dataset.keyword && filters.scenario))));
     }
@@ -176,8 +176,7 @@
     const width = Math.max(280, svg.getBoundingClientRect().width || 960);
     const navigationHeight = document.querySelector('.section-nav').getBoundingClientRect().height;
     const toolbarHeight = document.querySelector('.semantic-network-toolbar').getBoundingClientRect().height;
-    const statusHeight = get('semantic-status').getBoundingClientRect().height;
-    const height = Math.max(120, innerHeight - navigationHeight - toolbarHeight - statusHeight - 48);
+    const height = Math.max(120, innerHeight - navigationHeight - toolbarHeight - 48);
     svg.style.height = `${height}px`;
     const left = 28, right = width - 28, top = 28, bottom = height - 28;
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
@@ -218,7 +217,7 @@
     svg.setAttribute('aria-label', `${enabledIds.size} active L4 risks in the text projection. Use the active-risk list below for keyboard access.`);
     svg.dataset.activeCount = String(enabledIds.size);
     get('semantic-tooltip').hidden = true;
-    get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}. Inactive risks ${showContext ? 'remain as pale context' : 'are hidden'}.`;
+    get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}`;
   }
 
   function renderList() {

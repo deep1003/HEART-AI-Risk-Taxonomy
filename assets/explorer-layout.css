@@ -16,6 +16,9 @@
 .semantic-workspace{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:start;scroll-margin-top:64px}
 .semantic-workspace.has-selected-card{grid-template-columns:minmax(0,1fr) clamp(400px,30vw,460px)}
 .semantic-network-column{min-width:0}
+.semantic-plot-wrap .semantic-network-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;margin:0;padding:12px 16px;color:#667085;font-size:.75rem;line-height:1.5}
+.semantic-plot-wrap .semantic-status{padding:0;min-height:0;font-size:inherit;font-weight:650;color:#475467}
+.semantic-context-note{font-size:.75rem;color:#667085;margin:8px 0;line-height:1.5}
 .semantic-workspace #semantic-plot{min-height:0;height:auto}
 .semantic-workspace #semantic-card-detail{position:sticky;top:64px;margin:0;padding:22px;max-height:calc(100dvh - 80px);overflow:auto;overscroll-behavior:contain;min-width:0}
 .semantic-workspace #semantic-card-title{font-size:1.3rem}
