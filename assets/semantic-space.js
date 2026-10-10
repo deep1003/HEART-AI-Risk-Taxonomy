@@ -32,7 +32,12 @@
     }
     return [...winners.values()].sort((a,b)=>b.strength-a.strength || a.id.localeCompare(b.id));
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath, labelCandidates};
+  function zoomViewport(currentZoom, currentPan, factor, anchor, centre) {
+    const next=Math.max(.5,Math.min(5,currentZoom*factor)), ratio=next/currentZoom;
+    return {zoom:next,pan:{x:anchor.x-centre.x-(anchor.x-centre.x-currentPan.x)*ratio,
+                          y:anchor.y-centre.y-(anchor.y-centre.y-currentPan.y)*ratio}};
+  }
+  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath, labelCandidates, zoomViewport};
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
@@ -242,7 +247,7 @@
     if (!layer) return;
     const box=svg.viewBox.baseVal;
     layer.setAttribute('transform',`translate(${pan.x+box.width/2},${pan.y+box.height/2}) scale(${zoom*baseZoom}) translate(${-box.width/2},${-box.height/2})`);
-    get('semantic-zoom-level').textContent=`${Math.round(zoom*100)}%`;
+    svg.dataset.zoom=String(zoom);
     renderNodeLabels();
   }
   function renderNodeLabels() {
@@ -277,9 +282,26 @@
     }
     layer.innerHTML=markup;
   }
-  get('semantic-zoom-in').addEventListener('click',()=>{zoom=Math.min(5,zoom*1.25);transformNetwork();});
-  get('semantic-zoom-out').addEventListener('click',()=>{zoom=Math.max(.5,zoom/1.25);transformNetwork();});
-  get('semantic-fit').addEventListener('click',()=>{zoom=1;pan={x:0,y:0};transformNetwork();});
+  function zoomAt(factor,x,y){
+    const svg=get('semantic-plot'),box=svg.viewBox.baseVal;
+    const next=zoomViewport(zoom,pan,factor,{x,y},{x:box.width/2,y:box.height/2});
+    zoom=next.zoom;pan=next.pan;transformNetwork();get('semantic-tooltip').hidden=true;
+  }
+  get('semantic-plot').setAttribute('tabindex','0');
+  get('semantic-plot').setAttribute('aria-describedby','semantic-navigation-help');
+  get('semantic-plot').addEventListener('wheel',event=>{
+    if(!data)return;
+    event.preventDefault();
+    const svg=get('semantic-plot'),bounds=svg.getBoundingClientRect(),box=svg.viewBox.baseVal;
+    const units=event.deltaMode===1?16:event.deltaMode===2?bounds.height:1;
+    const delta=Math.max(-200,Math.min(200,event.deltaY*units));
+    zoomAt(Math.exp(-delta*.003),(event.clientX-bounds.left)*box.width/bounds.width,
+           (event.clientY-bounds.top)*box.height/bounds.height);
+  },{passive:false});
+  get('semantic-plot').addEventListener('dblclick',event=>{
+    if(event.target.closest('[data-risk]'))return;
+    zoom=1;pan={x:0,y:0};transformNetwork();
+  });
   get('semantic-plot').addEventListener('pointerdown',event=>{
     if(event.target.closest('[data-risk]') || event.pointerType==='touch') return;
     drag={x:event.clientX,y:event.clientY,px:pan.x,py:pan.y,moved:false};
@@ -292,6 +314,13 @@
     pan={x:drag.px+dx,y:drag.py+dy};transformNetwork();
   });
   get('semantic-plot').addEventListener('keydown',event=>{
+    if(['+','=','-','Home'].includes(event.key)){
+      event.preventDefault();
+      const box=get('semantic-plot').viewBox.baseVal;
+      if(event.key==='Home'){zoom=1;pan={x:0,y:0};transformNetwork();}
+      else zoomAt(event.key==='-'?1/1.25:1.25,box.width/2,box.height/2);
+      return;
+    }
     const point=event.target.closest('.semantic-node-label[data-risk]');
     if(point && ['Enter',' '].includes(event.key)){event.preventDefault();selectedId=point.dataset.risk;draw();showInlineCard(byId.get(selectedId));}
   });

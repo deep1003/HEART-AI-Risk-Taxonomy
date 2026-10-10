@@ -47,7 +47,7 @@ Links indicate semantic proximity, not causal propagation. Layout distances are 
 - [Reference visualisation](https://deep1003.github.io/RAI-Risk-Taxonomy-2.0/risk-taxonomy-space.html)
 # Display baseline
 
-The default 100% zoom uses a 1.10 display multiplier, equivalent to the previous 110% view. Fit network restores this baseline. Weighted-degree radii remain unchanged in graph coordinates; displayed diameters are 6.6–33 pixels at the new default. Pointer hit testing uses the same multiplier.
+The default view uses a 1.10 display multiplier, equivalent to the previous 110% view. Manual scale buttons and percentage controls are removed. Mouse-wheel and trackpad pinch events zoom directly at the pointer position, preserving the semantic point under the cursor. Wheel delta modes are normalised; zoom is bounded to 0.5–5 times the default and labels are repacked after each change. Background dragging pans, background double-click or keyboard Home restores the default view, and focused keyboard +/− also zooms. Reset filters restores the default view and clears filters. Weighted-degree radii remain unchanged in graph coordinates; displayed diameters are 6.6–33 pixels at the default. Pointer hit testing uses the same multiplier. Wheel gestures outside the graph retain ordinary page scrolling.
 
 ## Model change record
 
