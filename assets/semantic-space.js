@@ -174,7 +174,11 @@
   function draw() {
     const svg = get('semantic-plot');
     const width = Math.max(280, svg.getBoundingClientRect().width || 960);
-    const height = width < 600 ? 460 : Math.min(760, Math.max(580, Math.round(width * .72)));
+    const navigationHeight = document.querySelector('.section-nav').getBoundingClientRect().height;
+    const toolbarHeight = document.querySelector('.semantic-network-toolbar').getBoundingClientRect().height;
+    const statusHeight = get('semantic-status').getBoundingClientRect().height;
+    const height = Math.max(120, innerHeight - navigationHeight - toolbarHeight - statusHeight - 48);
+    svg.style.height = `${height}px`;
     const left = 28, right = width - 28, top = 28, bottom = height - 28;
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
     const xs = data.points.map(point => point.x), ys = data.points.map(point => point.y);
@@ -343,6 +347,7 @@
     if(point && ['Enter',' '].includes(event.key)){event.preventDefault();selectedId=point.dataset.risk;draw();showInlineCard(byId.get(selectedId));}
   });
   new ResizeObserver(() => {if (data && !get('semantic-space').hidden) draw();}).observe(get('semantic-plot').parentElement);
+  window.addEventListener('resize', () => {if (data && !get('semantic-space').hidden) draw();});
   window.addEventListener('hashchange',()=>{
     if(['#semantic-space','#ai-risk-space'].includes(location.hash) && get('semantic-space').hidden) switchTab(true);
     else if(['#explore','#taxonomy-panel'].includes(location.hash) && get('explore').hidden) switchTab(false);
