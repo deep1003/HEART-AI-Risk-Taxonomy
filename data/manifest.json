@@ -22,11 +22,21 @@
   "files": {
     "csv": {
       "path": "heart_l4_risk_cards.csv",
-      "sha256": "41dfec88afa934f9879ce0906fdd481622ccd80a123714485cc5862cb46a22f7"
+      "sha256": "7fa5299945a80d3abb37ed6a8583d55f1ab9c3bdb1ccf4f4aa0bf16d2d6b8620"
     },
     "json": {
       "path": "heart_l4_risk_cards.json",
-      "sha256": "840cf6d4dc5dd0160db94c14004b0dee80ce85c3e1a31ed765048408e91c1516"
+      "sha256": "005bca6260c8ed4a849f44657a2315b60ab699606df3c5ffe9c0d98822473352"
+    },
+    "xlsx": {
+      "path": "HEART_L4_Risk_Cards.xlsx",
+      "sha256": "49b3971a25688e816885f4d3dacbf45d0303a65320e7b35995994ee10b240e2d"
     }
+  },
+  "evidence_pdf_sync": {
+    "verified_papers": 8,
+    "updated_card_urls": 231,
+    "access_links_synced_at_utc": "2026-10-10T05:10:07.806Z",
+    "review": "evidence_pdf_access_review.md"
   }
 }

@@ -28,6 +28,7 @@ URL_OVERRIDES = {
 
 FIELDS = [
     "L4_ID",
+URL_OVERRIDES.update(json.loads((REPO / "data/evidence_pdf_url_map.json").read_text(encoding="utf-8")))
     "L4_Name_en",
     "L4_Name_ko",
     "L1_ID",

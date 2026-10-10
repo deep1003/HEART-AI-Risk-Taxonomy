@@ -1,8 +1,11 @@
 # Evidence PDF access review
 
 Reviewed on 10 October 2026 by two specialist agents and the lead reviewer.
-Scope: website access links only. Canonical source URLs, paper attribution,
-DOIs, excerpts, risk definitions and semantic-network hashes are unchanged.
+Scope: website and CSV, JSON and Excel release access links. Original source
+URLs remain in source_snapshot and evidence_pdf_url_map.json. Paper attribution,
+DOIs, excerpts and risk definitions are unchanged. Source-file hashes are
+refreshed after the URL-only update; graph positions, links, embeddings,
+colour shades and filter memberships are unchanged.
 
 Both reviewers opened the proposed full texts and checked paper identity.
 These eight alternatives affect 231 current card access links.
@@ -26,4 +29,10 @@ arXiv access does not itself establish peer review or methodological quality.
 The user's example 2306.05499 is not substituted for unrelated cited works.
 
 Implementation: assets/evidence-pdf-links.js applies an explicit allowlist in
-both exploration views. No broad DOI-to-arXiv guessing is performed.
+both exploration views. The dataset builder uses the same verified mapping
+from data/evidence_pdf_url_map.json. No broad DOI-to-arXiv guessing is performed.
+
+The eight PDF URLs were reopened on 10 October 2026, each returning
+application/pdf with the corresponding paper. CSV and JSON were compared
+field-by-field with Excel for all 622 cards. The 231 URL replacements are
+the only card-data changes. Before-edit release files are backed up locally.

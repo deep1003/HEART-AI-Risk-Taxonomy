@@ -1,7 +1,7 @@
 {
-  "source_sha256": "840cf6d4dc5dd0160db94c14004b0dee80ce85c3e1a31ed765048408e91c1516",
+  "source_sha256": "005bca6260c8ed4a849f44657a2315b60ab699606df3c5ffe9c0d98822473352",
   "model_revision": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
-  "l3_palette_sha256": "fcffae5ed121f06d8574e691188c44ff751d10624ee4136049fb11e16fb96ad1",
+  "l3_palette_sha256": "38d7775a87eb08d889eb4f59153491877b0f4d1f2f950827ef4cce8701160892",
   "method": "Solid L4 colours: existing L3 seed; nearest other L3 definition blend up to 30%; within-assigned-L3 PCA hue \u00b119.8 degrees, lightness \u00b10.14, saturation \u00b10.16. All inputs are fixed semantic embeddings, not degree, severity, probability or random IDs.",
   "points": [
     {
