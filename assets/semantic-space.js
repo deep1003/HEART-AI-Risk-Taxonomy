@@ -22,15 +22,15 @@
     const cy = (p.y + q.y)/2 + dx*.22;
     return `M ${p.x} ${p.y} Q ${cx} ${cy} ${q.x} ${q.y}`;
   }
-  function labelCandidates(points, active) {
-    const winners = new Map();
-    for (const point of points) {
-      if (!active.has(point.id)) continue;
-      const previous = winners.get(point.cluster);
-      if (!previous || point.strength > previous.strength ||
-          (point.strength === previous.strength && point.id < previous.id)) winners.set(point.cluster,point);
-    }
-    return [...winners.values()].sort((a,b)=>b.strength-a.strength || a.id.localeCompare(b.id));
+  function labelCandidates(points, active, level=1) {
+    const ranked=points.filter(point=>active.has(point.id)).sort((a,b)=>b.strength-a.strength || a.id.localeCompare(b.id));
+    if(level>=3.5)return ranked;
+    const limit=level>=2.5?4:level>=1.5?2:1, counts=new Map();
+    return ranked.filter(point=>{
+      const count=counts.get(point.cluster)||0;
+      if(count>=limit)return false;
+      counts.set(point.cluster,count+1);return true;
+    });
   }
   function zoomViewport(currentZoom, currentPan, factor, anchor, centre) {
     const next=Math.max(.5,Math.min(5,currentZoom*factor)), ratio=next/currentZoom;
@@ -258,7 +258,11 @@
     context.font='650 13px system-ui';
     const boxes=[], strengths=data.points.map(point=>point.strength);
     let markup='';
-    for (const point of labelCandidates(data.points,enabledIds)) {
+    const onScreen=data.points.filter(point=>{
+      const p=locations.get(point.id),x=pan.x+width/2+(p.x-width/2)*zoom*baseZoom,y=pan.y+height/2+(p.y-height/2)*zoom*baseZoom;
+      return x>=12&&x<=width-12&&y>=12&&y<=height-12;
+    });
+    for (const point of labelCandidates(onScreen,enabledIds,zoom)) {
       const p=locations.get(point.id);
       const x=pan.x+width/2+(p.x-width/2)*zoom*baseZoom;
       const y=pan.y+height/2+(p.y-height/2)*zoom*baseZoom;
@@ -266,13 +270,15 @@
       const words=byId.get(point.id).L4_Name_en.split(/\s+/), lines=[];
       let line='';
       for(const word of words){
-        if(context.measureText((line+' '+word).trim()).width>220 && line){lines.push(line);line=word;}else line=(line+' '+word).trim();
+        if(context.measureText((line+' '+word).trim()).width>(zoom>=3.5?260:220) && line){lines.push(line);line=word;}else line=(line+' '+word).trim();
       }
       if(line)lines.push(line);
-      if(lines.length>2){lines.splice(2);lines[1]=lines[1].replace(/\s+\S*$/,'')+'…';}
+      const lineLimit=zoom>=3.5?3:2;
+      if(lines.length>lineLimit){lines.splice(lineLimit);lines[lineLimit-1]=lines[lineLimit-1].replace(/\s+\S*$/,'')+'…';}
       const w=Math.max(...lines.map(text=>context.measureText(text).width))+10, h=lines.length*17+8;
       const r=nodeRadius(point.strength,Math.min(...strengths),Math.max(...strengths))*zoom*baseZoom+7;
-      const placements=[{x:x+r,y:y-h/2},{x:x-r-w,y:y-h/2},{x:x-w/2,y:y-r-h},{x:x-w/2,y:y+r}];
+      const placements=[{x:x+r,y:y-h/2},{x:x-r-w,y:y-h/2},{x:x-w/2,y:y-r-h},{x:x-w/2,y:y+r},
+                        {x:x+r,y:y-r-h},{x:x-r-w,y:y-r-h},{x:x+r,y:y+r},{x:x-r-w,y:y+r}];
       const box=placements.map(pos=>({...pos,w,h})).find(b=>b.x>=8&&b.y>=8&&b.x+w<=width-8&&b.y+h<=height-8&&
         !boxes.some(other=>b.x<other.x+other.w+6&&b.x+b.w+6>other.x&&b.y<other.y+other.h+6&&b.y+b.h+6>other.y));
       if(!box)continue;

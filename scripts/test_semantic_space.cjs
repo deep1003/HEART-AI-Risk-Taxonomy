@@ -21,6 +21,11 @@ for(const point of labelNodes){
   assert.equal(point.strength,Math.max(...data.points.filter(candidate=>candidate.cluster===point.cluster).map(candidate=>candidate.strength)));
 }
 assert.equal(labelCandidates(data.points,new Set()).length,0);
+assert.equal(labelCandidates(data.points,sourceIds,5).length,622);
+assert(labelCandidates(data.points,sourceIds,2).length>47);
+assert(labelCandidates(data.points,sourceIds,3).length>labelCandidates(data.points,sourceIds,2).length);
+const sameL3=data.points.filter(point=>point.cluster===data.points[0].cluster);
+assert.equal(labelCandidates(sameL3,sourceIds,5).length,sameL3.length);
 const single=new Set([data.points[0].id]);
 assert.equal(labelCandidates(data.points,single)[0].id,data.points[0].id);
 assert.equal(data.scenarios.length, 3);
