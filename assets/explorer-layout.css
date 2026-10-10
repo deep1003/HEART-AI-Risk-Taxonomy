@@ -1,4 +1,20 @@
 /* Shared exploration shell. Taxonomy navigation remains inside Risk cards. */
+/* KT brand shell only: semantic-network palettes remain unchanged. */
+:root{--kt-red:#FE2E36;--kt-black:#000;--kt-dark-gray:#4C4C4E;--kt-light-gray:#A2A4A3;--kt-white:#fff}
+.site-header,.section-nav,.publisher-footer{font-family:Arial,"Helvetica Neue","Noto Sans KR",sans-serif;letter-spacing:0}
+.site-header{background:var(--kt-white);color:var(--kt-black);border-bottom:1px solid #e5e5e5}
+.site-header .brand strong{color:var(--kt-black);letter-spacing:0!important}
+.site-header .brand .heart-brand-copy small,.site-header .brand-kicker{color:var(--kt-dark-gray)}
+.site-header nav a{color:var(--kt-dark-gray)}
+.site-header nav a:hover{color:var(--kt-black);text-decoration-color:var(--kt-red)}
+.site-header .brand-gold-dot{display:none}
+.section-nav .explorer-tabs button,.section-nav .explorer-tabs a{color:var(--kt-dark-gray);font-weight:600;letter-spacing:0}
+.section-nav .explorer-tabs button[aria-selected=true],.section-nav .explorer-tabs a[aria-current=page]{color:var(--kt-black);text-decoration:underline;text-decoration-color:var(--kt-red);text-underline-offset:8px;text-decoration-thickness:3px}
+.section-nav .explorer-tabs button:hover,.section-nav .explorer-tabs a:hover{color:var(--kt-black);text-decoration-color:var(--kt-red)}
+.site-header a:focus-visible,.section-nav a:focus-visible,.section-nav button:focus-visible,.publisher-footer a:focus-visible{outline:2px solid var(--kt-red);outline-offset:5px}
+.site-footer.publisher-footer{background:var(--kt-black);border-top:3px solid var(--kt-red)}
+.publisher-footer .publisher-contact{color:#fff!important}
+.publisher-footer .publisher-contact:hover{text-decoration:underline;text-decoration-color:var(--kt-red);text-underline-offset:4px}
 .site-header{position:relative;height:auto;min-height:110px;padding-block:18px;gap:24px}
 .heart-brand-copy{display:grid;grid-template-columns:auto 1fr;column-gap:24px;align-items:center}
 .brand-kicker{display:flex;align-items:center;gap:10px;color:#fff;font-size:.95rem;font-weight:650;line-height:1.5}
