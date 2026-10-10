@@ -3,6 +3,10 @@
 .semantic-section{max-width:none;padding:30px max(24px,calc((100vw - 1680px)/2)) 64px}
 .semantic-layout{display:block}
 .semantic-main{min-width:0}
+.semantic-plot-heading p{max-width:900px;font-size:.94rem;line-height:1.7}
+.filter-definition,.filter-references{display:block}
+.filter-references{margin-top:9px;font-size:.86rem}
+.filter-references a{color:#536781;text-underline-offset:3px}
 .semantic-filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
 .semantic-filter-bar .semantic-keywords{display:contents}
 .semantic-filter-bar button{padding:8px 13px;border:1px solid #d8dee8;background:#fff;color:#475467;border-radius:20px;font-size:.83rem;cursor:pointer;line-height:1.4}

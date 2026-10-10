@@ -3,10 +3,25 @@ const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
 const path = require('node:path');
 const root = path.join(__dirname, '..');
-const {activeIds, escape, nodeRadius, labelCandidates, zoomViewport, tooltipContent} = require(path.join(root, 'assets/semantic-space.js'));
+const {activeIds, escape, nodeRadius, labelCandidates, zoomViewport, tooltipContent, filterDescription} = require(path.join(root, 'assets/semantic-space.js'));
 const raw = fs.readFileSync(path.join(root, 'data/heart_l4_risk_cards.json'));
 const cards = JSON.parse(raw);
 const data = JSON.parse(fs.readFileSync(path.join(root, 'data/semantic_space.json')));
+const referenceCatalog=JSON.parse(fs.readFileSync(path.join(root,'data/filter_references.json')));
+const referenceValidation=JSON.parse(fs.readFileSync(path.join(root,'data/filter_reference_validation.json')));
+assert.equal(referenceValidation.catalog_sha256,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data/filter_references.json'))).digest('hex'));
+assert.equal(referenceValidation.results.length,Object.keys(referenceCatalog.sources).length);
+assert(referenceValidation.results.every(item=>item.verified));
+assert.equal(Object.keys(referenceCatalog.filters).length,20);
+for(const item of [...data.keywords,...data.scenarios]){
+  const entry=referenceCatalog.filters[item.id];
+  assert(entry && new Set(entry.references).size>=2);
+  const description=filterDescription(item,referenceCatalog);
+  assert.equal((description.match(/<a /g)||[]).length,entry.references.length);
+  assert(!description.includes('<blockquote>'));
+  assert(!description.includes('Concept scope and mapping method'));
+  assert(!description.includes('Concept definition'));
+}
 const sourceIds = new Set(cards.map(card => card.L4_ID));
 for(const card of cards){
   const tooltip=tooltipContent(card,{strength:5.915,degree:8});

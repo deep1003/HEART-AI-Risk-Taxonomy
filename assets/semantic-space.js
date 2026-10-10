@@ -41,7 +41,16 @@
     const levels = [1,2,3].map(level => `<span>L${level} · ${escape(card[`L${level}_ID`])} · ${escape(card[`L${level}_Name_en`])}</span>`).join('');
     return `<span class="tooltip-card-id">${escape(card.L4_ID)}</span><strong>${escape(card.L4_Name_en)}</strong><p class="tooltip-definition">${escape(card.Risk_Definition_en)}</p><div class="tooltip-hierarchy">${levels}</div><span class="tooltip-degree">Weighted degree: ${node.strength.toFixed(3)}</span>`;
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath, labelCandidates, zoomViewport, tooltipContent};
+  function filterDescription(item, catalog) {
+    const entry = catalog.filters[item.id];
+    const summary = entry.summary || item.definition || item.description;
+    const links = entry.references.map(id => {
+      const ref = catalog.sources[id];
+      return `<a href="${escape(ref.url)}" aria-label="${escape(ref.label + ': ' + ref.title)}" target="_blank" rel="noopener noreferrer">${escape(ref.label)}</a>`;
+    }).join(' · ');
+    return `<span class="filter-definition">${escape(summary.charAt(0).toUpperCase() + summary.slice(1))}</span><span class="filter-references">References · ${links}</span>`;
+  }
+  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath, labelCandidates, zoomViewport, tooltipContent, filterDescription};
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
@@ -55,7 +64,7 @@
   }
   get('semantic-card-close').addEventListener('click',()=>{get('semantic-card-detail').hidden=true; selectedId=''; draw();});
   const filters = {scenario:'', cluster:'', keyword:''};
-  let data, cards, byId, visible = 16, loading, enabledIds = new Set(), locations = new Map();
+  let data, cards, byId, referenceCatalog, visible = 16, loading, enabledIds = new Set(), locations = new Map();
   const baseZoom = 1.1;
   let zoom = 1, pan = {x:0,y:0}, selectedId = '', drag;
 
@@ -96,8 +105,9 @@
     get('semantic-status').textContent = 'Loading the risk text projection…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=solid-l4-colours-20261010'), fetch('data/heart_l4_risk_cards.json')]);
-      if (!spaceResponse.ok || !cardResponse.ok) throw new Error('The semantic-space data could not be loaded.');
+      const [spaceResponse, cardResponse, referenceResponse] = await Promise.all([fetch('data/semantic_space.json?v=solid-l4-colours-20261010'), fetch('data/heart_l4_risk_cards.json'), fetch('data/filter_references.json?v=compact-20261010')]);
+      if (!spaceResponse.ok || !cardResponse.ok || !referenceResponse.ok) throw new Error('The AI risk space data or references could not be loaded.');
+      referenceCatalog = await referenceResponse.json();
       const cardText = await cardResponse.text();
       const space = await spaceResponse.json();
       const sourceCards = JSON.parse(cardText);
@@ -144,10 +154,7 @@
     const keyword = data.keywords.find(item => item.id === filters.keyword);
     const labels = [scenario?.name, cluster?.name, keyword?.name].filter(Boolean);
     get('semantic-selection-name').textContent = labels.join(' / ') || 'All risk cards';
-    const definitionPanel = get('semantic-keyword-definition');
-    definitionPanel.hidden = !keyword;
-    definitionPanel.innerHTML = keyword ? `<h4>${escape(keyword.name)} · Concept definition</h4><p>${escape(keyword.definition)}</p>${keyword.url ? `<blockquote>“${escape(keyword.quote)}”</blockquote><p><a href="${escape(keyword.url)}" target="_blank" rel="noopener noreferrer">${escape(keyword.reference_title)}</a> · ${escape(keyword.quote_location)}</p>` : ''}<details><summary>Concept scope and mapping method</summary><p class="source-note">${escape(keyword.scope)}</p><p class="source-note">${keyword.mapping_mode === 'taxonomy' ? 'Existing human-approved L1 assignments. No similarity-based reassignment.' : `Operational synthesis based on the cited source, not a verbatim source definition. BGE-M3 definition-to-card cosine retrieval; threshold ${escape(keyword.threshold)} with documented AI-specialist scope corrections. Exploratory relevance, not validated classification accuracy.`}</p></details>` : '';
-    get('semantic-selection-description').innerHTML = escape(scenario?.description || 'Explore the current L4 cards by keyword or application. Filters highlight relevance without changing the taxonomy.') + (scenario?.source_url ? [{url:scenario.source_url,label:scenario.source_label},...(scenario.additional_sources||[])].map(source=>` <a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.label)}</a>`).join(' · ') : '');
+    get('semantic-selection-description').innerHTML = scenario || keyword ? filterDescription(scenario || keyword, referenceCatalog) : 'Explore the current L4 cards by keyword or application. Filters highlight relevance without changing the taxonomy.';
     get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}. Inactive risks remain as pale context.`;
     for (const kind of ['scenario','cluster','keyword']) {
       document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind] && !(kind === 'keyword' && !button.dataset.keyword && filters.scenario))));

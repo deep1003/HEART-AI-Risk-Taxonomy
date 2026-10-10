@@ -1,0 +1,14 @@
+{
+  "cfpb": {
+    "url": "https://www.consumerfinance.gov/data-research/research-reports/chatbots-in-consumer-finance/chatbots-in-consumer-finance/",
+    "title": "Chatbots in consumer finance",
+    "checked_date_kst": "2026-10-10",
+    "verified": true,
+    "channel": "Direct Codex in-app Chromium navigation and read-only DOM inspection",
+    "page_title": "Chatbots in consumer finance | Consumer Financial Protection Bureau",
+    "h1": "Chatbots in consumer finance",
+    "content_checks": ["Providing inaccurate, unreliable, or insufficient information", "Keeping personally identifiable information safe"],
+    "screenshot": "evidence_work/cfpb_report_browser_check_20261010.png",
+    "note": "The full official report opened in the browser without authentication or a security bypass. Automated urllib requests return HTTP 403; retain that limitation in the validation record. This is a dated browser observation, not a claim that HTTP automation succeeded."
+  }
+}
