@@ -4,7 +4,7 @@
 
 - Brand palette source: https://m.corp.kt.com/html/intro/design/design.html
 - Header and navigation use white, black, dark gray (#4C4C4E), and primary brand red (#FE2E36). The logo's existing red is not recolored.
-- Footer uses black with a primary-red top rule. Network and domain palettes are unchanged.
+- Header uses a subtle neutral-gray background (#F3F3F3) to separate it from the white navigation. Footer uses black without a red top rule. Network and domain palettes are unchanged.
 - KT Flow is not bundled and no licensed webfont file was supplied. Arial is the geometric sans-serif fallback, followed by Helvetica Neue and Noto Sans KR; it is not represented as the official KT typeface.
 
 - Publisher: Frontier AI Lab, KT Corporation.
