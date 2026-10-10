@@ -182,7 +182,7 @@
       if (!enabledIds.has(a) || !enabledIds.has(b)) continue;
       const p = locations.get(a), q = locations.get(b);
       const incident = a === selectedId || b === selectedId;
-      markup += `<path class="semantic-edge${incident?' selected-edge':''}" data-source="${escape(a)}" data-target="${escape(b)}" d="${edgePath(p,q)}" fill="none" stroke-linecap="round" style="opacity:${incident?.7:.08+weight*.12};stroke-width:${incident?1.8:.4+weight*.5}"/>`;
+      markup += `<path class="semantic-edge${incident?' selected-edge':''}" data-source="${escape(a)}" data-target="${escape(b)}" d="${edgePath(p,q)}" fill="none" stroke-linecap="round" style="opacity:${incident?.7:.08+weight*.12};stroke-width:${incident?1.44:.32+weight*.4}"/>`;
     }
     const showContext = true;
     const strengths = data.points.map(point=>point.strength);
