@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/styles-v2.css">
   <link rel="stylesheet" href="assets/institution.css">
   <link rel="stylesheet" href="assets/semantic-space.css?v=weighted-l4-labels-click-20261010">
-  <link rel="stylesheet" href="assets/explorer-layout.css?v=side-card-20261010">
+  <link rel="stylesheet" href="assets/explorer-layout.css?v=compact-shell-20261010">
 </head>
 <body>
   <header class="site-header">
@@ -23,7 +23,7 @@
   </header>
 
   <main>
-    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs" role="tablist" aria-label="Risk exploration views"><button id="semantic-space-tab" type="button" role="tab" aria-controls="semantic-space" aria-selected="true">AI risk space</button><button id="risk-cards-tab" type="button" role="tab" aria-controls="explore" aria-selected="false" tabindex="-1">Risk cards</button></div></nav>
+    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs" role="tablist" aria-label="Risk exploration views"><button id="semantic-space-tab" type="button" role="tab" aria-controls="semantic-space" aria-selected="true">AI risk space</button><button id="risk-cards-tab" type="button" role="tab" aria-controls="explore" aria-selected="false" tabindex="-1">Risk cards</button></div><span class="exploration-hint">Filter by keyword or application · Select a node to view its card</span></nav>
 
     <section class="explorer" id="explore" role="tabpanel" aria-labelledby="risk-cards-tab" hidden>
       <button id="tree-toggle" class="tree-toggle" type="button" aria-expanded="false" aria-controls="taxonomy-panel">Open taxonomy navigator</button>
@@ -55,7 +55,6 @@
     </section>
 
     <section id="semantic-space" class="semantic-section" role="tabpanel" aria-labelledby="semantic-space-tab">
-      <div class="semantic-heading"><div><p class="eyebrow">Connected risk exploration</p><h2>AI risk space</h2><p>Select a keyword or application to explore related risks. Click a node to view its risk card.</p></div></div>
       <div class="semantic-layout">
         <div class="semantic-main">
           <div class="semantic-keyword-head"><h3>Keywords &amp; applications</h3></div>
@@ -100,6 +99,6 @@
     <div class="footer-bottom"><span>HEART · <span id="card-count">622</span> risk cards · <span id="l3-count">47</span> categories</span><a href="#semantic-space">Back to AI risk space</a></div>
   </footer>
   <script src="assets/app.js" defer></script>
-  <script src="assets/semantic-space.js?v=side-card-visible-20261010" defer></script>
+  <script src="assets/semantic-space.js?v=compact-shell-20261010" defer></script>
 </body>
 </html>

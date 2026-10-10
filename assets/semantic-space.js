@@ -65,7 +65,7 @@
     get('semantic-tooltip').hidden = true;
     requestAnimationFrame(() => {
       const workspace = get('semantic-workspace');
-      const headerBottom = document.querySelector('.site-header').getBoundingClientRect().bottom;
+      const headerBottom = document.querySelector('.section-nav').getBoundingClientRect().bottom;
       if (workspace.getBoundingClientRect().top < headerBottom || workspace.getBoundingClientRect().top > innerHeight - 100) {
         workspace.scrollIntoView({block:'start'});
       }
