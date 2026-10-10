@@ -43,7 +43,8 @@
 .semantic-edge{stroke:#8496ad;stroke-width:1;opacity:.2;pointer-events:none}
 .semantic-edge.selected-edge{stroke:#273750}
 .semantic-halo{fill:#fff;stroke:#18213d;stroke-width:2;pointer-events:none}
-.semantic-node-label{cursor:pointer}
+.semantic-node-label{cursor:pointer;pointer-events:bounding-box}
+.semantic-node-label text{pointer-events:bounding-box}
 .semantic-node-label line{stroke:#64748b;stroke-width:1;opacity:.5}
 .semantic-node-label text{fill:#18213d;font:650 13px system-ui;stroke:#fff;stroke-width:4px;paint-order:stroke;stroke-linejoin:round}
 .semantic-node-label:focus text{fill:#214aa8;text-decoration:underline}
