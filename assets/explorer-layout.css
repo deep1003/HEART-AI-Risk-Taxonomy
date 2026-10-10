@@ -4,6 +4,7 @@
 .site-header,.section-nav,.publisher-footer{font-family:Arial,"Helvetica Neue","Noto Sans KR",sans-serif;letter-spacing:0}
 .site-header{background:#f3f3f3;color:var(--kt-black);border-bottom:1px solid #e5e5e5}
 .site-header .brand strong{color:var(--kt-black);letter-spacing:0!important}
+.site-header .brand .heart-brand-r{color:#ED2024}
 .site-header .brand .heart-brand-copy small,.site-header .brand-kicker{color:var(--kt-dark-gray)}
 .site-header nav a{color:var(--kt-dark-gray)}
 .site-header nav a:hover{color:var(--kt-black);text-decoration-color:var(--kt-red)}
