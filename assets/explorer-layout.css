@@ -9,6 +9,10 @@
 .section-nav{top:0;min-height:48px;padding-block:12px;justify-content:space-between;align-items:center;overflow:visible}
 .exploration-hint{font-size:.8rem;font-weight:400;color:#667085;white-space:normal}
 .section-nav:has(#risk-cards-tab[aria-selected="true"]) .exploration-hint{display:none}
+.about-mapping-details{margin:12px 0 20px;border-block:1px solid #d8dee8;padding:12px 0}
+.about-mapping-details summary{cursor:pointer;font-weight:600;line-height:1.6;color:#344054}
+.about-mapping-details[open] summary{margin-bottom:12px}
+.about-mapping-details summary:focus-visible{outline:2px solid #2964a5;outline-offset:4px}
 .explorer-tabs,.explorer-view-tabs{display:flex;align-items:center;gap:28px}
 .section-nav a[aria-current="page"]{color:#18213d;text-decoration:underline;text-underline-offset:8px;text-decoration-thickness:2px}
 @media(max-width:760px){.section-nav{padding-inline:16px}.explorer-tabs,.explorer-view-tabs{gap:14px}.explorer-tabs button,.section-nav .explorer-tabs a{font-size:.8rem}}
