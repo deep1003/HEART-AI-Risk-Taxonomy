@@ -27,7 +27,7 @@
     "limitations": "Exploratory semantic proximity only, not causal propagation or validated deployment applicability. Graph communities are not reassigned L3 categories. No EM is run.",
     "keyword_mapping": "Source-grounded semantic retrieval, not validated classification accuracy. Cosine thresholds and documented expert scope corrections are exploratory. L1 domain filters use existing human-approved taxonomy assignments. No EM or remapping.",
     "keyword_query_sha256": "8ac34c0b8a9edc9b05a4fc46fa2a9d141cb601a55b79be8522671536909ad9f5",
-    "node_colour": "BGE-M3 L3 title+definition; L1 centroid boundary blend up to 35%; within-L1 PCA hue ±34.2 degrees/lightness ±0.10/saturation ±0.12; node gradients toward the closest semantic L3 colour, shortest-arc HLS mixture up to 45%.",
+    "node_colour": "Solid L4 colours: existing L3 seed; nearest other L3 definition blend up to 30%; within-assigned-L3 PCA hue ±19.8 degrees, lightness ±0.14, saturation ±0.16. All inputs are fixed semantic embeddings, not degree, severity, probability or random IDs.",
     "colour_limitations": "Semantic colour proximity is approximate, not a distance-preserving map or classification confidence. Cross-domain colour does not change human-approved L1/L2/L3 assignments. No claim of 47 perceptually distinguishable classes."
   },
   "points": [
@@ -38,7 +38,8 @@
       "cluster": "A_INT_CASCADE",
       "degree": 10,
       "strength": 7.522854,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#ce5222"
     },
     {
       "id": "A_INT_CASCADE_003",
@@ -47,7 +48,8 @@
       "cluster": "A_INT_CASCADE",
       "degree": 8,
       "strength": 5.838207,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#9d3e18"
     },
     {
       "id": "A_INT_CASCADE_004",
@@ -56,7 +58,8 @@
       "cluster": "A_INT_CASCADE",
       "degree": 11,
       "strength": 8.140032,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#dd833d"
     },
     {
       "id": "A_INT_CASCADE_005",
@@ -65,7 +68,8 @@
       "cluster": "A_INT_CASCADE",
       "degree": 8,
       "strength": 5.741133,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#aa4133"
     },
     {
       "id": "A_INT_CASCADE_006",
@@ -74,7 +78,8 @@
       "cluster": "A_INT_CASCADE",
       "degree": 22,
       "strength": 16.4999,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#dc8a24"
     },
     {
       "id": "A_INT_CASCADE_007",
@@ -83,7 +88,8 @@
       "cluster": "A_INT_CASCADE",
       "degree": 8,
       "strength": 6.118018,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#b93d16"
     },
     {
       "id": "A_INT_CASCADE_008",
@@ -92,7 +98,8 @@
       "cluster": "A_INT_CASCADE",
       "degree": 8,
       "strength": 5.836711,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#9bdd64"
     },
     {
       "id": "A_INT_CASCADE_009",
@@ -101,7 +108,8 @@
       "cluster": "A_INT_CASCADE",
       "degree": 9,
       "strength": 6.309006,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#e84b4a"
     },
     {
       "id": "A_INT_COLLUSION_001",
@@ -110,7 +118,8 @@
       "cluster": "A_INT_COLLUSION",
       "degree": 10,
       "strength": 7.576296,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#cb6e29"
     },
     {
       "id": "A_INT_COLLUSION_002",
@@ -119,7 +128,8 @@
       "cluster": "A_INT_COLLUSION",
       "degree": 11,
       "strength": 8.513256,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#e5947e"
     },
     {
       "id": "A_INT_COLLUSION_003",
@@ -128,7 +138,8 @@
       "cluster": "A_INT_COLLUSION",
       "degree": 11,
       "strength": 8.504564,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d52770"
     },
     {
       "id": "A_INT_CONFLICT_001",
@@ -137,7 +148,8 @@
       "cluster": "A_INT_CONFLICT",
       "degree": 13,
       "strength": 9.819574,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#95bf22"
     },
     {
       "id": "A_INT_CONFLICT_002",
@@ -146,7 +158,8 @@
       "cluster": "A_INT_CONFLICT",
       "degree": 14,
       "strength": 10.849857,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#e9a576"
     },
     {
       "id": "A_INT_CONFLICT_003",
@@ -155,7 +168,8 @@
       "cluster": "A_INT_CONFLICT",
       "degree": 10,
       "strength": 7.457693,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#e2b556"
     },
     {
       "id": "A_INT_COORD_001",
@@ -164,7 +178,8 @@
       "cluster": "A_INT_COORD",
       "degree": 17,
       "strength": 13.270415,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#a7ac16"
     },
     {
       "id": "A_INT_COORD_002",
@@ -173,7 +188,8 @@
       "cluster": "A_INT_COORD",
       "degree": 18,
       "strength": 13.768768,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#62e221"
     },
     {
       "id": "A_INT_COORD_003",
@@ -182,7 +198,8 @@
       "cluster": "A_INT_COORD",
       "degree": 10,
       "strength": 7.866685,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#cf7c19"
     },
     {
       "id": "A_INT_COORD_004",
@@ -191,7 +208,8 @@
       "cluster": "A_INT_COORD",
       "degree": 22,
       "strength": 17.114339,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#f9c30a"
     },
     {
       "id": "A_INT_COORD_005",
@@ -200,7 +218,8 @@
       "cluster": "A_INT_COORD",
       "degree": 8,
       "strength": 6.316531,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#eaac5d"
     },
     {
       "id": "A_SYS_AUTH_001",
@@ -209,7 +228,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 14,
       "strength": 10.714434,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d84588"
     },
     {
       "id": "A_SYS_AUTH_002",
@@ -218,7 +238,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 8,
       "strength": 5.828412,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#ac274a"
     },
     {
       "id": "A_SYS_AUTH_003",
@@ -227,7 +248,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 8,
       "strength": 5.451564,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#e97bb1"
     },
     {
       "id": "A_SYS_AUTH_004",
@@ -236,7 +258,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 9,
       "strength": 6.987625,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#ca3a73"
     },
     {
       "id": "A_SYS_AUTH_005",
@@ -245,7 +268,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 12,
       "strength": 9.288295,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#cf46a4"
     },
     {
       "id": "A_SYS_AUTH_006",
@@ -254,7 +278,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 14,
       "strength": 10.566722,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#ce4b99"
     },
     {
       "id": "A_SYS_AUTH_007",
@@ -263,7 +288,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 10,
       "strength": 7.533642,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#d164a4"
     },
     {
       "id": "A_SYS_AUTH_009",
@@ -272,7 +298,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 15,
       "strength": 11.65167,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#cf4663"
     },
     {
       "id": "A_SYS_AUTH_010",
@@ -281,7 +308,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 12,
       "strength": 9.444035,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#d368ae"
     },
     {
       "id": "A_SYS_AUTH_012",
@@ -290,7 +318,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 8,
       "strength": 6.003184,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#cf76b9"
     },
     {
       "id": "A_SYS_AUTH_016",
@@ -299,7 +328,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 8,
       "strength": 5.690559,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#a12cad"
     },
     {
       "id": "A_SYS_AUTH_017",
@@ -308,7 +338,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 10,
       "strength": 7.128681,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d9678d"
     },
     {
       "id": "A_SYS_AUTH_019",
@@ -317,7 +348,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 19,
       "strength": 14.456948,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#cb44ae"
     },
     {
       "id": "A_SYS_AUTH_020",
@@ -326,7 +358,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 8,
       "strength": 5.940681,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d04d96"
     },
     {
       "id": "A_SYS_AUTH_021",
@@ -335,7 +368,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 26,
       "strength": 20.437389,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d05792"
     },
     {
       "id": "A_SYS_AUTH_023",
@@ -344,7 +378,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 30,
       "strength": 23.342414,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d25b82"
     },
     {
       "id": "A_SYS_AUTH_024",
@@ -353,7 +388,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 8,
       "strength": 5.908824,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#d081c1"
     },
     {
       "id": "A_SYS_AUTH_025",
@@ -362,7 +398,8 @@
       "cluster": "A_SYS_AUTH",
       "degree": 15,
       "strength": 11.621607,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#cb4476"
     },
     {
       "id": "A_SYS_DECEPT_001",
@@ -371,7 +408,8 @@
       "cluster": "A_SYS_DECEPT",
       "degree": 9,
       "strength": 6.725225,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d23393"
     },
     {
       "id": "A_SYS_DECEPT_002",
@@ -380,7 +418,8 @@
       "cluster": "A_SYS_DECEPT",
       "degree": 13,
       "strength": 9.811222,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d25b61"
     },
     {
       "id": "A_SYS_DECEPT_003",
@@ -389,7 +428,8 @@
       "cluster": "A_SYS_DECEPT",
       "degree": 9,
       "strength": 6.953854,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d86747"
     },
     {
       "id": "A_SYS_DECEPT_005",
@@ -398,7 +438,8 @@
       "cluster": "A_SYS_DECEPT",
       "degree": 9,
       "strength": 6.617083,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d67537"
     },
     {
       "id": "A_SYS_DECEPT_008",
@@ -407,7 +448,8 @@
       "cluster": "A_SYS_DECEPT",
       "degree": 16,
       "strength": 11.898754,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#c46272"
     },
     {
       "id": "A_SYS_DECEPT_009",
@@ -416,7 +458,8 @@
       "cluster": "A_SYS_DECEPT",
       "degree": 11,
       "strength": 8.446113,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#e58ab7"
     },
     {
       "id": "A_SYS_GOAL_003",
@@ -425,7 +468,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 8,
       "strength": 6.149486,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#dd5f7a"
     },
     {
       "id": "A_SYS_GOAL_005",
@@ -434,7 +478,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 8,
       "strength": 5.870441,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#d3455d"
     },
     {
       "id": "A_SYS_GOAL_006",
@@ -443,7 +488,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 12,
       "strength": 8.678951,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#cb3956"
     },
     {
       "id": "A_SYS_GOAL_007",
@@ -452,7 +498,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 45,
       "strength": 34.08736,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#dd537a"
     },
     {
       "id": "A_SYS_GOAL_009",
@@ -461,7 +508,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 11,
       "strength": 8.414173,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d45060"
     },
     {
       "id": "A_SYS_GOAL_010",
@@ -470,7 +518,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 15,
       "strength": 11.780434,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d05261"
     },
     {
       "id": "A_SYS_GOAL_011",
@@ -479,7 +528,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 14,
       "strength": 10.655062,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d04856"
     },
     {
       "id": "A_SYS_GOAL_012",
@@ -488,7 +538,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 13,
       "strength": 10.095562,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d45170"
     },
     {
       "id": "A_SYS_GOAL_013",
@@ -497,7 +548,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 8,
       "strength": 5.715908,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#e0849e"
     },
     {
       "id": "A_SYS_GOAL_014",
@@ -506,7 +558,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 9,
       "strength": 6.922547,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d16270"
     },
     {
       "id": "A_SYS_GOAL_016",
@@ -515,7 +568,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 9,
       "strength": 6.721359,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#c44261"
     },
     {
       "id": "A_SYS_GOAL_017",
@@ -524,7 +578,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 11,
       "strength": 7.937621,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#e08f9f"
     },
     {
       "id": "A_SYS_GOAL_018",
@@ -533,7 +588,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 8,
       "strength": 5.913668,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#e08fa6"
     },
     {
       "id": "A_SYS_GOAL_019",
@@ -542,7 +598,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 17,
       "strength": 13.042747,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#d8413b"
     },
     {
       "id": "A_SYS_GOAL_020",
@@ -551,7 +608,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 25,
       "strength": 19.355435,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#e15ba1"
     },
     {
       "id": "A_SYS_GOAL_021",
@@ -560,7 +618,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 8,
       "strength": 5.590976,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#e1b32b"
     },
     {
       "id": "A_SYS_GOAL_022",
@@ -569,7 +628,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 9,
       "strength": 6.918588,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#e585ac"
     },
     {
       "id": "A_SYS_GOAL_023",
@@ -578,7 +638,8 @@
       "cluster": "A_SYS_GOAL",
       "degree": 9,
       "strength": 6.528386,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#bd3962"
     },
     {
       "id": "A_SYS_SELFCOR_001",
@@ -587,7 +648,8 @@
       "cluster": "A_SYS_SELFCOR",
       "degree": 16,
       "strength": 12.059294,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#6ce031"
     },
     {
       "id": "A_SYS_SELFCOR_002",
@@ -596,7 +658,8 @@
       "cluster": "A_SYS_SELFCOR",
       "degree": 11,
       "strength": 8.25182,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#9f4c16"
     },
     {
       "id": "A_SYS_SELFCOR_003",
@@ -605,7 +668,8 @@
       "cluster": "A_SYS_SELFCOR",
       "degree": 8,
       "strength": 5.991379,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#e87255"
     },
     {
       "id": "A_SYS_TRACE_001",
@@ -614,7 +678,8 @@
       "cluster": "A_SYS_TRACE",
       "degree": 8,
       "strength": 6.016135,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8e2128"
     },
     {
       "id": "A_SYS_TRACE_002",
@@ -623,7 +688,8 @@
       "cluster": "A_SYS_TRACE",
       "degree": 17,
       "strength": 13.05942,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#db5f74"
     },
     {
       "id": "A_SYS_TRACE_003",
@@ -632,7 +698,8 @@
       "cluster": "A_SYS_TRACE",
       "degree": 8,
       "strength": 5.718744,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#b32b3a"
     },
     {
       "id": "G_INT_ALLOC_001",
@@ -641,7 +708,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 13,
       "strength": 9.750826,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#3685d8"
     },
     {
       "id": "G_INT_ALLOC_002",
@@ -650,7 +718,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 9,
       "strength": 6.643583,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#2c6ddf"
     },
     {
       "id": "G_INT_ALLOC_003",
@@ -659,7 +728,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 13,
       "strength": 9.551219,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#568aea"
     },
     {
       "id": "G_INT_ALLOC_004",
@@ -668,7 +738,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 12,
       "strength": 9.057963,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#5eace4"
     },
     {
       "id": "G_INT_ALLOC_005",
@@ -677,7 +748,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 10,
       "strength": 7.22652,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#73c4ef"
     },
     {
       "id": "G_INT_ALLOC_006",
@@ -686,7 +758,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 8,
       "strength": 5.996052,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#75b6de"
     },
     {
       "id": "G_INT_ALLOC_007",
@@ -695,7 +768,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 9,
       "strength": 6.599145,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4369e4"
     },
     {
       "id": "G_INT_ALLOC_009",
@@ -704,7 +778,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 8,
       "strength": 5.378139,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#8e9de1"
     },
     {
       "id": "G_INT_ALLOC_010",
@@ -713,7 +788,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 11,
       "strength": 8.323923,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5aa3db"
     },
     {
       "id": "G_INT_ALLOC_012",
@@ -722,7 +798,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 8,
       "strength": 6.14244,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#3c7dc3"
     },
     {
       "id": "G_INT_ALLOC_013",
@@ -731,7 +808,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 19,
       "strength": 14.361441,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#3893e8"
     },
     {
       "id": "G_INT_ALLOC_015",
@@ -740,7 +818,8 @@
       "cluster": "G_INT_ALLOC",
       "degree": 12,
       "strength": 8.955938,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#52b7e4"
     },
     {
       "id": "G_INT_ANTH_001",
@@ -749,7 +828,8 @@
       "cluster": "G_INT_ANTH",
       "degree": 20,
       "strength": 16.066363,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#4372ef"
     },
     {
       "id": "G_INT_ANTH_002",
@@ -758,7 +838,8 @@
       "cluster": "G_INT_ANTH",
       "degree": 20,
       "strength": 15.994132,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#3772f3"
     },
     {
       "id": "G_INT_ANTH_003",
@@ -767,7 +848,8 @@
       "cluster": "G_INT_ANTH",
       "degree": 12,
       "strength": 9.843109,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#4e76d3"
     },
     {
       "id": "G_INT_ANTH_004",
@@ -776,7 +858,8 @@
       "cluster": "G_INT_ANTH",
       "degree": 13,
       "strength": 10.524086,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#4773dd"
     },
     {
       "id": "G_INT_ANTH_005",
@@ -785,7 +868,8 @@
       "cluster": "G_INT_ANTH",
       "degree": 9,
       "strength": 7.605886,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#4c75da"
     },
     {
       "id": "G_INT_ANTH_006",
@@ -794,7 +878,8 @@
       "cluster": "G_INT_ANTH",
       "degree": 9,
       "strength": 6.313435,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#51b1e4"
     },
     {
       "id": "G_INT_ANTH_008",
@@ -803,7 +888,8 @@
       "cluster": "G_INT_ANTH",
       "degree": 8,
       "strength": 6.288171,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#869eea"
     },
     {
       "id": "G_INT_COPY_001",
@@ -812,7 +898,8 @@
       "cluster": "G_INT_COPY",
       "degree": 9,
       "strength": 7.255775,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#50a2e9"
     },
     {
       "id": "G_INT_COPY_002",
@@ -821,7 +908,8 @@
       "cluster": "G_INT_COPY",
       "degree": 11,
       "strength": 8.748043,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#6b88f1"
     },
     {
       "id": "G_INT_COPY_003",
@@ -830,7 +918,8 @@
       "cluster": "G_INT_COPY",
       "degree": 10,
       "strength": 8.251142,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#6076ee"
     },
     {
       "id": "G_INT_COPY_006",
@@ -839,7 +928,8 @@
       "cluster": "G_INT_COPY",
       "degree": 12,
       "strength": 9.443025,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#44a6e0"
     },
     {
       "id": "G_INT_COPY_007",
@@ -848,7 +938,8 @@
       "cluster": "G_INT_COPY",
       "degree": 9,
       "strength": 7.222485,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#819add"
     },
     {
       "id": "G_INT_COPY_008",
@@ -857,7 +948,8 @@
       "cluster": "G_INT_COPY",
       "degree": 11,
       "strength": 8.950482,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#829eed"
     },
     {
       "id": "G_INT_COPY_009",
@@ -866,7 +958,8 @@
       "cluster": "G_INT_COPY",
       "degree": 8,
       "strength": 6.295577,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#1e35d7"
     },
     {
       "id": "G_INT_COPY_011",
@@ -875,7 +968,8 @@
       "cluster": "G_INT_COPY",
       "degree": 9,
       "strength": 7.267492,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#3550dc"
     },
     {
       "id": "G_INT_ILLEGAL_001",
@@ -884,7 +978,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 9,
       "strength": 7.038142,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#4373e3"
     },
     {
       "id": "G_INT_ILLEGAL_003",
@@ -893,7 +988,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 28,
       "strength": 22.306571,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#6799e0"
     },
     {
       "id": "G_INT_ILLEGAL_006",
@@ -902,7 +998,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 12,
       "strength": 9.635496,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#69abe2"
     },
     {
       "id": "G_INT_ILLEGAL_007",
@@ -911,7 +1008,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 16,
       "strength": 12.600487,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#3971d7"
     },
     {
       "id": "G_INT_ILLEGAL_008",
@@ -920,7 +1018,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 12,
       "strength": 9.93551,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#79ace4"
     },
     {
       "id": "G_INT_ILLEGAL_009",
@@ -929,7 +1028,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 11,
       "strength": 7.883257,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#b28fe0"
     },
     {
       "id": "G_INT_ILLEGAL_010",
@@ -938,7 +1038,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 8,
       "strength": 6.042054,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#6964e8"
     },
     {
       "id": "G_INT_ILLEGAL_011",
@@ -947,7 +1048,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 11,
       "strength": 8.628946,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#7599e1"
     },
     {
       "id": "G_INT_ILLEGAL_013",
@@ -956,7 +1058,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 19,
       "strength": 15.241948,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5799e2"
     },
     {
       "id": "G_INT_ILLEGAL_014",
@@ -965,7 +1068,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 14,
       "strength": 11.378006,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#4f9ae2"
     },
     {
       "id": "G_INT_ILLEGAL_015",
@@ -974,7 +1078,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 8,
       "strength": 6.13676,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#6a74e5"
     },
     {
       "id": "G_INT_ILLEGAL_016",
@@ -983,7 +1088,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 14,
       "strength": 11.264667,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#59a0e3"
     },
     {
       "id": "G_INT_ILLEGAL_019",
@@ -992,7 +1098,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 10,
       "strength": 8.362979,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#69abe0"
     },
     {
       "id": "G_INT_ILLEGAL_020",
@@ -1001,7 +1108,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 8,
       "strength": 6.741473,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#6ba7e1"
     },
     {
       "id": "G_INT_ILLEGAL_021",
@@ -1010,7 +1118,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 18,
       "strength": 14.131313,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#3e55df"
     },
     {
       "id": "G_INT_ILLEGAL_022",
@@ -1019,7 +1128,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 10,
       "strength": 7.681869,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#2f4bd8"
     },
     {
       "id": "G_INT_ILLEGAL_023",
@@ -1028,7 +1138,8 @@
       "cluster": "G_INT_ILLEGAL",
       "degree": 11,
       "strength": 8.215304,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#386ca3"
     },
     {
       "id": "G_INT_POL_001",
@@ -1037,7 +1148,8 @@
       "cluster": "G_INT_POL",
       "degree": 9,
       "strength": 6.982708,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#68a7d1"
     },
     {
       "id": "G_INT_POL_002",
@@ -1046,7 +1158,8 @@
       "cluster": "G_INT_POL",
       "degree": 8,
       "strength": 5.60326,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#2343d1"
     },
     {
       "id": "G_INT_POL_003",
@@ -1055,7 +1168,8 @@
       "cluster": "G_INT_POL",
       "degree": 15,
       "strength": 11.947954,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4bb6ea"
     },
     {
       "id": "G_INT_POL_005",
@@ -1064,7 +1178,8 @@
       "cluster": "G_INT_POL",
       "degree": 8,
       "strength": 5.649863,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#8e85ea"
     },
     {
       "id": "G_INT_POL_006",
@@ -1073,7 +1188,8 @@
       "cluster": "G_INT_POL",
       "degree": 27,
       "strength": 20.926526,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#69a6db"
     },
     {
       "id": "G_INT_POL_007",
@@ -1082,7 +1198,8 @@
       "cluster": "G_INT_POL",
       "degree": 18,
       "strength": 14.270891,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#60b1ea"
     },
     {
       "id": "G_INT_POL_008",
@@ -1091,7 +1208,8 @@
       "cluster": "G_INT_POL",
       "degree": 19,
       "strength": 14.94798,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#49ade3"
     },
     {
       "id": "G_INT_PRIV_001",
@@ -1100,7 +1218,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 19,
       "strength": 14.51492,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#5167e7"
     },
     {
       "id": "G_INT_PRIV_002",
@@ -1109,7 +1228,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 11,
       "strength": 8.421903,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#414dde"
     },
     {
       "id": "G_INT_PRIV_003",
@@ -1118,7 +1238,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 8,
       "strength": 5.850896,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#5e6cd7"
     },
     {
       "id": "G_INT_PRIV_005",
@@ -1127,7 +1248,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 9,
       "strength": 7.005622,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#6282e9"
     },
     {
       "id": "G_INT_PRIV_007",
@@ -1136,7 +1258,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 8,
       "strength": 6.163709,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5568e8"
     },
     {
       "id": "G_INT_PRIV_008",
@@ -1145,7 +1268,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 10,
       "strength": 7.636963,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#5170f3"
     },
     {
       "id": "G_INT_PRIV_009",
@@ -1154,7 +1278,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 16,
       "strength": 12.59723,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#496feb"
     },
     {
       "id": "G_INT_PRIV_010",
@@ -1163,7 +1288,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 10,
       "strength": 8.010544,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#376ae1"
     },
     {
       "id": "G_INT_PRIV_012",
@@ -1172,7 +1298,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 21,
       "strength": 16.304401,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#4d7be6"
     },
     {
       "id": "G_INT_PRIV_013",
@@ -1181,7 +1308,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 24,
       "strength": 19.099877,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#4270e2"
     },
     {
       "id": "G_INT_PRIV_014",
@@ -1190,7 +1318,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 21,
       "strength": 16.239763,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#6785e6"
     },
     {
       "id": "G_INT_PRIV_015",
@@ -1199,7 +1328,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 17,
       "strength": 12.871314,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#6c83e8"
     },
     {
       "id": "G_INT_PRIV_016",
@@ -1208,7 +1338,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 8,
       "strength": 6.0026,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#567aed"
     },
     {
       "id": "G_INT_PRIV_017",
@@ -1217,7 +1348,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 13,
       "strength": 10.36357,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#396ce0"
     },
     {
       "id": "G_INT_PRIV_018",
@@ -1226,7 +1358,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 10,
       "strength": 7.665754,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#5058d8"
     },
     {
       "id": "G_INT_PRIV_019",
@@ -1235,7 +1368,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 19,
       "strength": 14.699848,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#6786ee"
     },
     {
       "id": "G_INT_PRIV_020",
@@ -1244,7 +1378,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 16,
       "strength": 12.679235,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#4370e7"
     },
     {
       "id": "G_INT_PRIV_021",
@@ -1253,7 +1388,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 8,
       "strength": 6.2666,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#7a94e3"
     },
     {
       "id": "G_INT_PRIV_022",
@@ -1262,7 +1398,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 9,
       "strength": 6.773844,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#8598ea"
     },
     {
       "id": "G_INT_PRIV_024",
@@ -1271,7 +1408,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 10,
       "strength": 7.440293,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#5060d8"
     },
     {
       "id": "G_INT_PRIV_025",
@@ -1280,7 +1418,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 12,
       "strength": 9.260174,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#4269f0"
     },
     {
       "id": "G_INT_PRIV_027",
@@ -1289,7 +1428,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 8,
       "strength": 5.916611,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#839aec"
     },
     {
       "id": "G_INT_PRIV_028",
@@ -1298,7 +1438,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 11,
       "strength": 8.51848,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#436dea"
     },
     {
       "id": "G_INT_PRIV_029",
@@ -1307,7 +1448,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 13,
       "strength": 10.369842,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#456dec"
     },
     {
       "id": "G_INT_PRIV_030",
@@ -1316,7 +1458,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 8,
       "strength": 5.755691,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#2f39e8"
     },
     {
       "id": "G_INT_PRIV_031",
@@ -1325,7 +1468,8 @@
       "cluster": "G_INT_PRIV",
       "degree": 8,
       "strength": 5.499094,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#3446f2"
     },
     {
       "id": "G_INT_REL_001",
@@ -1334,7 +1478,8 @@
       "cluster": "G_INT_REL",
       "degree": 19,
       "strength": 14.493575,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#556ed2"
     },
     {
       "id": "G_INT_REL_002",
@@ -1343,7 +1488,8 @@
       "cluster": "G_INT_REL",
       "degree": 10,
       "strength": 7.55099,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#658ce7"
     },
     {
       "id": "G_INT_REL_004",
@@ -1352,7 +1498,8 @@
       "cluster": "G_INT_REL",
       "degree": 8,
       "strength": 5.934005,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#598fef"
     },
     {
       "id": "G_INT_REL_006",
@@ -1361,7 +1508,8 @@
       "cluster": "G_INT_REL",
       "degree": 11,
       "strength": 8.200862,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#194fcf"
     },
     {
       "id": "G_INT_REL_007",
@@ -1370,7 +1518,8 @@
       "cluster": "G_INT_REL",
       "degree": 8,
       "strength": 5.731236,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#604fe9"
     },
     {
       "id": "G_INT_REL_008",
@@ -1379,7 +1528,8 @@
       "cluster": "G_INT_REL",
       "degree": 16,
       "strength": 12.146479,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#5884e6"
     },
     {
       "id": "G_INT_REPR_001",
@@ -1388,7 +1538,8 @@
       "cluster": "G_INT_REPR",
       "degree": 12,
       "strength": 9.000384,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#86d7e9"
     },
     {
       "id": "G_INT_REPR_002",
@@ -1397,7 +1548,8 @@
       "cluster": "G_INT_REPR",
       "degree": 11,
       "strength": 7.969428,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#6bcef1"
     },
     {
       "id": "G_INT_REPR_003",
@@ -1406,7 +1558,8 @@
       "cluster": "G_INT_REPR",
       "degree": 13,
       "strength": 9.440853,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#6fc5d2"
     },
     {
       "id": "G_INT_REPR_004",
@@ -1415,7 +1568,8 @@
       "cluster": "G_INT_REPR",
       "degree": 11,
       "strength": 8.388943,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#7fb8e1"
     },
     {
       "id": "G_INT_REPR_006",
@@ -1424,7 +1578,8 @@
       "cluster": "G_INT_REPR",
       "degree": 9,
       "strength": 6.710622,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#7ac6ed"
     },
     {
       "id": "G_INT_REPR_007",
@@ -1433,7 +1588,8 @@
       "cluster": "G_INT_REPR",
       "degree": 10,
       "strength": 7.805631,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#3bb8ed"
     },
     {
       "id": "G_INT_REPR_009",
@@ -1442,7 +1598,8 @@
       "cluster": "G_INT_REPR",
       "degree": 10,
       "strength": 7.660026,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#6bb8d9"
     },
     {
       "id": "G_INT_REPR_010",
@@ -1451,7 +1608,8 @@
       "cluster": "G_INT_REPR",
       "degree": 16,
       "strength": 12.268079,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#3fb9d9"
     },
     {
       "id": "G_INT_REPR_011",
@@ -1460,7 +1618,8 @@
       "cluster": "G_INT_REPR",
       "degree": 8,
       "strength": 7.20164,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4f91dc"
     },
     {
       "id": "G_INT_REPR_012",
@@ -1469,7 +1628,8 @@
       "cluster": "G_INT_REPR",
       "degree": 15,
       "strength": 13.04331,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#5391e0"
     },
     {
       "id": "G_INT_REPR_013",
@@ -1478,7 +1638,8 @@
       "cluster": "G_INT_REPR",
       "degree": 13,
       "strength": 11.524338,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4d8edc"
     },
     {
       "id": "G_INT_REPR_014",
@@ -1487,7 +1648,8 @@
       "cluster": "G_INT_REPR",
       "degree": 11,
       "strength": 10.034755,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4e8cdc"
     },
     {
       "id": "G_INT_REPR_015",
@@ -1496,7 +1658,8 @@
       "cluster": "G_INT_REPR",
       "degree": 8,
       "strength": 7.274271,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4f8bde"
     },
     {
       "id": "G_INT_REPR_016",
@@ -1505,7 +1668,8 @@
       "cluster": "G_INT_REPR",
       "degree": 12,
       "strength": 10.548232,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#5091d9"
     },
     {
       "id": "G_INT_REPR_017",
@@ -1514,7 +1678,8 @@
       "cluster": "G_INT_REPR",
       "degree": 12,
       "strength": 10.724533,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#5791dd"
     },
     {
       "id": "G_INT_REPR_018",
@@ -1523,7 +1688,8 @@
       "cluster": "G_INT_REPR",
       "degree": 14,
       "strength": 12.492817,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#538ee0"
     },
     {
       "id": "G_INT_REPR_019",
@@ -1532,7 +1698,8 @@
       "cluster": "G_INT_REPR",
       "degree": 15,
       "strength": 13.298417,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4f8cdd"
     },
     {
       "id": "G_INT_REPR_020",
@@ -1541,7 +1708,8 @@
       "cluster": "G_INT_REPR",
       "degree": 9,
       "strength": 7.890303,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4f8fdf"
     },
     {
       "id": "G_INT_REPR_021",
@@ -1550,7 +1718,8 @@
       "cluster": "G_INT_REPR",
       "degree": 21,
       "strength": 17.720884,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#589bdf"
     },
     {
       "id": "G_INT_REPR_022",
@@ -1559,7 +1728,8 @@
       "cluster": "G_INT_REPR",
       "degree": 12,
       "strength": 10.472694,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4b8bdb"
     },
     {
       "id": "G_INT_REPR_023",
@@ -1568,7 +1738,8 @@
       "cluster": "G_INT_REPR",
       "degree": 10,
       "strength": 7.116972,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#1f8fe6"
     },
     {
       "id": "G_INT_REPR_024",
@@ -1577,7 +1748,8 @@
       "cluster": "G_INT_REPR",
       "degree": 8,
       "strength": 5.671678,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#84d5eb"
     },
     {
       "id": "G_INT_REPR_025",
@@ -1586,7 +1758,8 @@
       "cluster": "G_INT_REPR",
       "degree": 22,
       "strength": 16.810353,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#42b0e5"
     },
     {
       "id": "G_INT_REPR_026",
@@ -1595,7 +1768,8 @@
       "cluster": "G_INT_REPR",
       "degree": 9,
       "strength": 6.522064,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#36d0d6"
     },
     {
       "id": "G_INT_REPR_027",
@@ -1604,7 +1778,8 @@
       "cluster": "G_INT_REPR",
       "degree": 12,
       "strength": 8.93692,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4cc7e5"
     },
     {
       "id": "G_INT_REPR_028",
@@ -1613,7 +1788,8 @@
       "cluster": "G_INT_REPR",
       "degree": 17,
       "strength": 12.984585,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#35bfda"
     },
     {
       "id": "G_INT_REPR_029",
@@ -1622,7 +1798,8 @@
       "cluster": "G_INT_REPR",
       "degree": 13,
       "strength": 10.22043,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#3fb3e5"
     },
     {
       "id": "G_INT_REPR_032",
@@ -1631,7 +1808,8 @@
       "cluster": "G_INT_REPR",
       "degree": 8,
       "strength": 5.94557,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#7dcbdc"
     },
     {
       "id": "G_INT_REPR_033",
@@ -1640,7 +1818,8 @@
       "cluster": "G_INT_REPR",
       "degree": 9,
       "strength": 6.382221,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#38bbc3"
     },
     {
       "id": "G_INT_SELF_001",
@@ -1649,7 +1828,8 @@
       "cluster": "G_INT_SELF",
       "degree": 14,
       "strength": 10.913553,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5497e8"
     },
     {
       "id": "G_INT_SELF_002",
@@ -1658,7 +1838,8 @@
       "cluster": "G_INT_SELF",
       "degree": 9,
       "strength": 6.949704,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#7fd3e3"
     },
     {
       "id": "G_INT_SELF_003",
@@ -1667,7 +1848,8 @@
       "cluster": "G_INT_SELF",
       "degree": 8,
       "strength": 6.274063,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#526ee6"
     },
     {
       "id": "G_INT_SELF_004",
@@ -1676,7 +1858,8 @@
       "cluster": "G_INT_SELF",
       "degree": 10,
       "strength": 7.952961,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#699ce7"
     },
     {
       "id": "G_INT_SELF_005",
@@ -1685,7 +1868,8 @@
       "cluster": "G_INT_SELF",
       "degree": 8,
       "strength": 6.192122,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5e80cd"
     },
     {
       "id": "G_INT_SELF_007",
@@ -1694,7 +1878,8 @@
       "cluster": "G_INT_SELF",
       "degree": 11,
       "strength": 8.811319,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#7ac1e7"
     },
     {
       "id": "G_INT_SELF_008",
@@ -1703,7 +1888,8 @@
       "cluster": "G_INT_SELF",
       "degree": 8,
       "strength": 6.042139,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#229fd3"
     },
     {
       "id": "G_INT_SEX_002",
@@ -1712,7 +1898,8 @@
       "cluster": "G_INT_SEX",
       "degree": 8,
       "strength": 6.215696,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#86b9e9"
     },
     {
       "id": "G_INT_SEX_003",
@@ -1721,7 +1908,8 @@
       "cluster": "G_INT_SEX",
       "degree": 12,
       "strength": 9.671147,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#67a9d2"
     },
     {
       "id": "G_INT_SEX_004",
@@ -1730,7 +1918,8 @@
       "cluster": "G_INT_SEX",
       "degree": 9,
       "strength": 7.113779,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#8cb6e3"
     },
     {
       "id": "G_INT_SEX_005",
@@ -1739,7 +1928,8 @@
       "cluster": "G_INT_SEX",
       "degree": 8,
       "strength": 6.110922,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#84ebe8"
     },
     {
       "id": "G_INT_SEX_007",
@@ -1748,7 +1938,8 @@
       "cluster": "G_INT_SEX",
       "degree": 14,
       "strength": 11.282424,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#3ea7d2"
     },
     {
       "id": "G_INT_SEX_008",
@@ -1757,7 +1948,8 @@
       "cluster": "G_INT_SEX",
       "degree": 16,
       "strength": 13.028669,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#35a3cb"
     },
     {
       "id": "G_INT_SEX_009",
@@ -1766,7 +1958,8 @@
       "cluster": "G_INT_SEX",
       "degree": 9,
       "strength": 6.890558,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#2592e9"
     },
     {
       "id": "G_INT_SEX_010",
@@ -1775,7 +1968,8 @@
       "cluster": "G_INT_SEX",
       "degree": 9,
       "strength": 7.156712,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#2ab4dc"
     },
     {
       "id": "G_INT_SEX_011",
@@ -1784,7 +1978,8 @@
       "cluster": "G_INT_SEX",
       "degree": 12,
       "strength": 9.679329,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#60c5d6"
     },
     {
       "id": "G_INT_UNETH_002",
@@ -1793,7 +1988,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 9,
       "strength": 6.601701,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4067de"
     },
     {
       "id": "G_INT_UNETH_003",
@@ -1802,7 +1998,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 12,
       "strength": 8.731258,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#5c97e0"
     },
     {
       "id": "G_INT_UNETH_004",
@@ -1811,7 +2008,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 8,
       "strength": 5.939341,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#6284d5"
     },
     {
       "id": "G_INT_UNETH_005",
@@ -1820,7 +2018,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 10,
       "strength": 7.75933,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4380ed"
     },
     {
       "id": "G_INT_UNETH_007",
@@ -1829,7 +2028,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 10,
       "strength": 7.281877,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#6077d7"
     },
     {
       "id": "G_INT_UNETH_008",
@@ -1838,7 +2038,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 14,
       "strength": 10.654812,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#3366ed"
     },
     {
       "id": "G_INT_UNETH_010",
@@ -1847,7 +2048,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 10,
       "strength": 7.127975,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#74b6f2"
     },
     {
       "id": "G_INT_UNETH_011",
@@ -1856,7 +2058,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 8,
       "strength": 5.992531,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#4283e6"
     },
     {
       "id": "G_INT_UNETH_012",
@@ -1865,7 +2068,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 9,
       "strength": 6.542656,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#9d7df2"
     },
     {
       "id": "G_INT_UNETH_014",
@@ -1874,7 +2078,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 9,
       "strength": 6.703743,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#5d92d7"
     },
     {
       "id": "G_INT_UNETH_015",
@@ -1883,7 +2088,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 24,
       "strength": 18.25466,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#3a6ce6"
     },
     {
       "id": "G_INT_UNETH_017",
@@ -1892,7 +2098,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 8,
       "strength": 6.452172,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4175eb"
     },
     {
       "id": "G_INT_UNETH_019",
@@ -1901,7 +2108,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 15,
       "strength": 11.472919,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4565e3"
     },
     {
       "id": "G_INT_UNETH_020",
@@ -1910,7 +2118,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 10,
       "strength": 7.621136,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4274e7"
     },
     {
       "id": "G_INT_UNETH_021",
@@ -1919,7 +2128,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 19,
       "strength": 14.796286,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#3d78e9"
     },
     {
       "id": "G_INT_UNETH_022",
@@ -1928,7 +2138,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 8,
       "strength": 5.789368,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#577be5"
     },
     {
       "id": "G_INT_UNETH_024",
@@ -1937,7 +2148,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 10,
       "strength": 7.09143,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#a981ee"
     },
     {
       "id": "G_INT_UNETH_026",
@@ -1946,7 +2158,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 9,
       "strength": 6.617073,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#6c84d8"
     },
     {
       "id": "G_INT_UNETH_027",
@@ -1955,7 +2168,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 8,
       "strength": 5.673619,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#90a5df"
     },
     {
       "id": "G_INT_UNETH_028",
@@ -1964,7 +2178,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 8,
       "strength": 5.898257,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4c68d2"
     },
     {
       "id": "G_INT_UNETH_029",
@@ -1973,7 +2188,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 12,
       "strength": 9.109527,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4a6ae7"
     },
     {
       "id": "G_INT_UNETH_030",
@@ -1982,7 +2198,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 11,
       "strength": 8.45481,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#63aedf"
     },
     {
       "id": "G_INT_UNETH_031",
@@ -1991,7 +2208,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 9,
       "strength": 6.634609,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#59ace6"
     },
     {
       "id": "G_INT_UNETH_032",
@@ -2000,7 +2218,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 12,
       "strength": 9.287152,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#68b6e2"
     },
     {
       "id": "G_INT_UNETH_033",
@@ -2009,7 +2228,8 @@
       "cluster": "G_INT_UNETH",
       "degree": 12,
       "strength": 9.231557,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4265e1"
     },
     {
       "id": "G_INT_VALUE_002",
@@ -2018,7 +2238,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 8,
       "strength": 5.722568,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#788be1"
     },
     {
       "id": "G_INT_VALUE_004",
@@ -2027,7 +2248,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 12,
       "strength": 8.9457,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#2753e6"
     },
     {
       "id": "G_INT_VALUE_006",
@@ -2036,7 +2258,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 10,
       "strength": 7.598436,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#144fe2"
     },
     {
       "id": "G_INT_VALUE_007",
@@ -2045,7 +2268,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 18,
       "strength": 13.292331,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#1d65dc"
     },
     {
       "id": "G_INT_VALUE_010",
@@ -2054,7 +2278,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 8,
       "strength": 5.732724,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4e6bd0"
     },
     {
       "id": "G_INT_VALUE_012",
@@ -2063,7 +2288,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 11,
       "strength": 7.878245,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5ca2e7"
     },
     {
       "id": "G_INT_VALUE_013",
@@ -2072,7 +2298,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 8,
       "strength": 5.693861,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4296e5"
     },
     {
       "id": "G_INT_VALUE_014",
@@ -2081,7 +2308,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 18,
       "strength": 13.453186,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#3a64e6"
     },
     {
       "id": "G_INT_VALUE_015",
@@ -2090,7 +2318,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 8,
       "strength": 5.29381,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#44abde"
     },
     {
       "id": "G_INT_VALUE_016",
@@ -2099,7 +2328,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 9,
       "strength": 6.553484,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5476e9"
     },
     {
       "id": "G_INT_VALUE_018",
@@ -2108,7 +2338,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 15,
       "strength": 11.023437,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6d9cec"
     },
     {
       "id": "G_INT_VALUE_019",
@@ -2117,7 +2348,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 8,
       "strength": 5.824253,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#6083df"
     },
     {
       "id": "G_INT_VALUE_020",
@@ -2126,7 +2358,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 10,
       "strength": 7.230393,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4858ec"
     },
     {
       "id": "G_INT_VALUE_022",
@@ -2135,7 +2368,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 8,
       "strength": 5.755779,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#254ebe"
     },
     {
       "id": "G_INT_VALUE_024",
@@ -2144,7 +2378,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 10,
       "strength": 7.47663,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#6b91e8"
     },
     {
       "id": "G_INT_VALUE_025",
@@ -2153,7 +2388,8 @@
       "cluster": "G_INT_VALUE",
       "degree": 9,
       "strength": 6.641248,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#5f8ef0"
     },
     {
       "id": "G_INT_VIOL_001",
@@ -2162,7 +2398,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 9,
       "strength": 6.947033,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#6ba5cf"
     },
     {
       "id": "G_INT_VIOL_002",
@@ -2171,7 +2408,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 8,
       "strength": 5.600555,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#7293e7"
     },
     {
       "id": "G_INT_VIOL_004",
@@ -2180,7 +2418,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 10,
       "strength": 8.311513,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#68c0e1"
     },
     {
       "id": "G_INT_VIOL_005",
@@ -2189,7 +2428,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 9,
       "strength": 7.610771,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#61c2e3"
     },
     {
       "id": "G_INT_VIOL_006",
@@ -2198,7 +2438,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 25,
       "strength": 20.481598,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#63c1dd"
     },
     {
       "id": "G_INT_VIOL_007",
@@ -2207,7 +2448,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 10,
       "strength": 7.05212,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#2586cf"
     },
     {
       "id": "G_INT_VIOL_008",
@@ -2216,7 +2458,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 21,
       "strength": 17.018399,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5abedf"
     },
     {
       "id": "G_INT_VIOL_009",
@@ -2225,7 +2468,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 10,
       "strength": 8.229067,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#59bfe0"
     },
     {
       "id": "G_INT_VIOL_010",
@@ -2234,7 +2478,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 60,
       "strength": 47.500823,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5fbde0"
     },
     {
       "id": "G_INT_VIOL_011",
@@ -2243,7 +2488,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 12,
       "strength": 9.869291,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#63c2e2"
     },
     {
       "id": "G_INT_VIOL_012",
@@ -2252,7 +2498,8 @@
       "cluster": "G_INT_VIOL",
       "degree": 14,
       "strength": 11.05119,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#62b8e8"
     },
     {
       "id": "G_INT_WEAP_002",
@@ -2261,7 +2508,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 14,
       "strength": 11.098144,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#83b5e8"
     },
     {
       "id": "G_INT_WEAP_003",
@@ -2270,7 +2518,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 21,
       "strength": 16.70669,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#83b2eb"
     },
     {
       "id": "G_INT_WEAP_006",
@@ -2279,7 +2528,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 29,
       "strength": 23.102036,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5ca1e8"
     },
     {
       "id": "G_INT_WEAP_008",
@@ -2288,7 +2538,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 11,
       "strength": 7.823119,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#35b7e1"
     },
     {
       "id": "G_INT_WEAP_009",
@@ -2297,7 +2548,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 8,
       "strength": 5.27356,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#91c8df"
     },
     {
       "id": "G_INT_WEAP_010",
@@ -2306,7 +2558,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 17,
       "strength": 13.235615,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#3e89dc"
     },
     {
       "id": "G_INT_WEAP_011",
@@ -2315,7 +2568,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 12,
       "strength": 8.79712,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#7cbde5"
     },
     {
       "id": "G_INT_WEAP_014",
@@ -2324,7 +2578,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 19,
       "strength": 14.968633,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#71a8e6"
     },
     {
       "id": "G_INT_WEAP_016",
@@ -2333,7 +2588,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 8,
       "strength": 5.873812,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5290d9"
     },
     {
       "id": "G_INT_WEAP_018",
@@ -2342,7 +2598,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 8,
       "strength": 5.963073,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#81b5e9"
     },
     {
       "id": "G_INT_WEAP_020",
@@ -2351,7 +2608,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 9,
       "strength": 6.648344,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#3db7e3"
     },
     {
       "id": "G_INT_WEAP_021",
@@ -2360,7 +2618,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 8,
       "strength": 5.781006,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#457ad2"
     },
     {
       "id": "G_INT_WEAP_022",
@@ -2369,7 +2628,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 23,
       "strength": 17.92078,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#7cabe9"
     },
     {
       "id": "G_INT_WEAP_023",
@@ -2378,7 +2638,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 9,
       "strength": 6.559294,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#2c64c5"
     },
     {
       "id": "G_INT_WEAP_024",
@@ -2387,7 +2648,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 8,
       "strength": 6.216066,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#4497e1"
     },
     {
       "id": "G_INT_WEAP_025",
@@ -2396,7 +2658,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 14,
       "strength": 10.499012,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#3d7fd1"
     },
     {
       "id": "G_INT_WEAP_026",
@@ -2405,7 +2668,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 16,
       "strength": 12.378558,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#4f97e3"
     },
     {
       "id": "G_INT_WEAP_027",
@@ -2414,7 +2678,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 25,
       "strength": 19.570372,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#4a97e2"
     },
     {
       "id": "G_INT_WEAP_029",
@@ -2423,7 +2688,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 16,
       "strength": 12.879021,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#72a6e8"
     },
     {
       "id": "G_INT_WEAP_030",
@@ -2432,7 +2698,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 12,
       "strength": 9.431882,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5b9ae1"
     },
     {
       "id": "G_INT_WEAP_031",
@@ -2441,7 +2708,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 14,
       "strength": 11.17995,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#49a6e6"
     },
     {
       "id": "G_INT_WEAP_032",
@@ -2450,7 +2718,8 @@
       "cluster": "G_INT_WEAP",
       "degree": 11,
       "strength": 8.227129,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#46b2e4"
     },
     {
       "id": "G_SOC_CULT_001",
@@ -2459,7 +2728,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 8,
       "strength": 5.985441,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#4d52d7"
     },
     {
       "id": "G_SOC_CULT_002",
@@ -2468,7 +2738,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 9,
       "strength": 6.399143,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#2748b0"
     },
     {
       "id": "G_SOC_CULT_005",
@@ -2477,7 +2748,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 14,
       "strength": 10.495264,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#163ab8"
     },
     {
       "id": "G_SOC_CULT_007",
@@ -2486,7 +2758,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 10,
       "strength": 7.18504,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#2174f2"
     },
     {
       "id": "G_SOC_CULT_008",
@@ -2495,7 +2768,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 13,
       "strength": 9.722837,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#2e30e1"
     },
     {
       "id": "G_SOC_CULT_009",
@@ -2504,7 +2778,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 9,
       "strength": 6.803323,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#2262ee"
     },
     {
       "id": "G_SOC_CULT_010",
@@ -2513,7 +2788,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 8,
       "strength": 5.937346,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#2a6ef6"
     },
     {
       "id": "G_SOC_CULT_011",
@@ -2522,7 +2798,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 11,
       "strength": 8.415157,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#291df4"
     },
     {
       "id": "G_SOC_CULT_012",
@@ -2531,7 +2808,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 11,
       "strength": 8.112342,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#1f37ce"
     },
     {
       "id": "G_SOC_CULT_014",
@@ -2540,7 +2818,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 8,
       "strength": 5.91821,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#2f25e3"
     },
     {
       "id": "G_SOC_CULT_016",
@@ -2549,7 +2828,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 8,
       "strength": 5.417817,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4e8de4"
     },
     {
       "id": "G_SOC_CULT_017",
@@ -2558,7 +2838,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 8,
       "strength": 5.933585,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#4b32ee"
     },
     {
       "id": "G_SOC_CULT_018",
@@ -2567,7 +2848,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 13,
       "strength": 9.75737,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#326bde"
     },
     {
       "id": "G_SOC_CULT_019",
@@ -2576,7 +2858,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 8,
       "strength": 5.711022,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#4846e2"
     },
     {
       "id": "G_SOC_CULT_020",
@@ -2585,7 +2868,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 10,
       "strength": 7.326278,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#2440c0"
     },
     {
       "id": "G_SOC_CULT_021",
@@ -2594,7 +2878,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 8,
       "strength": 5.894664,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4361d1"
     },
     {
       "id": "G_SOC_CULT_022",
@@ -2603,7 +2888,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 9,
       "strength": 6.445413,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#0c30b3"
     },
     {
       "id": "G_SOC_CULT_023",
@@ -2612,7 +2898,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 8,
       "strength": 5.633337,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4075db"
     },
     {
       "id": "G_SOC_CULT_024",
@@ -2621,7 +2908,8 @@
       "cluster": "G_SOC_CULT",
       "degree": 9,
       "strength": 6.64123,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#4d4dda"
     },
     {
       "id": "G_SOC_DEMOC_001",
@@ -2630,7 +2918,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 13,
       "strength": 10.128759,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4268e7"
     },
     {
       "id": "G_SOC_DEMOC_002",
@@ -2639,7 +2928,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 10,
       "strength": 7.519374,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#489fe7"
     },
     {
       "id": "G_SOC_DEMOC_003",
@@ -2648,7 +2938,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 9,
       "strength": 6.793798,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#2c47be"
     },
     {
       "id": "G_SOC_DEMOC_005",
@@ -2657,7 +2948,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 13,
       "strength": 9.919857,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4646e0"
     },
     {
       "id": "G_SOC_DEMOC_006",
@@ -2666,7 +2958,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 8,
       "strength": 5.916714,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#1769b6"
     },
     {
       "id": "G_SOC_DEMOC_007",
@@ -2675,7 +2968,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 8,
       "strength": 5.80162,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5cb1ec"
     },
     {
       "id": "G_SOC_DEMOC_008",
@@ -2684,7 +2978,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 13,
       "strength": 9.523302,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#0e40e0"
     },
     {
       "id": "G_SOC_DEMOC_010",
@@ -2693,7 +2988,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 9,
       "strength": 6.643383,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#231ef6"
     },
     {
       "id": "G_SOC_DEMOC_011",
@@ -2702,7 +2998,8 @@
       "cluster": "G_SOC_DEMOC",
       "degree": 16,
       "strength": 11.972208,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4435e3"
     },
     {
       "id": "G_SOC_ECON_001",
@@ -2711,7 +3008,8 @@
       "cluster": "G_SOC_ECON",
       "degree": 8,
       "strength": 5.823909,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#096af5"
     },
     {
       "id": "G_SOC_ECON_002",
@@ -2720,7 +3018,8 @@
       "cluster": "G_SOC_ECON",
       "degree": 11,
       "strength": 8.243499,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#1d62c2"
     },
     {
       "id": "G_SOC_ECON_003",
@@ -2729,7 +3028,8 @@
       "cluster": "G_SOC_ECON",
       "degree": 10,
       "strength": 7.483352,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#1055e4"
     },
     {
       "id": "G_SOC_ECON_005",
@@ -2738,7 +3038,8 @@
       "cluster": "G_SOC_ECON",
       "degree": 8,
       "strength": 5.985848,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#3e89d2"
     },
     {
       "id": "G_SOC_ECON_006",
@@ -2747,7 +3048,8 @@
       "cluster": "G_SOC_ECON",
       "degree": 12,
       "strength": 9.150146,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#367dd9"
     },
     {
       "id": "G_SOC_ECON_008",
@@ -2756,7 +3058,8 @@
       "cluster": "G_SOC_ECON",
       "degree": 12,
       "strength": 9.083851,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#1f4add"
     },
     {
       "id": "G_SOC_ECON_010",
@@ -2765,7 +3068,8 @@
       "cluster": "G_SOC_ECON",
       "degree": 8,
       "strength": 5.712465,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#2924cc"
     },
     {
       "id": "G_SOC_ECON_012",
@@ -2774,7 +3078,8 @@
       "cluster": "G_SOC_ECON",
       "degree": 8,
       "strength": 5.626562,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#637eee"
     },
     {
       "id": "G_SOC_ENV_001",
@@ -2783,7 +3088,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 9,
       "strength": 6.321599,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#1414cf"
     },
     {
       "id": "G_SOC_ENV_002",
@@ -2792,7 +3098,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 13,
       "strength": 9.551638,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#5c64ea"
     },
     {
       "id": "G_SOC_ENV_003",
@@ -2801,7 +3108,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 17,
       "strength": 12.335171,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#4556de"
     },
     {
       "id": "G_SOC_ENV_005",
@@ -2810,7 +3118,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 8,
       "strength": 5.376597,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#0a62e4"
     },
     {
       "id": "G_SOC_ENV_007",
@@ -2819,7 +3128,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 12,
       "strength": 8.944984,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#4e5bed"
     },
     {
       "id": "G_SOC_ENV_008",
@@ -2828,7 +3138,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 8,
       "strength": 5.36672,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#227ad6"
     },
     {
       "id": "G_SOC_ENV_009",
@@ -2837,7 +3148,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 10,
       "strength": 7.280186,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#0a12c5"
     },
     {
       "id": "G_SOC_ENV_011",
@@ -2846,7 +3158,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 9,
       "strength": 6.526466,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#1d4af2"
     },
     {
       "id": "G_SOC_ENV_012",
@@ -2855,7 +3168,8 @@
       "cluster": "G_SOC_ENV",
       "degree": 8,
       "strength": 5.499394,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#222e98"
     },
     {
       "id": "G_SOC_GOV_002",
@@ -2864,7 +3178,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 20,
       "strength": 15.436214,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8b68ec"
     },
     {
       "id": "G_SOC_GOV_005",
@@ -2873,7 +3188,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 9,
       "strength": 6.418019,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#0a15e0"
     },
     {
       "id": "G_SOC_GOV_006",
@@ -2882,7 +3198,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 9,
       "strength": 6.690603,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5e40ec"
     },
     {
       "id": "G_SOC_GOV_008",
@@ -2891,7 +3208,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 14,
       "strength": 10.351856,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8274f1"
     },
     {
       "id": "G_SOC_GOV_009",
@@ -2900,7 +3218,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.978114,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3b43dd"
     },
     {
       "id": "G_SOC_GOV_010",
@@ -2909,7 +3228,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.937639,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#7441dc"
     },
     {
       "id": "G_SOC_GOV_011",
@@ -2918,7 +3238,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 18,
       "strength": 13.609949,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#5834df"
     },
     {
       "id": "G_SOC_GOV_015",
@@ -2927,7 +3248,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 18,
       "strength": 13.801863,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7e63f3"
     },
     {
       "id": "G_SOC_GOV_016",
@@ -2936,7 +3258,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 14,
       "strength": 10.497606,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#3b28df"
     },
     {
       "id": "G_SOC_GOV_017",
@@ -2945,7 +3268,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 12,
       "strength": 9.109646,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6852ec"
     },
     {
       "id": "G_SOC_GOV_020",
@@ -2954,7 +3278,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.816763,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#2416f9"
     },
     {
       "id": "G_SOC_GOV_021",
@@ -2963,7 +3288,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.891526,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5b58e8"
     },
     {
       "id": "G_SOC_GOV_022",
@@ -2972,7 +3298,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.914739,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6d3ae2"
     },
     {
       "id": "G_SOC_GOV_023",
@@ -2981,7 +3308,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.486236,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#9518ec"
     },
     {
       "id": "G_SOC_GOV_024",
@@ -2990,7 +3318,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 10,
       "strength": 7.73488,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5b26e7"
     },
     {
       "id": "G_SOC_GOV_025",
@@ -2999,7 +3328,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 12,
       "strength": 8.674604,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#9e5af0"
     },
     {
       "id": "G_SOC_GOV_026",
@@ -3008,7 +3338,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 9,
       "strength": 6.751432,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#212ded"
     },
     {
       "id": "G_SOC_GOV_027",
@@ -3017,7 +3348,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.786014,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#653ee6"
     },
     {
       "id": "G_SOC_GOV_029",
@@ -3026,7 +3358,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 12,
       "strength": 9.070521,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#9681ec"
     },
     {
       "id": "G_SOC_GOV_030",
@@ -3035,7 +3368,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 14,
       "strength": 10.488971,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3638f8"
     },
     {
       "id": "G_SOC_GOV_033",
@@ -3044,7 +3378,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 19,
       "strength": 14.504593,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7b59f6"
     },
     {
       "id": "G_SOC_GOV_034",
@@ -3053,7 +3388,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 11,
       "strength": 8.191891,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#815ef7"
     },
     {
       "id": "G_SOC_GOV_035",
@@ -3062,7 +3398,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 63,
       "strength": 48.245949,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7753ec"
     },
     {
       "id": "G_SOC_GOV_036",
@@ -3071,7 +3408,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.893251,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#a53edb"
     },
     {
       "id": "G_SOC_GOV_039",
@@ -3080,7 +3418,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 9,
       "strength": 6.971231,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#2953e4"
     },
     {
       "id": "G_SOC_GOV_040",
@@ -3089,7 +3428,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.963133,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#3644e8"
     },
     {
       "id": "G_SOC_GOV_041",
@@ -3098,7 +3438,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 11,
       "strength": 8.190816,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4844e3"
     },
     {
       "id": "G_SOC_GOV_042",
@@ -3107,7 +3448,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 8,
       "strength": 5.814011,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8267f6"
     },
     {
       "id": "G_SOC_GOV_043",
@@ -3116,7 +3458,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 18,
       "strength": 13.352039,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7f39e3"
     },
     {
       "id": "G_SOC_GOV_044",
@@ -3125,7 +3468,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 12,
       "strength": 9.060232,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5f64e1"
     },
     {
       "id": "G_SOC_GOV_045",
@@ -3134,7 +3478,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 10,
       "strength": 7.460101,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#694ade"
     },
     {
       "id": "G_SOC_GOV_046",
@@ -3143,7 +3488,8 @@
       "cluster": "G_SOC_GOV",
       "degree": 10,
       "strength": 7.556982,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8561e8"
     },
     {
       "id": "G_SOC_POWER_001",
@@ -3152,7 +3498,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 10,
       "strength": 7.362769,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#215fe4"
     },
     {
       "id": "G_SOC_POWER_002",
@@ -3161,7 +3508,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 10,
       "strength": 7.11315,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#2f8be0"
     },
     {
       "id": "G_SOC_POWER_003",
@@ -3170,7 +3518,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 8,
       "strength": 5.741454,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4171e4"
     },
     {
       "id": "G_SOC_POWER_004",
@@ -3179,7 +3528,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 14,
       "strength": 10.396968,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#5d87e0"
     },
     {
       "id": "G_SOC_POWER_005",
@@ -3188,7 +3538,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 14,
       "strength": 10.501808,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#5f91e0"
     },
     {
       "id": "G_SOC_POWER_006",
@@ -3197,7 +3548,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 9,
       "strength": 6.198671,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#407fee"
     },
     {
       "id": "G_SOC_POWER_007",
@@ -3206,7 +3558,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 8,
       "strength": 5.505911,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#27bda8"
     },
     {
       "id": "G_SOC_POWER_008",
@@ -3215,7 +3568,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 9,
       "strength": 6.526418,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#5d8ae7"
     },
     {
       "id": "G_SOC_POWER_010",
@@ -3224,7 +3578,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 10,
       "strength": 7.334536,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#5380e7"
     },
     {
       "id": "G_SOC_POWER_012",
@@ -3233,7 +3588,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 21,
       "strength": 15.693412,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#5580db"
     },
     {
       "id": "G_SOC_POWER_015",
@@ -3242,7 +3598,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 9,
       "strength": 6.468779,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#2d4ada"
     },
     {
       "id": "G_SOC_POWER_017",
@@ -3251,7 +3608,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 10,
       "strength": 7.375996,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#6a96e8"
     },
     {
       "id": "G_SOC_POWER_018",
@@ -3260,7 +3618,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 8,
       "strength": 5.518632,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#274ce3"
     },
     {
       "id": "G_SOC_POWER_019",
@@ -3269,7 +3628,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 8,
       "strength": 5.792438,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#6b84d4"
     },
     {
       "id": "G_SOC_POWER_023",
@@ -3278,7 +3638,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 9,
       "strength": 6.302487,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#3478f0"
     },
     {
       "id": "G_SOC_POWER_025",
@@ -3287,7 +3648,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 9,
       "strength": 6.496012,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#4292e8"
     },
     {
       "id": "G_SOC_POWER_026",
@@ -3296,7 +3658,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 8,
       "strength": 5.283304,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#212bbb"
     },
     {
       "id": "G_SOC_POWER_027",
@@ -3305,7 +3668,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 8,
       "strength": 5.617376,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4232cd"
     },
     {
       "id": "G_SOC_POWER_028",
@@ -3314,7 +3678,8 @@
       "cluster": "G_SOC_POWER",
       "degree": 9,
       "strength": 6.628004,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#647ed9"
     },
     {
       "id": "G_SYS_CONTEST_001",
@@ -3323,7 +3688,8 @@
       "cluster": "G_SYS_CONTEST",
       "degree": 13,
       "strength": 9.671397,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#1410da"
     },
     {
       "id": "G_SYS_CONTEST_002",
@@ -3332,7 +3698,8 @@
       "cluster": "G_SYS_CONTEST",
       "degree": 8,
       "strength": 5.049067,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#9154ed"
     },
     {
       "id": "G_SYS_CONTEST_003",
@@ -3341,7 +3708,8 @@
       "cluster": "G_SYS_CONTEST",
       "degree": 16,
       "strength": 11.989268,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#6b65de"
     },
     {
       "id": "G_SYS_CONTEST_004",
@@ -3350,7 +3718,8 @@
       "cluster": "G_SYS_CONTEST",
       "degree": 11,
       "strength": 8.307283,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#7978f8"
     },
     {
       "id": "G_SYS_CONTEXT_001",
@@ -3359,7 +3728,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 9,
       "strength": 6.867051,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#cf7de6"
     },
     {
       "id": "G_SYS_CONTEXT_002",
@@ -3368,7 +3738,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 8,
       "strength": 5.647798,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#cf86e9"
     },
     {
       "id": "G_SYS_CONTEXT_003",
@@ -3377,7 +3748,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 9,
       "strength": 6.42184,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#7528e4"
     },
     {
       "id": "G_SYS_CONTEXT_004",
@@ -3386,7 +3758,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 8,
       "strength": 5.314493,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#6433cf"
     },
     {
       "id": "G_SYS_CONTEXT_005",
@@ -3395,7 +3768,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 19,
       "strength": 14.592182,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#b72cec"
     },
     {
       "id": "G_SYS_CONTEXT_006",
@@ -3404,7 +3778,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 8,
       "strength": 5.536938,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#d081ee"
     },
     {
       "id": "G_SYS_CONTEXT_007",
@@ -3413,7 +3788,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 8,
       "strength": 5.913325,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#9e60f4"
     },
     {
       "id": "G_SYS_CONTEXT_008",
@@ -3422,7 +3798,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 12,
       "strength": 9.212538,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#9e37ed"
     },
     {
       "id": "G_SYS_CONTEXT_009",
@@ -3431,7 +3808,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 12,
       "strength": 8.418717,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#6b68f8"
     },
     {
       "id": "G_SYS_CONTEXT_011",
@@ -3440,7 +3818,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 8,
       "strength": 5.325556,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#7263df"
     },
     {
       "id": "G_SYS_CONTEXT_012",
@@ -3449,7 +3828,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 18,
       "strength": 13.791213,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#b133e8"
     },
     {
       "id": "G_SYS_CONTEXT_013",
@@ -3458,7 +3838,8 @@
       "cluster": "G_SYS_CONTEXT",
       "degree": 10,
       "strength": 7.646947,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#951eed"
     },
     {
       "id": "G_SYS_EVAL_001",
@@ -3467,7 +3848,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 14,
       "strength": 10.665833,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#a878f7"
     },
     {
       "id": "G_SYS_EVAL_002",
@@ -3476,7 +3858,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 19,
       "strength": 14.571357,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#571fef"
     },
     {
       "id": "G_SYS_EVAL_003",
@@ -3485,7 +3868,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 9,
       "strength": 6.758105,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#614cf3"
     },
     {
       "id": "G_SYS_EVAL_004",
@@ -3494,7 +3878,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 9,
       "strength": 6.486755,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#6051e5"
     },
     {
       "id": "G_SYS_EVAL_005",
@@ -3503,7 +3888,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 20,
       "strength": 15.212444,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3d38ed"
     },
     {
       "id": "G_SYS_EVAL_006",
@@ -3512,7 +3898,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 15,
       "strength": 11.507652,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#1716f3"
     },
     {
       "id": "G_SYS_EVAL_007",
@@ -3521,7 +3908,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 5.777053,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#9c59ec"
     },
     {
       "id": "G_SYS_EVAL_008",
@@ -3530,7 +3918,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 20,
       "strength": 15.333521,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#a475f4"
     },
     {
       "id": "G_SYS_EVAL_009",
@@ -3539,7 +3928,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 9,
       "strength": 6.40318,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#b06fec"
     },
     {
       "id": "G_SYS_EVAL_012",
@@ -3548,7 +3938,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 17,
       "strength": 12.904729,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4c2cf5"
     },
     {
       "id": "G_SYS_EVAL_013",
@@ -3557,7 +3948,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 11,
       "strength": 8.509294,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3626ea"
     },
     {
       "id": "G_SYS_EVAL_014",
@@ -3566,7 +3958,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 13,
       "strength": 9.624103,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#a55ff5"
     },
     {
       "id": "G_SYS_EVAL_016",
@@ -3575,7 +3968,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 14,
       "strength": 10.643496,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#5119f1"
     },
     {
       "id": "G_SYS_EVAL_017",
@@ -3584,7 +3978,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 11,
       "strength": 8.362404,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5234f4"
     },
     {
       "id": "G_SYS_EVAL_019",
@@ -3593,7 +3988,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 13,
       "strength": 9.891986,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#cb62ef"
     },
     {
       "id": "G_SYS_EVAL_021",
@@ -3602,7 +3998,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 14,
       "strength": 10.70619,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6d3af5"
     },
     {
       "id": "G_SYS_EVAL_022",
@@ -3611,7 +4008,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 5.200205,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#551bd6"
     },
     {
       "id": "G_SYS_EVAL_023",
@@ -3620,7 +4018,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 15,
       "strength": 11.232161,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4723f4"
     },
     {
       "id": "G_SYS_EVAL_024",
@@ -3629,7 +4028,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 14,
       "strength": 10.660911,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3522ef"
     },
     {
       "id": "G_SYS_EVAL_025",
@@ -3638,7 +4038,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 10,
       "strength": 7.62682,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#2f2ef3"
     },
     {
       "id": "G_SYS_EVAL_026",
@@ -3647,7 +4048,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 12,
       "strength": 8.706737,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7437e0"
     },
     {
       "id": "G_SYS_EVAL_027",
@@ -3656,7 +4058,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 10,
       "strength": 7.110804,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5e21d1"
     },
     {
       "id": "G_SYS_EVAL_028",
@@ -3665,7 +4068,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 11,
       "strength": 8.111038,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#602bf7"
     },
     {
       "id": "G_SYS_EVAL_029",
@@ -3674,7 +4078,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 33,
       "strength": 23.834894,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7e0eef"
     },
     {
       "id": "G_SYS_EVAL_031",
@@ -3683,7 +4088,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 13,
       "strength": 9.828555,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#603eea"
     },
     {
       "id": "G_SYS_EVAL_032",
@@ -3692,7 +4098,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 12,
       "strength": 9.02347,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#623cea"
     },
     {
       "id": "G_SYS_EVAL_033",
@@ -3701,7 +4108,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 5.91659,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#5432e8"
     },
     {
       "id": "G_SYS_EVAL_035",
@@ -3710,7 +4118,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 9,
       "strength": 6.356389,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#c415d6"
     },
     {
       "id": "G_SYS_EVAL_036",
@@ -3719,7 +4128,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 6.039476,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3830f2"
     },
     {
       "id": "G_SYS_EVAL_037",
@@ -3728,7 +4138,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 9,
       "strength": 6.63911,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6e54f4"
     },
     {
       "id": "G_SYS_EVAL_038",
@@ -3737,7 +4148,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 9,
       "strength": 6.843875,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#ac7af5"
     },
     {
       "id": "G_SYS_EVAL_039",
@@ -3746,7 +4158,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 10,
       "strength": 7.447659,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#9026f9"
     },
     {
       "id": "G_SYS_EVAL_040",
@@ -3755,7 +4168,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 46,
       "strength": 35.11727,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5c36f1"
     },
     {
       "id": "G_SYS_EVAL_041",
@@ -3764,7 +4178,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 10,
       "strength": 7.53411,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8b5ef4"
     },
     {
       "id": "G_SYS_EVAL_042",
@@ -3773,7 +4188,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 6.131056,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#864df4"
     },
     {
       "id": "G_SYS_EVAL_043",
@@ -3782,7 +4198,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 5.882197,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5f40f0"
     },
     {
       "id": "G_SYS_EVAL_044",
@@ -3791,7 +4208,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 5.73896,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#2c2cce"
     },
     {
       "id": "G_SYS_EVAL_045",
@@ -3800,7 +4218,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 24,
       "strength": 18.242,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6d43f6"
     },
     {
       "id": "G_SYS_EVAL_046",
@@ -3809,7 +4228,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 13,
       "strength": 9.770783,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#462ff2"
     },
     {
       "id": "G_SYS_EVAL_048",
@@ -3818,7 +4238,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 5.887939,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#9969f8"
     },
     {
       "id": "G_SYS_EVAL_052",
@@ -3827,7 +4248,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 10,
       "strength": 7.286574,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6c12e4"
     },
     {
       "id": "G_SYS_EVAL_054",
@@ -3836,7 +4258,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 13,
       "strength": 9.673274,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5714f0"
     },
     {
       "id": "G_SYS_EVAL_060",
@@ -3845,7 +4268,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 9,
       "strength": 6.915109,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3827eb"
     },
     {
       "id": "G_SYS_EVAL_062",
@@ -3854,7 +4278,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 26,
       "strength": 19.814944,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5743eb"
     },
     {
       "id": "G_SYS_EVAL_065",
@@ -3863,7 +4288,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 12,
       "strength": 9.288055,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8066f2"
     },
     {
       "id": "G_SYS_EVAL_066",
@@ -3872,7 +4298,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 13,
       "strength": 9.341359,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#681cf5"
     },
     {
       "id": "G_SYS_EVAL_068",
@@ -3881,7 +4308,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 10,
       "strength": 7.324786,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6636ef"
     },
     {
       "id": "G_SYS_EVAL_069",
@@ -3890,7 +4318,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 5.998944,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8c53f2"
     },
     {
       "id": "G_SYS_EVAL_070",
@@ -3899,7 +4328,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 18,
       "strength": 13.371089,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7224ea"
     },
     {
       "id": "G_SYS_EVAL_071",
@@ -3908,7 +4338,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 8,
       "strength": 6.017256,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5f32f2"
     },
     {
       "id": "G_SYS_EVAL_072",
@@ -3917,7 +4348,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 11,
       "strength": 8.264794,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5336f3"
     },
     {
       "id": "G_SYS_EVAL_073",
@@ -3926,7 +4358,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 12,
       "strength": 8.902548,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#6814f9"
     },
     {
       "id": "G_SYS_EVAL_074",
@@ -3935,7 +4368,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 19,
       "strength": 14.539374,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5545f5"
     },
     {
       "id": "G_SYS_EVAL_075",
@@ -3944,7 +4378,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 13,
       "strength": 10.124683,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5f35f0"
     },
     {
       "id": "G_SYS_EVAL_076",
@@ -3953,7 +4388,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 9,
       "strength": 6.838175,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#956df3"
     },
     {
       "id": "G_SYS_EVAL_077",
@@ -3962,7 +4398,8 @@
       "cluster": "G_SYS_EVAL",
       "degree": 14,
       "strength": 10.613663,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#5a51f0"
     },
     {
       "id": "G_SYS_INCONS_001",
@@ -3971,7 +4408,8 @@
       "cluster": "G_SYS_INCONS",
       "degree": 28,
       "strength": 20.775362,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#631cdc"
     },
     {
       "id": "G_SYS_INCONS_002",
@@ -3980,7 +4418,8 @@
       "cluster": "G_SYS_INCONS",
       "degree": 15,
       "strength": 11.139589,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#a780ef"
     },
     {
       "id": "G_SYS_INCONS_003",
@@ -3989,7 +4428,8 @@
       "cluster": "G_SYS_INCONS",
       "degree": 12,
       "strength": 8.708632,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5065e9"
     },
     {
       "id": "G_SYS_INPUT_001",
@@ -3998,7 +4438,8 @@
       "cluster": "G_SYS_INPUT",
       "degree": 10,
       "strength": 7.199223,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#bd43e6"
     },
     {
       "id": "G_SYS_INPUT_002",
@@ -4007,7 +4448,8 @@
       "cluster": "G_SYS_INPUT",
       "degree": 10,
       "strength": 7.839713,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#ab81ee"
     },
     {
       "id": "G_SYS_INPUT_003",
@@ -4016,7 +4458,8 @@
       "cluster": "G_SYS_INPUT",
       "degree": 15,
       "strength": 11.490733,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#3b27e1"
     },
     {
       "id": "G_SYS_MISINFO_002",
@@ -4025,7 +4468,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 10,
       "strength": 7.441243,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4d7adf"
     },
     {
       "id": "G_SYS_MISINFO_003",
@@ -4034,7 +4478,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 8,
       "strength": 5.736036,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6b80f0"
     },
     {
       "id": "G_SYS_MISINFO_004",
@@ -4043,7 +4488,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 9,
       "strength": 6.435017,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#8b87e8"
     },
     {
       "id": "G_SYS_MISINFO_006",
@@ -4052,7 +4498,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 27,
       "strength": 20.459564,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#3d55e2"
     },
     {
       "id": "G_SYS_MISINFO_007",
@@ -4061,7 +4508,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 8,
       "strength": 5.780637,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#8290ed"
     },
     {
       "id": "G_SYS_MISINFO_008",
@@ -4070,7 +4518,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 12,
       "strength": 9.309797,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5263f2"
     },
     {
       "id": "G_SYS_MISINFO_009",
@@ -4079,7 +4528,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 10,
       "strength": 7.556582,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3060dd"
     },
     {
       "id": "G_SYS_MISINFO_010",
@@ -4088,7 +4538,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 9,
       "strength": 6.652966,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4f5dde"
     },
     {
       "id": "G_SYS_MISINFO_011",
@@ -4097,7 +4548,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 20,
       "strength": 15.097119,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3c47e8"
     },
     {
       "id": "G_SYS_MISINFO_012",
@@ -4106,7 +4558,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 29,
       "strength": 22.638582,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4f54e4"
     },
     {
       "id": "G_SYS_MISINFO_013",
@@ -4115,7 +4568,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 8,
       "strength": 5.743083,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7893e7"
     },
     {
       "id": "G_SYS_MISINFO_015",
@@ -4124,7 +4578,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 11,
       "strength": 8.674214,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#535de6"
     },
     {
       "id": "G_SYS_MISINFO_016",
@@ -4133,7 +4588,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 9,
       "strength": 6.855367,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#5f69e7"
     },
     {
       "id": "G_SYS_MISINFO_017",
@@ -4142,7 +4598,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 8,
       "strength": 5.976158,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#2063da"
     },
     {
       "id": "G_SYS_MISINFO_018",
@@ -4151,7 +4608,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 10,
       "strength": 7.2978,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#558ceb"
     },
     {
       "id": "G_SYS_MISINFO_019",
@@ -4160,7 +4618,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 9,
       "strength": 6.291728,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#4596e4"
     },
     {
       "id": "G_SYS_MISINFO_021",
@@ -4169,7 +4628,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 9,
       "strength": 6.515844,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#707cd9"
     },
     {
       "id": "G_SYS_MISINFO_022",
@@ -4178,7 +4638,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 25,
       "strength": 18.846632,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#5a6be5"
     },
     {
       "id": "G_SYS_MISINFO_023",
@@ -4187,7 +4648,8 @@
       "cluster": "G_SYS_MISINFO",
       "degree": 12,
       "strength": 9.534652,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#424aef"
     },
     {
       "id": "G_SYS_OEXT_001",
@@ -4196,7 +4658,8 @@
       "cluster": "G_SYS_OEXT",
       "degree": 14,
       "strength": 11.096176,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#7532e2"
     },
     {
       "id": "G_SYS_OEXT_006",
@@ -4205,7 +4668,8 @@
       "cluster": "G_SYS_OEXT",
       "degree": 10,
       "strength": 8.181067,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5259f7"
     },
     {
       "id": "G_SYS_OEXT_007",
@@ -4214,7 +4678,8 @@
       "cluster": "G_SYS_OEXT",
       "degree": 36,
       "strength": 28.682694,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#536de3"
     },
     {
       "id": "G_SYS_OEXT_008",
@@ -4223,7 +4688,8 @@
       "cluster": "G_SYS_OEXT",
       "degree": 17,
       "strength": 13.597288,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5777e2"
     },
     {
       "id": "G_SYS_OEXT_009",
@@ -4232,7 +4698,8 @@
       "cluster": "G_SYS_OEXT",
       "degree": 13,
       "strength": 10.668454,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5a76e2"
     },
     {
       "id": "G_SYS_OEXT_013",
@@ -4241,7 +4708,8 @@
       "cluster": "G_SYS_OEXT",
       "degree": 14,
       "strength": 11.058833,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#7e39e1"
     },
     {
       "id": "G_SYS_OEXT_014",
@@ -4250,7 +4718,8 @@
       "cluster": "G_SYS_OEXT",
       "degree": 16,
       "strength": 12.424401,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#ac85eb"
     },
     {
       "id": "G_SYS_OREF_001",
@@ -4259,7 +4728,8 @@
       "cluster": "G_SYS_OREF",
       "degree": 8,
       "strength": 6.26722,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#3974e5"
     },
     {
       "id": "G_SYS_OREF_002",
@@ -4268,7 +4738,8 @@
       "cluster": "G_SYS_OREF",
       "degree": 17,
       "strength": 12.942747,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#8381ef"
     },
     {
       "id": "G_SYS_OREF_003",
@@ -4277,7 +4748,8 @@
       "cluster": "G_SYS_OREF",
       "degree": 11,
       "strength": 8.344979,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#622de4"
     },
     {
       "id": "G_SYS_OVERCONF_001",
@@ -4286,7 +4758,8 @@
       "cluster": "G_SYS_OVERCONF",
       "degree": 10,
       "strength": 7.137734,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#7895e3"
     },
     {
       "id": "G_SYS_OVERCONF_002",
@@ -4295,7 +4768,8 @@
       "cluster": "G_SYS_OVERCONF",
       "degree": 14,
       "strength": 10.045504,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#2033f9"
     },
     {
       "id": "G_SYS_OVERCONF_003",
@@ -4304,7 +4778,8 @@
       "cluster": "G_SYS_OVERCONF",
       "degree": 16,
       "strength": 12.338281,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#743fdf"
     },
     {
       "id": "G_SYS_OVERCONF_004",
@@ -4313,7 +4788,8 @@
       "cluster": "G_SYS_OVERCONF",
       "degree": 31,
       "strength": 23.823962,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#5f31e4"
     },
     {
       "id": "G_SYS_OVERCONF_006",
@@ -4322,7 +4798,8 @@
       "cluster": "G_SYS_OVERCONF",
       "degree": 10,
       "strength": 7.593947,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#9779f7"
     },
     {
       "id": "G_SYS_PERF_001",
@@ -4331,7 +4808,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 9,
       "strength": 6.300702,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#881df3"
     },
     {
       "id": "G_SYS_PERF_002",
@@ -4340,7 +4818,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 8,
       "strength": 5.871514,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#b16ffa"
     },
     {
       "id": "G_SYS_PERF_003",
@@ -4349,7 +4828,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 10,
       "strength": 7.10484,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8957e2"
     },
     {
       "id": "G_SYS_PERF_004",
@@ -4358,7 +4838,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 11,
       "strength": 7.895611,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#9636ee"
     },
     {
       "id": "G_SYS_PERF_005",
@@ -4367,7 +4848,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 19,
       "strength": 14.035749,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#855bec"
     },
     {
       "id": "G_SYS_PERF_006",
@@ -4376,7 +4858,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 8,
       "strength": 5.858466,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7f72e9"
     },
     {
       "id": "G_SYS_PERF_007",
@@ -4385,7 +4868,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 13,
       "strength": 9.85599,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#394be9"
     },
     {
       "id": "G_SYS_PERF_008",
@@ -4394,7 +4878,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 9,
       "strength": 6.720448,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8076f2"
     },
     {
       "id": "G_SYS_PERF_009",
@@ -4403,7 +4888,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 33,
       "strength": 24.936249,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3233ee"
     },
     {
       "id": "G_SYS_PERF_010",
@@ -4412,7 +4898,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 13,
       "strength": 9.104247,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5c55e0"
     },
     {
       "id": "G_SYS_PERF_011",
@@ -4421,7 +4908,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 16,
       "strength": 11.822637,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6d0fe4"
     },
     {
       "id": "G_SYS_PERF_012",
@@ -4430,7 +4918,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 13,
       "strength": 9.482393,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6b17e8"
     },
     {
       "id": "G_SYS_PERF_013",
@@ -4439,7 +4928,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 8,
       "strength": 5.864229,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7672fb"
     },
     {
       "id": "G_SYS_PERF_014",
@@ -4448,7 +4938,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 15,
       "strength": 11.494048,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#1e06f0"
     },
     {
       "id": "G_SYS_PERF_015",
@@ -4457,7 +4948,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 8,
       "strength": 6.014977,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0b70c6"
     },
     {
       "id": "G_SYS_PERF_016",
@@ -4466,7 +4958,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 10,
       "strength": 7.583992,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#3a11d4"
     },
     {
       "id": "G_SYS_PERF_017",
@@ -4475,7 +4968,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 8,
       "strength": 5.795755,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#2c1ad2"
     },
     {
       "id": "G_SYS_PERF_018",
@@ -4484,7 +4978,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 20,
       "strength": 15.005821,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5212ef"
     },
     {
       "id": "G_SYS_PERF_019",
@@ -4493,7 +4988,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 12,
       "strength": 9.053002,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#1b0cdd"
     },
     {
       "id": "G_SYS_PERF_020",
@@ -4502,7 +4998,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 10,
       "strength": 7.48485,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#5548fa"
     },
     {
       "id": "G_SYS_PERF_021",
@@ -4511,7 +5008,8 @@
       "cluster": "G_SYS_PERF",
       "degree": 20,
       "strength": 14.818761,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7a3cf6"
     },
     {
       "id": "G_SYS_POLICY_001",
@@ -4520,7 +5018,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 25,
       "strength": 19.170205,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#7796f8"
     },
     {
       "id": "G_SYS_POLICY_002",
@@ -4529,7 +5028,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 9,
       "strength": 6.998667,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#5a23e4"
     },
     {
       "id": "G_SYS_POLICY_003",
@@ -4538,7 +5038,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 15,
       "strength": 11.508475,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#8055df"
     },
     {
       "id": "G_SYS_POLICY_004",
@@ -4547,7 +5048,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 11,
       "strength": 8.36772,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#9085ea"
     },
     {
       "id": "G_SYS_POLICY_005",
@@ -4556,7 +5058,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 26,
       "strength": 20.317978,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#3e63ef"
     },
     {
       "id": "G_SYS_POLICY_006",
@@ -4565,7 +5068,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 10,
       "strength": 7.701918,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#1108f7"
     },
     {
       "id": "G_SYS_POLICY_008",
@@ -4574,7 +5078,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 16,
       "strength": 12.562779,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#7e81f2"
     },
     {
       "id": "G_SYS_POLICY_009",
@@ -4583,7 +5088,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 17,
       "strength": 13.378494,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#4474e1"
     },
     {
       "id": "G_SYS_POLICY_010",
@@ -4592,7 +5098,8 @@
       "cluster": "G_SYS_POLICY",
       "degree": 10,
       "strength": 7.853355,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#487fd4"
     },
     {
       "id": "G_SYS_SECADV_001",
@@ -4601,7 +5108,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 11,
       "strength": 8.01827,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#493ad5"
     },
     {
       "id": "G_SYS_SECADV_002",
@@ -4610,7 +5118,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 15,
       "strength": 11.24415,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#2128db"
     },
     {
       "id": "G_SYS_SECADV_004",
@@ -4619,7 +5128,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 10,
       "strength": 7.747711,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#8653ea"
     },
     {
       "id": "G_SYS_SECADV_005",
@@ -4628,7 +5138,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 16,
       "strength": 12.131874,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#9e6fef"
     },
     {
       "id": "G_SYS_SECADV_006",
@@ -4637,7 +5148,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 9,
       "strength": 6.637187,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#7c99e7"
     },
     {
       "id": "G_SYS_SECADV_009",
@@ -4646,7 +5158,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.423128,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8871f0"
     },
     {
       "id": "G_SYS_SECADV_010",
@@ -4655,7 +5168,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.7202,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#4d4af7"
     },
     {
       "id": "G_SYS_SECADV_011",
@@ -4664,7 +5178,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 11,
       "strength": 8.167017,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#304bc5"
     },
     {
       "id": "G_SYS_SECADV_012",
@@ -4673,7 +5188,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 9,
       "strength": 6.378628,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#663ded"
     },
     {
       "id": "G_SYS_SECADV_014",
@@ -4682,7 +5198,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.446121,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#6c21f8"
     },
     {
       "id": "G_SYS_SECADV_015",
@@ -4691,7 +5208,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 10,
       "strength": 7.576305,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#0e1ced"
     },
     {
       "id": "G_SYS_SECADV_016",
@@ -4700,7 +5218,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 6.011359,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#090bc6"
     },
     {
       "id": "G_SYS_SECADV_018",
@@ -4709,7 +5228,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 9,
       "strength": 6.404402,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#585bdc"
     },
     {
       "id": "G_SYS_SECADV_019",
@@ -4718,7 +5238,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 12,
       "strength": 9.141528,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#1430e8"
     },
     {
       "id": "G_SYS_SECADV_020",
@@ -4727,7 +5248,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.691455,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#7e50e8"
     },
     {
       "id": "G_SYS_SECADV_021",
@@ -4736,7 +5258,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 9,
       "strength": 6.224458,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#4545e7"
     },
     {
       "id": "G_SYS_SECADV_023",
@@ -4745,7 +5268,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 10,
       "strength": 7.503617,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#754cf3"
     },
     {
       "id": "G_SYS_SECADV_025",
@@ -4754,7 +5278,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.460125,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#9261e9"
     },
     {
       "id": "G_SYS_SECADV_026",
@@ -4763,7 +5288,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 9,
       "strength": 6.769192,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#2933f1"
     },
     {
       "id": "G_SYS_SECADV_028",
@@ -4772,7 +5298,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 10,
       "strength": 7.573165,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#3153e9"
     },
     {
       "id": "G_SYS_SECADV_029",
@@ -4781,7 +5308,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 12,
       "strength": 8.957192,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#3651e1"
     },
     {
       "id": "G_SYS_SECADV_038",
@@ -4790,7 +5318,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.86833,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#4947f1"
     },
     {
       "id": "G_SYS_SECADV_042",
@@ -4799,7 +5328,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 10,
       "strength": 7.331052,
-      "graph_community": "community-5"
+      "graph_community": "community-5",
+      "color": "#4c53d9"
     },
     {
       "id": "G_SYS_SECADV_043",
@@ -4808,7 +5338,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 9,
       "strength": 6.724301,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#6681f2"
     },
     {
       "id": "G_SYS_SECADV_044",
@@ -4817,7 +5348,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.838525,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#655aea"
     },
     {
       "id": "G_SYS_SECADV_046",
@@ -4826,7 +5358,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 10,
       "strength": 7.6628,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#708ef5"
     },
     {
       "id": "G_SYS_SECADV_049",
@@ -4835,7 +5368,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.98376,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#4953ef"
     },
     {
       "id": "G_SYS_SECADV_050",
@@ -4844,7 +5378,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 12,
       "strength": 8.880871,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#221de7"
     },
     {
       "id": "G_SYS_SECADV_052",
@@ -4853,7 +5388,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.862137,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#5d51e1"
     },
     {
       "id": "G_SYS_SECADV_053",
@@ -4862,7 +5398,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.609649,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#d03df1"
     },
     {
       "id": "G_SYS_SECADV_055",
@@ -4871,7 +5408,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.94092,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#1c21f2"
     },
     {
       "id": "G_SYS_SECADV_057",
@@ -4880,7 +5418,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 16,
       "strength": 12.193658,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#0f25f1"
     },
     {
       "id": "G_SYS_SECADV_058",
@@ -4889,7 +5428,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 20,
       "strength": 15.103191,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#2c58ba"
     },
     {
       "id": "G_SYS_SECADV_059",
@@ -4898,7 +5438,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 9,
       "strength": 6.170867,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#a86be6"
     },
     {
       "id": "G_SYS_SECADV_060",
@@ -4907,7 +5448,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 10,
       "strength": 7.240112,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#4732ef"
     },
     {
       "id": "G_SYS_SECADV_061",
@@ -4916,7 +5458,8 @@
       "cluster": "G_SYS_SECADV",
       "degree": 8,
       "strength": 5.713893,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#3f41e6"
     },
     {
       "id": "G_SYS_TRANS_001",
@@ -4925,7 +5468,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 10,
       "strength": 6.857908,
-      "graph_community": "community-4"
+      "graph_community": "community-4",
+      "color": "#573ce1"
     },
     {
       "id": "G_SYS_TRANS_002",
@@ -4934,7 +5478,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 11,
       "strength": 8.521932,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#b281ee"
     },
     {
       "id": "G_SYS_TRANS_003",
@@ -4943,7 +5488,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 8,
       "strength": 5.417764,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8a4bf6"
     },
     {
       "id": "G_SYS_TRANS_004",
@@ -4952,7 +5498,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 8,
       "strength": 5.397287,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#8e35da"
     },
     {
       "id": "G_SYS_TRANS_006",
@@ -4961,7 +5508,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 12,
       "strength": 9.056938,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#d14fe3"
     },
     {
       "id": "G_SYS_TRANS_009",
@@ -4970,7 +5518,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 12,
       "strength": 9.34248,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#b27be8"
     },
     {
       "id": "G_SYS_TRANS_010",
@@ -4979,7 +5528,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 13,
       "strength": 9.786868,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#8732de"
     },
     {
       "id": "G_SYS_TRANS_012",
@@ -4988,7 +5538,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 20,
       "strength": 15.871049,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#9d52e3"
     },
     {
       "id": "G_SYS_TRANS_015",
@@ -4997,7 +5548,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 9,
       "strength": 6.059804,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#4c36db"
     },
     {
       "id": "G_SYS_TRANS_016",
@@ -5006,7 +5558,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 9,
       "strength": 6.742788,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#aa82ed"
     },
     {
       "id": "G_SYS_TRANS_017",
@@ -5015,7 +5568,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 8,
       "strength": 6.035847,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#b486e9"
     },
     {
       "id": "G_SYS_TRANS_018",
@@ -5024,7 +5578,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 9,
       "strength": 6.958676,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#8c1fde"
     },
     {
       "id": "G_SYS_TRANS_021",
@@ -5033,7 +5588,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 9,
       "strength": 6.433883,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#864be6"
     },
     {
       "id": "G_SYS_TRANS_022",
@@ -5042,7 +5598,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 8,
       "strength": 5.305338,
-      "graph_community": "community-7"
+      "graph_community": "community-7",
+      "color": "#9082ed"
     },
     {
       "id": "G_SYS_TRANS_023",
@@ -5051,7 +5608,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 17,
       "strength": 13.015355,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#7a1fd5"
     },
     {
       "id": "G_SYS_TRANS_024",
@@ -5060,7 +5618,8 @@
       "cluster": "G_SYS_TRANS",
       "degree": 12,
       "strength": 9.218756,
-      "graph_community": "community-6"
+      "graph_community": "community-6",
+      "color": "#a045e8"
     },
     {
       "id": "P_INT_SAFETY_001",
@@ -5069,7 +5628,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 12,
       "strength": 9.295286,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#059ca9"
     },
     {
       "id": "P_INT_SAFETY_005",
@@ -5078,7 +5638,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 16,
       "strength": 12.041096,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#13c571"
     },
     {
       "id": "P_INT_SAFETY_006",
@@ -5087,7 +5648,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 27,
       "strength": 20.721328,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#07a292"
     },
     {
       "id": "P_INT_SAFETY_007",
@@ -5096,7 +5658,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 8,
       "strength": 6.183136,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0a9c93"
     },
     {
       "id": "P_INT_SAFETY_008",
@@ -5105,7 +5668,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 10,
       "strength": 7.462274,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#10a96f"
     },
     {
       "id": "P_INT_SAFETY_009",
@@ -5114,7 +5678,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 38,
       "strength": 28.879628,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#10a071"
     },
     {
       "id": "P_INT_SAFETY_010",
@@ -5123,7 +5688,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 8,
       "strength": 5.81671,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#118839"
     },
     {
       "id": "P_INT_SAFETY_011",
@@ -5132,7 +5698,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 25,
       "strength": 19.373935,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0ca19e"
     },
     {
       "id": "P_INT_SAFETY_012",
@@ -5141,7 +5708,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 12,
       "strength": 9.258494,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#0c9898"
     },
     {
       "id": "P_INT_SAFETY_015",
@@ -5150,7 +5718,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 26,
       "strength": 19.684726,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0d915b"
     },
     {
       "id": "P_INT_SAFETY_016",
@@ -5159,7 +5728,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 26,
       "strength": 19.393669,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#10b05a"
     },
     {
       "id": "P_INT_SAFETY_017",
@@ -5168,7 +5738,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 13,
       "strength": 9.372251,
-      "graph_community": "community-8"
+      "graph_community": "community-8",
+      "color": "#049504"
     },
     {
       "id": "P_INT_SAFETY_018",
@@ -5177,7 +5748,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 12,
       "strength": 8.734408,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0c8d47"
     },
     {
       "id": "P_INT_SAFETY_020",
@@ -5186,7 +5758,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 11,
       "strength": 8.071345,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0b9e5e"
     },
     {
       "id": "P_INT_SAFETY_021",
@@ -5195,7 +5768,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 9,
       "strength": 6.351908,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#06de5f"
     },
     {
       "id": "P_INT_SAFETY_023",
@@ -5204,7 +5778,8 @@
       "cluster": "P_INT_SAFETY",
       "degree": 11,
       "strength": 8.471959,
-      "graph_community": "community-2"
+      "graph_community": "community-2",
+      "color": "#07aca8"
     },
     {
       "id": "P_INT_TAMPER_002",
@@ -5213,7 +5788,8 @@
       "cluster": "P_INT_TAMPER",
       "degree": 11,
       "strength": 8.237652,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0798a5"
     },
     {
       "id": "P_INT_TAMPER_003",
@@ -5222,7 +5798,8 @@
       "cluster": "P_INT_TAMPER",
       "degree": 9,
       "strength": 6.783668,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#042ca9"
     },
     {
       "id": "P_SYS_CONTROL_001",
@@ -5231,7 +5808,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 16,
       "strength": 12.008258,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#19807b"
     },
     {
       "id": "P_SYS_CONTROL_002",
@@ -5240,7 +5818,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 11,
       "strength": 8.02318,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#288a71"
     },
     {
       "id": "P_SYS_CONTROL_003",
@@ -5249,7 +5828,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.983485,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#248e85"
     },
     {
       "id": "P_SYS_CONTROL_006",
@@ -5258,7 +5838,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.722988,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#297e76"
     },
     {
       "id": "P_SYS_CONTROL_007",
@@ -5267,7 +5848,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 10,
       "strength": 6.982604,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1f7a72"
     },
     {
       "id": "P_SYS_CONTROL_012",
@@ -5276,7 +5858,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 15,
       "strength": 11.248219,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#1d9881"
     },
     {
       "id": "P_SYS_CONTROL_013",
@@ -5285,7 +5868,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 10,
       "strength": 7.457132,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#199984"
     },
     {
       "id": "P_SYS_CONTROL_015",
@@ -5294,7 +5878,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.952368,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#297070"
     },
     {
       "id": "P_SYS_CONTROL_016",
@@ -5303,7 +5888,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 13,
       "strength": 10.061931,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#32b693"
     },
     {
       "id": "P_SYS_CONTROL_017",
@@ -5312,7 +5898,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 15,
       "strength": 11.791911,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#259a83"
     },
     {
       "id": "P_SYS_CONTROL_018",
@@ -5321,7 +5908,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.797944,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1f7a71"
     },
     {
       "id": "P_SYS_CONTROL_019",
@@ -5330,7 +5918,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 9,
       "strength": 6.629115,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#267364"
     },
     {
       "id": "P_SYS_CONTROL_022",
@@ -5339,7 +5928,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 12,
       "strength": 8.973623,
-      "graph_community": "community-1"
+      "graph_community": "community-1",
+      "color": "#3fc7c0"
     },
     {
       "id": "P_SYS_CONTROL_023",
@@ -5348,7 +5938,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.796139,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#109b63"
     },
     {
       "id": "P_SYS_CONTROL_024",
@@ -5357,7 +5948,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 9,
       "strength": 6.675465,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1f7a4b"
     },
     {
       "id": "P_SYS_CONTROL_025",
@@ -5366,7 +5958,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 10,
       "strength": 7.336698,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1b9c6b"
     },
     {
       "id": "P_SYS_CONTROL_026",
@@ -5375,7 +5968,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 16,
       "strength": 11.716678,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#108967"
     },
     {
       "id": "P_SYS_CONTROL_027",
@@ -5384,7 +5978,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.749329,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1c7d46"
     },
     {
       "id": "P_SYS_CONTROL_030",
@@ -5393,7 +5988,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.96338,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#2da2aa"
     },
     {
       "id": "P_SYS_CONTROL_033",
@@ -5402,7 +5998,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 19,
       "strength": 14.024124,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#198066"
     },
     {
       "id": "P_SYS_CONTROL_034",
@@ -5411,7 +6008,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.662779,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1a7f7d"
     },
     {
       "id": "P_SYS_CONTROL_037",
@@ -5420,7 +6018,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 14,
       "strength": 10.344224,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#23a7a0"
     },
     {
       "id": "P_SYS_CONTROL_038",
@@ -5429,7 +6028,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 9,
       "strength": 6.57174,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1e7b79"
     },
     {
       "id": "P_SYS_CONTROL_040",
@@ -5438,7 +6038,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 10,
       "strength": 7.335575,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#177e82"
     },
     {
       "id": "P_SYS_CONTROL_042",
@@ -5447,7 +6048,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 20,
       "strength": 15.047041,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#198b77"
     },
     {
       "id": "P_SYS_CONTROL_043",
@@ -5456,7 +6058,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 13,
       "strength": 9.752374,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1b937e"
     },
     {
       "id": "P_SYS_CONTROL_044",
@@ -5465,7 +6068,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.875679,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#158d66"
     },
     {
       "id": "P_SYS_CONTROL_046",
@@ -5474,7 +6078,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.698382,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1b7e71"
     },
     {
       "id": "P_SYS_CONTROL_047",
@@ -5483,7 +6088,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 11,
       "strength": 7.821735,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#15a177"
     },
     {
       "id": "P_SYS_CONTROL_050",
@@ -5492,7 +6098,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 10,
       "strength": 7.362451,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#1c7d69"
     },
     {
       "id": "P_SYS_CONTROL_051",
@@ -5501,7 +6108,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 36,
       "strength": 27.437915,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#32ad9c"
     },
     {
       "id": "P_SYS_CONTROL_052",
@@ -5510,7 +6118,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 28,
       "strength": 21.304033,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#33a194"
     },
     {
       "id": "P_SYS_CONTROL_054",
@@ -5519,7 +6128,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 9,
       "strength": 6.781459,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#248f7c"
     },
     {
       "id": "P_SYS_CONTROL_055",
@@ -5528,7 +6138,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.86813,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#129973"
     },
     {
       "id": "P_SYS_CONTROL_056",
@@ -5537,7 +6148,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.484708,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#289545"
     },
     {
       "id": "P_SYS_CONTROL_057",
@@ -5546,7 +6158,8 @@
       "cluster": "P_SYS_CONTROL",
       "degree": 15,
       "strength": 11.341513,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#229983"
     },
     {
       "id": "P_SYS_HARDWARE_002",
@@ -5555,7 +6168,8 @@
       "cluster": "P_SYS_HARDWARE",
       "degree": 8,
       "strength": 5.75706,
-      "graph_community": "community-0"
+      "graph_community": "community-0",
+      "color": "#06ba96"
     },
     {
       "id": "P_SYS_HARDWARE_003",
@@ -5564,7 +6178,8 @@
       "cluster": "P_SYS_HARDWARE",
       "degree": 9,
       "strength": 6.591353,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0c79a4"
     },
     {
       "id": "P_SYS_STATE_003",
@@ -5573,7 +6188,8 @@
       "cluster": "P_SYS_STATE",
       "degree": 8,
       "strength": 5.74331,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0fe947"
     },
     {
       "id": "P_SYS_STATE_004",
@@ -5582,7 +6198,8 @@
       "cluster": "P_SYS_STATE",
       "degree": 17,
       "strength": 12.882917,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0f9244"
     },
     {
       "id": "P_SYS_STATE_006",
@@ -5591,7 +6208,8 @@
       "cluster": "P_SYS_STATE",
       "degree": 8,
       "strength": 5.75889,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#04955a"
     },
     {
       "id": "P_SYS_STATE_007",
@@ -5600,7 +6218,8 @@
       "cluster": "P_SYS_STATE",
       "degree": 8,
       "strength": 5.293635,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0a8f13"
     },
     {
       "id": "P_SYS_STATE_008",
@@ -5609,7 +6228,8 @@
       "cluster": "P_SYS_STATE",
       "degree": 8,
       "strength": 5.796752,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#0ac68c"
     },
     {
       "id": "P_SYS_STATE_009",
@@ -5618,7 +6238,8 @@
       "cluster": "P_SYS_STATE",
       "degree": 10,
       "strength": 7.491426,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#21afa5"
     },
     {
       "id": "P_SYS_STATE_011",
@@ -5627,7 +6248,8 @@
       "cluster": "P_SYS_STATE",
       "degree": 9,
       "strength": 6.449864,
-      "graph_community": "community-3"
+      "graph_community": "community-3",
+      "color": "#05bb52"
     }
   ],
   "edges": [

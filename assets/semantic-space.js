@@ -87,7 +87,7 @@
     get('semantic-status').textContent = 'Loading the risk text projection…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=strong-l3-gradients-20261010'), fetch('data/heart_l4_risk_cards.json')]);
+      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=solid-l4-colours-20261010'), fetch('data/heart_l4_risk_cards.json')]);
       if (!spaceResponse.ok || !cardResponse.ok) throw new Error('The semantic-space data could not be loaded.');
       const cardText = await cardResponse.text();
       const space = await spaceResponse.json();
@@ -101,7 +101,7 @@
       if (space.points.length !== sourceCards.length || space.points.some(point => !lookup.has(point.id))) throw new Error('Projection/card IDs do not match.');
       data = space; cards = sourceCards; byId = lookup;
       buildControls();
-      get('semantic-method-stats').textContent = `${data.card_count} unchanged risk cards; ${data.clusters.length} human-defined L3 colour groups; ${data.edges.length.toLocaleString()} weighted links. Embeddings: BGE-M3, ${data.method.embedding_dimensions} dimensions; Ollama ${data.method.ollama_version}; model digest ${data.method.model_revision}. L1 anchors and L3 definition similarity determine colour; ForceAtlas2 determines layout. Louvain communities remain diagnostic metadata, not displayed colour groups or new taxonomy assignments.`;
+      get('semantic-method-stats').textContent = `${data.card_count} unchanged risk cards; ${data.clusters.length} human-defined L3 colour groups; ${data.edges.length.toLocaleString()} weighted links. Embeddings: BGE-M3, ${data.method.embedding_dimensions} dimensions; Ollama ${data.method.ollama_version}; model digest ${data.method.model_revision}. L1 anchors, L3 definitions and within-L3 L4 semantic variation determine solid node colours; ForceAtlas2 determines layout. Darker does not mean higher risk. Louvain communities remain diagnostic metadata, not displayed colour groups or new taxonomy assignments.`;
       render();
     } catch (error) {
       get('semantic-status').textContent = error.message;
@@ -117,7 +117,7 @@
     }).join('');
     get('semantic-clusters').parentElement.open = false;
     const strengths = data.points.map(point=>point.strength);
-    get('semantic-legend').innerHTML = Object.entries(data.l1_colors).map(([id,color])=>`<span class="semantic-domain-key"><i class="community-dot" style="background:${escape(color)}"></i>${escape(data.clusters.find(item=>item.L1_ID===id).L1_Title_en)}</span>`).join(' ') + `<p>Colour: 47 L3 categories within 3 L1 anchors; boundary blends show semantic proximity, not assignment uncertainty. Similarity-based shades are approximate, not a distance-preserving map. Size: weighted degree, ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)}. Pale nodes: inactive.</p>`;
+    get('semantic-legend').innerHTML = Object.entries(data.l1_colors).map(([id,color])=>`<span class="semantic-domain-key"><i class="community-dot" style="background:${escape(color)}"></i>${escape(data.clusters.find(item=>item.L1_ID===id).L1_Title_en)}</span>`).join(' ') + `<p>Colour: individual L4 semantic shades within 47 L3 categories and 3 L1 anchors. Boundary mixtures show proximity, not assignment uncertainty; darker does not mean higher risk. Shades are approximate, not a distance-preserving map. Size: weighted degree, ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)}. Pale nodes: inactive.</p>`;
     get('semantic-keywords').innerHTML = `<button type="button" aria-pressed="true" data-keyword="">All keywords</button>` + data.keywords.map(item => `<button type="button" aria-pressed="false" data-keyword="${escape(item.id)}">${escape(item.name)}</button>`).join('');
     for (const [container, kind] of [['semantic-scenarios','scenario'],['semantic-clusters','cluster'],['semantic-keywords','keyword']]) {
       get(container).addEventListener('click', event => {
@@ -168,7 +168,6 @@
     const sy = y => height/2 - (y-(lowY+highY)/2)*scale;
     locations = new Map(data.points.map(point => [point.id, {x:sx(point.x),y:sy(point.y)}]));
     let markup = '<desc>Transformer-embedding neighbours, Louvain communities and ForceAtlas2 layout. Edges are not causal paths. Filtering does not change taxonomy assignments.</desc>';
-    markup += '<defs>' + data.clusters.map(item=>`<linearGradient id="l3-gradient-${escape(item.id)}" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${escape(item.gradient_start)}"/><stop offset="100%" stop-color="${escape(item.gradient_end)}"/></linearGradient>`).join('') + '</defs>';
     for (let index = 0; index <= 8; index++) {
       const x = left + (right-left)*index/8, y = top + (bottom-top)*index/8;
       markup += `<line class="semantic-grid-line" x1="${x}" y1="${top}" x2="${x}" y2="${bottom}"/><line class="semantic-grid-line" x1="${left}" y1="${y}" x2="${right}" y2="${y}"/>`;
@@ -191,7 +190,7 @@
       const radius = nodeRadius(point.strength,minStrength,maxStrength);
       const cluster = data.clusters.find(item=>item.id===point.cluster);
       if (point.id===selectedId && active) markup += `<circle class="semantic-halo" cx="${p.x}" cy="${p.y}" r="${radius+5}"/>`;
-      markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" aria-label="${escape(point.id + ': ' + card.L4_Name_en)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="url(#l3-gradient-${escape(cluster.id)})"/>`;
+      markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" aria-label="${escape(point.id + ': ' + card.L4_Name_en)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="${escape(point.color)}"/>`;
     }
     markup += '</g><g id="semantic-label-layer"></g>';
     svg.innerHTML = markup;

@@ -161,6 +161,14 @@ def main():
     result['l1_colors'] = colour_data['base_colors']
     result['method']['node_colour'] = colour_data['method']
     result['method']['colour_limitations'] = colour_data['limitations']
+    l4_colours = json.loads((ROOT / 'data/l4_semantic_colours.json').read_text())
+    assert l4_colours['source_sha256'] == hashlib.sha256(raw).hexdigest()
+    assert l4_colours['l3_palette_sha256'] == hashlib.sha256((ROOT / 'data/l3_semantic_colours.json').read_bytes()).hexdigest()
+    assert l4_colours['model_revision'] == revision
+    by_colour = {item['id']:item for item in l4_colours['points']}
+    for point in result['points']:
+        point['color'] = by_colour[point['id']]['color']
+    result['method']['node_colour'] = l4_colours['method']
     assert np.isfinite(xy).all() and len(cards)==622
     assert source.read_bytes()==raw
     (ROOT/'data/semantic_space.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
