@@ -7,7 +7,7 @@ for (const file of ['index.html', 'incidents.html']) {
   const nav = read(file).match(/<nav class="section-nav"[\s\S]*?<\/nav>/)[0];
   assert(nav.indexOf('AI risk taxonomy') < nav.indexOf('AI risk space'));
   assert(nav.indexOf('AI risk space') < nav.indexOf('AI risk incidents'));
-  assert(nav.includes('href="incidents.html"'));
+  assert(/href="incidents\.html(?:\?[^\"]*)?"/.test(nav));
   assert(!nav.includes('>Risk cards<'));
 }
 const incidents = read('incidents.html');
@@ -29,7 +29,7 @@ assert(!/<details id="mapping-details"[^>]*\bopen\b/.test(about));
 assert(disclosure[1].includes('Technical process and AI for Everyone (Korea) example'));
 assert(disclosure[1].includes('295 candidate cards'));
 assert(disclosure[1].includes('L2-normalised'));
-assert(about.indexOf('Keywords select candidate cards') < about.indexOf('<details id="mapping-details"'));
+assert(about.indexOf('Keywords combine semantic similarity') < about.indexOf('<details id="mapping-details"'));
 for (const text of ['Keywords &amp; applications mapping', 'L2-normalised', 'concept-specific threshold', 'explicit exclusions applied last', '295 candidate cards (259 General, 36 Agentic)']) assert(about.includes(text));
 const network = JSON.parse(read('data/semantic_space.json'));
 const cards = JSON.parse(read('data/heart_l4_risk_cards.json'));

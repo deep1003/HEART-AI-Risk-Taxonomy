@@ -4,6 +4,12 @@ HEART is the **Hybrid Evidence-based AI Risk Taxonomy** for General, Agentic, an
 
 This repository publishes the canonical L4 risk-card dataset and an English-first browser. Korean text is retained only where it is part of the official bilingual taxonomy: names, hierarchy labels, and risk definitions.
 
+## Technical Report
+
+The reviewed master of 10 October 2026 is available as the [42-page Technical Report](reports/HEART_Technical_Report_20261010.pdf) and its [verified 57-file LaTeX source bundle](reports/HEART_Technical_Report_20261010_source.zip). [About HEART](https://deep1003.github.io/HEART-AI-Risk-Taxonomy/about.html) summarises the algorithms, reference agreement, sensitivity and limitations, with technical details collapsed by default. [Release metadata](reports/release_20261010.json) records SHA-256 hashes.
+
+Algorithm 1 is an iterative consolidation stage evaluation, not reproduction of the expert-rewritten 622-card set. Algorithm 2 evaluates agreement with expert assignments, not independent objective accuracy. MIT remains an appendix with source-overlap limitations. The published card datasets and golden reference were not changed by this report release.
+
 ## Dataset
 
 The release contains 622 active L4 risk cards across 47 L3 categories:

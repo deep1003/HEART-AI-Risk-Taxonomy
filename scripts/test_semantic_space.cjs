@@ -119,7 +119,7 @@ assert(!html.includes('class="hero"'));
 assert(html.includes('>AI risk space</button>'));
 assert(html.includes('Keywords &amp; applications'));
 assert(!html.includes('class="semantic-active-risks"'));
-assert(html.includes('href="about.html" target="_blank"'));
+assert(/href="about\.html(?:\?[^\"]*)?"/.test(html));
 const about=fs.readFileSync(path.join(root,'about.html'),'utf8');
 assert(about.includes('<h1>About HEART</h1>'));
 for(const heading of ['Why HEART','Data and structure','Methods','How to use it','Limits']) assert(about.includes(`<h2>${heading}</h2>`));

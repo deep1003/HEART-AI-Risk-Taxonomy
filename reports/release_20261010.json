@@ -1,0 +1,27 @@
+{
+  "master_date": "2026-10-10",
+  "pdf_pages": 42,
+  "source_files": 57,
+  "files": {
+    "HEART_Technical_Report_20261010.pdf": {
+      "sha256": "e9e999369215e3e3e22ae4ac027c4914163dea9649bbf1294a0991345a6b4bcf",
+      "bytes": 5100676
+    },
+    "HEART_Technical_Report_20261010_source.zip": {
+      "sha256": "3db32d565d0889cee53a98d0d9e0623824858f75d333489b04e7e0c2d9d6e8b6",
+      "bytes": 11897737
+    }
+  },
+  "reference": {
+    "L3_categories": 47,
+    "L4_cards": 622,
+    "unchanged": true
+  },
+  "evaluation": {
+    "algorithm_1": "Iterative consolidation stage evaluation",
+    "algorithm_2": "Fixed-reference assignment agreement",
+    "MIT": "Related-corpus structural replication in Appendix C"
+  },
+  "local_online_source_byte_match": true,
+  "local_online_pdf_normalized_text_match": true
+}
