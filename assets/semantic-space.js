@@ -62,7 +62,7 @@
     get('risk-cards-tab').setAttribute('aria-selected', String(!semantic));
     get('semantic-space-tab').tabIndex = semantic ? 0 : -1;
     get('risk-cards-tab').tabIndex = semantic ? -1 : 0;
-    history.replaceState(null, '', semantic ? '#semantic-space' : '#explore');
+    history.replaceState(null, '', semantic ? '#ai-risk-space' : '#explore');
     if (semantic) load();
     get(semantic ? 'semantic-space' : 'explore').scrollIntoView({block:'start', behavior:'instant'});
   }
@@ -76,7 +76,7 @@
       get(semantic ? 'semantic-space-tab' : 'risk-cards-tab').focus();
     }
   });
-  document.querySelectorAll('a[href="#semantic-space"]').forEach(link => link.addEventListener('click', () => switchTab(true)));
+  document.querySelectorAll('a[href="#semantic-space"],a[href="#ai-risk-space"]').forEach(link => link.addEventListener('click', event => {event.preventDefault(); switchTab(true);}));
   document.querySelectorAll('a[href="#explore"],a[href="#taxonomy-panel"]').forEach(link => link.addEventListener('click', () => switchTab(false)));
   get('semantic-reset').addEventListener('click', () => {
     Object.assign(filters, {scenario:'', cluster:'', keyword:''});
@@ -115,22 +115,18 @@
   }
 
   function buildControls() {
-    get('semantic-scenarios').innerHTML = data.scenarios.map(item => `<button class="semantic-community" type="button" aria-pressed="false" data-scenario="${escape(item.id)}"><strong>${escape(item.name)}</strong><small lang="ko">${escape(item.name_ko)}</small><small>${item.ids.length} potentially relevant risks</small></button>`).join('');
-    get('semantic-clusters').innerHTML = ['L1_G','L1_A','L1_P'].map(domain=>{
-      const categories=data.clusters.filter(item=>item.L1_ID===domain);
-      return `<section class="semantic-l1-group"><h4><i class="community-dot" style="background:${escape(data.l1_colors[domain])}"></i>${escape(categories[0].L1_Title_en)}</h4>${[...new Set(categories.map(item=>item.L2_ID))].map(area=>`<div class="semantic-l2-group"><h5>${escape(categories.find(item=>item.L2_ID===area).L2_Title_en)}</h5>${categories.filter(item=>item.L2_ID===area).map(item=>`<button class="semantic-community" type="button" aria-pressed="false" data-cluster="${escape(item.id)}"><i class="community-dot" style="background:${escape(item.color)}"></i>${escape(item.name)}<small>${escape(item.id)} · ${item.ids.length} risks</small></button>`).join('')}</div>`).join('')}</section>`;
-    }).join('');
-    get('semantic-clusters').parentElement.open = false;
+    get('semantic-scenarios').innerHTML = data.scenarios.map(item => `<button type="button" aria-pressed="false" data-scenario="${escape(item.id)}">${escape(item.name)}</button>`).join('');
     const strengths = data.points.map(point=>point.strength);
     get('semantic-legend').innerHTML = Object.entries(data.l1_colors).map(([id,color])=>`<span class="semantic-domain-key"><i class="community-dot" style="background:${escape(color)}"></i>${escape(data.clusters.find(item=>item.L1_ID===id).L1_Title_en)}</span>`).join(' ') + `<p>Colour: individual L4 semantic shades within 47 L3 categories and 3 L1 anchors. Boundary mixtures show proximity, not assignment uncertainty; darker does not mean higher risk. Shades are approximate, not a distance-preserving map. Size: weighted degree, ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)}. Pale nodes: inactive.</p>`;
-    get('semantic-keywords').innerHTML = `<button type="button" aria-pressed="true" data-keyword="">All keywords</button>` + data.keywords.map(item => `<button type="button" aria-pressed="false" data-keyword="${escape(item.id)}">${escape(item.name)}</button>`).join('');
-    for (const [container, kind] of [['semantic-scenarios','scenario'],['semantic-clusters','cluster'],['semantic-keywords','keyword']]) {
+    get('semantic-keywords').innerHTML = `<button type="button" aria-pressed="true" data-keyword="">All risks</button>` + data.keywords.map(item => `<button type="button" aria-pressed="false" data-keyword="${escape(item.id)}">${escape(item.name)}</button>`).join('');
+    for (const [container, kind] of [['semantic-scenarios','scenario'],['semantic-keywords','keyword']]) {
       get(container).addEventListener('click', event => {
         const button = event.target.closest(`[data-${kind}]`);
         if (!button || button.disabled) return;
         const value = button.dataset[kind];
         filters[kind] = filters[kind] === value ? '' : value;
         if (kind === 'scenario') {filters.cluster = ''; filters.keyword = '';}
+        else {filters.scenario = '';}
         visible = 16;
         render();
       });
@@ -147,7 +143,7 @@
     const definitionPanel = get('semantic-keyword-definition');
     definitionPanel.hidden = !keyword;
     definitionPanel.innerHTML = keyword ? `<h4>${escape(keyword.name)} · Concept definition</h4><p>${escape(keyword.definition)}</p>${keyword.url ? `<blockquote>“${escape(keyword.quote)}”</blockquote><p><a href="${escape(keyword.url)}" target="_blank" rel="noopener noreferrer">${escape(keyword.reference_title)}</a> · ${escape(keyword.quote_location)}</p>` : ''}<details><summary>Concept scope and mapping method</summary><p class="source-note">${escape(keyword.scope)}</p><p class="source-note">${keyword.mapping_mode === 'taxonomy' ? 'Existing human-approved L1 assignments. No similarity-based reassignment.' : `Operational synthesis based on the cited source, not a verbatim source definition. BGE-M3 definition-to-card cosine retrieval; threshold ${escape(keyword.threshold)} with documented AI-specialist scope corrections. Exploratory relevance, not validated classification accuracy.`}</p></details>` : '';
-    get('semantic-selection-description').innerHTML = escape(scenario?.description || 'A connected semantic network of the current L4 cards. Select a community or keyword, zoom, or drag the background to explore.') + (scenario?.source_url ? [{url:scenario.source_url,label:scenario.source_label},...(scenario.additional_sources||[])].map(source=>` <a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.label)}</a>`).join(' · ') : '');
+    get('semantic-selection-description').innerHTML = escape(scenario?.description || 'Explore the current L4 cards by keyword or application. Filters highlight relevance without changing the taxonomy.') + (scenario?.source_url ? [{url:scenario.source_url,label:scenario.source_label},...(scenario.additional_sources||[])].map(source=>` <a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.label)}</a>`).join(' · ') : '');
     get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}. Inactive risks remain as pale context.`;
     for (const kind of ['scenario','cluster','keyword']) {
       document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind])));
@@ -209,6 +205,7 @@
   function renderList() {
     const active = cards.filter(card => enabledIds.has(card.L4_ID)).sort((a,b) => a.L4_ID.localeCompare(b.L4_ID));
     get('semantic-list-count').textContent = `${Math.min(visible, active.length)} of ${active.length} shown`;
+    get('semantic-active-summary').textContent = `View active risks (${active.length})`;
     get('semantic-risk-list').innerHTML = active.slice(0, visible).map(card => `<button type="button" class="semantic-risk-item" data-card="${escape(card.L4_ID)}"><code>${escape(card.L4_ID)} · ${escape(card.L1_Name_en)}</code><strong>${escape(card.L4_Name_en)}</strong><span lang="ko">${escape(card.L4_Name_ko)}</span><span>${escape(card.L3_Name_en)}</span></button>`).join('') || '<p>No risks match this combination. Choose another keyword or reset the filters.</p>';
     get('semantic-more').hidden = active.length <= visible;
   }
@@ -332,10 +329,10 @@
   });
   new ResizeObserver(() => {if (data && !get('semantic-space').hidden) draw();}).observe(get('semantic-plot').parentElement);
   window.addEventListener('hashchange',()=>{
-    if(location.hash==='#semantic-space' && get('semantic-space').hidden) switchTab(true);
+    if(['#semantic-space','#ai-risk-space'].includes(location.hash) && get('semantic-space').hidden) switchTab(true);
     else if(['#explore','#taxonomy-panel'].includes(location.hash) && get('explore').hidden) switchTab(false);
   });
   if (['#explore','#taxonomy-panel'].includes(location.hash)) switchTab(false);
-  else if (!location.hash || location.hash === '#semantic-space') switchTab(true);
+  else if (!location.hash || ['#semantic-space','#ai-risk-space'].includes(location.hash)) switchTab(true);
   else load();
 })();

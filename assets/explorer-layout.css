@@ -1,0 +1,20 @@
+/* Shared exploration shell. Taxonomy navigation remains inside Risk cards. */
+.site-header nav a{display:inline!important}
+.semantic-section{max-width:none;padding:30px max(24px,calc((100vw - 1680px)/2)) 64px}
+.semantic-layout{display:block}
+.semantic-main{min-width:0}
+.semantic-filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.semantic-filter-bar .semantic-keywords{display:contents}
+.semantic-filter-bar button{padding:8px 13px;border:1px solid #d8dee8;background:#fff;color:#475467;border-radius:20px;font-size:.83rem;cursor:pointer;line-height:1.4}
+.semantic-filter-bar button[aria-pressed=true]{background:#18213d;color:#fff;border-color:#18213d}
+.semantic-filter-bar [data-scenario]{border-color:#b5c7d8;background:#f4f8fb}
+.semantic-active-risks{margin-top:24px;border-top:1px solid #e2e7ef;padding-top:18px}
+.semantic-active-risks>summary{font-weight:650;color:#253854;cursor:pointer}
+.about-content{max-width:1100px;margin:0 auto;padding:48px 24px 64px;color:#344054}
+.about-content h2{font-size:1.7rem;color:#18213d;margin-top:34px}
+.about-content h3{color:#18213d}
+.about-content p,.about-content li{line-height:1.75}
+.about-content a{color:#214aa8}
+.about-content .guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.guide-grid section{padding:20px 24px;background:#f5f7fb;border:1px solid #e2e7ef;border-radius:12px}
+@media(max-width:760px){.semantic-section{padding:24px 16px 48px}.semantic-filter-bar button{min-height:44px}.about-content .guide-grid{grid-template-columns:1fr}.site-header nav{gap:12px}}

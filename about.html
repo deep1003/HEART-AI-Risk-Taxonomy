@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About HEART and a guide to exploring the AI risk space and evidence-linked risk cards.">
+  <title>About HEART | AI risk space</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles-v2.css">
+  <link rel="stylesheet" href="assets/institution.css">
+  <link rel="stylesheet" href="assets/explorer-layout.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="HEART home"><span class="brand-mark kt-brand-mark"><img src="assets/kt-logo-light.svg" alt="KT" width="40" height="40"></span><span><strong>HEART</strong><small>Hybrid Evidence-based AI Risk Taxonomy</small></span></a>
+    <nav aria-label="Primary navigation"><a href="./#ai-risk-space">AI risk space</a><a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="page-breadcrumb"><a href="./">HEART</a><span>›</span><span>About HEART</span></div>
+      <div class="hero-copy-block">
+        <p class="eyebrow">Hybrid Evidence-based AI Risk Taxonomy</p>
+        <h1>HEART for General, Agentic, and Physical AI</h1>
+        <p class="hero-copy">HEART connects risk definitions with source evidence across General, Agentic, and Physical AI. Explore 622 bilingual risk cards organised within 47 categories and a stable five-level hierarchy.</p>
+        <p class="publisher-line">Published by <strong>Frontier AI Lab, KT Corporation</strong></p>
+        <a class="hero-action" href="./#ai-risk-space">Explore AI risk space</a>
+      </div>
+      <div class="stats" aria-label="Dataset summary">
+        <div><strong>3</strong><span>L1 operating domains</span></div>
+        <div><strong>3</strong><span>L2 risk areas</span></div>
+        <div><strong>47</strong><span>L3 risk categories</span></div>
+        <div><strong>622</strong><span>L4 risk cards</span></div>
+      </div>
+    </section>
+    <article class="about-content">
+      <h2>One taxonomy, two exploration views</h2>
+      <p>The hierarchy runs from L0 Responsible AI through L1 operating domains, L2 risk areas and L3 risk categories to specific L4 risk cards. General AI, Agentic AI and Physical AI contain 492, 67 and 63 cards respectively. The three conceptual L2 risk areas are System, Interaction and Societal Impact. Their domain-specific identifiers form seven populated branches.</p>
+      <p><strong>AI risk space</strong> reveals semantic relationships between existing cards. <strong>Risk cards</strong> combines the taxonomy tree with searchable card listings, bilingual definitions, available attributes and evidence references. These are complementary views of the same dataset, not different classifications.</p>
+      <h2>How to use AI risk space</h2>
+      <div class="guide-grid">
+        <section><h3>Select a keyword or application</h3><p>Choose a button above the graph to highlight potentially relevant risks. The active count updates inside the graph. Unselected risks remain as pale context. Selecting another button replaces the current lens; selecting it again clears it. Reset filters clears the selection and restores the initial view.</p><p>Keyword selections show a concept definition and linked source. Application selections show a service description and sources. General AI, Agentic AI and Physical AI use the existing human-approved L1 assignments; other lenses are exploratory relevance mappings.</p></section>
+        <section><h3>Zoom and pan</h3><p>Scroll or use a trackpad pinch over the graph to zoom around the pointer. Drag the background to pan. Double-click the background to reset the viewport without clearing the selected filter. As you zoom in, more individual L4 labels appear where space permits. Label placement avoids overlaps.</p><p>For keyboard navigation, focus the graph and use + or − to zoom and Home to reset the viewport.</p></section>
+        <section><h3>Inspect a risk card</h3><p>Hover over an active node to see its name, category and connectivity. Click a node or its label to show the complete card below the graph, without covering the network. The expandable active-risk list provides an alternative route to the same cards. Label buttons also support Enter and Space.</p></section>
+        <section><h3>Explore the hierarchy</h3><p>Open the Risk cards tab to browse the integrated taxonomy tree. Select an L1 domain, L2 area or L3 category to filter the cards. Search by ID, name, definition or evidence. On smaller screens, use Open taxonomy navigator to reveal the tree. The tree is not duplicated in AI risk space.</p></section>
+      </div>
+      <h2>Reading the graph</h2>
+      <p><strong>Position and links</strong> express semantic proximity, not observed causal propagation. English L4 names and definitions are encoded as L2-normalised, 1,024-dimensional BGE-M3 dense embeddings using Ollama 0.32.1. Links form the undirected union of each node's eight nearest neighbours, retaining cosine similarities of at least 0.60. Link weight equals cosine similarity. ForceAtlas2 provides the layout; the two-dimensional projection necessarily compresses the original semantic space.</p>
+      <p><strong>Colour</strong> starts from three L1 anchors: blue for General AI, orange for Agentic AI and teal for Physical AI. L3 titles and definitions and within-L3 L4 semantic variation produce related shades and bounded boundary mixtures. Colour does not change a card's human-approved taxonomy assignment. Darker shades do not mean more severe risks.</p>
+      <p><strong>Node size</strong> reflects weighted degree, the sum of incident link weights. Larger nodes are more connected under this graph construction, not necessarily more probable, severe or important. Weighted Louvain communities, calculated with NetworkX 3.5, resolution 1.0 and seed 23, remain diagnostic metadata rather than displayed taxonomy categories.</p>
+      <h2>Evidence and limitations</h2>
+      <p>Each card contains its identifier, bilingual name and definition, L1–L3 hierarchy, optional Facet and Act-type attributes, and retained evidence references. Probability and Severity are reserved fields and have no assigned values. References support interpretation of a risk; their presence does not establish its frequency or severity.</p>
+      <p>Keyword and application mappings are exploratory aids, not validated classification accuracy or applicability guarantees. Assess the actual system's capabilities, users and deployment context. Graph filters, colours and navigation do not modify the canonical card dataset.</p>
+      <p><a href="data/semantic_space_methods.md">Methods and provenance</a> · <a href="data/keyword_definitions.json">Keyword definitions and sources</a> · <a href="data/manifest.json">Release manifest</a> · <a href="data/validation.json">Validation record</a></p>
+      <h2>Publisher and contact</h2>
+      <p>Frontier AI Lab, KT Corporation<br><a href="mailto:responsible.ai@kt.com">responsible.ai@kt.com</a></p>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="footer-bottom"><span>HEART · 622 risk cards · 47 categories</span><a href="./#ai-risk-space">Explore AI risk space</a></div></footer>
+</body>
+</html>

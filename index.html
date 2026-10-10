@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/styles-v2.css">
   <link rel="stylesheet" href="assets/institution.css">
   <link rel="stylesheet" href="assets/semantic-space.css?v=weighted-l4-labels-click-20261010">
+  <link rel="stylesheet" href="assets/explorer-layout.css">
 </head>
 <body>
   <header class="site-header">
@@ -17,32 +18,13 @@
       <span><strong>HEART</strong><small>Hybrid Evidence-based AI Risk Taxonomy</small></span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#about">About HEART</a>
-      <a href="#semantic-space">Semantic space</a>
-      <a href="#explore">Taxonomy</a>
+      <a href="about.html" target="_blank" rel="noopener">About HEART</a>
       <a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="about">
-      <div class="page-breadcrumb"><a href="./">HEART</a><span>›</span><span>AI risk taxonomy</span></div>
-      <div class="hero-copy-block">
-        <p class="eyebrow">Hybrid Evidence-based AI Risk Taxonomy</p>
-        <h1>HEART for General, Agentic, and Physical AI</h1>
-        <p class="hero-copy">HEART connects risk definitions with source evidence across General, Agentic, and Physical AI. Explore 622 bilingual risk cards organised within 47 categories and a stable five-level hierarchy.</p>
-        <p class="publisher-line">Published by <strong>Frontier AI Lab, KT Corporation</strong></p>
-        <a class="hero-action" href="#explore">Explore the taxonomy</a>
-      </div>
-      <div class="stats" aria-label="Dataset summary">
-        <div><strong>3</strong><span>L1 operating domains</span></div>
-        <div><strong>3</strong><span>L2 risk areas</span></div>
-        <div><strong id="l3-count">47</strong><span>L3 risk categories</span></div>
-        <div><strong id="card-count">622</strong><span>L4 risk cards</span></div>
-      </div>
-    </section>
-
-    <nav class="section-nav" aria-label="Page sections"><a href="#about">Overview</a><div class="explorer-tabs" role="tablist" aria-label="Risk exploration views"><button id="semantic-space-tab" type="button" role="tab" aria-controls="semantic-space" aria-selected="true">Semantic space</button><a href="#taxonomy-panel">Taxonomy navigator</a><button id="risk-cards-tab" type="button" role="tab" aria-controls="explore" aria-selected="false" tabindex="-1">Risk cards</button></div></nav>
+    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs" role="tablist" aria-label="Risk exploration views"><button id="semantic-space-tab" type="button" role="tab" aria-controls="semantic-space" aria-selected="true">AI risk space</button><button id="risk-cards-tab" type="button" role="tab" aria-controls="explore" aria-selected="false" tabindex="-1">Risk cards</button></div></nav>
 
     <section class="explorer" id="explore" role="tabpanel" aria-labelledby="risk-cards-tab" hidden>
       <button id="tree-toggle" class="tree-toggle" type="button" aria-expanded="false" aria-controls="taxonomy-panel">Open taxonomy navigator</button>
@@ -74,16 +56,11 @@
     </section>
 
     <section id="semantic-space" class="semantic-section" role="tabpanel" aria-labelledby="semantic-space-tab">
-      <div class="semantic-heading"><div><p class="eyebrow">Connected risk exploration</p><h2>Semantic space</h2><p>Select an application community or a keyword to activate related risks. Select a point or list entry to open its existing L4 card.</p></div></div>
+      <div class="semantic-heading"><div><p class="eyebrow">Connected risk exploration</p><h2>AI risk space</h2><p>Select a keyword or application to explore related risks. Click a node to view its risk card.</p></div></div>
       <div class="semantic-layout">
-        <aside class="semantic-lenses" aria-label="Semantic community filters">
-          <h3>Application communities</h3><div id="semantic-scenarios"></div>
-          <p class="semantic-caution">Overlapping scenario lenses, not changes to the taxonomy. Applicability depends on the system's actual capabilities and deployment.</p>
-          <details><summary>L3 categories</summary><div id="semantic-clusters"></div></details>
-        </aside>
         <div class="semantic-main">
-          <div class="semantic-keyword-head"><h3>Risk keywords</h3></div>
-          <div id="semantic-keywords" class="semantic-keywords" aria-label="Risk keyword filters"></div>
+          <div class="semantic-keyword-head"><h3>Keywords &amp; applications</h3></div>
+          <div class="semantic-filter-bar"><div id="semantic-keywords" class="semantic-keywords" aria-label="Risk keyword filters"></div><div id="semantic-scenarios" class="semantic-keywords" aria-label="Application filters"></div></div>
           <div class="semantic-plot-heading"><div><h3 id="semantic-selection-name">All risks</h3><p id="semantic-selection-description"></p></div><button id="semantic-reset" type="button">Reset filters</button></div>
           <section id="semantic-keyword-definition" class="semantic-keyword-definition" aria-live="polite" hidden></section>
           <div class="semantic-network-toolbar" aria-label="Network navigation"><span>Colour by L4 semantic shades within L1/L3 · Size by weighted degree</span><span id="semantic-navigation-help">Scroll or trackpad pinch to zoom · Drag to pan · Double-click background to reset</span></div>
@@ -92,8 +69,7 @@
           <div id="semantic-legend" class="semantic-legend">Colours identify L3 categories anchored in L1 domains. Links indicate semantic proximity, not causal propagation.</div>
           <details class="semantic-method"><summary>Method and interpretation</summary><p>Current English L4 names and definitions are encoded locally by BGE-M3 through Ollama. Dense 1,024-dimensional embeddings are L2 normalised. Cosine-weighted nearest-neighbour links define a graph and ForceAtlas2 places nodes. Colour follows each card's human-approved L3 assignment. The 47 L3 titles and definitions use the same model; three fixed L1 colour anchors, bounded cross-domain blends and within-domain PCA variations encode approximate semantic relationships. Boundary shades do not mean assignment uncertainty. Node area reflects weighted degree, not risk severity.</p><p id="semantic-method-stats"></p><p>Application communities remain overlapping editorial lenses. Links and paths express semantic proximity, not causal propagation, probability or severity. Louvain partitions remain diagnostic metadata only. Filtering and colouring never change the original taxonomy.</p><a href="data/semantic_space_methods.md">Read methods and provenance</a> · <a href="data/semantic_space.json" download>Download network data</a></details>
           <section id="semantic-card-detail" aria-labelledby="semantic-card-title" hidden><button id="semantic-card-close" type="button">Close selected card</button><div id="semantic-card-content" aria-live="polite"></div></section>
-          <div class="semantic-results-heading"><h3>Active risk cards</h3><span id="semantic-list-count"></span></div>
-          <div id="semantic-risk-list" class="semantic-risk-list"></div><button id="semantic-more" class="semantic-more" type="button" hidden>Show more active risks</button>
+          <details class="semantic-active-risks"><summary id="semantic-active-summary">View active risks</summary><div class="semantic-results-heading"><h3>Active risk cards</h3><span id="semantic-list-count"></span></div><div id="semantic-risk-list" class="semantic-risk-list"></div><button id="semantic-more" class="semantic-more" type="button" hidden>Show more active risks</button></details>
         </div>
       </div>
     </section>
@@ -118,13 +94,13 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-identity"><strong>HEART</strong><p>Hybrid Evidence-based AI Risk Taxonomy</p><p>General, Agentic, and Physical AI</p><div class="publisher-identity"><a class="kt-logo-link" href="https://corp.kt.com/eng/" target="_blank" rel="noopener noreferrer" aria-label="KT Corporation official website"><img src="assets/kt-logo-light.svg" alt="KT" width="40" height="40"></a><div><p class="publisher-name">Frontier AI Lab, KT Corporation</p><a class="publisher-contact" href="mailto:responsible.ai@kt.com">responsible.ai@kt.com</a></div></div></div>
-      <div><h2>Explore</h2><a href="#about">Overview</a><a href="#explore">Risk cards</a><a href="#semantic-space">Semantic space</a><a href="#taxonomy-panel">Taxonomy navigator</a></div>
+      <div><h2>Explore</h2><a href="about.html" target="_blank" rel="noopener">About HEART</a><a href="#semantic-space">AI risk space</a><a href="#explore">Risk cards</a></div>
       <div><h2>Dataset</h2><a href="data/heart_l4_risk_cards.csv" download>CSV dataset</a><a href="data/HEART_L4_Risk_Cards.xlsx" download>Excel workbook</a><a href="data/data_dictionary.csv" download>Data dictionary</a></div>
       <div><h2>Resources</h2><a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub repository</a><a href="data/manifest.json">Release manifest</a><a href="data/validation.json">Validation record</a></div>
     </div>
-    <div class="footer-bottom"><span>HEART · 622 risk cards · 47 categories</span><a href="#about">Back to top</a></div>
+    <div class="footer-bottom"><span>HEART · <span id="card-count">622</span> risk cards · <span id="l3-count">47</span> categories</span><a href="#semantic-space">Back to AI risk space</a></div>
   </footer>
   <script src="assets/app.js" defer></script>
-  <script src="assets/semantic-space.js?v=deep-l4-labels-20261010" defer></script>
+  <script src="assets/semantic-space.js?v=ai-risk-space-layout-20261010" defer></script>
 </body>
 </html>
