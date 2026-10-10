@@ -54,12 +54,25 @@
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
+  function showOverview() {
+    get('semantic-card-detail').hidden = false;
+    const domains = ['L1_G', 'L1_A', 'L1_P'].map(id => {
+      const members = cards.filter(card => card.L1_ID === id);
+      const clusters = data.clusters.filter(cluster => cluster.L1_ID === id);
+      const swatches = clusters.map(cluster => `<i style="background:${escape(cluster.color)}"></i>`).join('');
+      return `<li><div><strong>${escape(members[0]?.L1_Name_en)}</strong><span>${members.length} risks</span></div><div class="overview-swatches" aria-hidden="true">${swatches}</div></li>`;
+    }).join('');
+    get('semantic-card-content').innerHTML = `<h2 id="semantic-card-title">Risk space overview</h2><p class="overview-total">${cards.length}<span>L4 risk cards</span></p><ul class="overview-domains">${domains}</ul><section class="detail-section"><h3>Network legend</h3><dl class="overview-legend"><dt>Color</dt><dd>L1 domains and L3 semantic shades</dd><dt>Node size</dt><dd>Weighted degree</dd><dt>Connections</dt><dd>Semantic similarity between risks</dd></dl></section>`;
+    get('semantic-card-close').hidden = true;
+    get('semantic-card-detail').scrollTop = 0;
+  }
   function showInlineCard(card) {
     const attributes = [card.Facet ? `Facet: ${card.Facet}` : '', card.Act_Type ? `Act-type: ${card.Act_Type}` : ''].filter(Boolean);
     const evidence = typeof renderEvidence === 'function' ? renderEvidence(card) :
       (card.Evidence_URL ? `<a class="evidence-link" href="${escape(card.Evidence_URL)}" target="_blank" rel="noopener noreferrer">${escape(card.Evidence_Reference_Title)}</a><p>${escape([card.Evidence_Reference_Authors,card.Evidence_Reference_Year,card.Evidence_Reference_Type].filter(Boolean).join(' · '))}</p><blockquote>${escape(card.Evidence_Quote)}</blockquote><p class="source-note">${escape(card.Evidence_Quote_Location)}</p>` : '<p>No reference available.</p>');
     get('semantic-card-content').innerHTML = `<div class="card-meta"><span class="badge">${escape(card.L4_ID)}</span><span class="badge domain">${escape(card.L1_Name_en)}</span></div><h2 id="semantic-card-title">${escape(card.L4_Name_en)} (${escape(card.L4_Name_ko)})</h2><div class="hierarchy">${escape(hierarchy(card))}</div><section class="detail-section"><h3>Risk definition</h3><p>${escape(card.Risk_Definition_en)}</p><p lang="ko">${escape(card.Risk_Definition_ko)}</p></section>${attributes.length ? `<section class="detail-section"><h3>L4 attributes</h3><div class="attributes">${attributes.map(item=>`<span class="badge">${escape(item)}</span>`).join('')}</div></section>` : ''}<section class="detail-section"><h3>Evidence references</h3>${evidence}</section><section class="detail-section"><h3>Future assessment fields</h3><div class="future-fields"><div class="future-field"><span>Probability</span></div><div class="future-field"><span>Severity</span></div></div></section>`;
     get('semantic-card-detail').hidden = false;
+    get('semantic-card-close').hidden = false;
     get('semantic-card-detail').scrollTop = 0;
     get('semantic-workspace').classList.add('has-selected-card');
     get('semantic-tooltip').hidden = true;
@@ -71,7 +84,7 @@
       }
     });
   }
-  get('semantic-card-close').addEventListener('click',()=>{get('semantic-card-detail').hidden=true; get('semantic-workspace').classList.remove('has-selected-card'); draw();});
+  get('semantic-card-close').addEventListener('click',()=>{selectedId=''; showOverview(); draw();});
   const filters = {scenario:'', cluster:'', keyword:''};
   let data, cards, byId, referenceCatalog, visible = 16, loading, enabledIds = new Set(), locations = new Map();
   const baseZoom = 1.1;
@@ -103,6 +116,7 @@
   get('semantic-reset').addEventListener('click', () => {
     Object.assign(filters, {scenario:'', cluster:'', keyword:''});
     zoom = 1; pan = {x:0,y:0}; selectedId = '';
+    if (data) showOverview();
     visible = 16;
     if (data) render();
   });
@@ -127,6 +141,7 @@
       const lookup = new Map(sourceCards.map(card => [card.L4_ID, card]));
       if (space.points.length !== sourceCards.length || space.points.some(point => !lookup.has(point.id))) throw new Error('Projection/card IDs do not match.');
       data = space; cards = sourceCards; byId = lookup;
+      showOverview();
       buildControls();
       render();
     } catch (error) {

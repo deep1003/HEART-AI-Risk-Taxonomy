@@ -51,17 +51,27 @@
 .semantic-section{max-width:none;padding:30px max(24px,calc((100vw - 1680px)/2)) 64px}
 .semantic-layout{display:block}
 .semantic-main{min-width:0}
-.semantic-workspace{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:start;scroll-margin-top:64px}
+.semantic-workspace{display:grid;grid-template-columns:minmax(0,1fr) clamp(360px,26vw,410px);gap:22px;align-items:stretch;scroll-margin-top:64px;height:clamp(560px,75dvh,820px)}
 .semantic-workspace.has-selected-card{grid-template-columns:minmax(0,1fr) clamp(360px,26vw,410px)}
-.semantic-network-column{min-width:0}
+.semantic-network-column{min-width:0;min-height:0;display:flex}
+.semantic-workspace .semantic-plot-wrap{width:100%;height:100%;display:flex;flex-direction:column;min-height:0}
+.overview-total{font-size:2.5rem;color:#101828;margin:20px 0;line-height:1.2}
+.overview-total span{display:block;font-size:.9rem;color:#667085;margin-top:8px}
+.overview-domains{list-style:none;padding:0;margin:0}
+.overview-domains li{padding:14px 0;border-bottom:1px solid #e4e7ec}
+.overview-domains li>div:first-child{display:flex;justify-content:space-between;gap:12px}
+.overview-domains span{color:#667085;font-size:.85rem}
+.overview-swatches{display:flex;gap:3px;flex-wrap:wrap;margin-top:10px}
+.overview-swatches i{width:8px;height:8px;border-radius:50%}
+.overview-legend{margin:0}.overview-legend dt{font-weight:600;margin-top:14px}.overview-legend dd{margin:4px 0;color:#667085;font-size:.9rem}
 .semantic-plot-wrap .semantic-network-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;margin:0;padding:12px 16px;color:#667085;font-size:.75rem;line-height:1.5}
 .semantic-plot-wrap .semantic-status{padding:0;min-height:0;font-size:inherit;font-weight:650;color:#475467}
 .semantic-context-note{font-size:.75rem;color:#667085;margin:8px 0;line-height:1.5}
-.semantic-workspace #semantic-plot{min-height:0;height:auto}
-.semantic-workspace #semantic-card-detail{position:sticky;top:64px;margin:0;padding:22px;max-height:calc(100dvh - 80px);overflow:auto;overscroll-behavior:contain;min-width:0}
+.semantic-workspace #semantic-plot{min-height:0;height:100%;flex:1;width:100%}
+.semantic-workspace #semantic-card-detail{position:static;margin:0;padding:22px;height:100%;max-height:none;overflow:auto;overscroll-behavior:contain;min-width:0;border-radius:8px;box-sizing:border-box}
 .semantic-workspace #semantic-card-title{font-size:1.3rem}
 .semantic-workspace #semantic-card-detail .hierarchy{overflow-wrap:anywhere}
-@media(max-width:1000px){.semantic-workspace.has-selected-card{grid-template-columns:minmax(0,1fr)}.semantic-workspace #semantic-card-detail{position:static;max-height:65dvh}}
+@media(max-width:1000px){.semantic-workspace,.semantic-workspace.has-selected-card{grid-template-columns:minmax(0,1fr);height:auto}.semantic-workspace .semantic-plot-wrap{height:60dvh;min-height:360px}.semantic-workspace #semantic-card-detail{height:auto;max-height:65dvh}}
 .semantic-plot-heading{position:relative;display:block}
 .semantic-plot-heading>div{width:100%;min-width:0}
 .semantic-plot-heading h3{padding-right:140px;min-height:44px;margin-bottom:6px;display:flex;align-items:center}
