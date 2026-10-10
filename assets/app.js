@@ -112,8 +112,8 @@ async function start() {
   state.cards = await response.json();
   state.cards.sort((a,b) => domainOrder[a.L1_Name_en] - domainOrder[b.L1_Name_en] || a.L3_ID.localeCompare(b.L3_ID) || a.L4_ID.localeCompare(b.L4_ID));
   state.filtered = state.cards;
-  el('card-count').textContent = state.cards.length.toLocaleString();
-  el('l3-count').textContent = new Set(state.cards.map(card => card.L3_ID)).size.toLocaleString();
+  if (el('card-count')) el('card-count').textContent = state.cards.length.toLocaleString();
+  if (el('l3-count')) el('l3-count').textContent = new Set(state.cards.map(card => card.L3_ID)).size.toLocaleString();
   populateFilters();
   renderCards();
 }
