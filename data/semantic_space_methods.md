@@ -16,6 +16,12 @@ Install `scripts/semantic_requirements.txt` in a task-local environment and run 
 4. A seeded weighted spring layout initialises ForceAtlas2, 350 iterations, scaling ratio 8, gravity 0.15, linlog attraction. Uniform centring and rescaling preserve all outliers without clipping. Filters never recompute positions.
 5. Colours identify the 47 human-approved L3 categories, anchored in the three L1 domains and varied using L3 semantic relationships as described below. Louvain communities are retained in `graph_communities` as diagnostic metadata, not displayed colour groups. Node strength is the sum of published incident cosine weights. Node area is linearly scaled over the full-network strength range to radii 3 to 15 display pixels: r = sqrt(9 + 216 × (strength − min)/(max − min)). Equal-strength networks use the midpoint area. Sizes remain fixed across filters, including pale inactive nodes. This is not severity, probability or EM confidence.
 
+## Degree-based labels on actual L4 nodes
+
+Hollow centroid anchors and L3 graph labels are removed. For each L3, the active L4 with maximum full-network weighted degree is selected as a label candidate, with L4 ID as a deterministic tie-break. Candidates are prioritised by weighted degree. Labels display the L4 English name, wrapped to two lines and truncated where necessary; the full name and L3 remain available in the accessible label and hover card. Connecting strokes point to actual existing nodes, not artificial anchors.
+
+Labels are laid out in screen coordinates at a fixed 13px font, trying right, left, above and below each selected node. Viewport bounds and collision boxes with six-pixel separation suppress labels that do not fit. Panning, zooming and filtering recompute placement. Selecting a text label opens the same inline L4 card as selecting its node. Weighted degree describes network connectivity, not severity, typicality or conceptual representativeness.
+
 ## Reference analysis
 
 The supplied reference page, its live `assets/risk-space.js`, and local `scripts/build_semantic_proximity_network.py` were inspected. The historical implementation uses BGE-M3, seeded graph-regularised spherical EM, L3-profile similarity (0.65) plus direct semantic similarity (0.35), and ForceAtlas2. Its 54-community claim concerns a different release.

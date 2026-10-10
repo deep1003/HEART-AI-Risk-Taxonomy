@@ -43,10 +43,10 @@
 .semantic-edge{stroke:#8496ad;stroke-width:1;opacity:.2;pointer-events:none}
 .semantic-edge.selected-edge{stroke:#273750}
 .semantic-halo{fill:#fff;stroke:#18213d;stroke-width:2;pointer-events:none}
-.semantic-community-label{cursor:pointer}
-.semantic-community-label circle{fill:#fff;stroke-width:2.5}
-.semantic-community-label text{fill:#18213d;font-size:15px;font-weight:750;stroke:#fff;stroke-width:4px;paint-order:stroke;stroke-linejoin:round}
-.semantic-community-label:focus text{fill:#214aa8;text-decoration:underline}
+.semantic-node-label{cursor:pointer}
+.semantic-node-label line{stroke:#64748b;stroke-width:1;opacity:.5}
+.semantic-node-label text{fill:#18213d;font:650 13px system-ui;stroke:#fff;stroke-width:4px;paint-order:stroke;stroke-linejoin:round}
+.semantic-node-label:focus text{fill:#214aa8;text-decoration:underline}
 .community-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;flex-shrink:0}
 .semantic-network-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:8px 0 12px;color:#667085;font-size:.8rem}
 .semantic-network-toolbar div{display:flex;align-items:center;gap:8px}
@@ -55,7 +55,7 @@
 .semantic-legend{line-height:1.7}
 #semantic-plot{cursor:grab}
 #semantic-plot:active{cursor:grabbing}
-@media(max-width:600px){.semantic-network-toolbar{align-items:flex-start;flex-direction:column}.semantic-community-label text{font-size:12px}.semantic-network-toolbar button{min-height:44px}}
+@media(max-width:600px){.semantic-network-toolbar{align-items:flex-start;flex-direction:column}.semantic-network-toolbar button{min-height:44px}}
 .semantic-point{stroke:#fff;stroke-width:1;cursor:pointer}
 .semantic-point.inactive{fill:#d4dbe5!important;stroke:transparent;opacity:.38;pointer-events:none}
 .semantic-point.active{opacity:.95}

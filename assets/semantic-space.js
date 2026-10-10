@@ -22,7 +22,17 @@
     const cy = (p.y + q.y)/2 + dx*.22;
     return `M ${p.x} ${p.y} Q ${cx} ${cy} ${q.x} ${q.y}`;
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath};
+  function labelCandidates(points, active) {
+    const winners = new Map();
+    for (const point of points) {
+      if (!active.has(point.id)) continue;
+      const previous = winners.get(point.cluster);
+      if (!previous || point.strength > previous.strength ||
+          (point.strength === previous.strength && point.id < previous.id)) winners.set(point.cluster,point);
+    }
+    return [...winners.values()].sort((a,b)=>b.strength-a.strength || a.id.localeCompare(b.id));
+  }
+  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath, labelCandidates};
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
@@ -183,21 +193,7 @@
       if (point.id===selectedId && active) markup += `<circle class="semantic-halo" cx="${p.x}" cy="${p.y}" r="${radius+5}"/>`;
       markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" aria-label="${escape(point.id + ': ' + card.L4_Name_en)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="url(#l3-gradient-${escape(cluster.id)})"/>`;
     }
-    const labelBoxes = [];
-    const eligible = data.clusters.filter(cluster=>cluster.ids.some(id=>enabledIds.has(id)));
-    const labels = Object.keys(data.l1_colors).flatMap(domain=>eligible.filter(item=>item.L1_ID===domain).sort((a,b)=>b.ids.length-a.ids.length).slice(0,width<600?2:4));
-    for (const cluster of labels) {
-      const x = sx(cluster.x), y = sy(cluster.y);
-      const label = cluster.label || cluster.name;
-      const text = label.length>38 ? label.slice(0,35)+'…' : label;
-      const textWidth = Math.min(width-50,text.length*8.4+24);
-      const tx = Math.max(18,Math.min(width-textWidth-18,x)), ty = Math.max(24,Math.min(height-24,y));
-      const box = {x:tx,y:ty-16,w:textWidth,h:26};
-      if (labelBoxes.some(b=>box.x<b.x+b.w && box.x+box.w>b.x && box.y<b.y+b.h && box.y+box.h>b.y)) continue;
-      labelBoxes.push(box);
-      markup += `<g class="semantic-community-label" data-cluster-label="${escape(cluster.id)}" role="button" tabindex="0" aria-label="Filter L3 category: ${escape(cluster.name)}"><circle cx="${tx}" cy="${ty-4}" r="6" stroke="${escape(cluster.color)}"/><text x="${tx+12}" y="${ty}">${escape(text)}</text><title>${escape(cluster.name)}</title></g>`;
-    }
-    markup += '</g>';
+    markup += '</g><g id="semantic-label-layer"></g>';
     svg.innerHTML = markup;
     transformNetwork();
     svg.setAttribute('aria-label', `${enabledIds.size} active L4 risks in the text projection. Use the active-risk list below for keyboard access.`);
@@ -218,8 +214,6 @@
   });
   get('semantic-plot').addEventListener('click', event => {
     if (drag?.moved) {drag=null; return;}
-    const cluster = event.target.closest('[data-cluster-label]');
-    if (cluster) {filters.cluster=filters.cluster===cluster.dataset.clusterLabel?'':cluster.dataset.clusterLabel; visible=16; render(); return;}
     const point = event.target.closest('[data-risk]');
     if (point && enabledIds.has(point.dataset.risk)) {selectedId=point.dataset.risk; draw(); showInlineCard(byId.get(selectedId)); return;}
     const svg = get('semantic-plot'), bounds = svg.getBoundingClientRect(), box = svg.viewBox.baseVal;
@@ -250,12 +244,45 @@
     const box=svg.viewBox.baseVal;
     layer.setAttribute('transform',`translate(${pan.x+box.width/2},${pan.y+box.height/2}) scale(${zoom*baseZoom}) translate(${-box.width/2},${-box.height/2})`);
     get('semantic-zoom-level').textContent=`${Math.round(zoom*100)}%`;
+    renderNodeLabels();
+  }
+  function renderNodeLabels() {
+    const svg=get('semantic-plot'), layer=get('semantic-label-layer');
+    if (!layer) return;
+    const {width,height}=svg.viewBox.baseVal;
+    const context=document.createElement('canvas').getContext('2d');
+    context.font='650 13px system-ui';
+    const boxes=[], strengths=data.points.map(point=>point.strength);
+    let markup='';
+    for (const point of labelCandidates(data.points,enabledIds)) {
+      const p=locations.get(point.id);
+      const x=pan.x+width/2+(p.x-width/2)*zoom*baseZoom;
+      const y=pan.y+height/2+(p.y-height/2)*zoom*baseZoom;
+      if(x<12||x>width-12||y<12||y>height-12) continue;
+      const words=byId.get(point.id).L4_Name_en.split(/\s+/), lines=[];
+      let line='';
+      for(const word of words){
+        if(context.measureText((line+' '+word).trim()).width>220 && line){lines.push(line);line=word;}else line=(line+' '+word).trim();
+      }
+      if(line)lines.push(line);
+      if(lines.length>2){lines.splice(2);lines[1]=lines[1].replace(/\s+\S*$/,'')+'…';}
+      const w=Math.max(...lines.map(text=>context.measureText(text).width))+10, h=lines.length*17+8;
+      const r=nodeRadius(point.strength,Math.min(...strengths),Math.max(...strengths))*zoom*baseZoom+7;
+      const placements=[{x:x+r,y:y-h/2},{x:x-r-w,y:y-h/2},{x:x-w/2,y:y-r-h},{x:x-w/2,y:y+r}];
+      const box=placements.map(pos=>({...pos,w,h})).find(b=>b.x>=8&&b.y>=8&&b.x+w<=width-8&&b.y+h<=height-8&&
+        !boxes.some(other=>b.x<other.x+other.w+6&&b.x+b.w+6>other.x&&b.y<other.y+other.h+6&&b.y+b.h+6>other.y));
+      if(!box)continue;
+      boxes.push(box);
+      const endX=Math.max(box.x,Math.min(x,box.x+w)),endY=Math.max(box.y,Math.min(y,box.y+h));
+      markup+=`<g class="semantic-node-label" data-risk="${escape(point.id)}" role="button" tabindex="0" aria-label="Open risk card: ${escape(byId.get(point.id).L4_Name_en)}"><line x1="${x}" y1="${y}" x2="${endX}" y2="${endY}"/>${lines.map((text,i)=>`<text x="${box.x+5}" y="${box.y+17+i*17}">${escape(text)}</text>`).join('')}</g>`;
+    }
+    layer.innerHTML=markup;
   }
   get('semantic-zoom-in').addEventListener('click',()=>{zoom=Math.min(5,zoom*1.25);transformNetwork();});
   get('semantic-zoom-out').addEventListener('click',()=>{zoom=Math.max(.5,zoom/1.25);transformNetwork();});
   get('semantic-fit').addEventListener('click',()=>{zoom=1;pan={x:0,y:0};transformNetwork();});
   get('semantic-plot').addEventListener('pointerdown',event=>{
-    if(event.target.closest('[data-risk],[data-cluster-label]') || event.pointerType==='touch') return;
+    if(event.target.closest('[data-risk]') || event.pointerType==='touch') return;
     drag={x:event.clientX,y:event.clientY,px:pan.x,py:pan.y,moved:false};
     event.currentTarget.setPointerCapture(event.pointerId);
   });
@@ -266,8 +293,8 @@
     pan={x:drag.px+dx,y:drag.py+dy};transformNetwork();
   });
   get('semantic-plot').addEventListener('keydown',event=>{
-    const cluster=event.target.closest('[data-cluster-label]');
-    if(cluster && ['Enter',' '].includes(event.key)){event.preventDefault();filters.cluster=filters.cluster===cluster.dataset.clusterLabel?'':cluster.dataset.clusterLabel;render();}
+    const point=event.target.closest('.semantic-node-label[data-risk]');
+    if(point && ['Enter',' '].includes(event.key)){event.preventDefault();selectedId=point.dataset.risk;draw();showInlineCard(byId.get(selectedId));}
   });
   new ResizeObserver(() => {if (data && !get('semantic-space').hidden) draw();}).observe(get('semantic-plot').parentElement);
   window.addEventListener('hashchange',()=>{

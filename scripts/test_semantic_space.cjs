@@ -3,7 +3,7 @@ const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
 const path = require('node:path');
 const root = path.join(__dirname, '..');
-const {activeIds, escape, nodeRadius} = require(path.join(root, 'assets/semantic-space.js'));
+const {activeIds, escape, nodeRadius, labelCandidates} = require(path.join(root, 'assets/semantic-space.js'));
 const raw = fs.readFileSync(path.join(root, 'data/heart_l4_risk_cards.json'));
 const cards = JSON.parse(raw);
 const data = JSON.parse(fs.readFileSync(path.join(root, 'data/semantic_space.json')));
@@ -15,6 +15,14 @@ assert.equal(data.points.length, 622);
 assert.equal(new Set(data.points.map(point => point.id)).size, 622);
 assert(data.points.every(point => sourceIds.has(point.id) && Number.isFinite(point.x) && Number.isFinite(point.y)));
 assert.equal(activeIds(data, {}).size, 622);
+const labelNodes=labelCandidates(data.points,sourceIds);
+assert.equal(labelNodes.length,47);
+for(const point of labelNodes){
+  assert.equal(point.strength,Math.max(...data.points.filter(candidate=>candidate.cluster===point.cluster).map(candidate=>candidate.strength)));
+}
+assert.equal(labelCandidates(data.points,new Set()).length,0);
+const single=new Set([data.points[0].id]);
+assert.equal(labelCandidates(data.points,single)[0].id,data.points[0].id);
 assert.equal(data.scenarios.length, 3);
 assert(data.clusters.length > 1);
 assert.equal(data.method.embedding_dimensions, 1024);
