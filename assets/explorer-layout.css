@@ -21,9 +21,13 @@
 .semantic-workspace #semantic-card-title{font-size:1.3rem}
 .semantic-workspace #semantic-card-detail .hierarchy{overflow-wrap:anywhere}
 @media(max-width:1000px){.semantic-workspace.has-selected-card{grid-template-columns:minmax(0,1fr)}.semantic-workspace #semantic-card-detail{position:static;max-height:65dvh}}
-.semantic-plot-heading p{max-width:900px;font-size:.94rem;line-height:1.7}
-.filter-definition,.filter-references{display:block}
-.filter-references{margin-top:9px;font-size:.86rem}
+.semantic-plot-heading{position:relative;display:block}
+.semantic-plot-heading>div{width:100%;min-width:0}
+.semantic-plot-heading h3{padding-right:140px}
+.semantic-plot-heading #semantic-reset{position:absolute;right:0;top:0;margin-top:0}
+.semantic-plot-heading p{max-width:none;width:100%;font-size:.94rem;line-height:1.7}
+.filter-definition,.filter-references{display:inline}
+.filter-references{margin-left:.4em;font-size:.86rem}
 .filter-references a{color:#536781;text-underline-offset:3px}
 .semantic-filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
 .semantic-filter-bar .semantic-keywords{display:contents}
