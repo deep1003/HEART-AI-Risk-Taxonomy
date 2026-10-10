@@ -77,7 +77,7 @@
     get('semantic-status').textContent = 'Loading the risk text projection…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=l1-l3-colours-20261010'), fetch('data/heart_l4_risk_cards.json')]);
+      const [spaceResponse, cardResponse] = await Promise.all([fetch('data/semantic_space.json?v=strong-l3-gradients-20261010'), fetch('data/heart_l4_risk_cards.json')]);
       if (!spaceResponse.ok || !cardResponse.ok) throw new Error('The semantic-space data could not be loaded.');
       const cardText = await cardResponse.text();
       const space = await spaceResponse.json();
@@ -158,6 +158,7 @@
     const sy = y => height/2 - (y-(lowY+highY)/2)*scale;
     locations = new Map(data.points.map(point => [point.id, {x:sx(point.x),y:sy(point.y)}]));
     let markup = '<desc>Transformer-embedding neighbours, Louvain communities and ForceAtlas2 layout. Edges are not causal paths. Filtering does not change taxonomy assignments.</desc>';
+    markup += '<defs>' + data.clusters.map(item=>`<linearGradient id="l3-gradient-${escape(item.id)}" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${escape(item.gradient_start)}"/><stop offset="100%" stop-color="${escape(item.gradient_end)}"/></linearGradient>`).join('') + '</defs>';
     for (let index = 0; index <= 8; index++) {
       const x = left + (right-left)*index/8, y = top + (bottom-top)*index/8;
       markup += `<line class="semantic-grid-line" x1="${x}" y1="${top}" x2="${x}" y2="${bottom}"/><line class="semantic-grid-line" x1="${left}" y1="${y}" x2="${right}" y2="${y}"/>`;
@@ -180,7 +181,7 @@
       const radius = nodeRadius(point.strength,minStrength,maxStrength);
       const cluster = data.clusters.find(item=>item.id===point.cluster);
       if (point.id===selectedId && active) markup += `<circle class="semantic-halo" cx="${p.x}" cy="${p.y}" r="${radius+5}"/>`;
-      markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" aria-label="${escape(point.id + ': ' + card.L4_Name_en)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="${escape(cluster.color)}"/>`;
+      markup += `<circle class="semantic-point ${active ? 'active' : 'inactive'}" data-risk="${escape(point.id)}" aria-label="${escape(point.id + ': ' + card.L4_Name_en)}" cx="${p.x}" cy="${p.y}" r="${radius}" fill="url(#l3-gradient-${escape(cluster.id)})"/>`;
     }
     const labelBoxes = [];
     const eligible = data.clusters.filter(cluster=>cluster.ids.some(id=>enabledIds.has(id)));

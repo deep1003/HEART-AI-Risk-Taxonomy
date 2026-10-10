@@ -81,8 +81,8 @@ def main():
         competing = [index for index in range(3) if index != own]
         nearest = max(competing, key=lambda index: affinities[i, index])
         margin = float(affinities[i, own] - affinities[i, nearest])
-        # Continuous bounded blend: own L1 always contributes at least 80%.
-        blend = float(.20 / (1 + np.exp(margin / .035)))
+        # Stronger boundary blending; the assigned domain remains the anchor.
+        blend = float(.35 / (1 + np.exp(margin / .05)))
         rgb = np.array([int(BASE[row['L1_ID']][j:j+2], 16) / 255 for j in (1, 3, 5)])
         other = np.array([int(BASE[domains[nearest]][j:j+2], 16) / 255 for j in (1, 3, 5)])
         # Blend in linear-light RGB, then gently vary hue/lightness within L1.
@@ -90,17 +90,35 @@ def main():
         mixed = (1 - blend) * linear(rgb) + blend * linear(other)
         mixed = np.where(mixed <= .0031308, mixed * 12.92, 1.055 * mixed ** (1 / 2.4) - .055)
         hue, light, saturation = colorsys.rgb_to_hls(*mixed)
-        hue = (hue + coordinates[i, 0] * .035) % 1
-        light = np.clip(light + coordinates[i, 1] * .07, .32, .63)
+        hue = (hue + coordinates[i, 0] * .095) % 1
+        light = np.clip(light + coordinates[i, 1] * .10, .32, .62)
+        saturation = np.clip(saturation + coordinates[i, 0] * .12, .55, .95)
         colour = '#' + ''.join(f'{round(value * 255):02x}' for value in colorsys.hls_to_rgb(hue, light, saturation))
         palette.append(dict(row, color=colour, nearest_other_l1=domains[nearest],
                             boundary_blend=round(blend, 6), domain_cosines=dict(zip(domains, map(float, affinities[i]))),
                             semantic_colour_coordinates=coordinates[i].tolist()))
+    similarities = vectors @ vectors.T
+    np.fill_diagonal(similarities, -1)
+    seed_colours = [row['color'] for row in palette]
+    for i, row in enumerate(palette):
+        neighbour = int(np.argmax(similarities[i]))
+        weight = float(.45 / (1 + np.exp(-(similarities[i, neighbour] - .65) / .05)))
+        first = np.array([int(seed_colours[i][j:j+2],16)/255 for j in (1,3,5)])
+        second = np.array([int(seed_colours[neighbour][j:j+2],16)/255 for j in (1,3,5)])
+        # HLS shortest-arc interpolation retains vivid mixed boundary colours.
+        h1,l1,s1 = colorsys.rgb_to_hls(*first)
+        h2,l2,s2 = colorsys.rgb_to_hls(*second)
+        delta = (h2-h1+.5) % 1 - .5
+        end = colorsys.hls_to_rgb((h1+weight*delta)%1, (1-weight)*l1+weight*l2, (1-weight)*s1+weight*s2)
+        row.update(gradient_start=seed_colours[i],
+                   gradient_end='#'+''.join(f'{round(value*255):02x}' for value in end),
+                   neighbour_l3=records[neighbour]['L3_ID'], neighbour_cosine=float(similarities[i,neighbour]),
+                   neighbour_mix_weight=weight)
     assert len({row['color'] for row in palette}) == 47
     result = {'source_sha256': hashlib.sha256(cards_raw).hexdigest(), 'master_sources': sources,
               'model_revision': revision, 'text_sha256': text_hash, 'embedding_file': cache_path.name,
               'base_colors': BASE, 'categories': palette,
-              'method': 'BGE-M3 L3 English title+definition; equal-L3-weight L1 centroids; bounded cross-domain linear-RGB blend (maximum 20%); deterministic within-L1 PCA hue ±12.6 degrees/lightness ±0.07.',
+              'method': 'BGE-M3 L3 title+definition; L1 centroid boundary blend up to 35%; within-L1 PCA hue ±34.2 degrees/lightness ±0.10/saturation ±0.12; node gradients toward the closest semantic L3 colour, shortest-arc HLS mixture up to 45%.',
               'limitations': 'Semantic colour proximity is approximate, not a distance-preserving map or classification confidence. Cross-domain colour does not change human-approved L1/L2/L3 assignments. No claim of 47 perceptually distinguishable classes.'}
     (ROOT / 'data/l3_semantic_colours.json').write_text(json.dumps(result, indent=2))
     assert (ROOT / 'data/heart_l4_risk_cards.json').read_bytes() == cards_raw

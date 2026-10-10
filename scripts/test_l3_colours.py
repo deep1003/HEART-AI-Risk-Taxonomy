@@ -22,7 +22,9 @@ for point in space['points']:
     assert point['cluster'] == by_id[point['id']]['L3_ID']
     assert categories[point['cluster']]['L1_ID'] == by_id[point['id']]['L1_ID']
 for category in colours['categories']:
-    assert 0 <= category['boundary_blend'] <= .20
+    assert 0 <= category['boundary_blend'] <= .35
+    assert 0 <= category['neighbour_mix_weight'] <= .45
+    assert category['neighbour_l3'] != category['L3_ID']
 old = json.loads(subprocess.check_output(['git','show','4af0e22:data/semantic_space.json'],cwd=root))
 assert old['edges'] == space['edges']
 assert old['clusters'] == space['graph_communities']
