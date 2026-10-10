@@ -54,6 +54,11 @@
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
+  const methodDetails = document.querySelector('details.semantic-method');
+  const methodBody = document.createElement('div');
+  methodBody.className = 'semantic-method-body';
+  methodBody.append(get('semantic-link-method'), get('semantic-legend'));
+  methodDetails.insertBefore(methodBody, methodDetails.querySelector('p'));
   function showInlineCard(card) {
     const attributes = [card.Facet ? `Facet: ${card.Facet}` : '', card.Act_Type ? `Act-type: ${card.Act_Type}` : ''].filter(Boolean);
     const evidence = typeof renderEvidence === 'function' ? renderEvidence(card) :
