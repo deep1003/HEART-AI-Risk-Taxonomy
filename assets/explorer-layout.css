@@ -9,6 +9,11 @@
 .semantic-filter-bar button[aria-pressed=true]{background:#18213d;color:#fff;border-color:#18213d}
 .semantic-active-risks{margin-top:24px;border-top:1px solid #e2e7ef;padding-top:18px}
 .semantic-active-risks>summary{font-weight:650;color:#253854;cursor:pointer}
+.semantic-tooltip{max-width:min(420px,calc(100% - 24px));line-height:1.55}
+.semantic-tooltip .tooltip-card-id{font-family:monospace;font-size:.78rem;margin:0 0 5px;color:#667085}
+.semantic-tooltip .tooltip-definition{margin:10px 0;color:#344054}
+.semantic-tooltip .tooltip-hierarchy{border-top:1px solid #e2e7ef;padding-top:6px}
+.semantic-tooltip .tooltip-degree{margin-top:10px;font-size:.75rem}
 .about-content{max-width:1100px;margin:0 auto;padding:48px 24px 64px;color:#344054}
 .about-content h2{font-size:1.7rem;color:#18213d;margin-top:34px}
 .about-content h3{color:#18213d}

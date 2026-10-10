@@ -3,11 +3,21 @@ const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
 const path = require('node:path');
 const root = path.join(__dirname, '..');
-const {activeIds, escape, nodeRadius, labelCandidates, zoomViewport} = require(path.join(root, 'assets/semantic-space.js'));
+const {activeIds, escape, nodeRadius, labelCandidates, zoomViewport, tooltipContent} = require(path.join(root, 'assets/semantic-space.js'));
 const raw = fs.readFileSync(path.join(root, 'data/heart_l4_risk_cards.json'));
 const cards = JSON.parse(raw);
 const data = JSON.parse(fs.readFileSync(path.join(root, 'data/semantic_space.json')));
 const sourceIds = new Set(cards.map(card => card.L4_ID));
+for(const card of cards){
+  const tooltip=tooltipContent(card,{strength:5.915,degree:8});
+  assert(tooltip.includes(escape(card.L4_ID)));
+  assert(tooltip.includes(escape(card.L4_Name_en)));
+  assert(tooltip.includes(escape(card.Risk_Definition_en)));
+  for(const level of [1,2,3])assert(tooltip.includes(`L${level} · ${escape(card[`L${level}_ID`])} · ${escape(card[`L${level}_Name_en`])}`));
+  assert(tooltip.includes('Weighted degree: 5.915'));
+  assert(!tooltip.includes('Click to open the risk card'));
+  assert(!tooltip.includes('8 links'));
+}
 assert.equal(data.source_sha256, crypto.createHash('sha256').update(raw).digest('hex'));
 assert.equal(sourceIds.size, 622);
 assert.equal(new Set(cards.map(card => card.L3_ID)).size, 47);

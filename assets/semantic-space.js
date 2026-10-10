@@ -37,7 +37,11 @@
     return {zoom:next,pan:{x:anchor.x-centre.x-(anchor.x-centre.x-currentPan.x)*ratio,
                           y:anchor.y-centre.y-(anchor.y-centre.y-currentPan.y)*ratio}};
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath, labelCandidates, zoomViewport};
+  function tooltipContent(card, node) {
+    const levels = [1,2,3].map(level => `<span>L${level} · ${escape(card[`L${level}_ID`])} · ${escape(card[`L${level}_Name_en`])}</span>`).join('');
+    return `<span class="tooltip-card-id">${escape(card.L4_ID)}</span><strong>${escape(card.L4_Name_en)}</strong><p class="tooltip-definition">${escape(card.Risk_Definition_en)}</p><div class="tooltip-hierarchy">${levels}</div><span class="tooltip-degree">Weighted degree: ${node.strength.toFixed(3)}</span>`;
+  }
+  if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath, labelCandidates, zoomViewport, tooltipContent};
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
@@ -226,8 +230,8 @@
     const point = event.target.closest('[data-risk]'), tooltip = get('semantic-tooltip');
     if (!point || !enabledIds.has(point.dataset.risk)) {tooltip.hidden = true; return;}
     const card = byId.get(point.dataset.risk);
-    const node=data.points.find(item=>item.id===card.L4_ID), cluster=data.clusters.find(item=>item.id===node.cluster);
-    tooltip.innerHTML = `<strong>${escape(card.L4_Name_en)}</strong><span>${escape(card.L4_ID)} · ${escape(card.L1_Name_en)} · ${escape(card.L3_Name_en)}</span><span>L3: ${escape(cluster.name)} · ${node.degree} links · Weighted degree: ${node.strength.toFixed(3)}</span><span>Click to open the risk card</span>`;
+    const node=data.points.find(item=>item.id===card.L4_ID);
+    tooltip.innerHTML = tooltipContent(card, node);
     tooltip.hidden = false;
     const bounds = get('semantic-plot').parentElement.getBoundingClientRect();
     tooltip.style.left = `${Math.max(8, Math.min(event.clientX-bounds.left+14, bounds.width-tooltip.offsetWidth-8))}px`;
