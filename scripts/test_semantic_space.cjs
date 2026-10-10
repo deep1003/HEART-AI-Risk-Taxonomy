@@ -70,6 +70,8 @@ assert(Number.isFinite(nodeRadius(5,5,5)));
 assert(Math.abs(data.points.reduce((sum,p)=>sum+p.strength,0)-2*data.edges.reduce((sum,e)=>sum+e[2],0))<1e-4);
 assert(!escape('<script>').includes('<script>'));
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+assert(html.indexOf('id="semantic-link-method"')>html.indexOf('class="semantic-plot-wrap"'));
+assert(html.indexOf('id="semantic-link-method"')<html.indexOf('id="semantic-legend"'));
 assert(!html.includes('id="semantic-zoom-in"')&&!html.includes('id="semantic-zoom-out"')&&!html.includes('id="semantic-fit"'));
 const initial={x:40,y:-12},anchor={x:150,y:210},centre={x:480,y:300};
 const enlarged=zoomViewport(1,initial,1.25,anchor,centre);
