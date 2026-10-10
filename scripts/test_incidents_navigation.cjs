@@ -16,4 +16,18 @@ for (const text of ['In preparation.', 'not yet available', 'Near misses', 'not 
 }
 assert(incidents.includes('aria-current="page"'));
 assert(read('assets/semantic-space.js').includes("event.key === 'End' || (event.key !== 'Home'"));
+const html = read('index.html');
+assert(/id="semantic-space-tab"[^>]*aria-selected="true"/.test(html));
+assert(/id="risk-cards-tab"[^>]*aria-selected="false"/.test(html));
+assert(/id="explore"[^>]* hidden/.test(html));
+assert(read('assets/semantic-space.js').includes("else if (!location.hash || ['#semantic-space','#ai-risk-space'].includes(location.hash)) switchTab(true)"));
+assert(read('assets/semantic-space.js').includes("if (['#explore','#taxonomy-panel'].includes(location.hash)) switchTab(false)"));
+const about = read('about.html');
+for (const text of ['Keywords &amp; applications mapping', 'L2-normalised', 'concept-specific threshold', 'explicit exclusions applied last', '295 candidate cards (259 General, 36 Agentic)']) assert(about.includes(text));
+const network = JSON.parse(read('data/semantic_space.json'));
+const cards = JSON.parse(read('data/heart_l4_risk_cards.json'));
+const selected = new Set(network.scenarios.find(item => item.id === 'ai-for-everyone').ids);
+assert.equal(selected.size, 295);
+assert.equal(cards.filter(card => selected.has(card.L4_ID) && card.L1_ID === 'L1_G').length, 259);
+assert.equal(cards.filter(card => selected.has(card.L4_ID) && card.L1_ID === 'L1_A').length, 36);
 console.log('Incident navigation checks passed: ordered views, preparation notice and verified source links.');

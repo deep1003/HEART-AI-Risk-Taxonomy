@@ -337,6 +337,7 @@
     if(['#semantic-space','#ai-risk-space'].includes(location.hash) && get('semantic-space').hidden) switchTab(true);
     else if(['#explore','#taxonomy-panel'].includes(location.hash) && get('explore').hidden) switchTab(false);
   });
+  // Tab order does not define the landing view; preserve taxonomy deep links.
   if (['#explore','#taxonomy-panel'].includes(location.hash)) switchTab(false);
   else if (!location.hash || ['#semantic-space','#ai-risk-space'].includes(location.hash)) switchTab(true);
   else load();
