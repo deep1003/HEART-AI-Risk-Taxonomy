@@ -146,13 +146,8 @@
     get('semantic-selection-description').innerHTML = escape(scenario?.description || 'Explore the current L4 cards by keyword or application. Filters highlight relevance without changing the taxonomy.') + (scenario?.source_url ? [{url:scenario.source_url,label:scenario.source_label},...(scenario.additional_sources||[])].map(source=>` <a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.label)}</a>`).join(' · ') : '');
     get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}. Inactive risks remain as pale context.`;
     for (const kind of ['scenario','cluster','keyword']) {
-      document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind])));
+      document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind] && !(kind === 'keyword' && !button.dataset.keyword && filters.scenario))));
     }
-    const withoutKeyword = activeIds(data, {...filters, keyword:''});
-    document.querySelectorAll('[data-keyword]').forEach(button => {
-      const item = data.keywords.find(keyword => keyword.id === button.dataset.keyword);
-      button.disabled = item ? !item.ids.some(id => withoutKeyword.has(id)) : false;
-    });
     draw(); renderList();
   }
 
