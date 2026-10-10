@@ -62,6 +62,13 @@
     get('semantic-card-detail').hidden = false;
     get('semantic-workspace').classList.add('has-selected-card');
     get('semantic-tooltip').hidden = true;
+    requestAnimationFrame(() => {
+      const workspace = get('semantic-workspace');
+      const headerBottom = document.querySelector('.site-header').getBoundingClientRect().bottom;
+      if (workspace.getBoundingClientRect().top < headerBottom || workspace.getBoundingClientRect().top > innerHeight - 100) {
+        workspace.scrollIntoView({block:'start'});
+      }
+    });
   }
   get('semantic-card-close').addEventListener('click',()=>{get('semantic-card-detail').hidden=true; get('semantic-workspace').classList.remove('has-selected-card'); draw();});
   const filters = {scenario:'', cluster:'', keyword:''};
