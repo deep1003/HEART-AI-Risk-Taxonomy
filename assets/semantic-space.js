@@ -54,11 +54,6 @@
   if (typeof document === 'undefined') return;
 
   const get = id => document.getElementById(id);
-  const methodDetails = document.querySelector('details.semantic-method');
-  const methodBody = document.createElement('div');
-  methodBody.className = 'semantic-method-body';
-  methodBody.append(get('semantic-link-method'), get('semantic-legend'));
-  methodDetails.insertBefore(methodBody, methodDetails.querySelector('p'));
   function showInlineCard(card) {
     const attributes = [card.Facet ? `Facet: ${card.Facet}` : '', card.Act_Type ? `Act-type: ${card.Act_Type}` : ''].filter(Boolean);
     const evidence = typeof renderEvidence === 'function' ? renderEvidence(card) :
@@ -111,7 +106,6 @@
     visible = 16;
     if (data) render();
   });
-  get('semantic-more').addEventListener('click', () => {visible += 16; renderList();});
 
   async function load() {
     if (data) {draw(); return;}
@@ -134,7 +128,6 @@
       if (space.points.length !== sourceCards.length || space.points.some(point => !lookup.has(point.id))) throw new Error('Projection/card IDs do not match.');
       data = space; cards = sourceCards; byId = lookup;
       buildControls();
-      get('semantic-method-stats').textContent = `${data.card_count} unchanged risk cards; ${data.clusters.length} human-defined L3 colour groups; ${data.edges.length.toLocaleString()} weighted links. Embeddings: BGE-M3, ${data.method.embedding_dimensions} dimensions; Ollama ${data.method.ollama_version}; model digest ${data.method.model_revision}. L1 anchors, L3 definitions and within-L3 L4 semantic variation determine solid node colours; ForceAtlas2 determines layout. Darker does not mean higher risk. Louvain communities remain diagnostic metadata, not displayed colour groups or new taxonomy assignments.`;
       render();
     } catch (error) {
       get('semantic-status').textContent = error.message;
@@ -145,7 +138,6 @@
   function buildControls() {
     get('semantic-scenarios').innerHTML = data.scenarios.map(item => `<button type="button" aria-pressed="false" data-scenario="${escape(item.id)}">${escape(item.name)}</button>`).join('');
     const strengths = data.points.map(point=>point.strength);
-    get('semantic-legend').innerHTML = Object.entries(data.l1_colors).map(([id,color])=>`<span class="semantic-domain-key"><i class="community-dot" style="background:${escape(color)}"></i>${escape(data.clusters.find(item=>item.L1_ID===id).L1_Title_en)}</span>`).join(' ') + `<p>Colour: individual L4 semantic shades within 47 L3 categories and 3 L1 anchors. Boundary mixtures show proximity, not assignment uncertainty; darker does not mean higher risk. Shades are approximate, not a distance-preserving map. Size: weighted degree, ${Math.min(...strengths).toFixed(2)}–${Math.max(...strengths).toFixed(2)}. Pale nodes: inactive.</p>`;
     get('semantic-keywords').innerHTML = `<button type="button" aria-pressed="true" data-keyword="">All risks</button>` + data.keywords.map(item => `<button type="button" aria-pressed="false" data-keyword="${escape(item.id)}">${escape(item.name)}</button>`).join('');
     for (const [container, kind] of [['semantic-scenarios','scenario'],['semantic-keywords','keyword']]) {
       get(container).addEventListener('click', event => {
@@ -173,7 +165,7 @@
     for (const kind of ['scenario','cluster','keyword']) {
       document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind] && !(kind === 'keyword' && !button.dataset.keyword && filters.scenario))));
     }
-    draw(); renderList();
+    draw();
   }
 
   function draw() {
@@ -219,23 +211,12 @@
     markup += '</g><g id="semantic-label-layer"></g>';
     svg.innerHTML = markup;
     transformNetwork();
-    svg.setAttribute('aria-label', `${enabledIds.size} active L4 risks in the text projection. Use the active-risk list below for keyboard access.`);
+    svg.setAttribute('aria-label', `${enabledIds.size} active L4 risks in the text projection. Use the node labels for keyboard access.`);
     svg.dataset.activeCount = String(enabledIds.size);
     get('semantic-tooltip').hidden = true;
     get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}`;
   }
 
-  function renderList() {
-    const active = cards.filter(card => enabledIds.has(card.L4_ID)).sort((a,b) => a.L4_ID.localeCompare(b.L4_ID));
-    get('semantic-list-count').textContent = `${Math.min(visible, active.length)} of ${active.length} shown`;
-    get('semantic-active-summary').textContent = `View active risks (${active.length})`;
-    get('semantic-risk-list').innerHTML = active.slice(0, visible).map(card => `<button type="button" class="semantic-risk-item" data-card="${escape(card.L4_ID)}"><code>${escape(card.L4_ID)} · ${escape(card.L1_Name_en)}</code><strong>${escape(card.L4_Name_en)}</strong><span lang="ko">${escape(card.L4_Name_ko)}</span><span>${escape(card.L3_Name_en)}</span></button>`).join('') || '<p>No risks match this combination. Choose another keyword or reset the filters.</p>';
-    get('semantic-more').hidden = active.length <= visible;
-  }
-  get('semantic-risk-list').addEventListener('click', event => {
-    const button = event.target.closest('[data-card]');
-    if (button) {selectedId=button.dataset.card; draw(); showInlineCard(byId.get(selectedId));}
-  });
   get('semantic-plot').addEventListener('click', event => {
     if (drag?.moved) {drag=null; return;}
     const point = event.target.closest('[data-risk]');
