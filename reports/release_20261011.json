@@ -1,0 +1,68 @@
+{
+  "master_date": "2026-10-11",
+  "pdf_pages": 43,
+  "source_files": 57,
+  "files": {
+    "HEART_Technical_Report_20261011.pdf": {
+      "sha256": "e9ad183cc9f8ca26884a4a3f773f455c6cc4cf2ac8d2428b98fccfeb9a48adac",
+      "bytes": 5107399
+    },
+    "HEART_Technical_Report_20261011_source.zip": {
+      "sha256": "dede2fecb7aee867bb2816955484407c01378314697b2f7e901fe3b489c3e404",
+      "bytes": 11906366
+    }
+  },
+  "reference": {
+    "L3_categories": 47,
+    "L4_cards": 622,
+    "unchanged": true
+  },
+  "evaluation": {
+    "algorithm_1": "Iterative consolidation stage evaluation",
+    "algorithm_2": "Fixed-reference assignment agreement",
+    "MIT": "Related-corpus structural replication in Appendix C"
+  },
+  "audit": {
+    "confirmed": [
+      "Normalization-stage cache-key text",
+      "Process-start seed-4 RNG reset"
+    ],
+    "inferred_restart_intervals": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        14,
+        19
+      ],
+      [
+        20,
+        27
+      ],
+      [
+        28,
+        28
+      ]
+    ],
+    "archived_pass_fractions_reproduced": 28,
+    "maximum_absolute_median_z_residual": 1.65572e-05,
+    "exact_historical_execution_certified": false,
+    "embeddings_regenerated": false
+  },
+  "local_online_source_byte_match": true,
+  "local_online_pdf_normalized_text_match": true,
+  "previous_release_preserved": "release_20261010.json"
+}
