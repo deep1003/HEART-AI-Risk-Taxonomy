@@ -1,0 +1,26 @@
+{
+  "edition": "compact specialist-proofread methodology and results",
+  "pdf_pages": 37,
+  "source_files": 57,
+  "files": {
+    "HEART_Technical_Report_20261011_compact_review.pdf": {
+      "sha256": "8891b65279f7a73e9e9bd8cf3bb4699e923a8e4b32d90dbd3364ca2f16c77f78",
+      "bytes": 5042276
+    },
+    "HEART_Technical_Report_20261011_compact_review_source.zip": {
+      "sha256": "a4a9c46e0f4f68d2a2b20cbd1d1a0288b70c3776314bd331958bcceb85f8b31d",
+      "bytes": 11771617
+    }
+  },
+  "reference": {
+    "L3_categories": 47,
+    "L4_cards": 622,
+    "unchanged": true
+  },
+  "specialist_reviews": 3,
+  "abstract_introduction_chapter3_unchanged": true,
+  "MIT_appendix": "archived, not compiled; independent experiment preserved",
+  "original_text_access_limits_remain": true,
+  "scores_unchanged": true,
+  "previous_releases_preserved": true
+}
