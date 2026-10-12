@@ -1,5 +1,5 @@
 {
-  "catalog_sha256": "fa5a0e55388bd3332d474d4f5e749861fd2f95e2deab59f9e457fe8ab2fee144",
+  "catalog_sha256": "27400c3e2210adc64b79de6099ca82f9de4cf50ecde2e54d7f0c2b7af4940a43",
   "method": "Direct HTTP GET; PDF parsing and title/concept identity check in the first eight pages, or HTML text identity check. An explicit same-day browser observation may verify a blocked automated request; its original error remains recorded. Relevance is separately adjudicated in each filter's support field. Access verification is a dated snapshot, not a permanence guarantee.",
   "results": [
     {
@@ -13,7 +13,7 @@
       "identity_match": true,
       "sha256": "f8876c43ae1ac11ea32b91fb1c4cf1b297f6b3fc20422b32cb228a8abfaf1b08",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:00:42.735963+00:00"
+      "checked_at_utc": "2026-10-12T04:44:10.419664+00:00"
     },
     {
       "id": "weidinger",
@@ -26,7 +26,7 @@
       "identity_match": true,
       "sha256": "515dd05c875f2d329cc035f081fcb1982d6a38884fa3476cc08ba8d6d850a2c1",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:00:43.411911+00:00"
+      "checked_at_utc": "2026-10-12T04:44:09.822355+00:00"
     },
     {
       "id": "zhou",
@@ -39,7 +39,7 @@
       "identity_match": true,
       "sha256": "b924b29c1136ce43965d63dbe27a5e2baa32cfe143d7a7dfb8c8a32dfa0f5220",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:00:53.006309+00:00"
+      "checked_at_utc": "2026-10-12T04:44:22.035823+00:00"
     },
     {
       "id": "pan",
@@ -52,7 +52,7 @@
       "identity_match": true,
       "sha256": "048580fe02a9564305cacd590fa60ed676dd4f5fc16620dca2ed33ebdb4a93b7",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:00:50.792314+00:00"
+      "checked_at_utc": "2026-10-12T04:44:12.895166+00:00"
     },
     {
       "id": "mehrabi",
@@ -65,7 +65,7 @@
       "identity_match": true,
       "sha256": "fe97bf537ccab8ecc907d16cde6c8b7a385f41a9eeb8020684f95750e179193f",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:00:55.419273+00:00"
+      "checked_at_utc": "2026-10-12T04:44:16.249210+00:00"
     },
     {
       "id": "greshake",
@@ -78,7 +78,7 @@
       "identity_match": true,
       "sha256": "428e23e8c7e4f89310e113e38d082b3f65548a8b887188ebc536099061800e81",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:02.430040+00:00"
+      "checked_at_utc": "2026-10-12T04:44:27.387825+00:00"
     },
     {
       "id": "zou",
@@ -91,7 +91,7 @@
       "identity_match": true,
       "sha256": "ab8745c2e3c6dfd939d5a590760bbae4682d92db010947cbb306688ad086bfd1",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:00.324418+00:00"
+      "checked_at_utc": "2026-10-12T04:44:27.726752+00:00"
     },
     {
       "id": "unesco",
@@ -99,11 +99,28 @@
       "title": "Recommendation on the Ethics of Artificial Intelligence",
       "status": 200,
       "final_url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
-      "content_type": "text/html; charset=utf-8",
-      "identity_match": true,
-      "sha256": "850609fd45e77fbf462813953083a42309dddbd4cc078acd5e6e3b79768e3dc0",
+      "content_type": "text/html",
+      "identity_match": false,
+      "sha256": "df309ca241823ac2e43f8ff05d457aea383272465037fca59eb383f16917aeb6",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:00:59.651146+00:00"
+      "checked_at_utc": "2026-10-12T04:44:24.487762+00:00",
+      "verification_channel": "dated_browser_observation",
+      "browser_check": {
+        "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+        "title": "Recommendation on the Ethics of Artificial Intelligence",
+        "checked_date_kst": "2026-10-12",
+        "verified": true,
+        "channel": "Direct Codex web retrieval and read-only page inspection",
+        "page_title": "Recommendation on the Ethics of Artificial Intelligence - Legal Affairs",
+        "h1": "Recommendation on the Ethics of Artificial Intelligence",
+        "content_checks": [
+          "Date and place of adoption",
+          "23 November 2021",
+          "Paris, France"
+        ],
+        "note": "The official full HTML text opened and identified the instrument. The automated identity substring check failed because the retrieved HTML representation omitted the expected compact phrase. This dated browser observation verifies document identity, not permanence."
+      },
+      "automated_http_verified": false
     },
     {
       "id": "off-switch",
@@ -116,7 +133,7 @@
       "identity_match": true,
       "sha256": "2e8131110d1921e8de0a096ea3f39a2012be684532ba58db0105186e0eae0f7d",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:01.841083+00:00"
+      "checked_at_utc": "2026-10-12T04:44:27.836808+00:00"
     },
     {
       "id": "safety-report",
@@ -129,7 +146,7 @@
       "identity_match": true,
       "sha256": "e2a35f439cafade360e4df4a2f91f217a16174bd1231f97e64f7208ffa93e225",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:02:04.562980+00:00"
+      "checked_at_utc": "2026-10-12T04:44:31.706953+00:00"
     },
     {
       "id": "injecagent",
@@ -142,7 +159,7 @@
       "identity_match": true,
       "sha256": "49e6e6a4a00c797a772ef905a154c0839426655027d5fa0ce6b632e6c1db2bfb",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:05.034628+00:00"
+      "checked_at_utc": "2026-10-12T04:44:30.323879+00:00"
     },
     {
       "id": "hri-book",
@@ -155,7 +172,7 @@
       "identity_match": true,
       "sha256": "c1efe8115a6e52070536699b8a6f8e54cf4adcf3489bfe5fae17531d093a2bd7",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:17.592411+00:00"
+      "checked_at_utc": "2026-10-12T04:44:40.252885+00:00"
     },
     {
       "id": "foundation",
@@ -168,7 +185,7 @@
       "identity_match": true,
       "sha256": "05e867e3c710a3b0c0e13eb372d013c3511f2ee114bace5ca5c402d6341e92dd",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:11.929791+00:00"
+      "checked_at_utc": "2026-10-12T04:44:39.474664+00:00"
     },
     {
       "id": "gpt4",
@@ -181,7 +198,7 @@
       "identity_match": true,
       "sha256": "c33a66dadca2388d7b172d6293b00dc32b71110c6f38fafe0d41112e61be7774",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:18.133152+00:00"
+      "checked_at_utc": "2026-10-12T04:44:35.618501+00:00"
     },
     {
       "id": "agents",
@@ -194,7 +211,7 @@
       "identity_match": true,
       "sha256": "8709507742c260a5a92b4690ffc0459a0ab9af16dc7a5478d253a6e7b57bf23a",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:20.706214+00:00"
+      "checked_at_utc": "2026-10-12T04:44:42.682846+00:00"
     },
     {
       "id": "react",
@@ -207,7 +224,7 @@
       "identity_match": true,
       "sha256": "f285b0971ae4a790e402fb93966bed3adde2cf0a04977d08b2b40d6ab0cace69",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:18.614778+00:00"
+      "checked_at_utc": "2026-10-12T04:44:40.130441+00:00"
     },
     {
       "id": "embodied",
@@ -220,7 +237,7 @@
       "identity_match": true,
       "sha256": "74db7e55a0de3e7085bef6f87655e57a325602b0116b71bce1041ba2efaacd30",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:19.510803+00:00"
+      "checked_at_utc": "2026-10-12T04:44:41.551005+00:00"
     },
     {
       "id": "humanoid",
@@ -233,7 +250,7 @@
       "identity_match": true,
       "sha256": "8993b1cfd7114d32577815091aa87e5c2dcc129a97ea0c931bb45b41f4aaebb6",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:36.793877+00:00"
+      "checked_at_utc": "2026-10-12T04:44:53.647221+00:00"
     },
     {
       "id": "teleoperation",
@@ -246,7 +263,7 @@
       "identity_match": true,
       "sha256": "265dfc636d5ae7339a744f07cdd1e25d8a41ee57b1678f8628357d681aee2df0",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:25.922311+00:00"
+      "checked_at_utc": "2026-10-12T04:44:49.729421+00:00"
     },
     {
       "id": "agi",
@@ -259,7 +276,7 @@
       "identity_match": true,
       "sha256": "fe9a2a1b9abc47386129be97f655aba69f273bdc56d6989f09bd5d1592ff36fb",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:27.052612+00:00"
+      "checked_at_utc": "2026-10-12T04:44:43.544035+00:00"
     },
     {
       "id": "sparks",
@@ -272,7 +289,7 @@
       "identity_match": true,
       "sha256": "dee926384a7c107a9b51273a99fca2aecb3ed6c27ba7ace0fba67a147a63d2aa",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:38.115560+00:00"
+      "checked_at_utc": "2026-10-12T04:44:53.701338+00:00"
     },
     {
       "id": "bostrom",
@@ -284,7 +301,7 @@
       "identity_match": true,
       "sha256": "cffd75fcab2d5f2bc0202241e2f5226a98087068ed733f74d364810cab363a14",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:37.611313+00:00"
+      "checked_at_utc": "2026-10-12T04:44:51.328791+00:00"
     },
     {
       "id": "deepfake",
@@ -297,7 +314,7 @@
       "identity_match": true,
       "sha256": "72ac5fbcec6890ac8a097d4e0d23a205ebc46c6fe20fa4b7b82ff5f0044f7fae",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:48.528130+00:00"
+      "checked_at_utc": "2026-10-12T04:45:01.581227+00:00"
     },
     {
       "id": "face-manipulation",
@@ -310,7 +327,7 @@
       "identity_match": true,
       "sha256": "c8c75e062aaa0e84aa54774d351d7fdf67da4f400cfb6ed717e30d8debd190ec",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:42.888723+00:00"
+      "checked_at_utc": "2026-10-12T04:45:02.378007+00:00"
     },
     {
       "id": "fair-use",
@@ -323,7 +340,7 @@
       "identity_match": true,
       "sha256": "8b948408fd3a454d92a8d7f7bcb5927b45eadf8e2510173991b099b2b1d0f293",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:48.818025+00:00"
+      "checked_at_utc": "2026-10-12T04:44:57.406840+00:00"
     },
     {
       "id": "diffusion",
@@ -336,7 +353,7 @@
       "identity_match": true,
       "sha256": "10e53f4e6284b0653b85fff9426898d9799caccaf5379b24f9f0de00719caacf",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:52.751982+00:00"
+      "checked_at_utc": "2026-10-12T04:45:05.106940+00:00"
     },
     {
       "id": "korea",
@@ -346,9 +363,9 @@
       "final_url": "https://www.yna.co.kr/view/AKR20260904048352017",
       "content_type": "text/html;charset=UTF-8",
       "identity_match": true,
-      "sha256": "eb532703bc85b73384a45674cfa8abb88f059a31b395b60635d955486902ae5c",
+      "sha256": "df23ffa9588941d80b575668203a86fa6ba35db9e8b805f05aa913f98f4548d3",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:49.327564+00:00"
+      "checked_at_utc": "2026-10-12T04:45:02.435841+00:00"
     },
     {
       "id": "legal-report",
@@ -358,9 +375,9 @@
       "final_url": "https://justiceinnovation.law.stanford.edu/ai-for-legal-help-2026-class-report-scoping-building-and-testing-new-legal-aid-tech-systems/",
       "content_type": "text/html; charset=UTF-8",
       "identity_match": true,
-      "sha256": "b0f854a5814cfefb2f7969e161bc9e3d58d32bad947e5a47d1aeab2e9aada0f6",
+      "sha256": "f2d45718fc7ffdd2751f8a48d4783247253e85b613ce790b6261421f5d485ad2",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:51.230911+00:00"
+      "checked_at_utc": "2026-10-12T04:45:04.336532+00:00"
     },
     {
       "id": "legal-hallucination",
@@ -373,7 +390,7 @@
       "identity_match": true,
       "sha256": "4cf7f8eacf806b72ce83ba1d34b57f618613cd976183e1f52a08738f2f1b8767",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:53.666034+00:00"
+      "checked_at_utc": "2026-10-12T04:45:05.499827+00:00"
     },
     {
       "id": "fca",
@@ -383,9 +400,9 @@
       "final_url": "https://www.fca.org.uk/publications/research-notes/money-talks-lessons-2-llm-pilots-consumer-guidance",
       "content_type": "text/html; charset=UTF-8",
       "identity_match": true,
-      "sha256": "a27a549dea4d11932e7fb7c685607263c9453be14c6b43e0198b5ad3a06aeef0",
+      "sha256": "39c5f78e5b813bb0270fceb6649f260c5f9f6262c73b335e5120a9f8c5638219",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:52.955313+00:00"
+      "checked_at_utc": "2026-10-12T04:45:05.187572+00:00"
     },
     {
       "id": "cfpb",
@@ -420,7 +437,7 @@
       "identity_match": true,
       "sha256": "00ceb9fd45ed6233a2d2b57d2e6d0f64ae8ad294ddf9ba4755182fb9cbe2e31a",
       "verified": true,
-      "checked_at_utc": "2026-10-12T04:01:56.001427+00:00"
+      "checked_at_utc": "2026-10-12T04:45:07.417838+00:00"
     }
   ]
 }

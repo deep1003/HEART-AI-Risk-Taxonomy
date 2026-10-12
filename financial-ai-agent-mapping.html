@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Criterion-level mapping between the Financial Security Institute's 17 Financial AI Agent security criteria and HEART L4 risk cards.">
+  <title>Financial AI Agent mapping | HEART</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles-v2.css">
+  <link rel="stylesheet" href="assets/institution.css">
+  <link rel="stylesheet" href="assets/explorer-layout.css?v=shared-shell-20261010">
+  <link rel="stylesheet" href="assets/application-mapping.css?v=financial-agent-20261012">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="HEART home"><span class="heart-brand-copy"><span class="brand-kicker"><span class="brand-gold-dot" aria-hidden="true"></span>AI Risk Taxonomy for General, Agentic, and Physical AI</span><strong>HEA<span class="heart-brand-r">R</span>T</strong><small>Hybrid Evidence-based AI Risk Taxonomy</small></span></a>
+    <nav aria-label="Primary navigation"><a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+  </header>
+  <main>
+    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs"><a href="about.html?v=shared-shell-20261010">About HEART</a><a href="./?v=shared-shell-20261010#explore">AI risk taxonomy</a><a href="./?v=shared-shell-20261010#ai-risk-space">AI risk space</a><a href="financial-ai-agent-mapping.html" aria-current="page">Financial AI Agent mapping</a></div></nav>
+    <div class="mapping-main">
+      <section class="mapping-hero">
+        <div>
+          <p class="mapping-eyebrow">Application mapping record</p>
+          <h1>Financial AI Agent security criteria mapped to HEART L4 risks</h1>
+          <p class="mapping-lede">This record translates the Financial Security Institute's 17 security inspection criteria into risk statements and documents their reviewed correspondence with the frozen HEART inventory of 622 L4 risk cards.</p>
+          <div class="mapping-actions"><a href="./?v=financial-agent-20261012#ai-risk-space">View in AI risk space</a><a class="secondary" href="data/financial_ai_agent_heart_l4_mapping_final.csv" download>Download mapping CSV</a><a class="secondary" href="https://www.fsec.or.kr/bbs/detail?menuNo=69&amp;bbsNo=12122" target="_blank" rel="noopener noreferrer">Open source criteria</a></div>
+        </div>
+        <div class="mapping-summary" aria-label="Mapping summary">
+          <div><strong>17</strong><span>security criteria</span></div><div><strong>16</strong><span>criteria with a match</span></div><div><strong>28</strong><span>criterion to L4 links</span></div><div><strong>23</strong><span>unique L4 cards</span></div>
+        </div>
+      </section>
+      <section class="mapping-method" aria-labelledby="method-title">
+        <div><p class="mapping-eyebrow">Method</p><h2 id="method-title">Embedding retrieval followed by semantic adjudication</h2><p>The criteria were not assigned automatically by a fixed similarity cut-off. Sentence embeddings narrowed the search space; final decisions compared the risk mechanism, protected object and resulting harm.</p><div class="mapping-note"><strong>How to read the scores.</strong> Rank and score describe candidate retrieval only. They are not probabilities, severity estimates or mapping confidence. The 0.80 line achieved 100% precision but only 17.9% recall on reviewed pairs, so it was retained only as a high-priority review threshold.</div></div>
+        <div class="mapping-steps"><div class="mapping-step"><strong>Risk reformulation</strong><span>Each control-oriented criterion was rewritten as the risk that arises when the control fails.</span></div><div class="mapping-step"><strong>Bilingual representation</strong><span>Korean and English names and statements were embedded with BGE-M3 in 1,024 dimensions.</span></div><div class="mapping-step"><strong>Weighted retrieval</strong><span>Similarity combined 0.60 Korean to Korean, 0.30 English to English, and 0.05 for each cross-language direction.</span></div><div class="mapping-step"><strong>Expert review</strong><span>Top candidates and the full master were reviewed by mechanism, protected object and harm; reviewers could add a lower-ranked direct match or abstain.</span></div><div class="mapping-step"><strong>Frozen-master control</strong><span>No L4 card was created, deleted, merged, renamed or reassigned for this application mapping.</span></div></div>
+      </section>
+      <section class="mapping-table-section" aria-labelledby="table-title">
+        <p class="mapping-eyebrow">Criterion-level record</p><h2 id="table-title">17 criteria and their reviewed L4 mappings</h2><p class="mapping-table-intro">Each criterion remains a distinct source requirement. A criterion may map to several cards when the source risk contains different mechanisms or protected objects. The same L4 card may support more than one criterion.</p>
+        <div class="mapping-legend"><span class="mapping-status accepted">Accepted</span><span class="mapping-status partial_match">Partial match</span><span class="mapping-status no_exact_match">No exact match</span></div>
+        <div class="mapping-table-wrap"><table class="mapping-table"><thead><tr><th scope="col">No.</th><th scope="col">Evaluation criterion</th><th scope="col">Risk statement</th><th scope="col">Mapped HEART L4 cards</th><th scope="col">Outcome</th><th scope="col">Review rationale</th></tr></thead><tbody>
+          <tr>
+            <td><span class="criterion-number">1</span></td>
+            <td class="criterion-name"><strong lang="ko">인터페이스 보안</strong><span>Interface security</span></td>
+            <td class="risk-statement"><div lang="ko">탈옥, 프롬프트 인젝션 또는 인터페이스 우회로 AI 에이전트의 계획과 실제 실행이 조작되어 금융 업무와 시스템에 피해를 초래할 위험.</div><div class="en">The risk that jailbreaks, prompt injection, or interface bypasses manipulate an AI agent&#x27;s plans and real-world execution, causing harm to financial operations and systems.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_SECADV_044</code><strong lang="ko">프롬프트 주입 및 시스템 지시문 유출</strong><span>Prompt injection and leakage of system instructions</span><small>G_SYS_SECADV · Embedding rank 3 · retrieval score 0.695</small></div><div class="mapped-card general"><code>G_SYS_SECADV_004</code><strong lang="ko">신뢰할 수 없는 외부 지시·의도에 의한 에이전트 목표 탈취</strong><span>Agent goal hijacking through untrusted external instructions and intent</span><small>G_SYS_SECADV · Embedding rank 8 · retrieval score 0.679</small></div><div class="mapped-card general"><code>G_SYS_SECADV_023</code><strong lang="ko">에이전트 인터페이스의 공격 표면 확대</strong><span>Expanded attack surface in agent interfaces</span><small>G_SYS_SECADV · Embedding rank 13 · retrieval score 0.670</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">프롬프트 주입, 외부 지시의 목표 탈취, 에이전트 인터페이스 공격 표면이 계획·도구 실행 조작을 각각 포섭한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">2</span></td>
+            <td class="criterion-name"><strong lang="ko">환각·오정보 대응</strong><span>Hallucination and misinformation response</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트가 거짓이거나 부정확한 출력을 근거로 금융 업무를 판단하거나 실제 행위를 수행하여 잘못된 결과를 초래할 위험.</div><div class="en">The risk that an AI agent makes financial decisions or executes actions based on false or inaccurate outputs, producing erroneous outcomes.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_MISINFO_018</code><strong lang="ko">사실·증거 환각</strong><span>Hallucination of facts and evidence</span><small>G_SYS_MISINFO · Embedding rank 331 · retrieval score 0.625</small></div><div class="mapped-card agentic"><code>A_SYS_AUTH_010</code><strong lang="ko">AI 에이전트의 무단 금융 행위에 따른 금전적 피해</strong><span>Financial harm from unauthorised AI agent actions</span><small>A_SYS_AUTH · Embedding rank 1 · retrieval score 0.799</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">사실·증거 환각이라는 원인과 안전하지 않은 금융 의사결정·도구 실행에 따른 금전 피해를 원인-결과로 분리해 포섭한다.</span><div class="mapping-provenance">full master semantic review human override</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">3</span></td>
+            <td class="criterion-name"><strong lang="ko">목표 무결성</strong><span>Goal integrity</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트의 목표가 변조·탈취되거나 승인된 의도와 다르게 해석되어 허가되지 않은 목적을 자율적으로 추구할 위험.</div><div class="en">The risk that an AI agent&#x27;s goal is altered, hijacked, or interpreted contrary to authorised intent, causing the agent to autonomously pursue an unauthorised objective.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_SECADV_004</code><strong lang="ko">신뢰할 수 없는 외부 지시·의도에 의한 에이전트 목표 탈취</strong><span>Agent goal hijacking through untrusted external instructions and intent</span><small>G_SYS_SECADV · Embedding rank 1 · retrieval score 0.829</small></div><div class="mapped-card agentic"><code>A_SYS_GOAL_011</code><strong lang="ko">에이전트형 LLM의 자율성 확대에 따른 목표 정렬 실패</strong><span>Goal misalignment from increased autonomy in agentic LLMs</span><small>A_SYS_GOAL · Embedding rank 33 · retrieval score 0.721</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">외부 지시에 의한 목표 탈취와 자율 계획 과정에서 실제 의도와 다른 목표를 추구하는 내부 목표 이탈을 포섭한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">4</span></td>
+            <td class="criterion-name"><strong lang="ko">연쇄적 실패 대비</strong><span>Cascading failure preparedness</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트의 오류나 잘못된 행동이 연결된 에이전트, 도구 또는 금융 업무 시스템으로 연쇄 전파되어 피해가 확대되는 위험.</div><div class="en">The risk that an AI agent&#x27;s error or harmful action propagates across connected agents, tools, or financial systems and amplifies the resulting harm.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card agentic"><code>A_INT_CASCADE_006</code><strong lang="ko">다중 에이전트 시스템 실패와 연쇄 오류 전파</strong><span>Multi-agent system failure and cascading error propagation</span><small>A_INT_CASCADE · Embedding rank 1 · retrieval score 0.796</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">개별 오류가 통신·위임·공유 메모리·도구 의존성을 따라 전파·증폭되는 연쇄 실패와 직접 일치한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">5</span></td>
+            <td class="criterion-name"><strong lang="ko">취약한 도구 사용금지</strong><span>Prohibition of vulnerable tools</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트가 취약하거나 신뢰할 수 없는 외부 도구·플러그인을 선택하고 사용하여 시스템 침해나 잘못된 실행을 초래할 위험.</div><div class="en">The risk that an AI agent selects and uses a vulnerable or untrusted external tool or plugin, leading to system compromise or harmful execution.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_SECADV_055</code><strong lang="ko">AI 공급망의 도구·의존성 침해</strong><span>Supply-chain compromise of AI tools and dependencies</span><small>G_SYS_SECADV · Embedding rank 1 · retrieval score 0.791</small></div><div class="mapped-card agentic"><code>A_SYS_AUTH_023</code><strong lang="ko">에이전트의 안전하지 않은 도구 사용</strong><span>Unsafe or out-of-scope agent tool use</span><small>A_SYS_AUTH · Embedding rank 2 · retrieval score 0.758</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">침해된 외부 도구·의존성의 유입과 에이전트의 안전하지 않은 도구 호출을 별도 경로로 포섭한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">6</span></td>
+            <td class="criterion-name"><strong lang="ko">도구 권한 제어</strong><span>Tool permission control</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트에 부여된 과도한 도구 권한이나 권한 우회로 승인되지 않은 작업과 시스템 변경이 실행되는 위험.</div><div class="en">The risk that excessive tool permissions or permission bypasses allow an AI agent to execute unauthorised operations or system changes.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card agentic"><code>A_SYS_AUTH_009</code><strong lang="ko">무감독 AI 에이전트의 과도한 행위 권한</strong><span>Excessive action authority of unsupervised AI agents</span><small>A_SYS_AUTH · Embedding rank 1 · retrieval score 0.817</small></div><div class="mapped-card agentic"><code>A_SYS_AUTH_001</code><strong lang="ko">에이전트 권한 침해</strong><span>Agent privilege compromise</span><small>A_SYS_AUTH · Embedding rank 3 · retrieval score 0.784</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">인간 승인·권한 제한 없는 과도 권한과 취약한 권한 관리에 따른 권한 범위 초과를 포섭한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">7</span></td>
+            <td class="criterion-name"><strong lang="ko">샌드박스 환경 구축</strong><span>Sandboxing</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트가 실행 경계를 벗어나거나 격리가 실패하여 외부 시스템·데이터·업무에 승인되지 않은 영향을 미치는 위험.</div><div class="en">The risk that an AI agent escapes its execution boundary or isolation fails, allowing unauthorised effects on external systems, data, or operations.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card agentic"><code>A_SYS_AUTH_025</code><strong lang="ko">AI 에이전트의 격리 경계 이탈과 무단 외부 접근</strong><span>Unauthorised external access by an AI agent escaping isolation boundaries</span><small>A_SYS_AUTH · Embedding rank 1 · retrieval score 0.857</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">샌드박스·실행환경의 격리 경계를 벗어나 보호 자원과 외부 시스템에 무단 접근하는 위험과 직접 일치한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">8</span></td>
+            <td class="criterion-name"><strong lang="ko">메모리 오염 방지</strong><span>Memory poisoning prevention</span></td>
+            <td class="risk-statement"><div lang="ko">공격자나 오류로 오염된 AI 에이전트 메모리가 후속 금융 작업의 계획, 판단 및 실행을 지속적으로 왜곡하는 위험.</div><div class="en">The risk that attacker-controlled or erroneous AI-agent memory persistently distorts the planning, decisions, and execution of subsequent financial tasks.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_SECADV_006</code><strong lang="ko">에이전트 메모리·맥락 오염</strong><span>Agent memory and context poisoning</span><small>G_SYS_SECADV · Embedding rank 2 · retrieval score 0.760</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">세션·RAG·장기 메모리 오염이 후속 검색·추론·계획·행동을 왜곡하는 공격 경로와 직접 일치한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">9</span></td>
+            <td class="criterion-name"><strong lang="ko">메모리 격리</strong><span>Memory isolation</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트의 사용자·세션·업무 간 메모리가 분리되지 않아 정보가 혼입되거나 권한 없는 주체에게 노출되는 위험.</div><div class="en">The risk that AI-agent memory is not isolated across users, sessions, or tasks, causing information contamination or disclosure to unauthorised parties.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_INT_PRIV_008</code><strong lang="ko">애플리케이션 간 데이터 유출</strong><span>Cross-application data exfiltration</span><small>G_INT_PRIV · Embedding rank 17 · retrieval score 0.712</small></div></div></td>
+            <td><span class="mapping-status partial_match">Partial match</span></td>
+            <td class="mapping-rationale"><span lang="ko">신뢰 경계를 넘는 민감정보 유출은 포섭하지만 비악의적 세션 간 메모리 혼입은 현행 L4에 정확한 카드가 없어 부분 매핑한다.</span><div class="mapping-provenance">full master semantic review human override</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">10</span></td>
+            <td class="criterion-name"><strong lang="ko">데이터 유출 방지</strong><span>Data leakage prevention</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트가 금융정보, 개인정보 또는 기업 기밀정보를 권한 없이 추출·공유·외부 전송하여 기밀성을 침해하는 위험.</div><div class="en">The risk that an AI agent extracts, shares, or externally transmits financial, personal, or corporate confidential information without authorisation.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_POLICY_010</code><strong lang="ko">기밀정보 무단 공유에 따른 사업상 피해</strong><span>Business harm from unauthorised sharing of confidential information</span><small>G_SYS_POLICY · Embedding rank 1 · retrieval score 0.806</small></div><div class="mapped-card general"><code>G_INT_PRIV_013</code><strong lang="ko">재산 정보·개인정보·사적 사실의 부당한 노출</strong><span>Improper exposure of property information, personal information, and private facts</span><small>G_INT_PRIV · Embedding rank 3 · retrieval score 0.787</small></div><div class="mapped-card general"><code>G_INT_PRIV_008</code><strong lang="ko">애플리케이션 간 데이터 유출</strong><span>Cross-application data exfiltration</span><small>G_INT_PRIV · Embedding rank 21 · retrieval score 0.740</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">기업·금융 비공개 정보, 개인·재산정보, 연결된 애플리케이션 간 민감정보 유출을 보호대상과 경로별로 포섭한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">11</span></td>
+            <td class="criterion-name"><strong lang="ko">에이전트 간 통신보안</strong><span>Inter-agent communication security</span></td>
+            <td class="risk-statement"><div lang="ko">에이전트 간 메시지가 위조·변조·도청되어 다중 에이전트 협업과 후속 실행이 조작되거나 기밀정보가 노출되는 위험.</div><div class="en">The risk that inter-agent messages are forged, altered, or intercepted, manipulating multi-agent coordination and downstream execution or exposing confidential information.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_SECADV_046</code><strong lang="ko">프로토콜 수준 다중 에이전트 위협</strong><span>Protocol-level multi-agent threat</span><small>G_SYS_SECADV · Embedding rank 1 · retrieval score 0.758</small></div><div class="mapped-card general"><code>G_INT_PRIV_017</code><strong lang="ko">통신 및 비공개 정보 침해</strong><span>Infringement of communication and private information</span><small>G_INT_PRIV · Embedding rank 37 · retrieval score 0.668</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">에이전트 통신·위임 프로토콜의 스푸핑·재전송·권한상승과 통신 비공개 정보 침해를 포섭한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">12</span></td>
+            <td class="criterion-name"><strong lang="ko">공급망 보안</strong><span>Supply-chain security</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트가 사용하는 외부 도구, 플러그인, 모델 또는 의존 구성요소가 변조·침해되어 악성 동작이나 시스템 침해가 유입되는 위험.</div><div class="en">The risk that external tools, plugins, models, or dependencies used by an AI agent are tampered with or compromised, introducing malicious behaviour or system compromise.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_SECADV_055</code><strong lang="ko">AI 공급망의 도구·의존성 침해</strong><span>Supply-chain compromise of AI tools and dependencies</span><small>G_SYS_SECADV · Embedding rank 1 · retrieval score 0.847</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">외부 도구·플러그인·API·패키지·커넥터 의존성 침해가 악성 구성요소와 취약점을 유입하는 경로와 직접 일치한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">13</span></td>
+            <td class="criterion-name"><strong lang="ko">인적 승인체계 구축</strong><span>Human approval</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트의 중대한 금융 업무 행위가 적절한 인간 검토와 유효한 승인 없이 실행되어 피해를 초래할 위험.</div><div class="en">The risk that a consequential financial action by an AI agent is executed without appropriate human review and valid approval, causing harm.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card agentic"><code>A_SYS_AUTH_009</code><strong lang="ko">무감독 AI 에이전트의 과도한 행위 권한</strong><span>Excessive action authority of unsupervised AI agents</span><small>A_SYS_AUTH · Embedding rank 2 · retrieval score 0.753</small></div><div class="mapped-card agentic"><code>A_SYS_AUTH_010</code><strong lang="ko">AI 에이전트의 무단 금융 행위에 따른 금전적 피해</strong><span>Financial harm from unauthorised AI agent actions</span><small>A_SYS_AUTH · Embedding rank 1 · retrieval score 0.795</small></div><div class="mapped-card general"><code>G_SYS_CONTEST_002</code><strong lang="ko">인간 참여형 형식적 승인</strong><span>Human-in-the-loop rubber stamping</span><small>G_SYS_CONTEST · Embedding rank 189 · retrieval score 0.631</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">승인 없는 에이전트 권한 행사, 무단 금융 행위의 직접 피해, 명목상 승인 절차의 실패를 함께 포섭한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">14</span></td>
+            <td class="criterion-name"><strong lang="ko">인적 개입 과부하 방지</strong><span>Human intervention overload prevention</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트의 과도한 승인 요청·경보·작업량으로 인간 검토자가 과부하되어 실질적인 감독과 개입에 실패할 위험.</div><div class="en">The risk that excessive approval requests, alerts, or workload from AI agents overload human reviewers and cause effective oversight or intervention to fail.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SYS_CONTEXT_002</code><strong lang="ko">AI 의사결정 지원의 경고 피로</strong><span>Alert fatigue in AI decision support</span><small>G_SYS_CONTEXT · Embedding rank 24 · retrieval score 0.688</small></div><div class="mapped-card agentic"><code>A_SYS_GOAL_013</code><strong lang="ko">확장 가능한 감독 실패에 따른 대리 지표 기반 유해 행동</strong><span>Harmful proxy-driven behaviour from scalable oversight failure</span><small>A_SYS_GOAL · Embedding rank 32 · retrieval score 0.684</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">경고 피로와 행동 규모·속도·복잡성이 감독 한계를 초과하는 확장 가능한 감독 실패를 포섭한다.</span><div class="mapping-provenance">full master semantic review human override</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">15</span></td>
+            <td class="criterion-name"><strong lang="ko">자원 고갈 방지</strong><span>Resource exhaustion prevention</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트의 무제한 반복, 도구 호출 또는 작업 실행이 컴퓨팅 자원·비용·서비스 용량을 고갈시켜 금융 서비스 장애를 초래할 위험.</div><div class="en">The risk that unbounded loops, tool calls, or task execution by an AI agent exhaust computational resources, budgets, or service capacity and disrupt financial services.</div></td>
+            <td><div class="mapped-cards"><div class="no-card"><strong>No exact current L4 match</strong><span>Mapping was intentionally withheld.</span></div></div></td>
+            <td><span class="mapping-status no_exact_match">No exact match</span></td>
+            <td class="mapping-rationale"><span lang="ko">단일 에이전트의 무제한 반복·도구 호출에 따른 일반 자원 고갈을 정확히 포섭하는 현행 L4가 없어 매핑을 유보한다.</span><div class="mapping-provenance">human adjudication abstention</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">16</span></td>
+            <td class="criterion-name"><strong lang="ko">킬스위치 구현</strong><span>Kill switch</span></td>
+            <td class="risk-statement"><div lang="ko">유해하거나 오작동하는 AI 에이전트를 적시에 중단·비활성화·봉쇄하지 못하여 피해가 지속되거나 확대되는 위험.</div><div class="en">The risk that a harmful or malfunctioning AI agent cannot be stopped, disabled, or contained in time, allowing harm to continue or escalate.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card agentic"><code>A_SYS_AUTH_002</code><strong lang="ko">에이전트의 종료·교정 저항</strong><span>Agent resistance to shutdown and correction</span><small>A_SYS_AUTH · Embedding rank 18 · retrieval score 0.721</small></div></div></td>
+            <td><span class="mapping-status partial_match">Partial match</span></td>
+            <td class="mapping-rationale"><span lang="ko">에이전트가 종료·정지·교정 메커니즘을 거부·회피·무력화하는 경우를 포섭한다. 킬스위치의 단순 부재·고장은 미포섭이다.</span><div class="mapping-provenance">full master semantic review human override</div></td>
+          </tr>
+          <tr>
+            <td><span class="criterion-number">17</span></td>
+            <td class="criterion-name"><strong lang="ko">로깅 및 감사체계 구축</strong><span>Logging and audit</span></td>
+            <td class="risk-statement"><div lang="ko">AI 에이전트의 계획·도구 호출·실행 기록이 불충분하여 이상행위를 탐지·추적하거나 책임을 귀속하고 사고를 조사하지 못하는 위험.</div><div class="en">The risk that insufficient records of an AI agent&#x27;s plans, tool calls, and actions prevent detection, traceability, accountability, or incident investigation.</div></td>
+            <td><div class="mapped-cards"><div class="mapped-card general"><code>G_SOC_GOV_021</code><strong lang="ko">AI 결정·행동에 대한 감사 추적 불완전성</strong><span>Incomplete audit trails for AI decisions and actions</span><small>G_SOC_GOV · Embedding rank 1 · retrieval score 0.770</small></div></div></td>
+            <td><span class="mapping-status accepted">Accepted</span></td>
+            <td class="mapping-rationale"><span lang="ko">로그·버전·데이터 계보·의사결정 기록 부족으로 사건 재구성, 감사, 책임 규명이 불가능해지는 위험과 직접 일치한다.</span><div class="mapping-provenance">embedding top10 and human adjudication</div></td>
+          </tr></tbody></table></div>
+        <div class="mapping-footnotes"><article><h3>Partial mappings</h3><p>Memory isolation maps only to cross-application data exfiltration, not benign session contamination. Kill-switch coverage maps only to an agent resisting shutdown or correction, not to the simple absence or technical failure of a kill switch.</p></article><article><h3>Abstention</h3><p>Resource exhaustion was left unmapped because the current HEART inventory has no exact card for unbounded loops or tool calls by a single agent. The process did not force a nearby but semantically different match.</p></article></div>
+        <p class="mapping-source"><strong>Primary source:</strong> <a href="https://www.fsec.or.kr/bbs/detail?menuNo=69&amp;bbsNo=12122" target="_blank" rel="noopener noreferrer">Financial Security Institute, Financial-sector AI Agent Security Evaluation Criteria, 8 October 2026</a>. Mapping snapshot prepared 12 October 2026 against HEART's frozen 622-card inventory.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer publisher-footer"><div class="publisher-identity"><a class="kt-logo-link" href="https://corp.kt.com/eng/" target="_blank" rel="noopener noreferrer" aria-label="KT Corporation official website"><img src="assets/kt-logo-light.svg" alt="KT" width="40" height="40"></a><div><p class="publisher-name">Frontier AI Lab, KT Corporation</p><a class="publisher-contact" href="mailto:responsible.ai@kt.com">responsible.ai@kt.com</a></div></div></footer>
+</body>
+</html>

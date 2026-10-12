@@ -48,7 +48,8 @@
       const ref = catalog.sources[id];
       return `<a href="${escape(ref.url)}" aria-label="${escape(ref.label + ': ' + ref.title)}" target="_blank" rel="noopener noreferrer">${escape(ref.label)}</a>`;
     }).join(' · ');
-    return `<span class="filter-definition">${escape(summary.charAt(0).toUpperCase() + summary.slice(1))}</span><span class="filter-references">References · ${links}</span>`;
+    const details = entry.detail_url ? `<span class="filter-references"><a href="${escape(entry.detail_url)}">View criterion-level mapping table</a></span>` : '';
+    return `<span class="filter-definition">${escape(summary.charAt(0).toUpperCase() + summary.slice(1))}</span><span class="filter-references">References · ${links}</span>${details}`;
   }
   if (typeof module !== 'undefined' && module.exports) module.exports = {activeIds, escape, nodeRadius, edgePath, labelCandidates, zoomViewport, tooltipContent, filterDescription};
   if (typeof document === 'undefined') return;
@@ -127,7 +128,7 @@
     get('semantic-status').textContent = 'Loading the risk text projection…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse, referenceResponse] = await Promise.all([fetch('data/semantic_space.json?v=pdf-sync-20261010'), fetch('data/heart_l4_risk_cards.json?v=pdf-sync-20261010'), fetch('data/filter_references.json?v=compact-20261010')]);
+      const [spaceResponse, cardResponse, referenceResponse] = await Promise.all([fetch('data/semantic_space.json?v=financial-agent-20261012'), fetch('data/heart_l4_risk_cards.json?v=pdf-sync-20261010'), fetch('data/filter_references.json?v=financial-agent-mapping-20261012')]);
       if (!spaceResponse.ok || !cardResponse.ok || !referenceResponse.ok) throw new Error('The AI risk space data or references could not be loaded.');
       referenceCatalog = await referenceResponse.json();
       const cardText = await cardResponse.text();

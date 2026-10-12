@@ -17,11 +17,12 @@ for(const item of [...data.keywords,...data.scenarios]){
   const entry=referenceCatalog.filters[item.id];
   assert(entry && new Set(entry.references).size>=2);
   const description=filterDescription(item,referenceCatalog);
-  assert.equal((description.match(/<a /g)||[]).length,entry.references.length);
+  assert.equal((description.match(/<a /g)||[]).length,entry.references.length + (entry.detail_url ? 1 : 0));
   assert(!description.includes('<blockquote>'));
   assert(!description.includes('Concept scope and mapping method'));
   assert(!description.includes('Concept definition'));
 }
+assert(filterDescription(data.scenarios.find(item=>item.id==='financial-ai-agent'),referenceCatalog).includes('financial-ai-agent-mapping.html'));
 const sourceIds = new Set(cards.map(card => card.L4_ID));
 for(const card of cards){
   const tooltip=tooltipContent(card,{strength:5.915,degree:8});

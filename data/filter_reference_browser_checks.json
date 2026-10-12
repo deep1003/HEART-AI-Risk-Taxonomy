@@ -9,5 +9,16 @@
     "h1": "Chatbots in consumer finance",
     "content_checks": ["Providing inaccurate, unreliable, or insufficient information", "Keeping personally identifiable information safe"],
     "note": "The full official report opened without authentication or a security bypass. Automated urllib requests return HTTP 403; retain that limitation in the validation record. This is a dated browser observation, not a claim that HTTP automation succeeded."
+  },
+  "unesco": {
+    "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+    "title": "Recommendation on the Ethics of Artificial Intelligence",
+    "checked_date_kst": "2026-10-12",
+    "verified": true,
+    "channel": "Direct Codex web retrieval and read-only page inspection",
+    "page_title": "Recommendation on the Ethics of Artificial Intelligence - Legal Affairs",
+    "h1": "Recommendation on the Ethics of Artificial Intelligence",
+    "content_checks": ["Date and place of adoption", "23 November 2021", "Paris, France"],
+    "note": "The official full HTML text opened and identified the instrument. The automated identity substring check failed because the retrieved HTML representation omitted the expected compact phrase. This dated browser observation verifies document identity, not permanence."
   }
 }
