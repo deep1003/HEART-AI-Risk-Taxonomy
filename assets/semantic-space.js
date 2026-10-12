@@ -125,7 +125,7 @@
   async function load() {
     if (data) {draw(); return;}
     if (loading) return;
-    get('semantic-status').textContent = 'Loading the risk text projection…';
+    get('semantic-status').textContent = 'Loading the AI risk space…';
     loading = true;
     try {
       const [spaceResponse, cardResponse, referenceResponse] = await Promise.all([fetch('data/semantic_space.json?v=financial-agent-20261012'), fetch('data/heart_l4_risk_cards.json?v=pdf-sync-20261010'), fetch('data/filter_references.json?v=financial-agent-mapping-20261012')]);
@@ -176,8 +176,8 @@
     const keyword = data.keywords.find(item => item.id === filters.keyword);
     const labels = [scenario?.name, cluster?.name, keyword?.name].filter(Boolean);
     get('semantic-selection-name').textContent = labels.join(' / ') || 'All risk cards';
-    get('semantic-selection-description').innerHTML = scenario || keyword ? filterDescription(scenario || keyword, referenceCatalog) : 'Explore the current L4 cards by keyword or application. Filters highlight relevance without changing the taxonomy.';
-    get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}`;
+    get('semantic-selection-description').innerHTML = scenario || keyword ? filterDescription(scenario || keyword, referenceCatalog) : 'Select a keyword or application to highlight related risk cards. Filters do not change the taxonomy.';
+    get('semantic-status').textContent = `${enabledIds.size} of ${data.card_count} risk cards shown`;
     for (const kind of ['scenario','cluster','keyword']) {
       document.querySelectorAll(`[data-${kind}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[kind] === filters[kind] && !(kind === 'keyword' && !button.dataset.keyword && filters.scenario))));
     }
@@ -199,7 +199,7 @@
     const sx = x => width/2 + (x-(lowX+highX)/2)*scale;
     const sy = y => height/2 - (y-(lowY+highY)/2)*scale;
     locations = new Map(data.points.map(point => [point.id, {x:sx(point.x),y:sy(point.y)}]));
-    let markup = '<desc>Transformer-embedding neighbours, Louvain communities and ForceAtlas2 layout. Edges are not causal paths. Filtering does not change taxonomy assignments.</desc>';
+    let markup = '<desc>Transformer-embedding neighbors, Louvain communities and ForceAtlas2 layout. Edges are not causal paths. Filtering does not change taxonomy assignments.</desc>';
     for (let index = 0; index <= 8; index++) {
       const x = left + (right-left)*index/8, y = top + (bottom-top)*index/8;
       markup += `<line class="semantic-grid-line" x1="${x}" y1="${top}" x2="${x}" y2="${bottom}"/><line class="semantic-grid-line" x1="${left}" y1="${y}" x2="${right}" y2="${y}"/>`;
@@ -230,7 +230,7 @@
     svg.setAttribute('aria-label', `${enabledIds.size} active L4 risks in the text projection. Use the node labels for keyboard access.`);
     svg.dataset.activeCount = String(enabledIds.size);
     get('semantic-tooltip').hidden = true;
-    get('semantic-status').textContent = `${enabledIds.size} active risks of ${data.card_count}`;
+    get('semantic-status').textContent = `${enabledIds.size} of ${data.card_count} risk cards shown`;
   }
 
   get('semantic-plot').addEventListener('click', event => {
