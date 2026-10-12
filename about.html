@@ -21,8 +21,8 @@
       <h1>About HEART</h1>
       <p>HEART (Hybrid Evidence-based AI Risk Taxonomy) organizes <strong>622 bilingual, evidence-linked risk cards into 47 categories</strong> across General, Agentic, and Physical AI. It provides a shared vocabulary for identifying risks that arise from model outputs, delegated decisions, and physical actions. Each card links a risk definition to its place in the hierarchy and to its supporting evidence. The categories were designed from the literature, and experts wrote and assigned the cards; these assignments serve as the reference for the evaluations below.</p>
       <h2>Key results</h2>
-      <p><strong>Category assignment.</strong> Using bilingual names and definitions within known L1 domains, the assignment algorithm (Algorithm 2) agrees with the expert reference for <strong>69.45% of cards</strong> (Top-1, BGE-M3).</p>
       <p><strong>Iterative consolidation.</strong> The grouping algorithm (Algorithm 1) consolidated 1,612 candidate formulations into <strong>792 representatives</strong> after five iterations, which experts then refined into the 622 cards.</p>
+      <p><strong>Category assignment.</strong> Using bilingual names and definitions within known L1 domains, the assignment algorithm (Algorithm 2) agrees with the expert reference for <strong>69.45% of cards</strong> (Top-1, BGE-M3).</p>
       <details id="evaluation-details" class="about-mapping-details">
         <summary>Method</summary>
         <p>The construction evidence comprises 82,971 scholarly publications, policy and technical reports, and patents. Candidate risks were generated with HDBSCAN grouping and class-based TF-IDF summaries and then consolidated iteratively (Algorithm 1). Cards are assigned by embedding similarity within eligible domains, with category centroids anchored to the expert definitions and refined iteratively (Algorithm 2).</p>
