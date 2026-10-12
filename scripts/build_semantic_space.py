@@ -113,6 +113,16 @@ SCENARIOS = [rule for rule in SCENARIOS if rule['id'] == 'ai-for-everyone'] + [
      "prefixes": ["G_SYS_MISINFO", "G_SYS_CONTEXT", "G_SYS_INPUT", "G_SYS_INCONS", "G_SYS_OVERCONF", "G_SYS_TRANS", "G_SYS_POLICY", "G_INT_PRIV", "G_INT_UNETH", "G_INT_ALLOC"],
      "terms": ["financial advice", "financial guidance", "investment advice", "financial fraud", "consumer-autonomy", "personalised advertising"],
      "exclude": ["G_INT_PRIV_031", "G_INT_PRIV_030"]},
+    {"id": "financial-ai-agent", "name": "Financial AI Agent", "name_ko": "금융 AI 에이전트",
+     "description": "An AI system used in financial operations that autonomously plans, uses tools or external systems, and performs actions to achieve assigned goals. The Financial Security Institute's 17 security inspection items across six areas were reformulated as risks arising when the corresponding controls fail. Bilingual BGE-M3 sentence embeddings retrieved HEART L4 candidates, then expert review adjudicated each candidate by mechanism, protected object and harm. Sixteen inspection items map to 23 unique L4 cards. Resource exhaustion has no exact current L4 match; memory isolation and kill-switch coverage are partial. This is a conditional applicability lens, not evidence of incidents or a certification result.",
+     "source_url": "https://www.fsec.or.kr/bbs/detail?menuNo=69&bbsNo=12122",
+     "source_label": "Financial Security Institute, Financial-sector AI Agent Security Evaluation Criteria (8 October 2026)",
+     "ids": """A_INT_CASCADE_006 A_SYS_AUTH_001 A_SYS_AUTH_002 A_SYS_AUTH_009
+     A_SYS_AUTH_010 A_SYS_AUTH_023 A_SYS_AUTH_025 A_SYS_GOAL_011 A_SYS_GOAL_013
+     G_INT_PRIV_008 G_INT_PRIV_013 G_INT_PRIV_017 G_SOC_GOV_021 G_SYS_CONTEST_002
+     G_SYS_CONTEXT_002 G_SYS_MISINFO_018 G_SYS_POLICY_010 G_SYS_SECADV_004
+     G_SYS_SECADV_006 G_SYS_SECADV_023 G_SYS_SECADV_044 G_SYS_SECADV_046
+     G_SYS_SECADV_055""".split()},
 ]
 
 TOPICS = [

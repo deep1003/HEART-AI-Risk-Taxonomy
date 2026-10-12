@@ -12,7 +12,7 @@ const referenceValidation=JSON.parse(fs.readFileSync(path.join(root,'data/filter
 assert.equal(referenceValidation.catalog_sha256,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data/filter_references.json'))).digest('hex'));
 assert.equal(referenceValidation.results.length,Object.keys(referenceCatalog.sources).length);
 assert(referenceValidation.results.every(item=>item.verified));
-assert.equal(Object.keys(referenceCatalog.filters).length,20);
+assert.equal(Object.keys(referenceCatalog.filters).length,21);
 for(const item of [...data.keywords,...data.scenarios]){
   const entry=referenceCatalog.filters[item.id];
   assert(entry && new Set(entry.references).size>=2);
@@ -53,7 +53,7 @@ const sameL3=data.points.filter(point=>point.cluster===data.points[0].cluster);
 assert.equal(labelCandidates(sameL3,sourceIds,5).length,sameL3.length);
 const single=new Set([data.points[0].id]);
 assert.equal(labelCandidates(data.points,single)[0].id,data.points[0].id);
-assert.equal(data.scenarios.length, 3);
+assert.equal(data.scenarios.length, 4);
 assert(data.clusters.length > 1);
 assert.equal(data.method.embedding_dimensions, 1024);
 assert.equal(data.method.edge_count, data.edges.length);
@@ -75,7 +75,15 @@ for (const scenario of data.scenarios) {
     assert.equal(selected.size,scenario.ids.filter(id=>cluster.ids.includes(id)).length);
   }
 }
-assert.deepEqual(data.scenarios.map(item=>item.name), ['AI for Everyone (Korea)','Legal assistance AI','Financial chatbots']);
+assert.deepEqual(data.scenarios.map(item=>item.name), ['AI for Everyone (Korea)','Legal assistance AI','Financial chatbots','Financial AI Agent']);
+assert.equal(data.scenarios.find(item=>item.id==='financial-ai-agent').ids.length,23);
+assert.deepEqual(data.scenarios.find(item=>item.id==='financial-ai-agent').ids.sort(), [
+  'A_INT_CASCADE_006','A_SYS_AUTH_001','A_SYS_AUTH_002','A_SYS_AUTH_009','A_SYS_AUTH_010',
+  'A_SYS_AUTH_023','A_SYS_AUTH_025','A_SYS_GOAL_011','A_SYS_GOAL_013','G_INT_PRIV_008',
+  'G_INT_PRIV_013','G_INT_PRIV_017','G_SOC_GOV_021','G_SYS_CONTEST_002','G_SYS_CONTEXT_002',
+  'G_SYS_MISINFO_018','G_SYS_POLICY_010','G_SYS_SECADV_004','G_SYS_SECADV_006',
+  'G_SYS_SECADV_023','G_SYS_SECADV_044','G_SYS_SECADV_046','G_SYS_SECADV_055'
+].sort());
 assert([...activeIds(data,{scenario:'financial-chatbots'})].every(id=>id.startsWith('G_')));
 assert([...activeIds(data,{scenario:'legal-assistance'})].every(id=>!id.startsWith('P_')));
 assert(!data.scenarios.some(item=>item.id==='network-agents'));
@@ -122,8 +130,8 @@ assert(!html.includes('class="semantic-active-risks"'));
 assert(/href="about\.html(?:\?[^\"]*)?"/.test(html));
 const about=fs.readFileSync(path.join(root,'about.html'),'utf8');
 assert(about.includes('<h1>About HEART</h1>'));
-for(const heading of ['Why HEART','Data and structure','Methods','How to use it','Limits']) assert(about.includes(`<h2>${heading}</h2>`));
-for(const concept of ['82,971','50,375','938','31,658','622','47','HDBSCAN','TF-IDF','EM-style','Expert adjudication','ForceAtlas2','Probability and Severity remain unassigned']) assert(about.includes(concept));
+for(const heading of ['Key results','How to use it','Limits']) assert(about.includes(`<h2>${heading}</h2>`));
+for(const concept of ['82,971','622','47','HDBSCAN','TF-IDF','ForceAtlas2','Probability and Severity','Financial AI Agent','23 unique cards']) assert(about.includes(concept));
 assert(!about.includes('class="hero"'));
 assert.equal((html.match(/id="semantic-reset"/g)||[]).length,1);
 assert(/semantic-plot-heading[^\n]*id="semantic-reset"/.test(html));

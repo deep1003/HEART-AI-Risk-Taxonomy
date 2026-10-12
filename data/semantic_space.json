@@ -1653,7 +1653,7 @@
     },
     {
       "id": "G_INT_REPR_015",
-      "x": -1.0,
+      "x": -1,
       "y": 0.3896132,
       "cluster": "G_INT_REPR",
       "degree": 8,
@@ -3524,7 +3524,7 @@
     {
       "id": "G_SOC_POWER_004",
       "x": -0.3344814,
-      "y": 3.33e-05,
+      "y": 0.0000333,
       "cluster": "G_SOC_POWER",
       "degree": 14,
       "strength": 10.396968,
@@ -5763,7 +5763,7 @@
     },
     {
       "id": "P_INT_SAFETY_021",
-      "x": 1.0,
+      "x": 1,
       "y": -0.0566856,
       "cluster": "P_INT_SAFETY",
       "degree": 9,
@@ -25458,7 +25458,7 @@
         "L1_P": 0.6973205804824829
       },
       "semantic_colour_coordinates": [
-        -1.0,
+        -1,
         -0.0997096374630928
       ],
       "gradient_start": "#cc5177",
@@ -25636,7 +25636,7 @@
       },
       "semantic_colour_coordinates": [
         -0.418828547000885,
-        -1.0
+        -1
       ],
       "gradient_start": "#b13e2f",
       "gradient_end": "#d1307c",
@@ -26336,7 +26336,7 @@
       },
       "semantic_colour_coordinates": [
         -0.04170680791139603,
-        -1.0
+        -1
       ],
       "gradient_start": "#2141e1",
       "gradient_end": "#2243e3",
@@ -26666,7 +26666,7 @@
         "L1_P": 0.7425346374511719
       },
       "semantic_colour_coordinates": [
-        1.0,
+        1,
         0.2105274200439453
       ],
       "gradient_start": "#a552ea",
@@ -27301,7 +27301,7 @@
         "L1_P": 0.851061224937439
       },
       "semantic_colour_coordinates": [
-        1.0,
+        1,
         0.2749009132385254
       ],
       "gradient_start": "#045aa9",
@@ -27337,7 +27337,7 @@
       },
       "semantic_colour_coordinates": [
         0.06518124043941498,
-        -1.0
+        -1
       ],
       "gradient_start": "#21826f",
       "gradient_end": "#168d6c",
@@ -28035,6 +28035,37 @@
         "G_SYS_TRANS_022",
         "G_SYS_TRANS_023",
         "G_SYS_TRANS_024"
+      ]
+    },
+    {
+      "id": "financial-ai-agent",
+      "name": "Financial AI Agent",
+      "name_ko": "금융 AI 에이전트",
+      "description": "An AI system used in financial operations that autonomously plans, uses tools or external systems, and performs actions to achieve assigned goals. The Financial Security Institute’s 17 security inspection items across six areas were reformulated as risks arising when the corresponding controls fail. Bilingual BGE-M3 sentence embeddings retrieved HEART L4 candidates, then expert review adjudicated each candidate by mechanism, protected object and harm. Sixteen inspection items map to 23 unique L4 cards. Resource exhaustion has no exact current L4 match; memory isolation and kill-switch coverage are partial. This is a conditional applicability lens, not evidence of incidents or a certification result.",
+      "ids": [
+        "A_INT_CASCADE_006",
+        "A_SYS_AUTH_001",
+        "A_SYS_AUTH_002",
+        "A_SYS_AUTH_009",
+        "A_SYS_AUTH_010",
+        "A_SYS_AUTH_023",
+        "A_SYS_AUTH_025",
+        "A_SYS_GOAL_011",
+        "A_SYS_GOAL_013",
+        "G_INT_PRIV_008",
+        "G_INT_PRIV_013",
+        "G_INT_PRIV_017",
+        "G_SOC_GOV_021",
+        "G_SYS_CONTEST_002",
+        "G_SYS_CONTEXT_002",
+        "G_SYS_MISINFO_018",
+        "G_SYS_POLICY_010",
+        "G_SYS_SECADV_004",
+        "G_SYS_SECADV_006",
+        "G_SYS_SECADV_023",
+        "G_SYS_SECADV_044",
+        "G_SYS_SECADV_046",
+        "G_SYS_SECADV_055"
       ]
     }
   ],
