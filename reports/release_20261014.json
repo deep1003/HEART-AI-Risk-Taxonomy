@@ -1,0 +1,31 @@
+{
+  "edition": "proofread edition (rounds 1-7), synchronized with Overleaf version 503",
+  "date": "2026-10-14",
+  "pdf_pages": 36,
+  "source_files": 57,
+  "cited_references": 36,
+  "files": {
+    "HEART_Technical_Report_20261014.pdf": {
+      "sha256": "ac0fb85d466e84b09fc5ea46fb33260bc5ac0ae07cbf8aa239ffc5b8481b0654",
+      "bytes": 5039711
+    },
+    "HEART_Technical_Report_20261014_source.zip": {
+      "sha256": "d8b425dfd7a94fb7cb14f25ecb4e96026eb6243daa9849960a5045acd612df5c",
+      "bytes": 11751236
+    }
+  },
+  "reference": {
+    "L3_categories": 47,
+    "L4_cards": 622,
+    "unchanged": true
+  },
+  "scores_unchanged": true,
+  "changes": [
+    "American-English scientific proofreading and logical-flow revision (rounds 1-6)",
+    "Limitations rewritten as Limitations and Future Directions; Appendix B validation-interpretation table removed",
+    "Six-step application-profile procedure attributed to KT's AI impact assessment procedure (Park et al., 2025, arXiv:2509.20057)",
+    "Delivery-robot example stated as illustrative, neither confirmed nor exhaustive"
+  ],
+  "MIT_appendix": "archived, not compiled",
+  "previous_releases_preserved": true
+}
