@@ -9,7 +9,7 @@ reference are preserved.
 
 | About section | Basis |
 | --- | --- |
-| Purpose, 622 cards and 47 categories | Report abstract, Introduction and taxonomy methodology; website release manifest |
+| Purpose, 622 cards and 55 categories | Report abstract, Introduction and taxonomy methodology; website release manifest |
 | Taxonomy construction | Methodology, Semantic Representation and Clustering, Constrained Consolidation, EM-Style Constrained Assignment and Centroid Refinement |
 | Algorithm 1/2 evaluation and key results | Section 5.2; Algorithm 1 iterative consolidation only, Algorithm 2 fixed-reference agreement |
 | Sensitivity and interpretation | Section 5.2 and Limitations; matched text, different encoder procedures, known L1, no held-out test or audited pair-level semantic ground truth |
@@ -21,7 +21,7 @@ reference are preserved.
 The 82,971 construction records are not incidents or the downloadable card count.
 The report's clustering and iterative assignment are not the live graph algorithm.
 The website preserves approved categories and uses ForceAtlas2 for layout.
-Algorithm 2's 432/622 and 390/622 agreements round to 69.45% and 62.70%.
+For the 55-category release, Algorithm 2 achieves 65.11% Top-1 and 84.41% Top-3 agreement with the expert reference using BGE-M3.
 Original F5 has 792 representatives, followed by expert rewriting into 622 cards;
 semantic proximity is not verified equivalence or an optimal stopping criterion.
 The concise article retains the model/input sensitivity and original-encoding

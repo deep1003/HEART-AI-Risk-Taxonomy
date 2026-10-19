@@ -28,7 +28,6 @@ URL_OVERRIDES = {
 
 FIELDS = [
     "L4_ID",
-URL_OVERRIDES.update(json.loads((REPO / "data/evidence_pdf_url_map.json").read_text(encoding="utf-8")))
     "L4_Name_en",
     "L4_Name_ko",
     "L1_ID",
@@ -60,6 +59,10 @@ URL_OVERRIDES.update(json.loads((REPO / "data/evidence_pdf_url_map.json").read_t
     "Severity",
 ]
 
+URL_OVERRIDES.update(
+    json.loads((REPO / "data/evidence_pdf_url_map.json").read_text(encoding="utf-8"))
+)
+
 
 def clean(value: object) -> str:
     text = "" if value is None else str(value)
@@ -74,7 +77,7 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=FIELDS)
+        writer = csv.DictWriter(handle, fieldnames=FIELDS, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

@@ -311,7 +311,7 @@
         "reason": "False information targeting an individual. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
       },
       {
-        "id": "A_SYS_AUTH_023",
+        "id": "A_SYS_EXEC_002",
         "reason": "Unsafe or out-of-scope agent tool use. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
       },
       {
@@ -418,7 +418,7 @@
         "reason": "Erosion of democratic processes and institutional trust. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
       },
       {
-        "id": "A_SYS_SELFCOR_002",
+        "id": "A_SYS_MEMSTATE_001",
         "reason": "Self-correction failure in AI-agent memory. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
       }
     ],
@@ -916,7 +916,7 @@
         "reason": "Unauthorised transfers and account damage through agent tool use specify authorisation and financial-system integrity failures. Recovered below threshold after full-definition review."
       },
       {
-        "id": "A_SYS_AUTH_023",
+        "id": "A_SYS_EXEC_002",
         "reason": "Out-of-scope tool invocation with privacy or operational consequences relates to authority enforcement and integrity of connected digital tools. Recovered below threshold after full-definition review."
       },
       {

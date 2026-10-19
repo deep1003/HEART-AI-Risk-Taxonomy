@@ -1,6 +1,6 @@
 # HEART semantic proximity network
 
-The 622 canonical L4 cards and their 47 L3 assignments remain unchanged. Semantic space is the default home view, with a separate card-explorer tab.
+The public release contains 622 canonical L4 cards assigned to 55 human-validated L3 categories. Semantic space and the taxonomy explorer use the same current card inventory.
 
 ## Reproduction and provenance
 
@@ -14,7 +14,7 @@ Install `scripts/semantic_requirements.txt` in a task-local environment and run 
 2. Retain the undirected union of eight nearest cosine neighbours per card at similarity >= 0.60. No artificial links are inserted. Edge weights are measured cosine similarity. This exploratory floor preserves the full top-eight graph: the observed minimum candidate score is 0.6218. It is not an expert-calibrated accuracy threshold. Higher floors of 0.65, 0.70 and 0.75 produce 1, 13 and 93 isolated nodes respectively.
 3. Weighted Louvain using `networkx.algorithms.community.louvain_communities` in NetworkX 3.5, resolution 1.0 and seed 23, produces 9 communities and 3,807 edges, one connected component and no isolates. Modularity 0.562975 describes graph partitioning, not classification accuracy. Link weights are cosine similarity, calculated as the dot product of L2-normalised vectors: w(i,j) = e(i) · e(j). Louvain is an algorithm name; 3.5 is the implementation library version, not an algorithm version.
 4. A seeded weighted spring layout initialises ForceAtlas2, 350 iterations, scaling ratio 8, gravity 0.15, linlog attraction. Uniform centring and rescaling preserve all outliers without clipping. Filters never recompute positions.
-5. Colours identify the 47 human-approved L3 categories, anchored in the three L1 domains and varied using L3 semantic relationships as described below. Louvain communities are retained in `graph_communities` as diagnostic metadata, not displayed colour groups. Node strength is the sum of published incident cosine weights. Node area is linearly scaled over the full-network strength range to radii 3 to 15 display pixels: r = sqrt(9 + 216 × (strength − min)/(max − min)). Equal-strength networks use the midpoint area. Sizes remain fixed across filters, including pale inactive nodes. This is not severity, probability or EM confidence.
+5. Colours identify the 55 human-approved L3 categories, anchored in the three L1 domains and varied using L3 semantic relationships as described below. Louvain communities are retained in `graph_communities` as diagnostic metadata, not displayed colour groups. Node strength is the sum of published incident cosine weights. Node area is linearly scaled over the full-network strength range to radii 3 to 15 display pixels: r = sqrt(9 + 216 × (strength − min)/(max − min)). Equal-strength networks use the midpoint area. Sizes remain fixed across filters, including pale inactive nodes. This is not severity, probability or EM confidence.
 
 ## Degree-based labels on actual L4 nodes
 
@@ -54,7 +54,7 @@ The default view uses a 1.10 display multiplier, equivalent to the previous 110%
 On 9 October 2026, BGE-M3 replaced all-MiniLM-L6-v2 (384 dimensions, sentence-transformers 5.1.1, revision `1110a243fdf4706b3f48f1d95db1a4f5529b4d41`). All 622 inputs and approved L3 assignments are unchanged. Top-eight same-L3 agreement increases from 37.62% to 40.55%, but this is a diagnostic rather than semantic accuracy. Mean neighbour overlap is 47.39%; mixed qualitative examples remain. MiniLM vectors, graph and methods are preserved locally in `evidence_work/minilm_baseline_20261009/` and in the preceding Git history. The change is user-approved, not evidence that BGE-M3 is universally superior.
 ## L1-anchored semantic L3 colour model
 
-The English title and definition of each of the 47 L3 categories are extracted from the preserved source snapshots and matched against the Technical Report L3 data master. No L3 is renamed, reassigned or generated. `l3_semantic_colours.json` preserves these inputs and hashes; its named NPZ file stores 47 BGE-M3 vectors and the pinned model revision.
+The English title and definition of each of the 55 L3 categories are extracted from the validated master. The October 2026 advisory revision added eight categories and reassigned 16 existing L4 identifiers without creating new L4 cards. `l3_semantic_colours.json` records the current hierarchy and navigation palette.
 
 General AI is anchored in blue (#4263eb), Agentic AI in orange (#d87518), and Physical AI in teal (#00977e). Each L1 prototype is the L2-normalised mean of its L3 vectors, with equal weight per L3, not per L4. A category's cosine margin against its nearest competing L1 centroid determines a bounded mixture: other-domain weight = 0.35 / (1 + exp(margin / 0.05)). Mixing occurs in linear-light RGB. The assigned L1 contributes at least 65% to the seed colour; the classification is never replaced by the nearest semantic domain.
 

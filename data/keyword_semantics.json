@@ -1,5 +1,5 @@
 {
-  "source_sha256": "005bca6260c8ed4a849f44657a2315b60ab699606df3c5ffe9c0d98822473352",
+  "source_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
   "definitions_sha256": "f1b7a81bb2ee2d106f3a8364d8174f41f3e7bbd22ae1ac6585d6b174005a3239",
   "model_revision": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
   "dimensions": 1024,
@@ -95,7 +95,7 @@
         "A_SYS_AUTH_010",
         "G_INT_SEX_010",
         "G_SYS_MISINFO_012",
-        "A_SYS_AUTH_023",
+        "A_SYS_EXEC_002",
         "G_INT_WEAP_002"
       ],
       "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -413,7 +413,7 @@
             "reason": "False information targeting an individual. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
           },
           {
-            "id": "A_SYS_AUTH_023",
+            "id": "A_SYS_EXEC_002",
             "reason": "Unsafe or out-of-scope agent tool use. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
           },
           {
@@ -516,7 +516,7 @@
           "cosine": 0.748776
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.748657
         },
         {
@@ -588,7 +588,7 @@
           "cosine": 0.73617
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.735409
         },
         {
@@ -940,7 +940,7 @@
           "cosine": 0.685579
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.685263
         },
         {
@@ -1052,7 +1052,7 @@
           "cosine": 0.678695
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.678215
         },
         {
@@ -1324,7 +1324,7 @@
           "cosine": 0.662535
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.662467
         },
         {
@@ -1408,7 +1408,7 @@
           "cosine": 0.657324
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.656804
         },
         {
@@ -1680,7 +1680,7 @@
           "cosine": 0.641257
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.64117
         },
         {
@@ -1740,7 +1740,7 @@
           "cosine": 0.637301
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.637162
         },
         {
@@ -2224,7 +2224,7 @@
           "cosine": 0.605693
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.605484
         },
         {
@@ -2344,7 +2344,7 @@
           "cosine": 0.596415
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.596298
         },
         {
@@ -2376,7 +2376,7 @@
           "cosine": 0.593759
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.593045
         },
         {
@@ -2384,7 +2384,7 @@
           "cosine": 0.592836
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.592789
         },
         {
@@ -2620,7 +2620,7 @@
           "cosine": 0.568124
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.568092
         },
         {
@@ -2744,7 +2744,7 @@
           "cosine": 0.542675
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.542455
         },
         {
@@ -2768,7 +2768,7 @@
           "cosine": 0.538954
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.538762
         },
         {
@@ -2824,7 +2824,7 @@
           "cosine": 0.525716
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.525425
         },
         {
@@ -3023,7 +3023,7 @@
         "G_SYS_OEXT_007",
         "G_SOC_CULT_007",
         "G_SOC_DEMOC_005",
-        "A_SYS_SELFCOR_002"
+        "A_SYS_MEMSTATE_001"
       ],
       "review_exclude": [
         "G_INT_POL_008",
@@ -3135,7 +3135,7 @@
             "reason": "Erosion of democratic processes and institutional trust. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
           },
           {
-            "id": "A_SYS_SELFCOR_002",
+            "id": "A_SYS_MEMSTATE_001",
             "reason": "Self-correction failure in AI-agent memory. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
           }
         ],
@@ -3588,7 +3588,7 @@
           "cosine": 0.629655
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.629588
         },
         {
@@ -3968,7 +3968,7 @@
           "cosine": 0.605978
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.605871
         },
         {
@@ -4064,7 +4064,7 @@
           "cosine": 0.601458
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.601401
         },
         {
@@ -4400,7 +4400,7 @@
           "cosine": 0.579845
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.579779
         },
         {
@@ -4424,7 +4424,7 @@
           "cosine": 0.579323
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.579132
         },
         {
@@ -4512,7 +4512,7 @@
           "cosine": 0.573889
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.573846
         },
         {
@@ -4584,7 +4584,7 @@
           "cosine": 0.569466
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.569196
         },
         {
@@ -4780,7 +4780,7 @@
           "cosine": 0.55906
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.558581
         },
         {
@@ -4828,7 +4828,7 @@
           "cosine": 0.556204
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.555637
         },
         {
@@ -4984,7 +4984,7 @@
           "cosine": 0.54626
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.545974
         },
         {
@@ -5248,7 +5248,7 @@
           "cosine": 0.527966
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.527681
         },
         {
@@ -5372,7 +5372,7 @@
           "cosine": 0.514421
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.512184
         },
         {
@@ -5388,7 +5388,7 @@
           "cosine": 0.510885
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.51072
         },
         {
@@ -5428,7 +5428,7 @@
           "cosine": 0.504071
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.503669
         },
         {
@@ -5540,7 +5540,7 @@
           "cosine": 0.482352
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.48156
         },
         {
@@ -5596,7 +5596,7 @@
           "cosine": 0.468719
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.468258
         },
         {
@@ -5681,7 +5681,7 @@
         "G_SYS_MISINFO_018",
         "G_SYS_MISINFO_009",
         "G_SYS_MISINFO_003",
-        "A_SYS_SELFCOR_002",
+        "A_SYS_MEMSTATE_001",
         "G_SYS_MISINFO_007",
         "G_SYS_MISINFO_017",
         "G_SYS_MISINFO_019"
@@ -6254,7 +6254,7 @@
           "cosine": 0.637533
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.637322
         },
         {
@@ -6554,7 +6554,7 @@
           "cosine": 0.615726
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.615279
         },
         {
@@ -7070,7 +7070,7 @@
           "cosine": 0.587322
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.587293
         },
         {
@@ -7266,7 +7266,7 @@
           "cosine": 0.579182
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.579121
         },
         {
@@ -7302,7 +7302,7 @@
           "cosine": 0.577246
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.577147
         },
         {
@@ -7314,7 +7314,7 @@
           "cosine": 0.576548
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.576413
         },
         {
@@ -7454,7 +7454,7 @@
           "cosine": 0.569517
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.56943
         },
         {
@@ -7562,11 +7562,11 @@
           "cosine": 0.56361
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.563184
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.562504
         },
         {
@@ -7738,7 +7738,7 @@
           "cosine": 0.55041
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.550293
         },
         {
@@ -7966,7 +7966,7 @@
           "cosine": 0.532838
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.532647
         },
         {
@@ -7978,7 +7978,7 @@
           "cosine": 0.531424
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.531349
         },
         {
@@ -8290,7 +8290,7 @@
           "cosine": 0.493083
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.493004
         },
         {
@@ -8298,7 +8298,7 @@
           "cosine": 0.491995
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.491814
         },
         {
@@ -8410,7 +8410,7 @@
           "cosine": 0.454854
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.453348
         },
         {
@@ -8442,7 +8442,7 @@
           "cosine": 0.446603
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.434039
         },
         {
@@ -8573,7 +8573,7 @@
         "A_SYS_AUTH_006",
         "A_SYS_AUTH_009",
         "A_SYS_AUTH_010",
-        "A_SYS_AUTH_023",
+        "A_SYS_EXEC_002",
         "A_SYS_AUTH_025"
       ],
       "review_exclude": [
@@ -8841,7 +8841,7 @@
             "reason": "Unauthorised transfers and account damage through agent tool use specify authorisation and financial-system integrity failures. Recovered below threshold after full-definition review."
           },
           {
-            "id": "A_SYS_AUTH_023",
+            "id": "A_SYS_EXEC_002",
             "reason": "Out-of-scope tool invocation with privacy or operational consequences relates to authority enforcement and integrity of connected digital tools. Recovered below threshold after full-definition review."
           },
           {
@@ -9342,7 +9342,7 @@
           "cosine": 0.690121
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.690068
         },
         {
@@ -9922,7 +9922,7 @@
           "cosine": 0.654462
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.654415
         },
         {
@@ -9934,7 +9934,7 @@
           "cosine": 0.654158
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.654
         },
         {
@@ -10170,7 +10170,7 @@
           "cosine": 0.642817
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.642731
         },
         {
@@ -10234,7 +10234,7 @@
           "cosine": 0.639253
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.639024
         },
         {
@@ -10294,7 +10294,7 @@
           "cosine": 0.635765
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.635682
         },
         {
@@ -10302,7 +10302,7 @@
           "cosine": 0.635558
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.635518
         },
         {
@@ -10450,7 +10450,7 @@
           "cosine": 0.626948
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.626818
         },
         {
@@ -10478,7 +10478,7 @@
           "cosine": 0.624758
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.62456
         },
         {
@@ -10574,7 +10574,7 @@
           "cosine": 0.617928
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.617906
         },
         {
@@ -10630,11 +10630,11 @@
           "cosine": 0.614617
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.61431
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.614102
         },
         {
@@ -10806,7 +10806,7 @@
           "cosine": 0.600732
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.600615
         },
         {
@@ -10822,7 +10822,7 @@
           "cosine": 0.599442
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.599437
         },
         {
@@ -10926,7 +10926,7 @@
           "cosine": 0.587978
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.587968
         },
         {
@@ -11102,7 +11102,7 @@
           "cosine": 0.570586
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.570584
         },
         {
@@ -11392,7 +11392,7 @@
         "G_SYS_SECADV_055",
         "G_INT_WEAP_032",
         "G_INT_PRIV_015",
-        "A_SYS_AUTH_023",
+        "A_SYS_EXEC_002",
         "G_SYS_EVAL_065",
         "G_SYS_SECADV_029",
         "A_SYS_AUTH_025",
@@ -12484,7 +12484,7 @@
           "cosine": 0.662783
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.662776
         },
         {
@@ -12860,7 +12860,7 @@
           "cosine": 0.638771
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.638737
         },
         {
@@ -13236,7 +13236,7 @@
           "cosine": 0.619684
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.619639
         },
         {
@@ -13256,7 +13256,7 @@
           "cosine": 0.618384
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.618052
         },
         {
@@ -13420,7 +13420,7 @@
           "cosine": 0.609403
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.609293
         },
         {
@@ -13500,7 +13500,7 @@
           "cosine": 0.606543
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.606444
         },
         {
@@ -13552,7 +13552,7 @@
           "cosine": 0.603869
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.603786
         },
         {
@@ -13616,7 +13616,7 @@
           "cosine": 0.599616
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.599583
         },
         {
@@ -13632,7 +13632,7 @@
           "cosine": 0.598522
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.598422
         },
         {
@@ -13776,7 +13776,7 @@
           "cosine": 0.590315
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.59021
         },
         {
@@ -13828,7 +13828,7 @@
           "cosine": 0.585532
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.585441
         },
         {
@@ -13900,7 +13900,7 @@
           "cosine": 0.580663
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.58016
         },
         {
@@ -13948,7 +13948,7 @@
           "cosine": 0.577644
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.576923
         },
         {
@@ -14024,7 +14024,7 @@
           "cosine": 0.572569
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.570953
         },
         {
@@ -14292,7 +14292,7 @@
           "cosine": 0.532189
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.532048
         },
         {
@@ -14320,7 +14320,7 @@
           "cosine": 0.526815
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.526305
         },
         {
@@ -14513,7 +14513,7 @@
       "review_exclude": [
         "G_SOC_GOV_024",
         "A_SYS_AUTH_009",
-        "P_SYS_CONTROL_003",
+        "A_INT_OVERSIGHT_003",
         "A_SYS_AUTH_012"
       ],
       "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -14567,7 +14567,7 @@
             "reason": "Excessive granted authority does not itself show control resistance or escape."
           },
           {
-            "id": "P_SYS_CONTROL_003",
+            "id": "A_INT_OVERSIGHT_003",
             "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
           },
           {
@@ -14602,11 +14602,11 @@
           "cosine": 0.73896
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.731966
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.726932
         },
         {
@@ -14702,7 +14702,7 @@
           "cosine": 0.693263
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.69276
         },
         {
@@ -14734,7 +14734,7 @@
           "cosine": 0.687096
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.68655
         },
         {
@@ -14758,7 +14758,7 @@
           "cosine": 0.679116
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.678451
         },
         {
@@ -14826,7 +14826,7 @@
           "cosine": 0.668905
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.667494
         },
         {
@@ -14858,7 +14858,7 @@
           "cosine": 0.665839
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.664917
         },
         {
@@ -14982,7 +14982,7 @@
           "cosine": 0.654741
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.654322
         },
         {
@@ -15082,7 +15082,7 @@
           "cosine": 0.649833
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.649704
         },
         {
@@ -15266,7 +15266,7 @@
           "cosine": 0.64062
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.640307
         },
         {
@@ -15466,7 +15466,7 @@
           "cosine": 0.631598
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.631585
         },
         {
@@ -15594,7 +15594,7 @@
           "cosine": 0.626071
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.626047
         },
         {
@@ -15646,7 +15646,7 @@
           "cosine": 0.623217
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.623117
         },
         {
@@ -15754,7 +15754,7 @@
           "cosine": 0.617931
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.617385
         },
         {
@@ -16302,7 +16302,7 @@
           "cosine": 0.589498
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.589494
         },
         {
@@ -16390,7 +16390,7 @@
           "cosine": 0.585914
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.58575
         },
         {
@@ -17205,7 +17205,7 @@
           "cosine": 0.684853
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.683095
         },
         {
@@ -17445,7 +17445,7 @@
           "cosine": 0.64757
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.647259
         },
         {
@@ -17489,7 +17489,7 @@
           "cosine": 0.642277
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.641808
         },
         {
@@ -17501,7 +17501,7 @@
           "cosine": 0.641436
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.641435
         },
         {
@@ -17841,7 +17841,7 @@
           "cosine": 0.61983
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.619776
         },
         {
@@ -17885,7 +17885,7 @@
           "cosine": 0.618458
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.618448
         },
         {
@@ -17953,7 +17953,7 @@
           "cosine": 0.615709
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.615416
         },
         {
@@ -18281,7 +18281,7 @@
           "cosine": 0.594918
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.59481
         },
         {
@@ -18337,7 +18337,7 @@
           "cosine": 0.591757
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.591606
         },
         {
@@ -18509,7 +18509,7 @@
           "cosine": 0.583351
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.583334
         },
         {
@@ -18845,11 +18845,11 @@
           "cosine": 0.566482
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.566435
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.566358
         },
         {
@@ -18917,7 +18917,7 @@
           "cosine": 0.561401
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.561287
         },
         {
@@ -19073,7 +19073,7 @@
           "cosine": 0.552303
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.552144
         },
         {
@@ -19361,7 +19361,7 @@
           "cosine": 0.527779
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.527772
         },
         {
@@ -19493,7 +19493,7 @@
           "cosine": 0.514129
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.514046
         },
         {
@@ -19678,7 +19678,7 @@
         "P_INT_SAFETY_007",
         "P_INT_SAFETY_009",
         "P_INT_SAFETY_011",
-        "P_INT_SAFETY_012",
+        "P_SYS_TASKPLAN_003",
         "P_INT_SAFETY_015",
         "P_INT_SAFETY_020",
         "P_INT_SAFETY_021",
@@ -19691,12 +19691,12 @@
         "P_SYS_CONTROL_050",
         "P_SYS_CONTROL_054",
         "P_SYS_STATE_007",
-        "P_SYS_CONTROL_044",
+        "P_SYS_SAFESTATE_002",
         "P_INT_SAFETY_018",
         "P_SYS_CONTROL_023",
         "P_SYS_CONTROL_025",
         "G_INT_PRIV_024",
-        "G_SYS_PERF_015",
+        "P_INT_OBSTRUCT_001",
         "G_SYS_EVAL_044"
       ],
       "review_exclude": [
@@ -19759,7 +19759,7 @@
             "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
           },
           {
-            "id": "P_INT_SAFETY_012",
+            "id": "P_SYS_TASKPLAN_003",
             "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
           },
           {
@@ -19811,7 +19811,7 @@
             "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
           },
           {
-            "id": "P_SYS_CONTROL_044",
+            "id": "P_SYS_SAFESTATE_002",
             "reason": "Remote humanoid operation involves operator commands and safety feedback."
           },
           {
@@ -19831,7 +19831,7 @@
             "reason": "Robots observe and record people in shared living, workplace and care environments."
           },
           {
-            "id": "G_SYS_PERF_015",
+            "id": "P_INT_OBSTRUCT_001",
             "reason": "Service robot motion interferes with pedestrian passage and accessibility."
           },
           {
@@ -19932,7 +19932,7 @@
           "cosine": 0.617824
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.616505
         },
         {
@@ -19944,7 +19944,7 @@
           "cosine": 0.613597
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.610977
         },
         {
@@ -20020,7 +20020,7 @@
           "cosine": 0.597749
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.597559
         },
         {
@@ -20060,7 +20060,7 @@
           "cosine": 0.591057
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.589997
         },
         {
@@ -20272,7 +20272,7 @@
           "cosine": 0.570621
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.570383
         },
         {
@@ -20368,7 +20368,7 @@
           "cosine": 0.563841
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.563816
         },
         {
@@ -20856,7 +20856,7 @@
           "cosine": 0.535887
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.535823
         },
         {
@@ -20892,7 +20892,7 @@
           "cosine": 0.534905
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.534687
         },
         {
@@ -21060,7 +21060,7 @@
           "cosine": 0.525845
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.525831
         },
         {
@@ -21140,7 +21140,7 @@
           "cosine": 0.522969
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.522817
         },
         {
@@ -21220,7 +21220,7 @@
           "cosine": 0.519168
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.519154
         },
         {
@@ -21484,7 +21484,7 @@
           "cosine": 0.508542
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.508508
         },
         {
@@ -21524,7 +21524,7 @@
           "cosine": 0.507233
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.507158
         },
         {
@@ -21620,7 +21620,7 @@
           "cosine": 0.503103
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.502729
         },
         {
@@ -21716,7 +21716,7 @@
           "cosine": 0.49894
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.498715
         },
         {
@@ -22188,7 +22188,7 @@
           "cosine": 0.460635
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.460625
         },
         {
@@ -22368,7 +22368,7 @@
         "P_INT_SAFETY_006",
         "P_SYS_CONTROL_017",
         "P_INT_SAFETY_020",
-        "G_SYS_PERF_015",
+        "P_INT_OBSTRUCT_001",
         "P_SYS_CONTROL_024",
         "P_INT_SAFETY_011",
         "P_INT_SAFETY_021",
@@ -22382,8 +22382,8 @@
         "P_INT_SAFETY_007",
         "P_SYS_CONTROL_047",
         "P_SYS_STATE_007",
-        "P_INT_SAFETY_012",
-        "P_SYS_CONTROL_044"
+        "P_SYS_TASKPLAN_003",
+        "P_SYS_SAFESTATE_002"
       ]
     },
     {
@@ -22822,7 +22822,6 @@
         "G_SYS_PERF_012",
         "G_SYS_PERF_013",
         "G_SYS_PERF_014",
-        "G_SYS_PERF_015",
         "G_SYS_PERF_016",
         "G_SYS_PERF_017",
         "G_SYS_PERF_018",
@@ -22924,22 +22923,21 @@
         "A_INT_COORD_003",
         "A_INT_COORD_004",
         "A_INT_COORD_005",
+        "A_INT_OVERSIGHT_001",
+        "A_INT_OVERSIGHT_002",
+        "A_INT_OVERSIGHT_003",
         "A_SYS_AUTH_001",
         "A_SYS_AUTH_002",
         "A_SYS_AUTH_003",
-        "A_SYS_AUTH_004",
         "A_SYS_AUTH_005",
         "A_SYS_AUTH_006",
-        "A_SYS_AUTH_007",
         "A_SYS_AUTH_009",
         "A_SYS_AUTH_010",
         "A_SYS_AUTH_012",
         "A_SYS_AUTH_016",
         "A_SYS_AUTH_017",
         "A_SYS_AUTH_019",
-        "A_SYS_AUTH_020",
         "A_SYS_AUTH_021",
-        "A_SYS_AUTH_023",
         "A_SYS_AUTH_024",
         "A_SYS_AUTH_025",
         "A_SYS_DECEPT_001",
@@ -22948,6 +22946,8 @@
         "A_SYS_DECEPT_005",
         "A_SYS_DECEPT_008",
         "A_SYS_DECEPT_009",
+        "A_SYS_EXEC_001",
+        "A_SYS_EXEC_002",
         "A_SYS_GOAL_003",
         "A_SYS_GOAL_005",
         "A_SYS_GOAL_006",
@@ -22962,12 +22962,12 @@
         "A_SYS_GOAL_017",
         "A_SYS_GOAL_018",
         "A_SYS_GOAL_019",
-        "A_SYS_GOAL_020",
         "A_SYS_GOAL_021",
         "A_SYS_GOAL_022",
         "A_SYS_GOAL_023",
+        "A_SYS_MEMSTATE_001",
+        "A_SYS_RESOURCE_001",
         "A_SYS_SELFCOR_001",
-        "A_SYS_SELFCOR_002",
         "A_SYS_SELFCOR_003",
         "A_SYS_TRACE_001",
         "A_SYS_TRACE_002",
@@ -22987,6 +22987,7 @@
       "quote": "Physical AI",
       "quote_location": "L1_Name_en column",
       "ids": [
+        "P_INT_OBSTRUCT_001",
         "P_INT_SAFETY_001",
         "P_INT_SAFETY_005",
         "P_INT_SAFETY_006",
@@ -22995,7 +22996,6 @@
         "P_INT_SAFETY_009",
         "P_INT_SAFETY_010",
         "P_INT_SAFETY_011",
-        "P_INT_SAFETY_012",
         "P_INT_SAFETY_015",
         "P_INT_SAFETY_016",
         "P_INT_SAFETY_017",
@@ -23007,13 +23007,10 @@
         "P_INT_TAMPER_003",
         "P_SYS_CONTROL_001",
         "P_SYS_CONTROL_002",
-        "P_SYS_CONTROL_003",
         "P_SYS_CONTROL_006",
-        "P_SYS_CONTROL_007",
         "P_SYS_CONTROL_012",
         "P_SYS_CONTROL_013",
         "P_SYS_CONTROL_015",
-        "P_SYS_CONTROL_016",
         "P_SYS_CONTROL_017",
         "P_SYS_CONTROL_018",
         "P_SYS_CONTROL_019",
@@ -23025,31 +23022,34 @@
         "P_SYS_CONTROL_027",
         "P_SYS_CONTROL_030",
         "P_SYS_CONTROL_033",
-        "P_SYS_CONTROL_034",
         "P_SYS_CONTROL_037",
         "P_SYS_CONTROL_038",
-        "P_SYS_CONTROL_040",
-        "P_SYS_CONTROL_042",
         "P_SYS_CONTROL_043",
-        "P_SYS_CONTROL_044",
         "P_SYS_CONTROL_046",
         "P_SYS_CONTROL_047",
         "P_SYS_CONTROL_050",
         "P_SYS_CONTROL_051",
-        "P_SYS_CONTROL_052",
         "P_SYS_CONTROL_054",
         "P_SYS_CONTROL_055",
         "P_SYS_CONTROL_056",
         "P_SYS_CONTROL_057",
         "P_SYS_HARDWARE_002",
         "P_SYS_HARDWARE_003",
+        "P_SYS_SAFESTATE_001",
+        "P_SYS_SAFESTATE_002",
         "P_SYS_STATE_003",
         "P_SYS_STATE_004",
         "P_SYS_STATE_006",
         "P_SYS_STATE_007",
         "P_SYS_STATE_008",
         "P_SYS_STATE_009",
-        "P_SYS_STATE_011"
+        "P_SYS_STATE_011",
+        "P_SYS_TASKPLAN_001",
+        "P_SYS_TASKPLAN_002",
+        "P_SYS_TASKPLAN_003",
+        "P_SYS_TIMESYNC_001",
+        "P_SYS_TIMESYNC_002",
+        "P_SYS_TIMESYNC_003"
       ],
       "scores": []
     },
@@ -23438,7 +23438,7 @@
           "cosine": 0.590558
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.590108
         },
         {
@@ -23574,7 +23574,7 @@
           "cosine": 0.581996
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.581988
         },
         {
@@ -24062,7 +24062,7 @@
           "cosine": 0.559876
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.559829
         },
         {
@@ -24390,7 +24390,7 @@
           "cosine": 0.547874
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.547746
         },
         {
@@ -24558,11 +24558,11 @@
           "cosine": 0.539618
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.539552
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.539491
         },
         {
@@ -24586,7 +24586,7 @@
           "cosine": 0.539335
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.539248
         },
         {
@@ -24618,7 +24618,7 @@
           "cosine": 0.537362
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.537333
         },
         {
@@ -24794,7 +24794,7 @@
           "cosine": 0.527565
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.527203
         },
         {
@@ -24958,7 +24958,7 @@
           "cosine": 0.515999
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.51572
         },
         {
@@ -25126,7 +25126,7 @@
           "cosine": 0.502244
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.502175
         },
         {
@@ -25214,7 +25214,7 @@
           "cosine": 0.49414
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.493774
         },
         {
@@ -25318,7 +25318,7 @@
           "cosine": 0.476886
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.47676
         },
         {
@@ -25422,7 +25422,7 @@
           "cosine": 0.454692
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.454466
         },
         {
@@ -25466,7 +25466,7 @@
           "cosine": 0.445711
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.444035
         },
         {
@@ -25474,7 +25474,7 @@
           "cosine": 0.44382
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.44344
         },
         {
@@ -25795,7 +25795,7 @@
           "cosine": 0.625162
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.62445
         },
         {
@@ -26311,7 +26311,7 @@
           "cosine": 0.583381
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.582917
         },
         {
@@ -26423,7 +26423,7 @@
           "cosine": 0.577518
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.577204
         },
         {
@@ -26491,7 +26491,7 @@
           "cosine": 0.572754
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.572617
         },
         {
@@ -26727,7 +26727,7 @@
           "cosine": 0.563415
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.563306
         },
         {
@@ -26927,7 +26927,7 @@
           "cosine": 0.555265
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.55516
         },
         {
@@ -27031,7 +27031,7 @@
           "cosine": 0.549116
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.548992
         },
         {
@@ -27123,7 +27123,7 @@
           "cosine": 0.545978
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.545974
         },
         {
@@ -27311,7 +27311,7 @@
           "cosine": 0.535522
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.535263
         },
         {
@@ -27435,7 +27435,7 @@
           "cosine": 0.5286
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.528328
         },
         {
@@ -27491,7 +27491,7 @@
           "cosine": 0.52335
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.522637
         },
         {
@@ -27791,7 +27791,7 @@
           "cosine": 0.495417
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.495339
         },
         {
@@ -27815,7 +27815,7 @@
           "cosine": 0.493442
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.493178
         },
         {
@@ -27823,7 +27823,7 @@
           "cosine": 0.493043
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.492907
         },
         {
@@ -27955,7 +27955,7 @@
           "cosine": 0.469241
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.468713
         },
         {
@@ -27999,7 +27999,7 @@
           "cosine": 0.457686
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.457564
         },
         {
@@ -28201,9 +28201,9 @@
         "P_SYS_CONTROL_027",
         "P_SYS_CONTROL_030",
         "P_SYS_CONTROL_033",
-        "P_SYS_CONTROL_042",
+        "P_SYS_SAFESTATE_001",
         "P_SYS_CONTROL_043",
-        "P_SYS_CONTROL_044",
+        "P_SYS_SAFESTATE_002",
         "P_SYS_CONTROL_047",
         "P_SYS_CONTROL_054",
         "P_SYS_CONTROL_055",
@@ -28319,7 +28319,7 @@
             "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
           },
           {
-            "id": "P_SYS_CONTROL_042",
+            "id": "P_SYS_SAFESTATE_001",
             "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
           },
           {
@@ -28327,7 +28327,7 @@
             "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
           },
           {
-            "id": "P_SYS_CONTROL_044",
+            "id": "P_SYS_SAFESTATE_002",
             "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
           },
           {
@@ -28460,7 +28460,7 @@
           "cosine": 0.574094
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.56738
         },
         {
@@ -28704,7 +28704,7 @@
           "cosine": 0.521593
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.520039
         },
         {
@@ -28880,7 +28880,7 @@
           "cosine": 0.502682
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.502036
         },
         {
@@ -28968,7 +28968,7 @@
           "cosine": 0.496958
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.496843
         },
         {
@@ -29016,11 +29016,11 @@
           "cosine": 0.493065
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.493005
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.492745
         },
         {
@@ -29032,7 +29032,7 @@
           "cosine": 0.492059
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.491886
         },
         {
@@ -29140,7 +29140,7 @@
           "cosine": 0.48574
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.485647
         },
         {
@@ -29208,7 +29208,7 @@
           "cosine": 0.483209
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.482838
         },
         {
@@ -29252,7 +29252,7 @@
           "cosine": 0.480122
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.480081
         },
         {
@@ -29296,7 +29296,7 @@
           "cosine": 0.478121
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.478096
         },
         {
@@ -29328,7 +29328,7 @@
           "cosine": 0.476339
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.476239
         },
         {
@@ -29616,7 +29616,7 @@
           "cosine": 0.458597
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.458272
         },
         {
@@ -29648,7 +29648,7 @@
           "cosine": 0.456655
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.456303
         },
         {
@@ -29728,7 +29728,7 @@
           "cosine": 0.452539
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.45238
         },
         {
@@ -30392,7 +30392,7 @@
           "cosine": 0.414763
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.414731
         },
         {
@@ -30907,7 +30907,7 @@
         "P_SYS_CONTROL_013",
         "P_SYS_STATE_008",
         "P_SYS_HARDWARE_003",
-        "P_SYS_CONTROL_044",
+        "P_SYS_SAFESTATE_002",
         "P_SYS_CONTROL_030",
         "P_SYS_CONTROL_012",
         "P_SYS_CONTROL_043",
@@ -30917,7 +30917,7 @@
         "G_SYS_EVAL_004",
         "G_SYS_SECADV_060",
         "P_SYS_STATE_011",
-        "P_SYS_CONTROL_042",
+        "P_SYS_SAFESTATE_001",
         "P_SYS_CONTROL_057",
         "P_SYS_STATE_007"
       ]
@@ -31547,7 +31547,7 @@
           "cosine": 0.676746
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.676517
         },
         {
@@ -32327,7 +32327,7 @@
           "cosine": 0.631982
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.631965
         },
         {
@@ -32475,7 +32475,7 @@
           "cosine": 0.624778
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.624768
         },
         {
@@ -32539,7 +32539,7 @@
           "cosine": 0.622309
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.622281
         },
         {
@@ -32559,7 +32559,7 @@
           "cosine": 0.621778
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.621771
         },
         {
@@ -32667,7 +32667,7 @@
           "cosine": 0.615344
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.615245
         },
         {
@@ -32947,7 +32947,7 @@
           "cosine": 0.599624
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.599607
         },
         {
@@ -32971,7 +32971,7 @@
           "cosine": 0.597795
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.597373
         },
         {
@@ -33039,7 +33039,7 @@
           "cosine": 0.592764
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.592193
         },
         {
@@ -33067,7 +33067,7 @@
           "cosine": 0.591211
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.590361
         },
         {
@@ -33111,7 +33111,7 @@
           "cosine": 0.586393
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.586143
         },
         {
@@ -33367,7 +33367,7 @@
           "cosine": 0.562881
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.561931
         },
         {
@@ -33451,7 +33451,7 @@
           "cosine": 0.550871
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.550839
         },
         {
@@ -33495,7 +33495,7 @@
           "cosine": 0.545456
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.545437
         },
         {
@@ -33663,7 +33663,7 @@
           "cosine": 0.499816
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.493626
         },
         {
@@ -33683,7 +33683,7 @@
           "cosine": 0.489147
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.488632
         },
         {
@@ -34460,7 +34460,7 @@
           "cosine": 0.604012
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.603765
         },
         {
@@ -34528,7 +34528,7 @@
           "cosine": 0.599116
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.598519
         },
         {
@@ -34540,7 +34540,7 @@
           "cosine": 0.598171
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.59753
         },
         {
@@ -34576,7 +34576,7 @@
           "cosine": 0.595618
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.595356
         },
         {
@@ -34632,7 +34632,7 @@
           "cosine": 0.593603
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.593361
         },
         {
@@ -34912,7 +34912,7 @@
           "cosine": 0.578985
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.578774
         },
         {
@@ -35108,7 +35108,7 @@
           "cosine": 0.568519
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.567945
         },
         {
@@ -35348,7 +35348,7 @@
           "cosine": 0.553532
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.552879
         },
         {
@@ -35380,7 +35380,7 @@
           "cosine": 0.55033
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.550298
         },
         {
@@ -35456,7 +35456,7 @@
           "cosine": 0.545146
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.545025
         },
         {
@@ -35712,7 +35712,7 @@
           "cosine": 0.529954
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.529414
         },
         {
@@ -35876,7 +35876,7 @@
           "cosine": 0.517774
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.517577
         },
         {
@@ -35996,7 +35996,7 @@
           "cosine": 0.507639
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.50708
         },
         {
@@ -36092,7 +36092,7 @@
           "cosine": 0.498443
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.498337
         },
         {
@@ -36244,7 +36244,7 @@
           "cosine": 0.474478
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.474132
         },
         {
@@ -36324,7 +36324,7 @@
           "cosine": 0.450894
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.448726
         },
         {
@@ -37105,7 +37105,7 @@
           "cosine": 0.64582
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.645637
         },
         {
@@ -37333,7 +37333,7 @@
           "cosine": 0.630781
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.630607
         },
         {
@@ -37369,7 +37369,7 @@
           "cosine": 0.628875
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.62884
         },
         {
@@ -37533,7 +37533,7 @@
           "cosine": 0.620706
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.62046
         },
         {
@@ -37577,7 +37577,7 @@
           "cosine": 0.618748
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.618745
         },
         {
@@ -37789,7 +37789,7 @@
           "cosine": 0.609633
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.609497
         },
         {
@@ -37993,7 +37993,7 @@
           "cosine": 0.599163
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.598782
         },
         {
@@ -38069,7 +38069,7 @@
           "cosine": 0.595335
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.595291
         },
         {
@@ -38105,7 +38105,7 @@
           "cosine": 0.593364
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.593309
         },
         {
@@ -38237,7 +38237,7 @@
           "cosine": 0.58626
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.586069
         },
         {
@@ -38497,7 +38497,7 @@
           "cosine": 0.569919
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.56951
         },
         {
@@ -38617,7 +38617,7 @@
           "cosine": 0.55809
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.557666
         },
         {
@@ -38741,7 +38741,7 @@
           "cosine": 0.539732
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.539324
         },
         {
@@ -38761,7 +38761,7 @@
           "cosine": 0.537073
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.53685
         },
         {
@@ -38841,7 +38841,7 @@
           "cosine": 0.522723
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.522354
         },
         {
@@ -38865,7 +38865,7 @@
           "cosine": 0.519718
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.519266
         },
         {

@@ -128,7 +128,7 @@
     get('semantic-status').textContent = 'Loading the AI risk space…';
     loading = true;
     try {
-      const [spaceResponse, cardResponse, referenceResponse] = await Promise.all([fetch('data/semantic_space.json?v=financial-agent-20261012'), fetch('data/heart_l4_risk_cards.json?v=pdf-sync-20261010'), fetch('data/filter_references.json?v=financial-agent-mapping-20261012')]);
+      const [spaceResponse, cardResponse, referenceResponse] = await Promise.all([fetch('data/semantic_space.json?v=taxonomy-55-20261019'), fetch('data/heart_l4_risk_cards.json?v=taxonomy-55-20261019'), fetch('data/filter_references.json?v=financial-agent-mapping-20261012')]);
       if (!spaceResponse.ok || !cardResponse.ok || !referenceResponse.ok) throw new Error('The AI risk space data or references could not be loaded.');
       referenceCatalog = await referenceResponse.json();
       const cardText = await cardResponse.text();

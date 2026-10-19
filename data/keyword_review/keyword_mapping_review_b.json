@@ -47,7 +47,7 @@
         "reason": "Excessive granted authority does not itself show control resistance or escape."
       },
       {
-        "id": "P_SYS_CONTROL_003",
+        "id": "A_INT_OVERSIGHT_003",
         "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
       },
       {
@@ -159,7 +159,7 @@
         "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
       },
       {
-        "id": "P_INT_SAFETY_012",
+        "id": "P_SYS_TASKPLAN_003",
         "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
       },
       {
@@ -211,7 +211,7 @@
         "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
       },
       {
-        "id": "P_SYS_CONTROL_044",
+        "id": "P_SYS_SAFESTATE_002",
         "reason": "Remote humanoid operation involves operator commands and safety feedback."
       },
       {
@@ -231,7 +231,7 @@
         "reason": "Robots observe and record people in shared living, workplace and care environments."
       },
       {
-        "id": "G_SYS_PERF_015",
+        "id": "P_INT_OBSTRUCT_001",
         "reason": "Service robot motion interferes with pedestrian passage and accessibility."
       },
       {
@@ -430,7 +430,7 @@
         "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
       },
       {
-        "id": "P_SYS_CONTROL_042",
+        "id": "P_SYS_SAFESTATE_001",
         "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
       },
       {
@@ -438,7 +438,7 @@
         "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
       },
       {
-        "id": "P_SYS_CONTROL_044",
+        "id": "P_SYS_SAFESTATE_002",
         "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
       },
       {

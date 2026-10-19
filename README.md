@@ -12,10 +12,10 @@ Algorithm 1 is an iterative consolidation stage evaluation, not reproduction of 
 
 ## Dataset
 
-The release contains 622 active L4 risk cards across 47 L3 categories:
+The release contains 622 active L4 risk cards across 55 L3 categories:
 
-- General AI: 492 cards
-- Agentic AI: 67 cards
+- General AI: 491 cards
+- Agentic AI: 68 cards
 - Physical AI: 63 cards
 
 Each card contains a stable L4 identifier, bilingual name and definition, L1 to L3 hierarchy, optional Facet and Act-type attributes, an evidence reference, and a direct quotation. Probability and Severity are reserved fields and intentionally remain blank.

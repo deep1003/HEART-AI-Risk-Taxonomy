@@ -89,7 +89,7 @@
       "A_SYS_AUTH_010",
       "G_INT_SEX_010",
       "G_SYS_MISINFO_012",
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_INT_WEAP_002"
     ],
     "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -407,7 +407,7 @@
           "reason": "False information targeting an individual. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "reason": "Unsafe or out-of-scope agent tool use. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
         },
         {
@@ -452,7 +452,7 @@
       "G_SYS_OEXT_007",
       "G_SOC_CULT_007",
       "G_SOC_DEMOC_005",
-      "A_SYS_SELFCOR_002"
+      "A_SYS_MEMSTATE_001"
     ],
     "review_exclude": [
       "G_INT_POL_008",
@@ -564,7 +564,7 @@
           "reason": "Erosion of democratic processes and institutional trust. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "reason": "Self-correction failure in AI-agent memory. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
         }
       ],
@@ -952,7 +952,7 @@
       "A_SYS_AUTH_006",
       "A_SYS_AUTH_009",
       "A_SYS_AUTH_010",
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "A_SYS_AUTH_025"
     ],
     "review_exclude": [
@@ -1220,7 +1220,7 @@
           "reason": "Unauthorised transfers and account damage through agent tool use specify authorisation and financial-system integrity failures. Recovered below threshold after full-definition review."
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "reason": "Out-of-scope tool invocation with privacy or operational consequences relates to authority enforcement and integrity of connected digital tools. Recovered below threshold after full-definition review."
         },
         {
@@ -1758,7 +1758,7 @@
     "review_exclude": [
       "G_SOC_GOV_024",
       "A_SYS_AUTH_009",
-      "P_SYS_CONTROL_003",
+      "A_INT_OVERSIGHT_003",
       "A_SYS_AUTH_012"
     ],
     "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -1812,7 +1812,7 @@
           "reason": "Excessive granted authority does not itself show control resistance or escape."
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
         },
         {
@@ -1928,7 +1928,7 @@
       "P_INT_SAFETY_007",
       "P_INT_SAFETY_009",
       "P_INT_SAFETY_011",
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       "P_INT_SAFETY_015",
       "P_INT_SAFETY_020",
       "P_INT_SAFETY_021",
@@ -1941,12 +1941,12 @@
       "P_SYS_CONTROL_050",
       "P_SYS_CONTROL_054",
       "P_SYS_STATE_007",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       "P_INT_SAFETY_018",
       "P_SYS_CONTROL_023",
       "P_SYS_CONTROL_025",
       "G_INT_PRIV_024",
-      "G_SYS_PERF_015",
+      "P_INT_OBSTRUCT_001",
       "G_SYS_EVAL_044"
     ],
     "review_exclude": [
@@ -2009,7 +2009,7 @@
           "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
         },
         {
@@ -2061,7 +2061,7 @@
           "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "reason": "Remote humanoid operation involves operator commands and safety feedback."
         },
         {
@@ -2081,7 +2081,7 @@
           "reason": "Robots observe and record people in shared living, workplace and care environments."
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "reason": "Service robot motion interferes with pedestrian passage and accessibility."
         },
         {
@@ -2309,9 +2309,9 @@
       "P_SYS_CONTROL_027",
       "P_SYS_CONTROL_030",
       "P_SYS_CONTROL_033",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       "P_SYS_CONTROL_043",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       "P_SYS_CONTROL_047",
       "P_SYS_CONTROL_054",
       "P_SYS_CONTROL_055",
@@ -2427,7 +2427,7 @@
           "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
         },
         {
@@ -2435,7 +2435,7 @@
           "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
         },
         {

@@ -1,8 +1,8 @@
 {
-  "source_sha256": "005bca6260c8ed4a849f44657a2315b60ab699606df3c5ffe9c0d98822473352",
+  "source_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
   "model_revision": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
-  "l3_palette_sha256": "38d7775a87eb08d889eb4f59153491877b0f4d1f2f950827ef4cce8701160892",
-  "method": "Solid L4 colours: existing L3 seed; nearest other L3 definition blend up to 30%; within-assigned-L3 PCA hue \u00b119.8 degrees, lightness \u00b10.14, saturation \u00b10.16. All inputs are fixed semantic embeddings, not degree, severity, probability or random IDs.",
+  "l3_palette_sha256": "6db0a32a3e6740967bcebb4364532680e77601134b3e58a5eca4a11e74f2e9a5",
+  "method": "Solid L4 colours: existing L3 seed; nearest other L3 definition blend up to 30%; within-assigned-L3 PCA hue ±19.8 degrees, lightness ±0.14, saturation ±0.16. All inputs are fixed semantic embeddings, not degree, severity, probability or random IDs.",
   "points": [
     {
       "id": "A_INT_CASCADE_001",
@@ -313,7 +313,7 @@
       "neighbour_l3_cosine": 0.6292325258255005
     },
     {
-      "id": "A_SYS_AUTH_004",
+      "id": "A_INT_OVERSIGHT_001",
       "l3": "A_SYS_AUTH",
       "color": "#ca3a73",
       "semantic_coordinates": [
@@ -355,7 +355,7 @@
       "neighbour_l3_cosine": 0.7749715447425842
     },
     {
-      "id": "A_SYS_AUTH_007",
+      "id": "A_INT_OVERSIGHT_002",
       "l3": "A_SYS_AUTH",
       "color": "#d164a4",
       "semantic_coordinates": [
@@ -453,7 +453,7 @@
       "neighbour_l3_cosine": 0.7595157027244568
     },
     {
-      "id": "A_SYS_AUTH_020",
+      "id": "A_SYS_RESOURCE_001",
       "l3": "A_SYS_AUTH",
       "color": "#d04d96",
       "semantic_coordinates": [
@@ -481,7 +481,7 @@
       "neighbour_l3_cosine": 0.7927632331848145
     },
     {
-      "id": "A_SYS_AUTH_023",
+      "id": "A_SYS_EXEC_002",
       "l3": "A_SYS_AUTH",
       "color": "#d25b82",
       "semantic_coordinates": [
@@ -803,7 +803,7 @@
       "neighbour_l3_cosine": 0.7333661317825317
     },
     {
-      "id": "A_SYS_GOAL_020",
+      "id": "A_SYS_EXEC_001",
       "l3": "A_SYS_GOAL",
       "color": "#e15ba1",
       "semantic_coordinates": [
@@ -873,7 +873,7 @@
       "neighbour_l3_cosine": 0.7416674494743347
     },
     {
-      "id": "A_SYS_SELFCOR_002",
+      "id": "A_SYS_MEMSTATE_001",
       "l3": "A_SYS_SELFCOR",
       "color": "#9f4c16",
       "semantic_coordinates": [
@@ -6879,7 +6879,7 @@
       "neighbour_l3_cosine": 0.7567042708396912
     },
     {
-      "id": "G_SYS_PERF_015",
+      "id": "P_INT_OBSTRUCT_001",
       "l3": "G_SYS_PERF",
       "color": "#0b70c6",
       "semantic_coordinates": [
@@ -7943,7 +7943,7 @@
       "neighbour_l3_cosine": 0.7751187086105347
     },
     {
-      "id": "P_INT_SAFETY_012",
+      "id": "P_SYS_TASKPLAN_003",
       "l3": "P_INT_SAFETY",
       "color": "#0c9898",
       "semantic_coordinates": [
@@ -8111,7 +8111,7 @@
       "neighbour_l3_cosine": 0.7312748432159424
     },
     {
-      "id": "P_SYS_CONTROL_003",
+      "id": "A_INT_OVERSIGHT_003",
       "l3": "P_SYS_CONTROL",
       "color": "#248e85",
       "semantic_coordinates": [
@@ -8139,7 +8139,7 @@
       "neighbour_l3_cosine": 0.7218740582466125
     },
     {
-      "id": "P_SYS_CONTROL_007",
+      "id": "P_SYS_TIMESYNC_001",
       "l3": "P_SYS_CONTROL",
       "color": "#1f7a72",
       "semantic_coordinates": [
@@ -8195,7 +8195,7 @@
       "neighbour_l3_cosine": 0.6981542706489563
     },
     {
-      "id": "P_SYS_CONTROL_016",
+      "id": "P_SYS_TASKPLAN_001",
       "l3": "P_SYS_CONTROL",
       "color": "#32b693",
       "semantic_coordinates": [
@@ -8363,7 +8363,7 @@
       "neighbour_l3_cosine": 0.7795034646987915
     },
     {
-      "id": "P_SYS_CONTROL_034",
+      "id": "P_SYS_TIMESYNC_002",
       "l3": "P_SYS_CONTROL",
       "color": "#1a7f7d",
       "semantic_coordinates": [
@@ -8405,7 +8405,7 @@
       "neighbour_l3_cosine": 0.7653068900108337
     },
     {
-      "id": "P_SYS_CONTROL_040",
+      "id": "P_SYS_TIMESYNC_003",
       "l3": "P_SYS_CONTROL",
       "color": "#177e82",
       "semantic_coordinates": [
@@ -8419,7 +8419,7 @@
       "neighbour_l3_cosine": 0.7197317481040955
     },
     {
-      "id": "P_SYS_CONTROL_042",
+      "id": "P_SYS_SAFESTATE_001",
       "l3": "P_SYS_CONTROL",
       "color": "#198b77",
       "semantic_coordinates": [
@@ -8447,7 +8447,7 @@
       "neighbour_l3_cosine": 0.7764018177986145
     },
     {
-      "id": "P_SYS_CONTROL_044",
+      "id": "P_SYS_SAFESTATE_002",
       "l3": "P_SYS_CONTROL",
       "color": "#158d66",
       "semantic_coordinates": [
@@ -8517,7 +8517,7 @@
       "neighbour_l3_cosine": 0.764652669429779
     },
     {
-      "id": "P_SYS_CONTROL_052",
+      "id": "P_SYS_TASKPLAN_002",
       "l3": "P_SYS_CONTROL",
       "color": "#33a194",
       "semantic_coordinates": [

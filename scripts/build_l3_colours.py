@@ -34,7 +34,7 @@ def main():
                     assert hierarchy[row['L3_ID']] == record, 'Inconsistent master L3 rows'
                 hierarchy[row['L3_ID']] = record
     records = [hierarchy[key] for key in sorted(hierarchy)]
-    assert len(records) == 47
+    assert len(records) == 55
     for card in cards:
         row = hierarchy[card['L3_ID']]
         assert card['L1_ID'] == row['L1_ID'] and card['L2_ID'] == row['L2_ID']
@@ -63,7 +63,7 @@ def main():
     centroids /= np.linalg.norm(centroids, axis=1, keepdims=True)
     affinities = vectors @ centroids.T
     # Deterministic within-domain PCA provides a smooth semantic colour coordinate.
-    coordinates = np.zeros((47, 2))
+    coordinates = np.zeros((len(records), 2))
     for domain in domains:
         indexes = [i for i, row in enumerate(records) if row['L1_ID'] == domain]
         centred = vectors[indexes] - vectors[indexes].mean(axis=0)
@@ -114,15 +114,15 @@ def main():
                    gradient_end='#'+''.join(f'{round(value*255):02x}' for value in end),
                    neighbour_l3=records[neighbour]['L3_ID'], neighbour_cosine=float(similarities[i,neighbour]),
                    neighbour_mix_weight=weight)
-    assert len({row['color'] for row in palette}) == 47
+    assert len({row['color'] for row in palette}) == 55
     result = {'source_sha256': hashlib.sha256(cards_raw).hexdigest(), 'master_sources': sources,
               'model_revision': revision, 'text_sha256': text_hash, 'embedding_file': cache_path.name,
               'base_colors': BASE, 'categories': palette,
               'method': 'BGE-M3 L3 title+definition; L1 centroid boundary blend up to 35%; within-L1 PCA hue ±34.2 degrees/lightness ±0.10/saturation ±0.12; node gradients toward the closest semantic L3 colour, shortest-arc HLS mixture up to 45%.',
-              'limitations': 'Semantic colour proximity is approximate, not a distance-preserving map or classification confidence. Cross-domain colour does not change human-approved L1/L2/L3 assignments. No claim of 47 perceptually distinguishable classes.'}
+              'limitations': 'Semantic colour proximity is approximate, not a distance-preserving map or classification confidence. Cross-domain colour does not change human-approved L1/L2/L3 assignments. No claim of 55 perceptually distinguishable classes.'}
     (ROOT / 'data/l3_semantic_colours.json').write_text(json.dumps(result, indent=2))
     assert (ROOT / 'data/heart_l4_risk_cards.json').read_bytes() == cards_raw
-    print('Built 47 distinct L3 colours with 3 fixed L1 anchors; master assignments unchanged.')
+    print('Built 55 distinct L3 colours with 3 fixed L1 anchors; master assignments unchanged.')
 
 
 if __name__ == '__main__':

@@ -36,19 +36,19 @@ for(const card of cards){
 }
 assert.equal(data.source_sha256, crypto.createHash('sha256').update(raw).digest('hex'));
 assert.equal(sourceIds.size, 622);
-assert.equal(new Set(cards.map(card => card.L3_ID)).size, 47);
+assert.equal(new Set(cards.map(card => card.L3_ID)).size, 55);
 assert.equal(data.points.length, 622);
 assert.equal(new Set(data.points.map(point => point.id)).size, 622);
 assert(data.points.every(point => sourceIds.has(point.id) && Number.isFinite(point.x) && Number.isFinite(point.y)));
 assert.equal(activeIds(data, {}).size, 622);
 const labelNodes=labelCandidates(data.points,sourceIds);
-assert.equal(labelNodes.length,47);
+assert.equal(labelNodes.length,55);
 for(const point of labelNodes){
   assert.equal(point.strength,Math.max(...data.points.filter(candidate=>candidate.cluster===point.cluster).map(candidate=>candidate.strength)));
 }
 assert.equal(labelCandidates(data.points,new Set()).length,0);
 assert.equal(labelCandidates(data.points,sourceIds,5).length,622);
-assert(labelCandidates(data.points,sourceIds,2).length>47);
+assert(labelCandidates(data.points,sourceIds,2).length>55);
 assert(labelCandidates(data.points,sourceIds,3).length>labelCandidates(data.points,sourceIds,2).length);
 const sameL3=data.points.filter(point=>point.cluster===data.points[0].cluster);
 assert.equal(labelCandidates(sameL3,sourceIds,5).length,sameL3.length);
@@ -80,7 +80,7 @@ assert.deepEqual(data.scenarios.map(item=>item.name), ['AI for Everyone (Korea)'
 assert.equal(data.scenarios.find(item=>item.id==='financial-ai-agent').ids.length,23);
 assert.deepEqual(data.scenarios.find(item=>item.id==='financial-ai-agent').ids.sort(), [
   'A_INT_CASCADE_006','A_SYS_AUTH_001','A_SYS_AUTH_002','A_SYS_AUTH_009','A_SYS_AUTH_010',
-  'A_SYS_AUTH_023','A_SYS_AUTH_025','A_SYS_GOAL_011','A_SYS_GOAL_013','G_INT_PRIV_008',
+  'A_SYS_EXEC_002','A_SYS_AUTH_025','A_SYS_GOAL_011','A_SYS_GOAL_013','G_INT_PRIV_008',
   'G_INT_PRIV_013','G_INT_PRIV_017','G_SOC_GOV_021','G_SYS_CONTEST_002','G_SYS_CONTEXT_002',
   'G_SYS_MISINFO_018','G_SYS_POLICY_010','G_SYS_SECADV_004','G_SYS_SECADV_006',
   'G_SYS_SECADV_023','G_SYS_SECADV_044','G_SYS_SECADV_046','G_SYS_SECADV_055'
@@ -132,7 +132,7 @@ assert(/href="about\.html(?:\?[^\"]*)?"/.test(html));
 const about=fs.readFileSync(path.join(root,'about.html'),'utf8');
 assert(about.includes('<h1>About HEART</h1>'));
 for(const heading of ['Key results','How to use it','Scope and limits']) assert(about.includes(`<h2>${heading}</h2>`));
-for(const concept of ['82,971','622','47','HDBSCAN','TF-IDF','ForceAtlas2','Probability and severity','Financial AI Agent','23 unique cards']) assert(about.includes(concept));
+for(const concept of ['82,971','622','55','HDBSCAN','TF-IDF','ForceAtlas2','Probability and severity','Financial AI Agent','23 unique cards']) assert(about.includes(concept));
 assert(!about.includes('class="hero"'));
 assert.equal((html.match(/id="semantic-reset"/g)||[]).length,1);
 assert(/semantic-plot-heading[^\n]*id="semantic-reset"/.test(html));

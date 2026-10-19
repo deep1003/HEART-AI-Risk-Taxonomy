@@ -83,7 +83,7 @@ def main() -> None:
         "passed_structural_validation": (
             len(rows) == 622
             and len(set(ids)) == 622
-            and len({row["L3_ID"] for row in rows}) == 47
+            and len({row["L3_ID"] for row in rows}) == 55
             and not missing_required
             and not any(row["Probability"].strip() or row["Severity"].strip() for row in rows)
         ),

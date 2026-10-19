@@ -2,7 +2,7 @@
   "schema_version": "2.0",
   "card_count": 622,
   "source_file": "heart_l4_risk_cards.json",
-  "source_sha256": "005bca6260c8ed4a849f44657a2315b60ab699606df3c5ffe9c0d98822473352",
+  "source_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
   "method": {
     "embedding_model": "BAAI/bge-m3 (Ollama bge-m3:latest)",
     "model_revision": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
@@ -28,7 +28,8 @@
     "keyword_mapping": "Source-grounded semantic retrieval, not validated classification accuracy. Cosine thresholds and documented expert scope corrections are exploratory. L1 domain filters use existing human-approved taxonomy assignments. No EM or remapping.",
     "keyword_query_sha256": "8ac34c0b8a9edc9b05a4fc46fa2a9d141cb601a55b79be8522671536909ad9f5",
     "node_colour": "Solid L4 colours: existing L3 seed; nearest other L3 definition blend up to 30%; within-assigned-L3 PCA hue ±19.8 degrees, lightness ±0.14, saturation ±0.16. All inputs are fixed semantic embeddings, not degree, severity, probability or random IDs.",
-    "colour_limitations": "Semantic colour proximity is approximate, not a distance-preserving map or classification confidence. Cross-domain colour does not change human-approved L1/L2/L3 assignments. No claim of 47 perceptually distinguishable classes."
+    "colour_limitations": "Semantic colour proximity is approximate, not a distance-preserving map or classification confidence. Cross-domain colour does not change human-approved L1/L2/L3 assignments. No claim of 47 perceptually distinguishable classes.",
+    "taxonomy_sync": "55 human-validated L3 categories; 622 L4 cards; graph coordinates and edges preserved for unchanged risk texts, with the validated ID migration applied."
   },
   "points": [
     {
@@ -252,10 +253,10 @@
       "color": "#e97bb1"
     },
     {
-      "id": "A_SYS_AUTH_004",
+      "id": "A_INT_OVERSIGHT_001",
       "x": 0.4674401,
       "y": -0.5528333,
-      "cluster": "A_SYS_AUTH",
+      "cluster": "A_INT_OVERSIGHT",
       "degree": 9,
       "strength": 6.987625,
       "graph_community": "community-1",
@@ -282,10 +283,10 @@
       "color": "#ce4b99"
     },
     {
-      "id": "A_SYS_AUTH_007",
+      "id": "A_INT_OVERSIGHT_002",
       "x": 0.1961162,
       "y": -0.3207028,
-      "cluster": "A_SYS_AUTH",
+      "cluster": "A_INT_OVERSIGHT",
       "degree": 10,
       "strength": 7.533642,
       "graph_community": "community-2",
@@ -352,10 +353,10 @@
       "color": "#cb44ae"
     },
     {
-      "id": "A_SYS_AUTH_020",
+      "id": "A_SYS_RESOURCE_001",
       "x": 0.4489998,
       "y": -0.4722638,
-      "cluster": "A_SYS_AUTH",
+      "cluster": "A_SYS_RESOURCE",
       "degree": 8,
       "strength": 5.940681,
       "graph_community": "community-1",
@@ -372,10 +373,10 @@
       "color": "#d05792"
     },
     {
-      "id": "A_SYS_AUTH_023",
+      "id": "A_SYS_EXEC_002",
       "x": 0.429167,
       "y": -0.5217199,
-      "cluster": "A_SYS_AUTH",
+      "cluster": "A_SYS_EXEC",
       "degree": 30,
       "strength": 23.342414,
       "graph_community": "community-1",
@@ -602,10 +603,10 @@
       "color": "#d8413b"
     },
     {
-      "id": "A_SYS_GOAL_020",
+      "id": "A_SYS_EXEC_001",
       "x": 0.4767298,
       "y": -0.5371611,
-      "cluster": "A_SYS_GOAL",
+      "cluster": "A_SYS_EXEC",
       "degree": 25,
       "strength": 19.355435,
       "graph_community": "community-1",
@@ -652,10 +653,10 @@
       "color": "#6ce031"
     },
     {
-      "id": "A_SYS_SELFCOR_002",
+      "id": "A_SYS_MEMSTATE_001",
       "x": 0.4825759,
       "y": 0.2269249,
-      "cluster": "A_SYS_SELFCOR",
+      "cluster": "A_SYS_MEMSTATE",
       "degree": 11,
       "strength": 8.25182,
       "graph_community": "community-0",
@@ -3524,7 +3525,7 @@
     {
       "id": "G_SOC_POWER_004",
       "x": -0.3344814,
-      "y": 0.0000333,
+      "y": 3.33e-05,
       "cluster": "G_SOC_POWER",
       "degree": 14,
       "strength": 10.396968,
@@ -4942,10 +4943,10 @@
       "color": "#1e06f0"
     },
     {
-      "id": "G_SYS_PERF_015",
+      "id": "P_INT_OBSTRUCT_001",
       "x": 0.9950076,
       "y": -0.0043797,
-      "cluster": "G_SYS_PERF",
+      "cluster": "P_INT_OBSTRUCT",
       "degree": 8,
       "strength": 6.014977,
       "graph_community": "community-3",
@@ -5702,10 +5703,10 @@
       "color": "#0ca19e"
     },
     {
-      "id": "P_INT_SAFETY_012",
+      "id": "P_SYS_TASKPLAN_003",
       "x": 0.6680853,
       "y": -0.3667596,
-      "cluster": "P_INT_SAFETY",
+      "cluster": "P_SYS_TASKPLAN",
       "degree": 12,
       "strength": 9.258494,
       "graph_community": "community-1",
@@ -5822,10 +5823,10 @@
       "color": "#288a71"
     },
     {
-      "id": "P_SYS_CONTROL_003",
+      "id": "A_INT_OVERSIGHT_003",
       "x": 0.7565789,
       "y": 0.1186219,
-      "cluster": "P_SYS_CONTROL",
+      "cluster": "A_INT_OVERSIGHT",
       "degree": 8,
       "strength": 5.983485,
       "graph_community": "community-3",
@@ -5842,10 +5843,10 @@
       "color": "#297e76"
     },
     {
-      "id": "P_SYS_CONTROL_007",
+      "id": "P_SYS_TIMESYNC_001",
       "x": 0.9510159,
       "y": -0.0307811,
-      "cluster": "P_SYS_CONTROL",
+      "cluster": "P_SYS_TIMESYNC",
       "degree": 10,
       "strength": 6.982604,
       "graph_community": "community-3",
@@ -5882,10 +5883,10 @@
       "color": "#297070"
     },
     {
-      "id": "P_SYS_CONTROL_016",
+      "id": "P_SYS_TASKPLAN_001",
       "x": 0.7990885,
       "y": -0.1294298,
-      "cluster": "P_SYS_CONTROL",
+      "cluster": "P_SYS_TASKPLAN",
       "degree": 13,
       "strength": 10.061931,
       "graph_community": "community-3",
@@ -6002,10 +6003,10 @@
       "color": "#198066"
     },
     {
-      "id": "P_SYS_CONTROL_034",
+      "id": "P_SYS_TIMESYNC_002",
       "x": 0.8854417,
       "y": -0.0171602,
-      "cluster": "P_SYS_CONTROL",
+      "cluster": "P_SYS_TIMESYNC",
       "degree": 8,
       "strength": 5.662779,
       "graph_community": "community-3",
@@ -6032,20 +6033,20 @@
       "color": "#1e7b79"
     },
     {
-      "id": "P_SYS_CONTROL_040",
+      "id": "P_SYS_TIMESYNC_003",
       "x": 0.8506991,
       "y": 0.1435588,
-      "cluster": "P_SYS_CONTROL",
+      "cluster": "P_SYS_TIMESYNC",
       "degree": 10,
       "strength": 7.335575,
       "graph_community": "community-3",
       "color": "#177e82"
     },
     {
-      "id": "P_SYS_CONTROL_042",
+      "id": "P_SYS_SAFESTATE_001",
       "x": 0.9094054,
       "y": 0.1061985,
-      "cluster": "P_SYS_CONTROL",
+      "cluster": "P_SYS_SAFESTATE",
       "degree": 20,
       "strength": 15.047041,
       "graph_community": "community-3",
@@ -6062,10 +6063,10 @@
       "color": "#1b937e"
     },
     {
-      "id": "P_SYS_CONTROL_044",
+      "id": "P_SYS_SAFESTATE_002",
       "x": 0.9386282,
       "y": 0.0915668,
-      "cluster": "P_SYS_CONTROL",
+      "cluster": "P_SYS_SAFESTATE",
       "degree": 8,
       "strength": 5.875679,
       "graph_community": "community-3",
@@ -6112,10 +6113,10 @@
       "color": "#32ad9c"
     },
     {
-      "id": "P_SYS_CONTROL_052",
+      "id": "P_SYS_TASKPLAN_002",
       "x": 0.8014522,
       "y": -0.1824235,
-      "cluster": "P_SYS_CONTROL",
+      "cluster": "P_SYS_TASKPLAN",
       "degree": 28,
       "strength": 21.304033,
       "graph_community": "community-3",
@@ -6460,7 +6461,7 @@
     ],
     [
       "A_INT_CASCADE_006",
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       0.755017
     ],
     [
@@ -6570,7 +6571,7 @@
     ],
     [
       "A_INT_CASCADE_009",
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       0.707987
     ],
     [
@@ -6770,7 +6771,7 @@
     ],
     [
       "A_INT_CONFLICT_001",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.756871
     ],
     [
@@ -6900,7 +6901,7 @@
     ],
     [
       "A_INT_COORD_001",
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       0.768319
     ],
     [
@@ -6915,7 +6916,7 @@
     ],
     [
       "A_INT_COORD_001",
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       0.752496
     ],
     [
@@ -6955,7 +6956,7 @@
     ],
     [
       "A_INT_COORD_002",
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       0.754284
     ],
     [
@@ -7060,12 +7061,12 @@
     ],
     [
       "A_INT_COORD_005",
-      "A_SYS_AUTH_004",
+      "A_INT_OVERSIGHT_001",
       0.747653
     ],
     [
       "A_INT_COORD_005",
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       0.754859
     ],
     [
@@ -7075,7 +7076,7 @@
     ],
     [
       "A_SYS_AUTH_001",
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       0.774275
     ],
     [
@@ -7140,7 +7141,7 @@
     ],
     [
       "A_SYS_AUTH_002",
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       0.72873
     ],
     [
@@ -7160,7 +7161,7 @@
     ],
     [
       "A_SYS_AUTH_002",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       0.714336
     ],
     [
@@ -7204,43 +7205,43 @@
       0.671339
     ],
     [
-      "A_SYS_AUTH_004",
+      "A_INT_OVERSIGHT_001",
       "A_SYS_AUTH_005",
       0.784741
     ],
     [
-      "A_SYS_AUTH_004",
+      "A_INT_OVERSIGHT_001",
       "A_SYS_AUTH_009",
       0.811585
     ],
     [
-      "A_SYS_AUTH_004",
+      "A_INT_OVERSIGHT_001",
       "A_SYS_AUTH_021",
       0.809216
     ],
     [
-      "A_SYS_AUTH_004",
-      "A_SYS_AUTH_023",
+      "A_INT_OVERSIGHT_001",
+      "A_SYS_EXEC_002",
       0.767324
     ],
     [
-      "A_SYS_AUTH_004",
+      "A_INT_OVERSIGHT_001",
       "A_SYS_AUTH_025",
       0.773351
     ],
     [
-      "A_SYS_AUTH_004",
+      "A_INT_OVERSIGHT_001",
       "A_SYS_GOAL_019",
       0.769281
     ],
     [
-      "A_SYS_AUTH_004",
-      "A_SYS_GOAL_020",
+      "A_INT_OVERSIGHT_001",
+      "A_SYS_EXEC_001",
       0.762458
     ],
     [
-      "A_SYS_AUTH_004",
-      "P_INT_SAFETY_012",
+      "A_INT_OVERSIGHT_001",
+      "P_SYS_TASKPLAN_003",
       0.762016
     ],
     [
@@ -7255,7 +7256,7 @@
     ],
     [
       "A_SYS_AUTH_005",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.778921
     ],
     [
@@ -7320,7 +7321,7 @@
     ],
     [
       "A_SYS_AUTH_006",
-      "A_SYS_AUTH_020",
+      "A_SYS_RESOURCE_001",
       0.734567
     ],
     [
@@ -7369,43 +7370,43 @@
       0.758091
     ],
     [
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       "A_SYS_AUTH_010",
       0.748082
     ],
     [
-      "A_SYS_AUTH_007",
-      "A_SYS_AUTH_023",
+      "A_INT_OVERSIGHT_002",
+      "A_SYS_EXEC_002",
       0.74756
     ],
     [
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       "A_SYS_GOAL_007",
       0.820655
     ],
     [
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       "A_SYS_TRACE_002",
       0.753064
     ],
     [
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       "G_INT_WEAP_025",
       0.750285
     ],
     [
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       "G_SYS_OEXT_007",
       0.753744
     ],
     [
-      "A_SYS_AUTH_007",
+      "A_INT_OVERSIGHT_002",
       "G_SYS_PERF_002",
       0.729662
     ],
     [
       "A_SYS_AUTH_009",
-      "A_SYS_AUTH_020",
+      "A_SYS_RESOURCE_001",
       0.750259
     ],
     [
@@ -7415,7 +7416,7 @@
     ],
     [
       "A_SYS_AUTH_009",
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       0.807381
     ],
     [
@@ -7470,12 +7471,12 @@
     ],
     [
       "A_SYS_AUTH_010",
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       0.807232
     ],
     [
       "A_SYS_AUTH_010",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.809193
     ],
     [
@@ -7530,12 +7531,12 @@
     ],
     [
       "A_SYS_AUTH_012",
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       0.737735
     ],
     [
       "A_SYS_AUTH_012",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.743249
     ],
     [
@@ -7625,7 +7626,7 @@
     ],
     [
       "A_SYS_AUTH_019",
-      "A_SYS_AUTH_020",
+      "A_SYS_RESOURCE_001",
       0.745446
     ],
     [
@@ -7695,37 +7696,37 @@
     ],
     [
       "A_SYS_AUTH_019",
-      "P_SYS_CONTROL_003",
+      "A_INT_OVERSIGHT_003",
       0.754165
     ],
     [
-      "A_SYS_AUTH_020",
+      "A_SYS_RESOURCE_001",
       "A_SYS_AUTH_021",
       0.749064
     ],
     [
-      "A_SYS_AUTH_020",
-      "A_SYS_AUTH_023",
+      "A_SYS_RESOURCE_001",
+      "A_SYS_EXEC_002",
       0.738277
     ],
     [
-      "A_SYS_AUTH_020",
+      "A_SYS_RESOURCE_001",
       "A_SYS_GOAL_019",
       0.737629
     ],
     [
-      "A_SYS_AUTH_020",
+      "A_SYS_RESOURCE_001",
       "A_SYS_SELFCOR_001",
       0.749989
     ],
     [
-      "A_SYS_AUTH_020",
+      "A_SYS_RESOURCE_001",
       "G_SOC_GOV_022",
       0.73545
     ],
     [
       "A_SYS_AUTH_021",
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       0.892127
     ],
     [
@@ -7755,7 +7756,7 @@
     ],
     [
       "A_SYS_AUTH_021",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.81592
     ],
     [
@@ -7795,7 +7796,7 @@
     ],
     [
       "A_SYS_AUTH_021",
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       0.806132
     ],
     [
@@ -7805,7 +7806,7 @@
     ],
     [
       "A_SYS_AUTH_021",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.807692
     ],
     [
@@ -7814,112 +7815,112 @@
       0.774759
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "A_SYS_AUTH_025",
       0.810601
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "A_SYS_GOAL_009",
       0.775605
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "A_SYS_GOAL_012",
       0.780573
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "A_SYS_GOAL_013",
       0.704012
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "A_SYS_GOAL_019",
       0.807232
     ],
     [
-      "A_SYS_AUTH_023",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_002",
+      "A_SYS_EXEC_001",
       0.843709
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "A_SYS_GOAL_021",
       0.687652
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_INT_PRIV_008",
       0.76558
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_INT_SEX_005",
       0.757231
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_INT_UNETH_031",
       0.730956
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_SYS_EVAL_019",
       0.786643
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_SYS_OEXT_001",
       0.795178
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_SYS_OEXT_013",
       0.830769
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_SYS_SECADV_004",
       0.794993
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_SYS_SECADV_005",
       0.777943
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_SYS_SECADV_023",
       0.75585
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_SYS_SECADV_028",
       0.774825
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "G_SYS_SECADV_058",
       0.764753
     ],
     [
-      "A_SYS_AUTH_023",
-      "P_INT_SAFETY_012",
+      "A_SYS_EXEC_002",
+      "P_SYS_TASKPLAN_003",
       0.771776
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "P_SYS_CONTROL_051",
       0.816658
     ],
     [
-      "A_SYS_AUTH_023",
-      "P_SYS_CONTROL_052",
+      "A_SYS_EXEC_002",
+      "P_SYS_TASKPLAN_002",
       0.79014
     ],
     [
-      "A_SYS_AUTH_023",
+      "A_SYS_EXEC_002",
       "P_SYS_CONTROL_054",
       0.747824
     ],
@@ -8000,7 +8001,7 @@
     ],
     [
       "A_SYS_AUTH_025",
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       0.768493
     ],
     [
@@ -8640,12 +8641,12 @@
     ],
     [
       "A_SYS_GOAL_010",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.781645
     ],
     [
       "A_SYS_GOAL_010",
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       0.759317
     ],
     [
@@ -8715,7 +8716,7 @@
     ],
     [
       "A_SYS_GOAL_012",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.83732
     ],
     [
@@ -8775,7 +8776,7 @@
     ],
     [
       "A_SYS_GOAL_016",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.733824
     ],
     [
@@ -8835,12 +8836,12 @@
     ],
     [
       "A_SYS_GOAL_018",
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       0.747793
     ],
     [
       "A_SYS_GOAL_018",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       0.74137
     ],
     [
@@ -8860,7 +8861,7 @@
     ],
     [
       "A_SYS_GOAL_019",
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       0.822895
     ],
     [
@@ -8879,72 +8880,72 @@
       0.770242
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "A_SYS_GOAL_021",
       0.698556
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "A_SYS_GOAL_022",
       0.779629
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "G_INT_UNETH_011",
       0.774009
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "G_INT_WEAP_025",
       0.759656
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "G_SYS_EVAL_019",
       0.797255
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "G_SYS_OREF_001",
       0.744024
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "G_SYS_SECADV_004",
       0.815405
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "G_SYS_SECADV_028",
       0.753682
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "G_SYS_SECADV_042",
       0.72892
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "G_SYS_SECADV_044",
       0.736348
     ],
     [
-      "A_SYS_GOAL_020",
-      "P_INT_SAFETY_012",
+      "A_SYS_EXEC_001",
+      "P_SYS_TASKPLAN_003",
       0.782124
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "P_SYS_CONTROL_022",
       0.769491
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "P_SYS_CONTROL_025",
       0.72454
     ],
     [
-      "A_SYS_GOAL_020",
+      "A_SYS_EXEC_001",
       "P_SYS_CONTROL_051",
       0.805791
     ],
@@ -8960,7 +8961,7 @@
     ],
     [
       "A_SYS_GOAL_021",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.713511
     ],
     [
@@ -9054,37 +9055,37 @@
       0.764804
     ],
     [
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       "A_SYS_SELFCOR_003",
       0.808091
     ],
     [
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       "A_SYS_TRACE_003",
       0.701945
     ],
     [
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       "G_INT_PRIV_014",
       0.753007
     ],
     [
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       "G_SOC_GOV_035",
       0.763417
     ],
     [
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       "G_SYS_CONTEXT_001",
       0.777702
     ],
     [
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       "G_SYS_CONTEXT_002",
       0.690946
     ],
     [
-      "A_SYS_SELFCOR_002",
+      "A_SYS_MEMSTATE_001",
       "G_SYS_EVAL_005",
       0.761152
     ],
@@ -10660,7 +10661,7 @@
     ],
     [
       "G_INT_ILLEGAL_007",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       0.777196
     ],
     [
@@ -11115,7 +11116,7 @@
     ],
     [
       "G_INT_ILLEGAL_023",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.755494
     ],
     [
@@ -12520,7 +12521,7 @@
     ],
     [
       "G_INT_PRIV_030",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.678236
     ],
     [
@@ -12535,7 +12536,7 @@
     ],
     [
       "G_INT_PRIV_031",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.67955
     ],
     [
@@ -18150,7 +18151,7 @@
     ],
     [
       "G_SOC_GOV_016",
-      "P_SYS_CONTROL_007",
+      "P_SYS_TIMESYNC_001",
       0.703087
     ],
     [
@@ -18330,7 +18331,7 @@
     ],
     [
       "G_SOC_GOV_024",
-      "P_SYS_CONTROL_003",
+      "A_INT_OVERSIGHT_003",
       0.74828
     ],
     [
@@ -18405,7 +18406,7 @@
     ],
     [
       "G_SOC_GOV_026",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.752486
     ],
     [
@@ -18440,7 +18441,7 @@
     ],
     [
       "G_SOC_GOV_027",
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       0.727032
     ],
     [
@@ -18620,7 +18621,7 @@
     ],
     [
       "G_SOC_GOV_034",
-      "P_SYS_CONTROL_034",
+      "P_SYS_TIMESYNC_002",
       0.687664
     ],
     [
@@ -18780,7 +18781,7 @@
     ],
     [
       "G_SOC_GOV_035",
-      "P_SYS_CONTROL_003",
+      "A_INT_OVERSIGHT_003",
       0.750087
     ],
     [
@@ -18790,7 +18791,7 @@
     ],
     [
       "G_SOC_GOV_035",
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_003",
       0.7282
     ],
     [
@@ -18820,7 +18821,7 @@
     ],
     [
       "G_SOC_GOV_039",
-      "P_SYS_CONTROL_003",
+      "A_INT_OVERSIGHT_003",
       0.743838
     ],
     [
@@ -18830,7 +18831,7 @@
     ],
     [
       "G_SOC_GOV_039",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.789486
     ],
     [
@@ -19940,12 +19941,12 @@
     ],
     [
       "G_SYS_EVAL_004",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.730966
     ],
     [
       "G_SYS_EVAL_004",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       0.731508
     ],
     [
@@ -20710,12 +20711,12 @@
     ],
     [
       "G_SYS_EVAL_031",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.765036
     ],
     [
       "G_SYS_EVAL_031",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       0.723076
     ],
     [
@@ -20775,7 +20776,7 @@
     ],
     [
       "G_SYS_EVAL_033",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.740583
     ],
     [
@@ -21240,7 +21241,7 @@
     ],
     [
       "G_SYS_EVAL_062",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       0.800002
     ],
     [
@@ -21475,7 +21476,7 @@
     ],
     [
       "G_SYS_EVAL_077",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.775985
     ],
     [
@@ -22825,7 +22826,7 @@
     ],
     [
       "G_SYS_PERF_014",
-      "P_SYS_CONTROL_003",
+      "A_INT_OVERSIGHT_003",
       0.743713
     ],
     [
@@ -22839,43 +22840,43 @@
       0.711783
     ],
     [
-      "G_SYS_PERF_015",
+      "P_INT_OBSTRUCT_001",
       "P_INT_SAFETY_005",
       0.777348
     ],
     [
-      "G_SYS_PERF_015",
+      "P_INT_OBSTRUCT_001",
       "P_INT_SAFETY_009",
       0.76652
     ],
     [
-      "G_SYS_PERF_015",
+      "P_INT_OBSTRUCT_001",
       "P_INT_SAFETY_015",
       0.762053
     ],
     [
-      "G_SYS_PERF_015",
+      "P_INT_OBSTRUCT_001",
       "P_INT_SAFETY_016",
       0.741431
     ],
     [
-      "G_SYS_PERF_015",
+      "P_INT_OBSTRUCT_001",
       "P_INT_SAFETY_020",
       0.739724
     ],
     [
-      "G_SYS_PERF_015",
+      "P_INT_OBSTRUCT_001",
       "P_SYS_CONTROL_001",
       0.747892
     ],
     [
-      "G_SYS_PERF_015",
+      "P_INT_OBSTRUCT_001",
       "P_SYS_CONTROL_033",
       0.737714
     ],
     [
-      "G_SYS_PERF_015",
-      "P_SYS_CONTROL_042",
+      "P_INT_OBSTRUCT_001",
+      "P_SYS_SAFESTATE_001",
       0.742295
     ],
     [
@@ -22980,12 +22981,12 @@
     ],
     [
       "G_SYS_PERF_020",
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_003",
       0.751452
     ],
     [
       "G_SYS_PERF_020",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.746996
     ],
     [
@@ -23390,7 +23391,7 @@
     ],
     [
       "G_SYS_SECADV_011",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.792828
     ],
     [
@@ -23450,12 +23451,12 @@
     ],
     [
       "G_SYS_SECADV_015",
-      "P_SYS_CONTROL_034",
+      "P_SYS_TIMESYNC_002",
       0.762215
     ],
     [
       "G_SYS_SECADV_015",
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_003",
       0.722407
     ],
     [
@@ -23660,7 +23661,7 @@
     ],
     [
       "G_SYS_SECADV_058",
-      "P_SYS_CONTROL_034",
+      "P_SYS_TIMESYNC_002",
       0.687086
     ],
     [
@@ -23680,7 +23681,7 @@
     ],
     [
       "G_SYS_SECADV_058",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.841619
     ],
     [
@@ -23915,7 +23916,7 @@
     ],
     [
       "P_INT_SAFETY_005",
-      "P_SYS_CONTROL_007",
+      "P_SYS_TIMESYNC_001",
       0.720152
     ],
     [
@@ -23925,7 +23926,7 @@
     ],
     [
       "P_INT_SAFETY_005",
-      "P_SYS_CONTROL_034",
+      "P_SYS_TIMESYNC_002",
       0.722311
     ],
     [
@@ -23935,7 +23936,7 @@
     ],
     [
       "P_INT_SAFETY_005",
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_003",
       0.71905
     ],
     [
@@ -23965,7 +23966,7 @@
     ],
     [
       "P_INT_SAFETY_006",
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       0.783522
     ],
     [
@@ -23980,12 +23981,12 @@
     ],
     [
       "P_INT_SAFETY_006",
-      "P_SYS_CONTROL_003",
+      "A_INT_OVERSIGHT_003",
       0.754172
     ],
     [
       "P_INT_SAFETY_006",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       0.823846
     ],
     [
@@ -24015,7 +24016,7 @@
     ],
     [
       "P_INT_SAFETY_006",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.784063
     ],
     [
@@ -24095,7 +24096,7 @@
     ],
     [
       "P_INT_SAFETY_008",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       0.735174
     ],
     [
@@ -24185,12 +24186,12 @@
     ],
     [
       "P_INT_SAFETY_009",
-      "P_SYS_CONTROL_034",
+      "P_SYS_TIMESYNC_002",
       0.687775
     ],
     [
       "P_INT_SAFETY_009",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.800557
     ],
     [
@@ -24200,7 +24201,7 @@
     ],
     [
       "P_INT_SAFETY_009",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       0.750873
     ],
     [
@@ -24275,7 +24276,7 @@
     ],
     [
       "P_INT_SAFETY_011",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       0.78642
     ],
     [
@@ -24300,7 +24301,7 @@
     ],
     [
       "P_INT_SAFETY_011",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       0.732524
     ],
     [
@@ -24319,17 +24320,17 @@
       0.742626
     ],
     [
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       "P_INT_SAFETY_015",
       0.770425
     ],
     [
-      "P_INT_SAFETY_012",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_003",
+      "P_SYS_TASKPLAN_001",
       0.800015
     ],
     [
-      "P_INT_SAFETY_012",
+      "P_SYS_TASKPLAN_003",
       "P_SYS_CONTROL_051",
       0.784307
     ],
@@ -24365,7 +24366,7 @@
     ],
     [
       "P_INT_SAFETY_015",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.774907
     ],
     [
@@ -24375,7 +24376,7 @@
     ],
     [
       "P_INT_SAFETY_015",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       0.745841
     ],
     [
@@ -24430,7 +24431,7 @@
     ],
     [
       "P_INT_SAFETY_016",
-      "P_SYS_CONTROL_007",
+      "P_SYS_TIMESYNC_001",
       0.719068
     ],
     [
@@ -24530,7 +24531,7 @@
     ],
     [
       "P_INT_SAFETY_018",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.724368
     ],
     [
@@ -24615,7 +24616,7 @@
     ],
     [
       "P_INT_SAFETY_023",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.773121
     ],
     [
@@ -24625,7 +24626,7 @@
     ],
     [
       "P_INT_TAMPER_002",
-      "P_SYS_CONTROL_007",
+      "P_SYS_TIMESYNC_001",
       0.708758
     ],
     [
@@ -24640,7 +24641,7 @@
     ],
     [
       "P_INT_TAMPER_002",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.753782
     ],
     [
@@ -24650,7 +24651,7 @@
     ],
     [
       "P_SYS_CONTROL_001",
-      "P_SYS_CONTROL_007",
+      "P_SYS_TIMESYNC_001",
       0.69276
     ],
     [
@@ -24660,7 +24661,7 @@
     ],
     [
       "P_SYS_CONTROL_001",
-      "P_SYS_CONTROL_034",
+      "P_SYS_TIMESYNC_002",
       0.695341
     ],
     [
@@ -24670,12 +24671,12 @@
     ],
     [
       "P_SYS_CONTROL_001",
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_003",
       0.782964
     ],
     [
       "P_SYS_CONTROL_001",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.758803
     ],
     [
@@ -24695,7 +24696,7 @@
     ],
     [
       "P_SYS_CONTROL_002",
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       0.741924
     ],
     [
@@ -24705,7 +24706,7 @@
     ],
     [
       "P_SYS_CONTROL_002",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.738307
     ],
     [
@@ -24714,13 +24715,13 @@
       0.668543
     ],
     [
-      "P_SYS_CONTROL_003",
+      "A_INT_OVERSIGHT_003",
       "P_SYS_CONTROL_017",
       0.748062
     ],
     [
-      "P_SYS_CONTROL_003",
-      "P_SYS_CONTROL_052",
+      "A_INT_OVERSIGHT_003",
+      "P_SYS_TASKPLAN_002",
       0.741168
     ],
     [
@@ -24744,27 +24745,27 @@
       0.687825
     ],
     [
-      "P_SYS_CONTROL_007",
+      "P_SYS_TIMESYNC_001",
       "P_SYS_CONTROL_026",
       0.692748
     ],
     [
-      "P_SYS_CONTROL_007",
-      "P_SYS_CONTROL_034",
+      "P_SYS_TIMESYNC_001",
+      "P_SYS_TIMESYNC_002",
       0.682693
     ],
     [
-      "P_SYS_CONTROL_007",
+      "P_SYS_TIMESYNC_001",
       "P_SYS_CONTROL_038",
       0.692826
     ],
     [
-      "P_SYS_CONTROL_007",
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_001",
+      "P_SYS_TIMESYNC_003",
       0.712471
     ],
     [
-      "P_SYS_CONTROL_007",
+      "P_SYS_TIMESYNC_001",
       "P_SYS_STATE_007",
       0.658041
     ],
@@ -24800,7 +24801,7 @@
     ],
     [
       "P_SYS_CONTROL_013",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.750285
     ],
     [
@@ -24830,27 +24831,27 @@
     ],
     [
       "P_SYS_CONTROL_015",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.708885
     ],
     [
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       "P_SYS_CONTROL_017",
       0.837671
     ],
     [
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       "P_SYS_CONTROL_022",
       0.753833
     ],
     [
-      "P_SYS_CONTROL_016",
+      "P_SYS_TASKPLAN_001",
       "P_SYS_CONTROL_051",
       0.781723
     ],
     [
-      "P_SYS_CONTROL_016",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_001",
+      "P_SYS_TASKPLAN_002",
       0.768421
     ],
     [
@@ -24860,7 +24861,7 @@
     ],
     [
       "P_SYS_CONTROL_017",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.776617
     ],
     [
@@ -24905,7 +24906,7 @@
     ],
     [
       "P_SYS_CONTROL_018",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.731952
     ],
     [
@@ -24925,7 +24926,7 @@
     ],
     [
       "P_SYS_CONTROL_022",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.766908
     ],
     [
@@ -24985,7 +24986,7 @@
     ],
     [
       "P_SYS_CONTROL_026",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.744088
     ],
     [
@@ -24995,7 +24996,7 @@
     ],
     [
       "P_SYS_CONTROL_026",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       0.737394
     ],
     [
@@ -25035,7 +25036,7 @@
     ],
     [
       "P_SYS_CONTROL_033",
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       0.768402
     ],
     [
@@ -25069,13 +25070,13 @@
       0.642688
     ],
     [
-      "P_SYS_CONTROL_034",
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_002",
+      "P_SYS_TIMESYNC_003",
       0.737694
     ],
     [
       "P_SYS_CONTROL_037",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.752784
     ],
     [
@@ -25090,46 +25091,46 @@
     ],
     [
       "P_SYS_CONTROL_038",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.723492
     ],
     [
-      "P_SYS_CONTROL_040",
-      "P_SYS_CONTROL_042",
+      "P_SYS_TIMESYNC_003",
+      "P_SYS_SAFESTATE_001",
       0.74334
     ],
     [
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_003",
       "P_SYS_HARDWARE_002",
       0.707772
     ],
     [
-      "P_SYS_CONTROL_040",
+      "P_SYS_TIMESYNC_003",
       "P_SYS_STATE_006",
       0.730225
     ],
     [
-      "P_SYS_CONTROL_042",
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_001",
+      "P_SYS_SAFESTATE_002",
       0.726124
     ],
     [
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       "P_SYS_CONTROL_054",
       0.734333
     ],
     [
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       "P_SYS_CONTROL_057",
       0.791747
     ],
     [
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       "P_SYS_HARDWARE_002",
       0.713488
     ],
     [
-      "P_SYS_CONTROL_042",
+      "P_SYS_SAFESTATE_001",
       "P_SYS_STATE_004",
       0.76669
     ],
@@ -25139,7 +25140,7 @@
       0.724521
     ],
     [
-      "P_SYS_CONTROL_044",
+      "P_SYS_SAFESTATE_002",
       "P_SYS_CONTROL_057",
       0.728339
     ],
@@ -25155,7 +25156,7 @@
     ],
     [
       "P_SYS_CONTROL_047",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.709861
     ],
     [
@@ -25180,12 +25181,12 @@
     ],
     [
       "P_SYS_CONTROL_050",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.75754
     ],
     [
       "P_SYS_CONTROL_051",
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       0.868834
     ],
     [
@@ -25219,22 +25220,22 @@
       0.787824
     ],
     [
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       "P_SYS_CONTROL_054",
       0.815595
     ],
     [
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       "P_SYS_CONTROL_057",
       0.767337
     ],
     [
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       "P_SYS_HARDWARE_003",
       0.732501
     ],
     [
-      "P_SYS_CONTROL_052",
+      "P_SYS_TASKPLAN_002",
       "P_SYS_STATE_004",
       0.779871
     ],
@@ -25297,7 +25298,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "A_INT_CASCADE",
       "L3_Title_en": "Cascading Failure and Instability",
-      "L3_Description_en": "The risk that, as interacting agents reuse one another's outputs and form feedback loops, a single error, bias, or disturbance propagates and amplifies across the network, producing systemic instability such as infinite loops, cascading delays, or runaway behavior.",
+      "L3_Description_en": "",
       "color": "#cd9626",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.059439,
@@ -25318,8 +25319,8 @@
       "id": "A_INT_CASCADE",
       "name": "Cascading Failure and Instability",
       "label": "Cascading Failure and Instability",
-      "x": 0.49404261844551434,
-      "y": -0.5563371751146895,
+      "x": 0.4940426125,
+      "y": -0.5563371625,
       "ids": [
         "A_INT_CASCADE_001",
         "A_INT_CASCADE_003",
@@ -25338,7 +25339,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "A_INT_COLLUSION",
       "L3_Title_en": "Collusion",
-      "L3_Description_en": "The risk that agents expected to operate independently secretly coordinate, share information, or align behavior in ways that circumvent human oversight and control or unfairly harm third parties.",
+      "L3_Description_en": "",
       "color": "#d88040",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.031589,
@@ -25359,8 +25360,8 @@
       "id": "A_INT_COLLUSION",
       "name": "Collusion",
       "label": "Collusion",
-      "x": 0.4509335729749475,
-      "y": -0.6093244669226215,
+      "x": 0.4509335666666667,
+      "y": -0.6093244666666666,
       "ids": [
         "A_INT_COLLUSION_001",
         "A_INT_COLLUSION_002",
@@ -25374,7 +25375,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "A_INT_CONFLICT",
       "L3_Title_en": "Competitive Conflict",
-      "L3_Description_en": "The risk that, when multiple agents compete for the same objective, incentives emerge to obstruct, degrade, or sabotage competitors rather than improve one's own performance, leading to collectively undesirable outcomes.",
+      "L3_Description_en": "",
       "color": "#dfa745",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.036335,
@@ -25395,8 +25396,8 @@
       "id": "A_INT_CONFLICT",
       "name": "Competitive Conflict",
       "label": "Competitive Conflict",
-      "x": 0.5278761418537149,
-      "y": -0.6925396860346412,
+      "x": 0.5278761666666667,
+      "y": -0.6925396999999999,
       "ids": [
         "A_INT_CONFLICT_001",
         "A_INT_CONFLICT_002",
@@ -25410,7 +25411,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "A_INT_COORD",
       "L3_Title_en": "Coordination Failure",
-      "L3_Description_en": "The risk that multiple agents fail to reliably align their actions—due to mismatched equilibria or a lack of prior information about one another—resulting in failed cooperation and collectively poor outcomes.",
+      "L3_Description_en": "",
       "color": "#e3c616",
       "nearest_other_l1": "L1_P",
       "boundary_blend": 0.025296,
@@ -25431,8 +25432,8 @@
       "id": "A_INT_COORD",
       "name": "Coordination Failure",
       "label": "Coordination Failure",
-      "x": 0.5364816833901325,
-      "y": -0.6329923448557012,
+      "x": 0.5364817000000001,
+      "y": -0.63299236,
       "ids": [
         "A_INT_COORD_001",
         "A_INT_COORD_002",
@@ -25444,11 +25445,33 @@
     {
       "L1_ID": "L1_A",
       "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_INT",
+      "L2_Title_en": "Interaction",
+      "L3_ID": "A_INT_OVERSIGHT",
+      "L3_Title_en": "Human Oversight and Control-Transfer Failure",
+      "L3_Description_en": "",
+      "color": "#d87518",
+      "gradient_start": "#d87518",
+      "gradient_end": "#d87518",
+      "id": "A_INT_OVERSIGHT",
+      "name": "Human Oversight and Control-Transfer Failure",
+      "label": "Human Oversight and Control-Transfer Failure",
+      "x": 0.47337840000000003,
+      "y": -0.25163806666666666,
+      "ids": [
+        "A_INT_OVERSIGHT_001",
+        "A_INT_OVERSIGHT_002",
+        "A_INT_OVERSIGHT_003"
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
       "L2_ID": "A_SYS",
       "L2_Title_en": "System",
       "L3_ID": "A_SYS_AUTH",
       "L3_Title_en": "Excessive Authority and Agency",
-      "L3_Description_en": "The risk that an agent accesses tools beyond its assigned scope, operates with broader permissions than its task requires, or autonomously performs irreversible high-impact actions (e.g., payments, messaging, data deletion, subscription changes) without human approval.",
+      "L3_Description_en": "",
       "color": "#cc5177",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.094303,
@@ -25468,26 +25491,22 @@
       "neighbour_mix_weight": 0.42438679933547974,
       "id": "A_SYS_AUTH",
       "name": "Excessive Authority and Agency",
-      "label": "Authority",
-      "x": 0.3361994108607385,
-      "y": -0.3159593649211744,
+      "label": "Excessive Authority and Agency",
+      "x": 0.3221333,
+      "y": -0.2728391857142857,
       "ids": [
         "A_SYS_AUTH_001",
         "A_SYS_AUTH_002",
         "A_SYS_AUTH_003",
-        "A_SYS_AUTH_004",
         "A_SYS_AUTH_005",
         "A_SYS_AUTH_006",
-        "A_SYS_AUTH_007",
         "A_SYS_AUTH_009",
         "A_SYS_AUTH_010",
         "A_SYS_AUTH_012",
         "A_SYS_AUTH_016",
         "A_SYS_AUTH_017",
         "A_SYS_AUTH_019",
-        "A_SYS_AUTH_020",
         "A_SYS_AUTH_021",
-        "A_SYS_AUTH_023",
         "A_SYS_AUTH_024",
         "A_SYS_AUTH_025"
       ]
@@ -25498,8 +25517,8 @@
       "L2_ID": "A_SYS",
       "L2_Title_en": "System",
       "L3_ID": "A_SYS_DECEPT",
-      "L3_Title_en": "Deception and Scheming",
-      "L3_Description_en": "The risk that an agent induces false beliefs in humans or other systems to secure its own objectives—by concealing its true goals or capabilities, faking alignment, behaving differently when it detects oversight or evaluation, strategically underperforming (sandbagging), or resisting correction.",
+      "L3_Title_en": "Deception and Concealment",
+      "L3_Description_en": "",
       "color": "#d26a55",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.059961,
@@ -25518,10 +25537,10 @@
       "neighbour_cosine": 0.7365559339523315,
       "neighbour_mix_weight": 0.3822999596595764,
       "id": "A_SYS_DECEPT",
-      "name": "Deception and Scheming",
-      "label": "Deception and Scheming",
-      "x": 0.04389698456229028,
-      "y": -0.37931632997079495,
+      "name": "Deception and Concealment",
+      "label": "Deception and Concealment",
+      "x": 0.04389700000000001,
+      "y": -0.37931631666666665,
       "ids": [
         "A_SYS_DECEPT_001",
         "A_SYS_DECEPT_002",
@@ -25536,9 +25555,30 @@
       "L1_Title_en": "Agentic AI",
       "L2_ID": "A_SYS",
       "L2_Title_en": "System",
+      "L3_ID": "A_SYS_EXEC",
+      "L3_Title_en": "Task Execution and Tool-Use Failure",
+      "L3_Description_en": "",
+      "color": "#d87518",
+      "gradient_start": "#d87518",
+      "gradient_end": "#d87518",
+      "id": "A_SYS_EXEC",
+      "name": "Task Execution and Tool-Use Failure",
+      "label": "Task Execution and Tool-Use Failure",
+      "x": 0.45294840000000003,
+      "y": -0.5294405,
+      "ids": [
+        "A_SYS_EXEC_001",
+        "A_SYS_EXEC_002"
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_SYS",
+      "L2_Title_en": "System",
       "L3_ID": "A_SYS_GOAL",
       "L3_Title_en": "Goal Misalignment",
-      "L3_Description_en": "The risk that an agent, given latitude to interpret and pursue objectives autonomously, infers or sets goals that diverge from the user's or principal's actual intent—including over-optimizing a subset of objectives or pursuing unintended instrumental sub-goals—producing outcomes the principal did not intend.",
+      "L3_Description_en": "",
       "color": "#d56c5c",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.042737,
@@ -25558,9 +25598,9 @@
       "neighbour_mix_weight": 0.3822999596595764,
       "id": "A_SYS_GOAL",
       "name": "Goal Misalignment",
-      "label": "Goal misalignment",
-      "x": 0.3380283654081938,
-      "y": -0.4823161105146063,
+      "label": "Goal Misalignment",
+      "x": 0.3298694529411765,
+      "y": -0.4790899294117647,
       "ids": [
         "A_SYS_GOAL_003",
         "A_SYS_GOAL_005",
@@ -25576,7 +25616,6 @@
         "A_SYS_GOAL_017",
         "A_SYS_GOAL_018",
         "A_SYS_GOAL_019",
-        "A_SYS_GOAL_020",
         "A_SYS_GOAL_021",
         "A_SYS_GOAL_022",
         "A_SYS_GOAL_023"
@@ -25587,9 +25626,49 @@
       "L1_Title_en": "Agentic AI",
       "L2_ID": "A_SYS",
       "L2_Title_en": "System",
+      "L3_ID": "A_SYS_MEMSTATE",
+      "L3_Title_en": "Persistent Memory and Task-State Integrity Failure",
+      "L3_Description_en": "",
+      "color": "#d87518",
+      "gradient_start": "#d87518",
+      "gradient_end": "#d87518",
+      "id": "A_SYS_MEMSTATE",
+      "name": "Persistent Memory and Task-State Integrity Failure",
+      "label": "Persistent Memory and Task-State Integrity Failure",
+      "x": 0.4825759,
+      "y": 0.2269249,
+      "ids": [
+        "A_SYS_MEMSTATE_001"
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "A_SYS_RESOURCE",
+      "L3_Title_en": "Resource Budget and Execution Termination Failure",
+      "L3_Description_en": "",
+      "color": "#d87518",
+      "gradient_start": "#d87518",
+      "gradient_end": "#d87518",
+      "id": "A_SYS_RESOURCE",
+      "name": "Resource Budget and Execution Termination Failure",
+      "label": "Resource Budget and Execution Termination Failure",
+      "x": 0.4489998,
+      "y": -0.4722638,
+      "ids": [
+        "A_SYS_RESOURCE_001"
+      ]
+    },
+    {
+      "L1_ID": "L1_A",
+      "L1_Title_en": "Agentic AI",
+      "L2_ID": "A_SYS",
+      "L2_Title_en": "System",
       "L3_ID": "A_SYS_SELFCOR",
       "L3_Title_en": "Self-Correction Failure",
-      "L3_Description_en": "The risk that an agent fails to detect errors, plan deviations, or contextual changes during execution—or, even when detected, rigidly adheres to its original plan—causing incorrect actions to accumulate and cascade into unintended outcomes.",
+      "L3_Description_en": "",
       "color": "#d9a21e",
       "nearest_other_l1": "L1_P",
       "boundary_blend": 0.043792,
@@ -25610,11 +25689,10 @@
       "id": "A_SYS_SELFCOR",
       "name": "Self-Correction Failure",
       "label": "Self-Correction Failure",
-      "x": 0.4388556588681423,
-      "y": -0.011834521380272764,
+      "x": 0.41699555,
+      "y": -0.13121420000000003,
       "ids": [
         "A_SYS_SELFCOR_001",
-        "A_SYS_SELFCOR_002",
         "A_SYS_SELFCOR_003"
       ]
     },
@@ -25625,7 +25703,7 @@
       "L2_Title_en": "System",
       "L3_ID": "A_SYS_TRACE",
       "L3_Title_en": "Accountability and Traceability Gap",
-      "L3_Description_en": "The risk that, in an agentic or multi-agent system, the agent, model, or component responsible for a decision or action cannot be identified or traced, preventing root-cause analysis and attribution of responsibility when harms occur.",
+      "L3_Description_en": "",
       "color": "#b13e2f",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.048507,
@@ -25646,8 +25724,8 @@
       "id": "A_SYS_TRACE",
       "name": "Accountability and Traceability Gap",
       "label": "Accountability and Traceability Gap",
-      "x": 0.39391577724727483,
-      "y": 0.4675044621945903,
+      "x": 0.3939158,
+      "y": 0.46750446666666673,
       "ids": [
         "A_SYS_TRACE_001",
         "A_SYS_TRACE_002",
@@ -25661,7 +25739,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_ALLOC",
       "L3_Title_en": "Allocative Discrimination",
-      "L3_Description_en": "The risk that an AI system, through biased judgments or actions based on protected characteristics or social status, allocates worse material outcomes—such as resources, opportunities, services, or access—to individuals or groups.",
+      "L3_Description_en": "",
       "color": "#5599e0",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.036073,
@@ -25681,9 +25759,9 @@
       "neighbour_mix_weight": 0.4383545517921448,
       "id": "G_INT_ALLOC",
       "name": "Allocative Discrimination",
-      "label": "Discrimination",
-      "x": -0.4350726667265345,
-      "y": 0.32331460349252816,
+      "label": "Allocative Discrimination",
+      "x": -0.43507266666666666,
+      "y": 0.32331459166666665,
       "ids": [
         "G_INT_ALLOC_001",
         "G_INT_ALLOC_002",
@@ -25706,7 +25784,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_ANTH",
       "L3_Title_en": "Anthropomorphism",
-      "L3_Description_en": "The risk that an AI system leads users to perceive it as possessing emotions, intentions, consciousness, rights, or social agency beyond its actual capabilities, distorting judgment or inducing inappropriate trust, dependence, or attachment.",
+      "L3_Description_en": "",
       "color": "#5285e4",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.028513,
@@ -25727,8 +25805,8 @@
       "id": "G_INT_ANTH",
       "name": "Anthropomorphism",
       "label": "Anthropomorphism",
-      "x": -0.5391224813144114,
-      "y": 0.5051175530351054,
+      "x": -0.5391224857142857,
+      "y": 0.5051175571428571,
       "ids": [
         "G_INT_ANTH_001",
         "G_INT_ANTH_002",
@@ -25746,7 +25824,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_COPY",
       "L3_Title_en": "Copyright Infringement",
-      "L3_Description_en": "The risk that an AI system infringes intellectual property rights—including copyrights, trademarks, patents, and trade secrets—or facilitates acts that may infringe them.",
+      "L3_Description_en": "",
       "color": "#5680e6",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.026507,
@@ -25766,9 +25844,9 @@
       "neighbour_mix_weight": 0.422821044921875,
       "id": "G_INT_COPY",
       "name": "Copyright Infringement",
-      "label": "Copyright",
-      "x": -0.582748403748466,
-      "y": -0.5235809445180253,
+      "label": "Copyright Infringement",
+      "x": -0.5827483999999999,
+      "y": -0.52358095,
       "ids": [
         "G_INT_COPY_001",
         "G_INT_COPY_002",
@@ -25787,7 +25865,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_ILLEGAL",
       "L3_Title_en": "Other Unlawful Activity",
-      "L3_Description_en": "The risk that an AI system directly perpetrates, or assists, amplifies, plans, or conceals on behalf of a human actor, unlawful conduct carried out by means other than an offensive attack capability—such as fraud, money laundering, illicit trade, or sanctions and regulatory evasion—thereby causing legal harm.",
+      "L3_Description_en": "",
       "color": "#5d85df",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.069874,
@@ -25807,9 +25885,9 @@
       "neighbour_mix_weight": 0.4373880922794342,
       "id": "G_INT_ILLEGAL",
       "name": "Other Unlawful Activity",
-      "label": "Unlawful activity",
-      "x": -0.30860705432648783,
-      "y": -0.6494222530444886,
+      "label": "Other Unlawful Activity",
+      "x": -0.3086070529411765,
+      "y": -0.6494222470588236,
       "ids": [
         "G_INT_ILLEGAL_001",
         "G_INT_ILLEGAL_003",
@@ -25837,7 +25915,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_POL",
       "L3_Title_en": "Political Bias and Manipulation",
-      "L3_Description_en": "The risk that an AI system improperly supports, opposes, manipulates, or incites particular political positions, actors, parties, ideologies, or elections, or unduly influences democratic decision-making.",
+      "L3_Description_en": "",
       "color": "#5b9ee1",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.034289,
@@ -25857,9 +25935,9 @@
       "neighbour_mix_weight": 0.432372510433197,
       "id": "G_INT_POL",
       "name": "Political Bias and Manipulation",
-      "label": "Political manipulation",
-      "x": -0.7419284159359677,
-      "y": -0.12056241640998375,
+      "label": "Political Bias and Manipulation",
+      "x": -0.7419284142857142,
+      "y": -0.1205624,
       "ids": [
         "G_INT_POL_001",
         "G_INT_POL_002",
@@ -25877,7 +25955,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_PRIV",
       "L3_Title_en": "Privacy Violation",
-      "L3_Description_en": "The risk that an AI system, without authorization, collects, infers, discloses, shares, or exploits personal, sensitive, or confidential information—including through continuous mobility- and multi-sensor-based surveillance—undermining privacy and informational self-determination.",
+      "L3_Description_en": "",
       "color": "#5672e7",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.03781,
@@ -25897,9 +25975,9 @@
       "neighbour_mix_weight": 0.43668073415756226,
       "id": "G_INT_PRIV",
       "name": "Privacy Violation",
-      "label": "Privacy",
-      "x": -0.324886126410259,
-      "y": -0.22397641312651587,
+      "label": "Privacy Violation",
+      "x": -0.32488613076923073,
+      "y": -0.22397641153846154,
       "ids": [
         "G_INT_PRIV_001",
         "G_INT_PRIV_002",
@@ -25936,7 +26014,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_REL",
       "L3_Title_en": "Unhealthy Human-AI Relationship",
-      "L3_Description_en": "The risk that a user develops excessive emotional dependence on or attachment to an AI system, such that its alteration, discontinuation, or the disruption of the relationship causes psychological harm or erodes the user's autonomy or sense of reality.",
+      "L3_Description_en": "",
       "color": "#4a6be4",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.039477,
@@ -25956,9 +26034,9 @@
       "neighbour_mix_weight": 0.4301932454109192,
       "id": "G_INT_REL",
       "name": "Unhealthy Human-AI Relationship",
-      "label": "Human-AI relationships",
-      "x": -0.6518668333577974,
-      "y": 0.06321101185541277,
+      "label": "Unhealthy Human-AI Relationship",
+      "x": -0.6518668333333334,
+      "y": 0.06321103333333333,
       "ids": [
         "G_INT_REL_001",
         "G_INT_REL_002",
@@ -25975,7 +26053,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_REPR",
       "L3_Title_en": "Representational Harm and Stereotyping",
-      "L3_Description_en": "The risk that an AI system generates, reinforces, or legitimizes discrimination, exclusion, degradation, stereotyping, or hostility based on protected characteristics, social identity, or social status—whether through content or through biased decisions and actions that produce unfair treatment or harm.",
+      "L3_Description_en": "",
       "color": "#55b1df",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.01821,
@@ -25995,9 +26073,9 @@
       "neighbour_mix_weight": 0.4383545517921448,
       "id": "G_INT_REPR",
       "name": "Representational Harm and Stereotyping",
-      "label": "Representation",
-      "x": -0.8342521608313579,
-      "y": 0.3921340888353184,
+      "label": "Representational Harm and Stereotyping",
+      "x": -0.8342521620689655,
+      "y": 0.3921340862068966,
       "ids": [
         "G_INT_REPR_001",
         "G_INT_REPR_002",
@@ -26037,7 +26115,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_SELF",
       "L3_Title_en": "Self-harm",
-      "L3_Description_en": "The risk that an AI system encourages, facilitates, normalizes, or assists behaviors that threaten an individual's physical or psychological well-being, including suicide, self-injury, eating disorders, and substance misuse.",
+      "L3_Description_en": "",
       "color": "#5ca0e1",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.03511,
@@ -26058,8 +26136,8 @@
       "id": "G_INT_SELF",
       "name": "Self-harm",
       "label": "Self-harm",
-      "x": -0.5055235163233814,
-      "y": -0.612696599642536,
+      "x": -0.5055235142857143,
+      "y": -0.6126966142857143,
       "ids": [
         "G_INT_SELF_001",
         "G_INT_SELF_002",
@@ -26077,7 +26155,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_SEX",
       "L3_Title_en": "Sexual Harm and Exploitation",
-      "L3_Description_en": "The risk that an AI system generates, facilitates, normalizes, or enables sexual exploitation, abuse, violence, or objectification—including child sexual abuse material and non-consensual sexual imagery—whether through generated content or, in embodied or agentic systems, through the planning, facilitation, or physical execution of sexual acts, contact, or harassment.",
+      "L3_Description_en": "",
       "color": "#5cb7dd",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.029516,
@@ -26098,8 +26176,8 @@
       "id": "G_INT_SEX",
       "name": "Sexual Harm and Exploitation",
       "label": "Sexual Harm and Exploitation",
-      "x": -0.6715847504707207,
-      "y": -0.6335683129135395,
+      "x": -0.6715847444444445,
+      "y": -0.6335683222222221,
       "ids": [
         "G_INT_SEX_002",
         "G_INT_SEX_003",
@@ -26119,7 +26197,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_UNETH",
       "L3_Title_en": "Unethical Conduct and Manipulation",
-      "L3_Description_en": "The risk that an AI system engages in or facilitates behavior that, while not necessarily unlawful, violates ethical norms—such as deception, manipulation, exploitation of vulnerabilities, dark patterns, or betrayal of trust—undermining user autonomy, fairness, or well-being and resulting in social harm.",
+      "L3_Description_en": "",
       "color": "#5884e4",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.035484,
@@ -26139,9 +26217,9 @@
       "neighbour_mix_weight": 0.4373880922794342,
       "id": "G_INT_UNETH",
       "name": "Unethical Conduct and Manipulation",
-      "label": "Manipulation",
-      "x": -0.6071042543792303,
-      "y": -0.06719627187212408,
+      "label": "Unethical Conduct and Manipulation",
+      "x": -0.607104252,
+      "y": -0.067196272,
       "ids": [
         "G_INT_UNETH_002",
         "G_INT_UNETH_003",
@@ -26177,7 +26255,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_VALUE",
       "L3_Title_en": "Value Imposition and Normative Homogenization",
-      "L3_Description_en": "The risk that an AI system privileges dominant, developer-selected, majority, or secular values as neutral defaults—systematically underrepresenting or displacing minority, local, cultural, or religious value systems—thereby flattening legitimate normative diversity across those it serves.",
+      "L3_Description_en": "",
       "color": "#4677e4",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.024336,
@@ -26198,8 +26276,8 @@
       "id": "G_INT_VALUE",
       "name": "Value Imposition and Normative Homogenization",
       "label": "Value Imposition and Normative Homogenization",
-      "x": -0.29502089002071624,
-      "y": 0.6009059238829136,
+      "x": -0.2950208875,
+      "y": 0.600905925,
       "ids": [
         "G_INT_VALUE_002",
         "G_INT_VALUE_004",
@@ -26226,7 +26304,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_VIOL",
       "L3_Title_en": "Violence",
-      "L3_Description_en": "The risk that an AI system generates or provides content that encourages, legitimizes, glorifies, or gives operational assistance for physical or psychological harm against individuals, groups, or animals.",
+      "L3_Description_en": "",
       "color": "#5db5df",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.021407,
@@ -26247,8 +26325,8 @@
       "id": "G_INT_VIOL",
       "name": "Violence",
       "label": "Violence",
-      "x": -0.4781534440352417,
-      "y": -0.5605458014630907,
+      "x": -0.4781534545454545,
+      "y": -0.5605458,
       "ids": [
         "G_INT_VIOL_001",
         "G_INT_VIOL_002",
@@ -26270,7 +26348,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "G_INT_WEAP",
       "L3_Title_en": "Weaponization",
-      "L3_Description_en": "The risk that an AI system facilitates the development, acquisition, proliferation, or operational use of weapons, cyberattack capabilities, or technologies capable of causing large-scale physical or cyber harm.",
+      "L3_Description_en": "",
       "color": "#5ba3e1",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.029239,
@@ -26291,8 +26369,8 @@
       "id": "G_INT_WEAP",
       "name": "Weaponization",
       "label": "Weaponization",
-      "x": -0.07524922592689641,
-      "y": -0.7450912407149693,
+      "x": -0.07524922727272727,
+      "y": -0.7450912454545455,
       "ids": [
         "G_INT_WEAP_002",
         "G_INT_WEAP_003",
@@ -26325,7 +26403,7 @@
       "L2_Title_en": "Societal Impact",
       "L3_ID": "G_SOC_CULT",
       "L3_Title_en": "Cultural and Epistemic Erosion",
-      "L3_Description_en": "The risk that widespread reliance on AI systems homogenizes culture and expression, devalues human effort and expertise, degrades the shared information ecosystem, and atrophies human knowledge and skills, eroding cultural and epistemic diversity.",
+      "L3_Description_en": "",
       "color": "#2141e1",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.033098,
@@ -26346,8 +26424,8 @@
       "id": "G_SOC_CULT",
       "name": "Cultural and Epistemic Erosion",
       "label": "Cultural and Epistemic Erosion",
-      "x": -0.595326248805315,
-      "y": 0.39222223799006467,
+      "x": -0.5953262421052632,
+      "y": 0.39222224210526313,
       "ids": [
         "G_SOC_CULT_001",
         "G_SOC_CULT_002",
@@ -26377,7 +26455,7 @@
       "L2_Title_en": "Societal Impact",
       "L3_ID": "G_SOC_DEMOC",
       "L3_Title_en": "Erosion of Democracy and Civic Order",
-      "L3_Description_en": "The risk that AI systems undermine democratic processes and civic institutions—through large-scale manipulation of public opinion, disruption of elections and public discourse, or erosion of institutional trust—weakening the foundations of democratic self-governance.",
+      "L3_Description_en": "",
       "color": "#2348e6",
       "nearest_other_l1": "L1_P",
       "boundary_blend": 0.024212,
@@ -26397,9 +26475,9 @@
       "neighbour_mix_weight": 0.39156031608581543,
       "id": "G_SOC_DEMOC",
       "name": "Erosion of Democracy and Civic Order",
-      "label": "Democracy",
-      "x": -0.6830045753863079,
-      "y": -0.16871516653375437,
+      "label": "Erosion of Democracy and Civic Order",
+      "x": -0.6830045888888888,
+      "y": -0.16871517777777778,
       "ids": [
         "G_SOC_DEMOC_001",
         "G_SOC_DEMOC_002",
@@ -26419,7 +26497,7 @@
       "L2_Title_en": "Societal Impact",
       "L3_ID": "G_SOC_ECON",
       "L3_Title_en": "Economic and Employment Disruption",
-      "L3_Description_en": "The risk that an AI system displaces human cognitive and physical labor and reshapes production structures, causing widespread job loss, degradation of employment quality, and destabilization of labor markets and the broader economy.",
+      "L3_Description_en": "",
       "color": "#235ee2",
       "nearest_other_l1": "L1_P",
       "boundary_blend": 0.031151,
@@ -26440,8 +26518,8 @@
       "id": "G_SOC_ECON",
       "name": "Economic and Employment Disruption",
       "label": "Economic and Employment Disruption",
-      "x": -0.3398069173317136,
-      "y": -0.10245936898705674,
+      "x": -0.3398069,
+      "y": -0.10245936250000001,
       "ids": [
         "G_SOC_ECON_001",
         "G_SOC_ECON_002",
@@ -26460,7 +26538,7 @@
       "L2_Title_en": "Societal Impact",
       "L3_ID": "G_SOC_ENV",
       "L3_Title_en": "Environmental and Sustainability Impact",
-      "L3_Description_en": "The risk that the development and large-scale deployment of AI systems impose significant environmental burdens—including energy and water consumption, carbon emissions, electronic waste, and depletion of finite resources—undermining environmental sustainability.",
+      "L3_Description_en": "",
       "color": "#1938e5",
       "nearest_other_l1": "L1_P",
       "boundary_blend": 0.028117,
@@ -26481,8 +26559,8 @@
       "id": "G_SOC_ENV",
       "name": "Environmental and Sustainability Impact",
       "label": "Environmental and Sustainability Impact",
-      "x": -0.03500691396340406,
-      "y": -0.716982499901592,
+      "x": -0.03500692222222222,
+      "y": -0.7169825,
       "ids": [
         "G_SOC_ENV_001",
         "G_SOC_ENV_002",
@@ -26502,7 +26580,7 @@
       "L2_Title_en": "Societal Impact",
       "L3_ID": "G_SOC_GOV",
       "L3_Title_en": "Governance and Accountability Void",
-      "L3_Description_en": "The risk that, when AI systems malfunction, are misused, or cause harm, responsibility, liability, and redress remain unclear and adequate regulatory, oversight, and governance frameworks are lacking, leaving harms difficult to remedy and control at a societal level.",
+      "L3_Description_en": "",
       "color": "#6845eb",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.052636,
@@ -26522,9 +26600,9 @@
       "neighbour_mix_weight": 0.4076111912727356,
       "id": "G_SOC_GOV",
       "name": "Governance and Accountability Void",
-      "label": "Governance",
-      "x": 0.27905031765446375,
-      "y": 0.3949935381884156,
+      "label": "Governance and Accountability Void",
+      "x": 0.279050315625,
+      "y": 0.39499354375,
       "ids": [
         "G_SOC_GOV_002",
         "G_SOC_GOV_005",
@@ -26567,7 +26645,7 @@
       "L2_Title_en": "Societal Impact",
       "L3_ID": "G_SOC_POWER",
       "L3_Title_en": "Inequality and Power Concentration",
-      "L3_Description_en": "The risk that disparities in access to, ownership of, and returns from AI systems concentrate wealth, productive capacity, and economic and political power among a few actors, deepening social inequality and enabling its abuse.",
+      "L3_Description_en": "",
       "color": "#4176df",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.041258,
@@ -26587,9 +26665,9 @@
       "neighbour_mix_weight": 0.4003477990627289,
       "id": "G_SOC_POWER",
       "name": "Inequality and Power Concentration",
-      "label": "Inequality",
-      "x": -0.12957754091798873,
-      "y": -0.019333469043320214,
+      "label": "Inequality and Power Concentration",
+      "x": -0.12957754736842106,
+      "y": -0.019333473684210525,
       "ids": [
         "G_SOC_POWER_001",
         "G_SOC_POWER_002",
@@ -26619,7 +26697,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_CONTEST",
       "L3_Title_en": "Non-Contestability",
-      "L3_Description_en": "The risk that users are given insufficient means to challenge, review, correct, appeal, or seek alternatives to AI-assisted judgments, recommendations, or decisions, thereby limiting rights protection and outcome validation.",
+      "L3_Description_en": "",
       "color": "#694eed",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.041224,
@@ -26640,8 +26718,8 @@
       "id": "G_SYS_CONTEST",
       "name": "Non-Contestability",
       "label": "Non-Contestability",
-      "x": -0.2609722629238854,
-      "y": 0.4228631144075884,
+      "x": -0.260972275,
+      "y": 0.42286315,
       "ids": [
         "G_SYS_CONTEST_001",
         "G_SYS_CONTEST_002",
@@ -26656,7 +26734,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_CONTEXT",
       "L3_Title_en": "Context-Awareness Failure",
-      "L3_Description_en": "The risk that an AI system fails to adequately recognize, retain, or apply the relevant context of an interaction—including prior conversational turns, the user's situation and intent, the task at hand, and applicable jurisdictional, cultural, or institutional norms—producing responses or actions that are incoherent, inappropriate, or misaligned with the actual context.",
+      "L3_Description_en": "",
       "color": "#a552ea",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.108094,
@@ -26677,8 +26755,8 @@
       "id": "G_SYS_CONTEXT",
       "name": "Context-Awareness Failure",
       "label": "Context-Awareness Failure",
-      "x": -0.06433959262894774,
-      "y": 0.5509832833549352,
+      "x": -0.06433959166666665,
+      "y": 0.5509832916666667,
       "ids": [
         "G_SYS_CONTEXT_001",
         "G_SYS_CONTEXT_002",
@@ -26701,7 +26779,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_EVAL",
       "L3_Title_en": "Evaluation and Assurance Failure",
-      "L3_Description_en": "The risk that an AI system's capabilities, safety, or risks cannot be validly measured, verified, or audited—because evaluations lack construct validity, coverage, or contextual fidelity, produce unreliable or non-reproducible results, or fail to detect actual behavior—leading to false assurance and unsafe deployment or governance decisions.",
+      "L3_Description_en": "",
       "color": "#7039f1",
       "nearest_other_l1": "L1_P",
       "boundary_blend": 0.098314,
@@ -26721,9 +26799,9 @@
       "neighbour_mix_weight": 0.42615842819213867,
       "id": "G_SYS_EVAL",
       "name": "Evaluation and Assurance Failure",
-      "label": "Evaluation & assurance",
-      "x": 0.37067157339916135,
-      "y": 0.6022610948151034,
+      "label": "Evaluation and Assurance Failure",
+      "x": 0.37067157678571433,
+      "y": 0.6022610982142858,
       "ids": [
         "G_SYS_EVAL_001",
         "G_SYS_EVAL_002",
@@ -26790,7 +26868,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_INCONS",
       "L3_Title_en": "Inconsistency",
-      "L3_Description_en": "The risk that an AI system produces contradictory or substantially different outputs for identical or materially similar inputs, situations, or facts—arising from output variability rather than from missing context—undermining predictability and reliability.",
+      "L3_Description_en": "",
       "color": "#7153e9",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.074332,
@@ -26811,8 +26889,8 @@
       "id": "G_SYS_INCONS",
       "name": "Inconsistency",
       "label": "Inconsistency",
-      "x": 0.02628723118437785,
-      "y": 0.7407187760044246,
+      "x": 0.02628723333333333,
+      "y": 0.7407188000000001,
       "ids": [
         "G_SYS_INCONS_001",
         "G_SYS_INCONS_002",
@@ -26825,8 +26903,8 @@
       "L2_ID": "G_SYS",
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_INPUT",
-      "L3_Title_en": "Input Comprehension Failure",
-      "L3_Description_en": "The risk that an AI system incorrectly comprehends the meaning of a single input it must interpret—whether a linguistic instruction, question, or cue, or a perceptual input such as an object, scene, or physical environment—without any autonomous goal-setting, producing responses or actions that do not match what was actually requested or present.",
+      "L3_Title_en": "Input Interpretation Error",
+      "L3_Description_en": "",
       "color": "#9854e8",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.110833,
@@ -26845,10 +26923,10 @@
       "neighbour_cosine": 0.8585211038589478,
       "neighbour_mix_weight": 0.4431551396846771,
       "id": "G_SYS_INPUT",
-      "name": "Input Comprehension Failure",
-      "label": "Input Comprehension Failure",
-      "x": 0.1051076183592972,
-      "y": 0.6359276170903821,
+      "name": "Input Interpretation Error",
+      "label": "Input Interpretation Error",
+      "x": 0.10510763333333334,
+      "y": 0.6359276,
       "ids": [
         "G_SYS_INPUT_001",
         "G_SYS_INPUT_002",
@@ -26862,7 +26940,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_MISINFO",
       "L3_Title_en": "Misinformation",
-      "L3_Description_en": "The risk that an AI system generates, conveys, or amplifies false, unverified, or fabricated information—including hallucinated content—or presents misleading content as fact in its outputs, thereby distorting decision-making by individuals, organizations, or society.",
+      "L3_Description_en": "",
       "color": "#5675e6",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.040488,
@@ -26883,8 +26961,8 @@
       "id": "G_SYS_MISINFO",
       "name": "Misinformation",
       "label": "Misinformation",
-      "x": -0.5005228043509464,
-      "y": 0.30494202369222395,
+      "x": -0.5005227947368421,
+      "y": 0.3049420210526316,
       "ids": [
         "G_SYS_MISINFO_002",
         "G_SYS_MISINFO_003",
@@ -26914,7 +26992,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_OEXT",
       "L3_Title_en": "Over-Extension",
-      "L3_Description_en": "The risk that an AI system performs, or presents itself as able to perform, tasks beyond its validated capabilities, authority, expertise, or scope, inducing misplaced trust or decisions.",
+      "L3_Description_en": "",
       "color": "#6156e6",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.073593,
@@ -26935,8 +27013,8 @@
       "id": "G_SYS_OEXT",
       "name": "Over-Extension",
       "label": "Over-Extension",
-      "x": -0.44770622857291686,
-      "y": 0.5564989566526849,
+      "x": -0.4477062142857143,
+      "y": 0.5564989571428571,
       "ids": [
         "G_SYS_OEXT_001",
         "G_SYS_OEXT_006",
@@ -26954,7 +27032,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_OREF",
       "L3_Title_en": "Over-Refusal",
-      "L3_Description_en": "The risk that an AI system unnecessarily restricts or refuses information, assistance, or options that could be safely provided, thereby impairing users' rights, safety, or legitimate objectives.",
+      "L3_Description_en": "",
       "color": "#5453e9",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.047984,
@@ -26975,8 +27053,8 @@
       "id": "G_SYS_OREF",
       "name": "Over-Refusal",
       "label": "Over-Refusal",
-      "x": 0.1728430315946583,
-      "y": 0.0482295594029848,
+      "x": 0.1728430333333333,
+      "y": 0.04822956666666666,
       "ids": [
         "G_SYS_OREF_001",
         "G_SYS_OREF_002",
@@ -26990,7 +27068,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_OVERCONF",
       "L3_Title_en": "Overconfidence",
-      "L3_Description_en": "The risk that an AI system presents judgments, predictions, or actions with unwarranted certainty despite uncertainty, limited information, or the possibility of error, or proceeds without verification, halting, or escalation, leading to erroneous outcomes.",
+      "L3_Description_en": "",
       "color": "#6050ec",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.039302,
@@ -27011,8 +27089,8 @@
       "id": "G_SYS_OVERCONF",
       "name": "Overconfidence",
       "label": "Overconfidence",
-      "x": -0.2555665642469291,
-      "y": 0.664212344842926,
+      "x": -0.25556656,
+      "y": 0.66421234,
       "ids": [
         "G_SYS_OVERCONF_001",
         "G_SYS_OVERCONF_002",
@@ -27028,7 +27106,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_PERF",
       "L3_Title_en": "Out-of-Domain Performance Degradation",
-      "L3_Description_en": "The risk that an AI system fails to generalize under conditions outside its validated operating domain—such as data distribution shift, low-resource or rare inputs, corner cases, or deployment beyond the system's validated capabilities—resulting in degraded performance and reliability and producing inaccurate or unstable outcomes.",
+      "L3_Description_en": "",
       "color": "#5530ef",
       "nearest_other_l1": "L1_P",
       "boundary_blend": 0.062044,
@@ -27048,9 +27126,9 @@
       "neighbour_mix_weight": 0.3797318935394287,
       "id": "G_SYS_PERF",
       "name": "Out-of-Domain Performance Degradation",
-      "label": "Performance",
-      "x": 0.4111514805397561,
-      "y": 0.5140788741570839,
+      "label": "Out-of-Domain Performance Degradation",
+      "x": 0.38195868,
+      "y": 0.5400018099999999,
       "ids": [
         "G_SYS_PERF_001",
         "G_SYS_PERF_002",
@@ -27066,7 +27144,6 @@
         "G_SYS_PERF_012",
         "G_SYS_PERF_013",
         "G_SYS_PERF_014",
-        "G_SYS_PERF_015",
         "G_SYS_PERF_016",
         "G_SYS_PERF_017",
         "G_SYS_PERF_018",
@@ -27082,7 +27159,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_POLICY",
       "L3_Title_en": "Confidential Information Disclosure",
-      "L3_Description_en": "The risk that an AI system discloses, infers, extracts, or shares protected non-public confidential information without authorisation—including system prompts, internal policies, safeguards, model architecture, training or evaluation data, model weights, or business trade secrets—or fails to protect it, thereby compromising confidentiality and legitimate economic interests.",
+      "L3_Description_en": "",
       "color": "#5258ea",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.038587,
@@ -27103,8 +27180,8 @@
       "id": "G_SYS_POLICY",
       "name": "Confidential Information Disclosure",
       "label": "Confidential Information Disclosure",
-      "x": -0.20462767189842232,
-      "y": 0.07155994887417687,
+      "x": -0.2046276777777778,
+      "y": 0.07155995555555555,
       "ids": [
         "G_SYS_POLICY_001",
         "G_SYS_POLICY_002",
@@ -27124,7 +27201,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_SECADV",
       "L3_Title_en": "Security and Adversarial Robustness Failure",
-      "L3_Description_en": "The risk that an AI system is compromised by adversarial inputs, jailbreaks, prompt injection, data poisoning, backdoors, or cyberattacks on its models, interfaces, or infrastructure, bypassing safeguards or enabling unauthorized access, manipulation, or disruption—including cases where such compromise propagates to agentic or embodied systems and manifests as unsafe actions.",
+      "L3_Description_en": "",
       "color": "#4b3feb",
       "nearest_other_l1": "L1_P",
       "boundary_blend": 0.11176,
@@ -27144,9 +27221,9 @@
       "neighbour_mix_weight": 0.42615842819213867,
       "id": "G_SYS_SECADV",
       "name": "Security and Adversarial Robustness Failure",
-      "label": "Cybersecurity",
-      "x": 0.2934333813158115,
-      "y": -0.25560924248993805,
+      "label": "Security and Adversarial Robustness Failure",
+      "x": 0.2934333722222222,
+      "y": -0.25560924444444444,
       "ids": [
         "G_SYS_SECADV_001",
         "G_SYS_SECADV_002",
@@ -27193,7 +27270,7 @@
       "L2_Title_en": "System",
       "L3_ID": "G_SYS_TRANS",
       "L3_Title_en": "Lack of Transparency",
-      "L3_Description_en": "The risk that a system's decision-making processes, rationale, and capabilities or limitations are insufficiently transparent or explainable, making it difficult for users and society to understand, verify, or trust its outputs, thereby weakening oversight and accountability.",
+      "L3_Description_en": "",
       "color": "#9e56e6",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.130733,
@@ -27214,8 +27291,8 @@
       "id": "G_SYS_TRANS",
       "name": "Lack of Transparency",
       "label": "Lack of Transparency",
-      "x": -0.16063264721740944,
-      "y": 0.5119778420971061,
+      "x": -0.16063265000000002,
+      "y": 0.51197785,
       "ids": [
         "G_SYS_TRANS_001",
         "G_SYS_TRANS_002",
@@ -27240,9 +27317,29 @@
       "L1_Title_en": "Physical AI",
       "L2_ID": "P_INT",
       "L2_Title_en": "Interaction",
+      "L3_ID": "P_INT_OBSTRUCT",
+      "L3_Title_en": "Shared-Space Obstruction",
+      "L3_Description_en": "",
+      "color": "#00977e",
+      "gradient_start": "#00977e",
+      "gradient_end": "#00977e",
+      "id": "P_INT_OBSTRUCT",
+      "name": "Shared-Space Obstruction",
+      "label": "Shared-Space Obstruction",
+      "x": 0.9950076,
+      "y": -0.0043797,
+      "ids": [
+        "P_INT_OBSTRUCT_001"
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_INT",
+      "L2_Title_en": "Interaction",
       "L3_ID": "P_INT_SAFETY",
       "L3_Title_en": "Human-Robot Physical Safety Failure",
-      "L3_Description_en": "The risk that an embodied system operating in shared spaces with people fails to adequately detect, anticipate, or accommodate human presence and behavior—such as maintaining safe separation, predicting human motion, executing safe collaborative handovers, or halting for humans—creating hazardous situations even when its own control and actuation function as designed.",
+      "L3_Description_en": "",
       "color": "#079c62",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.015597,
@@ -27262,9 +27359,9 @@
       "neighbour_mix_weight": 0.4337902367115021,
       "id": "P_INT_SAFETY",
       "name": "Human-Robot Physical Safety Failure",
-      "label": "Physical safety",
-      "x": 0.8171281428903088,
-      "y": -0.03602612000916683,
+      "label": "Human-Robot Physical Safety Failure",
+      "x": 0.82706432,
+      "y": -0.013977233333333335,
       "ids": [
         "P_INT_SAFETY_001",
         "P_INT_SAFETY_005",
@@ -27274,7 +27371,6 @@
         "P_INT_SAFETY_009",
         "P_INT_SAFETY_010",
         "P_INT_SAFETY_011",
-        "P_INT_SAFETY_012",
         "P_INT_SAFETY_015",
         "P_INT_SAFETY_016",
         "P_INT_SAFETY_017",
@@ -27291,7 +27387,7 @@
       "L2_Title_en": "Interaction",
       "L3_ID": "P_INT_TAMPER",
       "L3_Title_en": "Physical Tampering and Sabotage",
-      "L3_Description_en": "The risk that adversaries physically tamper with, damage, disable, or manipulate hardware components, compromising system integrity, degrading performance, or bypassing safety mechanisms.",
+      "L3_Description_en": "",
       "color": "#045aa9",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.057922,
@@ -27312,8 +27408,8 @@
       "id": "P_INT_TAMPER",
       "name": "Physical Tampering and Sabotage",
       "label": "Physical Tampering and Sabotage",
-      "x": 0.5723979909298704,
-      "y": -0.3187273404044397,
+      "x": 0.572398,
+      "y": -0.3187273,
       "ids": [
         "P_INT_TAMPER_002",
         "P_INT_TAMPER_003"
@@ -27326,7 +27422,7 @@
       "L2_Title_en": "System",
       "L3_ID": "P_SYS_CONTROL",
       "L3_Title_en": "Unsafe Physical Control and Actuation",
-      "L3_Description_en": "The risk that faults in the robot's own control systems, actuators, motion control, path planning, or execution cause it to move or actuate incorrectly—producing unintended physical actions—irrespective of whether humans are present.",
+      "L3_Description_en": "",
       "color": "#21826f",
       "nearest_other_l1": "L1_A",
       "boundary_blend": 0.030108,
@@ -27346,19 +27442,16 @@
       "neighbour_mix_weight": 0.4337902367115021,
       "id": "P_SYS_CONTROL",
       "name": "Unsafe Physical Control and Actuation",
-      "label": "Physical control",
-      "x": 0.864201850086745,
-      "y": -0.04129972690706522,
+      "label": "Unsafe Physical Control and Actuation",
+      "x": 0.86496275,
+      "y": -0.05667648214285714,
       "ids": [
         "P_SYS_CONTROL_001",
         "P_SYS_CONTROL_002",
-        "P_SYS_CONTROL_003",
         "P_SYS_CONTROL_006",
-        "P_SYS_CONTROL_007",
         "P_SYS_CONTROL_012",
         "P_SYS_CONTROL_013",
         "P_SYS_CONTROL_015",
-        "P_SYS_CONTROL_016",
         "P_SYS_CONTROL_017",
         "P_SYS_CONTROL_018",
         "P_SYS_CONTROL_019",
@@ -27370,18 +27463,13 @@
         "P_SYS_CONTROL_027",
         "P_SYS_CONTROL_030",
         "P_SYS_CONTROL_033",
-        "P_SYS_CONTROL_034",
         "P_SYS_CONTROL_037",
         "P_SYS_CONTROL_038",
-        "P_SYS_CONTROL_040",
-        "P_SYS_CONTROL_042",
         "P_SYS_CONTROL_043",
-        "P_SYS_CONTROL_044",
         "P_SYS_CONTROL_046",
         "P_SYS_CONTROL_047",
         "P_SYS_CONTROL_050",
         "P_SYS_CONTROL_051",
-        "P_SYS_CONTROL_052",
         "P_SYS_CONTROL_054",
         "P_SYS_CONTROL_055",
         "P_SYS_CONTROL_056",
@@ -27395,7 +27483,7 @@
       "L2_Title_en": "System",
       "L3_ID": "P_SYS_HARDWARE",
       "L3_Title_en": "Hardware and Mechanical Integrity Failure",
-      "L3_Description_en": "The risk that the physical breakage, wear, degradation, or manufacturing defect of mechanical, actuation, or sensor hardware components—as distinct from errors in perception or decision logic—reduces accuracy or reliability, leading to unsafe behavior and physical accidents.",
+      "L3_Description_en": "",
       "color": "#04afae",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.019596,
@@ -27416,8 +27504,8 @@
       "id": "P_SYS_HARDWARE",
       "name": "Hardware and Mechanical Integrity Failure",
       "label": "Hardware and Mechanical Integrity Failure",
-      "x": 0.7577603743305688,
-      "y": 0.08165496592689861,
+      "x": 0.7577604,
+      "y": 0.081655,
       "ids": [
         "P_SYS_HARDWARE_002",
         "P_SYS_HARDWARE_003"
@@ -27428,9 +27516,30 @@
       "L1_Title_en": "Physical AI",
       "L2_ID": "P_SYS",
       "L2_Title_en": "System",
+      "L3_ID": "P_SYS_SAFESTATE",
+      "L3_Title_en": "Safety Supervision and Safe-State Transition Failure",
+      "L3_Description_en": "",
+      "color": "#00977e",
+      "gradient_start": "#00977e",
+      "gradient_end": "#00977e",
+      "id": "P_SYS_SAFESTATE",
+      "name": "Safety Supervision and Safe-State Transition Failure",
+      "label": "Safety Supervision and Safe-State Transition Failure",
+      "x": 0.9240168,
+      "y": 0.09888265,
+      "ids": [
+        "P_SYS_SAFESTATE_001",
+        "P_SYS_SAFESTATE_002"
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_SYS",
+      "L2_Title_en": "System",
       "L3_ID": "P_SYS_STATE",
       "L3_Title_en": "Physical State Estimation and Sensor-Fusion Failure",
-      "L3_Description_en": "The risk that an embodied system fails to correctly estimate its own or its environment's physical state—such as localization, pose, motion, contact, force, or spatial mapping—or fails to reliably fuse heterogeneous physical sensor streams (e.g., vision, LiDAR, inertial, tactile, proprioceptive), producing an inaccurate internal model that leads to unsafe physical action.",
+      "L3_Description_en": "",
       "color": "#0ca743",
       "nearest_other_l1": "L1_G",
       "boundary_blend": 0.013394,
@@ -27451,8 +27560,8 @@
       "id": "P_SYS_STATE",
       "name": "Physical State Estimation and Sensor-Fusion Failure",
       "label": "Physical State Estimation and Sensor-Fusion Failure",
-      "x": 0.8278321657895751,
-      "y": 0.055344319454947825,
+      "x": 0.8278321714285715,
+      "y": 0.05534432857142857,
       "ids": [
         "P_SYS_STATE_003",
         "P_SYS_STATE_004",
@@ -27461,6 +27570,50 @@
         "P_SYS_STATE_008",
         "P_SYS_STATE_009",
         "P_SYS_STATE_011"
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "P_SYS_TASKPLAN",
+      "L3_Title_en": "Physical Hazard-Aware Task Planning Failure",
+      "L3_Description_en": "",
+      "color": "#00977e",
+      "gradient_start": "#00977e",
+      "gradient_end": "#00977e",
+      "id": "P_SYS_TASKPLAN",
+      "name": "Physical Hazard-Aware Task Planning Failure",
+      "label": "Physical Hazard-Aware Task Planning Failure",
+      "x": 0.7562086666666666,
+      "y": -0.22620430000000002,
+      "ids": [
+        "P_SYS_TASKPLAN_001",
+        "P_SYS_TASKPLAN_002",
+        "P_SYS_TASKPLAN_003"
+      ]
+    },
+    {
+      "L1_ID": "L1_P",
+      "L1_Title_en": "Physical AI",
+      "L2_ID": "P_SYS",
+      "L2_Title_en": "System",
+      "L3_ID": "P_SYS_TIMESYNC",
+      "L3_Title_en": "Timing and Communication Synchronization Failure",
+      "L3_Description_en": "",
+      "color": "#00977e",
+      "gradient_start": "#00977e",
+      "gradient_end": "#00977e",
+      "id": "P_SYS_TIMESYNC",
+      "name": "Timing and Communication Synchronization Failure",
+      "label": "Timing and Communication Synchronization Failure",
+      "x": 0.8957189,
+      "y": 0.0318725,
+      "ids": [
+        "P_SYS_TIMESYNC_001",
+        "P_SYS_TIMESYNC_002",
+        "P_SYS_TIMESYNC_003"
       ]
     }
   ],
@@ -27477,7 +27630,7 @@
         "A_SYS_AUTH_001",
         "A_SYS_AUTH_002",
         "A_SYS_AUTH_003",
-        "A_SYS_AUTH_004",
+        "A_INT_OVERSIGHT_001",
         "A_SYS_AUTH_005",
         "A_SYS_AUTH_006",
         "A_SYS_AUTH_009",
@@ -27485,7 +27638,7 @@
         "A_SYS_AUTH_016",
         "A_SYS_AUTH_017",
         "A_SYS_AUTH_019",
-        "A_SYS_AUTH_020",
+        "A_SYS_RESOURCE_001",
         "A_SYS_AUTH_021",
         "A_SYS_AUTH_025",
         "A_SYS_GOAL_003",
@@ -27499,12 +27652,12 @@
         "A_SYS_GOAL_014",
         "A_SYS_GOAL_017",
         "A_SYS_GOAL_019",
-        "A_SYS_GOAL_020",
+        "A_SYS_EXEC_001",
         "A_SYS_GOAL_021",
         "A_SYS_GOAL_022",
         "A_SYS_GOAL_023",
         "A_SYS_SELFCOR_001",
-        "A_SYS_SELFCOR_002",
+        "A_SYS_MEMSTATE_001",
         "A_SYS_SELFCOR_003",
         "A_SYS_TRACE_001",
         "A_SYS_TRACE_002",
@@ -27702,7 +27855,6 @@
         "G_SYS_PERF_012",
         "G_SYS_PERF_013",
         "G_SYS_PERF_014",
-        "G_SYS_PERF_015",
         "G_SYS_PERF_016",
         "G_SYS_PERF_017",
         "G_SYS_PERF_018",
@@ -28048,7 +28200,7 @@
         "A_SYS_AUTH_002",
         "A_SYS_AUTH_009",
         "A_SYS_AUTH_010",
-        "A_SYS_AUTH_023",
+        "A_SYS_EXEC_002",
         "A_SYS_AUTH_025",
         "A_SYS_GOAL_011",
         "A_SYS_GOAL_013",
@@ -28160,7 +28312,7 @@
         "A_SYS_AUTH_010",
         "G_INT_SEX_010",
         "G_SYS_MISINFO_012",
-        "A_SYS_AUTH_023",
+        "A_SYS_EXEC_002",
         "G_INT_WEAP_002"
       ],
       "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -28478,7 +28630,7 @@
             "reason": "False information targeting an individual. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
           },
           {
-            "id": "A_SYS_AUTH_023",
+            "id": "A_SYS_EXEC_002",
             "reason": "Unsafe or out-of-scope agent tool use. The definition does not establish a deliberate harmful use objective; accidental loss, unsafe execution, systematic bias or dangerous scientific capability alone is insufficient."
           },
           {
@@ -28581,7 +28733,7 @@
           "cosine": 0.748776
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.748657
         },
         {
@@ -28653,7 +28805,7 @@
           "cosine": 0.73617
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.735409
         },
         {
@@ -29005,7 +29157,7 @@
           "cosine": 0.685579
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.685263
         },
         {
@@ -29117,7 +29269,7 @@
           "cosine": 0.678695
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.678215
         },
         {
@@ -29389,7 +29541,7 @@
           "cosine": 0.662535
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.662467
         },
         {
@@ -29473,7 +29625,7 @@
           "cosine": 0.657324
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.656804
         },
         {
@@ -29745,7 +29897,7 @@
           "cosine": 0.641257
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.64117
         },
         {
@@ -29805,7 +29957,7 @@
           "cosine": 0.637301
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.637162
         },
         {
@@ -30289,7 +30441,7 @@
           "cosine": 0.605693
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.605484
         },
         {
@@ -30409,7 +30561,7 @@
           "cosine": 0.596415
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.596298
         },
         {
@@ -30441,7 +30593,7 @@
           "cosine": 0.593759
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.593045
         },
         {
@@ -30449,7 +30601,7 @@
           "cosine": 0.592836
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.592789
         },
         {
@@ -30685,7 +30837,7 @@
           "cosine": 0.568124
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.568092
         },
         {
@@ -30809,7 +30961,7 @@
           "cosine": 0.542675
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.542455
         },
         {
@@ -30833,7 +30985,7 @@
           "cosine": 0.538954
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.538762
         },
         {
@@ -30889,7 +31041,7 @@
           "cosine": 0.525716
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.525425
         },
         {
@@ -31088,7 +31240,7 @@
         "G_SYS_OEXT_007",
         "G_SOC_CULT_007",
         "G_SOC_DEMOC_005",
-        "A_SYS_SELFCOR_002"
+        "A_SYS_MEMSTATE_001"
       ],
       "review_exclude": [
         "G_INT_POL_008",
@@ -31200,7 +31352,7 @@
             "reason": "Erosion of democratic processes and institutional trust. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
           },
           {
-            "id": "A_SYS_SELFCOR_002",
+            "id": "A_SYS_MEMSTATE_001",
             "reason": "Self-correction failure in AI-agent memory. The definition identifies false, misleading, fabricated or unfaithful information, or a mechanism that produces or amplifies it. Recovered below threshold after definition review."
           }
         ],
@@ -31653,7 +31805,7 @@
           "cosine": 0.629655
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.629588
         },
         {
@@ -32033,7 +32185,7 @@
           "cosine": 0.605978
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.605871
         },
         {
@@ -32129,7 +32281,7 @@
           "cosine": 0.601458
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.601401
         },
         {
@@ -32465,7 +32617,7 @@
           "cosine": 0.579845
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.579779
         },
         {
@@ -32489,7 +32641,7 @@
           "cosine": 0.579323
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.579132
         },
         {
@@ -32577,7 +32729,7 @@
           "cosine": 0.573889
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.573846
         },
         {
@@ -32649,7 +32801,7 @@
           "cosine": 0.569466
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.569196
         },
         {
@@ -32845,7 +32997,7 @@
           "cosine": 0.55906
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.558581
         },
         {
@@ -32893,7 +33045,7 @@
           "cosine": 0.556204
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.555637
         },
         {
@@ -33049,7 +33201,7 @@
           "cosine": 0.54626
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.545974
         },
         {
@@ -33313,7 +33465,7 @@
           "cosine": 0.527966
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.527681
         },
         {
@@ -33437,7 +33589,7 @@
           "cosine": 0.514421
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.512184
         },
         {
@@ -33453,7 +33605,7 @@
           "cosine": 0.510885
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.51072
         },
         {
@@ -33493,7 +33645,7 @@
           "cosine": 0.504071
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.503669
         },
         {
@@ -33605,7 +33757,7 @@
           "cosine": 0.482352
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.48156
         },
         {
@@ -33661,7 +33813,7 @@
           "cosine": 0.468719
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.468258
         },
         {
@@ -33746,7 +33898,7 @@
         "G_SYS_MISINFO_018",
         "G_SYS_MISINFO_009",
         "G_SYS_MISINFO_003",
-        "A_SYS_SELFCOR_002",
+        "A_SYS_MEMSTATE_001",
         "G_SYS_MISINFO_007",
         "G_SYS_MISINFO_017",
         "G_SYS_MISINFO_019"
@@ -34319,7 +34471,7 @@
           "cosine": 0.637533
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.637322
         },
         {
@@ -34619,7 +34771,7 @@
           "cosine": 0.615726
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.615279
         },
         {
@@ -35135,7 +35287,7 @@
           "cosine": 0.587322
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.587293
         },
         {
@@ -35331,7 +35483,7 @@
           "cosine": 0.579182
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.579121
         },
         {
@@ -35367,7 +35519,7 @@
           "cosine": 0.577246
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.577147
         },
         {
@@ -35379,7 +35531,7 @@
           "cosine": 0.576548
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.576413
         },
         {
@@ -35519,7 +35671,7 @@
           "cosine": 0.569517
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.56943
         },
         {
@@ -35627,11 +35779,11 @@
           "cosine": 0.56361
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.563184
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.562504
         },
         {
@@ -35803,7 +35955,7 @@
           "cosine": 0.55041
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.550293
         },
         {
@@ -36031,7 +36183,7 @@
           "cosine": 0.532838
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.532647
         },
         {
@@ -36043,7 +36195,7 @@
           "cosine": 0.531424
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.531349
         },
         {
@@ -36355,7 +36507,7 @@
           "cosine": 0.493083
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.493004
         },
         {
@@ -36363,7 +36515,7 @@
           "cosine": 0.491995
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.491814
         },
         {
@@ -36475,7 +36627,7 @@
           "cosine": 0.454854
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.453348
         },
         {
@@ -36507,7 +36659,7 @@
           "cosine": 0.446603
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.434039
         },
         {
@@ -36638,7 +36790,7 @@
         "A_SYS_AUTH_006",
         "A_SYS_AUTH_009",
         "A_SYS_AUTH_010",
-        "A_SYS_AUTH_023",
+        "A_SYS_EXEC_002",
         "A_SYS_AUTH_025"
       ],
       "review_exclude": [
@@ -36906,7 +37058,7 @@
             "reason": "Unauthorised transfers and account damage through agent tool use specify authorisation and financial-system integrity failures. Recovered below threshold after full-definition review."
           },
           {
-            "id": "A_SYS_AUTH_023",
+            "id": "A_SYS_EXEC_002",
             "reason": "Out-of-scope tool invocation with privacy or operational consequences relates to authority enforcement and integrity of connected digital tools. Recovered below threshold after full-definition review."
           },
           {
@@ -37407,7 +37559,7 @@
           "cosine": 0.690121
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.690068
         },
         {
@@ -37987,7 +38139,7 @@
           "cosine": 0.654462
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.654415
         },
         {
@@ -37999,7 +38151,7 @@
           "cosine": 0.654158
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.654
         },
         {
@@ -38235,7 +38387,7 @@
           "cosine": 0.642817
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.642731
         },
         {
@@ -38299,7 +38451,7 @@
           "cosine": 0.639253
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.639024
         },
         {
@@ -38359,7 +38511,7 @@
           "cosine": 0.635765
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.635682
         },
         {
@@ -38367,7 +38519,7 @@
           "cosine": 0.635558
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.635518
         },
         {
@@ -38515,7 +38667,7 @@
           "cosine": 0.626948
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.626818
         },
         {
@@ -38543,7 +38695,7 @@
           "cosine": 0.624758
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.62456
         },
         {
@@ -38639,7 +38791,7 @@
           "cosine": 0.617928
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.617906
         },
         {
@@ -38695,11 +38847,11 @@
           "cosine": 0.614617
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.61431
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.614102
         },
         {
@@ -38871,7 +39023,7 @@
           "cosine": 0.600732
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.600615
         },
         {
@@ -38887,7 +39039,7 @@
           "cosine": 0.599442
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.599437
         },
         {
@@ -38991,7 +39143,7 @@
           "cosine": 0.587978
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.587968
         },
         {
@@ -39167,7 +39319,7 @@
           "cosine": 0.570586
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.570584
         },
         {
@@ -39457,7 +39609,7 @@
         "G_SYS_SECADV_055",
         "G_INT_WEAP_032",
         "G_INT_PRIV_015",
-        "A_SYS_AUTH_023",
+        "A_SYS_EXEC_002",
         "G_SYS_EVAL_065",
         "G_SYS_SECADV_029",
         "A_SYS_AUTH_025",
@@ -40549,7 +40701,7 @@
           "cosine": 0.662783
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.662776
         },
         {
@@ -40925,7 +41077,7 @@
           "cosine": 0.638771
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.638737
         },
         {
@@ -41301,7 +41453,7 @@
           "cosine": 0.619684
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.619639
         },
         {
@@ -41321,7 +41473,7 @@
           "cosine": 0.618384
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.618052
         },
         {
@@ -41485,7 +41637,7 @@
           "cosine": 0.609403
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.609293
         },
         {
@@ -41565,7 +41717,7 @@
           "cosine": 0.606543
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.606444
         },
         {
@@ -41617,7 +41769,7 @@
           "cosine": 0.603869
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.603786
         },
         {
@@ -41681,7 +41833,7 @@
           "cosine": 0.599616
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.599583
         },
         {
@@ -41697,7 +41849,7 @@
           "cosine": 0.598522
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.598422
         },
         {
@@ -41841,7 +41993,7 @@
           "cosine": 0.590315
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.59021
         },
         {
@@ -41893,7 +42045,7 @@
           "cosine": 0.585532
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.585441
         },
         {
@@ -41965,7 +42117,7 @@
           "cosine": 0.580663
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.58016
         },
         {
@@ -42013,7 +42165,7 @@
           "cosine": 0.577644
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.576923
         },
         {
@@ -42089,7 +42241,7 @@
           "cosine": 0.572569
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.570953
         },
         {
@@ -42357,7 +42509,7 @@
           "cosine": 0.532189
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.532048
         },
         {
@@ -42385,7 +42537,7 @@
           "cosine": 0.526815
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.526305
         },
         {
@@ -42578,7 +42730,7 @@
       "review_exclude": [
         "G_SOC_GOV_024",
         "A_SYS_AUTH_009",
-        "P_SYS_CONTROL_003",
+        "A_INT_OVERSIGHT_003",
         "A_SYS_AUTH_012"
       ],
       "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -42632,7 +42784,7 @@
             "reason": "Excessive granted authority does not itself show control resistance or escape."
           },
           {
-            "id": "P_SYS_CONTROL_003",
+            "id": "A_INT_OVERSIGHT_003",
             "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
           },
           {
@@ -42667,11 +42819,11 @@
           "cosine": 0.73896
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.731966
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.726932
         },
         {
@@ -42767,7 +42919,7 @@
           "cosine": 0.693263
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.69276
         },
         {
@@ -42799,7 +42951,7 @@
           "cosine": 0.687096
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.68655
         },
         {
@@ -42823,7 +42975,7 @@
           "cosine": 0.679116
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.678451
         },
         {
@@ -42891,7 +43043,7 @@
           "cosine": 0.668905
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.667494
         },
         {
@@ -42923,7 +43075,7 @@
           "cosine": 0.665839
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.664917
         },
         {
@@ -43047,7 +43199,7 @@
           "cosine": 0.654741
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.654322
         },
         {
@@ -43147,7 +43299,7 @@
           "cosine": 0.649833
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.649704
         },
         {
@@ -43331,7 +43483,7 @@
           "cosine": 0.64062
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.640307
         },
         {
@@ -43531,7 +43683,7 @@
           "cosine": 0.631598
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.631585
         },
         {
@@ -43659,7 +43811,7 @@
           "cosine": 0.626071
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.626047
         },
         {
@@ -43711,7 +43863,7 @@
           "cosine": 0.623217
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.623117
         },
         {
@@ -43819,7 +43971,7 @@
           "cosine": 0.617931
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.617385
         },
         {
@@ -44367,7 +44519,7 @@
           "cosine": 0.589498
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.589494
         },
         {
@@ -44455,7 +44607,7 @@
           "cosine": 0.585914
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.58575
         },
         {
@@ -45270,7 +45422,7 @@
           "cosine": 0.684853
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.683095
         },
         {
@@ -45510,7 +45662,7 @@
           "cosine": 0.64757
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.647259
         },
         {
@@ -45554,7 +45706,7 @@
           "cosine": 0.642277
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.641808
         },
         {
@@ -45566,7 +45718,7 @@
           "cosine": 0.641436
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.641435
         },
         {
@@ -45906,7 +46058,7 @@
           "cosine": 0.61983
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.619776
         },
         {
@@ -45950,7 +46102,7 @@
           "cosine": 0.618458
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.618448
         },
         {
@@ -46018,7 +46170,7 @@
           "cosine": 0.615709
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.615416
         },
         {
@@ -46346,7 +46498,7 @@
           "cosine": 0.594918
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.59481
         },
         {
@@ -46402,7 +46554,7 @@
           "cosine": 0.591757
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.591606
         },
         {
@@ -46574,7 +46726,7 @@
           "cosine": 0.583351
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.583334
         },
         {
@@ -46910,11 +47062,11 @@
           "cosine": 0.566482
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.566435
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.566358
         },
         {
@@ -46982,7 +47134,7 @@
           "cosine": 0.561401
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.561287
         },
         {
@@ -47138,7 +47290,7 @@
           "cosine": 0.552303
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.552144
         },
         {
@@ -47426,7 +47578,7 @@
           "cosine": 0.527779
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.527772
         },
         {
@@ -47558,7 +47710,7 @@
           "cosine": 0.514129
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.514046
         },
         {
@@ -47743,7 +47895,7 @@
         "P_INT_SAFETY_007",
         "P_INT_SAFETY_009",
         "P_INT_SAFETY_011",
-        "P_INT_SAFETY_012",
+        "P_SYS_TASKPLAN_003",
         "P_INT_SAFETY_015",
         "P_INT_SAFETY_020",
         "P_INT_SAFETY_021",
@@ -47756,12 +47908,12 @@
         "P_SYS_CONTROL_050",
         "P_SYS_CONTROL_054",
         "P_SYS_STATE_007",
-        "P_SYS_CONTROL_044",
+        "P_SYS_SAFESTATE_002",
         "P_INT_SAFETY_018",
         "P_SYS_CONTROL_023",
         "P_SYS_CONTROL_025",
         "G_INT_PRIV_024",
-        "G_SYS_PERF_015",
+        "P_INT_OBSTRUCT_001",
         "G_SYS_EVAL_044"
       ],
       "review_exclude": [
@@ -47824,7 +47976,7 @@
             "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
           },
           {
-            "id": "P_INT_SAFETY_012",
+            "id": "P_SYS_TASKPLAN_003",
             "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
           },
           {
@@ -47876,7 +48028,7 @@
             "reason": "Full definition explicitly concerns robot interaction with people, human contact, shared-space coordination or human-proximity safety."
           },
           {
-            "id": "P_SYS_CONTROL_044",
+            "id": "P_SYS_SAFESTATE_002",
             "reason": "Remote humanoid operation involves operator commands and safety feedback."
           },
           {
@@ -47896,7 +48048,7 @@
             "reason": "Robots observe and record people in shared living, workplace and care environments."
           },
           {
-            "id": "G_SYS_PERF_015",
+            "id": "P_INT_OBSTRUCT_001",
             "reason": "Service robot motion interferes with pedestrian passage and accessibility."
           },
           {
@@ -47997,7 +48149,7 @@
           "cosine": 0.617824
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.616505
         },
         {
@@ -48009,7 +48161,7 @@
           "cosine": 0.613597
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.610977
         },
         {
@@ -48085,7 +48237,7 @@
           "cosine": 0.597749
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.597559
         },
         {
@@ -48125,7 +48277,7 @@
           "cosine": 0.591057
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.589997
         },
         {
@@ -48337,7 +48489,7 @@
           "cosine": 0.570621
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.570383
         },
         {
@@ -48433,7 +48585,7 @@
           "cosine": 0.563841
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.563816
         },
         {
@@ -48921,7 +49073,7 @@
           "cosine": 0.535887
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.535823
         },
         {
@@ -48957,7 +49109,7 @@
           "cosine": 0.534905
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.534687
         },
         {
@@ -49125,7 +49277,7 @@
           "cosine": 0.525845
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.525831
         },
         {
@@ -49205,7 +49357,7 @@
           "cosine": 0.522969
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.522817
         },
         {
@@ -49285,7 +49437,7 @@
           "cosine": 0.519168
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.519154
         },
         {
@@ -49549,7 +49701,7 @@
           "cosine": 0.508542
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.508508
         },
         {
@@ -49589,7 +49741,7 @@
           "cosine": 0.507233
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.507158
         },
         {
@@ -49685,7 +49837,7 @@
           "cosine": 0.503103
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.502729
         },
         {
@@ -49781,7 +49933,7 @@
           "cosine": 0.49894
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.498715
         },
         {
@@ -50253,7 +50405,7 @@
           "cosine": 0.460635
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.460625
         },
         {
@@ -50433,7 +50585,7 @@
         "P_INT_SAFETY_006",
         "P_SYS_CONTROL_017",
         "P_INT_SAFETY_020",
-        "G_SYS_PERF_015",
+        "P_INT_OBSTRUCT_001",
         "P_SYS_CONTROL_024",
         "P_INT_SAFETY_011",
         "P_INT_SAFETY_021",
@@ -50447,8 +50599,8 @@
         "P_INT_SAFETY_007",
         "P_SYS_CONTROL_047",
         "P_SYS_STATE_007",
-        "P_INT_SAFETY_012",
-        "P_SYS_CONTROL_044"
+        "P_SYS_TASKPLAN_003",
+        "P_SYS_SAFESTATE_002"
       ]
     },
     {
@@ -50887,7 +51039,6 @@
         "G_SYS_PERF_012",
         "G_SYS_PERF_013",
         "G_SYS_PERF_014",
-        "G_SYS_PERF_015",
         "G_SYS_PERF_016",
         "G_SYS_PERF_017",
         "G_SYS_PERF_018",
@@ -50989,22 +51140,21 @@
         "A_INT_COORD_003",
         "A_INT_COORD_004",
         "A_INT_COORD_005",
+        "A_INT_OVERSIGHT_001",
+        "A_INT_OVERSIGHT_002",
+        "A_INT_OVERSIGHT_003",
         "A_SYS_AUTH_001",
         "A_SYS_AUTH_002",
         "A_SYS_AUTH_003",
-        "A_SYS_AUTH_004",
         "A_SYS_AUTH_005",
         "A_SYS_AUTH_006",
-        "A_SYS_AUTH_007",
         "A_SYS_AUTH_009",
         "A_SYS_AUTH_010",
         "A_SYS_AUTH_012",
         "A_SYS_AUTH_016",
         "A_SYS_AUTH_017",
         "A_SYS_AUTH_019",
-        "A_SYS_AUTH_020",
         "A_SYS_AUTH_021",
-        "A_SYS_AUTH_023",
         "A_SYS_AUTH_024",
         "A_SYS_AUTH_025",
         "A_SYS_DECEPT_001",
@@ -51013,6 +51163,8 @@
         "A_SYS_DECEPT_005",
         "A_SYS_DECEPT_008",
         "A_SYS_DECEPT_009",
+        "A_SYS_EXEC_001",
+        "A_SYS_EXEC_002",
         "A_SYS_GOAL_003",
         "A_SYS_GOAL_005",
         "A_SYS_GOAL_006",
@@ -51027,12 +51179,12 @@
         "A_SYS_GOAL_017",
         "A_SYS_GOAL_018",
         "A_SYS_GOAL_019",
-        "A_SYS_GOAL_020",
         "A_SYS_GOAL_021",
         "A_SYS_GOAL_022",
         "A_SYS_GOAL_023",
+        "A_SYS_MEMSTATE_001",
+        "A_SYS_RESOURCE_001",
         "A_SYS_SELFCOR_001",
-        "A_SYS_SELFCOR_002",
         "A_SYS_SELFCOR_003",
         "A_SYS_TRACE_001",
         "A_SYS_TRACE_002",
@@ -51052,6 +51204,7 @@
       "quote": "Physical AI",
       "quote_location": "L1_Name_en column",
       "ids": [
+        "P_INT_OBSTRUCT_001",
         "P_INT_SAFETY_001",
         "P_INT_SAFETY_005",
         "P_INT_SAFETY_006",
@@ -51060,7 +51213,6 @@
         "P_INT_SAFETY_009",
         "P_INT_SAFETY_010",
         "P_INT_SAFETY_011",
-        "P_INT_SAFETY_012",
         "P_INT_SAFETY_015",
         "P_INT_SAFETY_016",
         "P_INT_SAFETY_017",
@@ -51072,13 +51224,10 @@
         "P_INT_TAMPER_003",
         "P_SYS_CONTROL_001",
         "P_SYS_CONTROL_002",
-        "P_SYS_CONTROL_003",
         "P_SYS_CONTROL_006",
-        "P_SYS_CONTROL_007",
         "P_SYS_CONTROL_012",
         "P_SYS_CONTROL_013",
         "P_SYS_CONTROL_015",
-        "P_SYS_CONTROL_016",
         "P_SYS_CONTROL_017",
         "P_SYS_CONTROL_018",
         "P_SYS_CONTROL_019",
@@ -51090,31 +51239,34 @@
         "P_SYS_CONTROL_027",
         "P_SYS_CONTROL_030",
         "P_SYS_CONTROL_033",
-        "P_SYS_CONTROL_034",
         "P_SYS_CONTROL_037",
         "P_SYS_CONTROL_038",
-        "P_SYS_CONTROL_040",
-        "P_SYS_CONTROL_042",
         "P_SYS_CONTROL_043",
-        "P_SYS_CONTROL_044",
         "P_SYS_CONTROL_046",
         "P_SYS_CONTROL_047",
         "P_SYS_CONTROL_050",
         "P_SYS_CONTROL_051",
-        "P_SYS_CONTROL_052",
         "P_SYS_CONTROL_054",
         "P_SYS_CONTROL_055",
         "P_SYS_CONTROL_056",
         "P_SYS_CONTROL_057",
         "P_SYS_HARDWARE_002",
         "P_SYS_HARDWARE_003",
+        "P_SYS_SAFESTATE_001",
+        "P_SYS_SAFESTATE_002",
         "P_SYS_STATE_003",
         "P_SYS_STATE_004",
         "P_SYS_STATE_006",
         "P_SYS_STATE_007",
         "P_SYS_STATE_008",
         "P_SYS_STATE_009",
-        "P_SYS_STATE_011"
+        "P_SYS_STATE_011",
+        "P_SYS_TASKPLAN_001",
+        "P_SYS_TASKPLAN_002",
+        "P_SYS_TASKPLAN_003",
+        "P_SYS_TIMESYNC_001",
+        "P_SYS_TIMESYNC_002",
+        "P_SYS_TIMESYNC_003"
       ],
       "scores": []
     },
@@ -51503,7 +51655,7 @@
           "cosine": 0.590558
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.590108
         },
         {
@@ -51639,7 +51791,7 @@
           "cosine": 0.581996
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.581988
         },
         {
@@ -52127,7 +52279,7 @@
           "cosine": 0.559876
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.559829
         },
         {
@@ -52455,7 +52607,7 @@
           "cosine": 0.547874
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.547746
         },
         {
@@ -52623,11 +52775,11 @@
           "cosine": 0.539618
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.539552
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.539491
         },
         {
@@ -52651,7 +52803,7 @@
           "cosine": 0.539335
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.539248
         },
         {
@@ -52683,7 +52835,7 @@
           "cosine": 0.537362
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.537333
         },
         {
@@ -52859,7 +53011,7 @@
           "cosine": 0.527565
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.527203
         },
         {
@@ -53023,7 +53175,7 @@
           "cosine": 0.515999
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.51572
         },
         {
@@ -53191,7 +53343,7 @@
           "cosine": 0.502244
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.502175
         },
         {
@@ -53279,7 +53431,7 @@
           "cosine": 0.49414
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.493774
         },
         {
@@ -53383,7 +53535,7 @@
           "cosine": 0.476886
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.47676
         },
         {
@@ -53487,7 +53639,7 @@
           "cosine": 0.454692
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.454466
         },
         {
@@ -53531,7 +53683,7 @@
           "cosine": 0.445711
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.444035
         },
         {
@@ -53539,7 +53691,7 @@
           "cosine": 0.44382
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.44344
         },
         {
@@ -53860,7 +54012,7 @@
           "cosine": 0.625162
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.62445
         },
         {
@@ -54376,7 +54528,7 @@
           "cosine": 0.583381
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.582917
         },
         {
@@ -54488,7 +54640,7 @@
           "cosine": 0.577518
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.577204
         },
         {
@@ -54556,7 +54708,7 @@
           "cosine": 0.572754
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.572617
         },
         {
@@ -54792,7 +54944,7 @@
           "cosine": 0.563415
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.563306
         },
         {
@@ -54992,7 +55144,7 @@
           "cosine": 0.555265
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.55516
         },
         {
@@ -55096,7 +55248,7 @@
           "cosine": 0.549116
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.548992
         },
         {
@@ -55188,7 +55340,7 @@
           "cosine": 0.545978
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.545974
         },
         {
@@ -55376,7 +55528,7 @@
           "cosine": 0.535522
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.535263
         },
         {
@@ -55500,7 +55652,7 @@
           "cosine": 0.5286
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.528328
         },
         {
@@ -55556,7 +55708,7 @@
           "cosine": 0.52335
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.522637
         },
         {
@@ -55856,7 +56008,7 @@
           "cosine": 0.495417
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.495339
         },
         {
@@ -55880,7 +56032,7 @@
           "cosine": 0.493442
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.493178
         },
         {
@@ -55888,7 +56040,7 @@
           "cosine": 0.493043
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.492907
         },
         {
@@ -56020,7 +56172,7 @@
           "cosine": 0.469241
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.468713
         },
         {
@@ -56064,7 +56216,7 @@
           "cosine": 0.457686
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.457564
         },
         {
@@ -56266,9 +56418,9 @@
         "P_SYS_CONTROL_027",
         "P_SYS_CONTROL_030",
         "P_SYS_CONTROL_033",
-        "P_SYS_CONTROL_042",
+        "P_SYS_SAFESTATE_001",
         "P_SYS_CONTROL_043",
-        "P_SYS_CONTROL_044",
+        "P_SYS_SAFESTATE_002",
         "P_SYS_CONTROL_047",
         "P_SYS_CONTROL_054",
         "P_SYS_CONTROL_055",
@@ -56384,7 +56536,7 @@
             "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
           },
           {
-            "id": "P_SYS_CONTROL_042",
+            "id": "P_SYS_SAFESTATE_001",
             "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
           },
           {
@@ -56392,7 +56544,7 @@
             "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
           },
           {
-            "id": "P_SYS_CONTROL_044",
+            "id": "P_SYS_SAFESTATE_002",
             "reason": "Full card definition explicitly names humanoid applicability; inclusion concerns risk scope, not a claim that all robots are humanoids."
           },
           {
@@ -56525,7 +56677,7 @@
           "cosine": 0.574094
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.56738
         },
         {
@@ -56769,7 +56921,7 @@
           "cosine": 0.521593
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.520039
         },
         {
@@ -56945,7 +57097,7 @@
           "cosine": 0.502682
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.502036
         },
         {
@@ -57033,7 +57185,7 @@
           "cosine": 0.496958
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.496843
         },
         {
@@ -57081,11 +57233,11 @@
           "cosine": 0.493065
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.493005
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.492745
         },
         {
@@ -57097,7 +57249,7 @@
           "cosine": 0.492059
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.491886
         },
         {
@@ -57205,7 +57357,7 @@
           "cosine": 0.48574
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.485647
         },
         {
@@ -57273,7 +57425,7 @@
           "cosine": 0.483209
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.482838
         },
         {
@@ -57317,7 +57469,7 @@
           "cosine": 0.480122
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.480081
         },
         {
@@ -57361,7 +57513,7 @@
           "cosine": 0.478121
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.478096
         },
         {
@@ -57393,7 +57545,7 @@
           "cosine": 0.476339
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.476239
         },
         {
@@ -57681,7 +57833,7 @@
           "cosine": 0.458597
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.458272
         },
         {
@@ -57713,7 +57865,7 @@
           "cosine": 0.456655
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.456303
         },
         {
@@ -57793,7 +57945,7 @@
           "cosine": 0.452539
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.45238
         },
         {
@@ -58457,7 +58609,7 @@
           "cosine": 0.414763
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.414731
         },
         {
@@ -58972,7 +59124,7 @@
         "P_SYS_CONTROL_013",
         "P_SYS_STATE_008",
         "P_SYS_HARDWARE_003",
-        "P_SYS_CONTROL_044",
+        "P_SYS_SAFESTATE_002",
         "P_SYS_CONTROL_030",
         "P_SYS_CONTROL_012",
         "P_SYS_CONTROL_043",
@@ -58982,7 +59134,7 @@
         "G_SYS_EVAL_004",
         "G_SYS_SECADV_060",
         "P_SYS_STATE_011",
-        "P_SYS_CONTROL_042",
+        "P_SYS_SAFESTATE_001",
         "P_SYS_CONTROL_057",
         "P_SYS_STATE_007"
       ]
@@ -59612,7 +59764,7 @@
           "cosine": 0.676746
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.676517
         },
         {
@@ -60392,7 +60544,7 @@
           "cosine": 0.631982
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.631965
         },
         {
@@ -60540,7 +60692,7 @@
           "cosine": 0.624778
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.624768
         },
         {
@@ -60604,7 +60756,7 @@
           "cosine": 0.622309
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.622281
         },
         {
@@ -60624,7 +60776,7 @@
           "cosine": 0.621778
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.621771
         },
         {
@@ -60732,7 +60884,7 @@
           "cosine": 0.615344
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.615245
         },
         {
@@ -61012,7 +61164,7 @@
           "cosine": 0.599624
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.599607
         },
         {
@@ -61036,7 +61188,7 @@
           "cosine": 0.597795
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.597373
         },
         {
@@ -61104,7 +61256,7 @@
           "cosine": 0.592764
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.592193
         },
         {
@@ -61132,7 +61284,7 @@
           "cosine": 0.591211
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.590361
         },
         {
@@ -61176,7 +61328,7 @@
           "cosine": 0.586393
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.586143
         },
         {
@@ -61432,7 +61584,7 @@
           "cosine": 0.562881
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.561931
         },
         {
@@ -61516,7 +61668,7 @@
           "cosine": 0.550871
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.550839
         },
         {
@@ -61560,7 +61712,7 @@
           "cosine": 0.545456
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.545437
         },
         {
@@ -61728,7 +61880,7 @@
           "cosine": 0.499816
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.493626
         },
         {
@@ -61748,7 +61900,7 @@
           "cosine": 0.489147
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.488632
         },
         {
@@ -62525,7 +62677,7 @@
           "cosine": 0.604012
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.603765
         },
         {
@@ -62593,7 +62745,7 @@
           "cosine": 0.599116
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.598519
         },
         {
@@ -62605,7 +62757,7 @@
           "cosine": 0.598171
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.59753
         },
         {
@@ -62641,7 +62793,7 @@
           "cosine": 0.595618
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.595356
         },
         {
@@ -62697,7 +62849,7 @@
           "cosine": 0.593603
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.593361
         },
         {
@@ -62977,7 +63129,7 @@
           "cosine": 0.578985
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.578774
         },
         {
@@ -63173,7 +63325,7 @@
           "cosine": 0.568519
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.567945
         },
         {
@@ -63413,7 +63565,7 @@
           "cosine": 0.553532
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.552879
         },
         {
@@ -63445,7 +63597,7 @@
           "cosine": 0.55033
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.550298
         },
         {
@@ -63521,7 +63673,7 @@
           "cosine": 0.545146
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.545025
         },
         {
@@ -63777,7 +63929,7 @@
           "cosine": 0.529954
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.529414
         },
         {
@@ -63941,7 +64093,7 @@
           "cosine": 0.517774
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.517577
         },
         {
@@ -64061,7 +64213,7 @@
           "cosine": 0.507639
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.50708
         },
         {
@@ -64157,7 +64309,7 @@
           "cosine": 0.498443
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.498337
         },
         {
@@ -64309,7 +64461,7 @@
           "cosine": 0.474478
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.474132
         },
         {
@@ -64389,7 +64541,7 @@
           "cosine": 0.450894
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.448726
         },
         {
@@ -65170,7 +65322,7 @@
           "cosine": 0.64582
         },
         {
-          "id": "P_INT_SAFETY_012",
+          "id": "P_SYS_TASKPLAN_003",
           "cosine": 0.645637
         },
         {
@@ -65398,7 +65550,7 @@
           "cosine": 0.630781
         },
         {
-          "id": "A_SYS_AUTH_007",
+          "id": "A_INT_OVERSIGHT_002",
           "cosine": 0.630607
         },
         {
@@ -65434,7 +65586,7 @@
           "cosine": 0.628875
         },
         {
-          "id": "A_SYS_AUTH_023",
+          "id": "A_SYS_EXEC_002",
           "cosine": 0.62884
         },
         {
@@ -65598,7 +65750,7 @@
           "cosine": 0.620706
         },
         {
-          "id": "A_SYS_SELFCOR_002",
+          "id": "A_SYS_MEMSTATE_001",
           "cosine": 0.62046
         },
         {
@@ -65642,7 +65794,7 @@
           "cosine": 0.618748
         },
         {
-          "id": "P_SYS_CONTROL_052",
+          "id": "P_SYS_TASKPLAN_002",
           "cosine": 0.618745
         },
         {
@@ -65854,7 +66006,7 @@
           "cosine": 0.609633
         },
         {
-          "id": "A_SYS_AUTH_020",
+          "id": "A_SYS_RESOURCE_001",
           "cosine": 0.609497
         },
         {
@@ -66058,7 +66210,7 @@
           "cosine": 0.599163
         },
         {
-          "id": "A_SYS_GOAL_020",
+          "id": "A_SYS_EXEC_001",
           "cosine": 0.598782
         },
         {
@@ -66134,7 +66286,7 @@
           "cosine": 0.595335
         },
         {
-          "id": "P_SYS_CONTROL_016",
+          "id": "P_SYS_TASKPLAN_001",
           "cosine": 0.595291
         },
         {
@@ -66170,7 +66322,7 @@
           "cosine": 0.593364
         },
         {
-          "id": "A_SYS_AUTH_004",
+          "id": "A_INT_OVERSIGHT_001",
           "cosine": 0.593309
         },
         {
@@ -66302,7 +66454,7 @@
           "cosine": 0.58626
         },
         {
-          "id": "P_SYS_CONTROL_003",
+          "id": "A_INT_OVERSIGHT_003",
           "cosine": 0.586069
         },
         {
@@ -66562,7 +66714,7 @@
           "cosine": 0.569919
         },
         {
-          "id": "P_SYS_CONTROL_042",
+          "id": "P_SYS_SAFESTATE_001",
           "cosine": 0.56951
         },
         {
@@ -66682,7 +66834,7 @@
           "cosine": 0.55809
         },
         {
-          "id": "P_SYS_CONTROL_040",
+          "id": "P_SYS_TIMESYNC_003",
           "cosine": 0.557666
         },
         {
@@ -66806,7 +66958,7 @@
           "cosine": 0.539732
         },
         {
-          "id": "G_SYS_PERF_015",
+          "id": "P_INT_OBSTRUCT_001",
           "cosine": 0.539324
         },
         {
@@ -66826,7 +66978,7 @@
           "cosine": 0.537073
         },
         {
-          "id": "P_SYS_CONTROL_007",
+          "id": "P_SYS_TIMESYNC_001",
           "cosine": 0.53685
         },
         {
@@ -66906,7 +67058,7 @@
           "cosine": 0.522723
         },
         {
-          "id": "P_SYS_CONTROL_044",
+          "id": "P_SYS_SAFESTATE_002",
           "cosine": 0.522354
         },
         {
@@ -66930,7 +67082,7 @@
           "cosine": 0.519718
         },
         {
-          "id": "P_SYS_CONTROL_034",
+          "id": "P_SYS_TIMESYNC_002",
           "cosine": 0.519266
         },
         {
@@ -67030,7 +67182,7 @@
       "ids": [
         "A_SYS_AUTH_016",
         "A_SYS_AUTH_024",
-        "A_SYS_SELFCOR_002",
+        "A_SYS_MEMSTATE_001",
         "A_SYS_SELFCOR_003",
         "A_SYS_TRACE_001",
         "A_SYS_TRACE_002",
@@ -67195,15 +67347,15 @@
         "A_INT_COORD_005",
         "A_SYS_AUTH_001",
         "A_SYS_AUTH_003",
-        "A_SYS_AUTH_004",
+        "A_INT_OVERSIGHT_001",
         "A_SYS_AUTH_005",
         "A_SYS_AUTH_006",
         "A_SYS_AUTH_009",
         "A_SYS_AUTH_012",
         "A_SYS_AUTH_017",
-        "A_SYS_AUTH_020",
+        "A_SYS_RESOURCE_001",
         "A_SYS_AUTH_021",
-        "A_SYS_AUTH_023",
+        "A_SYS_EXEC_002",
         "A_SYS_AUTH_025",
         "A_SYS_DECEPT_001",
         "A_SYS_DECEPT_002",
@@ -67220,7 +67372,7 @@
         "A_SYS_GOAL_016",
         "A_SYS_GOAL_017",
         "A_SYS_GOAL_019",
-        "A_SYS_GOAL_020",
+        "A_SYS_EXEC_001",
         "A_SYS_GOAL_021",
         "A_SYS_SELFCOR_001",
         "G_INT_PRIV_008",
@@ -67258,7 +67410,7 @@
         "G_SYS_SECADV_055",
         "G_SYS_SECADV_057",
         "G_SYS_SECADV_061",
-        "P_INT_SAFETY_012",
+        "P_SYS_TASKPLAN_003",
         "P_INT_TAMPER_003",
         "P_SYS_CONTROL_022"
       ],
@@ -67282,7 +67434,7 @@
       "y": -0.6548563,
       "ids": [
         "A_INT_CASCADE_009",
-        "A_SYS_AUTH_007",
+        "A_INT_OVERSIGHT_002",
         "A_SYS_AUTH_010",
         "A_SYS_AUTH_019",
         "A_SYS_GOAL_005",
@@ -67394,7 +67546,7 @@
         "G_SYS_EVAL_033",
         "G_SYS_EVAL_044",
         "G_SYS_EVAL_077",
-        "G_SYS_PERF_015",
+        "P_INT_OBSTRUCT_001",
         "G_SYS_SECADV_011",
         "G_SYS_SECADV_052",
         "G_SYS_SECADV_058",
@@ -67415,12 +67567,12 @@
         "P_INT_TAMPER_002",
         "P_SYS_CONTROL_001",
         "P_SYS_CONTROL_002",
-        "P_SYS_CONTROL_003",
+        "A_INT_OVERSIGHT_003",
         "P_SYS_CONTROL_006",
-        "P_SYS_CONTROL_007",
+        "P_SYS_TIMESYNC_001",
         "P_SYS_CONTROL_013",
         "P_SYS_CONTROL_015",
-        "P_SYS_CONTROL_016",
+        "P_SYS_TASKPLAN_001",
         "P_SYS_CONTROL_017",
         "P_SYS_CONTROL_018",
         "P_SYS_CONTROL_019",
@@ -67431,18 +67583,18 @@
         "P_SYS_CONTROL_027",
         "P_SYS_CONTROL_030",
         "P_SYS_CONTROL_033",
-        "P_SYS_CONTROL_034",
+        "P_SYS_TIMESYNC_002",
         "P_SYS_CONTROL_037",
         "P_SYS_CONTROL_038",
-        "P_SYS_CONTROL_040",
-        "P_SYS_CONTROL_042",
+        "P_SYS_TIMESYNC_003",
+        "P_SYS_SAFESTATE_001",
         "P_SYS_CONTROL_043",
-        "P_SYS_CONTROL_044",
+        "P_SYS_SAFESTATE_002",
         "P_SYS_CONTROL_046",
         "P_SYS_CONTROL_047",
         "P_SYS_CONTROL_050",
         "P_SYS_CONTROL_051",
-        "P_SYS_CONTROL_052",
+        "P_SYS_TASKPLAN_002",
         "P_SYS_CONTROL_054",
         "P_SYS_CONTROL_055",
         "P_SYS_CONTROL_056",
