@@ -32,13 +32,18 @@
     "cards": 622,
     "mapping_model": "bge-m3:latest",
     "model_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
-    "validation": "model-based; not human validated"
+    "validation": {
+      "primary_release": "model-based; not human validated",
+      "noncircular_remapping": "title, incident narrative and AI-system description only; source labels held out",
+      "human_sample": "150-case stratified sheet frozen; adjudication pending",
+      "embodied_audit": "100-case rule-audit sheet frozen; adjudication pending"
+    }
   },
   "files": [
     {
       "path": "data/incidents/README.md",
-      "bytes": 1376,
-      "sha256": "ec7705cfefbd44040a637e643fd790afe4cc346d1713c9f3f7df4afd892888ce"
+      "bytes": 2474,
+      "sha256": "9a3aaa1ee49207a071ae344755a4ecdc5c2532df7871808df7678f6aefd4a897"
     },
     {
       "path": "data/incidents/downloads/canonical_incidents_compact.json",
@@ -99,6 +104,51 @@
       "path": "data/incidents/network_nodes_k3.json",
       "bytes": 147518,
       "sha256": "be0f81ecd21c3adf57565c2f1ff5193793d42b67649b4471da2f47a2b7dd6038"
+    },
+    {
+      "path": "data/incidents/validation/benign_intent_cases.csv",
+      "bytes": 68481,
+      "sha256": "02ea9388848f62d3189caa6a16d0f1d01aa87bc62259794f36c2c50408812e61"
+    },
+    {
+      "path": "data/incidents/validation/bridge_analysis_k3_k5.csv",
+      "bytes": 10391,
+      "sha256": "12eba644acb11c608aeb9e10bacc9725c7d92b18aa399e6f58f92efde0ee31e6"
+    },
+    {
+      "path": "data/incidents/validation/embodied_rule_audit_sample_100.csv",
+      "bytes": 126245,
+      "sha256": "4a9a8d5b792fcce0b6c230cdfe91f9992011af2c2175fa65b00396dce2d4a4f2"
+    },
+    {
+      "path": "data/incidents/validation/embodied_subset_audit.csv.gz",
+      "bytes": 2271777,
+      "sha256": "65b0f3aa98573d024195819b67dc4d3bc67cc661cc4407c2bae995b76132fb69"
+    },
+    {
+      "path": "data/incidents/validation/external_label_validation.csv",
+      "bytes": 643,
+      "sha256": "8e40f1a10a77d864dc871fdbd68b4cc2f3dcb275d92d63146bdfebd8ec1f658d"
+    },
+    {
+      "path": "data/incidents/validation/hubness_residuals.csv",
+      "bytes": 781170,
+      "sha256": "0065b418286d870aa2b0b1e4bbf625400eddf56fb6bb0ba91de2527e8459d774"
+    },
+    {
+      "path": "data/incidents/validation/human_validation_sample_150.csv",
+      "bytes": 234525,
+      "sha256": "1c31e8a90a5ea26b6d4dc36891073dfc24ce1139c1b2b48514cf11f130a990d1"
+    },
+    {
+      "path": "data/incidents/validation/noncircular_incident_heart_edges_k5.csv.gz",
+      "bytes": 1052246,
+      "sha256": "2ba1fd00b7b85008998510e7583c3bee1c7323ee48b86ce52dde06cb34cceac9"
+    },
+    {
+      "path": "data/incidents/validation/validation_summary.json",
+      "bytes": 3628,
+      "sha256": "5b78c7d19900ee0f269233a9581ab06bfe6e5946741d2e9840043f4e3342dc84"
     }
   ]
 }

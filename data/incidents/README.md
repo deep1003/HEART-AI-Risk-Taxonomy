@@ -22,9 +22,28 @@ counted as an independent event source in `canonical_incidents_compact.json`.
 - `downloads/network_metrics.json`: graph-level k=3 and k=5 diagnostics.
 - `manifest.json`: hashes, source snapshots, licenses, and analytical grain.
 
+## Validation release
+
+The `validation/` directory contains a non-circular remapping that excludes
+source risk and harm labels from the embedding input. Those held-out labels are
+used only for external checks.
+
+- `human_validation_sample_150.csv`: frozen stratified adjudication sheet. It
+  includes embodied incidents, but all human decision fields remain blank.
+- `embodied_rule_audit_sample_100.csv`: frozen audit of strong-label and
+  text-rule embodied candidates; human confirmation remains pending.
+- `noncircular_incident_heart_edges_k5.csv.gz`: label-excluded k=5 remapping.
+- `external_label_validation.csv`: checks against MIT, CSET and AIM labels.
+- `bridge_analysis_k3_k5.csv`: semantic and incident-network bridge rankings.
+- `hubness_residuals.csv`: raw degree and residual degree after controlling for
+  semantic-centroid similarity and L1 fixed effects.
+- `benign_intent_cases.csv`: rule-screened database-reported candidate cases.
+- `validation_summary.json`: methods, principal estimates and limitations.
+
 ## Interpretation boundary
 
-The mappings are BGE-M3 cosine top-k candidates and have not been human
-validated. Counts reflect public reporting and source curation, not incidence
-rates or prevalence. Severity is not imputed when a source does not provide it.
+The mappings are BGE-M3 cosine top-k candidates. The 150-case human-validation
+sheet and 100-case embodied-rule audit are prepared but **not adjudicated**.
+Counts reflect public reporting and source curation, not incidence rates or
+prevalence. Severity is not imputed when a source does not provide it.
 

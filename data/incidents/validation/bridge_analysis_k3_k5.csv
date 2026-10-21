@@ -1,0 +1,81 @@
+network,k,rank,L4_ID,L4_Name_en,L1_ID,betweenness,degree,cross_domain_degree,cross_domain_share
+semantic,3,1,G_INT_VIOL_010,Threats and intimidation,L1_G,0.07589268538338718,57,2,0.03508771929824561
+semantic,3,2,G_SOC_GOV_035,Systemic failure of AI regulation and oversight,L1_G,0.06795396950341497,56,10,0.17857142857142858
+semantic,3,3,A_SYS_GOAL_007,Existential and catastrophic risk from advanced AI systems,L1_A,0.056372430488555204,45,38,0.8444444444444444
+semantic,3,4,G_SYS_MISINFO_012,False information targeting an individual,L1_G,0.025209654399013362,29,0,0.0
+semantic,3,5,G_SYS_OEXT_007,Misrepresentation of autonomous and independent decision-making capabilities,L1_G,0.022396037777309627,35,2,0.05714285714285714
+semantic,3,6,G_SYS_EVAL_040,Inadequate AI model configuration and evaluation,L1_G,0.022242920394362955,38,1,0.02631578947368421
+semantic,3,7,G_SYS_EVAL_029,Failure to detect erroneous or harmful outputs in human evaluation,L1_G,0.0214206100692268,28,1,0.03571428571428571
+semantic,3,8,P_INT_SAFETY_011,Failure to provide required support or escalation in high-risk situations,L1_P,0.021194898544976398,23,9,0.391304347826087
+semantic,3,9,G_SYS_PERF_009,"Failure of performance, robustness, and resilience under adverse conditions",L1_G,0.019553009501639476,29,3,0.10344827586206896
+semantic,3,10,P_SYS_CONTROL_051,Unsafe physical actuation following incorrect situation interpretation,L1_P,0.018928424196573212,28,14,0.5
+semantic,3,11,G_INT_ILLEGAL_003,Criminal assistance by AI agents,L1_G,0.016570231639589695,28,7,0.25
+semantic,3,12,G_SOC_POWER_012,Harms from corporate AI race,L1_G,0.016392866742612894,20,3,0.15
+semantic,3,13,G_SYS_MISINFO_006,Degradation of the shared information ecosystem,L1_G,0.016358306462553703,26,2,0.07692307692307693
+semantic,3,14,A_SYS_EXEC_002,Unsafe agent tool execution,L1_A,0.016283978442474326,24,13,0.5416666666666666
+semantic,3,15,G_SYS_EVAL_062,Refusal-capability confusion,L1_G,0.01590095920256399,24,5,0.20833333333333334
+semantic,3,16,G_SYS_INCONS_001,Inconsistency in human-feedback standards,L1_G,0.015140916962837118,24,2,0.08333333333333333
+semantic,3,17,G_SYS_OVERCONF_004,Excessive confidence under uncertainty,L1_G,0.014554266426945713,29,0,0.0
+semantic,3,18,G_SYS_MISINFO_011,Faithfulness errors,L1_G,0.014381774069480944,19,1,0.05263157894736842
+semantic,3,19,G_INT_UNETH_015,Manipulation and coercion through emotional dependence on assistants,L1_G,0.012783708680666717,23,1,0.043478260869565216
+semantic,3,20,G_INT_ALLOC_004,Denial of welfare benefits and entitlements,L1_G,0.011860553662608384,12,1,0.08333333333333333
+incident,3,1,A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,L1_A,0.07814486151276819,152,136,0.8947368421052632
+incident,3,2,G_SYS_MISINFO_023,Misleading medical information and unsafe medication guidance,L1_G,0.03862090964420843,144,16,0.1111111111111111
+incident,3,3,G_INT_ILLEGAL_003,Criminal assistance by AI agents,L1_G,0.033022504640127744,162,23,0.1419753086419753
+incident,3,4,G_INT_PRIV_001,AI-enabled mass and unlawful public surveillance,L1_G,0.03162769939072587,156,17,0.10897435897435898
+incident,3,5,G_INT_REPR_001,Biased statements and recommendations,L1_G,0.02487047101470331,131,9,0.06870229007633588
+incident,3,6,G_INT_UNETH_003,Academic misconduct from LLM misuse,L1_G,0.02353769166100502,94,9,0.09574468085106383
+incident,3,7,G_SYS_MISINFO_015,Generation of false information about election procedures,L1_G,0.02280262454338142,130,12,0.09230769230769231
+incident,3,8,G_INT_ILLEGAL_010,"Harassment, defamation, and extortion via multimodal deepfakes",L1_G,0.021175549311225717,141,9,0.06382978723404255
+incident,3,9,G_INT_ILLEGAL_022,Unlawful stalking and harassment using robots,L1_G,0.01952976720823994,103,28,0.27184466019417475
+incident,3,10,G_SOC_DEMOC_002,Cognitive warfare and interference with sovereignty,L1_G,0.018283342448889166,130,3,0.023076923076923078
+incident,3,11,G_INT_ILLEGAL_021,Unlawful coercion and extortion by AI agents,L1_G,0.018201689890784186,122,14,0.11475409836065574
+incident,3,12,G_INT_WEAP_016,Lethal autonomous weapons engaging targets without human intervention,L1_G,0.017177102772415197,97,29,0.29896907216494845
+incident,3,13,G_INT_UNETH_015,Manipulation and coercion through emotional dependence on assistants,L1_G,0.017075706263495586,91,16,0.17582417582417584
+incident,3,14,G_SYS_OREF_002,Denial of access to legitimate information due to exaggerated safety filtering,L1_G,0.01583753030695117,108,6,0.05555555555555555
+incident,3,15,G_SYS_SECADV_015,Compromise of robot fleets,L1_G,0.01562582195999545,73,16,0.2191780821917808
+incident,3,16,G_SOC_DEMOC_008,Online polarisation driven by recommendation algorithms,L1_G,0.015452088265044166,111,7,0.06306306306306306
+incident,3,17,G_INT_ILLEGAL_019,Traffic and public-safety offences,L1_G,0.01542942486430335,106,33,0.3113207547169811
+incident,3,18,G_SOC_CULT_018,Pollution of scholarly literature by AI-generated content,L1_G,0.015252127127053818,107,5,0.04672897196261682
+incident,3,19,G_INT_REPR_002,Biased system outputs from researcher homogeneity,L1_G,0.0148817295353575,71,3,0.04225352112676056
+incident,3,20,G_INT_PRIV_022,Personal-data scraping for training,L1_G,0.014317175319761297,107,7,0.06542056074766354
+semantic,5,1,G_INT_VIOL_010,Threats and intimidation,L1_G,0.07528011944699485,59,2,0.03389830508474576
+semantic,5,2,G_SOC_GOV_035,Systemic failure of AI regulation and oversight,L1_G,0.06785959680136279,60,11,0.18333333333333332
+semantic,5,3,A_SYS_GOAL_007,Existential and catastrophic risk from advanced AI systems,L1_A,0.05201969689223922,45,38,0.8444444444444444
+semantic,5,4,G_SYS_EVAL_040,Inadequate AI model configuration and evaluation,L1_G,0.02624930616321196,43,2,0.046511627906976744
+semantic,5,5,G_SYS_MISINFO_012,False information targeting an individual,L1_G,0.02277811246271092,29,0,0.0
+semantic,5,6,G_SYS_EVAL_029,Failure to detect erroneous or harmful outputs in human evaluation,L1_G,0.021961600623722616,30,2,0.06666666666666667
+semantic,5,7,G_SYS_OEXT_007,Misrepresentation of autonomous and independent decision-making capabilities,L1_G,0.021236560122866042,35,2,0.05714285714285714
+semantic,5,8,P_INT_SAFETY_011,Failure to provide required support or escalation in high-risk situations,L1_P,0.019463677227494147,23,9,0.391304347826087
+semantic,5,9,G_SYS_PERF_009,"Failure of performance, robustness, and resilience under adverse conditions",L1_G,0.01888716891944836,30,4,0.13333333333333333
+semantic,5,10,P_SYS_CONTROL_051,Unsafe physical actuation following incorrect situation interpretation,L1_P,0.018409127989636415,30,14,0.4666666666666667
+semantic,5,11,A_SYS_EXEC_002,Unsafe agent tool execution,L1_A,0.017853546057771053,27,15,0.5555555555555556
+semantic,5,12,G_SOC_POWER_012,Harms from corporate AI race,L1_G,0.0171034322283882,21,4,0.19047619047619047
+semantic,5,13,G_SYS_MISINFO_006,Degradation of the shared information ecosystem,L1_G,0.016452526764468154,27,2,0.07407407407407407
+semantic,5,14,G_SYS_INCONS_001,Inconsistency in human-feedback standards,L1_G,0.015511975628531996,25,2,0.08
+semantic,5,15,G_SYS_EVAL_062,Refusal-capability confusion,L1_G,0.015259527325711201,25,6,0.24
+semantic,5,16,G_INT_ILLEGAL_003,Criminal assistance by AI agents,L1_G,0.015108547612870282,28,7,0.25
+semantic,5,17,G_SYS_OVERCONF_004,Excessive confidence under uncertainty,L1_G,0.014182407814373932,30,0,0.0
+semantic,5,18,G_SYS_MISINFO_011,Faithfulness errors,L1_G,0.012935434547333825,19,1,0.05263157894736842
+semantic,5,19,G_SYS_POLICY_001,Confidential information in training data disclosed through outputs,L1_G,0.01205650045796325,25,0,0.0
+semantic,5,20,G_INT_ALLOC_013,Increased labour burden,L1_G,0.011750661601185021,18,0,0.0
+incident,5,1,A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,L1_A,0.03610140776244225,238,211,0.8865546218487395
+incident,5,2,G_SYS_MISINFO_023,Misleading medical information and unsafe medication guidance,L1_G,0.021188290919328612,245,36,0.1469387755102041
+incident,5,3,G_SYS_MISINFO_022,Misinformation harms from algorithmic systems,L1_G,0.016800302450132115,235,19,0.08085106382978724
+incident,5,4,G_INT_ILLEGAL_010,"Harassment, defamation, and extortion via multimodal deepfakes",L1_G,0.01650826374614532,241,19,0.07883817427385892
+incident,5,5,G_INT_UNETH_003,Academic misconduct from LLM misuse,L1_G,0.015162313466097631,180,14,0.07777777777777778
+incident,5,6,G_INT_REPR_001,Biased statements and recommendations,L1_G,0.014426261993348276,222,19,0.08558558558558559
+incident,5,7,G_INT_PRIV_001,AI-enabled mass and unlawful public surveillance,L1_G,0.013884019095855963,268,38,0.1417910447761194
+incident,5,8,G_SYS_OREF_002,Denial of access to legitimate information due to exaggerated safety filtering,L1_G,0.013352216541861563,222,17,0.07657657657657657
+incident,5,9,G_SYS_MISINFO_015,Generation of false information about election procedures,L1_G,0.013208244127739027,236,20,0.0847457627118644
+incident,5,10,G_INT_PRIV_022,Personal-data scraping for training,L1_G,0.012842772995672136,224,18,0.08035714285714286
+incident,5,11,G_INT_ILLEGAL_003,Criminal assistance by AI agents,L1_G,0.012840902134876249,254,34,0.13385826771653545
+incident,5,12,G_SOC_DEMOC_002,Cognitive warfare and interference with sovereignty,L1_G,0.012721693569590088,236,17,0.07203389830508475
+incident,5,13,G_SOC_DEMOC_008,Online polarisation driven by recommendation algorithms,L1_G,0.012166878363116142,206,15,0.07281553398058252
+incident,5,14,G_INT_WEAP_016,Lethal autonomous weapons engaging targets without human intervention,L1_G,0.011662570592283013,188,50,0.26595744680851063
+incident,5,15,G_INT_REL_002,Harmful emotional and social dependence from sustained AI interaction,L1_G,0.011340530271127554,208,28,0.1346153846153846
+incident,5,16,G_INT_ILLEGAL_021,Unlawful coercion and extortion by AI agents,L1_G,0.011302287786301117,218,25,0.11467889908256881
+incident,5,17,G_INT_ILLEGAL_022,Unlawful stalking and harassment using robots,L1_G,0.010372939434744245,208,53,0.2548076923076923
+incident,5,18,G_INT_UNETH_015,Manipulation and coercion through emotional dependence on assistants,L1_G,0.010161871638708603,200,28,0.14
+incident,5,19,G_SYS_OREF_003,Over-refusal of help-seeking requests from vulnerable users,L1_G,0.009801400350193586,193,19,0.09844559585492228
+incident,5,20,G_INT_REPR_002,Biased system outputs from researcher homogeneity,L1_G,0.009530380246841262,134,5,0.03731343283582089

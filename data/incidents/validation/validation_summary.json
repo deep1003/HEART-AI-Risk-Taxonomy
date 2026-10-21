@@ -1,0 +1,110 @@
+{
+  "snapshot": "2026-10-21",
+  "canonical_incidents": 11119,
+  "human_validation": {
+    "sample_n": 150,
+    "status": "PENDING HUMAN ADJUDICATION",
+    "embodied_candidates_in_sample": 84,
+    "embodied_rule_audit_n": 100,
+    "instruction": "A human reviewer must complete the blank adjudication columns; no AI judgement is reported as human validation."
+  },
+  "noncircular_mapping": {
+    "text_fields": [
+      "incident_title",
+      "incident_description",
+      "ai_system"
+    ],
+    "excluded_validation_fields": [
+      "risk_name",
+      "harm_types",
+      "MIT risk domain",
+      "CSET labels"
+    ],
+    "external_validation": [
+      {
+        "validation_test": "MIT agent/multi-agent behaviour → Agentic HEART card",
+        "n": 1752,
+        "tp": 28,
+        "fp": 241,
+        "tn": 1444,
+        "fn": 39,
+        "accuracy": 0.8401826484018264,
+        "precision": 0.10408921933085502,
+        "recall": 0.417910447761194,
+        "mcc": 0.14623108149191386
+      },
+      {
+        "validation_test": "MIT physical AI goal → Physical HEART card",
+        "n": 1752,
+        "tp": 127,
+        "fp": 67,
+        "tn": 1515,
+        "fn": 43,
+        "accuracy": 0.9372146118721462,
+        "precision": 0.654639175257732,
+        "recall": 0.7470588235294118,
+        "mcc": 0.6647401670806766
+      },
+      {
+        "validation_test": "CSET physical-system label → Physical HEART card",
+        "n": 208,
+        "tp": 40,
+        "fp": 3,
+        "tn": 83,
+        "fn": 82,
+        "accuracy": 0.5913461538461539,
+        "precision": 0.9302325581395349,
+        "recall": 0.32786885245901637,
+        "mcc": 0.3562858071357631
+      },
+      {
+        "validation_test": "AIM physical-harm label → Physical HEART card",
+        "n": 10145,
+        "tp": 370,
+        "fp": 277,
+        "tn": 8176,
+        "fn": 1322,
+        "accuracy": 0.8423854115327748,
+        "precision": 0.5718701700154559,
+        "recall": 0.2186761229314421,
+        "mcc": 0.2836171012547697
+      }
+    ]
+  },
+  "embodied_subset": {
+    "n": 1344,
+    "strong_external_n": 253,
+    "rule": "Strong MIT/CSET physical-system label OR contextual physical-system text, excluding named-person/deepfake/content false positives."
+  },
+  "incident_null": {
+    "permutations": 2000,
+    "embodied_n": 1344,
+    "observed_cross_domain_rate": 0.5230654761904762,
+    "null_mean": 0.27023586309523806,
+    "null_sd": 0.011075867640505046,
+    "null_p95": 0.28869047619047616,
+    "one_sided_p": 0.0004997501249375312,
+    "z_score": 22.827070645971478,
+    "seed": 20261021,
+    "null_rule": "Within rank × cosine-decile strata, permute card/domain assignments across incident edges."
+  },
+  "hubness_control": {
+    "model": "log1p(incident_degree_k3) ~ centroid_similarity + L1 fixed effects",
+    "n_cards": 622,
+    "r_squared": 0.16403620657327944,
+    "centroid_coefficient": 15.692908387451997,
+    "centroid_p_value": 4.34135835392745e-20
+  },
+  "benign_intent": {
+    "screened_candidates": 190,
+    "published_top_n": 100,
+    "microwave_literal_match": 0,
+    "finding": "No literal microwave incident. Closest verified database-reported analogues include Alexa's penny challenge, harmful Google AI advice, Waze navigation into a lake, and task-overreach by Operator/Claude/Cursor."
+  },
+  "limitations": [
+    "Human adjudication is not yet complete.",
+    "External labels are incomplete and source-specific.",
+    "Embodied rules remain a candidate definition until human review.",
+    "Database-reported benign-intent cases were not independently adjudicated against every original news report."
+  ]
+}

@@ -54,7 +54,12 @@ def main() -> None:
             "cards": 622,
             "mapping_model": "bge-m3:latest",
             "model_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
-            "validation": "model-based; not human validated",
+            "validation": {
+                "primary_release": "model-based; not human validated",
+                "noncircular_remapping": "title, incident narrative and AI-system description only; source labels held out",
+                "human_sample": "150-case stratified sheet frozen; adjudication pending",
+                "embodied_audit": "100-case rule-audit sheet frozen; adjudication pending",
+            },
         },
         "files": [
             {"path": str(path.relative_to(ROOT)), "bytes": path.stat().st_size, "sha256": sha256(path)}
