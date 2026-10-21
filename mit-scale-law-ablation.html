@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dataset-substitution ablation of HEART L4 scale-law diagnostics using the public MIT AI Risk Repository v4.">
+  <title>MIT Repository ablation | HEART</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles-v2.css">
+  <link rel="stylesheet" href="assets/institution.css">
+  <link rel="stylesheet" href="assets/explorer-layout.css?v=shared-shell-20261010">
+  <link rel="stylesheet" href="assets/scale-law-diagnostics.css?v=20261021-mit">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="HEART home"><span class="heart-brand-copy"><span class="brand-kicker"><span class="brand-gold-dot" aria-hidden="true"></span>AI Risk Taxonomy for General, Agentic, and Physical AI</span><strong>HEA<span class="heart-brand-r">R</span>T</strong><small>Hybrid Evidence-based AI Risk Taxonomy</small></span></a>
+    <nav aria-label="Primary navigation"><a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+  </header>
+  <main>
+    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs"><a href="about.html">About HEART</a><a href="./#explore">AI risk taxonomy</a><a href="./#ai-risk-space">AI risk space</a><a href="scale-law-diagnostics.html">L4 scale-law diagnostics</a><a href="mit-scale-law-ablation.html" aria-current="page">MIT ablation appendix</a></div></nav>
+
+    <div class="diagnostics-main">
+      <section class="diagnostics-hero">
+        <div>
+          <p class="diagnostics-eyebrow">Dataset-substitution ablation</p>
+          <h1>MIT AI Risk Repository scale-law diagnostics</h1>
+          <p class="diagnostics-lede">This appendix replaces the HEART L4 inventory with the public MIT AI Risk Repository while holding the embedding model, text-field pattern, nearest-neighbour count, cosine threshold, tail-fitting method, bootstrap count, and random seed fixed. It tests whether the network pattern is specific to HEART or recurs in a broader multi-framework corpus.</p>
+          <div class="diagnostics-actions"><a href="scale-law-diagnostics.html">Return to HEART results</a><a class="secondary" href="data/mit_scale_law_top_risks.csv" download>Download MIT rankings</a><a class="secondary" href="data/mit_scale_law_ablation.json" download>Download ablation JSON</a><a class="secondary" href="https://airisk.mit.edu/risks" target="_blank" rel="noopener noreferrer">Open MIT source</a></div>
+        </div>
+        <div class="hero-verdict" id="hero-verdict" aria-live="polite"><span>Ablation conclusion</span><strong>Loading diagnostics…</strong></div>
+      </section>
+
+      <section class="diagnostics-summary" aria-label="Ablation summary">
+        <article><span>MIT source records</span><strong id="node-count">1,835</strong><small>category and subcategory rows</small></article>
+        <article><span>Semantic links</span><strong id="edge-count">10,847</strong><small>same graph construction rule</small></article>
+        <article><span>Cross-domain links</span><strong id="cross-share">42.1%</strong><small>connect different MIT risk domains</small></article>
+        <article><span>Power-law conclusion</span><strong id="fit-conclusion">Tail-compatible</strong><small>not evidence of a globally scale-free network</small></article>
+      </section>
+
+      <section class="diagnostics-section" aria-labelledby="comparison-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Controlled comparison</p><h2 id="comparison-title">Only the risk inventory is substituted</h2><p>The ablation preserves all numerical choices from the HEART analysis. Differences therefore reflect the inventory's granularity, source repetition, wording, and taxonomy structure rather than a different embedding or graph rule.</p></div>
+        <div class="ranking-table-wrap comparison-table-wrap"><table class="ranking-table comparison-table"><thead><tr><th>Component</th><th>HEART L4 analysis</th><th>MIT repository ablation</th></tr></thead><tbody>
+          <tr><td>Analysis unit</td><td>622 human-consolidated L4 risk cards</td><td>1,835 risk-category and risk-subcategory rows from 74 frameworks</td></tr>
+          <tr><td>Text representation</td><td colspan="2">English risk name and definition or description</td></tr>
+          <tr><td>Embedding</td><td colspan="2">BGE-M3, 1,024 dimensions, no truncation, L2 normalised</td></tr>
+          <tr><td>Graph rule</td><td colspan="2">Union of eight nearest cosine neighbours, cosine ≥ 0.60</td></tr>
+          <tr><td>Tail inference</td><td colspan="2">Maximum likelihood, KS cutoff selection, 1,000 semi-parametric bootstraps, truncated-lognormal comparison</td></tr>
+          <tr><td>Domain labels</td><td>General, Agentic, Physical AI</td><td>Seven MIT risk domains plus uncoded or excluded records</td></tr>
+        </tbody></table></div>
+        <div class="ranking-table-wrap comparison-table-wrap"><table class="ranking-table comparison-table"><thead><tr><th>Observed result</th><th>HEART L4 analysis</th><th>MIT repository ablation</th></tr></thead><tbody>
+          <tr><td>Nodes and edges</td><td>622 nodes, 3,807 edges</td><td>1,835 nodes, 10,847 edges</td></tr>
+          <tr><td>Cross-domain links</td><td>546, or 14.34%</td><td>4,572, or 42.15%</td></tr>
+          <tr><td>Degree tail</td><td><em>n</em> = 54, α = 4.486, bootstrap <em>p</em> = 0.580</td><td><em>n</em> = 58, α = 6.188, bootstrap <em>p</em> = 0.503</td></tr>
+          <tr><td>Weighted-degree tail</td><td><em>n</em> = 114, α = 4.329, bootstrap <em>p</em> = 0.373</td><td><em>n</em> = 827, α = 3.838, bootstrap <em>p</em> = 0.154</td></tr>
+          <tr><td>Alternative-model result</td><td>Lognormal sign favoured, not distinguishable for either measure</td><td>Lognormal sign favoured; weighted-degree difference distinguishable at 0.10, Vuong <em>p</em> = 0.080</td></tr>
+        </tbody></table></div>
+      </section>
+
+      <section class="diagnostics-section" aria-labelledby="distribution-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Empirical distributions</p><h2 id="distribution-title">The MIT corpus also has heavy upper tails, but the full graph is not established as scale free</h2><p>Both complementary cumulative distributions use logarithmic axes. The fitted line begins at the data-selected cutoff. Statistical inference follows the same procedure as the HEART analysis.</p></div>
+        <div class="chart-grid">
+          <figure class="diagnostic-chart"><figcaption><strong>Degree CCDF</strong><span>Number of incident semantic links</span></figcaption><svg id="degree-chart" viewBox="0 0 620 420" role="img" aria-label="MIT repository complementary cumulative degree distribution"></svg><p id="degree-result" class="chart-result"></p></figure>
+          <figure class="diagnostic-chart"><figcaption><strong>Weighted-degree CCDF</strong><span>Sum of incident cosine-similarity weights</span></figcaption><svg id="strength-chart" viewBox="0 0 620 420" role="img" aria-label="MIT repository complementary cumulative weighted-degree distribution"></svg><p id="strength-result" class="chart-result"></p></figure>
+        </div>
+        <div class="reading-note"><strong>Interpretation.</strong> Neither fitted tail is rejected at the predeclared 0.10 level. The lognormal sign is favoured for both measures, and the weighted-degree alternative is distinguishable at 0.10 but not at 0.05. This supports heavy-tail recurrence under dataset substitution, but not a universal power-law mechanism.</div>
+      </section>
+
+      <section class="diagnostics-section cross-domain-section" aria-labelledby="ranking-title">
+        <div class="section-copy ranking-head"><div><p class="diagnostics-eyebrow">Highest-connectivity MIT records</p><h2 id="ranking-title">Semantic hubs bridge multiple MIT risk domains</h2><p>The ranking uses degree first and weighted degree second. Bar segments show the domain composition of each record's semantic neighbours. They do not recode the source record.</p></div><div class="rank-toggle" role="group" aria-label="Number of records"><button type="button" data-limit="5" aria-pressed="false">Top 5</button><button type="button" data-limit="10" aria-pressed="true">Top 10</button></div></div>
+        <div class="domain-legend mit-domain-legend" id="domain-legend" aria-label="MIT domain legend"></div>
+        <figure class="ranking-chart"><svg id="ranking-chart" viewBox="0 0 1100 650" role="img" aria-label="Top MIT risk records by semantic degree with neighbor-domain composition"></svg></figure>
+        <div class="ranking-table-wrap"><table class="ranking-table"><thead><tr><th>Rank</th><th>MIT source record</th><th>Assigned MIT domain</th><th>Degree</th><th>Weighted degree</th><th>Cross-domain share</th></tr></thead><tbody id="ranking-body"></tbody></table></div>
+        <div class="cross-domain-callout"><strong id="cross-domain-count">4,572 of 10,847 links cross MIT domains.</strong><p>The recurrence of cross-domain links in an independently assembled repository supports the broader claim that AI risks cannot be treated as isolated domain lists. The larger share is not directly comparable to HEART because MIT uses seven thematic risk domains, includes repeated concepts from multiple frameworks, and retains heterogeneous levels of granularity.</p></div>
+      </section>
+
+      <section class="diagnostics-section method-section" aria-labelledby="method-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Calculation and mathematical specification</p><h2 id="method-title">The HEART procedure is rerun without tuning to MIT</h2><p>Let <em>z</em><sub>i</sub> denote the BGE-M3 vector for MIT record <em>i</em>. The same graph and tail tests are applied without changing thresholds after viewing the MIT result.</p></div>
+        <ol class="method-steps">
+          <li><strong>Source extraction.</strong><span>The official v4 workbook was retrieved on 21 October 2026. The analysis includes rows labelled Risk Category or Risk Sub-Category and excludes Paper and Additional evidence rows. Source row numbers, Ev_ID values, framework references, domains, and subdomains are retained.</span></li>
+          <li><strong>Semantic graph.</strong><span>Cosine similarity is <span class="equation">s<sub>ij</sub> = (z<sub>i</sub> · z<sub>j</sub>)/(&#8214;z<sub>i</sub>&#8214;<sub>2</sub>&#8214;z<sub>j</sub>&#8214;<sub>2</sub>)</span>. The undirected graph is the union of each record's eight nearest neighbours where <span class="equation">s<sub>ij</sub> ≥ 0.60</span>.</span></li>
+          <li><strong>Connectivity.</strong><span>Degree is <span class="equation">k<sub>i</sub> = Σ<sub>j</sub> 1[(i,j) ∈ E]</span>. Strength is <span class="equation">w<sub>i</sub> = Σ<sub>j:(i,j)∈E</sub> s<sub>ij</sub></span>. Domain-crossing status compares the MIT Domain field at both endpoints.</span></li>
+          <li><strong>Tail fitting.</strong><span>Candidate lower cutoffs retain at least 50 observations. Maximum-likelihood exponents are estimated, and the cutoff minimizing the Kolmogorov-Smirnov distance is selected.</span></li>
+          <li><strong>Validation.</strong><span>One thousand semi-parametric bootstrap samples test goodness-of-fit. A lower-truncated lognormal fit and two-sided Vuong comparison test whether the power law is distinguishable from a plausible heavy-tailed alternative.</span></li>
+        </ol>
+      </section>
+
+      <section class="diagnostics-section validation-section" aria-labelledby="validation-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Reproducibility and validation</p><h2 id="validation-title">Source, transformation, graph, and output checks</h2></div>
+        <div class="validation-grid">
+          <article><strong>Official source preservation</strong><p>The unmodified MIT XLSX is stored with its retrieval date, sheet name, CC BY 4.0 licence, and SHA-256 fingerprint. The processed CSV retains every included source row and provenance field.</p></article>
+          <article><strong>Extraction audit</strong><p>The test independently recounts 570 risk-category and 1,265 risk-subcategory rows, for 1,835 analysis records. Source-local Ev_ID collisions are preserved and disambiguated with stable analysis IDs.</p></article>
+          <article><strong>Graph reconstruction</strong><p>The test regenerates the nearest-neighbour union from the embedding matrix, verifies every threshold-qualified edge and weight, and checks that Σ<em>k</em> = 2|E|.</p></article>
+          <article><strong>Controlled settings</strong><p>The BGE-M3 revision, 1,024-dimensional vectors, eight-neighbour rule, 0.60 cutoff, seed, 1,000 bootstraps, and 50-record minimum tail are identical to HEART.</p></article>
+        </div>
+        <p class="validation-record"><span class="validation-pass">Validated</span> <span id="validation-text">Source hash, extraction counts, embeddings, graph invariants, ranking order, and fixed settings verified on 21 October 2026.</span></p>
+      </section>
+
+      <section class="diagnostics-section meaning-section" aria-labelledby="meaning-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Meaning and limits</p><h2 id="meaning-title">What the ablation adds</h2></div>
+        <div class="meaning-grid">
+          <article><h3>Academic significance</h3><p>Heavy upper tails and cross-domain semantic bridges recur after replacing HEART with an independently assembled multi-framework repository. This weakens the explanation that the observed concentration is only an artefact of HEART's three-domain design. It does not identify a universal generative law.</p></article>
+          <article><h3>Practical significance</h3><p>Highly connected records can prompt reviewers to inspect adjacent risk mechanisms beyond an initial domain label. For risk discovery, the network is best used as a boundary-expansion device alongside the curated hierarchy, not as an automatic severity or priority score.</p></article>
+          <article><h3>Limitations</h3><p>MIT records differ in granularity, repeat concepts across source frameworks, and use seven thematic domains rather than HEART's General, Agentic, and Physical operating domains. Cross-domain percentages therefore demonstrate boundary crossing within each ontology but should not be treated as directly interchangeable effect sizes.</p></article>
+        </div>
+      </section>
+
+      <section class="diagnostics-section references-section" aria-labelledby="references-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Data and prior research</p><h2 id="references-title">Source and interpretive standard</h2></div>
+        <ol>
+          <li>Slattery, P., et al. (2024, updated 2025). <a href="https://doi.org/10.48550/arXiv.2408.12622" target="_blank" rel="noopener noreferrer">The AI Risk Repository: A Comprehensive Meta-Review, Database, and Taxonomy of Risks from Artificial Intelligence</a>. The public repository provides the source inventory and MIT domain labels.</li>
+          <li><a href="https://airisk.mit.edu/risks" target="_blank" rel="noopener noreferrer">MIT AI Risk Repository</a>. Official living database and documentation. The public data are licensed under CC BY 4.0.</li>
+          <li>Clauset, A., Shalizi, C. R., &amp; Newman, M. E. J. (2009). <a href="https://doi.org/10.1137/070710111" target="_blank" rel="noopener noreferrer">Power-law distributions in empirical data</a>. <em>SIAM Review, 51</em>(4), 661–703.</li>
+          <li>Broido, A. D., &amp; Clauset, A. (2019). <a href="https://doi.org/10.1038/s41467-019-08746-5" target="_blank" rel="noopener noreferrer">Scale-free networks are rare</a>. <em>Nature Communications, 10</em>, 1017.</li>
+        </ol>
+        <p class="source-note"><strong>Attribution.</strong> MIT AI Risk Repository data are © MIT FutureTech and collaborators, used under CC BY 4.0. This HEART appendix is an independent secondary analysis and does not imply MIT endorsement.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer publisher-footer"><div class="publisher-identity"><a class="kt-logo-link" href="https://corp.kt.com/eng/" target="_blank" rel="noopener noreferrer" aria-label="KT Corporation official website"><img src="assets/kt-logo-light.svg" alt="KT" width="40" height="40"></a><div><p class="publisher-name">Frontier AI Lab, KT Corporation</p><a class="publisher-contact" href="mailto:responsible.ai@kt.com">responsible.ai@kt.com</a></div></div></footer>
+  <script src="assets/mit-scale-law-ablation.js?v=20261021" defer></script>
+</body>
+</html>

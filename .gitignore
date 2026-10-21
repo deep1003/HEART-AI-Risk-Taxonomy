@@ -2,3 +2,4 @@
 node_modules
 *.inspect.ndjson
 .playwright-cli/
+__pycache__/
