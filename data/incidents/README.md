@@ -40,6 +40,23 @@ used only for external checks.
 - `benign_intent_cases.csv`: rule-screened database-reported candidate cases.
 - `validation_summary.json`: methods, principal estimates and limitations.
 
+## Domain-control release
+
+The `controls/` directory publishes compact results from the preregistered
+domain-control and robustness analyses. It uses the non-circular incident
+mapping above, the 622-card HEART master and seed `20261021`.
+
+- `manuscript_key_numbers.csv`: principal estimates, intervals and tests.
+- `01_home_domain_by_embodiment.csv`: home-domain and embodiment strata.
+- `01_logistic_coefficients.csv`: adjusted cross-domain regression.
+- `02_network_permutation_comparison.csv`: matched permutation tests for the
+  description and incident-coactivation networks.
+- `03_robustness_summary.json`: model, language and top-k robustness results.
+- `07_case_verification_table.csv`: verified incident examples and candidate
+  HEART mappings.
+- `summary.json`: consolidated machine-readable results.
+- `validation_report.json`: input-hash, count and output-integrity checks.
+
 ## Interpretation boundary
 
 The mappings are BGE-M3 cosine top-k candidates. The 150-case human-validation

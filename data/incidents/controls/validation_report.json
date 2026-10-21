@@ -1,0 +1,244 @@
+{
+  "status": "PASS",
+  "seed": 20261021,
+  "checks": [
+    {
+      "check": "input exists: HEART_L4_Risk_Cards_Master.csv",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/HEART_L4_Risk_Cards_Master.csv"
+    },
+    {
+      "check": "input hash: HEART_L4_Risk_Cards_Master.csv",
+      "status": "PASS",
+      "detail": "5caed9d0e88cba5e346ea9537174bd104de875325751263dc72a0d1560b1379a"
+    },
+    {
+      "check": "input exists: embodied_subset_audit.csv.gz",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/embodied_subset_audit.csv.gz"
+    },
+    {
+      "check": "input hash: embodied_subset_audit.csv.gz",
+      "status": "PASS",
+      "detail": "65b0f3aa98573d024195819b67dc4d3bc67cc661cc4407c2bae995b76132fb69"
+    },
+    {
+      "check": "input exists: heart_bge_m3_embeddings.npz",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/heart_bge_m3_embeddings.npz"
+    },
+    {
+      "check": "input hash: heart_bge_m3_embeddings.npz",
+      "status": "PASS",
+      "detail": "e777f94c9c3a26896545e1df066adf75eb329eeea37c31b96d475d8ff083520d"
+    },
+    {
+      "check": "input exists: mit_ai_risk_records.csv",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/mit_ai_risk_records.csv"
+    },
+    {
+      "check": "input hash: mit_ai_risk_records.csv",
+      "status": "PASS",
+      "detail": "648896194be0d59b7bfad64f211e768aa88ecc234f9a54b61126a14cdd8bb3f6"
+    },
+    {
+      "check": "input exists: mit_bge_m3_embeddings.npz",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/mit_bge_m3_embeddings.npz"
+    },
+    {
+      "check": "input hash: mit_bge_m3_embeddings.npz",
+      "status": "PASS",
+      "detail": "701c59b2294c8216eaadfd7414ccc18e89b2c3b0d10d9042ea09b251f7b7dd18"
+    },
+    {
+      "check": "input exists: mit_incident_tracker.jsonl",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/mit_incident_tracker.jsonl"
+    },
+    {
+      "check": "input hash: mit_incident_tracker.jsonl",
+      "status": "PASS",
+      "detail": "31d73abc7237e5c2ddd0b8f20f7bdffc612d2ad1c63fe6ed5c8e9332a1ba9776"
+    },
+    {
+      "check": "input exists: noncircular_incident_heart_edges_k5.csv.gz",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/noncircular_incident_heart_edges_k5.csv.gz"
+    },
+    {
+      "check": "input hash: noncircular_incident_heart_edges_k5.csv.gz",
+      "status": "PASS",
+      "detail": "2ba1fd00b7b85008998510e7583c3bee1c7323ee48b86ce52dde06cb34cceac9"
+    },
+    {
+      "check": "input exists: source_records.csv.gz",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/source_records.csv.gz"
+    },
+    {
+      "check": "input hash: source_records.csv.gz",
+      "status": "PASS",
+      "detail": "15ccbbeaf69d173fed464a98c34ff46ebe013ff9177e4c9b8f158a974c3d4b73"
+    },
+    {
+      "check": "input exists: source_repository_commit.txt",
+      "status": "PASS",
+      "detail": "/Users/deep1003/Library/Mobile Documents/com~apple~CloudDocs/data3/RAI-Risk-Taxonomy-tr/incident_controls_20261021/inputs/source_repository_commit.txt"
+    },
+    {
+      "check": "input hash: source_repository_commit.txt",
+      "status": "PASS",
+      "detail": "849c243126544a843ce9de4015a51131e90ea5b5e6a680736a55172d5c938f2e"
+    },
+    {
+      "check": "622 unique L4 cards",
+      "status": "PASS",
+      "detail": 622
+    },
+    {
+      "check": "55 unique L3 categories",
+      "status": "PASS",
+      "detail": 55
+    },
+    {
+      "check": "11,119 incidents",
+      "status": "PASS",
+      "detail": 11119
+    },
+    {
+      "check": "five edges per incident",
+      "status": "PASS",
+      "detail": 55595
+    },
+    {
+      "check": "1,344 embodied_rule",
+      "status": "PASS",
+      "detail": 1344
+    },
+    {
+      "check": "253 embodied_strong_external",
+      "status": "PASS",
+      "detail": 253
+    },
+    {
+      "check": "stage 0 checkpoint",
+      "status": "PASS",
+      "detail": "00_input_audit/summary.json"
+    },
+    {
+      "check": "stage 0 seed",
+      "status": "PASS",
+      "detail": 20261021
+    },
+    {
+      "check": "stage 1 checkpoint",
+      "status": "PASS",
+      "detail": "01_domain_size_controls/summary.json"
+    },
+    {
+      "check": "stage 1 seed",
+      "status": "PASS",
+      "detail": 20261021
+    },
+    {
+      "check": "stage 2 checkpoint",
+      "status": "PASS",
+      "detail": "02_network_label_shuffle/summary.json"
+    },
+    {
+      "check": "stage 2 seed",
+      "status": "PASS",
+      "detail": 20261021
+    },
+    {
+      "check": "stage 3 checkpoint",
+      "status": "PASS",
+      "detail": "03_robustness/summary.json"
+    },
+    {
+      "check": "stage 3 seed",
+      "status": "PASS",
+      "detail": 20261021
+    },
+    {
+      "check": "stage 4 checkpoint",
+      "status": "PASS",
+      "detail": "04_agentic_evidence/summary.json"
+    },
+    {
+      "check": "stage 4 seed",
+      "status": "PASS",
+      "detail": 20261021
+    },
+    {
+      "check": "stage 5 checkpoint",
+      "status": "PASS",
+      "detail": "05_actor_counts/summary.json"
+    },
+    {
+      "check": "stage 5 seed",
+      "status": "PASS",
+      "detail": 20261021
+    },
+    {
+      "check": "stage 6 checkpoint",
+      "status": "PASS",
+      "detail": "06_centrality_uncertainty/summary.json"
+    },
+    {
+      "check": "stage 6 seed",
+      "status": "PASS",
+      "detail": 20261021
+    },
+    {
+      "check": "stage 7 checkpoint",
+      "status": "PASS",
+      "detail": "07_intro_cases/summary.json"
+    },
+    {
+      "check": "stage 7 seed",
+      "status": "PASS",
+      "detail": 20261021
+    },
+    {
+      "check": "negative-binomial model converged",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "regression coefficient comparison exists",
+      "status": "PASS",
+      "detail": "06_regression_coefficients_comparison.csv"
+    },
+    {
+      "check": "actor human adjudication blank",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "case human verification blank",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "three requested cases",
+      "status": "PASS",
+      "detail": {
+        "cases": 3,
+        "rows": 9
+      }
+    },
+    {
+      "check": "no graph or image outputs",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "all key proportions have bootstrap intervals",
+      "status": "PASS",
+      "detail": 4
+    }
+  ]
+}

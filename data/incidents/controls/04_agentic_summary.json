@@ -1,0 +1,19 @@
+{
+  "mit_agent_incidents": 46,
+  "cross_rate": 0.4782608695652174,
+  "cross_rate_ci95_low": 0.32608695652173914,
+  "cross_rate_ci95_high": 0.6304347826086957,
+  "general_only_n": 24,
+  "stratified_permutation": {
+    "observed": 0.4782608695652174,
+    "observed_ci95_low": 0.32608695652173914,
+    "observed_ci95_high": 0.6304347826086957,
+    "expected": 0.27273913043478265,
+    "observed_expected_ratio": 1.753546947234178,
+    "null_ci95_low": 0.21739130434782608,
+    "null_ci95_high": 0.34782608695652173,
+    "p_one_sided": 0.0004997501249375312,
+    "permutations": 2000
+  },
+  "cause_analysis_status": "Automated lexical contrast only. Causal interpretation left blank for human review."
+}

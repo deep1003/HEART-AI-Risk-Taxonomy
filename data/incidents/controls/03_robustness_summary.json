@@ -1,0 +1,136 @@
+{
+  "stage": 3,
+  "status": "PASS",
+  "seed": 20261021,
+  "bootstrap_replicates": 2000,
+  "completed_at_epoch": 1792580356,
+  "model": "intfloat/multilingual-e5-base",
+  "model_revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "card_language": "Korean",
+  "incident_language": "source English",
+  "top_k": 5,
+  "home_table": [
+    {
+      "home_domain": "L1_A",
+      "embodied": false,
+      "n": 69,
+      "cross_rate": 1.0,
+      "ci95_low": 1.0,
+      "ci95_high": 1.0
+    },
+    {
+      "home_domain": "L1_A",
+      "embodied": true,
+      "n": 18,
+      "cross_rate": 1.0,
+      "ci95_low": 1.0,
+      "ci95_high": 1.0
+    },
+    {
+      "home_domain": "L1_G",
+      "embodied": false,
+      "n": 9407,
+      "cross_rate": 0.1098118422451366,
+      "ci95_low": 0.1038588285319443,
+      "ci95_high": 0.11608376740724992
+    },
+    {
+      "home_domain": "L1_G",
+      "embodied": true,
+      "n": 739,
+      "cross_rate": 0.6495263870094723,
+      "ci95_low": 0.6156968876860622,
+      "ci95_high": 0.6820027063599459
+    },
+    {
+      "home_domain": "L1_P",
+      "embodied": false,
+      "n": 299,
+      "cross_rate": 0.9498327759197325,
+      "ci95_low": 0.9230769230769231,
+      "ci95_high": 0.9732441471571907
+    },
+    {
+      "home_domain": "L1_P",
+      "embodied": true,
+      "n": 587,
+      "cross_rate": 0.82793867120954,
+      "ci95_low": 0.7955706984667802,
+      "ci95_high": 0.858603066439523
+    }
+  ],
+  "stratified_permutation": {
+    "observed": 0.7321428571428571,
+    "observed_ci95_low": 0.7075892857142857,
+    "observed_ci95_high": 0.7566964285714286,
+    "expected": 0.47493303571428575,
+    "observed_expected_ratio": 1.5415707101565068,
+    "null_ci95_low": 0.45907738095238093,
+    "null_ci95_high": 0.49107142857142855,
+    "p_one_sided": 0.0004997501249375312,
+    "permutations": 2000
+  },
+  "logistic": {
+    "n": 11119,
+    "embodied_odds_ratio": 8.374644133810524,
+    "ci95_low": 7.122636552524915,
+    "ci95_high": 9.846727942773505,
+    "p": 6.474307114478803e-146,
+    "covariance": "HC3"
+  },
+  "network_tests": [
+    {
+      "network": "E5_Korean_description",
+      "nodes": 622,
+      "edges": 3828,
+      "observed_cross_edge_rate": 0.13270637408568442,
+      "expected_cross_edge_rate": 0.35561363636363635,
+      "observed_cross_ci95_low": 0.12199582027168233,
+      "observed_cross_ci95_high": 0.14341692789968652,
+      "observed_expected_ratio": 0.37317571801432314,
+      "null_cross_ci95_low": 0.33228187042842217,
+      "null_cross_ci95_high": 0.38194226750261234,
+      "p_lower_tail": 0.000999000999000999,
+      "observed_assortativity_r": 0.620157277479732,
+      "null_r_mean": -0.0021344402442615876,
+      "null_r_ci95_low": -0.0249066229863198,
+      "null_r_ci95_high": 0.023344707993465663,
+      "permutations": 1000
+    },
+    {
+      "network": "E5_Korean_incident_top5",
+      "nodes": 622,
+      "edges": 14319,
+      "observed_cross_edge_rate": 0.20497241427473986,
+      "expected_cross_edge_rate": 0.35553090299601936,
+      "observed_cross_ci95_low": 0.19833612682449892,
+      "observed_cross_ci95_high": 0.2116767930721419,
+      "observed_expected_ratio": 0.5765248886874815,
+      "null_cross_ci95_low": 0.30218241497311266,
+      "null_cross_ci95_high": 0.4070134087575948,
+      "p_lower_tail": 0.000999000999000999,
+      "observed_assortativity_r": 0.1548866387195437,
+      "null_r_mean": -0.0038953461311500306,
+      "null_r_ci95_low": -0.013006758631494525,
+      "null_r_ci95_high": 0.006482120465815304,
+      "permutations": 1000
+    }
+  ],
+  "mit_7domain": {
+    "nodes": 1835,
+    "edges": 11599,
+    "observed_cross_edge_rate": 0.48771445814294334,
+    "expected_cross_edge_rate": 0.8510530218122251,
+    "observed_cross_ci95_low": 0.47840331063022673,
+    "observed_cross_ci95_high": 0.49659453401155274,
+    "observed_expected_ratio": 0.5730717659687152,
+    "null_cross_ci95_low": 0.844208552461419,
+    "null_cross_ci95_high": 0.8579209414604707,
+    "p_lower_tail": 0.000999000999000999,
+    "observed_assortativity_r": 0.42620344316535513,
+    "null_r_mean": -0.000551287547117901,
+    "null_r_ci95_low": -0.00760553099804919,
+    "null_r_ci95_high": 0.007038953507889344,
+    "permutations": 1000
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "hashes": {
+    "HEART_L4_Risk_Cards_Master.csv": "5caed9d0e88cba5e346ea9537174bd104de875325751263dc72a0d1560b1379a",
+    "embodied_subset_audit.csv.gz": "65b0f3aa98573d024195819b67dc4d3bc67cc661cc4407c2bae995b76132fb69",
+    "heart_bge_m3_embeddings.npz": "e777f94c9c3a26896545e1df066adf75eb329eeea37c31b96d475d8ff083520d",
+    "mit_ai_risk_records.csv": "648896194be0d59b7bfad64f211e768aa88ecc234f9a54b61126a14cdd8bb3f6",
+    "mit_bge_m3_embeddings.npz": "701c59b2294c8216eaadfd7414ccc18e89b2c3b0d10d9042ea09b251f7b7dd18",
+    "mit_incident_tracker.jsonl": "31d73abc7237e5c2ddd0b8f20f7bdffc612d2ad1c63fe6ed5c8e9332a1ba9776",
+    "noncircular_incident_heart_edges_k5.csv.gz": "2ba1fd00b7b85008998510e7583c3bee1c7323ee48b86ce52dde06cb34cceac9",
+    "source_records.csv.gz": "15ccbbeaf69d173fed464a98c34ff46ebe013ff9177e4c9b8f158a974c3d4b73",
+    "source_repository_commit.txt": "849c243126544a843ce9de4015a51131e90ea5b5e6a680736a55172d5c938f2e"
+  },
+  "checks": {
+    "cards_rows": 622,
+    "l4_unique": 622,
+    "l3_unique": 55,
+    "incident_unique": 11119,
+    "edge_rows": 55595,
+    "ranks": {
+      "1": 11119,
+      "2": 11119,
+      "3": 11119,
+      "4": 11119,
+      "5": 11119
+    },
+    "embodied_rule_n": 1344,
+    "embodied_strong_external_n": 253,
+    "bge_m3_model_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+    "source_records_rows": 13952
+  },
+  "seed": 20261021
+}

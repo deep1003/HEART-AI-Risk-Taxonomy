@@ -42,8 +42,83 @@
   "files": [
     {
       "path": "data/incidents/README.md",
-      "bytes": 2474,
-      "sha256": "9a3aaa1ee49207a071ae344755a4ecdc5c2532df7871808df7678f6aefd4a897"
+      "bytes": 3361,
+      "sha256": "3f39ff99aaeeb8734da4fa25e41d056600a2c38472e7c750b0a8d829558c3d28"
+    },
+    {
+      "path": "data/incidents/controls/01_home_domain_by_embodiment.csv",
+      "bytes": 488,
+      "sha256": "b64225b537f1154ef44277f2b0166dff61e941a9a863d5bbb3aaa57466b3660e"
+    },
+    {
+      "path": "data/incidents/controls/01_logistic_coefficients.csv",
+      "bytes": 1220,
+      "sha256": "e9492e243049dd7b4ca71113e5bf7c3c6bdca6c63689a5634dbab7e982080798"
+    },
+    {
+      "path": "data/incidents/controls/01_matched_control_summary.json",
+      "bytes": 442,
+      "sha256": "85b0d58a2d0df2650e1fc89b04726666dc462307d62e5a8d41c6543fb4125cb4"
+    },
+    {
+      "path": "data/incidents/controls/02_network_permutation_comparison.csv",
+      "bytes": 853,
+      "sha256": "c87a11871eb9f5a18de376b260518956004e82ae7f5f8f4b63005c74975ea8d9"
+    },
+    {
+      "path": "data/incidents/controls/03_robustness_summary.json",
+      "bytes": 4214,
+      "sha256": "c82c140f051f26baae066d6e843bf9c63f0f23c9d032ded4741033135c0ee5fe"
+    },
+    {
+      "path": "data/incidents/controls/04_agentic_summary.json",
+      "bytes": 699,
+      "sha256": "bcab9129c0c48fca9e55fece811f1681097a1e42767a317e08a2c865b7cedc70"
+    },
+    {
+      "path": "data/incidents/controls/05_actor_comparison.csv",
+      "bytes": 1072,
+      "sha256": "abf721bf7d11c5ac04e79438af93e145e62f1887e8d5298558f23fd985e475fb"
+    },
+    {
+      "path": "data/incidents/controls/06_regression_coefficients_comparison.csv",
+      "bytes": 1463,
+      "sha256": "fee2ec49269ca896fe35c835ca8640eecb9a2f1c0327da437f814f3c744bff64"
+    },
+    {
+      "path": "data/incidents/controls/06_top20_rank_intervals.csv",
+      "bytes": 6297,
+      "sha256": "8a6ca90e5cc98c406d7dc1153b3784c8adbcc09a7c6de765958951e3dbcaa61e"
+    },
+    {
+      "path": "data/incidents/controls/07_case_verification_table.csv",
+      "bytes": 6174,
+      "sha256": "8bd80e1282b807b0b5fa02ceef79660828a3a65b0344c4d44c052cbfeeb46811"
+    },
+    {
+      "path": "data/incidents/controls/README.md",
+      "bytes": 6217,
+      "sha256": "c6fac5b7ef479eb5cec78bcbf0e66c0329b3cb0f6ebf50519a05a579b003416f"
+    },
+    {
+      "path": "data/incidents/controls/input_manifest.json",
+      "bytes": 1420,
+      "sha256": "363c4a596d0bd942173f0b77a774013368ec50c36f138aa6470915e48a1159fc"
+    },
+    {
+      "path": "data/incidents/controls/manuscript_key_numbers.csv",
+      "bytes": 1170,
+      "sha256": "be342a659408291075aef576fe2b53cb26186562ba87fdc6fec5c10e364baeca"
+    },
+    {
+      "path": "data/incidents/controls/summary.json",
+      "bytes": 17167,
+      "sha256": "b88a66adc76763f621513a6566244e868311abb3d06f9da502481cf48157cfa7"
+    },
+    {
+      "path": "data/incidents/controls/validation_report.json",
+      "bytes": 7228,
+      "sha256": "bf5f10798b7dbac3fbbe1bea064f0f7d57b7e0900fb7bbcf2585835c17a3ce74"
     },
     {
       "path": "data/incidents/downloads/canonical_incidents_compact.json",
