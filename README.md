@@ -27,6 +27,8 @@ Each card contains a stable L4 identifier, bilingual name and definition, L1 to 
 - `data/HEART_L4_Risk_Cards.xlsx`: formatted workbook
 - `data/data_dictionary.csv`: field definitions
 - `data/manifest.json`: counts and checksums
+- `data/scale_law_diagnostics.json`: reproducible L4 degree and weighted-degree tail diagnostics
+- `data/scale_law_top_l4.csv`: all L4 cards ranked by semantic connectivity and cross-domain share
 - `source_snapshot/`: preserved inputs used to build this release
 
 ## Build
@@ -38,4 +40,13 @@ python3 scripts/build_heart_dataset.py
 The build performs one-to-one L4 ID matching between the hierarchy masters and the evidence ledger, rejects duplicate identifiers, verifies required fields, checks L3 consistency, and keeps Probability and Severity blank.
 # Semantic embedding release
 
-The current semantic network uses BGE-M3 dense embeddings, 1,024 dimensions, served locally by Ollama 0.32.1. Model digest and source checksums are recorded in `data/semantic_space.json`. Its 3,807 cosine-weighted links and coordinates are unchanged. Solid per-L4 colours vary semantically within 47 human-approved L3 categories and three L1 anchors; neighbouring L3 colours are blended without changing assignments. Weighted Louvain (NetworkX 3.5) yields 9 diagnostic communities retained as metadata, not displayed colour groups. Darker colours do not mean higher risk. See `data/semantic_space_methods.md` for parameters, reproducibility and the previous MiniLM comparison.
+The current semantic network uses BGE-M3 dense embeddings, 1,024 dimensions, served locally by Ollama 0.32.1. Model digest and source checksums are recorded in `data/semantic_space.json`. Its 3,807 cosine-weighted links and coordinates are unchanged. Solid per-L4 colours vary semantically within 55 human-approved L3 categories and three L1 anchors; neighbouring L3 colours are blended without changing assignments. Weighted Louvain (NetworkX 3.5) yields 9 diagnostic communities retained as metadata, not displayed colour groups. Darker colours do not mean higher risk. See `data/semantic_space_methods.md` for parameters, reproducibility and the previous MiniLM comparison.
+
+## L4 scale-law diagnostics
+
+[`scale-law-diagnostics.html`](scale-law-diagnostics.html) evaluates whether the L4 semantic graph has a statistically defensible power-law tail. The deterministic builder performs maximum-likelihood tail fitting, Kolmogorov-Smirnov cutoff selection, 1,000 semi-parametric bootstrap checks, and comparison with a lower-truncated lognormal alternative. It also publishes Top-5 and Top-10 L4 connectivity views with General, Agentic, and Physical AI neighbour composition. The analysis is descriptive of semantic-network structure and is not a probability, severity, impact, or regulatory-priority score.
+
+```bash
+python3 scripts/build_scale_law_diagnostics.py
+python3 scripts/test_scale_law_diagnostics.py
+```

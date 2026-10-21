@@ -314,7 +314,7 @@
     },
     {
       "id": "A_INT_OVERSIGHT_001",
-      "l3": "A_SYS_AUTH",
+      "l3": "A_INT_OVERSIGHT",
       "color": "#ca3a73",
       "semantic_coordinates": [
         0.38232582807540894,
@@ -356,7 +356,7 @@
     },
     {
       "id": "A_INT_OVERSIGHT_002",
-      "l3": "A_SYS_AUTH",
+      "l3": "A_INT_OVERSIGHT",
       "color": "#d164a4",
       "semantic_coordinates": [
         0.06390464305877686,
@@ -454,7 +454,7 @@
     },
     {
       "id": "A_SYS_RESOURCE_001",
-      "l3": "A_SYS_AUTH",
+      "l3": "A_SYS_RESOURCE",
       "color": "#d04d96",
       "semantic_coordinates": [
         0.06941612809896469,
@@ -482,7 +482,7 @@
     },
     {
       "id": "A_SYS_EXEC_002",
-      "l3": "A_SYS_AUTH",
+      "l3": "A_SYS_EXEC",
       "color": "#d25b82",
       "semantic_coordinates": [
         0.5981702208518982,
@@ -804,7 +804,7 @@
     },
     {
       "id": "A_SYS_EXEC_001",
-      "l3": "A_SYS_GOAL",
+      "l3": "A_SYS_EXEC",
       "color": "#e15ba1",
       "semantic_coordinates": [
         -0.36076828837394714,
@@ -874,7 +874,7 @@
     },
     {
       "id": "A_SYS_MEMSTATE_001",
-      "l3": "A_SYS_SELFCOR",
+      "l3": "A_SYS_MEMSTATE",
       "color": "#9f4c16",
       "semantic_coordinates": [
         -0.3697865903377533,
@@ -6880,7 +6880,7 @@
     },
     {
       "id": "P_INT_OBSTRUCT_001",
-      "l3": "G_SYS_PERF",
+      "l3": "P_INT_OBSTRUCT",
       "color": "#0b70c6",
       "semantic_coordinates": [
         -1.0,
@@ -7944,7 +7944,7 @@
     },
     {
       "id": "P_SYS_TASKPLAN_003",
-      "l3": "P_INT_SAFETY",
+      "l3": "P_SYS_TASKPLAN",
       "color": "#0c9898",
       "semantic_coordinates": [
         0.2803962826728821,
@@ -8112,7 +8112,7 @@
     },
     {
       "id": "A_INT_OVERSIGHT_003",
-      "l3": "P_SYS_CONTROL",
+      "l3": "A_INT_OVERSIGHT",
       "color": "#248e85",
       "semantic_coordinates": [
         0.4091200530529022,
@@ -8140,7 +8140,7 @@
     },
     {
       "id": "P_SYS_TIMESYNC_001",
-      "l3": "P_SYS_CONTROL",
+      "l3": "P_SYS_TIMESYNC",
       "color": "#1f7a72",
       "semantic_coordinates": [
         0.3833119869232178,
@@ -8196,7 +8196,7 @@
     },
     {
       "id": "P_SYS_TASKPLAN_001",
-      "l3": "P_SYS_CONTROL",
+      "l3": "P_SYS_TASKPLAN",
       "color": "#32b693",
       "semantic_coordinates": [
         -0.0707777813076973,
@@ -8364,7 +8364,7 @@
     },
     {
       "id": "P_SYS_TIMESYNC_002",
-      "l3": "P_SYS_CONTROL",
+      "l3": "P_SYS_TIMESYNC",
       "color": "#1a7f7d",
       "semantic_coordinates": [
         0.6096706986427307,
@@ -8406,7 +8406,7 @@
     },
     {
       "id": "P_SYS_TIMESYNC_003",
-      "l3": "P_SYS_CONTROL",
+      "l3": "P_SYS_TIMESYNC",
       "color": "#177e82",
       "semantic_coordinates": [
         0.6080858111381531,
@@ -8420,7 +8420,7 @@
     },
     {
       "id": "P_SYS_SAFESTATE_001",
-      "l3": "P_SYS_CONTROL",
+      "l3": "P_SYS_SAFESTATE",
       "color": "#198b77",
       "semantic_coordinates": [
         0.16616347432136536,
@@ -8448,7 +8448,7 @@
     },
     {
       "id": "P_SYS_SAFESTATE_002",
-      "l3": "P_SYS_CONTROL",
+      "l3": "P_SYS_SAFESTATE",
       "color": "#158d66",
       "semantic_coordinates": [
         -0.2879565954208374,
@@ -8518,7 +8518,7 @@
     },
     {
       "id": "P_SYS_TASKPLAN_002",
-      "l3": "P_SYS_CONTROL",
+      "l3": "P_SYS_TASKPLAN",
       "color": "#33a194",
       "semantic_coordinates": [
         0.11037108302116394,

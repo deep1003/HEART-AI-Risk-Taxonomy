@@ -5,9 +5,13 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import io
 import json
+import zipfile
 from collections import Counter
 from pathlib import Path
+
+import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -50,6 +54,20 @@ def write_json(path: Path, value) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def write_npz_deterministic(path: Path, arrays: dict) -> None:
+    """Write an NPZ with fixed metadata so identical arrays give identical bytes."""
+    temporary = path.with_suffix(".sync.npz")
+    with zipfile.ZipFile(temporary, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+        for name, array in arrays.items():
+            payload = io.BytesIO()
+            np.lib.format.write_array(payload, np.asanyarray(array), allow_pickle=False)
+            info = zipfile.ZipInfo(f"{name}.npy", date_time=(1980, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o600 << 16
+            archive.writestr(info, payload.getvalue(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
+    temporary.replace(path)
+
+
 def main() -> None:
     cards_path = DATA / "heart_l4_risk_cards.json"
     cards_raw = cards_path.read_bytes()
@@ -64,6 +82,14 @@ def main() -> None:
     }
     source_hash = hashlib.sha256(cards_raw).hexdigest()
 
+    embedding_path = DATA / "semantic_embeddings.npz"
+    with np.load(embedding_path, allow_pickle=False) as archive:
+        embedding_arrays = {name: archive[name] for name in archive.files}
+    embedding_arrays["ids"] = np.array([remap(str(item)) for item in embedding_arrays["ids"]])
+    assert set(embedding_arrays["ids"].tolist()) == set(by_id)
+    write_npz_deterministic(embedding_path, embedding_arrays)
+    embedding_hash = hashlib.sha256(embedding_path.read_bytes()).hexdigest()
+
     semantic_path = DATA / "semantic_space.json"
     semantic = remap(json.loads(semantic_path.read_text(encoding="utf-8")))
     point_by_id = {point["id"]: point for point in semantic["points"]}
@@ -71,6 +97,7 @@ def main() -> None:
     for point_id, point in point_by_id.items():
         point["cluster"] = by_id[point_id]["L3_ID"]
     semantic["source_sha256"] = source_hash
+    semantic["method"]["embedding_sha256"] = embedding_hash
     scenario_domains = {
         "ai-for-everyone": {"L1_G", "L1_A"},
         "legal-assistance": {"L1_G", "L1_A"},
@@ -140,23 +167,27 @@ def main() -> None:
     l4["source_sha256"] = source_hash
     l4["l3_palette_sha256"] = hashlib.sha256(l3_path.read_bytes()).hexdigest()
     assert {point["id"] for point in l4["points"]} == set(by_id)
+    for point in l4["points"]:
+        point["l3"] = by_id[point["id"]]["L3_ID"]
     write_json(l4_path, l4)
+
+    definition_paths = [
+        DATA / "keyword_definitions.json",
+        DATA / "keyword_review/keyword_mapping_review_a.json",
+        DATA / "keyword_review/keyword_mapping_review_b.json",
+    ]
+    for path in definition_paths:
+        write_json(path, remap(json.loads(path.read_text(encoding="utf-8"))))
 
     keyword_path = DATA / "keyword_semantics.json"
     keyword = remap(json.loads(keyword_path.read_text(encoding="utf-8")))
     keyword["source_sha256"] = source_hash
+    keyword["definitions_sha256"] = hashlib.sha256((DATA / "keyword_definitions.json").read_bytes()).hexdigest()
     for item in keyword["keywords"]:
         if item["id"] in domain_keywords:
             domain = domain_keywords[item["id"]]
             item["ids"] = [card["L4_ID"] for card in cards if card["L1_ID"] == domain]
     write_json(keyword_path, keyword)
-
-    for path in [
-        DATA / "keyword_definitions.json",
-        DATA / "keyword_review/keyword_mapping_review_a.json",
-        DATA / "keyword_review/keyword_mapping_review_b.json",
-    ]:
-        write_json(path, remap(json.loads(path.read_text(encoding="utf-8"))))
 
     mapping_path = DATA / "financial_ai_agent_heart_l4_mapping_final.csv"
     with mapping_path.open(encoding="utf-8-sig", newline="") as handle:

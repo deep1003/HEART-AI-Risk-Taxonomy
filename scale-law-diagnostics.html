@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reproducible scale-law diagnostics for the 622-card HEART L4 semantic network, including tail fitting, validation, top-risk connectivity and cross-domain structure.">
+  <title>L4 scale-law diagnostics | HEART</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles-v2.css">
+  <link rel="stylesheet" href="assets/institution.css">
+  <link rel="stylesheet" href="assets/explorer-layout.css?v=shared-shell-20261010">
+  <link rel="stylesheet" href="assets/scale-law-diagnostics.css?v=20261021">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="HEART home"><span class="heart-brand-copy"><span class="brand-kicker"><span class="brand-gold-dot" aria-hidden="true"></span>AI Risk Taxonomy for General, Agentic, and Physical AI</span><strong>HEA<span class="heart-brand-r">R</span>T</strong><small>Hybrid Evidence-based AI Risk Taxonomy</small></span></a>
+    <nav aria-label="Primary navigation"><a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+  </header>
+  <main>
+    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs"><a href="about.html">About HEART</a><a href="./#explore">AI risk taxonomy</a><a href="./#ai-risk-space">AI risk space</a><a href="scale-law-diagnostics.html" aria-current="page">L4 scale-law diagnostics</a><a href="incidents.html">AI risk incidents</a></div></nav>
+
+    <div class="diagnostics-main">
+      <section class="diagnostics-hero">
+        <div>
+          <p class="diagnostics-eyebrow">L4 semantic-network analysis</p>
+          <h1>Scale-law diagnostics and cross-domain risk structure</h1>
+          <p class="diagnostics-lede">This page tests whether semantic connectivity among HEART's 622 L4 risk cards has a statistically defensible power-law tail. It also identifies the most connected L4 cards and shows whether their semantic neighbours remain within one domain or cross General, Agentic, and Physical AI.</p>
+          <div class="diagnostics-actions"><a href="./#ai-risk-space">Return to AI risk space</a><a class="secondary" href="data/scale_law_top_l4.csv" download>Download L4 rankings</a><a class="secondary" href="data/scale_law_diagnostics.json" download>Download diagnostics JSON</a></div>
+        </div>
+        <div class="hero-verdict" id="hero-verdict" aria-live="polite"><span>Statistical conclusion</span><strong>Loading diagnostics…</strong></div>
+      </section>
+
+      <section class="diagnostics-summary" aria-label="Analysis summary">
+        <article><span>L4 nodes</span><strong id="node-count">622</strong><small>current validated inventory</small></article>
+        <article><span>Semantic links</span><strong id="edge-count">3,807</strong><small>undirected proximity edges</small></article>
+        <article><span>Cross-domain links</span><strong id="cross-share">14.3%</strong><small>connect different L1 domains</small></article>
+        <article><span>Power-law conclusion</span><strong id="fit-conclusion">Tail-compatible</strong><small>not evidence of a globally scale-free network</small></article>
+      </section>
+
+      <section class="diagnostics-section" aria-labelledby="distribution-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Empirical distributions</p><h2 id="distribution-title">Connectivity is concentrated, but a scale-free claim is not established</h2><p>Complementary cumulative distribution functions (CCDFs) are shown on logarithmic axes. The fitted line begins at the data-selected lower cutoff <em>x</em><sub>min</sub>. A straight-looking tail is only a visual cue. Statistical inference uses maximum likelihood, a Kolmogorov-Smirnov distance, semi-parametric bootstrap goodness-of-fit, and comparison with a truncated lognormal alternative.</p></div>
+        <div class="chart-grid">
+          <figure class="diagnostic-chart"><figcaption><strong>Degree CCDF</strong><span>Number of incident L4 semantic links</span></figcaption><svg id="degree-chart" viewBox="0 0 620 420" role="img" aria-label="Log-log complementary cumulative degree distribution"></svg><p id="degree-result" class="chart-result"></p></figure>
+          <figure class="diagnostic-chart"><figcaption><strong>Weighted-degree CCDF</strong><span>Sum of incident cosine-similarity weights</span></figcaption><svg id="strength-chart" viewBox="0 0 620 420" role="img" aria-label="Log-log complementary cumulative weighted-degree distribution"></svg><p id="strength-result" class="chart-result"></p></figure>
+        </div>
+        <div class="reading-note"><strong>Interpretation.</strong> A bootstrap <em>p</em> value below 0.10 would reject the fitted power-law tail. Here neither fitted tail is rejected, but only a restricted upper tail is involved and the lognormal alternative is not disfavoured. The defensible conclusion is tail compatibility, not a universal scale-free law.</div>
+      </section>
+
+      <section class="diagnostics-section cross-domain-section" aria-labelledby="ranking-title">
+        <div class="section-copy ranking-head"><div><p class="diagnostics-eyebrow">Highest-connectivity L4 cards</p><h2 id="ranking-title">Semantic hubs span the three operating domains</h2><p>The ranking uses degree first and weighted degree second. Bar segments show the L1 domains of each card's semantic neighbours, not reassignment of the card itself. Use the control to compare the top five and top ten L4 cards.</p></div><div class="rank-toggle" role="group" aria-label="Number of cards"><button type="button" data-limit="5" aria-pressed="false">Top 5</button><button type="button" data-limit="10" aria-pressed="true">Top 10</button></div></div>
+        <div class="domain-legend" aria-label="Domain legend"><span><i class="general"></i>General AI</span><span><i class="agentic"></i>Agentic AI</span><span><i class="physical"></i>Physical AI</span></div>
+        <figure class="ranking-chart"><svg id="ranking-chart" viewBox="0 0 1100 650" role="img" aria-label="Top L4 cards by semantic degree with neighbor-domain composition"></svg></figure>
+        <div class="ranking-table-wrap"><table class="ranking-table"><thead><tr><th>Rank</th><th>L4 risk card</th><th>Assigned domain</th><th>Degree</th><th>Weighted degree</th><th>Cross-domain share</th></tr></thead><tbody id="ranking-body"></tbody></table></div>
+        <div class="cross-domain-callout"><strong id="cross-domain-count">546 of 3,807 links cross L1 domains.</strong><p>This matters because many L4 risks are not confined to the modality or operating setting in which they were first observed. Goal misalignment can connect Agentic mechanisms with General governance and Physical execution; unsafe actuation can connect Physical control with General performance and Agentic authority. The taxonomy assignment remains singular for navigation, while the semantic network exposes cross-domain dependencies for assessment.</p></div>
+      </section>
+
+      <section class="diagnostics-section method-section" aria-labelledby="method-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Calculation and mathematical specification</p><h2 id="method-title">From L4 embeddings to a tested tail model</h2><p>The analysis reuses the published L4 semantic graph. No risk card, hierarchy assignment, or graph edge is changed.</p></div>
+        <ol class="method-steps">
+          <li><strong>Semantic graph.</strong><span>Each L4 card is represented by its English name and definition using the published 1,024-dimensional BGE-M3 embedding. For card <em>i</em>, cosine similarity is <span class="equation">s<sub>ij</sub> = (z<sub>i</sub> · z<sub>j</sub>)/(&#8214;z<sub>i</sub>&#8214;<sub>2</sub>&#8214;z<sub>j</sub>&#8214;<sub>2</sub>)</span>. The undirected graph is the union of each card's eight nearest neighbours subject to <span class="equation">s<sub>ij</sub> ≥ 0.60</span>.</span></li>
+          <li><strong>Connectivity measures.</strong><span>Degree is <span class="equation">k<sub>i</sub> = Σ<sub>j</sub> 1[(i,j) ∈ E]</span>. Weighted degree, or strength, is <span class="equation">w<sub>i</sub> = Σ<sub>j:(i,j)∈E</sub> s<sub>ij</sub></span>. These are semantic-network positions, not risk scores.</span></li>
+          <li><strong>Tail selection and estimation.</strong><span>For each candidate lower cutoff <em>x</em><sub>min</sub> with at least 50 observations, the exponent is estimated by maximum likelihood. The continuous estimator is <span class="equation">α̂ = 1 + n[Σ ln(x<sub>i</sub>/x<sub>min</sub>)]<sup>−1</sup></span>; the discrete degree fit uses the standard continuity-corrected estimator. The selected cutoff minimises the Kolmogorov-Smirnov distance between empirical and fitted cumulative distributions.</span></li>
+          <li><strong>Goodness-of-fit.</strong><span>One thousand deterministic semi-parametric bootstrap samples are generated. Values below <em>x</em><sub>min</sub> are resampled empirically and tail values are drawn from the fitted model. The bootstrap <em>p</em> value is the fraction of synthetic KS distances at least as large as the observed distance.</span></li>
+          <li><strong>Alternative model.</strong><span>The same tail observations are fitted to a lower-truncated lognormal model. The log-likelihood ratio is <span class="equation">R = Σ[ln p<sub>PL</sub>(x<sub>i</sub>) − ln p<sub>LN</sub>(x<sub>i</sub>)]</span>; its sign indicates the favoured model and a two-sided Vuong test assesses whether the difference is distinguishable.</span></li>
+        </ol>
+      </section>
+
+      <section class="diagnostics-section validation-section" aria-labelledby="validation-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Reproducibility and validation</p><h2 id="validation-title">Checks applied before publication</h2></div>
+        <div class="validation-grid">
+          <article><strong>Source integrity</strong><p>The current website contains 622 unique L4 IDs and 55 L3 categories. SHA-256 fingerprints bind the diagnostics to the exact risk-card JSON, semantic graph, and embedding archive recorded in the downloadable result.</p></article>
+          <article><strong>Graph invariants</strong><p>The independent check reconstructs all 3,807 undirected edges, verifies that Σ<em>k</em> = 2|E|, and reproduces each node's degree and weighted degree from the edge list.</p></article>
+          <article><strong>Deterministic rerun</strong><p>The analysis fixes the random seed, bootstrap count, and minimum tail size. Re-running the builder must reproduce the diagnostics JSON byte for byte.</p></article>
+          <article><strong>Claim discipline</strong><p>The page distinguishes a statistically non-rejected tail from proof that the whole network is scale free. This follows the severe-testing approach recommended in the network-science literature.</p></article>
+        </div>
+        <p class="validation-record"><span class="validation-pass">Validated</span> <span id="validation-text">Source hashes, graph invariants, ranking order and deterministic output verified on 21 October 2026.</span></p>
+      </section>
+
+      <section class="diagnostics-section meaning-section" aria-labelledby="meaning-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Meaning and limits</p><h2 id="meaning-title">What the result supports, and what it does not</h2></div>
+        <div class="meaning-grid">
+          <article><h3>Academic significance</h3><p>The result treats the taxonomy as a multiplex semantic structure rather than three isolated lists. A small set of highly connected L4 cards can act as conceptual bridges, but the evidence does not justify a strong scale-free-network claim. The finding supports research on cross-domain risk dependence and boundary categories while preserving the human-validated hierarchy.</p></article>
+          <article><h3>Practical significance</h3><p>High-connectivity cards are useful prompts for service-level risk discovery because they point reviewers toward adjacent mechanisms in other domains. A Physical AI assessment, for example, should not stop at physical safety when the same L4 neighbourhood also implicates General performance failure or Agentic authority.</p></article>
+          <article><h3>Limitations</h3><p>The network is constructed from text embeddings and a fixed nearest-neighbour rule. It is not an incident-propagation network, causal graph, or estimate of probability, severity, exposure, or regulatory priority. Wording changes, embedding models, thresholds, and the card inventory can change the fitted tail and rankings.</p></article>
+        </div>
+      </section>
+
+      <section class="diagnostics-section references-section" aria-labelledby="references-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Prior research</p><h2 id="references-title">Methods and interpretive standard</h2></div>
+        <ol>
+          <li>Clauset, A., Shalizi, C. R., &amp; Newman, M. E. J. (2009). <a href="https://doi.org/10.1137/070710111" target="_blank" rel="noopener noreferrer">Power-law distributions in empirical data</a>. <em>SIAM Review, 51</em>(4), 661–703. Basis for maximum-likelihood estimation, KS cutoff selection, bootstrap goodness-of-fit and likelihood-ratio comparison.</li>
+          <li>Broido, A. D., &amp; Clauset, A. (2019). <a href="https://doi.org/10.1038/s41467-019-08746-5" target="_blank" rel="noopener noreferrer">Scale-free networks are rare</a>. <em>Nature Communications, 10</em>, 1017. Basis for avoiding a scale-free claim when a power-law tail is limited or alternatives fit equally well.</li>
+          <li>Alstott, J., Bullmore, E., &amp; Plenz, D. (2014). <a href="https://doi.org/10.1371/journal.pone.0085777" target="_blank" rel="noopener noreferrer">powerlaw: A Python package for analysis of heavy-tailed distributions</a>. <em>PLOS ONE, 9</em>(1), e85777. Practical reference for reproducible heavy-tail comparison.</li>
+          <li>Newman, M. E. J. (2005). <a href="https://doi.org/10.1080/00107510500052444" target="_blank" rel="noopener noreferrer">Power laws, Pareto distributions and Zipf's law</a>. <em>Contemporary Physics, 46</em>(5), 323–351. Mathematical background on power-law distributions and their interpretation.</li>
+        </ol>
+        <p class="source-note"><strong>HEART data source.</strong> The analysis uses the published 622-card L4 inventory and its BGE-M3 semantic network. It does not modify taxonomy assignments.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer publisher-footer"><div class="publisher-identity"><a class="kt-logo-link" href="https://corp.kt.com/eng/" target="_blank" rel="noopener noreferrer" aria-label="KT Corporation official website"><img src="assets/kt-logo-light.svg" alt="KT" width="40" height="40"></a><div><p class="publisher-name">Frontier AI Lab, KT Corporation</p><a class="publisher-contact" href="mailto:responsible.ai@kt.com">responsible.ai@kt.com</a></div></div></footer>
+  <script src="assets/scale-law-diagnostics.js?v=20261021" defer></script>
+</body>
+</html>

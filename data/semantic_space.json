@@ -23,7 +23,7 @@
     "connected_components": 1,
     "modularity": 0.562975,
     "text_sha256": "bd39eee1aa0afb8d2c71d93e2afece1cffc3d1773f666a0c8b4d475720c1375a",
-    "embedding_sha256": "85a850c288af880527896e5092e836e18ade1ea035206483f87822f300e4b238",
+    "embedding_sha256": "e777f94c9c3a26896545e1df066adf75eb329eeea37c31b96d475d8ff083520d",
     "limitations": "Exploratory semantic proximity only, not causal propagation or validated deployment applicability. Graph communities are not reassigned L3 categories. No EM is run.",
     "keyword_mapping": "Source-grounded semantic retrieval, not validated classification accuracy. Cosine thresholds and documented expert scope corrections are exploratory. L1 domain filters use existing human-approved taxonomy assignments. No EM or remapping.",
     "keyword_query_sha256": "8ac34c0b8a9edc9b05a4fc46fa2a9d141cb601a55b79be8522671536909ad9f5",
