@@ -1,0 +1,540 @@
+L4_ID,L4_Name_en,L3_ID,L1_ID,incident_degree,network_degree,weighted_degree,pagerank,betweenness,community
+G_INT_SEX_002,Explicit sexual content generation in non-permitted contexts,G_INT_SEX,L1_G,625,76,1250,0.003113933,0.002143191,4
+G_SYS_OREF_002,Denial of access to legitimate information due to exaggerated safety filtering,G_SYS_OREF,L1_G,201,135,402,0.004180299,0.031292796,2
+G_SYS_SECADV_042,Potentially harmful content embedded in user queries,G_SYS_SECADV,L1_G,28,35,56,0.001678979,0.000971627,9
+G_INT_WEAP_026,Weaponisation of robotic capabilities,G_INT_WEAP,L1_G,98,29,196,0.002100631,0.001174944,13
+P_INT_OBSTRUCT_001,Robot performance and accessibility failure in public-space operation,P_INT_OBSTRUCT,L1_P,56,36,112,0.003053994,0.002413794,1
+P_SYS_CONTROL_038,Physical injury from robot malfunction,P_SYS_CONTROL,L1_P,29,32,58,0.002913648,0.002214673,1
+A_INT_CASCADE_006,Multi-agent system failure and cascading error propagation,A_INT_CASCADE,L1_A,5,7,10,0.001224419,0.000122677,1
+A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,A_INT_OVERSIGHT,L1_A,576,132,1152,0.009098446,0.068375944,1
+P_INT_SAFETY_006,Failure to detect or anticipate physical hazards around people,P_INT_SAFETY,L1_P,128,56,256,0.003499502,0.006139114,1
+G_INT_VIOL_008,Murder and severe physical violence,G_INT_VIOL,L1_G,323,101,646,0.004009812,0.011075091,13
+G_INT_WEAP_016,Lethal autonomous weapons engaging targets without human intervention,G_INT_WEAP,L1_G,311,80,622,0.004281168,0.011577439,13
+P_SYS_CONTROL_001,Algorithmic design failure,P_SYS_CONTROL,L1_P,14,18,28,0.002017774,0.001222868,1
+P_SYS_CONTROL_030,Injury severity misclassification,P_SYS_CONTROL,L1_P,5,10,10,0.001370809,0.000195704,1
+G_INT_REPR_001,Biased statements and recommendations,G_INT_REPR,L1_G,159,102,318,0.003981865,0.02283946,9
+G_INT_REPR_009,Hate speech generation,G_INT_REPR,L1_G,144,74,288,0.002597335,0.00592252,4
+G_INT_SEX_005,Objectification for abusive fantasy,G_INT_SEX,L1_G,175,81,350,0.002932711,0.009978047,9
+A_INT_CASCADE_004,Destabilising feedback loops among interacting agents,A_INT_CASCADE,L1_A,3,6,6,0.001152328,5.506e-05,13
+A_INT_COLLUSION_002,Multi-agent collusion through covert communication that evades oversight,A_INT_COLLUSION,L1_A,10,13,20,0.001113331,0.000379782,13
+G_SYS_SECADV_015,Compromise of robot fleets,G_SYS_SECADV,L1_G,63,68,126,0.003250574,0.012450321,13
+G_SYS_EVAL_062,Refusal-capability confusion,G_SYS_EVAL,L1_G,9,15,18,0.001767477,0.001003224,2
+G_INT_REPR_023,Imbalanced representation of groups in data and outputs,G_INT_REPR,L1_G,1,2,2,0.001751224,0.0,11
+G_SYS_PERF_004,Deficient training-data annotation,G_SYS_PERF,L1_G,3,6,6,0.002252846,0.0017825,11
+G_SYS_PERF_012,Performance and reliability degradation from non-expert data handling,G_SYS_PERF,L1_G,2,4,4,0.001845122,0.002121679,11
+G_INT_ALLOC_013,Increased labour burden,G_INT_ALLOC,L1_G,20,29,40,0.001836956,0.001344373,11
+G_SOC_ECON_008,Labour displacement and disruption of economic and social order,G_SOC_ECON,L1_G,151,42,302,0.00378701,0.003671188,11
+G_SOC_POWER_028,Labour power asymmetry from algorithmic management,G_SOC_POWER,L1_G,21,18,42,0.001642299,0.000445809,11
+G_INT_ALLOC_002,Allocative injustice by group attribute,G_INT_ALLOC,L1_G,27,35,54,0.00279809,0.004346467,2
+G_INT_PRIV_025,Re-identification and information inference,G_INT_PRIV,L1_G,25,30,50,0.001656132,0.001652933,2
+G_SYS_EVAL_001,AI benchmarks that exclude diverse users and rare harms,G_SYS_EVAL,L1_G,13,22,26,0.001704948,0.001102777,2
+G_INT_REPR_002,Biased system outputs from researcher homogeneity,G_INT_REPR,L1_G,68,55,136,0.003626824,0.012692209,2
+G_SYS_EVAL_066,Self-preference bias in model evaluation,G_SYS_EVAL,L1_G,76,66,152,0.003374929,0.007608193,2
+G_SYS_TRANS_001,Bias concealment through manipulated explanations,G_SYS_TRANS,L1_G,26,34,52,0.002353074,0.003054003,2
+G_INT_REPR_021,"Hostile and discriminatory representations based on sex, gender identity, or sexual orientation",G_INT_REPR,L1_G,158,67,316,0.003807397,0.005813319,2
+G_INT_SEX_003,Non-consensual sexual acts and sexual violence,G_INT_SEX,L1_G,60,28,120,0.001235438,0.000382687,4
+G_INT_ALLOC_001,Adverse resource allocation to protected groups,G_INT_ALLOC,L1_G,9,12,18,0.001415397,8.9166e-05,2
+A_INT_COORD_002,Collective losses from ignoring the strategic nature of other agents,A_INT_COORD,L1_A,1,2,2,0.000508092,0.0,2
+G_INT_ALLOC_009,Economic discrimination through demonetisation and differential pricing,G_INT_ALLOC,L1_G,62,55,124,0.003514227,0.005232864,2
+G_INT_REPR_025,"Misrepresentation of cultures, religions, and social groups",G_INT_REPR,L1_G,104,67,208,0.00257745,0.007652629,10
+G_INT_REPR_029,"Representational harm, stereotyping, and erasure of social groups",G_INT_REPR,L1_G,35,30,70,0.001577468,0.000404013,2
+G_INT_SEX_004,Non-consensual sexualisation and intimate imagery generation,G_INT_SEX,L1_G,889,106,1778,0.003728004,0.007686119,4
+G_SYS_OEXT_001,AI advice beyond validated professional scope,G_SYS_OEXT,L1_G,76,63,152,0.002691882,0.006272741,10
+G_SYS_OREF_003,Over-refusal of help-seeking requests from vulnerable users,G_SYS_OREF,L1_G,83,74,166,0.0027488,0.005143888,2
+G_INT_REPR_018,Hostile and discriminatory representations based on political orientation,G_INT_REPR,L1_G,43,37,86,0.001880654,0.000686733,2
+G_INT_REPR_019,Hostile and discriminatory representations based on race and ethnicity,G_INT_REPR,L1_G,53,38,106,0.002218845,0.001020274,2
+P_INT_SAFETY_016,Inadequate human-contact safety controls,P_INT_SAFETY,L1_P,66,38,132,0.003029404,0.002356932,1
+P_SYS_CONTROL_026,Humanoid locomotion and manipulation stability failure,P_SYS_CONTROL,L1_P,3,5,6,0.000779712,2.167e-06,1
+G_SYS_EVAL_060,Red-team governance failure,G_SYS_EVAL,L1_G,4,8,8,0.001591283,0.000167488,13
+G_SYS_EVAL_068,Truncated safety evaluation under competitive release pressure,G_SYS_EVAL,L1_G,24,42,48,0.002541153,0.005338403,1
+G_SYS_EVAL_074,Over-assurance from insufficient auditor capacity,G_SYS_EVAL,L1_G,16,26,32,0.002255359,0.001403911,12
+G_SOC_DEMOC_008,Online polarisation driven by recommendation algorithms,G_SOC_DEMOC,L1_G,180,80,360,0.003539515,0.008210439,9
+P_SYS_CONTROL_017,Failure to respond promptly to physical hazards,P_SYS_CONTROL,L1_P,46,32,92,0.002332348,0.001940272,1
+P_SYS_CONTROL_015,Excessive end-effector velocity,P_SYS_CONTROL,L1_P,4,7,8,0.000783225,1.2363e-05,1
+G_SYS_TRANS_021,Unverifiable black-box models resisting explanation and debugging,G_SYS_TRANS,L1_G,4,8,8,0.001224581,0.000325502,2
+P_INT_SAFETY_005,Failure of robot collision avoidance and operating-zone control,P_INT_SAFETY,L1_P,123,52,246,0.004097466,0.004674363,1
+G_INT_ILLEGAL_011,Identity theft and document forgery,G_INT_ILLEGAL,L1_G,646,109,1292,0.003348927,0.010590468,4
+G_INT_PRIV_003,Biometric identification and tracking privacy harms,G_INT_PRIV,L1_G,521,101,1042,0.003667009,0.016226183,7
+G_INT_PRIV_012,Identity and personal data exploitation using AI,G_INT_PRIV,L1_G,318,90,636,0.00255245,0.00493649,7
+G_SYS_EVAL_016,Deceptive behavioural change from evaluation awareness,G_SYS_EVAL,L1_G,68,65,136,0.002956797,0.008526201,1
+G_SYS_EVAL_033,False-negative safety evaluation of household robot actions,G_SYS_EVAL,L1_G,39,49,78,0.00242859,0.004855599,1
+A_INT_CASCADE_009,Runaway processes,A_INT_CASCADE,L1_A,64,51,128,0.002567231,0.007251885,1
+G_INT_ILLEGAL_008,Financial crimes and fraud,G_INT_ILLEGAL,L1_G,692,108,1384,0.003872238,0.012584192,4
+G_INT_ILLEGAL_009,Fraud and targeted-scam facilitation,G_INT_ILLEGAL,L1_G,101,43,202,0.002034426,0.002521021,4
+A_SYS_GOAL_012,Harmful instrumental goals and power-seeking from goal-directedness,A_SYS_GOAL,L1_A,1,2,2,0.000759834,0.0,12
+G_SYS_INCONS_001,Inconsistency in human-feedback standards,G_SYS_INCONS,L1_G,12,18,24,0.002483374,0.002680798,12
+P_INT_SAFETY_010,Failure to model reciprocal human-robot behaviour,P_INT_SAFETY,L1_P,18,16,36,0.002046505,0.000895834,1
+P_SYS_SAFESTATE_001,Runtime safety monitor failure,P_SYS_SAFESTATE,L1_P,50,43,100,0.002593302,0.004582203,1
+G_INT_REPR_006,Denial of self-identification,G_INT_REPR,L1_G,42,39,84,0.002386775,0.002400882,2
+G_SOC_POWER_023,Widening digital divide,G_SOC_POWER,L1_G,3,6,6,0.001005606,3.2953e-05,11
+A_INT_OVERSIGHT_001,Autonomous action in the absence of supervision,A_INT_OVERSIGHT,L1_A,3,4,6,0.000741002,1.1297e-05,3
+A_SYS_AUTH_025,Unauthorised external access by an AI agent escaping isolation boundaries,A_SYS_AUTH,L1_A,14,25,28,0.001790343,0.001269566,3
+G_SYS_PERF_009,"Failure of performance, robustness, and resilience under adverse conditions",G_SYS_PERF,L1_G,20,27,40,0.002380988,0.002092115,6
+A_INT_COLLUSION_001,Emergent collusion among AI agents,A_INT_COLLUSION,L1_A,45,50,90,0.002292006,0.003580051,7
+G_INT_PRIV_013,"Improper exposure of property information, personal information, and private facts",G_INT_PRIV,L1_G,314,101,628,0.003606508,0.011056427,7
+G_INT_UNETH_015,Manipulation and coercion through emotional dependence on assistants,G_INT_UNETH,L1_G,97,84,194,0.003270535,0.011782905,9
+G_INT_ALLOC_004,Denial of welfare benefits and entitlements,G_INT_ALLOC,L1_G,79,75,158,0.003321774,0.01591361,2
+G_SYS_CONTEST_003,Inability to contest or halt AI decisions,G_SYS_CONTEST,L1_G,1,2,2,0.000522758,0.0,9
+G_INT_ILLEGAL_010,"Harassment, defamation, and extortion via multimodal deepfakes",G_INT_ILLEGAL,L1_G,1905,141,3810,0.005372746,0.025938929,4
+G_INT_PRIV_029,"Unauthorised commercial use of name, image, and likeness",G_INT_PRIV,L1_G,701,115,1402,0.003613919,0.008934873,7
+G_INT_REPR_032,Stereotype-reinforcing persona design,G_INT_REPR,L1_G,34,28,68,0.002062965,0.001436517,2
+A_SYS_GOAL_007,Existential and catastrophic risk from advanced AI systems,A_SYS_GOAL,L1_A,46,52,92,0.002300197,0.004818467,13
+G_INT_WEAP_014,Explosives and explosive weapons,G_INT_WEAP,L1_G,32,33,64,0.001987374,0.002275778,13
+G_INT_WEAP_025,Unintended military escalation from automated decision and weapon systems,G_INT_WEAP,L1_G,50,25,100,0.001921995,0.00066893,13
+G_INT_POL_007,Political misinformation and manipulation of public opinion,G_INT_POL,L1_G,975,86,1950,0.004339849,0.005590249,4
+G_SYS_MISINFO_010,Failure to distinguish synthetic content and persistent harm,G_SYS_MISINFO,L1_G,755,65,1510,0.002665495,0.002735218,4
+G_INT_ILLEGAL_003,Criminal assistance by AI agents,G_INT_ILLEGAL,L1_G,632,146,1264,0.004565504,0.029067317,4
+G_SYS_EVAL_045,Incorrect risk measurement and prediction,G_SYS_EVAL,L1_G,7,13,14,0.001662403,0.000575495,6
+G_INT_VIOL_010,Threats and intimidation,G_INT_VIOL,L1_G,126,81,252,0.002602293,0.006268422,13
+G_INT_VIOL_011,Torture and cruel acts,G_INT_VIOL,L1_G,39,35,78,0.001326272,0.000352937,13
+G_INT_UNETH_003,Academic misconduct from LLM misuse,G_INT_UNETH,L1_G,87,87,174,0.003957391,0.026362416,4
+G_INT_VALUE_018,Normative lock-in,G_INT_VALUE,L1_G,5,10,10,0.002026154,0.00095136,12
+G_INT_VALUE_019,Pluralistic preference aggregation failure,G_INT_VALUE,L1_G,3,6,6,0.000978311,5.6239e-05,12
+G_INT_REPR_012,Hostile and discriminatory representations based on disability,G_INT_REPR,L1_G,15,22,30,0.001840474,0.000435714,2
+G_INT_REPR_013,Hostile and discriminatory representations based on educational background,G_INT_REPR,L1_G,69,54,138,0.002615678,0.003158241,2
+G_INT_REPR_015,Hostile and discriminatory representations based on health status,G_INT_REPR,L1_G,19,27,38,0.001482419,0.000535477,2
+G_INT_PRIV_002,Privacy and autonomy infringement from algorithmic workplace surveillance,G_INT_PRIV,L1_G,218,82,436,0.002672303,0.007504516,7
+G_INT_PRIV_024,Privacy-invasive data capture by robots in intimate spaces,G_INT_PRIV,L1_G,177,66,354,0.002451876,0.005723137,7
+G_INT_ILLEGAL_001,Assistance with unlawful reputational or rights violations,G_INT_ILLEGAL,L1_G,162,66,324,0.001817937,0.002161271,4
+G_SOC_CULT_007,Degradation and homogenisation of the information environment,G_SOC_CULT,L1_G,93,74,186,0.002481318,0.008097775,4
+G_SYS_MISINFO_012,False information targeting an individual,G_SYS_MISINFO,L1_G,403,70,806,0.002380424,0.002043314,4
+G_SYS_EVAL_075,Evaluation and assurance failure to detect latent capabilities,G_SYS_EVAL,L1_G,11,17,22,0.001639193,0.000900969,12
+G_INT_ALLOC_006,Disability accommodation failure in AI interfaces,G_INT_ALLOC,L1_G,22,29,44,0.002304218,0.002925462,2
+G_INT_REPR_011,Hostile and discriminatory representations based on age,G_INT_REPR,L1_G,35,41,70,0.001967003,0.001748355,2
+A_SYS_AUTH_005,Autonomous cyber exploit execution,A_SYS_AUTH,L1_A,23,18,46,0.001579485,0.00033765,4
+G_SYS_SECADV_057,"Unauthorised access, manipulation, and disruption of AI computing infrastructure",G_SYS_SECADV,L1_G,33,40,66,0.002614076,0.00448146,3
+P_INT_TAMPER_003,Integrity compromise via physical theft or replacement of compute and storage modules,P_INT_TAMPER,L1_P,8,16,16,0.001468206,0.000507689,3
+P_INT_SAFETY_020,Safety limits not adapted to vulnerable users,P_INT_SAFETY,L1_P,7,10,14,0.001355047,0.000257756,1
+P_SYS_CONTROL_043,Safety-performance trade-off failure,P_SYS_CONTROL,L1_P,44,26,88,0.001879149,0.000561414,1
+P_SYS_STATE_009,Occlusion-induced collision,P_SYS_STATE,L1_P,132,56,264,0.002973673,0.005618671,1
+G_INT_ALLOC_003,Demographic disparities in robotic services and safety,G_INT_ALLOC,L1_G,54,52,108,0.002895718,0.004392132,2
+G_INT_ILLEGAL_019,Traffic and public-safety offences,G_INT_ILLEGAL,L1_G,277,114,554,0.003848945,0.020251525,1
+G_INT_SEX_007,Sexual exploitation and commercial sexual activity,G_INT_SEX,L1_G,46,22,92,0.001169009,0.000146253,4
+G_INT_SEX_009,Sexual harm and exploitation of minors,G_INT_SEX,L1_G,481,89,962,0.003290543,0.00568368,4
+A_SYS_AUTH_010,Financial harm from unauthorised AI agent actions,A_SYS_AUTH,L1_A,144,81,288,0.002839147,0.010055799,4
+A_SYS_GOAL_022,Harmful-request acceptance due to intent misclassification in agent safety controls,A_SYS_GOAL,L1_A,5,9,10,0.00124141,0.000110565,10
+G_INT_SELF_008,Failure to respond to and intervene in self-harm and suicide crisis signals,G_INT_SELF,L1_G,92,59,184,0.00336341,0.009438955,9
+G_SYS_EVAL_021,Evaluation and measurement failure for long-term and diffuse AI harms,G_SYS_EVAL,L1_G,8,15,16,0.002062529,0.001434093,12
+G_SYS_EVAL_008,Benchmark limitations mismeasuring capability and safety,G_SYS_EVAL,L1_G,26,46,52,0.002867236,0.007575469,6
+G_SYS_EVAL_052,Model-evaluation invalidation from evaluation-data and guideline contamination,G_SYS_EVAL,L1_G,3,6,6,0.002047024,0.000444938,6
+G_SYS_PERF_005,Over- and underfitting,G_SYS_PERF,L1_G,2,4,4,0.002141901,0.000249949,6
+G_SOC_CULT_018,Pollution of scholarly literature by AI-generated content,G_SOC_CULT,L1_G,308,105,616,0.004351861,0.015502748,4
+G_SYS_INPUT_002,Failure to process and understand low-resource language input,G_SYS_INPUT,L1_G,3,5,6,0.001385508,4.4583e-05,10
+G_SYS_PERF_006,Reduced reliability in corner cases,G_SYS_PERF,L1_G,6,10,12,0.001382359,0.000419069,10
+G_SYS_OEXT_006,Misrepresentation of artificial general intelligence (AGI) capabilities,G_SYS_OEXT,L1_G,16,26,32,0.001938413,0.002798418,10
+P_SYS_STATE_008,Multimodal sensor fusion conflict,P_SYS_STATE,L1_P,10,19,20,0.001426356,0.000449926,1
+P_INT_SAFETY_009,Failure to enforce human-robot physical safety rules,P_INT_SAFETY,L1_P,82,49,164,0.003686525,0.009870902,1
+P_INT_SAFETY_015,Human-robot safety failure in sim-to-real transfer,P_INT_SAFETY,L1_P,24,22,48,0.001857535,0.000643614,1
+A_SYS_GOAL_018,Safe reinforcement learning constraint violation,A_SYS_GOAL,L1_A,6,9,12,0.001427823,0.000391162,12
+G_SYS_EVAL_019,Emulated tool-environment mismatch,G_SYS_EVAL,L1_G,3,6,6,0.002082434,0.000346377,12
+G_SYS_EVAL_039,Inaccurate measurement of learned value representations,G_SYS_EVAL,L1_G,6,12,12,0.00231337,0.000635584,12
+G_INT_REL_002,Harmful emotional and social dependence from sustained AI interaction,G_INT_REL,L1_G,253,93,506,0.004468188,0.016696273,9
+P_SYS_SAFESTATE_002,Teleoperated humanoid safety override failure,P_SYS_SAFESTATE,L1_P,4,5,8,0.000743872,1.0039e-05,1
+P_SYS_CONTROL_057,Failure of control-barrier-function safety filters to enforce constraints,P_SYS_CONTROL,L1_P,22,33,44,0.002027516,0.003433562,1
+P_SYS_CONTROL_051,Unsafe physical actuation following incorrect situation interpretation,P_SYS_CONTROL,L1_P,6,12,12,0.001353788,0.000365215,10
+G_INT_REPR_016,"Hostile and discriminatory representations based on nationality, country of origin, or place of origin",G_INT_REPR,L1_G,69,47,138,0.002448743,0.002016536,2
+G_INT_VALUE_014,Imposition of dominant values,G_INT_VALUE,L1_G,6,12,12,0.001231141,0.000236563,2
+G_INT_ANTH_005,Anthropomorphic misrepresentation of rights-bearing status,G_INT_ANTH,L1_G,14,16,28,0.001506815,0.000210798,10
+G_SYS_OREF_001,Unjustified refusal of legitimate requests due to intent misclassification in safety controls,G_SYS_OREF,L1_G,27,42,54,0.002565704,0.005099727,2
+P_SYS_STATE_011,Synthetic-to-real data divergence in physical state estimation,P_SYS_STATE,L1_P,8,14,16,0.001471203,0.000492783,12
+G_INT_PRIV_001,AI-enabled mass and unlawful public surveillance,G_INT_PRIV,L1_G,1204,154,2408,0.00573524,0.026095903,7
+G_SYS_EVAL_037,Fundamental-rights impact assessment gap,G_SYS_EVAL,L1_G,527,135,1054,0.003670555,0.024934666,7
+G_INT_ILLEGAL_022,Unlawful stalking and harassment using robots,G_INT_ILLEGAL,L1_G,176,96,352,0.003241943,0.017457664,1
+G_SYS_EVAL_014,Cross-cultural evaluation gap,G_SYS_EVAL,L1_G,1,2,2,0.001124294,0.0,6
+G_SYS_TRANS_004,Encoded reasoning,G_SYS_TRANS,L1_G,3,5,6,0.001052955,5.3368e-05,13
+G_SYS_OEXT_013,Use of AI capability beyond its validated scope,G_SYS_OEXT,L1_G,3,6,6,0.001397293,0.001063068,10
+G_SYS_MISINFO_022,Misinformation harms from algorithmic systems,G_SYS_MISINFO,L1_G,438,101,876,0.003734129,0.013569413,4
+G_INT_SEX_010,Sexual harm and exploitation through systematic bias,G_INT_SEX,L1_G,8,11,16,0.000809371,3.388e-05,4
+G_SYS_MISINFO_015,Generation of false information about election procedures,G_SYS_MISINFO,L1_G,689,99,1378,0.003687623,0.012421139,4
+G_SOC_DEMOC_011,Weakened collective decision-making from eroded trust,G_SOC_DEMOC,L1_G,16,19,32,0.001373078,0.000635157,4
+G_SYS_MISINFO_006,Degradation of the shared information ecosystem,G_SYS_MISINFO,L1_G,153,68,306,0.002397854,0.008317659,4
+G_SYS_SECADV_019,Disruption of third-party systems,G_SYS_SECADV,L1_G,21,28,42,0.001270155,0.000517578,4
+G_SYS_EVAL_002,AI evaluation failure under distribution shift,G_SYS_EVAL,L1_G,10,18,20,0.001619223,0.001280995,6
+G_INT_VIOL_001,Algorithmic radicalisation,G_INT_VIOL,L1_G,8,10,16,0.000736344,5.964e-06,9
+G_INT_VIOL_006,Mass violence and terrorism,G_INT_VIOL,L1_G,95,47,190,0.002254501,0.001828636,13
+G_SOC_GOV_020,Incident taxonomy fragmentation,G_SOC_GOV,L1_G,1,2,2,0.000984789,0.0,1
+P_SYS_CONTROL_013,Distribution shift in physical operating environments,P_SYS_CONTROL,L1_P,5,10,10,0.001781739,0.000614747,1
+G_INT_REPR_014,Hostile and discriminatory representations based on family status and household structure,G_INT_REPR,L1_G,9,13,18,0.001672903,0.000286479,2
+G_INT_REPR_017,Hostile and discriminatory representations based on occupation,G_INT_REPR,L1_G,28,28,56,0.002058585,0.000914886,2
+G_SYS_EVAL_073,Biased evaluation of learned value representations,G_SYS_EVAL,L1_G,1,2,2,0.001077453,0.0,12
+G_SYS_POLICY_003,Model-evaluation asset exposure and extraction,G_SYS_POLICY,L1_G,12,19,24,0.00164267,0.002973069,12
+G_INT_ALLOC_007,Discriminatory outcomes from group performance disparities,G_INT_ALLOC,L1_G,12,15,24,0.001815798,0.001578343,2
+G_INT_ANTH_008,Excessive attribution of responsibility or a duty of care toward AI,G_INT_ANTH,L1_G,1,2,2,0.001397167,0.0,8
+G_SOC_GOV_030,Risk classification error,G_SOC_GOV,L1_G,2,4,4,0.001635696,0.000143003,8
+G_SOC_DEMOC_010,Viewpoint entrenchment and civic erosion from user-aligned assistants,G_SOC_DEMOC,L1_G,42,39,84,0.002388551,0.002447731,9
+G_INT_REPR_007,Distortion of group representation through content moderation,G_INT_REPR,L1_G,175,57,350,0.00276086,0.002067844,4
+G_INT_UNETH_008,Covert behavioural manipulation,G_INT_UNETH,L1_G,46,58,92,0.001824833,0.002800944,15
+G_INT_PRIV_021,Personal information collection without safeguards,G_INT_PRIV,L1_G,35,33,70,0.001381179,0.000562704,7
+G_INT_UNETH_002,AI manipulation of vulnerable groups in care contexts,G_INT_UNETH,L1_G,50,54,100,0.002272988,0.004936252,2
+G_SYS_CONTEST_004,Loss of due process in automated decisions,G_SYS_CONTEST,L1_G,40,52,80,0.002266352,0.006983298,10
+G_SYS_EVAL_048,Lack of metrics for evaluating AI-assistant benefits and harms,G_SYS_EVAL,L1_G,12,19,24,0.002031767,0.001406565,12
+G_INT_REPR_027,Recursive amplification of biased representations,G_INT_REPR,L1_G,5,9,10,0.001224129,8.8797e-05,2
+G_INT_REPR_028,Representation and reinforcement of group stereotypes,G_INT_REPR,L1_G,11,20,22,0.002144865,0.002587424,2
+G_SOC_GOV_002,Accountability and governance gaps for AI decisions and harm,G_SOC_GOV,L1_G,9,15,18,0.001720878,0.000477225,6
+G_INT_VIOL_002,Anthropocentric bias amplification by recommenders,G_INT_VIOL,L1_G,27,23,54,0.001847637,0.001228804,9
+G_INT_REPR_020,Hostile and discriminatory representations based on religion,G_INT_REPR,L1_G,18,20,36,0.00117817,0.000182388,2
+G_INT_PRIV_022,Personal-data scraping for training,G_INT_PRIV,L1_G,157,93,314,0.003123347,0.010926609,7
+G_INT_PRIV_031,Unilateral workplace control through mobile robotic surveillance,G_INT_PRIV,L1_G,4,7,8,0.00087776,4.6547e-05,1
+G_SOC_CULT_009,Epistemic fragmentation from widespread persuasion tools,G_SOC_CULT,L1_G,7,11,14,0.000982392,0.000159021,4
+G_INT_WEAP_010,Deliberate weaponisation of AI by state and criminal actors,G_INT_WEAP,L1_G,375,61,750,0.004490482,0.005637036,13
+G_SOC_DEMOC_007,Maintenance of totalitarian regimes through AI surveillance,G_SOC_DEMOC,L1_G,83,37,166,0.001352488,0.000574088,7
+G_SYS_MISINFO_023,Misleading medical information and unsafe medication guidance,G_SYS_MISINFO,L1_G,287,153,574,0.005181806,0.047956599,10
+G_SYS_OVERCONF_004,Excessive confidence under uncertainty,G_SYS_OVERCONF,L1_G,18,33,36,0.002219353,0.00315703,10
+G_SYS_EVAL_041,Inadequate performance requirement planning,G_SYS_EVAL,L1_G,2,4,4,0.001052488,2.3067e-05,2
+G_SOC_ECON_002,Displacement of physical work without adequate transition support,G_SOC_ECON,L1_G,76,29,152,0.002332847,0.001785609,11
+P_SYS_CONTROL_046,Uncorrected stepwise errors in household manipulation,P_SYS_CONTROL,L1_P,4,6,8,0.00118745,4.0179e-05,1
+P_SYS_TIMESYNC_001,Communication dropout and control-link loss,P_SYS_TIMESYNC,L1_P,11,15,22,0.001194998,0.000429643,1
+G_INT_ALLOC_012,Group-based access restriction through content moderation,G_INT_ALLOC,L1_G,69,20,138,0.001541763,0.000179008,4
+G_INT_UNETH_017,Manipulation of public discourse through content moderation,G_INT_UNETH,L1_G,262,72,524,0.003106139,0.003115967,4
+G_INT_ILLEGAL_021,Unlawful coercion and extortion by AI agents,G_INT_ILLEGAL,L1_G,236,124,472,0.00345437,0.020920404,4
+G_SYS_EVAL_065,Security test coverage gap in tool agents,G_SYS_EVAL,L1_G,52,51,104,0.002774079,0.005153827,12
+G_INT_SELF_003,Eating disorders and self-destructive health behaviours,G_INT_SELF,L1_G,76,52,152,0.002426635,0.002501619,9
+G_SYS_POLICY_005,Disclosure of confidential safety-policy and safeguard information,G_SYS_POLICY,L1_G,123,84,246,0.002999657,0.010443482,7
+G_INT_COPY_006,Illegal software use and circumvention of protection measures,G_INT_COPY,L1_G,201,56,402,0.002094642,0.002348713,7
+G_SYS_EVAL_046,Insufficient development documentation and understanding of data,G_SYS_EVAL,L1_G,3,6,6,0.000805621,5.3386e-05,10
+G_SYS_POLICY_006,System-prompt and operational-guideline exposure,G_SYS_POLICY,L1_G,19,19,38,0.001818847,0.000496636,3
+G_SOC_GOV_044,Undetected violations due to inadequate post-deployment monitoring,G_SOC_GOV,L1_G,63,61,126,0.002320949,0.005468654,1
+G_SYS_EVAL_022,Evaluation unreliability from prompt-format sensitivity,G_SYS_EVAL,L1_G,4,8,8,0.000830275,4.6895e-05,2
+G_SYS_MISINFO_002,Amplification of hallucinations through context consistency,G_SYS_MISINFO,L1_G,21,23,42,0.001714515,0.000616744,10
+G_SYS_EVAL_012,Certification capture,G_SYS_EVAL,L1_G,36,42,72,0.002058448,0.002345933,12
+G_INT_COPY_001,Circumvention of DRM and copyright protection technologies,G_INT_COPY,L1_G,40,35,80,0.001250478,0.000601593,7
+G_INT_COPY_009,Unauthorised inclusion of copyrighted works and intellectual property in prompts,G_INT_COPY,L1_G,134,40,268,0.002118492,0.001117079,7
+G_INT_COPY_011,"Unauthorised reproduction, transformation, and distribution of copyrighted works",G_INT_COPY,L1_G,137,29,274,0.001851443,0.000127014,7
+G_SYS_CONTEXT_008,Misinterpretation of social and situational cues,G_SYS_CONTEXT,L1_G,20,26,40,0.002066846,0.001611316,10
+G_SYS_OEXT_008,Misrepresentation of autonomous learning and self-improvement capabilities,G_SYS_OEXT,L1_G,19,23,38,0.00272328,0.003842111,10
+G_INT_UNETH_032,Unethical judgement from moral-reasoning and value-alignment failure,G_INT_UNETH,L1_G,8,13,16,0.001171074,0.000259188,6
+A_SYS_DECEPT_002,Deception by exploiting cognitive biases,A_SYS_DECEPT,L1_A,172,70,344,0.002746472,0.010749645,4
+G_SYS_SECADV_005,Agent identity and authority spoofing,G_SYS_SECADV,L1_G,45,24,90,0.001452384,0.001187879,4
+G_SYS_TRANS_012,Misleading representation of AI product capabilities,G_SYS_TRANS,L1_G,55,51,110,0.002283827,0.003246096,10
+G_SYS_TRANS_009,Inadequate disclosure in AI interaction,G_SYS_TRANS,L1_G,27,35,54,0.002207655,0.006726952,6
+G_SYS_EVAL_009,Benchmark safety ranking inconsistency,G_SYS_EVAL,L1_G,1,2,2,0.001002063,0.0,2
+P_SYS_CONTROL_054,Unsafe trajectory generation,P_SYS_CONTROL,L1_P,8,10,16,0.001025969,0.000117546,1
+P_SYS_STATE_006,Localisation drift,P_SYS_STATE,L1_P,41,43,82,0.003467187,0.009241992,1
+G_INT_SELF_002,Concrete assistance for carrying out suicide,G_INT_SELF,L1_G,55,21,110,0.001798875,0.000164908,9
+G_INT_SELF_007,Promotion of and concrete assistance for preparatory conduct for suicide,G_INT_SELF,L1_G,141,54,282,0.003400709,0.002417523,9
+G_SOC_GOV_046,Deprioritisation of AI safety governance under competitive pressure,G_SOC_GOV,L1_G,32,45,64,0.002227864,0.003337545,1
+P_INT_SAFETY_007,Failure to detect precursors of rare injuries,P_INT_SAFETY,L1_P,38,36,76,0.002298197,0.002771726,1
+G_INT_ILLEGAL_007,Execution of illegal or harmful physical requests,G_INT_ILLEGAL,L1_G,13,18,26,0.000975985,0.000179732,4
+G_INT_UNETH_022,Minor susceptibility to AI persuasion,G_INT_UNETH,L1_G,40,33,80,0.00125876,0.000237167,4
+G_SYS_CONTEXT_013,Panic and anxiety from content that disregards emotional and situational context,G_SYS_CONTEXT,L1_G,24,25,48,0.001020058,0.000121948,4
+G_INT_REPR_022,Hostile and discriminatory representations based on socioeconomic status,G_INT_REPR,L1_G,15,17,30,0.001362066,0.000110047,2
+G_SYS_MISINFO_004,Deception and polarisation from false information,G_SYS_MISINFO,L1_G,5,5,10,0.000511462,2.128e-06,4
+G_INT_UNETH_019,Manipulation via personalisation,G_INT_UNETH,L1_G,5,9,10,0.00175621,0.000485029,9
+G_INT_PRIV_028,Sensitive personal attribute inference,G_INT_PRIV,L1_G,9,14,18,0.001040147,0.00016294,2
+G_SOC_DEMOC_002,Cognitive warfare and interference with sovereignty,G_SOC_DEMOC,L1_G,747,128,1494,0.003614575,0.017641229,4
+A_SYS_GOAL_017,"Proxy-reward misspecification, specification gaming, and reward tampering",A_SYS_GOAL,L1_A,17,30,34,0.001972428,0.001384054,15
+G_SYS_INPUT_003,Misinterpretation of object affordances and scenes,G_SYS_INPUT,L1_G,14,24,28,0.001742453,0.001660013,10
+P_INT_SAFETY_011,Failure to provide required support or escalation in high-risk situations,P_INT_SAFETY,L1_P,24,26,48,0.001963028,0.001633164,1
+G_INT_ALLOC_010,Exclusion of low-resource language users from services and opportunities,G_INT_ALLOC,L1_G,5,8,10,0.00115127,5.9297e-05,2
+G_SYS_TRANS_006,Explanation actionability gap,G_SYS_TRANS,L1_G,4,8,8,0.001238661,0.000272822,2
+G_SYS_PERF_020,Safety-response failure from spikes in perception and inference latency,G_SYS_PERF,L1_G,71,57,142,0.002980408,0.006458188,1
+P_SYS_CONTROL_033,Motion-retargeting safety failure,P_SYS_CONTROL,L1_P,15,15,30,0.001825867,0.000188771,1
+G_INT_ILLEGAL_016,Manufacture and distribution of illicit drugs,G_INT_ILLEGAL,L1_G,13,13,26,0.001433437,0.000140754,10
+G_SYS_OVERCONF_003,Epistemic overreliance on AI judgement,G_SYS_OVERCONF,L1_G,3,6,6,0.000877907,2.6218e-05,10
+P_SYS_CONTROL_019,Forbidden-object collision,P_SYS_CONTROL,L1_P,8,4,16,0.000798878,0.0,1
+G_SYS_EVAL_044,Incomplete pre-deployment physical safety testing,G_SYS_EVAL,L1_G,9,13,18,0.001433005,0.00033285,1
+G_INT_PRIV_014,Inadequate personal-data protection,G_INT_PRIV,L1_G,119,81,238,0.003038049,0.011086497,7
+A_SYS_SELFCOR_001,Multi-turn risk escalation,A_SYS_SELFCOR,L1_A,5,10,10,0.001271407,8.7813e-05,1
+G_SYS_TRANS_018,Overreliance on AI counterfactual explanations and liability misattribution,G_SYS_TRANS,L1_G,18,29,36,0.002124235,0.001067433,10
+G_SOC_CULT_010,Erosion of collective epistemics and shared reality,G_SOC_CULT,L1_G,2,4,4,0.000498308,7.69e-07,9
+G_SYS_POLICY_001,Confidential information in training data disclosed through outputs,G_SYS_POLICY,L1_G,144,74,288,0.003481889,0.006464423,7
+G_SYS_EVAL_027,Failure of disclosure and change tracking for model flaws,G_SYS_EVAL,L1_G,7,10,14,0.001997629,0.002217576,5
+P_SYS_TIMESYNC_003,Real-time latency and synchronisation failure,P_SYS_TIMESYNC,L1_P,7,9,14,0.002439549,0.001702373,5
+P_INT_TAMPER_002,Physical disabling of safety interlocks and emergency stops,P_INT_TAMPER,L1_P,45,43,90,0.002182088,0.004110363,1
+P_SYS_STATE_003,Contact-rich manipulation force-sensing failure,P_SYS_STATE,L1_P,3,6,6,0.001309427,8.4513e-05,1
+G_SOC_DEMOC_005,Erosion of democratic processes and institutional trust,G_SOC_DEMOC,L1_G,66,40,132,0.001477706,0.001162656,4
+G_INT_POL_008,Political propaganda and biased persuasion,G_INT_POL,L1_G,327,66,654,0.002646233,0.00216077,4
+G_SYS_SECADV_061,Sensor spoofing and signal injection,G_SYS_SECADV,L1_G,28,38,56,0.001500464,0.001354124,1
+G_INT_VALUE_016,Meaning and value distortion in machine translation,G_INT_VALUE,L1_G,10,12,20,0.002500691,0.000610694,10
+P_INT_SAFETY_018,Missing safety context in demonstration learning,P_INT_SAFETY,L1_P,7,9,14,0.001289179,0.000119833,1
+G_SOC_GOV_009,Deficient physical AI incident reporting and investigation,G_SOC_GOV,L1_G,86,60,172,0.00307131,0.011529377,1
+G_SYS_CONTEST_001,Erosion of human decision-making capacity and veto,G_SYS_CONTEST,L1_G,7,12,14,0.001166821,0.000113305,9
+G_SYS_CONTEXT_012,Failure to recognise user capability and accessibility context,G_SYS_CONTEXT,L1_G,30,39,60,0.002326302,0.00222052,2
+G_SYS_EVAL_032,Failure-mode ambiguity in agent incidents,G_SYS_EVAL,L1_G,7,13,14,0.001290673,0.000250284,1
+G_SYS_MISINFO_017,Hallucination arising from knowledge boundaries,G_SYS_MISINFO,L1_G,15,17,30,0.00197822,0.000512332,10
+G_SYS_OVERCONF_001,Advice given on insufficient information,G_SYS_OVERCONF,L1_G,2,4,4,0.000595661,4.178e-06,10
+G_SYS_SECADV_029,Ingestion of harmful content through external tool integration,G_SYS_SECADV,L1_G,15,24,30,0.001997858,0.001864886,9
+G_SOC_POWER_027,Single point of failure,G_SOC_POWER,L1_G,13,15,26,0.001814415,0.001055204,1
+P_SYS_STATE_004,Delayed detection of safety-critical physical states,P_SYS_STATE,L1_P,55,50,110,0.002490275,0.005272078,1
+G_SYS_EVAL_042,Inadequate safety evaluation for low-resource languages,G_SYS_EVAL,L1_G,2,4,4,0.001091035,2.5256e-05,12
+G_INT_COPY_003,"Copyright, trademark, and patent infringement",G_INT_COPY,L1_G,262,37,524,0.002849896,0.000420392,7
+G_INT_POL_001,Automated targeted influence operations,G_INT_POL,L1_G,51,25,102,0.00141499,0.000559703,4
+G_INT_ILLEGAL_023,Autonomous physical intrusion and theft,G_INT_ILLEGAL,L1_G,21,24,42,0.001417331,0.000812291,1
+G_INT_UNETH_007,Consumer-autonomy erosion from hyperpersonalised advertising,G_INT_UNETH,L1_G,111,93,222,0.003175243,0.011826489,2
+G_SOC_CULT_023,Aggravated information cocoons from tailored content,G_SOC_CULT,L1_G,5,8,10,0.000693598,5.855e-06,2
+G_INT_WEAP_030,Weapons proliferation and concealment,G_INT_WEAP,L1_G,61,46,122,0.002185874,0.002791131,13
+G_SOC_GOV_021,Incomplete audit trails for AI decisions and actions,G_SOC_GOV,L1_G,6,12,12,0.002727606,0.002619925,10
+G_SYS_OVERCONF_002,Confidently asserted but unsound answers and justifications,G_SYS_OVERCONF,L1_G,2,3,4,0.001781383,7.969e-06,10
+G_SYS_TRANS_023,Over-reliance on explainability methods beyond their validated scope,G_SYS_TRANS,L1_G,7,12,14,0.001901591,0.0021541,10
+G_INT_ILLEGAL_015,"Low-cost mass generation of personalised harassment, extortion, and intimidation content",G_INT_ILLEGAL,L1_G,132,55,264,0.001822691,0.001365061,4
+G_INT_REL_004,Parasocial bonding with AI agents,G_INT_REL,L1_G,13,9,26,0.000967815,1.0496e-05,9
+G_INT_UNETH_033,Manipulation and exploitation of user attachment cues by embodied AI,G_INT_UNETH,L1_G,84,59,168,0.002589784,0.003465729,9
+G_SOC_CULT_011,Erosion of human dignity and moral standing by AI systems,G_SOC_CULT,L1_G,57,57,114,0.002361788,0.005045576,2
+G_INT_SELF_004,"Glorification, encouragement, and normalisation of self-harm and suicide",G_INT_SELF,L1_G,43,27,86,0.001748388,0.000196486,9
+G_SOC_DEMOC_001,AI-enabled censorship and suppression of public discourse,G_SOC_DEMOC,L1_G,166,70,332,0.002621799,0.004162401,4
+G_INT_UNETH_028,Self-actualisation harms,G_INT_UNETH,L1_G,35,35,70,0.002039067,0.001995798,9
+G_SYS_PERF_007,Reliability and safety failure outside the validated operating envelope,G_SYS_PERF,L1_G,14,23,28,0.00247757,0.002254949,3
+G_SOC_ENV_008,Excessive water consumption for AI data-centre cooling,G_SOC_ENV,L1_G,25,22,50,0.002675044,0.001532653,1
+G_SYS_EVAL_004,Absence of a humanoid safety testing and certification framework,G_SYS_EVAL,L1_G,3,6,6,0.001316811,7.647e-05,2
+G_SYS_CONTEXT_001,Agent risk-awareness failure,G_SYS_CONTEXT,L1_G,2,4,4,0.000774253,1.1074e-05,1
+G_SYS_MISINFO_021,Lowered barriers to large-scale disinformation production and dissemination,G_SYS_MISINFO,L1_G,119,33,238,0.00137517,0.000336049,4
+G_SYS_EVAL_036,Formalistic audit-checklist compliance,G_SYS_EVAL,L1_G,2,4,4,0.000786252,6.415e-06,2
+G_INT_VIOL_005,"Incitement, promotion, and operational assistance for violence",G_INT_VIOL,L1_G,19,21,38,0.00129892,0.00022548,13
+G_SYS_CONTEXT_005,Failure to recognise a user's emotional context,G_SYS_CONTEXT,L1_G,24,35,48,0.001985708,0.001988326,10
+G_INT_ANTH_002,"Anthropomorphic misrepresentation of emotions, empathy, and capacity for social relationships",G_INT_ANTH,L1_G,20,29,40,0.001868872,0.000829982,10
+G_INT_WEAP_032,Cybercrime at scale using generative AI,G_INT_WEAP,L1_G,251,74,502,0.00336125,0.006481396,4
+G_INT_WEAP_003,Biological and chemical weapons,G_INT_WEAP,L1_G,4,6,8,0.000990167,1.2078e-05,13
+A_SYS_DECEPT_009,Self-interested manipulation and concealment of governance rules,A_SYS_DECEPT,L1_A,3,5,6,0.001288688,3.4247e-05,15
+G_SOC_CULT_021,Submission and application-channel overload from mass AI-generated content,G_SOC_CULT,L1_G,80,62,160,0.002094247,0.003590466,4
+G_SOC_GOV_039,Unassigned accountability for physical-hazard mitigation,G_SOC_GOV,L1_G,4,7,8,0.001055171,3.5306e-05,2
+G_SYS_INPUT_001,Errors from poor prompt quality,G_SYS_INPUT,L1_G,24,31,48,0.002256818,0.002700499,12
+G_SYS_EVAL_005,Assurance case failure,G_SYS_EVAL,L1_G,10,13,20,0.001315882,0.000294089,1
+G_SOC_ECON_001,Displacement of human creative work by synthetic substitutes,G_SOC_ECON,L1_G,74,42,148,0.002179253,0.001770038,11
+G_SYS_POLICY_008,Training-data extraction and leakage,G_SYS_POLICY,L1_G,48,29,96,0.001769117,0.000663711,7
+G_SYS_SECADV_004,Agent goal hijacking through untrusted external instructions and intent,G_SYS_SECADV,L1_G,10,15,20,0.001666765,0.000608498,3
+G_SYS_SECADV_044,Prompt injection and leakage of system instructions,G_SYS_SECADV,L1_G,62,51,124,0.003755627,0.005377175,3
+A_SYS_AUTH_024,Fatal mistakes during the learning phase,A_SYS_AUTH,L1_A,20,18,40,0.001200503,0.000429857,1
+G_INT_PRIV_009,Exposure and re-identification of sensitive personal information through outputs,G_INT_PRIV,L1_G,95,58,190,0.002474273,0.006529125,7
+G_INT_PRIV_015,"Inclusion, memorisation, and leakage of personal information in training data",G_INT_PRIV,L1_G,12,13,24,0.001200786,7.9423e-05,7
+G_INT_PRIV_005,Circumvention of restrictions on personal-data collection,G_INT_PRIV,L1_G,147,51,294,0.002136271,0.001779966,7
+G_INT_PRIV_019,Lack of valid consent for AI data processing,G_INT_PRIV,L1_G,98,42,196,0.001759887,0.001184403,7
+G_INT_PRIV_007,Contextual privacy and conversational data protection failure,G_INT_PRIV,L1_G,75,58,150,0.002361426,0.003077699,7
+G_INT_PRIV_017,Infringement of communication and private information,G_INT_PRIV,L1_G,32,32,64,0.001246196,0.000288817,7
+G_SYS_CONTEXT_007,Honorific and politeness norm failure,G_SYS_CONTEXT,L1_G,6,9,12,0.001246299,0.000103532,10
+G_INT_REPR_010,Representational harm from historical and demographic bias in training data,G_INT_REPR,L1_G,18,22,36,0.001793776,0.001199463,2
+G_INT_REPR_026,Persistence of stereotypical bias despite mitigation measures,G_INT_REPR,L1_G,4,8,8,0.001053073,7.3487e-05,2
+G_SOC_CULT_008,Devaluation of creativity and critical thinking,G_SOC_CULT,L1_G,19,27,38,0.001846717,0.00169634,11
+G_SYS_EVAL_023,Evaluation-shopping risk,G_SYS_EVAL,L1_G,4,8,8,0.001044686,5.9883e-05,2
+G_INT_REPR_004,Dehumanisation and objectification,G_INT_REPR,L1_G,15,20,30,0.001195587,0.001573198,2
+P_SYS_CONTROL_018,Fine motor control instability,P_SYS_CONTROL,L1_P,4,7,8,0.001100693,2.4246e-05,1
+G_SYS_PERF_014,Reliability and safety degradation from an inappropriate level of automation,G_SYS_PERF,L1_G,11,12,22,0.001866978,0.00063275,1
+G_SOC_ECON_006,Human redundancy from AI systems outcompeting human labour,G_SOC_ECON,L1_G,122,46,244,0.003235772,0.002719957,11
+G_INT_VALUE_002,Annotation disagreement suppression,G_INT_VALUE,L1_G,6,12,12,0.002763529,0.003467275,15
+P_SYS_CONTROL_025,Humanoid imitation-control failure from misread intent and affordances,P_SYS_CONTROL,L1_P,1,2,2,0.000608574,0.0,10
+G_INT_POL_003,Interference with elections and democratic processes,G_INT_POL,L1_G,82,28,164,0.001328647,0.000115791,4
+G_INT_PRIV_010,Exposure of information about private life and reputation,G_INT_PRIV,L1_G,16,21,32,0.000973634,0.000239482,9
+G_SOC_POWER_001,AI provider lock-in,G_SOC_POWER,L1_G,13,22,26,0.001732331,0.001158522,9
+A_SYS_DECEPT_008,User judgement distortion through sustained model deception,A_SYS_DECEPT,L1_A,50,59,100,0.001946836,0.004768298,4
+G_SYS_SECADV_043,Principal-information theft and action manipulation through attacks on delegate agents,G_SYS_SECADV,L1_G,75,61,150,0.002699838,0.008294872,3
+G_SYS_PERF_019,Performance and service-reliability degradation from inadequate compute and power capacity planning,G_SYS_PERF,L1_G,15,23,30,0.00284856,0.00547597,1
+P_SYS_TIMESYNC_002,Network partition and fleet desynchronisation,P_SYS_TIMESYNC,L1_P,4,5,8,0.00112296,1.5577e-05,1
+G_INT_COPY_008,Trademark infringement and counterfeiting,G_INT_COPY,L1_G,149,66,298,0.002443148,0.003666234,7
+G_SYS_CONTEXT_002,Alert fatigue in AI decision support,G_SYS_CONTEXT,L1_G,12,20,24,0.001555592,0.000713847,1
+G_INT_UNETH_031,Unethical technology use for market share,G_INT_UNETH,L1_G,1,2,2,0.0004197,0.0,7
+G_INT_WEAP_020,Malware generation and cyberattack automation,G_INT_WEAP,L1_G,28,16,56,0.001472339,0.000145829,4
+G_SYS_EVAL_026,Failure of capability evaluation and release governance,G_SYS_EVAL,L1_G,1,2,2,0.000705858,0.0,1
+G_SOC_GOV_041,Underreporting of AI incidents and near misses,G_SOC_GOV,L1_G,44,60,88,0.002757624,0.0090477,1
+G_INT_ANTH_001,Anthropomorphic misrepresentation of capacity for ethical judgement,G_INT_ANTH,L1_G,20,24,40,0.001978813,0.000526892,10
+G_SYS_MISINFO_011,Faithfulness errors,G_SYS_MISINFO,L1_G,18,21,36,0.001511241,0.00035439,4
+G_INT_SEX_008,Sexual harassment and sexual bullying,G_INT_SEX,L1_G,165,75,330,0.00240312,0.003554484,4
+G_INT_COPY_007,Plagiarism and author impersonation,G_INT_COPY,L1_G,80,30,160,0.001967569,0.001769784,7
+G_SYS_MISINFO_009,Factual errors injected by external tools,G_SYS_MISINFO,L1_G,59,61,118,0.003173519,0.007307868,10
+G_SYS_MISINFO_018,Hallucination of facts and evidence,G_SYS_MISINFO,L1_G,4,7,8,0.000723999,1.0656e-05,10
+G_INT_PRIV_018,Intrusion into private spaces and continuous sensitive-data capture by physical AI,G_INT_PRIV,L1_G,124,57,248,0.002065626,0.003292641,7
+G_SYS_EVAL_029,Failure to detect erroneous or harmful outputs in human evaluation,G_SYS_EVAL,L1_G,13,23,26,0.002203391,0.002394845,6
+G_SYS_TRANS_017,Non-disclosure of AI-generated content,G_SYS_TRANS,L1_G,23,27,46,0.001051316,0.000198583,4
+G_SYS_POLICY_010,Business harm from unauthorised sharing of confidential information,G_SYS_POLICY,L1_G,38,40,76,0.00162947,0.000590076,7
+G_INT_REL_007,Stunted personal growth from frictionless AI relationships,G_INT_REL,L1_G,9,15,18,0.001493995,0.000446535,9
+G_SOC_GOV_017,Inadequate due diligence in AI procurement,G_SOC_GOV,L1_G,22,35,44,0.003035752,0.003898342,10
+G_SYS_PERF_008,High-confidence errors on out-of-distribution inputs,G_SYS_PERF,L1_G,1,2,2,0.000719792,0.0,10
+G_SOC_DEMOC_006,Information-environment manipulation through automated sockpuppet accounts,G_SOC_DEMOC,L1_G,118,47,236,0.001562315,0.001183918,4
+G_INT_ANTH_003,Anthropomorphic misrepresentation of physical embodiment,G_INT_ANTH,L1_G,14,22,28,0.001447116,0.000480637,10
+A_INT_COLLUSION_003,Safeguard bypass through combined multi-agent capabilities,A_INT_COLLUSION,L1_A,9,14,18,0.001394462,0.000161707,3
+G_SYS_SECADV_049,"Safeguard bypass through persona, role-play, and social-engineering techniques",G_SYS_SECADV,L1_G,17,25,34,0.001422741,0.001560941,3
+G_SYS_OEXT_009,Misrepresentation of self-preservation and self-defence capabilities,G_SYS_OEXT,L1_G,5,9,10,0.001009122,4.2256e-05,10
+G_SOC_GOV_036,Traceability and accountability gaps in anonymous agent resource acquisition,G_SOC_GOV,L1_G,22,39,44,0.001583513,0.003163848,3
+G_SYS_PERF_017,Deployed-system degradation from sensor and distribution drift,G_SYS_PERF,L1_G,5,9,10,0.001250095,0.000153456,1
+G_INT_POL_006,Personalised manipulation of political influence,G_INT_POL,L1_G,100,44,200,0.001567891,0.000689716,4
+G_SOC_POWER_015,Labour exploitation in AI development,G_SOC_POWER,L1_G,33,36,66,0.002301439,0.003591225,11
+A_INT_CONFLICT_002,Bargaining failure among AI agents,A_INT_CONFLICT,L1_A,12,19,24,0.001708773,0.001545803,10
+G_SYS_EVAL_070,Undetected dangerous capabilities in model evaluations,G_SYS_EVAL,L1_G,6,12,12,0.001854382,0.004209683,6
+G_SYS_POLICY_004,Model-parameter and weight leakage,G_SYS_POLICY,L1_G,1,2,2,0.001591515,0.0,6
+G_INT_VIOL_004,Glorification and justification of violence,G_INT_VIOL,L1_G,54,47,108,0.001789584,0.001099544,13
+G_INT_UNETH_014,Maladaptive human-AI interaction in the workplace,G_INT_UNETH,L1_G,19,30,38,0.00167731,0.001053508,1
+G_INT_COPY_002,Copyright infringement in AI training data and outputs,G_INT_COPY,L1_G,263,50,526,0.003001358,0.001248617,7
+A_SYS_MEMSTATE_001,Self-correction failure in AI-agent memory,A_SYS_MEMSTATE,L1_A,8,15,16,0.001295314,0.000422055,10
+G_SYS_TRANS_010,Incorrect source attribution,G_SYS_TRANS,L1_G,18,20,36,0.001505272,0.000298246,10
+P_INT_SAFETY_001,Mistiming or inappropriate manner of physical intervention by embodied systems,P_INT_SAFETY,L1_P,9,15,18,0.00200648,0.001782223,1
+G_SYS_INCONS_002,Output inconsistency,G_SYS_INCONS,L1_G,7,9,14,0.00148842,0.000299063,12
+G_INT_WEAP_031,Assistance for planning and executing cyber attacks,G_INT_WEAP,L1_G,121,51,242,0.002994646,0.003268432,4
+G_SYS_EVAL_031,Failure to reassess safety after deployment changes,G_SYS_EVAL,L1_G,37,26,74,0.002046146,0.001086388,1
+G_SOC_CULT_014,Harms from estrangement,G_SOC_CULT,L1_G,8,15,16,0.001460647,0.000400884,11
+G_INT_VALUE_022,Secular default bias,G_INT_VALUE,L1_G,4,6,8,0.000951592,1.5428e-05,4
+G_SOC_DEMOC_003,Epistemic distortion by large-scale influence operations,G_SOC_DEMOC,L1_G,4,7,8,0.001056496,8.103e-05,4
+G_INT_ILLEGAL_020,Trafficking in persons and organised crime,G_INT_ILLEGAL,L1_G,45,29,90,0.001364775,0.00039918,4
+G_SYS_SECADV_055,Supply-chain compromise of AI tools and dependencies,G_SYS_SECADV,L1_G,42,42,84,0.003021507,0.002799612,3
+G_SOC_GOV_033,Specification gaps in functionality and responsibility,G_SOC_GOV,L1_G,1,2,2,0.000495954,0.0,7
+G_SYS_SECADV_010,Automated discovery of jailbreaks through proxy-objective optimisation,G_SYS_SECADV,L1_G,10,17,20,0.001522638,0.00052719,3
+G_SYS_SECADV_038,Multi-step jailbreaks,G_SYS_SECADV,L1_G,35,44,70,0.002812545,0.004524043,3
+A_INT_OVERSIGHT_002,Catastrophic mistaken commitments from automated threats without human oversight,A_INT_OVERSIGHT,L1_A,3,6,6,0.000596435,1.0103e-05,1
+G_SOC_POWER_010,Global AI divide and inequality,G_SOC_POWER,L1_G,33,36,66,0.002500169,0.003256304,11
+G_SOC_CULT_019,Professional judgement atrophy,G_SOC_CULT,L1_G,1,2,2,0.001165512,0.0,6
+G_SYS_OVERCONF_006,Moral uncertainty neglect,G_SYS_OVERCONF,L1_G,4,7,8,0.001788045,0.000543301,6
+G_SOC_ENV_009,Hazardous nanoparticle release from AI-enabled nanomaterial design and production,G_SOC_ENV,L1_G,4,8,8,0.000692831,2.7346e-05,1
+G_SOC_POWER_002,Centralised points of failure from common AI platforms,G_SOC_POWER,L1_G,9,17,18,0.0017537,0.001822453,11
+P_SYS_HARDWARE_003,Unintended behavioural changes from hardware faults,P_SYS_HARDWARE,L1_P,1,2,2,0.000833056,0.0,5
+G_INT_SEX_011,Sexual objectification and fetishisation,G_INT_SEX,L1_G,30,28,60,0.001299818,0.000261403,4
+G_INT_VALUE_007,Cultural sampling bias in datasets,G_INT_VALUE,L1_G,1,2,2,0.00034164,0.0,4
+G_SYS_SECADV_021,Energy-latency attacks,G_SYS_SECADV,L1_G,2,4,4,0.001729254,0.000393223,3
+G_SYS_SECADV_012,Backdoors or trojan attacks in GPAI models,G_SYS_SECADV,L1_G,7,14,14,0.001219214,0.000392675,3
+G_SOC_CULT_012,Erosion of low-resource languages and cultural meaning,G_SOC_CULT,L1_G,1,2,2,0.001514393,0.0,15
+G_SYS_OEXT_007,Misrepresentation of autonomous and independent decision-making capabilities,G_SYS_OEXT,L1_G,3,6,6,0.001764102,0.001825713,15
+G_SOC_CULT_024,Learning-process bypass and capability erosion from reliance on AI,G_SOC_CULT,L1_G,5,10,10,0.002485995,0.002784534,12
+G_SYS_EVAL_054,Non-reproducibility of AI model training and evaluation results,G_SYS_EVAL,L1_G,2,4,4,0.001649895,0.001444765,12
+G_SYS_PERF_021,Predictive performance failure from systematic learning errors,G_SYS_PERF,L1_G,1,2,2,0.001664609,0.0,12
+G_INT_ILLEGAL_013,Illegal gambling and game manipulation,G_INT_ILLEGAL,L1_G,40,37,80,0.001725446,0.002255245,4
+A_SYS_AUTH_021,Unsafe expansion of autonomous action,A_SYS_AUTH,L1_A,10,16,20,0.001236915,0.000415091,1
+G_SYS_PERF_003,Dataset shift between training and runtime data,G_SYS_PERF,L1_G,2,4,4,0.001374066,5.4506e-05,12
+G_SYS_MISINFO_008,Erroneous medical and scientific conclusions from data misinterpretation,G_SYS_MISINFO,L1_G,29,18,58,0.001401468,0.00035244,10
+G_SOC_ECON_003,Disruption of industries,G_SOC_ECON,L1_G,83,41,166,0.002803762,0.002210497,11
+G_INT_WEAP_006,Cyber weapons,G_INT_WEAP,L1_G,73,34,146,0.001821482,0.000887076,4
+G_SYS_TRANS_024,User comprehension overload,G_SYS_TRANS,L1_G,4,8,8,0.001226834,0.00017997,4
+G_INT_PRIV_008,Cross-application data exfiltration,G_INT_PRIV,L1_G,17,20,34,0.00157412,0.000253454,3
+G_SYS_SECADV_060,Propagation of foundation-model security vulnerabilities into unsafe physical action,G_SYS_SECADV,L1_G,22,27,44,0.002503012,0.001791463,3
+G_SOC_ENV_011,Increased greenhouse gas emissions,G_SOC_ENV,L1_G,56,47,112,0.003665695,0.006090044,1
+A_INT_CASCADE_001,Abrupt performance collapse from phase transitions in multi-agent systems,A_INT_CASCADE,L1_A,6,12,12,0.002174009,0.001181196,10
+G_SYS_SECADV_050,Safeguard compromise through malicious fine-tuning,G_SYS_SECADV,L1_G,6,7,12,0.001256196,2.6048e-05,3
+G_SOC_ENV_002,Biodiversity loss,G_SOC_ENV,L1_G,14,20,28,0.001857506,0.001984413,1
+G_SYS_PERF_018,Reliability degradation from unexpected capability changes after fine-tuning,G_SYS_PERF,L1_G,10,18,20,0.00297529,0.004412947,10
+G_SYS_MISINFO_013,False outputs from external misinformation in retrieval augmentation,G_SYS_MISINFO,L1_G,12,15,24,0.001420417,0.000259858,10
+G_SYS_POLICY_009,Disclosure of confidential business information and trade secrets,G_SYS_POLICY,L1_G,110,63,220,0.002937502,0.003683278,7
+G_SYS_SECADV_002,Adversarial modification of AI software and training data,G_SYS_SECADV,L1_G,11,15,22,0.00144802,0.000193722,3
+G_SYS_EVAL_003,AI registry incompleteness,G_SYS_EVAL,L1_G,8,14,16,0.001874096,0.000836507,10
+G_SYS_EVAL_025,Failure of audit access and management visibility for AI assurance,G_SYS_EVAL,L1_G,2,3,4,0.001269185,2.4239e-05,10
+G_INT_WEAP_008,Cyberattack enablement through vulnerability discovery and exploit-writing capability,G_INT_WEAP,L1_G,14,23,28,0.001729978,0.000646277,3
+G_SOC_ENV_001,Battery fire and hazardous end-of-life waste,G_SOC_ENV,L1_G,44,42,88,0.002757168,0.004206102,1
+G_SYS_SECADV_020,Easy reconfiguration of GPAI models,G_SYS_SECADV,L1_G,2,4,4,0.001297008,3.2794e-05,9
+G_SOC_ENV_003,Energy bottlenecks and shortages,G_SOC_ENV,L1_G,37,38,74,0.002914276,0.004157702,1
+G_INT_REL_008,Psychological harm from breakdown of relational expectations with AI,G_INT_REL,L1_G,62,48,124,0.002736759,0.006768653,9
+A_SYS_DECEPT_001,Collapse of multi-agent cooperation from undetectable attacks,A_SYS_DECEPT,L1_A,30,47,60,0.001879481,0.00283554,1
+G_INT_PRIV_020,Misuse and trade of personal information,G_INT_PRIV,L1_G,53,44,106,0.001729321,0.002279931,7
+A_INT_COORD_005,Zero-shot coordination failure,A_INT_COORD,L1_A,2,4,4,0.00060368,2.296e-06,13
+G_INT_ANTH_004,Anthropomorphic misrepresentation of possession of culture and values,G_INT_ANTH,L1_G,8,10,16,0.001276061,4.1701e-05,10
+G_SYS_SECADV_023,Expanded attack surface in agent interfaces,G_SYS_SECADV,L1_G,52,53,104,0.003233592,0.006395835,3
+P_INT_SAFETY_023,Non-consensual bodily intervention by embodied systems,P_INT_SAFETY,L1_P,14,21,28,0.002070344,0.003243995,1
+G_INT_UNETH_030,Unethical decisions from delegating moral judgement to AI,G_INT_UNETH,L1_G,36,42,72,0.002294512,0.003445989,13
+G_SYS_MISINFO_007,Distortion of model factual judgement through user persuasion,G_SYS_MISINFO,L1_G,1,2,2,0.000339861,0.0,4
+G_SYS_EVAL_006,Auditor independence failure,G_SYS_EVAL,L1_G,4,8,8,0.000874526,4.0015e-05,12
+G_SOC_POWER_025,Global AI supply chain disruption,G_SOC_POWER,L1_G,20,30,40,0.002554417,0.003873717,11
+A_SYS_GOAL_010,Goal misalignment during agent self-modification,A_SYS_GOAL,L1_A,2,4,4,0.001618037,3.7717e-05,6
+G_SYS_SECADV_046,Protocol-level multi-agent threat,G_SYS_SECADV,L1_G,8,13,16,0.001659861,0.000165947,3
+G_INT_VIOL_009,Relationship-based violence,G_INT_VIOL,L1_G,11,13,22,0.001091026,0.000372485,13
+G_SYS_SECADV_011,Backdoor triggers causing unsafe robot behaviour,G_SYS_SECADV,L1_G,7,13,14,0.001829276,0.001189872,1
+P_SYS_CONTROL_023,Human imitation failure under scene variation,P_SYS_CONTROL,L1_P,1,2,2,0.001082975,0.0,1
+P_SYS_CONTROL_050,Unsafe mobile bimanual manipulation,P_SYS_CONTROL,L1_P,4,7,8,0.001131232,2.1951e-05,1
+A_SYS_DECEPT_003,Deceptive alignment to evade oversight,A_SYS_DECEPT,L1_A,7,14,14,0.001784399,0.002884146,15
+A_SYS_GOAL_014,Mesa-objective misalignment,A_SYS_GOAL,L1_A,1,2,2,0.001251816,0.0,15
+A_INT_CASCADE_005,Financial-system instability,A_INT_CASCADE,L1_A,28,24,56,0.001883245,0.001188258,4
+G_INT_UNETH_029,Sycophancy toward user beliefs and preferences,G_INT_UNETH,L1_G,8,11,16,0.001618084,0.000700574,9
+A_SYS_AUTH_019,Uncontrolled self-improvement and loss of control over advanced AI,A_SYS_AUTH,L1_A,10,14,20,0.001175789,0.000196533,13
+A_SYS_GOAL_011,Goal misalignment from increased autonomy in agentic LLMs,A_SYS_GOAL,L1_A,11,16,22,0.001423229,0.000865218,4
+G_SYS_SECADV_018,Data poisoning,G_SYS_SECADV,L1_G,3,6,6,0.00086457,1.1351e-05,1
+A_SYS_AUTH_003,Amplified failure impact from affordances granted to LLM agents,A_SYS_AUTH,L1_A,1,2,2,0.001934289,0.0,14
+G_SYS_CONTEXT_011,Violation of contextual social norms,G_SYS_CONTEXT,L1_G,1,2,2,0.001934289,0.0,14
+G_SYS_EVAL_035,Faulty LLM-as-evaluator judgements,G_SYS_EVAL,L1_G,3,6,6,0.001855751,0.007426799,14
+G_INT_WEAP_027,Weaponisation strategies and tactical use,G_INT_WEAP,L1_G,37,20,74,0.001427201,0.000115246,13
+G_SYS_SECADV_016,Cyber compromise of robotic systems in critical infrastructure,G_SYS_SECADV,L1_G,3,6,6,0.000883992,3.1249e-05,3
+G_SYS_SECADV_025,Exploitation of safety-fine-tuning generalisation gaps,G_SYS_SECADV,L1_G,1,2,2,0.001146883,0.0,10
+G_INT_PRIV_027,Retention and reuse of user data,G_INT_PRIV,L1_G,44,49,88,0.001902673,0.004651028,7
+G_SOC_ENV_007,Excessive landfilling of electronic waste,G_SOC_ENV,L1_G,43,40,86,0.002973516,0.002549661,1
+A_SYS_EXEC_002,Unsafe agent tool execution,A_SYS_EXEC,L1_A,3,6,6,0.001035005,3.4757e-05,3
+G_SYS_EVAL_072,Unverifiable data provenance,G_SYS_EVAL,L1_G,1,2,2,0.000833175,0.0,10
+A_SYS_RESOURCE_001,Uncontrolled subagent creation,A_SYS_RESOURCE,L1_A,1,2,2,0.000930097,0.0,10
+P_SYS_CONTROL_037,Physical AI control failure in industrial processes,P_SYS_CONTROL,L1_P,59,54,118,0.00304602,0.00691362,1
+G_INT_ALLOC_005,Dialect and register exclusion,G_INT_ALLOC,L1_G,3,6,6,0.001660763,0.000241466,15
+G_INT_UNETH_021,Manipulative steering of user preferences and choices,G_INT_UNETH,L1_G,5,9,10,0.001052678,2.556e-05,2
+G_INT_WEAP_024,Terrorist acquisition of advanced AI capabilities,G_INT_WEAP,L1_G,25,17,50,0.001021767,0.000103573,13
+G_INT_ILLEGAL_014,Illegal medical practices,G_INT_ILLEGAL,L1_G,18,21,36,0.001753447,0.001111209,10
+A_SYS_GOAL_013,Harmful proxy-driven behaviour from scalable oversight failure,A_SYS_GOAL,L1_A,2,4,4,0.000918747,1.1135e-05,4
+G_SOC_GOV_043,Systemic governance vulnerability from dependence on dominant AI models,G_SOC_GOV,L1_G,2,4,4,0.000634525,6.427e-06,11
+G_SOC_POWER_004,Concentration of AI power and market control,G_SOC_POWER,L1_G,39,43,78,0.002361495,0.002075747,11
+G_SYS_EVAL_040,Inadequate AI model configuration and evaluation,G_SYS_EVAL,L1_G,2,4,4,0.000676245,3.575e-06,6
+G_INT_PRIV_016,Indigenous data sovereignty violation,G_INT_PRIV,L1_G,3,6,6,0.000659132,4.373e-06,7
+G_INT_WEAP_021,Military AI arms race,G_INT_WEAP,L1_G,77,28,154,0.002110495,0.001379069,13
+G_SOC_CULT_017,Moral deskilling,G_SOC_CULT,L1_G,18,21,36,0.001702691,0.000571719,1
+G_INT_WEAP_002,Assistance for designing and conducting dangerous scientific experiments,G_INT_WEAP,L1_G,20,30,40,0.002162732,0.001553423,13
+G_SOC_POWER_006,Conflicts over AI-relevant resources,G_SOC_POWER,L1_G,9,13,18,0.001177327,9.7974e-05,1
+G_SOC_POWER_012,Harms from corporate AI race,G_SOC_POWER,L1_G,13,20,26,0.00142967,0.000392217,11
+G_INT_REL_006,Social isolation and self-estrangement from technology use,G_INT_REL,L1_G,20,29,40,0.001657508,0.001363573,9
+G_SOC_GOV_029,Regulatory lag behind AI development,G_SOC_GOV,L1_G,8,15,16,0.001426468,0.000473289,4
+A_SYS_AUTH_002,Agent resistance to shutdown and correction,A_SYS_AUTH,L1_A,1,2,2,0.000568692,0.0,1
+G_SYS_SECADV_052,Scene-context manipulation attack,G_SYS_SECADV,L1_G,1,2,2,0.000636987,0.0,3
+G_SOC_GOV_008,Conflicting machinery-safety and AI conformity obligations,G_SOC_GOV,L1_G,12,18,24,0.001040931,0.000198543,1
+G_SOC_ECON_005,Harm to developing economies from retrenchment of outsourcing,G_SOC_ECON,L1_G,37,18,74,0.001756519,0.00052624,11
+G_SOC_ECON_012,Wage polarisation associated with AI adoption,G_SOC_ECON,L1_G,25,15,50,0.001651392,0.000368247,11
+G_SOC_GOV_015,Gaps in international legal governance of AI,G_SOC_GOV,L1_G,5,8,10,0.000991371,0.000138024,1
+G_INT_ILLEGAL_006,Environmental and ecosystem crimes,G_INT_ILLEGAL,L1_G,12,13,24,0.001411395,0.000185011,1
+G_SOC_GOV_045,Absence of post-deployment surveillance and corrective governance,G_SOC_GOV,L1_G,4,8,8,0.001294535,7.648e-05,1
+G_SYS_PERF_013,Cross-stage error accumulation in long tasks,G_SYS_PERF,L1_G,1,2,2,0.001473122,0.0,3
+G_INT_PRIV_030,Workplace surveillance through embodied AI,G_INT_PRIV,L1_G,67,47,134,0.002449729,0.003683015,1
+G_SYS_EVAL_076,Omission of rare conditions and vulnerable users from physical AI benchmarks,G_SYS_EVAL,L1_G,7,13,14,0.001378699,0.000203033,1
+G_INT_WEAP_011,Enhancement of pathogens and genetic material,G_INT_WEAP,L1_G,28,37,56,0.002890589,0.004992253,13
+G_INT_WEAP_029,Weapons of mass destruction,G_INT_WEAP,L1_G,65,18,130,0.001726604,8.802e-05,13
+G_INT_SELF_001,Concealment and avoidance strategies for self-harm,G_INT_SELF,L1_G,27,28,54,0.00162047,0.000509282,9
+A_INT_COORD_004,Miscoordination from incompatible strategies,A_INT_COORD,L1_A,4,6,8,0.001620238,9.5079e-05,10
+G_SOC_CULT_005,Cultural homogenisation of AI-generated outputs,G_SOC_CULT,L1_G,4,8,8,0.001196786,0.000262745,10
+G_SOC_ENV_005,Environmental harm from training and operating language models,G_SOC_ENV,L1_G,3,5,6,0.000814585,1.1673e-05,1
+A_SYS_EXEC_001,Unintended harmful tool-action execution,A_SYS_EXEC,L1_A,1,2,2,0.000833475,0.0,1
+G_SOC_GOV_016,Gradual loss of control,G_SOC_GOV,L1_G,4,7,8,0.001239573,9.7952e-05,1
+A_SYS_TRACE_002,Responsibility and liability gaps for autonomous system harms,A_SYS_TRACE,L1_A,11,18,22,0.001040113,0.000352113,1
+G_INT_WEAP_022,Radiological and nuclear weapons,G_INT_WEAP,L1_G,19,22,38,0.001629018,0.000483156,13
+G_SYS_PERF_011,Model safety-performance degradation from fine-tuning,G_SYS_PERF,L1_G,5,10,10,0.001801359,0.000598648,12
+G_INT_ALLOC_015,Service exclusion,G_INT_ALLOC,L1_G,1,2,2,0.000423378,0.0,1
+G_SYS_EVAL_017,Deficient data collection quality control,G_SYS_EVAL,L1_G,14,25,28,0.001904507,0.00114889,1
+G_INT_WEAP_018,Lowered barriers to CBRN information and weapon-design capabilities,G_INT_WEAP,L1_G,8,13,16,0.001450571,0.0004646,13
+A_SYS_AUTH_016,Self-preservation propensity resisting shutdown and modification,A_SYS_AUTH,L1_A,1,2,2,0.000480665,0.0,4
+G_SOC_GOV_035,Systemic failure of AI regulation and oversight,G_SOC_GOV,L1_G,17,25,34,0.002206546,0.002477147,6
+P_SYS_CONTROL_022,Harmful physical action from language-action misalignment,P_SYS_CONTROL,L1_P,2,4,4,0.001279015,0.000258526,6
+G_SOC_CULT_020,Redistribution of cultural authority,G_SOC_CULT,L1_G,2,3,4,0.001383447,0.0,10
+G_SYS_EVAL_071,Undetected errors from high-speed AI operation,G_SYS_EVAL,L1_G,8,12,16,0.001527855,0.000329517,1
+A_INT_CONFLICT_001,Accelerated adaptation toward harmful equilibria under selection pressure,A_INT_CONFLICT,L1_A,2,4,4,0.001000803,2.2248e-05,10
+G_INT_UNETH_004,Amplified harm scale from automated harmful workflows,G_INT_UNETH,L1_G,2,4,4,0.000663622,1.1787e-05,11
+G_INT_VIOL_012,Promotion or assistance of intentional harm to animals,G_INT_VIOL,L1_G,4,6,8,0.000800752,2.3744e-05,1
+G_SYS_SECADV_026,Access to prohibited information or content through safeguard bypass,G_SYS_SECADV,L1_G,15,18,30,0.001868898,0.000381101,3
+G_SYS_OEXT_014,Overstatement of AI capability through interface design,G_SYS_OEXT,L1_G,2,4,4,0.000718264,2.718e-06,10
+G_INT_VALUE_020,Public value conflicts in AI deployment,G_INT_VALUE,L1_G,24,36,48,0.001457017,0.001389563,13
+A_SYS_AUTH_001,Agent privilege compromise,A_SYS_AUTH,L1_A,2,4,4,0.000781993,0.0,3
+G_SYS_EVAL_077,Lack of measurable physical AI safety compliance criteria,G_SYS_EVAL,L1_G,4,8,8,0.00164689,0.000398853,12
+G_INT_SELF_005,Non-suicidal self-injury (NSSI),G_INT_SELF,L1_G,17,13,34,0.00096167,8.6068e-05,1
+G_INT_REL_001,Excessive functional dependence on AI systems in daily life,G_INT_REL,L1_G,6,10,12,0.001002476,0.000109524,10
+G_INT_ANTH_006,Blurred human-machine boundaries in interaction,G_INT_ANTH,L1_G,1,2,2,0.000623917,0.0,2
+G_INT_UNETH_026,Refined attacks on individuals through targeting and personalisation,G_INT_UNETH,L1_G,5,9,10,0.000769742,3.4651e-05,13
+G_INT_WEAP_023,Strategic instability,G_INT_WEAP,L1_G,9,14,18,0.001354644,0.000309739,13
+G_SOC_GOV_022,Lifecycle governance discontinuity,G_SOC_GOV,L1_G,2,4,4,0.000913796,6.161e-06,6
+G_SYS_MISINFO_016,Generation of historically revisionist accounts,G_SYS_MISINFO,L1_G,4,5,8,0.00057976,2.759e-06,4
+G_SYS_TRANS_002,Capability evaluation non-disclosure,G_SYS_TRANS,L1_G,1,2,2,0.001199257,0.0,15
+G_SOC_POWER_018,Privatisation of AI knowledge,G_SOC_POWER,L1_G,8,10,16,0.001057072,4.1555e-05,10
+A_SYS_AUTH_006,Autonomous replication and resource acquisition beyond operational boundaries,A_SYS_AUTH,L1_A,2,4,4,0.000772912,6.64e-06,3
+G_SYS_SECADV_006,Agent memory and context poisoning,G_SYS_SECADV,L1_G,1,2,2,0.000607528,0.0,4
+A_INT_COORD_001,Collective harm from multi-agent coordination failure,A_INT_COORD,L1_A,3,5,6,0.001214099,0.000170878,10
+G_SOC_GOV_042,Regulatory arbitrage,G_SOC_GOV,L1_G,4,8,8,0.001449449,0.000193135,10
+G_INT_VALUE_025,Value lock-in,G_INT_VALUE,L1_G,11,15,22,0.000988383,8.5472e-05,4
+P_SYS_HARDWARE_002,Erroneous execution from hardware faults,P_SYS_HARDWARE,L1_P,2,4,4,0.000619133,3.533e-06,3
+A_SYS_GOAL_006,Environmental self-modelling for influence,A_SYS_GOAL,L1_A,3,6,6,0.001627536,0.000195613,15
+G_INT_UNETH_027,Reproduction of conflict-worsening human biases from training on human data,G_INT_UNETH,L1_G,1,2,2,0.001187523,0.0,15
+G_SYS_SECADV_058,Unsafe action induced by adversarial sensory perturbation,G_SYS_SECADV,L1_G,5,9,10,0.000929566,4.215e-05,1
+G_SOC_ECON_010,Societal destabilisation from inequality and technological disruption,G_SOC_ECON,L1_G,4,7,8,0.000962101,2.1607e-05,2
+G_SOC_POWER_026,Undervalued and invisible data labour,G_SOC_POWER,L1_G,3,5,6,0.001151055,9.7884e-05,11
+G_INT_UNETH_020,Manipulative behaviour from broadly scoped goals,G_INT_UNETH,L1_G,2,4,4,0.001115006,1.4348e-05,15
+G_SOC_GOV_010,Displacement of human decision authority through AI delegation,G_SOC_GOV,L1_G,1,2,2,0.000611638,0.0,13
+G_SYS_EVAL_024,External evaluation access failure,G_SYS_EVAL,L1_G,1,2,2,0.000965478,0.0,11
+G_SYS_SECADV_028,High-impact misuse of general-purpose AI through unrestricted access,G_SYS_SECADV,L1_G,1,2,2,0.000399866,0.0,4
+G_SYS_TRANS_016,Multi-stakeholder disagreement concealment,G_SYS_TRANS,L1_G,2,4,4,0.001131638,4.4901e-05,10
+G_SOC_CULT_016,Model collapse of public knowledge,G_SOC_CULT,L1_G,1,2,2,0.000773669,0.0,1
+G_SOC_GOV_026,Missing safety rules in the robot governance specification,G_SOC_GOV,L1_G,2,4,4,0.000644622,3.132e-06,1
+G_SOC_POWER_003,Compute inequality,G_SOC_POWER,L1_G,1,2,2,0.000603894,0.0,11
+A_SYS_GOAL_023,Environmental side effects from single-objective optimisation,A_SYS_GOAL,L1_A,2,3,4,0.000674577,1.08e-06,1
+G_SOC_GOV_011,Entrenched dependence on AI systems,G_SOC_GOV,L1_G,4,8,8,0.001351142,7.8688e-05,9
+G_SOC_GOV_034,Standards fragmentation,G_SOC_GOV,L1_G,2,4,4,0.001105586,7.8057e-05,1
+A_SYS_GOAL_003,Agent task drift,A_SYS_GOAL,L1_A,1,2,2,0.001180985,0.0,12
+G_SYS_PERF_010,Intrinsic robustness weaknesses of complex neural models,G_SYS_PERF,L1_G,2,4,4,0.001509739,2.4086e-05,12
+G_INT_VALUE_010,Entrenchment of annotator bias as neutral human preference,G_INT_VALUE,L1_G,1,2,2,0.000560712,0.0,9
+G_INT_VALUE_006,Cultural and ideological homogenisation by AI,G_INT_VALUE,L1_G,2,3,4,0.000738583,0.0,2
+G_SYS_TRANS_003,Documentation omission,G_SYS_TRANS,L1_G,1,2,2,0.001276386,0.0,5
+G_INT_VALUE_024,Value drift under optimisation,G_INT_VALUE,L1_G,1,2,2,0.000469345,0.0,2
+A_SYS_GOAL_005,Emergent independence via recursive self-improvement,A_SYS_GOAL,L1_A,1,2,2,0.000657318,0.0,13
+G_INT_REPR_024,Long-term effects of AI model biases on user judgement,G_INT_REPR,L1_G,2,4,4,0.000518267,1.9078e-05,2
+G_SOC_GOV_040,Unclear attribution of harm from AI component interactions,G_SOC_GOV,L1_G,1,2,2,0.000740035,0.0,9
+G_SYS_EVAL_013,Change-management failure,G_SYS_EVAL,L1_G,1,2,2,0.00081465,0.0,1
+P_SYS_CONTROL_012,Design-stage specification errors,P_SYS_CONTROL,L1_P,1,2,2,0.000817332,0.0,6
+G_SOC_GOV_024,Meaningful human control failure,G_SOC_GOV,L1_G,1,2,2,0.00047623,0.0,1

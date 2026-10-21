@@ -3,3 +3,7 @@ node_modules
 *.inspect.ndjson
 .playwright-cli/
 __pycache__/
+raw/
+evidence_work/
+processed/
+figures/

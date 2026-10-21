@@ -1,0 +1,20 @@
+{
+  "snapshot": "2026-10-21",
+  "source_records": {
+    "OECD AIM actual incidents": 10449,
+    "AIID incidents": 1751,
+    "MIT Tracker derived classifications": 1752
+  },
+  "canonical_incidents": 11119,
+  "exact_aim_aiid_links": 1083,
+  "fuzzy_candidates_not_merged": 2,
+  "missingness": {
+    "event_date": 0.0,
+    "risk_name": 0.030462,
+    "risk_description": 0.0,
+    "severity_normalized": 0.748997,
+    "countries": 0.175315,
+    "industry_sector": 0.237457
+  },
+  "grain": "source_records has one row per source record; canonical_incidents collapses exact AIID-linked source overlap only"
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-10-21",
+  "analytical_grain": {
+    "source_records": "one row per source record",
+    "canonical_incidents": "AIID identity is canonical when exact ID linkage exists; MIT is an AIID enrichment",
+    "mapping_edges": "one row per incident-card candidate; five per event, top three flagged"
+  },
+  "sources": [
+    {
+      "name": "OECD AI Incidents Monitor",
+      "url": "https://oecd.ai/en/incidents",
+      "snapshot": "2026-08-24",
+      "selection": "AI incident only; AI hazards excluded",
+      "license_note": "OECD.AI terms; linked article content retains source rights"
+    },
+    {
+      "name": "AI Incident Database",
+      "url": "https://incidentdatabase.ai/research/snapshots/",
+      "snapshot": "backup-20261019101022.tar.bz2",
+      "license_note": "Database CC BY-SA 4.0; report contents retain source rights"
+    },
+    {
+      "name": "MIT AI Incident Tracker",
+      "url": "https://airisk.mit.edu/ai-incident-tracker",
+      "snapshot": "2026-10-21",
+      "license_note": "MIT site CC BY 4.0; underlying AIID records CC BY-SA 4.0"
+    }
+  ],
+  "taxonomy": {
+    "name": "HEART AI Risk Taxonomy",
+    "cards": 622,
+    "mapping_model": "bge-m3:latest",
+    "model_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+    "validation": "model-based; not human validated"
+  },
+  "files": [
+    {
+      "path": "data/incidents/README.md",
+      "bytes": 1376,
+      "sha256": "ec7705cfefbd44040a637e643fd790afe4cc346d1713c9f3f7df4afd892888ce"
+    },
+    {
+      "path": "data/incidents/downloads/canonical_incidents_compact.json",
+      "bytes": 3299530,
+      "sha256": "dac014d242286e2cd5a053d1eae6fbe53b097656fd28ac46f9a8700a111f2edb"
+    },
+    {
+      "path": "data/incidents/downloads/data_quality.json",
+      "bytes": 600,
+      "sha256": "61c71119da21aa627c06344b56df866e9500472e1b157f3e0b0192c5d9b98406"
+    },
+    {
+      "path": "data/incidents/downloads/duplicate_candidates.csv",
+      "bytes": 239,
+      "sha256": "d542b1612298ff801147118864d40861998f5c8d63f59472af8e2a50a9a2da68"
+    },
+    {
+      "path": "data/incidents/downloads/incident_heart_edges_k5.csv.gz",
+      "bytes": 1240538,
+      "sha256": "ce1e3d8a1b6a1ada989cf7707c5ea00f37653d5d7a28cf7d4a94d335d837048e"
+    },
+    {
+      "path": "data/incidents/downloads/network_metrics.json",
+      "bytes": 10484,
+      "sha256": "6d865de2ad1e7a61a60c577be281c7e55ce296e08cfb0efb4d09808b1758f275"
+    },
+    {
+      "path": "data/incidents/downloads/risk_cooccurrence_edges_k3.csv",
+      "bytes": 435570,
+      "sha256": "39db1a8403701791dd0bc7dfb0bb9133243d22d9676efa9d3f3dac8cc479f89c"
+    },
+    {
+      "path": "data/incidents/downloads/risk_network_nodes_k3.csv",
+      "bytes": 63578,
+      "sha256": "c22315149fb698a392dc9b0c86f34eaf34b7ea235e25cd4966faa491fd6390c3"
+    },
+    {
+      "path": "data/incidents/downloads/source_records.csv.gz",
+      "bytes": 3633469,
+      "sha256": "15ccbbeaf69d173fed464a98c34ff46ebe013ff9177e4c9b8f158a974c3d4b73"
+    },
+    {
+      "path": "data/incidents/incidents_compact.json",
+      "bytes": 3299530,
+      "sha256": "dac014d242286e2cd5a053d1eae6fbe53b097656fd28ac46f9a8700a111f2edb"
+    },
+    {
+      "path": "data/incidents/network_edges_k3.json",
+      "bytes": 214769,
+      "sha256": "cfdd0016d9e74ec5dcc49f68fc0b8aa7294e11088a7ecb28ce010e776d02bb6c"
+    },
+    {
+      "path": "data/incidents/network_metrics.json",
+      "bytes": 10484,
+      "sha256": "6d865de2ad1e7a61a60c577be281c7e55ce296e08cfb0efb4d09808b1758f275"
+    },
+    {
+      "path": "data/incidents/network_nodes_k3.json",
+      "bytes": 147518,
+      "sha256": "be0f81ecd21c3adf57565c2f1ff5193793d42b67649b4471da2f47a2b7dd6038"
+    }
+  ]
+}
