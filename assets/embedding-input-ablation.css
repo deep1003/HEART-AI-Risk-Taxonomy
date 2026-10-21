@@ -1,0 +1,8 @@
+.ablation-chart-grid{align-items:stretch}
+.ablation-chart-grid .diagnostic-chart{min-width:0}
+.model-legend{display:flex;justify-content:center;gap:24px;margin:18px 0 28px;color:#475467;font-size:.82rem;font-weight:700}
+.model-legend span{display:flex;align-items:center;gap:8px}.model-legend i{width:22px;height:8px;border-radius:999px}.model-legend .bge{background:#3568dc}.model-legend .e5{background:#d9972f}
+.ablation-table td:nth-child(n+4),.ablation-table th:nth-child(n+4){text-align:right;font-variant-numeric:tabular-nums}
+.effect-chart{margin-top:30px;overflow:auto}.effect-chart svg{min-width:820px}
+.ablation-axis{font-size:12px;fill:#667085}.ablation-value{font-size:12px;fill:#18213d;font-weight:800}.ablation-grid{stroke:#e3e8f0;stroke-width:1}.ablation-zero{stroke:#667085;stroke-width:1.5}.ablation-ci{stroke:#18213d;stroke-width:2}.ablation-point{fill:#3568dc;stroke:#fff;stroke-width:2}.ablation-label{font-size:13px;fill:#18213d;font-weight:700}
+@media(max-width:760px){.ablation-table{min-width:900px}.model-legend{justify-content:flex-start}.ablation-chart-grid .diagnostic-chart{overflow:auto}.ablation-chart-grid svg{min-width:620px}}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Controlled comparison of embedding model, taxonomy, language, and text-field choices in hierarchical AI-risk assignment.">
+  <title>Embedding and input ablation | HEART</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles-v2.css">
+  <link rel="stylesheet" href="assets/institution.css">
+  <link rel="stylesheet" href="assets/explorer-layout.css?v=shared-shell-20261010">
+  <link rel="stylesheet" href="assets/scale-law-diagnostics.css?v=20261021">
+  <link rel="stylesheet" href="assets/embedding-input-ablation.css?v=20261021">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="HEART home"><span class="heart-brand-copy"><span class="brand-kicker"><span class="brand-gold-dot" aria-hidden="true"></span>AI Risk Taxonomy for General, Agentic, and Physical AI</span><strong>HEA<span class="heart-brand-r">R</span>T</strong><small>Hybrid Evidence-based AI Risk Taxonomy</small></span></a>
+    <nav aria-label="Primary navigation"><a href="https://github.com/deep1003/HEART-AI-Risk-Taxonomy" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+  </header>
+  <main>
+    <nav class="section-nav" aria-label="Page sections"><div class="explorer-tabs"><a href="about.html">About HEART</a><a href="./#explore">AI risk taxonomy</a><a href="./#ai-risk-space">AI risk space</a><a href="scale-law-diagnostics.html">L4 scale-law diagnostics</a><a href="mit-scale-law-ablation.html">MIT ablation appendix</a><a href="embedding-input-ablation.html" aria-current="page">Embedding and input ablation</a></div></nav>
+
+    <div class="diagnostics-main">
+      <section class="diagnostics-hero">
+        <div>
+          <p class="diagnostics-eyebrow">Controlled assignment ablation</p>
+          <h1>Accuracy depends on the embedding model, taxonomy, language, and text fields</h1>
+          <p class="diagnostics-lede">This experiment evaluates two multilingual embedding models on two independently structured AI-risk taxonomies under four fixed input conditions: English title, English title plus definition, Korean title, and Korean title plus definition. All comparisons use the same cosine-retrieval rule and are reported against the taxonomy's existing category assignment.</p>
+          <div class="diagnostics-actions"><a href="scale-law-diagnostics.html">Return to HEART results</a><a class="secondary" href="data/aggregate_metrics.csv" download>Download metrics CSV</a><a class="secondary" href="data/paired_comparisons.csv" download>Download paired tests</a></div>
+        </div>
+        <div class="hero-verdict"><span>Consistent result</span><strong>Definitions improve Top-1 agreement in all eight paired comparisons</strong></div>
+      </section>
+
+      <section class="diagnostics-summary" aria-label="Experiment summary">
+        <article><span>Experimental cells</span><strong>16</strong><small>2 models × 2 taxonomies × 4 inputs</small></article>
+        <article><span>HEART evaluation set</span><strong>622</strong><small>L4 cards assigned to 55 L3 categories</small></article>
+        <article><span>MIT evaluation set</span><strong>1,511</strong><small>leaf-labelled records assigned to 24 subdomains</small></article>
+        <article><span>Definition gain</span><strong>+16.81 to +23.31 pp</strong><small>paired Top-1 difference across all cells</small></article>
+      </section>
+
+      <section class="diagnostics-section" aria-labelledby="accuracy-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Primary result</p><h2 id="accuracy-title">Top-1 human-label agreement across the 16 conditions</h2><p>Accuracy here means agreement between the highest-scoring L3 or MIT leaf category and the category already assigned in the source taxonomy. It is a retrieval-agreement measure, not proof that either taxonomy or every source assignment is objectively correct.</p></div>
+        <div class="chart-grid ablation-chart-grid">
+          <figure class="diagnostic-chart"><figcaption><strong>HEART</strong><span>622 L4 cards, 55 L3 categories</span></figcaption><svg id="heart-accuracy-chart" viewBox="0 0 680 430" role="img" aria-label="HEART Top-1 agreement by model and input condition"></svg></figure>
+          <figure class="diagnostic-chart"><figcaption><strong>MIT AI Risk Repository</strong><span>1,511 leaf-labelled records, 24 leaf subdomains</span></figcaption><svg id="mit-accuracy-chart" viewBox="0 0 680 430" role="img" aria-label="MIT Top-1 agreement by model and input condition"></svg></figure>
+        </div>
+        <div class="model-legend" aria-label="Embedding model legend"><span><i class="bge"></i>BGE-M3</span><span><i class="e5"></i>multilingual-E5-base</span></div>
+        <div class="ranking-table-wrap"><table class="ranking-table ablation-table"><thead><tr><th>Taxonomy</th><th>Model</th><th>Input</th><th>Top-1</th><th>95% CI</th><th>Top-3</th><th>MRR</th><th>Macro-F1</th></tr></thead><tbody id="metrics-body"></tbody></table></div>
+      </section>
+
+      <section class="diagnostics-section" aria-labelledby="paired-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Paired effect</p><h2 id="paired-title">Adding definitions produces the largest and most stable improvement</h2><p>Each interval is a 95% paired bootstrap interval for the change in Top-1 agreement when a definition is added to the title. Exact McNemar tests use the same item-level predictions and correct for pairing.</p></div>
+        <figure class="diagnostic-chart effect-chart"><svg id="definition-effect-chart" viewBox="0 0 1100 560" role="img" aria-label="Paired Top-1 agreement gain from adding definitions"></svg></figure>
+        <div class="reading-note"><strong>Interpretation.</strong> The definition gain is positive for both models, both taxonomies, and both languages. Model choice changes some individual assignments, but the effect of adding definitional context is larger and more consistent than the BGE-M3 versus E5 difference.</div>
+      </section>
+
+      <section class="diagnostics-section" aria-labelledby="language-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Language condition</p><h2 id="language-title">Korean inputs yield lower agreement in most cells</h2><p>For HEART, Korean fields are the official bilingual taxonomy text. For MIT, the public English source was translated with a fixed NLLB model, so the MIT Korean result is a translation-mediated condition rather than a comparison of two official source languages.</p></div>
+        <div class="meaning-grid">
+          <article><h3>HEART</h3><p>Switching from English to Korean changes Top-1 agreement by −2.25 to −5.31 percentage points, depending on model and text field. Three of four differences are statistically distinguishable at 0.05; the BGE-M3 title-only difference is not.</p></article>
+          <article><h3>MIT repository</h3><p>The translation-mediated Korean conditions are 5.43 to 9.13 percentage points below English. All four paired differences are statistically distinguishable. This combines language sensitivity with translation effects and must not be interpreted as a general ranking of languages.</p></article>
+          <article><h3>Model comparison</h3><p>BGE-M3 and E5 differ by −5.47 to +2.05 percentage points across cells. Most model contrasts are not statistically distinguishable; the HEART Korean title-only cell favours BGE-M3.</p></article>
+        </div>
+      </section>
+
+      <section class="diagnostics-section method-section" aria-labelledby="method-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Design and mathematical specification</p><h2 id="method-title">A frozen nearest-category retrieval experiment</h2><p>The experiment is deliberately separate from the earlier scale-law analysis. It does not construct or refit a semantic network and does not rerun EM. It tests how representation choices affect recovery of an existing hierarchical assignment.</p></div>
+        <ol class="method-steps">
+          <li><strong>Frozen targets.</strong><span>HEART uses 622 validated L4 cards and 55 L3 labels. MIT uses 1,511 records with a valid leaf subdomain label and 24 leaf labels; 324 blank, domain-level, uncoded, or X-labelled records are excluded before modelling.</span></li>
+          <li><strong>Four input conditions.</strong><span>For both risk items and candidate category labels, the text is title only or title plus definition, in English or Korean. This symmetric construction prevents a richer label representation from being compared with a title-only item.</span></li>
+          <li><strong>Two frozen encoders.</strong><span>BGE-M3 produces 1,024-dimensional vectors. multilingual-E5-base produces 768-dimensional vectors and uses its documented query prefix. All vectors are L2 normalised.</span></li>
+          <li><strong>Assignment.</strong><span>For item vector <em>z</em><sub>i</sub> and category vector <em>c</em><sub>j</sub>, <span class="equation">s<sub>ij</sub> = z<sub>i</sub> · c<sub>j</sub></span> after normalisation. The predicted category is <span class="equation">arg max<sub>j</sub> s<sub>ij</sub></span>. No threshold, seed label, or category prototype is tuned against the evaluation labels.</span></li>
+          <li><strong>Inference.</strong><span>Top-1 agreement is primary. Top-3, mean reciprocal rank, and macro-F1 are secondary. Item-level paired bootstrap intervals use 10,000 fixed-seed resamples; discordant Top-1 outcomes are compared with an exact McNemar test.</span></li>
+        </ol>
+      </section>
+
+      <section class="diagnostics-section validation-section" aria-labelledby="validation-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Integrity checks</p><h2 id="validation-title">Sequential execution and reproducible inputs</h2></div>
+        <div class="validation-grid">
+          <article><strong>Strict stage separation</strong><p>HEART × BGE-M3, MIT × BGE-M3, HEART × E5, and MIT × E5 were executed and audited as separate stages. Comparative statistics were generated only after all raw cells passed count and hash checks.</p></article>
+          <article><strong>Source integrity</strong><p>Every run verifies the expected item count, category count, unique IDs, prediction count, and SHA-256 of the frozen bilingual input.</p></article>
+          <article><strong>Translation-length repair</strong><p>An audit identified 21 MIT definitions requiring length-safe retranslation. They were reprocessed by sentence-boundary chunks of at most 350 source tokens, and all eight MIT cells were rerun against the repaired input.</p></article>
+          <article><strong>Complete outputs</strong><p>Machine-readable metrics, predictions, embeddings, paired tests, source manifests, translation metadata, and pre-repair audit outputs are retained with the experiment record.</p></article>
+        </div>
+        <p class="validation-record"><span class="validation-pass">Validated</span> Sixteen final cells, 24 paired comparisons, and the repaired MIT input fingerprint were verified before website integration.</p>
+      </section>
+
+      <section class="diagnostics-section meaning-section" aria-labelledby="meaning-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Meaning and limitations</p><h2 id="meaning-title">What the ablation supports</h2></div>
+        <div class="meaning-grid">
+          <article><h3>Academic significance</h3><p>The effect of definitional context generalises across two encoders and two taxonomies. Representation choices are therefore part of the measurement model, not a neutral preprocessing detail. Cross-taxonomy replication strengthens this conclusion without implying equivalence between the ontologies.</p></article>
+          <article><h3>Practical significance</h3><p>Automated candidate mapping should embed complete risk definitions whenever available and retain language-specific validation. Title-only retrieval may be useful for rapid screening, but it should not be treated as a substitute for definition-aware human review.</p></article>
+          <article><h3>Limitations</h3><p>The reference labels are curated assignments rather than an external ground truth. MIT Korean results include machine-translation error. The experiment tests direct nearest-category retrieval, not EM, fine-tuning, reranking, or expert adjudication. Taxonomy sizes and granularity differ, so absolute accuracy should be compared cautiously.</p></article>
+        </div>
+      </section>
+
+      <section class="diagnostics-section references-section" aria-labelledby="references-title">
+        <div class="section-copy"><p class="diagnostics-eyebrow">Models and data</p><h2 id="references-title">Source and model records</h2></div>
+        <ol>
+          <li>Slattery, P., et al. <a href="https://doi.org/10.48550/arXiv.2408.12622" target="_blank" rel="noopener noreferrer">The AI Risk Repository: A Comprehensive Meta-Review, Database, and Taxonomy of Risks from Artificial Intelligence</a>.</li>
+          <li><a href="https://airisk.mit.edu/risks" target="_blank" rel="noopener noreferrer">MIT AI Risk Repository</a>. Public source inventory and taxonomy.</li>
+          <li>Chen, J., et al. <a href="https://arxiv.org/abs/2402.03216" target="_blank" rel="noopener noreferrer">BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation</a>.</li>
+          <li>Wang, L., et al. <a href="https://arxiv.org/abs/2212.03533" target="_blank" rel="noopener noreferrer">Text Embeddings by Weakly-Supervised Contrastive Pre-training</a>. Basis for the multilingual-E5 model family.</li>
+          <li><a href="https://huggingface.co/facebook/nllb-200-distilled-600M" target="_blank" rel="noopener noreferrer">NLLB-200 distilled 600M model card</a>. Fixed English-to-Korean translation model for the MIT ablation.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer publisher-footer"><div class="publisher-identity"><a class="kt-logo-link" href="https://corp.kt.com/eng/" target="_blank" rel="noopener noreferrer" aria-label="KT Corporation official website"><img src="assets/kt-logo-light.svg" alt="KT" width="40" height="40"></a><div><p class="publisher-name">Frontier AI Lab, KT Corporation</p><a class="publisher-contact" href="mailto:responsible.ai@kt.com">responsible.ai@kt.com</a></div></div></footer>
+  <script src="assets/embedding-input-ablation.js?v=20261021" defer></script>
+</body>
+</html>

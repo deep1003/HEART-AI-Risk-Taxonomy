@@ -1,0 +1,450 @@
+[
+  {
+    "comparison": "definition_added",
+    "taxonomy": "heart",
+    "model": "bge_m3",
+    "language": "en",
+    "condition_a": "en_title",
+    "condition_b": "en_title_definition",
+    "n": 622,
+    "accuracy_a": 0.34887459807073956,
+    "accuracy_b": 0.5691318327974276,
+    "delta_b_minus_a": 0.2202572347266881,
+    "delta_ci95": [
+      0.17845659163987138,
+      0.2620578778135048
+    ],
+    "a_correct_b_wrong": 36,
+    "a_wrong_b_correct": 173,
+    "mcnemar_exact_p": 1.121878630680683e-22
+  },
+  {
+    "comparison": "definition_added",
+    "taxonomy": "heart",
+    "model": "bge_m3",
+    "language": "ko",
+    "condition_a": "ko_title",
+    "condition_b": "ko_title_definition",
+    "n": 622,
+    "accuracy_a": 0.32636655948553056,
+    "accuracy_b": 0.5241157556270096,
+    "delta_b_minus_a": 0.1977491961414791,
+    "delta_ci95": [
+      0.15755627009646303,
+      0.2395498392282958
+    ],
+    "a_correct_b_wrong": 35,
+    "a_wrong_b_correct": 158,
+    "mcnemar_exact_p": 7.288893759572603e-20
+  },
+  {
+    "comparison": "language_changed_en_to_ko",
+    "taxonomy": "heart",
+    "model": "bge_m3",
+    "content": "title",
+    "condition_a": "en_title",
+    "condition_b": "ko_title",
+    "n": 622,
+    "accuracy_a": 0.34887459807073956,
+    "accuracy_b": 0.32636655948553056,
+    "delta_b_minus_a": -0.022508038585209004,
+    "delta_ci95": [
+      -0.06270096463022508,
+      0.017684887459807074
+    ],
+    "a_correct_b_wrong": 87,
+    "a_wrong_b_correct": 73,
+    "mcnemar_exact_p": 0.30405987771541065
+  },
+  {
+    "comparison": "language_changed_en_to_ko",
+    "taxonomy": "heart",
+    "model": "bge_m3",
+    "content": "title_definition",
+    "condition_a": "en_title_definition",
+    "condition_b": "ko_title_definition",
+    "n": 622,
+    "accuracy_a": 0.5691318327974276,
+    "accuracy_b": 0.5241157556270096,
+    "delta_b_minus_a": -0.04501607717041801,
+    "delta_ci95": [
+      -0.08360128617363344,
+      -0.006430868167202572
+    ],
+    "a_correct_b_wrong": 89,
+    "a_wrong_b_correct": 61,
+    "mcnemar_exact_p": 0.02715259073764602
+  },
+  {
+    "comparison": "definition_added",
+    "taxonomy": "heart",
+    "model": "e5_base",
+    "language": "en",
+    "condition_a": "en_title",
+    "condition_b": "en_title_definition",
+    "n": 622,
+    "accuracy_a": 0.3247588424437299,
+    "accuracy_b": 0.5498392282958199,
+    "delta_b_minus_a": 0.22508038585209003,
+    "delta_ci95": [
+      0.1864951768488746,
+      0.2652733118971061
+    ],
+    "a_correct_b_wrong": 26,
+    "a_wrong_b_correct": 166,
+    "mcnemar_exact_p": 3.6839558857814544e-26
+  },
+  {
+    "comparison": "definition_added",
+    "taxonomy": "heart",
+    "model": "e5_base",
+    "language": "ko",
+    "condition_a": "ko_title",
+    "condition_b": "ko_title_definition",
+    "n": 622,
+    "accuracy_a": 0.2717041800643087,
+    "accuracy_b": 0.5048231511254019,
+    "delta_b_minus_a": 0.23311897106109325,
+    "delta_ci95": [
+      0.19292604501607716,
+      0.2733118971061093
+    ],
+    "a_correct_b_wrong": 29,
+    "a_wrong_b_correct": 174,
+    "mcnemar_exact_p": 2.1303311367618013e-26
+  },
+  {
+    "comparison": "language_changed_en_to_ko",
+    "taxonomy": "heart",
+    "model": "e5_base",
+    "content": "title",
+    "condition_a": "en_title",
+    "condition_b": "ko_title",
+    "n": 622,
+    "accuracy_a": 0.3247588424437299,
+    "accuracy_b": 0.2717041800643087,
+    "delta_b_minus_a": -0.05305466237942122,
+    "delta_ci95": [
+      -0.09003215434083602,
+      -0.014469453376205787
+    ],
+    "a_correct_b_wrong": 90,
+    "a_wrong_b_correct": 57,
+    "mcnemar_exact_p": 0.008087589471194513
+  },
+  {
+    "comparison": "language_changed_en_to_ko",
+    "taxonomy": "heart",
+    "model": "e5_base",
+    "content": "title_definition",
+    "condition_a": "en_title_definition",
+    "condition_b": "ko_title_definition",
+    "n": 622,
+    "accuracy_a": 0.5498392282958199,
+    "accuracy_b": 0.5048231511254019,
+    "delta_b_minus_a": -0.04501607717041801,
+    "delta_ci95": [
+      -0.0819935691318328,
+      -0.008038585209003215
+    ],
+    "a_correct_b_wrong": 87,
+    "a_wrong_b_correct": 59,
+    "mcnemar_exact_p": 0.025111377256256767
+  },
+  {
+    "comparison": "definition_added",
+    "taxonomy": "mit",
+    "model": "bge_m3",
+    "language": "en",
+    "condition_a": "en_title",
+    "condition_b": "en_title_definition",
+    "n": 1511,
+    "accuracy_a": 0.3084050297816016,
+    "accuracy_b": 0.47915287888815355,
+    "delta_b_minus_a": 0.17074784910655194,
+    "delta_ci95": [
+      0.14493712772998016,
+      0.19655857048312375
+    ],
+    "a_correct_b_wrong": 98,
+    "a_wrong_b_correct": 356,
+    "mcnemar_exact_p": 1.89102910324639e-35
+  },
+  {
+    "comparison": "definition_added",
+    "taxonomy": "mit",
+    "model": "bge_m3",
+    "language": "ko",
+    "condition_a": "ko_title",
+    "condition_b": "ko_title_definition",
+    "n": 1511,
+    "accuracy_a": 0.2541363335539378,
+    "accuracy_b": 0.4242223692918597,
+    "delta_b_minus_a": 0.17008603573792191,
+    "delta_ci95": [
+      0.14493712772998016,
+      0.19523494374586367
+    ],
+    "a_correct_b_wrong": 83,
+    "a_wrong_b_correct": 340,
+    "mcnemar_exact_p": 5.368116254588218e-38
+  },
+  {
+    "comparison": "language_changed_en_to_ko",
+    "taxonomy": "mit",
+    "model": "bge_m3",
+    "content": "title",
+    "condition_a": "en_title",
+    "condition_b": "ko_title",
+    "n": 1511,
+    "accuracy_a": 0.3084050297816016,
+    "accuracy_b": 0.2541363335539378,
+    "delta_b_minus_a": -0.054268696227663796,
+    "delta_ci95": [
+      -0.07478491065519524,
+      -0.033752481800132364
+    ],
+    "a_correct_b_wrong": 169,
+    "a_wrong_b_correct": 87,
+    "mcnemar_exact_p": 3.3143393207024743e-07
+  },
+  {
+    "comparison": "language_changed_en_to_ko",
+    "taxonomy": "mit",
+    "model": "bge_m3",
+    "content": "title_definition",
+    "condition_a": "en_title_definition",
+    "condition_b": "ko_title_definition",
+    "n": 1511,
+    "accuracy_a": 0.47915287888815355,
+    "accuracy_b": 0.4242223692918597,
+    "delta_b_minus_a": -0.05493050959629384,
+    "delta_ci95": [
+      -0.07677035076108538,
+      -0.03441429516876241
+    ],
+    "a_correct_b_wrong": 172,
+    "a_wrong_b_correct": 89,
+    "mcnemar_exact_p": 3.0992442717507083e-07
+  },
+  {
+    "comparison": "definition_added",
+    "taxonomy": "mit",
+    "model": "e5_base",
+    "language": "en",
+    "condition_a": "en_title",
+    "condition_b": "en_title_definition",
+    "n": 1511,
+    "accuracy_a": 0.30906684315023164,
+    "accuracy_b": 0.499669093315685,
+    "delta_b_minus_a": 0.19060225016545335,
+    "delta_ci95": [
+      0.1628060886829914,
+      0.2183984116479153
+    ],
+    "a_correct_b_wrong": 119,
+    "a_wrong_b_correct": 407,
+    "mcnemar_exact_p": 7.416957546974768e-38
+  },
+  {
+    "comparison": "definition_added",
+    "taxonomy": "mit",
+    "model": "e5_base",
+    "language": "ko",
+    "condition_a": "ko_title",
+    "condition_b": "ko_title_definition",
+    "n": 1511,
+    "accuracy_a": 0.2402382528127068,
+    "accuracy_b": 0.4083388484447386,
+    "delta_b_minus_a": 0.16810059563203178,
+    "delta_ci95": [
+      0.14228987425545997,
+      0.19391131700860356
+    ],
+    "a_correct_b_wrong": 98,
+    "a_wrong_b_correct": 352,
+    "mcnemar_exact_p": 1.1445764492727445e-34
+  },
+  {
+    "comparison": "language_changed_en_to_ko",
+    "taxonomy": "mit",
+    "model": "e5_base",
+    "content": "title",
+    "condition_a": "en_title",
+    "condition_b": "ko_title",
+    "n": 1511,
+    "accuracy_a": 0.30906684315023164,
+    "accuracy_b": 0.2402382528127068,
+    "delta_b_minus_a": -0.06882859033752482,
+    "delta_ci95": [
+      -0.09066843150231635,
+      -0.04698874917273329
+    ],
+    "a_correct_b_wrong": 205,
+    "a_wrong_b_correct": 101,
+    "mcnemar_exact_p": 2.7738038149266057e-09
+  },
+  {
+    "comparison": "language_changed_en_to_ko",
+    "taxonomy": "mit",
+    "model": "e5_base",
+    "content": "title_definition",
+    "condition_a": "en_title_definition",
+    "condition_b": "ko_title_definition",
+    "n": 1511,
+    "accuracy_a": 0.499669093315685,
+    "accuracy_b": 0.4083388484447386,
+    "delta_b_minus_a": -0.09133024487094639,
+    "delta_ci95": [
+      -0.11515552614162806,
+      -0.06750496360026473
+    ],
+    "a_correct_b_wrong": 242,
+    "a_wrong_b_correct": 104,
+    "mcnemar_exact_p": 8.302980453964268e-14
+  },
+  {
+    "comparison": "model_changed_bge_to_e5",
+    "taxonomy": "heart",
+    "condition": "en_title",
+    "condition_a": "bge_m3",
+    "condition_b": "e5_base",
+    "n": 622,
+    "accuracy_a": 0.34887459807073956,
+    "accuracy_b": 0.3247588424437299,
+    "delta_b_minus_a": -0.024115755627009645,
+    "delta_ci95": [
+      -0.05627009646302251,
+      0.008038585209003215
+    ],
+    "a_correct_b_wrong": 60,
+    "a_wrong_b_correct": 45,
+    "mcnemar_exact_p": 0.17156469715424233
+  },
+  {
+    "comparison": "model_changed_bge_to_e5",
+    "taxonomy": "heart",
+    "condition": "en_title_definition",
+    "condition_a": "bge_m3",
+    "condition_b": "e5_base",
+    "n": 622,
+    "accuracy_a": 0.5691318327974276,
+    "accuracy_b": 0.5498392282958199,
+    "delta_b_minus_a": -0.01929260450160772,
+    "delta_ci95": [
+      -0.05305466237942122,
+      0.014469453376205787
+    ],
+    "a_correct_b_wrong": 66,
+    "a_wrong_b_correct": 54,
+    "mcnemar_exact_p": 0.315303300832258
+  },
+  {
+    "comparison": "model_changed_bge_to_e5",
+    "taxonomy": "heart",
+    "condition": "ko_title",
+    "condition_a": "bge_m3",
+    "condition_b": "e5_base",
+    "n": 622,
+    "accuracy_a": 0.32636655948553056,
+    "accuracy_b": 0.2717041800643087,
+    "delta_b_minus_a": -0.05466237942122187,
+    "delta_ci95": [
+      -0.08360128617363344,
+      -0.02572347266881029
+    ],
+    "a_correct_b_wrong": 61,
+    "a_wrong_b_correct": 27,
+    "mcnemar_exact_p": 0.0003740220149449216
+  },
+  {
+    "comparison": "model_changed_bge_to_e5",
+    "taxonomy": "heart",
+    "condition": "ko_title_definition",
+    "condition_a": "bge_m3",
+    "condition_b": "e5_base",
+    "n": 622,
+    "accuracy_a": 0.5241157556270096,
+    "accuracy_b": 0.5048231511254019,
+    "delta_b_minus_a": -0.01929260450160772,
+    "delta_ci95": [
+      -0.05144694533762058,
+      0.012861736334405145
+    ],
+    "a_correct_b_wrong": 58,
+    "a_wrong_b_correct": 46,
+    "mcnemar_exact_p": 0.280690329034179
+  },
+  {
+    "comparison": "model_changed_bge_to_e5",
+    "taxonomy": "mit",
+    "condition": "en_title",
+    "condition_a": "bge_m3",
+    "condition_b": "e5_base",
+    "n": 1511,
+    "accuracy_a": 0.3084050297816016,
+    "accuracy_b": 0.30906684315023164,
+    "delta_b_minus_a": 0.0006618133686300463,
+    "delta_ci95": [
+      -0.018530774321641297,
+      0.01985440105890139
+    ],
+    "a_correct_b_wrong": 109,
+    "a_wrong_b_correct": 110,
+    "mcnemar_exact_p": 1.0
+  },
+  {
+    "comparison": "model_changed_bge_to_e5",
+    "taxonomy": "mit",
+    "condition": "en_title_definition",
+    "condition_a": "bge_m3",
+    "condition_b": "e5_base",
+    "n": 1511,
+    "accuracy_a": 0.47915287888815355,
+    "accuracy_b": 0.499669093315685,
+    "delta_b_minus_a": 0.020516214427531435,
+    "delta_ci95": [
+      -0.0026472534745201853,
+      0.04367968232958306
+    ],
+    "a_correct_b_wrong": 143,
+    "a_wrong_b_correct": 174,
+    "mcnemar_exact_p": 0.09183748470408627
+  },
+  {
+    "comparison": "model_changed_bge_to_e5",
+    "taxonomy": "mit",
+    "condition": "ko_title",
+    "condition_a": "bge_m3",
+    "condition_b": "e5_base",
+    "n": 1511,
+    "accuracy_a": 0.2541363335539378,
+    "accuracy_b": 0.2402382528127068,
+    "delta_b_minus_a": -0.013898080741230973,
+    "delta_ci95": [
+      -0.03242885506287227,
+      0.004632693580410324
+    ],
+    "a_correct_b_wrong": 113,
+    "a_wrong_b_correct": 92,
+    "mcnemar_exact_p": 0.16229353786914655
+  },
+  {
+    "comparison": "model_changed_bge_to_e5",
+    "taxonomy": "mit",
+    "condition": "ko_title_definition",
+    "condition_a": "bge_m3",
+    "condition_b": "e5_base",
+    "n": 1511,
+    "accuracy_a": 0.4242223692918597,
+    "accuracy_b": 0.4083388484447386,
+    "delta_b_minus_a": -0.01588352084712111,
+    "delta_ci95": [
+      -0.03838517538054269,
+      0.0066181336863004635
+    ],
+    "a_correct_b_wrong": 162,
+    "a_wrong_b_correct": 138,
+    "mcnemar_exact_p": 0.18411657239198564
+  }
+]
