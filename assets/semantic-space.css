@@ -96,3 +96,5 @@
 .semantic-l1-group h4{font-size:.9rem;margin:18px 0 12px;display:flex;align-items:center;gap:8px}
 .semantic-l2-group h5{font-size:.8rem;color:#667085;margin:14px 0 8px}
 .semantic-domain-key{display:inline-flex;align-items:center;gap:6px;margin-right:18px;font-weight:650}
+
+.risk-title-with-mark{display:flex;align-items:flex-start;gap:9px}.risk-title-mark{display:inline-block;flex:0 0 14px;width:14px;height:14px;border-radius:50%;margin-top:6px;box-shadow:0 0 0 1px rgba(24,37,63,.12)}
