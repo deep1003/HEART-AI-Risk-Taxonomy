@@ -14,7 +14,7 @@
   let data, selected = null, activeChannel = 'AIID', incidentLimit = 15, selectionToken = 0;
   const incidentCache = new Map();
   const baseZoom = 1.25;
-  const defaultZoom = channel => ({k:baseZoom,x:channel==='AIM'?-45:0,y:channel==='AIM'?-40:0});
+  const defaultZoom = channel => ({k:baseZoom,x:channel==='AIM'?-45:-35,y:channel==='AIM'?-40:-30});
   const zoom = {AIM:defaultZoom('AIM'),AIID:defaultZoom('AIID')};
   const channelMaps = {}, allCards = new Map();
   function radius(activations, channel) {
@@ -200,7 +200,7 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-15');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-16');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       data.max_activations=Math.max(...Object.values(data.channels).flatMap(c=>c.nodes.map(n=>n.activations)));
       data.domain_colors={L1_G:'#4263eb',L1_A:'#d87518',L1_P:'#16854b'};
