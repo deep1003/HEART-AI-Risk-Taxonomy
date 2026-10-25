@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "seed": 20261021,
+  "input_hashes": {
+    "analytic_records_sha256": "8218e3e14cc17fe522e01552036b5435832adf2891f5226ff249bea5a57fe901",
+    "frozen_edges_sha256": "0a6e7e575fd29cbbcf70237972e82cdc51c23f658d0c41ece234c0adfe8c1814",
+    "inventory_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
+    "semantic_style_sha256": "d5f34131b87ae76184470d048ea185d7072fe34a6c4a338dbc323b352ab53d44",
+    "mapping": "BGE-M3 dense cosine, non-circular title + description + AI-system, top three",
+    "network": "Undirected unweighted topology, with co-activation counts retained as edge attributes"
+  },
+  "incident_counts": {
+    "AIM": 10449,
+    "AIID": 1751
+  },
+  "assignments": {
+    "AIM": 31347,
+    "AIID": 5253
+  },
+  "active_cards": {
+    "AIM": 516,
+    "AIID": 459
+  },
+  "edges": {
+    "AIM": 7052,
+    "AIID": 2808
+  },
+  "checks": [
+    "622 cards and 55-family release",
+    "channel counts 10449 and 1751",
+    "three unique candidate cards per incident",
+    "card IDs, names and domains match published inventory",
+    "network nodes, edges, cross-edge shares and assortativity match paper outputs",
+    "no raw incident text or adjudication fields in payload"
+  ],
+  "display": {
+    "selection": "25 highest-degree cards per domain, then 240 strongest induced links; remove displayed isolates",
+    "layout": "joint force layout shared across both channels; collision separation; seed 20261021",
+    "node_size": "area proportional to full-channel degree with minimum area",
+    "edge_width": "co-activation count per 1000 channel incidents; shared scale",
+    "edge_shape": "quadratic curves with 0.22 perpendicular midpoint displacement",
+    "colors": "exact L4 fills and L1 legend colors from existing AI risk space"
+  },
+  "browser_checks": {
+    "desktop": "both channel graphs rendered; card selection compares channels; ID search and all-card mode verified",
+    "mobile": "390px viewport; panels stacked; no document horizontal overflow; methods closed by default",
+    "overview_node_collisions": 0
+  }
+}

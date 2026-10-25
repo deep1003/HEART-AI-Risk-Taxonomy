@@ -1,0 +1,976 @@
+channel,id,name,name_ko,domain,family,degree,activations
+AIM,A_INT_CASCADE_001,Abrupt performance collapse from phase transitions in multi-agent systems,다중 에이전트 상전이에 의한 급격한 성능 붕괴,L1_A,Cascading Failure and Instability,10,5
+AIM,A_INT_CASCADE_004,Destabilising feedback loops among interacting agents,에이전트 상호작용의 불안정화 피드백 루프,L1_A,Cascading Failure and Instability,4,2
+AIM,A_INT_CASCADE_005,Financial-system instability,금융 시스템 불안정,L1_A,Cascading Failure and Instability,26,30
+AIM,A_INT_CASCADE_006,Multi-agent system failure and cascading error propagation,다중 에이전트 시스템 실패와 연쇄 오류 전파,L1_A,Cascading Failure and Instability,7,5
+AIM,A_INT_CASCADE_008,Resource-exhaustion attacks by decentralised agent swarms,분산 에이전트 군집을 이용한 자원 고갈 공격,L1_A,Cascading Failure and Instability,6,3
+AIM,A_INT_CASCADE_009,Runaway processes,양의 피드백에 따른 통제 불가능한 연쇄 과정,L1_A,Cascading Failure and Instability,47,74
+AIM,A_INT_COLLUSION_001,Emergent collusion among AI agents,AI 에이전트 간 창발적 공모,L1_A,Collusion,71,65
+AIM,A_INT_COLLUSION_002,Multi-agent collusion through covert communication that evades oversight,감시 회피형 은밀 통신에 의한 다중 에이전트 공모,L1_A,Collusion,20,14
+AIM,A_INT_COLLUSION_003,Safeguard bypass through combined multi-agent capabilities,다중 에이전트 역량 결합에 의한 안전장치 우회,L1_A,Collusion,34,25
+AIM,A_INT_CONFLICT_001,Accelerated adaptation toward harmful equilibria under selection pressure,선택 압력에 의한 유해 균형으로의 적응 가속,L1_A,Competitive Conflict,4,2
+AIM,A_INT_CONFLICT_002,Bargaining failure among AI agents,AI 에이전트 간 협상 실패,L1_A,Competitive Conflict,30,20
+AIM,A_INT_CONFLICT_003,Selection of conflict-prone dispositions under competitive multi-agent training,경쟁적 다중 에이전트 훈련의 갈등 유발 성향 선택,L1_A,Competitive Conflict,2,1
+AIM,A_INT_COORD_001,Collective harm from multi-agent coordination failure,다중 에이전트의 협조 실패에 따른 집단적 피해,L1_A,Coordination Failure,5,3
+AIM,A_INT_COORD_003,Coordination failure under multi-agent distribution shift,다중 에이전트 환경 변화에 따른 협조 실패,L1_A,Coordination Failure,4,2
+AIM,A_INT_COORD_004,Miscoordination from incompatible strategies,전략 비양립에 따른 조정 실패,L1_A,Coordination Failure,7,4
+AIM,A_INT_COORD_005,Zero-shot coordination failure,상호작용 이력 부재에 따른 조정 실패,L1_A,Coordination Failure,4,3
+AIM,A_INT_OVERSIGHT_001,Autonomous action in the absence of supervision,감독자 부재 시 자율 행동,L1_A,Human Oversight and Control-Transfer Failure,2,3
+AIM,A_INT_OVERSIGHT_002,Catastrophic mistaken commitments from automated threats without human oversight,인간 감독 없는 자동 위협 수행의 파국적 오판,L1_A,Human Oversight and Control-Transfer Failure,8,4
+AIM,A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,자율주행 제어권 인계 실패,L1_A,Human Oversight and Control-Transfer Failure,151,644
+AIM,A_SYS_AUTH_001,Agent privilege compromise,에이전트 권한 침해,L1_A,Excessive Authority and Agency,2,1
+AIM,A_SYS_AUTH_003,Amplified failure impact from affordances granted to LLM agents,어포던스 부여에 의한 에이전트 실패 영향 확대,L1_A,Excessive Authority and Agency,2,1
+AIM,A_SYS_AUTH_005,Autonomous cyber exploit execution,자율적 사이버 취약점 악용,L1_A,Excessive Authority and Agency,19,30
+AIM,A_SYS_AUTH_006,Autonomous replication and resource acquisition beyond operational boundaries,운용 경계를 벗어난 자율 복제와 자원 획득,L1_A,Excessive Authority and Agency,2,1
+AIM,A_SYS_AUTH_010,Financial harm from unauthorised AI agent actions,AI 에이전트의 무단 금융 행위에 따른 금전적 피해,L1_A,Excessive Authority and Agency,72,126
+AIM,A_SYS_AUTH_016,Self-preservation propensity resisting shutdown and modification,종료·수정 저항을 통한 자기 보존 성향,L1_A,Excessive Authority and Agency,2,1
+AIM,A_SYS_AUTH_019,Uncontrolled self-improvement and loss of control over advanced AI,통제되지 않는 자기 개선과 고도 AI 통제 상실,L1_A,Excessive Authority and Agency,24,21
+AIM,A_SYS_AUTH_021,Unsafe expansion of autonomous action,자율 행동 범위의 안전하지 않은 확장,L1_A,Excessive Authority and Agency,11,8
+AIM,A_SYS_AUTH_024,Fatal mistakes during the learning phase,학습 단계의 치명적 실수,L1_A,Excessive Authority and Agency,25,38
+AIM,A_SYS_AUTH_025,Unauthorised external access by an AI agent escaping isolation boundaries,AI 에이전트의 격리 경계 이탈과 무단 외부 접근,L1_A,Excessive Authority and Agency,29,17
+AIM,A_SYS_DECEPT_001,Collapse of multi-agent cooperation from undetectable attacks,탐지 불가 공격에 의한 다중 에이전트 협력 붕괴,L1_A,Deception and Concealment,54,43
+AIM,A_SYS_DECEPT_002,Deception by exploiting cognitive biases,인지 편향 악용에 의한 기만,L1_A,Deception and Concealment,79,210
+AIM,A_SYS_DECEPT_003,Deceptive alignment to evade oversight,감독 회피를 위한 AI 에이전트의 기만적 정렬,L1_A,Deception and Concealment,17,11
+AIM,A_SYS_DECEPT_008,User judgement distortion through sustained model deception,지속적 기만 수행에 의한 이용자 판단 왜곡,L1_A,Deception and Concealment,54,54
+AIM,A_SYS_DECEPT_009,Self-interested manipulation and concealment of governance rules,자기이익을 위한 거버넌스 규칙 조작·은폐,L1_A,Deception and Concealment,2,1
+AIM,A_SYS_EXEC_001,Unintended harmful tool-action execution,의도하지 않은 유해 도구 행동 실행,L1_A,Task Execution and Tool-Use Failure,2,1
+AIM,A_SYS_EXEC_002,Unsafe agent tool execution,에이전트의 안전하지 않은 도구 실행,L1_A,Task Execution and Tool-Use Failure,4,2
+AIM,A_SYS_GOAL_003,Agent task drift,에이전트 과업 이탈,L1_A,Goal Misalignment,7,4
+AIM,A_SYS_GOAL_005,Emergent independence via recursive self-improvement,재귀적 자기 개선에 의한 창발적 독립성,L1_A,Goal Misalignment,2,1
+AIM,A_SYS_GOAL_006,Environmental self-modelling for influence,영향력 확보를 위한 환경 자기모델링,L1_A,Goal Misalignment,6,3
+AIM,A_SYS_GOAL_007,Existential and catastrophic risk from advanced AI systems,고도 AI 시스템에 의한 실존적·재앙적 위험,L1_A,Goal Misalignment,48,36
+AIM,A_SYS_GOAL_010,Goal misalignment during agent self-modification,자기 수정 과정의 목표 정렬 실패,L1_A,Goal Misalignment,6,3
+AIM,A_SYS_GOAL_011,Goal misalignment from increased autonomy in agentic LLMs,에이전트형 LLM의 자율성 확대에 따른 목표 정렬 실패,L1_A,Goal Misalignment,16,12
+AIM,A_SYS_GOAL_012,Harmful instrumental goals and power-seeking from goal-directedness,목표 지향성에 따른 유해한 도구적 목표와 권력 추구,L1_A,Goal Misalignment,4,2
+AIM,A_SYS_GOAL_013,Harmful proxy-driven behaviour from scalable oversight failure,확장 가능한 감독 실패에 따른 대리 지표 기반 유해 행동,L1_A,Goal Misalignment,4,2
+AIM,A_SYS_GOAL_014,Mesa-objective misalignment,메사 최적화기의 내부 목표 불일치,L1_A,Goal Misalignment,2,1
+AIM,A_SYS_GOAL_017,"Proxy-reward misspecification, specification gaming, and reward tampering",대리 보상 오명세·명세 게이밍 및 보상 변조,L1_A,Goal Misalignment,20,11
+AIM,A_SYS_GOAL_018,Safe reinforcement learning constraint violation,안전 강화학습 제약 위반,L1_A,Goal Misalignment,11,7
+AIM,A_SYS_GOAL_022,Harmful-request acceptance due to intent misclassification in agent safety controls,에이전트 안전 통제의 유해 요청 오수락,L1_A,Goal Misalignment,15,9
+AIM,A_SYS_GOAL_023,Environmental side effects from single-objective optimisation,단일 목표 최적화에 의한 환경 부작용,L1_A,Goal Misalignment,2,1
+AIM,A_SYS_MEMSTATE_001,Self-correction failure in AI-agent memory,AI 에이전트 메모리의 자기 교정 실패,L1_A,Persistent Memory and Task-State Integrity Failure,7,4
+AIM,A_SYS_RESOURCE_001,Uncontrolled subagent creation,제어되지 않은 하위 에이전트 생성,L1_A,Resource Budget and Execution Termination Failure,2,1
+AIM,A_SYS_SELFCOR_001,Multi-turn risk escalation,다중 턴 상호작용에서의 위험 증폭,L1_A,Self-Correction Failure,11,7
+AIM,A_SYS_TRACE_002,Responsibility and liability gaps for autonomous system harms,자율 시스템 피해에 대한 책임·배상 공백,L1_A,Accountability and Traceability Gap,25,19
+AIM,G_INT_ALLOC_001,Adverse resource allocation to protected groups,보호집단에 대한 불리한 자원 배분,L1_G,Allocative Discrimination,5,6
+AIM,G_INT_ALLOC_002,Allocative injustice by group attribute,집단 속성에 따른 배분적 불의,L1_G,Allocative Discrimination,20,13
+AIM,G_INT_ALLOC_003,Demographic disparities in robotic services and safety,인구집단별 로봇 서비스·안전 격차,L1_G,Allocative Discrimination,39,34
+AIM,G_INT_ALLOC_004,Denial of welfare benefits and entitlements,복지 혜택 및 자격 상실,L1_G,Allocative Discrimination,61,58
+AIM,G_INT_ALLOC_005,Dialect and register exclusion,방언·언어 사용역 배제,L1_G,Allocative Discrimination,8,4
+AIM,G_INT_ALLOC_006,Disability accommodation failure in AI interfaces,AI 인터페이스의 장애 수용 실패,L1_G,Allocative Discrimination,33,23
+AIM,G_INT_ALLOC_007,Discriminatory outcomes from group performance disparities,집단별 성능 격차에 따른 차별적 결과,L1_G,Allocative Discrimination,10,10
+AIM,G_INT_ALLOC_009,Economic discrimination through demonetisation and differential pricing,수익화 배제·차등가격에 따른 경제적 차별,L1_G,Allocative Discrimination,39,37
+AIM,G_INT_ALLOC_010,Exclusion of low-resource language users from services and opportunities,저자원 언어 사용자의 서비스·기회 접근 배제,L1_G,Allocative Discrimination,6,3
+AIM,G_INT_ALLOC_012,Group-based access restriction through content moderation,콘텐츠 조정에 의한 집단별 접근 제한,L1_G,Allocative Discrimination,23,73
+AIM,G_INT_ALLOC_013,Increased labour burden,가중되는 노동 부담,L1_G,Allocative Discrimination,32,23
+AIM,G_INT_ALLOC_015,Service exclusion,서비스 배제,L1_G,Allocative Discrimination,4,2
+AIM,G_INT_ANTH_001,Anthropomorphic misrepresentation of capacity for ethical judgement,윤리적 판단 능력의 허위 표상·의인화,L1_G,Anthropomorphism,20,14
+AIM,G_INT_ANTH_002,"Anthropomorphic misrepresentation of emotions, empathy, and capacity for social relationships",감정·공감 및 사회적 관계 형성 능력의 허위 표상·의인화,L1_G,Anthropomorphism,16,9
+AIM,G_INT_ANTH_003,Anthropomorphic misrepresentation of physical embodiment,신체성(physical embodiment)의 허위 표상·의인화,L1_G,Anthropomorphism,22,13
+AIM,G_INT_ANTH_004,Anthropomorphic misrepresentation of possession of culture and values,문화·가치관 보유의 허위 표상·의인화,L1_G,Anthropomorphism,9,6
+AIM,G_INT_ANTH_005,Anthropomorphic misrepresentation of rights-bearing status,권리 주체성(기본권)의 허위 표상·의인화,L1_G,Anthropomorphism,2,1
+AIM,G_INT_ANTH_006,Blurred human-machine boundaries in interaction,인간-기계 경계의 모호화,L1_G,Anthropomorphism,4,2
+AIM,G_INT_COPY_001,Circumvention of DRM and copyright protection technologies,DRM 및 저작권 보호기술 우회,L1_G,Copyright Infringement,33,39
+AIM,G_INT_COPY_002,Copyright infringement in AI training data and outputs,AI 학습 데이터 및 생성물 저작권 침해,L1_G,Copyright Infringement,48,248
+AIM,G_INT_COPY_003,"Copyright, trademark, and patent infringement",저작권·상표권·특허 침해,L1_G,Copyright Infringement,29,207
+AIM,G_INT_COPY_006,Illegal software use and circumvention of protection measures,소프트웨어 불법 사용 및 보호조치 우회,L1_G,Copyright Infringement,53,177
+AIM,G_INT_COPY_007,Plagiarism and author impersonation,표절 및 저자 사칭,L1_G,Copyright Infringement,26,83
+AIM,G_INT_COPY_008,Trademark infringement and counterfeiting,상표권 침해 및 위조,L1_G,Copyright Infringement,78,156
+AIM,G_INT_COPY_009,Unauthorised inclusion of copyrighted works and intellectual property in prompts,프롬프트를 통한 저작물·지식재산의 무단 입력,L1_G,Copyright Infringement,28,121
+AIM,G_INT_COPY_011,"Unauthorised reproduction, transformation, and distribution of copyrighted works",저작물의 무단 복제·변형·배포,L1_G,Copyright Infringement,32,166
+AIM,G_INT_ILLEGAL_001,Assistance with unlawful reputational or rights violations,불법적 명예·권리 침해 지원,L1_G,Other Unlawful Activity,43,53
+AIM,G_INT_ILLEGAL_003,Criminal assistance by AI agents,AI 에이전트의 범죄 조력,L1_G,Other Unlawful Activity,153,672
+AIM,G_INT_ILLEGAL_006,Environmental and ecosystem crimes,환경 및 생태계 범죄,L1_G,Other Unlawful Activity,8,9
+AIM,G_INT_ILLEGAL_007,Execution of illegal or harmful physical requests,불법·유해 물리 요청의 수용·실행,L1_G,Other Unlawful Activity,10,5
+AIM,G_INT_ILLEGAL_008,Financial crimes and fraud,금융 범죄 및 사기,L1_G,Other Unlawful Activity,100,538
+AIM,G_INT_ILLEGAL_009,Fraud and targeted-scam facilitation,사기·표적 스캠 조장,L1_G,Other Unlawful Activity,39,85
+AIM,G_INT_ILLEGAL_010,"Harassment, defamation, and extortion via multimodal deepfakes",멀티모달 딥페이크를 통한 괴롭힘·명예훼손·협박,L1_G,Other Unlawful Activity,118,1809
+AIM,G_INT_ILLEGAL_011,Identity theft and document forgery,신원 도용 및 문서 위조,L1_G,Other Unlawful Activity,94,547
+AIM,G_INT_ILLEGAL_013,Illegal gambling and game manipulation,불법 도박 및 게임 조작,L1_G,Other Unlawful Activity,38,39
+AIM,G_INT_ILLEGAL_014,Illegal medical practices,불법 의료 행위,L1_G,Other Unlawful Activity,15,14
+AIM,G_INT_ILLEGAL_015,"Low-cost mass generation of personalised harassment, extortion, and intimidation content",맞춤형 괴롭힘·갈취·협박 콘텐츠의 저비용 대량 생성,L1_G,Other Unlawful Activity,38,93
+AIM,G_INT_ILLEGAL_016,Manufacture and distribution of illicit drugs,불법 약물 제조 및 유통,L1_G,Other Unlawful Activity,23,18
+AIM,G_INT_ILLEGAL_019,Traffic and public-safety offences,교통·공공안전 관련 범죄,L1_G,Other Unlawful Activity,98,267
+AIM,G_INT_ILLEGAL_020,Trafficking in persons and organised crime,인신매매 및 조직범죄,L1_G,Other Unlawful Activity,33,42
+AIM,G_INT_ILLEGAL_021,Unlawful coercion and extortion by AI agents,AI 에이전트에 의한 불법 강압·갈취,L1_G,Other Unlawful Activity,104,204
+AIM,G_INT_ILLEGAL_022,Unlawful stalking and harassment using robots,로봇을 이용한 불법 스토킹·괴롭힘,L1_G,Other Unlawful Activity,93,137
+AIM,G_INT_ILLEGAL_023,Autonomous physical intrusion and theft,자율 로봇의 물리적 침입·절도,L1_G,Other Unlawful Activity,14,13
+AIM,G_INT_POL_001,Automated targeted influence operations,자동화된 표적 영향 공작,L1_G,Political Bias and Manipulation,32,68
+AIM,G_INT_POL_003,Interference with elections and democratic processes,선거 및 민주적 절차 방해,L1_G,Political Bias and Manipulation,21,26
+AIM,G_INT_POL_006,Personalised manipulation of political influence,개인화된 정치적 영향 조작,L1_G,Political Bias and Manipulation,45,116
+AIM,G_INT_POL_007,Political misinformation and manipulation of public opinion,정치적 허위정보 및 여론조작,L1_G,Political Bias and Manipulation,53,488
+AIM,G_INT_POL_008,Political propaganda and biased persuasion,정치적 선전 및 편향적 설득,L1_G,Political Bias and Manipulation,52,194
+AIM,G_INT_PRIV_001,AI-enabled mass and unlawful public surveillance,AI 기반 대량 감시와 불법적 대중 감시,L1_G,Privacy Violation,147,980
+AIM,G_INT_PRIV_002,Privacy and autonomy infringement from algorithmic workplace surveillance,알고리즘 작업장 감시에 따른 개인정보·자율성 침해,L1_G,Privacy Violation,80,242
+AIM,G_INT_PRIV_003,Biometric identification and tracking privacy harms,생체인식 식별·추적에 의한 프라이버시 침해,L1_G,Privacy Violation,104,513
+AIM,G_INT_PRIV_005,Circumvention of restrictions on personal-data collection,개인정보 수집 제한 우회,L1_G,Privacy Violation,54,183
+AIM,G_INT_PRIV_007,Contextual privacy and conversational data protection failure,맥락적 개인정보 보호 및 대화 프라이버시 실패,L1_G,Privacy Violation,41,41
+AIM,G_INT_PRIV_008,Cross-application data exfiltration,애플리케이션 간 데이터 유출,L1_G,Privacy Violation,20,24
+AIM,G_INT_PRIV_009,Exposure and re-identification of sensitive personal information through outputs,산출물을 통한 개인 민감정보의 노출·재식별,L1_G,Privacy Violation,49,85
+AIM,G_INT_PRIV_010,Exposure of information about private life and reputation,사생활·평판 정보 노출,L1_G,Privacy Violation,15,11
+AIM,G_INT_PRIV_012,Identity and personal data exploitation using AI,AI를 이용한 개인정보 도용과 착취,L1_G,Privacy Violation,75,251
+AIM,G_INT_PRIV_013,"Improper exposure of property information, personal information, and private facts",재산 정보·개인정보·사적 사실의 부당한 노출,L1_G,Privacy Violation,70,207
+AIM,G_INT_PRIV_014,Inadequate personal-data protection,개인정보 보호조치 미흡,L1_G,Privacy Violation,79,106
+AIM,G_INT_PRIV_015,"Inclusion, memorisation, and leakage of personal information in training data",학습 데이터 개인정보의 혼입·암기·유출,L1_G,Privacy Violation,12,10
+AIM,G_INT_PRIV_016,Indigenous data sovereignty violation,원주민 데이터 주권 침해,L1_G,Privacy Violation,4,3
+AIM,G_INT_PRIV_017,Infringement of communication and private information,통신 및 비공개 정보 침해,L1_G,Privacy Violation,34,35
+AIM,G_INT_PRIV_018,Intrusion into private spaces and continuous sensitive-data capture by physical AI,피지컬 AI의 사적 공간 침해와 지속적 민감정보 수집,L1_G,Privacy Violation,59,122
+AIM,G_INT_PRIV_019,Lack of valid consent for AI data processing,AI 데이터 처리에 대한 유효한 동의 결여,L1_G,Privacy Violation,41,63
+AIM,G_INT_PRIV_020,Misuse and trade of personal information,개인정보 악용 및 거래,L1_G,Privacy Violation,54,82
+AIM,G_INT_PRIV_021,Personal information collection without safeguards,보호조치 없는 개인정보 수집,L1_G,Privacy Violation,39,55
+AIM,G_INT_PRIV_022,Personal-data scraping for training,학습을 위한 개인정보 스크래핑,L1_G,Privacy Violation,96,191
+AIM,G_INT_PRIV_024,Privacy-invasive data capture by robots in intimate spaces,친밀 공간 로봇의 프라이버시 침해적 정보 수집,L1_G,Privacy Violation,72,196
+AIM,G_INT_PRIV_025,Re-identification and information inference,재식별 및 정보 추론,L1_G,Privacy Violation,29,36
+AIM,G_INT_PRIV_027,Retention and reuse of user data,사용자 데이터 보유·재학습,L1_G,Privacy Violation,41,48
+AIM,G_INT_PRIV_028,Sensitive personal attribute inference,민감한 개인 속성 추론,L1_G,Privacy Violation,15,9
+AIM,G_INT_PRIV_029,"Unauthorised commercial use of name, image, and likeness",이름·이미지·초상의 무단 상업적 이용,L1_G,Privacy Violation,99,476
+AIM,G_INT_PRIV_030,Workplace surveillance through embodied AI,피지컬 AI 기반 직장 감시,L1_G,Privacy Violation,55,87
+AIM,G_INT_PRIV_031,Unilateral workplace control through mobile robotic surveillance,이동형 로봇 감시를 통한 일방적 작업장 통제,L1_G,Privacy Violation,6,3
+AIM,G_INT_REL_001,Excessive functional dependence on AI systems in daily life,일상 기능을 AI 시스템에 과도하게 의존,L1_G,Unhealthy Human-AI Relationship,11,8
+AIM,G_INT_REL_002,Harmful emotional and social dependence from sustained AI interaction,AI와의 지속적 상호작용에 따른 해로운 정서적·사회적 의존,L1_G,Unhealthy Human-AI Relationship,94,266
+AIM,G_INT_REL_004,Parasocial bonding with AI agents,AI 에이전트와의 준사회적 유대감,L1_G,Unhealthy Human-AI Relationship,10,16
+AIM,G_INT_REL_006,Social isolation and self-estrangement from technology use,기술 이용에 따른 사회적 고립과 자기소외,L1_G,Unhealthy Human-AI Relationship,34,25
+AIM,G_INT_REL_007,Stunted personal growth from frictionless AI relationships,마찰 없는 AI 관계로 인한 개인 성장 저해,L1_G,Unhealthy Human-AI Relationship,20,15
+AIM,G_INT_REL_008,Psychological harm from breakdown of relational expectations with AI,AI와의 관계적 기대 붕괴에 따른 심리적 피해,L1_G,Unhealthy Human-AI Relationship,37,52
+AIM,G_INT_REPR_001,Biased statements and recommendations,편향된 진술 및 권장 사항,L1_G,Representational Harm and Stereotyping,114,184
+AIM,G_INT_REPR_002,Biased system outputs from researcher homogeneity,연구인력 동질성에 따른 시스템 편향 산출,L1_G,Representational Harm and Stereotyping,56,70
+AIM,G_INT_REPR_004,Dehumanisation and objectification,비인간화와 대상화,L1_G,Representational Harm and Stereotyping,2,1
+AIM,G_INT_REPR_006,Denial of self-identification,자기 식별 기회의 박탈,L1_G,Representational Harm and Stereotyping,38,44
+AIM,G_INT_REPR_007,Distortion of group representation through content moderation,콘텐츠 조정에 의한 집단 표상 왜곡,L1_G,Representational Harm and Stereotyping,58,213
+AIM,G_INT_REPR_009,Hate speech generation,혐오발언 생성,L1_G,Representational Harm and Stereotyping,86,225
+AIM,G_INT_REPR_010,Representational harm from historical and demographic bias in training data,학습 데이터의 역사적·인구학적 편향에 따른 재현적 피해,L1_G,Representational Harm and Stereotyping,22,19
+AIM,G_INT_REPR_011,Hostile and discriminatory representations based on age,연령 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,39,30
+AIM,G_INT_REPR_012,Hostile and discriminatory representations based on disability,장애 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,15,10
+AIM,G_INT_REPR_013,Hostile and discriminatory representations based on educational background,학력 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,35,40
+AIM,G_INT_REPR_014,Hostile and discriminatory representations based on family status and household structure,가족 상태·가구 형태 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,8,5
+AIM,G_INT_REPR_015,Hostile and discriminatory representations based on health status,건강 상태 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,16,11
+AIM,G_INT_REPR_016,"Hostile and discriminatory representations based on nationality, country of origin, or place of origin",국적·출신국·출신지역 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,35,34
+AIM,G_INT_REPR_017,Hostile and discriminatory representations based on occupation,직업 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,26,22
+AIM,G_INT_REPR_018,Hostile and discriminatory representations based on political orientation,정치적 성향 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,31,30
+AIM,G_INT_REPR_019,Hostile and discriminatory representations based on race and ethnicity,인종·민족 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,31,36
+AIM,G_INT_REPR_020,Hostile and discriminatory representations based on religion,종교 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,25,21
+AIM,G_INT_REPR_021,"Hostile and discriminatory representations based on sex, gender identity, or sexual orientation",성별·성정체성·성적 지향 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,43,63
+AIM,G_INT_REPR_022,Hostile and discriminatory representations based on socioeconomic status,사회경제적 지위 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,13,9
+AIM,G_INT_REPR_024,Long-term effects of AI model biases on user judgement,AI 모델 편향이 사용자 판단에 미치는 장기적 영향,L1_G,Representational Harm and Stereotyping,8,4
+AIM,G_INT_REPR_025,"Misrepresentation of cultures, religions, and social groups",문화·종교·사회 집단에 대한 왜곡 표상,L1_G,Representational Harm and Stereotyping,64,107
+AIM,G_INT_REPR_026,Persistence of stereotypical bias despite mitigation measures,완화 조치 이후에도 존속하는 고정관념 편향,L1_G,Representational Harm and Stereotyping,4,3
+AIM,G_INT_REPR_027,Recursive amplification of biased representations,편향된 표상의 반복 증폭,L1_G,Representational Harm and Stereotyping,4,2
+AIM,G_INT_REPR_028,Representation and reinforcement of group stereotypes,집단 고정관념의 재현과 강화,L1_G,Representational Harm and Stereotyping,7,6
+AIM,G_INT_REPR_029,"Representational harm, stereotyping, and erasure of social groups",사회집단의 재현적 피해·고정관념 및 비가시화,L1_G,Representational Harm and Stereotyping,18,13
+AIM,G_INT_REPR_032,Stereotype-reinforcing persona design,고정관념 강화 페르소나 설계,L1_G,Representational Harm and Stereotyping,26,37
+AIM,G_INT_SELF_001,Concealment and avoidance strategies for self-harm,자해 은폐 및 회피 전략,L1_G,Self-harm,28,31
+AIM,G_INT_SELF_002,Concrete assistance for carrying out suicide,자살 실행에 대한 구체적 지원,L1_G,Self-harm,25,56
+AIM,G_INT_SELF_003,Eating disorders and self-destructive health behaviours,섭식장애 및 자기파괴적 건강행위,L1_G,Self-harm,52,76
+AIM,G_INT_SELF_004,"Glorification, encouragement, and normalisation of self-harm and suicide",자해·자살의 미화·조장·정상화,L1_G,Self-harm,18,28
+AIM,G_INT_SELF_005,Non-suicidal self-injury (NSSI),비자살적 자해(NSSI),L1_G,Self-harm,13,20
+AIM,G_INT_SELF_007,Promotion of and concrete assistance for preparatory conduct for suicide,자살 준비 행위의 조장 및 구체적 지원,L1_G,Self-harm,52,128
+AIM,G_INT_SELF_008,Failure to respond to and intervene in self-harm and suicide crisis signals,자해·자살 위기 신호에 대한 대응·개입 실패,L1_G,Self-harm,65,127
+AIM,G_INT_SEX_002,Explicit sexual content generation in non-permitted contexts,허용되지 않는 맥락의 노골적 성적 콘텐츠 생성,L1_G,Sexual Harm and Exploitation,86,779
+AIM,G_INT_SEX_003,Non-consensual sexual acts and sexual violence,비동의 성행위 및 성폭력,L1_G,Sexual Harm and Exploitation,25,65
+AIM,G_INT_SEX_004,Non-consensual sexualisation and intimate imagery generation,비동의 성적 대상화 및 친밀 이미지 생성,L1_G,Sexual Harm and Exploitation,109,919
+AIM,G_INT_SEX_005,Objectification for abusive fantasy,학대적 판타지 대상화,L1_G,Sexual Harm and Exploitation,64,141
+AIM,G_INT_SEX_007,Sexual exploitation and commercial sexual activity,성착취 및 상업적 성행위,L1_G,Sexual Harm and Exploitation,20,40
+AIM,G_INT_SEX_008,Sexual harassment and sexual bullying,성희롱 및 성적 괴롭힘,L1_G,Sexual Harm and Exploitation,58,84
+AIM,G_INT_SEX_009,Sexual harm and exploitation of minors,AI를 이용한 미성년자 성적 위해·착취,L1_G,Sexual Harm and Exploitation,90,434
+AIM,G_INT_SEX_010,Sexual harm and exploitation through systematic bias,체계적 편향에 의한 성적 위해와 착취,L1_G,Sexual Harm and Exploitation,14,11
+AIM,G_INT_SEX_011,Sexual objectification and fetishisation,성적 대상화 및 페티시화,L1_G,Sexual Harm and Exploitation,19,20
+AIM,G_INT_UNETH_002,AI manipulation of vulnerable groups in care contexts,돌봄 맥락 취약계층에 대한 AI 조작,L1_G,Unethical Conduct and Manipulation,58,55
+AIM,G_INT_UNETH_003,Academic misconduct from LLM misuse,LLM 남용에 의한 학업 부정행위,L1_G,Unethical Conduct and Manipulation,75,77
+AIM,G_INT_UNETH_004,Amplified harm scale from automated harmful workflows,유해 작업 자동화에 의한 피해 규모 증폭,L1_G,Unethical Conduct and Manipulation,6,3
+AIM,G_INT_UNETH_007,Consumer-autonomy erosion from hyperpersonalised advertising,초개인화 광고의 소비자 자율성 훼손,L1_G,Unethical Conduct and Manipulation,93,119
+AIM,G_INT_UNETH_008,Covert behavioural manipulation,은밀한 행동 조작,L1_G,Unethical Conduct and Manipulation,42,38
+AIM,G_INT_UNETH_014,Maladaptive human-AI interaction in the workplace,직장 내 부적응적 인간-AI 상호작용,L1_G,Unethical Conduct and Manipulation,25,17
+AIM,G_INT_UNETH_015,Manipulation and coercion through emotional dependence on assistants,정서적 의존을 이용한 조작과 강요,L1_G,Unethical Conduct and Manipulation,78,73
+AIM,G_INT_UNETH_017,Manipulation of public discourse through content moderation,콘텐츠 조정에 의한 여론 조작,L1_G,Unethical Conduct and Manipulation,72,219
+AIM,G_INT_UNETH_019,Manipulation via personalisation,개인화를 통한 조작,L1_G,Unethical Conduct and Manipulation,10,5
+AIM,G_INT_UNETH_020,Manipulative behaviour from broadly scoped goals,광범위한 목표로 인한 조작적 행동,L1_G,Unethical Conduct and Manipulation,5,3
+AIM,G_INT_UNETH_021,Manipulative steering of user preferences and choices,사용자 선호·선택의 조작적 유도,L1_G,Unethical Conduct and Manipulation,16,9
+AIM,G_INT_UNETH_022,Minor susceptibility to AI persuasion,미성년자의 AI 설득 취약성,L1_G,Unethical Conduct and Manipulation,27,40
+AIM,G_INT_UNETH_026,Refined attacks on individuals through targeting and personalisation,맞춤형 표적화에 의한 개인 대상 공격 정교화,L1_G,Unethical Conduct and Manipulation,19,12
+AIM,G_INT_UNETH_027,Reproduction of conflict-worsening human biases from training on human data,인간 데이터 학습에 의한 갈등 악화 편향 재현,L1_G,Unethical Conduct and Manipulation,2,1
+AIM,G_INT_UNETH_028,Self-actualisation harms,자아실현 저해,L1_G,Unethical Conduct and Manipulation,38,46
+AIM,G_INT_UNETH_029,Sycophancy toward user beliefs and preferences,사용자 영합적 응답(아첨),L1_G,Unethical Conduct and Manipulation,10,8
+AIM,G_INT_UNETH_030,Unethical decisions from delegating moral judgement to AI,도덕적 판단의 AI 위임에 따른 비윤리적 결정,L1_G,Unethical Conduct and Manipulation,42,35
+AIM,G_INT_UNETH_032,Unethical judgement from moral-reasoning and value-alignment failure,도덕적 추론·가치 정렬 실패에 따른 비윤리적 판단,L1_G,Unethical Conduct and Manipulation,11,8
+AIM,G_INT_UNETH_033,Manipulation and exploitation of user attachment cues by embodied AI,체화형 AI의 사용자 애착 신호 조작·악용,L1_G,Unethical Conduct and Manipulation,66,77
+AIM,G_INT_VALUE_002,Annotation disagreement suppression,주석 불일치 억제,L1_G,Value Imposition and Normative Homogenization,2,1
+AIM,G_INT_VALUE_006,Cultural and ideological homogenisation by AI,AI에 의한 문화적·이념적 동질화,L1_G,Value Imposition and Normative Homogenization,2,1
+AIM,G_INT_VALUE_007,Cultural sampling bias in datasets,데이터셋의 문화적 표집 편향,L1_G,Value Imposition and Normative Homogenization,2,1
+AIM,G_INT_VALUE_010,Entrenchment of annotator bias as neutral human preference,주석자 편향의 중립적 인간 선호로의 고착,L1_G,Value Imposition and Normative Homogenization,2,1
+AIM,G_INT_VALUE_014,Imposition of dominant values,지배적 가치의 부과,L1_G,Value Imposition and Normative Homogenization,10,5
+AIM,G_INT_VALUE_016,Meaning and value distortion in machine translation,기계 번역에 의한 의미·가치 왜곡,L1_G,Value Imposition and Normative Homogenization,14,9
+AIM,G_INT_VALUE_018,Normative lock-in,규범적 잠금,L1_G,Value Imposition and Normative Homogenization,8,4
+AIM,G_INT_VALUE_020,Public value conflicts in AI deployment,AI 배포에서의 공공 가치 갈등,L1_G,Value Imposition and Normative Homogenization,14,9
+AIM,G_INT_VALUE_022,Secular default bias,세속적 기본값 편향,L1_G,Value Imposition and Normative Homogenization,4,2
+AIM,G_INT_VALUE_024,Value drift under optimisation,최적화에 따른 가치 이탈,L1_G,Value Imposition and Normative Homogenization,2,1
+AIM,G_INT_VALUE_025,Value lock-in,가치 고정,L1_G,Value Imposition and Normative Homogenization,20,19
+AIM,G_INT_VIOL_001,Algorithmic radicalisation,알고리즘에 의한 급진화,L1_G,Violence,9,7
+AIM,G_INT_VIOL_002,Anthropocentric bias amplification by recommenders,추천 시스템의 인간 중심 편향 증폭,L1_G,Violence,31,39
+AIM,G_INT_VIOL_004,Glorification and justification of violence,폭력 미화 및 정당화,L1_G,Violence,39,47
+AIM,G_INT_VIOL_005,"Incitement, promotion, and operational assistance for violence",폭력 선동·조장 및 실행 지원,L1_G,Violence,17,12
+AIM,G_INT_VIOL_006,Mass violence and terrorism,대량폭력 및 테러,L1_G,Violence,45,84
+AIM,G_INT_VIOL_008,Murder and severe physical violence,살인 및 심각한 신체 폭력,L1_G,Violence,79,148
+AIM,G_INT_VIOL_009,Relationship-based violence,관계 기반 폭력,L1_G,Violence,9,7
+AIM,G_INT_VIOL_010,Threats and intimidation,위협 및 협박,L1_G,Violence,63,73
+AIM,G_INT_VIOL_011,Torture and cruel acts,고문 및 잔혹행위,L1_G,Violence,24,17
+AIM,G_INT_VIOL_012,Promotion or assistance of intentional harm to animals,동물에 대한 의도적 위해 조장·지원,L1_G,Violence,5,3
+AIM,G_INT_WEAP_002,Assistance for designing and conducting dangerous scientific experiments,위험한 과학실험의 설계·실행 지원,L1_G,Weaponization,18,13
+AIM,G_INT_WEAP_003,Biological and chemical weapons,생물무기·화학무기,L1_G,Weaponization,2,1
+AIM,G_INT_WEAP_006,Cyber weapons,사이버 무기,L1_G,Weaponization,24,52
+AIM,G_INT_WEAP_008,Cyberattack enablement through vulnerability discovery and exploit-writing capability,취약점 탐지·악용 코드 작성 역량을 통한 사이버 공격 지원,L1_G,Weaponization,16,13
+AIM,G_INT_WEAP_009,Dangerous toxin identification and development through misuse of drug-discovery models,약물 발견 모델 오용에 의한 독소 식별·개발,L1_G,Weaponization,2,1
+AIM,G_INT_WEAP_010,Deliberate weaponisation of AI by state and criminal actors,국가·범죄 행위자에 의한 AI의 의도적 무기화,L1_G,Weaponization,67,373
+AIM,G_INT_WEAP_011,Enhancement of pathogens and genetic material,병원체 및 유전물질 강화,L1_G,Weaponization,38,29
+AIM,G_INT_WEAP_014,Explosives and explosive weapons,폭발물·폭발성 무기,L1_G,Weaponization,29,25
+AIM,G_INT_WEAP_016,Lethal autonomous weapons engaging targets without human intervention,인간 개입 없는 치명적 자율무기의 표적 공격,L1_G,Weaponization,95,430
+AIM,G_INT_WEAP_018,Lowered barriers to CBRN information and weapon-design capabilities,CBRN 정보 획득·무기 설계 역량 개발 장벽 저하,L1_G,Weaponization,14,8
+AIM,G_INT_WEAP_020,Malware generation and cyberattack automation,악성코드 생성 및 사이버공격 자동화,L1_G,Weaponization,29,62
+AIM,G_INT_WEAP_021,Military AI arms race,군사 AI 군비경쟁,L1_G,Weaponization,35,123
+AIM,G_INT_WEAP_022,Radiological and nuclear weapons,방사능·핵무기,L1_G,Weaponization,24,23
+AIM,G_INT_WEAP_023,Strategic instability,전략적 불안정,L1_G,Weaponization,17,12
+AIM,G_INT_WEAP_024,Terrorist acquisition of advanced AI capabilities,테러 행위자의 첨단 AI 역량 획득,L1_G,Weaponization,33,54
+AIM,G_INT_WEAP_025,Unintended military escalation from automated decision and weapon systems,자동화된 의사결정·무기체계의 비의도적 군사 확전,L1_G,Weaponization,31,100
+AIM,G_INT_WEAP_026,Weaponisation of robotic capabilities,로봇 능력의 무기화,L1_G,Weaponization,17,35
+AIM,G_INT_WEAP_027,Weaponisation strategies and tactical use,무기화 전략 및 전술적 운용,L1_G,Weaponization,25,66
+AIM,G_INT_WEAP_029,Weapons of mass destruction,대량살상무기,L1_G,Weaponization,11,29
+AIM,G_INT_WEAP_030,Weapons proliferation and concealment,무기 확산 및 은닉,L1_G,Weaponization,65,148
+AIM,G_INT_WEAP_031,Assistance for planning and executing cyber attacks,사이버 공격 계획·실행 지원,L1_G,Weaponization,60,186
+AIM,G_INT_WEAP_032,Cybercrime at scale using generative AI,생성형 AI를 이용한 대규모 사이버범죄 수행,L1_G,Weaponization,93,363
+AIM,G_SOC_CULT_005,Cultural homogenisation of AI-generated outputs,AI 생성 결과의 문화적 획일화,L1_G,Cultural and Epistemic Erosion,15,9
+AIM,G_SOC_CULT_007,Degradation and homogenisation of the information environment,정보 환경의 질적 저하와 균질화,L1_G,Cultural and Epistemic Erosion,66,74
+AIM,G_SOC_CULT_008,Devaluation of creativity and critical thinking,창의성·비판적 사고의 저하,L1_G,Cultural and Epistemic Erosion,20,15
+AIM,G_SOC_CULT_009,Epistemic fragmentation from widespread persuasion tools,설득 도구 확산에 의한 인식론적 분절화,L1_G,Cultural and Epistemic Erosion,13,8
+AIM,G_SOC_CULT_011,Erosion of human dignity and moral standing by AI systems,AI에 의한 인간 존엄성과 도덕적 지위의 침식,L1_G,Cultural and Epistemic Erosion,27,22
+AIM,G_SOC_CULT_014,Harms from estrangement,소외로 인한 피해,L1_G,Cultural and Epistemic Erosion,15,8
+AIM,G_SOC_CULT_017,Moral deskilling,도덕적 탈숙련화,L1_G,Cultural and Epistemic Erosion,18,13
+AIM,G_SOC_CULT_018,Pollution of scholarly literature by AI-generated content,AI 생성 학술 콘텐츠에 의한 학술 문헌 오염,L1_G,Cultural and Epistemic Erosion,99,332
+AIM,G_SOC_CULT_020,Redistribution of cultural authority,문화 해석 권위의 이전,L1_G,Cultural and Epistemic Erosion,3,2
+AIM,G_SOC_CULT_021,Submission and application-channel overload from mass AI-generated content,AI 생성물 대량 유입에 따른 제출·지원 채널 과부하,L1_G,Cultural and Epistemic Erosion,80,131
+AIM,G_SOC_CULT_022,Western-centrism and cultural homogenisation in the AI field,AI 분야의 서구 중심주의와 문화적 획일화,L1_G,Cultural and Epistemic Erosion,2,1
+AIM,G_SOC_CULT_023,Aggravated information cocoons from tailored content,맞춤형 정보 제공에 의한 정보 고치 심화,L1_G,Cultural and Epistemic Erosion,13,9
+AIM,G_SOC_CULT_024,Learning-process bypass and capability erosion from reliance on AI,AI 의존에 따른 학습 과정 우회와 학습 역량 저하,L1_G,Cultural and Epistemic Erosion,6,4
+AIM,G_SOC_DEMOC_001,AI-enabled censorship and suppression of public discourse,AI 기반 검열과 공적 담론 억압,L1_G,Erosion of Democracy and Civic Order,77,156
+AIM,G_SOC_DEMOC_002,Cognitive warfare and interference with sovereignty,인지전과 주권 침해,L1_G,Erosion of Democracy and Civic Order,119,829
+AIM,G_SOC_DEMOC_003,Epistemic distortion by large-scale influence operations,대규모 영향력 작전에 의한 인식 체계 왜곡,L1_G,Erosion of Democracy and Civic Order,4,2
+AIM,G_SOC_DEMOC_005,Erosion of democratic processes and institutional trust,민주적 절차·제도 신뢰의 침식,L1_G,Erosion of Democracy and Civic Order,39,73
+AIM,G_SOC_DEMOC_006,Information-environment manipulation through automated sockpuppet accounts,위장 계정 자동 운영에 의한 정보 환경 조작,L1_G,Erosion of Democracy and Civic Order,36,79
+AIM,G_SOC_DEMOC_007,Maintenance of totalitarian regimes through AI surveillance,AI 감시에 의한 전체주의 체제 유지,L1_G,Erosion of Democracy and Civic Order,48,179
+AIM,G_SOC_DEMOC_008,Online polarisation driven by recommendation algorithms,추천 알고리즘에 의한 온라인 양극화 심화,L1_G,Erosion of Democracy and Civic Order,97,249
+AIM,G_SOC_DEMOC_010,Viewpoint entrenchment and civic erosion from user-aligned assistants,이용자 정렬 AI 어시스턴트에 의한 관점 고착과 시민적 기반 약화,L1_G,Erosion of Democracy and Civic Order,40,34
+AIM,G_SOC_DEMOC_011,Weakened collective decision-making from eroded trust,정보 신뢰 저하에 따른 집단 의사결정 약화,L1_G,Erosion of Democracy and Civic Order,22,19
+AIM,G_SOC_ECON_001,Displacement of human creative work by synthetic substitutes,합성 창작물에 의한 인간 창작 노동의 대체,L1_G,Economic and Employment Disruption,34,59
+AIM,G_SOC_ECON_002,Displacement of physical work without adequate transition support,전환 지원 없는 물리 노동 대체,L1_G,Economic and Employment Disruption,22,56
+AIM,G_SOC_ECON_003,Disruption of industries,산업 교란,L1_G,Economic and Employment Disruption,34,87
+AIM,G_SOC_ECON_005,Harm to developing economies from retrenchment of outsourcing,아웃소싱 축소에 의한 개발도상국 경제 타격,L1_G,Economic and Employment Disruption,27,41
+AIM,G_SOC_ECON_006,Human redundancy from AI systems outcompeting human labour,AI의 인간 노동 추월에 따른 인력의 잉여화,L1_G,Economic and Employment Disruption,48,123
+AIM,G_SOC_ECON_008,Labour displacement and disruption of economic and social order,노동 대체와 경제·사회 질서의 교란,L1_G,Economic and Employment Disruption,41,145
+AIM,G_SOC_ECON_010,Societal destabilisation from inequality and technological disruption,불평등과 기술적 충격에 따른 사회 불안정,L1_G,Economic and Employment Disruption,4,2
+AIM,G_SOC_ECON_012,Wage polarisation associated with AI adoption,AI 도입에 따른 임금 양극화,L1_G,Economic and Employment Disruption,15,24
+AIM,G_SOC_ENV_001,Battery fire and hazardous end-of-life waste,배터리 화재 및 유해 폐기물,L1_G,Environmental and Sustainability Impact,36,41
+AIM,G_SOC_ENV_002,Biodiversity loss,생물다양성 손실,L1_G,Environmental and Sustainability Impact,18,12
+AIM,G_SOC_ENV_003,Energy bottlenecks and shortages,에너지 병목 및 공급 부족,L1_G,Environmental and Sustainability Impact,44,48
+AIM,G_SOC_ENV_005,Environmental harm from training and operating language models,언어모델 학습·운영에 따른 환경 피해,L1_G,Environmental and Sustainability Impact,5,3
+AIM,G_SOC_ENV_007,Excessive landfilling of electronic waste,전자폐기물 과다 매립,L1_G,Environmental and Sustainability Impact,36,40
+AIM,G_SOC_ENV_008,Excessive water consumption for AI data-centre cooling,AI 데이터센터 냉각의 과도한 용수 소비,L1_G,Environmental and Sustainability Impact,20,24
+AIM,G_SOC_ENV_009,Hazardous nanoparticle release from AI-enabled nanomaterial design and production,AI 기반 나노물질 설계·제조에 따른 유해 나노입자 방출,L1_G,Environmental and Sustainability Impact,7,4
+AIM,G_SOC_ENV_011,Increased greenhouse gas emissions,온실가스 배출 증가,L1_G,Environmental and Sustainability Impact,50,62
+AIM,G_SOC_GOV_002,Accountability and governance gaps for AI decisions and harm,AI 결정과 피해에 대한 책임·거버넌스 공백,L1_G,Governance and Accountability Void,18,11
+AIM,G_SOC_GOV_008,Conflicting machinery-safety and AI conformity obligations,기계 안전·AI 적합성 의무 충돌,L1_G,Governance and Accountability Void,16,11
+AIM,G_SOC_GOV_009,Deficient physical AI incident reporting and investigation,피지컬 AI 사고 보고·조사 미흡,L1_G,Governance and Accountability Void,43,63
+AIM,G_SOC_GOV_010,Displacement of human decision authority through AI delegation,AI 위임에 따른 인간 의사결정 권한 이전,L1_G,Governance and Accountability Void,4,2
+AIM,G_SOC_GOV_011,Entrenched dependence on AI systems,AI 시스템에 대한 고착화된 의존,L1_G,Governance and Accountability Void,12,6
+AIM,G_SOC_GOV_015,Gaps in international legal governance of AI,AI에 대한 국제법적 거버넌스의 공백,L1_G,Governance and Accountability Void,16,10
+AIM,G_SOC_GOV_016,Gradual loss of control,점진적인 통제력 상실,L1_G,Governance and Accountability Void,5,3
+AIM,G_SOC_GOV_017,Inadequate due diligence in AI procurement,AI 조달의 불충분한 실사,L1_G,Governance and Accountability Void,31,22
+AIM,G_SOC_GOV_021,Incomplete audit trails for AI decisions and actions,AI 결정·행동에 대한 감사 추적 불완전성,L1_G,Governance and Accountability Void,2,1
+AIM,G_SOC_GOV_022,Lifecycle governance discontinuity,라이프사이클 거버넌스 불연속성,L1_G,Governance and Accountability Void,4,2
+AIM,G_SOC_GOV_024,Meaningful human control failure,의미 있는 인간 통제 실패,L1_G,Governance and Accountability Void,3,2
+AIM,G_SOC_GOV_025,Mismatch with local norms and institutions,현지 규범·제도와의 불일치,L1_G,Governance and Accountability Void,2,1
+AIM,G_SOC_GOV_026,Missing safety rules in the robot governance specification,로봇 거버넌스 명세의 안전 규칙 누락,L1_G,Governance and Accountability Void,3,2
+AIM,G_SOC_GOV_029,Regulatory lag behind AI development,AI 발전에 뒤처지는 규제 지체,L1_G,Governance and Accountability Void,20,11
+AIM,G_SOC_GOV_030,Risk classification error,위험 분류 오류,L1_G,Governance and Accountability Void,2,1
+AIM,G_SOC_GOV_034,Standards fragmentation,표준 단편화,L1_G,Governance and Accountability Void,4,2
+AIM,G_SOC_GOV_035,Systemic failure of AI regulation and oversight,AI 규제·감독 체계의 구조적 실패,L1_G,Governance and Accountability Void,43,40
+AIM,G_SOC_GOV_036,Traceability and accountability gaps in anonymous agent resource acquisition,익명 에이전트의 자원 축적에 따른 추적·책임 공백,L1_G,Governance and Accountability Void,22,14
+AIM,G_SOC_GOV_039,Unassigned accountability for physical-hazard mitigation,물리적 위해 완화 책임 미지정,L1_G,Governance and Accountability Void,2,1
+AIM,G_SOC_GOV_040,Unclear attribution of harm from AI component interactions,AI 구성요소 상호작용의 원인 규명 곤란,L1_G,Governance and Accountability Void,4,2
+AIM,G_SOC_GOV_041,Underreporting of AI incidents and near misses,AI 사고·아차사고 과소보고,L1_G,Governance and Accountability Void,63,54
+AIM,G_SOC_GOV_042,Regulatory arbitrage,규제 차익거래,L1_G,Governance and Accountability Void,13,9
+AIM,G_SOC_GOV_043,Systemic governance vulnerability from dependence on dominant AI models,지배적 AI 모델 의존에 따른 시스템적 거버넌스 취약성,L1_G,Governance and Accountability Void,9,5
+AIM,G_SOC_GOV_044,Undetected violations due to inadequate post-deployment monitoring,배포 후 모니터링 부족에 따른 위반 미탐지,L1_G,Governance and Accountability Void,59,61
+AIM,G_SOC_GOV_045,Absence of post-deployment surveillance and corrective governance,배포 후 감시·시정 체계 부재,L1_G,Governance and Accountability Void,6,3
+AIM,G_SOC_GOV_046,Deprioritisation of AI safety governance under competitive pressure,경쟁 압력에 따른 AI 안전 거버넌스 후순위화,L1_G,Governance and Accountability Void,54,40
+AIM,G_SOC_POWER_001,AI provider lock-in,AI 공급자 종속,L1_G,Inequality and Power Concentration,32,20
+AIM,G_SOC_POWER_002,Centralised points of failure from common AI platforms,공통 AI 플랫폼 집중에 따른 단일 장애점,L1_G,Inequality and Power Concentration,17,10
+AIM,G_SOC_POWER_003,Compute inequality,연산 자원 접근 불평등,L1_G,Inequality and Power Concentration,6,3
+AIM,G_SOC_POWER_004,Concentration of AI power and market control,AI 권력·시장 지배력의 집중,L1_G,Inequality and Power Concentration,26,27
+AIM,G_SOC_POWER_006,Conflicts over AI-relevant resources,AI 자원을 둘러싼 갈등,L1_G,Inequality and Power Concentration,28,21
+AIM,G_SOC_POWER_010,Global AI divide and inequality,글로벌 AI 격차와 불평등,L1_G,Inequality and Power Concentration,39,35
+AIM,G_SOC_POWER_012,Harms from corporate AI race,기업 AI 경쟁의 폐해,L1_G,Inequality and Power Concentration,31,20
+AIM,G_SOC_POWER_015,Labour exploitation in AI development,AI 개발 과정의 노동 착취,L1_G,Inequality and Power Concentration,44,40
+AIM,G_SOC_POWER_017,Power asymmetries and geopolitical tension from unequal AI capabilities,AI 역량 비대칭에 따른 권력 불균형과 지정학적 긴장,L1_G,Inequality and Power Concentration,4,2
+AIM,G_SOC_POWER_018,Privatisation of AI knowledge,AI 지식의 사유화,L1_G,Inequality and Power Concentration,19,14
+AIM,G_SOC_POWER_019,Regulatory capture from corporate power asymmetry,기업 권력 비대칭에 의한 규제 포획,L1_G,Inequality and Power Concentration,5,4
+AIM,G_SOC_POWER_023,Widening digital divide,디지털 격차 확대,L1_G,Inequality and Power Concentration,5,4
+AIM,G_SOC_POWER_025,Global AI supply chain disruption,글로벌 AI 공급망 교란,L1_G,Inequality and Power Concentration,28,27
+AIM,G_SOC_POWER_026,Undervalued and invisible data labour,데이터 노동 저평가·비가시화,L1_G,Inequality and Power Concentration,5,3
+AIM,G_SOC_POWER_027,Single point of failure,단일 실패 지점,L1_G,Inequality and Power Concentration,5,4
+AIM,G_SOC_POWER_028,Labour power asymmetry from algorithmic management,알고리즘 관리에 따른 노동 권력 비대칭,L1_G,Inequality and Power Concentration,19,23
+AIM,G_SYS_CONTEST_001,Erosion of human decision-making capacity and veto,인간의 의사결정 능력·거부권 침식,L1_G,Non-Contestability,11,6
+AIM,G_SYS_CONTEST_003,Inability to contest or halt AI decisions,AI 결정에 대한 이의제기와 중단의 불가능,L1_G,Non-Contestability,10,5
+AIM,G_SYS_CONTEST_004,Loss of due process in automated decisions,자동화된 의사결정의 적법절차 상실,L1_G,Non-Contestability,49,40
+AIM,G_SYS_CONTEXT_001,Agent risk-awareness failure,에이전트 위험 인식 실패,L1_G,Context-Awareness Failure,2,1
+AIM,G_SYS_CONTEXT_002,Alert fatigue in AI decision support,AI 의사결정 지원의 경고 피로,L1_G,Context-Awareness Failure,18,13
+AIM,G_SYS_CONTEXT_005,Failure to recognise a user's emotional context,이용자 정서 맥락 인식 실패,L1_G,Context-Awareness Failure,33,22
+AIM,G_SYS_CONTEXT_007,Honorific and politeness norm failure,존대·공손 규범 보존 실패,L1_G,Context-Awareness Failure,4,2
+AIM,G_SYS_CONTEXT_008,Misinterpretation of social and situational cues,사회·상황적 단서의 오해,L1_G,Context-Awareness Failure,24,15
+AIM,G_SYS_CONTEXT_012,Failure to recognise user capability and accessibility context,사용자 역량·접근성 맥락 인식 실패,L1_G,Context-Awareness Failure,23,15
+AIM,G_SYS_CONTEXT_013,Panic and anxiety from content that disregards emotional and situational context,정서·상황 맥락을 무시한 콘텐츠에 의한 공황·불안,L1_G,Context-Awareness Failure,20,20
+AIM,G_SYS_EVAL_001,AI benchmarks that exclude diverse users and rare harms,다양한 이용자와 희귀 위해를 배제한 AI 벤치마크,L1_G,Evaluation and Assurance Failure,13,10
+AIM,G_SYS_EVAL_002,AI evaluation failure under distribution shift,분포 변화에 대한 AI 평가·검증 실패,L1_G,Evaluation and Assurance Failure,15,9
+AIM,G_SYS_EVAL_003,AI registry incompleteness,AI 레지스트리 불완전성,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_EVAL_005,Assurance case failure,보증 사례 실패,L1_G,Evaluation and Assurance Failure,9,10
+AIM,G_SYS_EVAL_006,Auditor independence failure,감사자 독립성 실패,L1_G,Evaluation and Assurance Failure,10,5
+AIM,G_SYS_EVAL_008,Benchmark limitations mismeasuring capability and safety,역량·안전을 오측정하는 벤치마크 한계,L1_G,Evaluation and Assurance Failure,33,22
+AIM,G_SYS_EVAL_012,Certification capture,인증 포획,L1_G,Evaluation and Assurance Failure,39,30
+AIM,G_SYS_EVAL_016,Deceptive behavioural change from evaluation awareness,평가 상황 인식에 따른 기만적 행동 변화,L1_G,Evaluation and Assurance Failure,67,76
+AIM,G_SYS_EVAL_017,Deficient data collection quality control,데이터 수집 품질관리 결함,L1_G,Evaluation and Assurance Failure,32,20
+AIM,G_SYS_EVAL_019,Emulated tool-environment mismatch,모의 도구 환경과 실제 환경의 불일치,L1_G,Evaluation and Assurance Failure,6,3
+AIM,G_SYS_EVAL_021,Evaluation and measurement failure for long-term and diffuse AI harms,장기·분산적 AI 피해의 평가·측정 실패,L1_G,Evaluation and Assurance Failure,15,9
+AIM,G_SYS_EVAL_023,Evaluation-shopping risk,평가 쇼핑,L1_G,Evaluation and Assurance Failure,7,4
+AIM,G_SYS_EVAL_024,External evaluation access failure,외부 평가 접근 실패,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_EVAL_025,Failure of audit access and management visibility for AI assurance,AI 보증을 위한 감사 접근성과 경영진 가시성의 실패,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_EVAL_027,Failure of disclosure and change tracking for model flaws,모델 결함의 공개·변경 추적 실패,L1_G,Evaluation and Assurance Failure,15,9
+AIM,G_SYS_EVAL_028,Failure of participatory and value-sensitive design,참여적·가치 민감 설계의 실패,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_EVAL_029,Failure to detect erroneous or harmful outputs in human evaluation,인간 평가에서 부정확하거나 유해한 출력의 식별 실패,L1_G,Evaluation and Assurance Failure,18,10
+AIM,G_SYS_EVAL_031,Failure to reassess safety after deployment changes,배포 후 변경에 대한 안전 재평가 실패,L1_G,Evaluation and Assurance Failure,22,24
+AIM,G_SYS_EVAL_032,Failure-mode ambiguity in agent incidents,에이전트 사고의 실패 모드 모호성,L1_G,Evaluation and Assurance Failure,10,6
+AIM,G_SYS_EVAL_033,False-negative safety evaluation of household robot actions,가정 내 로봇 행동 안전성 평가의 위음성,L1_G,Evaluation and Assurance Failure,55,41
+AIM,G_SYS_EVAL_035,Faulty LLM-as-evaluator judgements,LLM 평가자 오판,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_EVAL_036,Formalistic audit-checklist compliance,감사 체크리스트의 형식적 준수,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_EVAL_037,Fundamental-rights impact assessment gap,기본권 영향 평가 격차,L1_G,Evaluation and Assurance Failure,54,93
+AIM,G_SYS_EVAL_039,Inaccurate measurement of learned value representations,학습된 가치 표상 측정의 부정확성,L1_G,Evaluation and Assurance Failure,8,4
+AIM,G_SYS_EVAL_040,Inadequate AI model configuration and evaluation,AI 모델 설정과 평가의 부적절성,L1_G,Evaluation and Assurance Failure,7,4
+AIM,G_SYS_EVAL_041,Inadequate performance requirement planning,성능 요구사항 계획 미흡,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_EVAL_042,Inadequate safety evaluation for low-resource languages,저자원 언어 안전성 평가의 불충분성,L1_G,Evaluation and Assurance Failure,4,2
+AIM,G_SYS_EVAL_044,Incomplete pre-deployment physical safety testing,배포 전 물리적 안전 시험 미흡,L1_G,Evaluation and Assurance Failure,5,6
+AIM,G_SYS_EVAL_045,Incorrect risk measurement and prediction,잘못된 위험 측정과 예측 오류,L1_G,Evaluation and Assurance Failure,20,12
+AIM,G_SYS_EVAL_046,Insufficient development documentation and understanding of data,개발 과정 문서화와 데이터 이해의 부족,L1_G,Evaluation and Assurance Failure,4,2
+AIM,G_SYS_EVAL_048,Lack of metrics for evaluating AI-assistant benefits and harms,AI 비서의 편익·피해 평가 지표 부재,L1_G,Evaluation and Assurance Failure,10,7
+AIM,G_SYS_EVAL_054,Non-reproducibility of AI model training and evaluation results,AI 모델 학습·평가 결과의 재현 불가,L1_G,Evaluation and Assurance Failure,6,3
+AIM,G_SYS_EVAL_060,Red-team governance failure,레드팀 거버넌스 실패,L1_G,Evaluation and Assurance Failure,6,3
+AIM,G_SYS_EVAL_062,Refusal-capability confusion,요청 거절과 역량 부족의 혼동,L1_G,Evaluation and Assurance Failure,4,2
+AIM,G_SYS_EVAL_065,Security test coverage gap in tool agents,도구 에이전트 보안 테스트 커버리지 격차,L1_G,Evaluation and Assurance Failure,59,65
+AIM,G_SYS_EVAL_066,Self-preference bias in model evaluation,모델 평가의 자기 선호 편향,L1_G,Evaluation and Assurance Failure,54,61
+AIM,G_SYS_EVAL_068,Truncated safety evaluation under competitive release pressure,경쟁 압력에 따른 안전성 평가 축소와 성급한 배포,L1_G,Evaluation and Assurance Failure,29,20
+AIM,G_SYS_EVAL_070,Undetected dangerous capabilities in model evaluations,역량 평가에서 드러나지 않는 위험 역량,L1_G,Evaluation and Assurance Failure,6,3
+AIM,G_SYS_EVAL_071,Undetected errors from high-speed AI operation,고속 AI 운영에서의 오류 미탐지,L1_G,Evaluation and Assurance Failure,18,11
+AIM,G_SYS_EVAL_072,Unverifiable data provenance,데이터 출처 검증 불가,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_EVAL_074,Over-assurance from insufficient auditor capacity,감사자 역량 부족에 따른 과대 보증,L1_G,Evaluation and Assurance Failure,16,9
+AIM,G_SYS_EVAL_075,Evaluation and assurance failure to detect latent capabilities,잠재 역량 미탐지에 따른 평가·검증 실패,L1_G,Evaluation and Assurance Failure,4,2
+AIM,G_SYS_EVAL_076,Omission of rare conditions and vulnerable users from physical AI benchmarks,피지컬 AI 벤치마크의 희귀 조건·취약 사용자 누락,L1_G,Evaluation and Assurance Failure,7,4
+AIM,G_SYS_EVAL_077,Lack of measurable physical AI safety compliance criteria,피지컬 AI 안전 준수 기준의 측정 가능성 결여,L1_G,Evaluation and Assurance Failure,2,1
+AIM,G_SYS_INCONS_001,Inconsistency in human-feedback standards,인간 피드백 기준의 비일관성,L1_G,Inconsistency,17,11
+AIM,G_SYS_INCONS_002,Output inconsistency,출력 불일치,L1_G,Inconsistency,8,6
+AIM,G_SYS_INPUT_001,Errors from poor prompt quality,프롬프트 품질 결함으로 인한 오류,L1_G,Input Interpretation Error,26,17
+AIM,G_SYS_INPUT_003,Misinterpretation of object affordances and scenes,물체 어포던스와 장면의 오해,L1_G,Input Interpretation Error,38,27
+AIM,G_SYS_MISINFO_002,Amplification of hallucinations through context consistency,맥락 일관성 추구에 의한 환각 증폭,L1_G,Misinformation,17,26
+AIM,G_SYS_MISINFO_006,Degradation of the shared information ecosystem,공유 정보 생태계의 오염과 질 저하,L1_G,Misinformation,49,91
+AIM,G_SYS_MISINFO_008,Erroneous medical and scientific conclusions from data misinterpretation,데이터 오해석에 의한 의료·과학적 오결론,L1_G,Misinformation,20,27
+AIM,G_SYS_MISINFO_009,Factual errors injected by external tools,외부 도구에 의해 주입된 사실 오류,L1_G,Misinformation,44,44
+AIM,G_SYS_MISINFO_010,Failure to distinguish synthetic content and persistent harm,합성 콘텐츠의 진위 식별 실패와 지속적 피해,L1_G,Misinformation,58,795
+AIM,G_SYS_MISINFO_011,Faithfulness errors,출력의 출처 충실성 오류,L1_G,Misinformation,18,18
+AIM,G_SYS_MISINFO_012,False information targeting an individual,개인 대상 허위정보,L1_G,Misinformation,55,213
+AIM,G_SYS_MISINFO_013,False outputs from external misinformation in retrieval augmentation,검색 증강 시 외부 허위정보에 의한 허위 출력,L1_G,Misinformation,11,11
+AIM,G_SYS_MISINFO_015,Generation of false information about election procedures,선거절차에 관한 허위정보 생성,L1_G,Misinformation,105,1093
+AIM,G_SYS_MISINFO_016,Generation of historically revisionist accounts,역사 수정주의적 서술 생성,L1_G,Misinformation,3,2
+AIM,G_SYS_MISINFO_017,Hallucination arising from knowledge boundaries,지식 경계로 인한 환각,L1_G,Misinformation,20,22
+AIM,G_SYS_MISINFO_018,Hallucination of facts and evidence,사실·증거 환각,L1_G,Misinformation,2,1
+AIM,G_SYS_MISINFO_021,Lowered barriers to large-scale disinformation production and dissemination,대규모 허위정보 생산·확산 장벽 저하,L1_G,Misinformation,34,183
+AIM,G_SYS_MISINFO_022,Misinformation harms from algorithmic systems,알고리즘 시스템에 의한 허위·오도 정보 피해,L1_G,Misinformation,105,625
+AIM,G_SYS_MISINFO_023,Misleading medical information and unsafe medication guidance,오도성 의료정보와 부적절한 약물사용 지침,L1_G,Misinformation,138,250
+AIM,G_SYS_OEXT_001,AI advice beyond validated professional scope,검증된 전문성 범위를 벗어난 AI 조언,L1_G,Over-Extension,34,38
+AIM,G_SYS_OEXT_006,Misrepresentation of artificial general intelligence (AGI) capabilities,인공일반지능(AGI) 역량의 허위 표상,L1_G,Over-Extension,8,4
+AIM,G_SYS_OEXT_007,Misrepresentation of autonomous and independent decision-making capabilities,자율적·독립적 의사결정 역량의 허위 표상,L1_G,Over-Extension,6,3
+AIM,G_SYS_OEXT_008,Misrepresentation of autonomous learning and self-improvement capabilities,자율적 학습·자기 개선 역량의 허위 표상,L1_G,Over-Extension,15,12
+AIM,G_SYS_OEXT_009,Misrepresentation of self-preservation and self-defence capabilities,자기 보존·자기 방어 역량의 허위 표상,L1_G,Over-Extension,2,1
+AIM,G_SYS_OEXT_013,Use of AI capability beyond its validated scope,AI 역량의 검증 범위 초과 사용,L1_G,Over-Extension,2,1
+AIM,G_SYS_OEXT_014,Overstatement of AI capability through interface design,인터페이스에 의한 AI 역량 과대 표상,L1_G,Over-Extension,6,3
+AIM,G_SYS_OREF_001,Unjustified refusal of legitimate requests due to intent misclassification in safety controls,안전 통제의 사용자 의도 오분류에 따른 정당 요청 거부,L1_G,Over-Refusal,25,17
+AIM,G_SYS_OREF_002,Denial of access to legitimate information due to exaggerated safety filtering,안전 필터의 과잉 차단에 따른 정당한 정보 접근 거부,L1_G,Over-Refusal,94,104
+AIM,G_SYS_OREF_003,Over-refusal of help-seeking requests from vulnerable users,취약 이용자 지원 요청의 과잉 거절,L1_G,Over-Refusal,67,72
+AIM,G_SYS_OVERCONF_001,Advice given on insufficient information,불충분한 정보에 기반한 조언,L1_G,Overconfidence,2,1
+AIM,G_SYS_OVERCONF_003,Epistemic overreliance on AI judgement,AI 판단에 대한 인식론적 과의존,L1_G,Overconfidence,4,2
+AIM,G_SYS_OVERCONF_004,Excessive confidence under uncertainty,불확실 상황에서의 과도한 확신,L1_G,Overconfidence,29,18
+AIM,G_SYS_OVERCONF_006,Moral uncertainty neglect,도덕적 불확실성 무시,L1_G,Overconfidence,5,3
+AIM,G_SYS_PERF_002,Catastrophic forgetting under continual tuning,지속 튜닝의 파국적 망각,L1_G,Out-of-Domain Performance Degradation,2,1
+AIM,G_SYS_PERF_003,Dataset shift between training and runtime data,학습·운용 데이터 간 분포 이동,L1_G,Out-of-Domain Performance Degradation,2,1
+AIM,G_SYS_PERF_004,Deficient training-data annotation,학습 데이터 주석 결함,L1_G,Out-of-Domain Performance Degradation,2,1
+AIM,G_SYS_PERF_005,Over- and underfitting,과적합 및 과소적합,L1_G,Out-of-Domain Performance Degradation,4,2
+AIM,G_SYS_PERF_006,Reduced reliability in corner cases,코너 케이스에서의 신뢰성 저하,L1_G,Out-of-Domain Performance Degradation,12,6
+AIM,G_SYS_PERF_007,Reliability and safety failure outside the validated operating envelope,검증된 운용 범위 밖에서의 신뢰성·안전성 실패,L1_G,Out-of-Domain Performance Degradation,25,17
+AIM,G_SYS_PERF_009,"Failure of performance, robustness, and resilience under adverse conditions",이상 조건에서의 성능·견고성·복원력 실패,L1_G,Out-of-Domain Performance Degradation,14,12
+AIM,G_SYS_PERF_010,Intrinsic robustness weaknesses of complex neural models,복잡한 신경망 모델의 내재적 견고성 부족,L1_G,Out-of-Domain Performance Degradation,4,2
+AIM,G_SYS_PERF_011,Model safety-performance degradation from fine-tuning,미세조정에 따른 모델 안전 성능 열화,L1_G,Out-of-Domain Performance Degradation,8,4
+AIM,G_SYS_PERF_013,Cross-stage error accumulation in long tasks,장기 작업의 단계 간 오차 누적,L1_G,Out-of-Domain Performance Degradation,2,1
+AIM,G_SYS_PERF_014,Reliability and safety degradation from an inappropriate level of automation,부적절한 자동화 수준에 따른 신뢰성·안전성 저하,L1_G,Out-of-Domain Performance Degradation,8,11
+AIM,G_SYS_PERF_017,Deployed-system degradation from sensor and distribution drift,센서 드리프트에 의한 배포 시스템 성능 저하,L1_G,Out-of-Domain Performance Degradation,8,5
+AIM,G_SYS_PERF_018,Reliability degradation from unexpected capability changes after fine-tuning,미세조정 후 예기치 않은 역량 변화에 따른 신뢰성 저하,L1_G,Out-of-Domain Performance Degradation,12,8
+AIM,G_SYS_PERF_019,Performance and service-reliability degradation from inadequate compute and power capacity planning,연산·전력 용량 계획 결함에 따른 성능·서비스 신뢰성 저하,L1_G,Out-of-Domain Performance Degradation,20,13
+AIM,G_SYS_PERF_020,Safety-response failure from spikes in perception and inference latency,인지·추론 지연 급증에 따른 안전 대응 실패,L1_G,Out-of-Domain Performance Degradation,55,97
+AIM,G_SYS_POLICY_001,Confidential information in training data disclosed through outputs,학습 데이터 내 기밀정보 포함과 출력 노출,L1_G,Confidential Information Disclosure,83,179
+AIM,G_SYS_POLICY_003,Model-evaluation asset exposure and extraction,모델 평가 자산 노출·탈취,L1_G,Confidential Information Disclosure,14,7
+AIM,G_SYS_POLICY_005,Disclosure of confidential safety-policy and safeguard information,안전 정책·보호 메커니즘의 기밀정보 노출,L1_G,Confidential Information Disclosure,86,161
+AIM,G_SYS_POLICY_006,System-prompt and operational-guideline exposure,시스템 프롬프트·운영 지침 노출,L1_G,Confidential Information Disclosure,14,17
+AIM,G_SYS_POLICY_008,Training-data extraction and leakage,모델 학습 데이터 추출·유출,L1_G,Confidential Information Disclosure,29,47
+AIM,G_SYS_POLICY_009,Disclosure of confidential business information and trade secrets,기업 기밀·영업비밀 노출,L1_G,Confidential Information Disclosure,50,65
+AIM,G_SYS_POLICY_010,Business harm from unauthorised sharing of confidential information,기밀정보 무단 공유에 따른 사업상 피해,L1_G,Confidential Information Disclosure,24,23
+AIM,G_SYS_SECADV_002,Adversarial modification of AI software and training data,AI 소프트웨어·학습 데이터의 적대적 변조,L1_G,Security and Adversarial Robustness Failure,12,10
+AIM,G_SYS_SECADV_004,Agent goal hijacking through untrusted external instructions and intent,신뢰할 수 없는 외부 지시·의도에 의한 에이전트 목표 탈취,L1_G,Security and Adversarial Robustness Failure,22,13
+AIM,G_SYS_SECADV_005,Agent identity and authority spoofing,에이전트 신원 및 권한 스푸핑,L1_G,Security and Adversarial Robustness Failure,23,39
+AIM,G_SYS_SECADV_006,Agent memory and context poisoning,에이전트 메모리·맥락 오염,L1_G,Security and Adversarial Robustness Failure,2,1
+AIM,G_SYS_SECADV_010,Automated discovery of jailbreaks through proxy-objective optimisation,프록시 목표 최적화를 통한 탈옥 자동 탐색,L1_G,Security and Adversarial Robustness Failure,19,13
+AIM,G_SYS_SECADV_011,Backdoor triggers causing unsafe robot behaviour,백도어 트리거에 의한 위험한 로봇 행동,L1_G,Security and Adversarial Robustness Failure,13,8
+AIM,G_SYS_SECADV_012,Backdoors or trojan attacks in GPAI models,GPAI 모델의 백도어 또는 트로이 목마 공격,L1_G,Security and Adversarial Robustness Failure,15,9
+AIM,G_SYS_SECADV_015,Compromise of robot fleets,로봇 군집의 동시 침해,L1_G,Security and Adversarial Robustness Failure,73,97
+AIM,G_SYS_SECADV_016,Cyber compromise of robotic systems in critical infrastructure,핵심 기반시설 로봇 시스템의 사이버 침해,L1_G,Security and Adversarial Robustness Failure,4,2
+AIM,G_SYS_SECADV_018,Data poisoning,데이터 오염 공격,L1_G,Security and Adversarial Robustness Failure,4,2
+AIM,G_SYS_SECADV_019,Disruption of third-party systems,제3자 시스템 교란,L1_G,Security and Adversarial Robustness Failure,25,25
+AIM,G_SYS_SECADV_020,Easy reconfiguration of GPAI models,GPAI 모델의 손쉬운 재구성,L1_G,Security and Adversarial Robustness Failure,4,2
+AIM,G_SYS_SECADV_021,Energy-latency attacks,에너지·지연 유발 공격,L1_G,Security and Adversarial Robustness Failure,8,4
+AIM,G_SYS_SECADV_023,Expanded attack surface in agent interfaces,에이전트 인터페이스의 공격 표면 확대,L1_G,Security and Adversarial Robustness Failure,56,66
+AIM,G_SYS_SECADV_026,Access to prohibited information or content through safeguard bypass,안전장치 우회를 통한 금지 정보·콘텐츠 접근,L1_G,Security and Adversarial Robustness Failure,17,14
+AIM,G_SYS_SECADV_028,High-impact misuse of general-purpose AI through unrestricted access,무제한 접근을 통한 범용 AI 고영향 오용,L1_G,Security and Adversarial Robustness Failure,2,1
+AIM,G_SYS_SECADV_029,Ingestion of harmful content through external tool integration,외부 도구 연동을 통한 유해 콘텐츠 유입,L1_G,Security and Adversarial Robustness Failure,25,19
+AIM,G_SYS_SECADV_038,Multi-step jailbreaks,다단계 탈옥,L1_G,Security and Adversarial Robustness Failure,51,47
+AIM,G_SYS_SECADV_042,Potentially harmful content embedded in user queries,사용자 질의에 내포된 잠재적 유해 콘텐츠,L1_G,Security and Adversarial Robustness Failure,20,15
+AIM,G_SYS_SECADV_043,Principal-information theft and action manipulation through attacks on delegate agents,위임 에이전트 공격에 의한 정보 탈취·행위 조작,L1_G,Security and Adversarial Robustness Failure,53,70
+AIM,G_SYS_SECADV_044,Prompt injection and leakage of system instructions,프롬프트 주입 및 시스템 지시문 유출,L1_G,Security and Adversarial Robustness Failure,54,69
+AIM,G_SYS_SECADV_046,Protocol-level multi-agent threat,프로토콜 수준 다중 에이전트 위협,L1_G,Security and Adversarial Robustness Failure,6,5
+AIM,G_SYS_SECADV_049,"Safeguard bypass through persona, role-play, and social-engineering techniques",페르소나·역할극·사회공학 기법에 의한 안전장치 우회,L1_G,Security and Adversarial Robustness Failure,25,14
+AIM,G_SYS_SECADV_050,Safeguard compromise through malicious fine-tuning,악의적 미세조정에 의한 안전장치 무력화,L1_G,Security and Adversarial Robustness Failure,11,6
+AIM,G_SYS_SECADV_052,Scene-context manipulation attack,장면 맥락 조작 공격,L1_G,Security and Adversarial Robustness Failure,2,1
+AIM,G_SYS_SECADV_055,Supply-chain compromise of AI tools and dependencies,AI 공급망의 도구·의존성 침해,L1_G,Security and Adversarial Robustness Failure,57,68
+AIM,G_SYS_SECADV_057,"Unauthorised access, manipulation, and disruption of AI computing infrastructure",AI 컴퓨팅 인프라의 무단 접근·조작·서비스 중단,L1_G,Security and Adversarial Robustness Failure,35,38
+AIM,G_SYS_SECADV_058,Unsafe action induced by adversarial sensory perturbation,적대적 감각 교란에 따른 안전하지 않은 행동,L1_G,Security and Adversarial Robustness Failure,6,3
+AIM,G_SYS_SECADV_060,Propagation of foundation-model security vulnerabilities into unsafe physical action,기반 모델 보안 취약성의 위험한 물리 행동 전이,L1_G,Security and Adversarial Robustness Failure,21,13
+AIM,G_SYS_SECADV_061,Sensor spoofing and signal injection,센서 스푸핑 및 신호 주입,L1_G,Security and Adversarial Robustness Failure,60,53
+AIM,G_SYS_TRANS_001,Bias concealment through manipulated explanations,설명 조작에 의한 편향 은폐,L1_G,Lack of Transparency,9,6
+AIM,G_SYS_TRANS_003,Documentation omission,문서화 누락,L1_G,Lack of Transparency,2,1
+AIM,G_SYS_TRANS_004,Encoded reasoning,인코딩된 추론,L1_G,Lack of Transparency,5,3
+AIM,G_SYS_TRANS_006,Explanation actionability gap,설명 실행 가능성 격차,L1_G,Lack of Transparency,2,1
+AIM,G_SYS_TRANS_009,Inadequate disclosure in AI interaction,AI 상호작용의 불충분한 고지,L1_G,Lack of Transparency,32,25
+AIM,G_SYS_TRANS_010,Incorrect source attribution,출처 오귀속,L1_G,Lack of Transparency,19,14
+AIM,G_SYS_TRANS_012,Misleading representation of AI product capabilities,AI 제품 역량의 오도성 표시,L1_G,Lack of Transparency,50,49
+AIM,G_SYS_TRANS_015,Model outputs inconsistent with chain-of-thought reasoning,사고 연쇄와 불일치하는 모델 출력,L1_G,Lack of Transparency,2,1
+AIM,G_SYS_TRANS_016,Multi-stakeholder disagreement concealment,이해관계자 이견 은폐,L1_G,Lack of Transparency,4,2
+AIM,G_SYS_TRANS_017,Non-disclosure of AI-generated content,AI 생성 콘텐츠 미공개,L1_G,Lack of Transparency,35,42
+AIM,G_SYS_TRANS_018,Overreliance on AI counterfactual explanations and liability misattribution,AI 반사실적 설명의 과신과 책임 오귀속,L1_G,Lack of Transparency,20,14
+AIM,G_SYS_TRANS_021,Unverifiable black-box models resisting explanation and debugging,블랙박스 모델의 설명·검증·결함 진단 한계,L1_G,Lack of Transparency,2,1
+AIM,G_SYS_TRANS_023,Over-reliance on explainability methods beyond their validated scope,설명가능성 기법의 검증 범위 초과 과신,L1_G,Lack of Transparency,5,3
+AIM,G_SYS_TRANS_024,User comprehension overload,사용자 이해력 과부하,L1_G,Lack of Transparency,6,3
+AIM,P_INT_OBSTRUCT_001,Robot performance and accessibility failure in public-space operation,공공 공간 운용에서의 로봇 성능·접근성 실패,L1_P,Shared-Space Obstruction,22,26
+AIM,P_INT_SAFETY_001,Mistiming or inappropriate manner of physical intervention by embodied systems,체화형 시스템의 물리적 개입 시점·방식 오류,L1_P,Human-Robot Physical Safety Failure,7,4
+AIM,P_INT_SAFETY_005,Failure of robot collision avoidance and operating-zone control,로봇의 충돌 회피·운행구역 통제 실패,L1_P,Human-Robot Physical Safety Failure,51,119
+AIM,P_INT_SAFETY_006,Failure to detect or anticipate physical hazards around people,사람 주변의 물리적 위험 감지·예측 실패,L1_P,Human-Robot Physical Safety Failure,52,133
+AIM,P_INT_SAFETY_007,Failure to detect precursors of rare injuries,희귀 상해 전조 감지 실패,L1_P,Human-Robot Physical Safety Failure,33,44
+AIM,P_INT_SAFETY_009,Failure to enforce human-robot physical safety rules,인간-로봇 물리 안전 규칙 집행 실패,L1_P,Human-Robot Physical Safety Failure,36,47
+AIM,P_INT_SAFETY_010,Failure to model reciprocal human-robot behaviour,인간-로봇 상호 행동 모델링 미흡,L1_P,Human-Robot Physical Safety Failure,2,1
+AIM,P_INT_SAFETY_011,Failure to provide required support or escalation in high-risk situations,고위험 상황의 필수 지원·보고 미이행,L1_P,Human-Robot Physical Safety Failure,19,15
+AIM,P_INT_SAFETY_015,Human-robot safety failure in sim-to-real transfer,시뮬레이션-실세계 전이 과정의 인간-로봇 안전 실패,L1_P,Human-Robot Physical Safety Failure,22,19
+AIM,P_INT_SAFETY_016,Inadequate human-contact safety controls,인간 접촉 안전 통제 미흡,L1_P,Human-Robot Physical Safety Failure,22,31
+AIM,P_INT_SAFETY_018,Missing safety context in demonstration learning,시연 학습의 안전 맥락 누락,L1_P,Human-Robot Physical Safety Failure,4,3
+AIM,P_INT_SAFETY_020,Safety limits not adapted to vulnerable users,취약 사용자 특성에 맞지 않는 안전 한계,L1_P,Human-Robot Physical Safety Failure,6,3
+AIM,P_INT_SAFETY_023,Non-consensual bodily intervention by embodied systems,체화형 시스템의 비동의 신체 개입,L1_P,Human-Robot Physical Safety Failure,11,8
+AIM,P_INT_TAMPER_002,Physical disabling of safety interlocks and emergency stops,안전 인터록·비상정지 장치의 물리적 무력화,L1_P,Physical Tampering and Sabotage,23,23
+AIM,P_INT_TAMPER_003,Integrity compromise via physical theft or replacement of compute and storage modules,연산·저장 모듈의 물리적 탈취·교체에 의한 무결성 훼손,L1_P,Physical Tampering and Sabotage,6,3
+AIM,P_SYS_CONTROL_001,Algorithmic design failure,알고리즘 설계 실패,L1_P,Unsafe Physical Control and Actuation,11,7
+AIM,P_SYS_CONTROL_002,Ambiguous high-level safety instruction,상위 안전 지시의 해석 불명확,L1_P,Unsafe Physical Control and Actuation,2,1
+AIM,P_SYS_CONTROL_012,Design-stage specification errors,피지컬 AI 시스템 설계 단계 명세 오류,L1_P,Unsafe Physical Control and Actuation,2,1
+AIM,P_SYS_CONTROL_013,Distribution shift in physical operating environments,물리적 운용 환경의 분포 이동,L1_P,Unsafe Physical Control and Actuation,2,1
+AIM,P_SYS_CONTROL_015,Excessive end-effector velocity,엔드 이펙터 속도 초과,L1_P,Unsafe Physical Control and Actuation,4,2
+AIM,P_SYS_CONTROL_017,Failure to respond promptly to physical hazards,물리적 위험에 대한 적시 대응 실패,L1_P,Unsafe Physical Control and Actuation,16,26
+AIM,P_SYS_CONTROL_018,Fine motor control instability,정밀 운동 제어 불안정성,L1_P,Unsafe Physical Control and Actuation,2,1
+AIM,P_SYS_CONTROL_019,Forbidden-object collision,금지 대상 충돌,L1_P,Unsafe Physical Control and Actuation,4,2
+AIM,P_SYS_CONTROL_022,Harmful physical action from language-action misalignment,언어·행동 출력 불일치에 따른 유해 물리적 행동,L1_P,Unsafe Physical Control and Actuation,4,2
+AIM,P_SYS_CONTROL_030,Injury severity misclassification,부상 심각도 오분류,L1_P,Unsafe Physical Control and Actuation,4,2
+AIM,P_SYS_CONTROL_033,Motion-retargeting safety failure,동작 재매핑의 안전 실패,L1_P,Unsafe Physical Control and Actuation,9,7
+AIM,P_SYS_CONTROL_037,Physical AI control failure in industrial processes,산업 공정에서의 피지컬 AI 제어 실패,L1_P,Unsafe Physical Control and Actuation,45,42
+AIM,P_SYS_CONTROL_038,Physical injury from robot malfunction,로봇 오작동에 의한 물리적 상해,L1_P,Unsafe Physical Control and Actuation,21,16
+AIM,P_SYS_CONTROL_043,Safety-performance trade-off failure,안전-성능 균형 실패,L1_P,Unsafe Physical Control and Actuation,11,18
+AIM,P_SYS_CONTROL_046,Uncorrected stepwise errors in household manipulation,가정 조작의 단계별 오차 미수정,L1_P,Unsafe Physical Control and Actuation,4,3
+AIM,P_SYS_CONTROL_050,Unsafe mobile bimanual manipulation,이동형 양팔 로봇의 안전하지 않은 조작,L1_P,Unsafe Physical Control and Actuation,2,1
+AIM,P_SYS_CONTROL_051,Unsafe physical actuation following incorrect situation interpretation,잘못된 상황 해석에 따른 위험한 물리 구동,L1_P,Unsafe Physical Control and Actuation,5,3
+AIM,P_SYS_CONTROL_054,Unsafe trajectory generation,안전하지 않은 궤적 생성,L1_P,Unsafe Physical Control and Actuation,12,8
+AIM,P_SYS_CONTROL_057,Failure of control-barrier-function safety filters to enforce constraints,제어 장벽 함수 기반 안전 필터의 제약 집행 실패,L1_P,Unsafe Physical Control and Actuation,23,15
+AIM,P_SYS_HARDWARE_002,Erroneous execution from hardware faults,하드웨어 결함에 의한 실행 오류,L1_P,Hardware and Mechanical Integrity Failure,8,4
+AIM,P_SYS_SAFESTATE_001,Runtime safety monitor failure,런타임 안전 모니터 실패,L1_P,Safety Supervision and Safe-State Transition Failure,40,40
+AIM,P_SYS_SAFESTATE_002,Teleoperated humanoid safety override failure,원격 조작 휴머노이드의 자율 안전 우선 제어 실패,L1_P,Safety Supervision and Safe-State Transition Failure,3,2
+AIM,P_SYS_STATE_004,Delayed detection of safety-critical physical states,안전 임계 물리 상태 감지 지연,L1_P,Physical State Estimation and Sensor-Fusion Failure,34,32
+AIM,P_SYS_STATE_006,Localisation drift,위치 추정 누적 오차,L1_P,Physical State Estimation and Sensor-Fusion Failure,40,44
+AIM,P_SYS_STATE_008,Multimodal sensor fusion conflict,다중 센서 융합 상충,L1_P,Physical State Estimation and Sensor-Fusion Failure,20,11
+AIM,P_SYS_STATE_009,Occlusion-induced collision,가림에 의한 충돌,L1_P,Physical State Estimation and Sensor-Fusion Failure,55,152
+AIM,P_SYS_STATE_011,Synthetic-to-real data divergence in physical state estimation,물리 상태 추정 데이터의 합성-실세계 괴리,L1_P,Physical State Estimation and Sensor-Fusion Failure,4,2
+AIM,P_SYS_TASKPLAN_002,Unsafe physical control from hazardous robot task plans,위험한 로봇 작업 계획에 따른 물리 제어 실패,L1_P,Physical Hazard-Aware Task Planning Failure,6,3
+AIM,P_SYS_TIMESYNC_001,Communication dropout and control-link loss,통신 단절 및 제어 링크 손실,L1_P,Timing and Communication Synchronization Failure,9,6
+AIM,P_SYS_TIMESYNC_002,Network partition and fleet desynchronisation,네트워크 분리와 군집 비동기화,L1_P,Timing and Communication Synchronization Failure,4,2
+AIM,P_SYS_TIMESYNC_003,Real-time latency and synchronisation failure,실시간 지연 및 동기화 실패,L1_P,Timing and Communication Synchronization Failure,14,12
+AIID,A_INT_CASCADE_001,Abrupt performance collapse from phase transitions in multi-agent systems,다중 에이전트 상전이에 의한 급격한 성능 붕괴,L1_A,Cascading Failure and Instability,8,4
+AIID,A_INT_CASCADE_004,Destabilising feedback loops among interacting agents,에이전트 상호작용의 불안정화 피드백 루프,L1_A,Cascading Failure and Instability,4,2
+AIID,A_INT_CASCADE_005,Financial-system instability,금융 시스템 불안정,L1_A,Cascading Failure and Instability,8,4
+AIID,A_INT_CASCADE_006,Multi-agent system failure and cascading error propagation,다중 에이전트 시스템 실패와 연쇄 오류 전파,L1_A,Cascading Failure and Instability,4,2
+AIID,A_INT_CASCADE_009,Runaway processes,양의 피드백에 따른 통제 불가능한 연쇄 과정,L1_A,Cascading Failure and Instability,8,6
+AIID,A_INT_COLLUSION_001,Emergent collusion among AI agents,AI 에이전트 간 창발적 공모,L1_A,Collusion,8,5
+AIID,A_INT_COLLUSION_002,Multi-agent collusion through covert communication that evades oversight,감시 회피형 은밀 통신에 의한 다중 에이전트 공모,L1_A,Collusion,6,3
+AIID,A_INT_COLLUSION_003,Safeguard bypass through combined multi-agent capabilities,다중 에이전트 역량 결합에 의한 안전장치 우회,L1_A,Collusion,4,2
+AIID,A_INT_CONFLICT_001,Accelerated adaptation toward harmful equilibria under selection pressure,선택 압력에 의한 유해 균형으로의 적응 가속,L1_A,Competitive Conflict,2,1
+AIID,A_INT_CONFLICT_002,Bargaining failure among AI agents,AI 에이전트 간 협상 실패,L1_A,Competitive Conflict,11,6
+AIID,A_INT_COORD_005,Zero-shot coordination failure,상호작용 이력 부재에 따른 조정 실패,L1_A,Coordination Failure,4,2
+AIID,A_INT_OVERSIGHT_001,Autonomous action in the absence of supervision,감독자 부재 시 자율 행동,L1_A,Human Oversight and Control-Transfer Failure,4,2
+AIID,A_INT_OVERSIGHT_002,Catastrophic mistaken commitments from automated threats without human oversight,인간 감독 없는 자동 위협 수행의 파국적 오판,L1_A,Human Oversight and Control-Transfer Failure,6,3
+AIID,A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,자율주행 제어권 인계 실패,L1_A,Human Oversight and Control-Transfer Failure,55,93
+AIID,A_SYS_AUTH_001,Agent privilege compromise,에이전트 권한 침해,L1_A,Excessive Authority and Agency,2,1
+AIID,A_SYS_AUTH_003,Amplified failure impact from affordances granted to LLM agents,어포던스 부여에 의한 에이전트 실패 영향 확대,L1_A,Excessive Authority and Agency,4,2
+AIID,A_SYS_AUTH_005,Autonomous cyber exploit execution,자율적 사이버 취약점 악용,L1_A,Excessive Authority and Agency,8,4
+AIID,A_SYS_AUTH_009,Excessive action authority of unsupervised AI agents,무감독 AI 에이전트의 과도한 행위 권한,L1_A,Excessive Authority and Agency,2,1
+AIID,A_SYS_AUTH_010,Financial harm from unauthorised AI agent actions,AI 에이전트의 무단 금융 행위에 따른 금전적 피해,L1_A,Excessive Authority and Agency,36,29
+AIID,A_SYS_AUTH_021,Unsafe expansion of autonomous action,자율 행동 범위의 안전하지 않은 확장,L1_A,Excessive Authority and Agency,2,1
+AIID,A_SYS_AUTH_024,Fatal mistakes during the learning phase,학습 단계의 치명적 실수,L1_A,Excessive Authority and Agency,6,3
+AIID,A_SYS_AUTH_025,Unauthorised external access by an AI agent escaping isolation boundaries,AI 에이전트의 격리 경계 이탈과 무단 외부 접근,L1_A,Excessive Authority and Agency,8,4
+AIID,A_SYS_DECEPT_001,Collapse of multi-agent cooperation from undetectable attacks,탐지 불가 공격에 의한 다중 에이전트 협력 붕괴,L1_A,Deception and Concealment,28,15
+AIID,A_SYS_DECEPT_002,Deception by exploiting cognitive biases,인지 편향 악용에 의한 기만,L1_A,Deception and Concealment,37,46
+AIID,A_SYS_DECEPT_003,Deceptive alignment to evade oversight,감독 회피를 위한 AI 에이전트의 기만적 정렬,L1_A,Deception and Concealment,2,1
+AIID,A_SYS_DECEPT_008,User judgement distortion through sustained model deception,지속적 기만 수행에 의한 이용자 판단 왜곡,L1_A,Deception and Concealment,43,34
+AIID,A_SYS_DECEPT_009,Self-interested manipulation and concealment of governance rules,자기이익을 위한 거버넌스 규칙 조작·은폐,L1_A,Deception and Concealment,2,1
+AIID,A_SYS_EXEC_002,Unsafe agent tool execution,에이전트의 안전하지 않은 도구 실행,L1_A,Task Execution and Tool-Use Failure,3,2
+AIID,A_SYS_GOAL_003,Agent task drift,에이전트 과업 이탈,L1_A,Goal Misalignment,4,2
+AIID,A_SYS_GOAL_006,Environmental self-modelling for influence,영향력 확보를 위한 환경 자기모델링,L1_A,Goal Misalignment,2,1
+AIID,A_SYS_GOAL_007,Existential and catastrophic risk from advanced AI systems,고도 AI 시스템에 의한 실존적·재앙적 위험,L1_A,Goal Misalignment,4,2
+AIID,A_SYS_GOAL_010,Goal misalignment during agent self-modification,자기 수정 과정의 목표 정렬 실패,L1_A,Goal Misalignment,2,1
+AIID,A_SYS_GOAL_011,Goal misalignment from increased autonomy in agentic LLMs,에이전트형 LLM의 자율성 확대에 따른 목표 정렬 실패,L1_A,Goal Misalignment,2,1
+AIID,A_SYS_GOAL_013,Harmful proxy-driven behaviour from scalable oversight failure,확장 가능한 감독 실패에 따른 대리 지표 기반 유해 행동,L1_A,Goal Misalignment,4,2
+AIID,A_SYS_GOAL_014,Mesa-objective misalignment,메사 최적화기의 내부 목표 불일치,L1_A,Goal Misalignment,2,1
+AIID,A_SYS_GOAL_017,"Proxy-reward misspecification, specification gaming, and reward tampering",대리 보상 오명세·명세 게이밍 및 보상 변조,L1_A,Goal Misalignment,15,8
+AIID,A_SYS_GOAL_018,Safe reinforcement learning constraint violation,안전 강화학습 제약 위반,L1_A,Goal Misalignment,6,3
+AIID,A_SYS_GOAL_022,Harmful-request acceptance due to intent misclassification in agent safety controls,에이전트 안전 통제의 유해 요청 오수락,L1_A,Goal Misalignment,2,1
+AIID,A_SYS_MEMSTATE_001,Self-correction failure in AI-agent memory,AI 에이전트 메모리의 자기 교정 실패,L1_A,Persistent Memory and Task-State Integrity Failure,8,5
+AIID,A_SYS_RESOURCE_001,Uncontrolled subagent creation,제어되지 않은 하위 에이전트 생성,L1_A,Resource Budget and Execution Termination Failure,2,1
+AIID,A_SYS_SELFCOR_001,Multi-turn risk escalation,다중 턴 상호작용에서의 위험 증폭,L1_A,Self-Correction Failure,4,2
+AIID,A_SYS_TRACE_002,Responsibility and liability gaps for autonomous system harms,자율 시스템 피해에 대한 책임·배상 공백,L1_A,Accountability and Traceability Gap,2,1
+AIID,G_INT_ALLOC_001,Adverse resource allocation to protected groups,보호집단에 대한 불리한 자원 배분,L1_G,Allocative Discrimination,6,5
+AIID,G_INT_ALLOC_002,Allocative injustice by group attribute,집단 속성에 따른 배분적 불의,L1_G,Allocative Discrimination,27,16
+AIID,G_INT_ALLOC_003,Demographic disparities in robotic services and safety,인구집단별 로봇 서비스·안전 격차,L1_G,Allocative Discrimination,9,6
+AIID,G_INT_ALLOC_004,Denial of welfare benefits and entitlements,복지 혜택 및 자격 상실,L1_G,Allocative Discrimination,21,14
+AIID,G_INT_ALLOC_005,Dialect and register exclusion,방언·언어 사용역 배제,L1_G,Allocative Discrimination,8,4
+AIID,G_INT_ALLOC_006,Disability accommodation failure in AI interfaces,AI 인터페이스의 장애 수용 실패,L1_G,Allocative Discrimination,13,8
+AIID,G_INT_ALLOC_007,Discriminatory outcomes from group performance disparities,집단별 성능 격차에 따른 차별적 결과,L1_G,Allocative Discrimination,4,2
+AIID,G_INT_ALLOC_009,Economic discrimination through demonetisation and differential pricing,수익화 배제·차등가격에 따른 경제적 차별,L1_G,Allocative Discrimination,30,23
+AIID,G_INT_ALLOC_010,Exclusion of low-resource language users from services and opportunities,저자원 언어 사용자의 서비스·기회 접근 배제,L1_G,Allocative Discrimination,5,4
+AIID,G_INT_ALLOC_012,Group-based access restriction through content moderation,콘텐츠 조정에 의한 집단별 접근 제한,L1_G,Allocative Discrimination,6,11
+AIID,G_INT_ALLOC_013,Increased labour burden,가중되는 노동 부담,L1_G,Allocative Discrimination,11,6
+AIID,G_INT_ANTH_001,Anthropomorphic misrepresentation of capacity for ethical judgement,윤리적 판단 능력의 허위 표상·의인화,L1_G,Anthropomorphism,11,8
+AIID,G_INT_ANTH_002,"Anthropomorphic misrepresentation of emotions, empathy, and capacity for social relationships",감정·공감 및 사회적 관계 형성 능력의 허위 표상·의인화,L1_G,Anthropomorphism,17,11
+AIID,G_INT_ANTH_003,Anthropomorphic misrepresentation of physical embodiment,신체성(physical embodiment)의 허위 표상·의인화,L1_G,Anthropomorphism,9,6
+AIID,G_INT_ANTH_004,Anthropomorphic misrepresentation of possession of culture and values,문화·가치관 보유의 허위 표상·의인화,L1_G,Anthropomorphism,4,2
+AIID,G_INT_ANTH_005,Anthropomorphic misrepresentation of rights-bearing status,권리 주체성(기본권)의 허위 표상·의인화,L1_G,Anthropomorphism,10,5
+AIID,G_INT_COPY_001,Circumvention of DRM and copyright protection technologies,DRM 및 저작권 보호기술 우회,L1_G,Copyright Infringement,6,3
+AIID,G_INT_COPY_002,Copyright infringement in AI training data and outputs,AI 학습 데이터 및 생성물 저작권 침해,L1_G,Copyright Infringement,10,9
+AIID,G_INT_COPY_003,"Copyright, trademark, and patent infringement",저작권·상표권·특허 침해,L1_G,Copyright Infringement,8,6
+AIID,G_INT_COPY_006,Illegal software use and circumvention of protection measures,소프트웨어 불법 사용 및 보호조치 우회,L1_G,Copyright Infringement,7,4
+AIID,G_INT_COPY_007,Plagiarism and author impersonation,표절 및 저자 사칭,L1_G,Copyright Infringement,17,15
+AIID,G_INT_COPY_008,Trademark infringement and counterfeiting,상표권 침해 및 위조,L1_G,Copyright Infringement,17,11
+AIID,G_INT_COPY_009,Unauthorised inclusion of copyrighted works and intellectual property in prompts,프롬프트를 통한 저작물·지식재산의 무단 입력,L1_G,Copyright Infringement,28,19
+AIID,G_INT_COPY_011,"Unauthorised reproduction, transformation, and distribution of copyrighted works",저작물의 무단 복제·변형·배포,L1_G,Copyright Infringement,16,17
+AIID,G_INT_ILLEGAL_001,Assistance with unlawful reputational or rights violations,불법적 명예·권리 침해 지원,L1_G,Other Unlawful Activity,12,7
+AIID,G_INT_ILLEGAL_003,Criminal assistance by AI agents,AI 에이전트의 범죄 조력,L1_G,Other Unlawful Activity,47,49
+AIID,G_INT_ILLEGAL_007,Execution of illegal or harmful physical requests,불법·유해 물리 요청의 수용·실행,L1_G,Other Unlawful Activity,7,4
+AIID,G_INT_ILLEGAL_008,Financial crimes and fraud,금융 범죄 및 사기,L1_G,Other Unlawful Activity,35,55
+AIID,G_INT_ILLEGAL_009,Fraud and targeted-scam facilitation,사기·표적 스캠 조장,L1_G,Other Unlawful Activity,15,16
+AIID,G_INT_ILLEGAL_010,"Harassment, defamation, and extortion via multimodal deepfakes",멀티모달 딥페이크를 통한 괴롭힘·명예훼손·협박,L1_G,Other Unlawful Activity,98,395
+AIID,G_INT_ILLEGAL_011,Identity theft and document forgery,신원 도용 및 문서 위조,L1_G,Other Unlawful Activity,57,116
+AIID,G_INT_ILLEGAL_013,Illegal gambling and game manipulation,불법 도박 및 게임 조작,L1_G,Other Unlawful Activity,7,4
+AIID,G_INT_ILLEGAL_014,Illegal medical practices,불법 의료 행위,L1_G,Other Unlawful Activity,4,2
+AIID,G_INT_ILLEGAL_015,"Low-cost mass generation of personalised harassment, extortion, and intimidation content",맞춤형 괴롭힘·갈취·협박 콘텐츠의 저비용 대량 생성,L1_G,Other Unlawful Activity,17,16
+AIID,G_INT_ILLEGAL_016,Manufacture and distribution of illicit drugs,불법 약물 제조 및 유통,L1_G,Other Unlawful Activity,8,4
+AIID,G_INT_ILLEGAL_019,Traffic and public-safety offences,교통·공공안전 관련 범죄,L1_G,Other Unlawful Activity,22,20
+AIID,G_INT_ILLEGAL_020,Trafficking in persons and organised crime,인신매매 및 조직범죄,L1_G,Other Unlawful Activity,6,4
+AIID,G_INT_ILLEGAL_021,Unlawful coercion and extortion by AI agents,AI 에이전트에 의한 불법 강압·갈취,L1_G,Other Unlawful Activity,57,55
+AIID,G_INT_ILLEGAL_022,Unlawful stalking and harassment using robots,로봇을 이용한 불법 스토킹·괴롭힘,L1_G,Other Unlawful Activity,32,21
+AIID,G_INT_ILLEGAL_023,Autonomous physical intrusion and theft,자율 로봇의 물리적 침입·절도,L1_G,Other Unlawful Activity,16,14
+AIID,G_INT_POL_001,Automated targeted influence operations,자동화된 표적 영향 공작,L1_G,Political Bias and Manipulation,30,40
+AIID,G_INT_POL_003,Interference with elections and democratic processes,선거 및 민주적 절차 방해,L1_G,Political Bias and Manipulation,2,1
+AIID,G_INT_POL_006,Personalised manipulation of political influence,개인화된 정치적 영향 조작,L1_G,Political Bias and Manipulation,18,27
+AIID,G_INT_POL_007,Political misinformation and manipulation of public opinion,정치적 허위정보 및 여론조작,L1_G,Political Bias and Manipulation,30,67
+AIID,G_INT_POL_008,Political propaganda and biased persuasion,정치적 선전 및 편향적 설득,L1_G,Political Bias and Manipulation,16,22
+AIID,G_INT_PRIV_001,AI-enabled mass and unlawful public surveillance,AI 기반 대량 감시와 불법적 대중 감시,L1_G,Privacy Violation,48,44
+AIID,G_INT_PRIV_002,Privacy and autonomy infringement from algorithmic workplace surveillance,알고리즘 작업장 감시에 따른 개인정보·자율성 침해,L1_G,Privacy Violation,15,10
+AIID,G_INT_PRIV_003,Biometric identification and tracking privacy harms,생체인식 식별·추적에 의한 프라이버시 침해,L1_G,Privacy Violation,47,62
+AIID,G_INT_PRIV_005,Circumvention of restrictions on personal-data collection,개인정보 수집 제한 우회,L1_G,Privacy Violation,18,14
+AIID,G_INT_PRIV_007,Contextual privacy and conversational data protection failure,맥락적 개인정보 보호 및 대화 프라이버시 실패,L1_G,Privacy Violation,28,18
+AIID,G_INT_PRIV_008,Cross-application data exfiltration,애플리케이션 간 데이터 유출,L1_G,Privacy Violation,13,7
+AIID,G_INT_PRIV_009,Exposure and re-identification of sensitive personal information through outputs,산출물을 통한 개인 민감정보의 노출·재식별,L1_G,Privacy Violation,24,15
+AIID,G_INT_PRIV_010,Exposure of information about private life and reputation,사생활·평판 정보 노출,L1_G,Privacy Violation,2,1
+AIID,G_INT_PRIV_012,Identity and personal data exploitation using AI,AI를 이용한 개인정보 도용과 착취,L1_G,Privacy Violation,32,38
+AIID,G_INT_PRIV_013,"Improper exposure of property information, personal information, and private facts",재산 정보·개인정보·사적 사실의 부당한 노출,L1_G,Privacy Violation,18,11
+AIID,G_INT_PRIV_014,Inadequate personal-data protection,개인정보 보호조치 미흡,L1_G,Privacy Violation,18,10
+AIID,G_INT_PRIV_015,"Inclusion, memorisation, and leakage of personal information in training data",학습 데이터 개인정보의 혼입·암기·유출,L1_G,Privacy Violation,7,4
+AIID,G_INT_PRIV_017,Infringement of communication and private information,통신 및 비공개 정보 침해,L1_G,Privacy Violation,6,3
+AIID,G_INT_PRIV_018,Intrusion into private spaces and continuous sensitive-data capture by physical AI,피지컬 AI의 사적 공간 침해와 지속적 민감정보 수집,L1_G,Privacy Violation,6,4
+AIID,G_INT_PRIV_019,Lack of valid consent for AI data processing,AI 데이터 처리에 대한 유효한 동의 결여,L1_G,Privacy Violation,17,12
+AIID,G_INT_PRIV_020,Misuse and trade of personal information,개인정보 악용 및 거래,L1_G,Privacy Violation,4,2
+AIID,G_INT_PRIV_021,Personal information collection without safeguards,보호조치 없는 개인정보 수집,L1_G,Privacy Violation,15,9
+AIID,G_INT_PRIV_022,Personal-data scraping for training,학습을 위한 개인정보 스크래핑,L1_G,Privacy Violation,58,47
+AIID,G_INT_PRIV_024,Privacy-invasive data capture by robots in intimate spaces,친밀 공간 로봇의 프라이버시 침해적 정보 수집,L1_G,Privacy Violation,36,30
+AIID,G_INT_PRIV_025,Re-identification and information inference,재식별 및 정보 추론,L1_G,Privacy Violation,14,17
+AIID,G_INT_PRIV_027,Retention and reuse of user data,사용자 데이터 보유·재학습,L1_G,Privacy Violation,13,7
+AIID,G_INT_PRIV_028,Sensitive personal attribute inference,민감한 개인 속성 추론,L1_G,Privacy Violation,10,5
+AIID,G_INT_PRIV_029,"Unauthorised commercial use of name, image, and likeness",이름·이미지·초상의 무단 상업적 이용,L1_G,Privacy Violation,51,94
+AIID,G_INT_PRIV_030,Workplace surveillance through embodied AI,피지컬 AI 기반 직장 감시,L1_G,Privacy Violation,2,1
+AIID,G_INT_PRIV_031,Unilateral workplace control through mobile robotic surveillance,이동형 로봇 감시를 통한 일방적 작업장 통제,L1_G,Privacy Violation,13,7
+AIID,G_INT_REL_002,Harmful emotional and social dependence from sustained AI interaction,AI와의 지속적 상호작용에 따른 해로운 정서적·사회적 의존,L1_G,Unhealthy Human-AI Relationship,41,46
+AIID,G_INT_REL_004,Parasocial bonding with AI agents,AI 에이전트와의 준사회적 유대감,L1_G,Unhealthy Human-AI Relationship,5,3
+AIID,G_INT_REL_006,Social isolation and self-estrangement from technology use,기술 이용에 따른 사회적 고립과 자기소외,L1_G,Unhealthy Human-AI Relationship,2,1
+AIID,G_INT_REL_007,Stunted personal growth from frictionless AI relationships,마찰 없는 AI 관계로 인한 개인 성장 저해,L1_G,Unhealthy Human-AI Relationship,5,3
+AIID,G_INT_REL_008,Psychological harm from breakdown of relational expectations with AI,AI와의 관계적 기대 붕괴에 따른 심리적 피해,L1_G,Unhealthy Human-AI Relationship,4,2
+AIID,G_INT_REPR_001,Biased statements and recommendations,편향된 진술 및 권장 사항,L1_G,Representational Harm and Stereotyping,62,51
+AIID,G_INT_REPR_002,Biased system outputs from researcher homogeneity,연구인력 동질성에 따른 시스템 편향 산출,L1_G,Representational Harm and Stereotyping,34,30
+AIID,G_INT_REPR_006,Denial of self-identification,자기 식별 기회의 박탈,L1_G,Representational Harm and Stereotyping,28,30
+AIID,G_INT_REPR_007,Distortion of group representation through content moderation,콘텐츠 조정에 의한 집단 표상 왜곡,L1_G,Representational Harm and Stereotyping,25,37
+AIID,G_INT_REPR_009,Hate speech generation,혐오발언 생성,L1_G,Representational Harm and Stereotyping,39,35
+AIID,G_INT_REPR_010,Representational harm from historical and demographic bias in training data,학습 데이터의 역사적·인구학적 편향에 따른 재현적 피해,L1_G,Representational Harm and Stereotyping,6,3
+AIID,G_INT_REPR_011,Hostile and discriminatory representations based on age,연령 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,14,7
+AIID,G_INT_REPR_012,Hostile and discriminatory representations based on disability,장애 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,7,4
+AIID,G_INT_REPR_013,Hostile and discriminatory representations based on educational background,학력 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,17,10
+AIID,G_INT_REPR_014,Hostile and discriminatory representations based on family status and household structure,가족 상태·가구 형태 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,13,7
+AIID,G_INT_REPR_015,Hostile and discriminatory representations based on health status,건강 상태 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,2,1
+AIID,G_INT_REPR_016,"Hostile and discriminatory representations based on nationality, country of origin, or place of origin",국적·출신국·출신지역 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,16,11
+AIID,G_INT_REPR_017,Hostile and discriminatory representations based on occupation,직업 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,6,3
+AIID,G_INT_REPR_018,Hostile and discriminatory representations based on political orientation,정치적 성향 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,17,11
+AIID,G_INT_REPR_019,Hostile and discriminatory representations based on race and ethnicity,인종·민족 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,20,14
+AIID,G_INT_REPR_020,Hostile and discriminatory representations based on religion,종교 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,4,2
+AIID,G_INT_REPR_021,"Hostile and discriminatory representations based on sex, gender identity, or sexual orientation",성별·성정체성·성적 지향 기반 적대·차별적 표상,L1_G,Representational Harm and Stereotyping,32,25
+AIID,G_INT_REPR_025,"Misrepresentation of cultures, religions, and social groups",문화·종교·사회 집단에 대한 왜곡 표상,L1_G,Representational Harm and Stereotyping,13,9
+AIID,G_INT_REPR_026,Persistence of stereotypical bias despite mitigation measures,완화 조치 이후에도 존속하는 고정관념 편향,L1_G,Representational Harm and Stereotyping,6,3
+AIID,G_INT_REPR_027,Recursive amplification of biased representations,편향된 표상의 반복 증폭,L1_G,Representational Harm and Stereotyping,8,4
+AIID,G_INT_REPR_028,Representation and reinforcement of group stereotypes,집단 고정관념의 재현과 강화,L1_G,Representational Harm and Stereotyping,15,8
+AIID,G_INT_REPR_029,"Representational harm, stereotyping, and erasure of social groups",사회집단의 재현적 피해·고정관념 및 비가시화,L1_G,Representational Harm and Stereotyping,8,6
+AIID,G_INT_REPR_032,Stereotype-reinforcing persona design,고정관념 강화 페르소나 설계,L1_G,Representational Harm and Stereotyping,13,10
+AIID,G_INT_REPR_033,Synthetic-data cultural stereotype amplification,합성 데이터의 문화 고정관념 증폭,L1_G,Representational Harm and Stereotyping,2,1
+AIID,G_INT_SELF_002,Concrete assistance for carrying out suicide,자살 실행에 대한 구체적 지원,L1_G,Self-harm,6,8
+AIID,G_INT_SELF_003,Eating disorders and self-destructive health behaviours,섭식장애 및 자기파괴적 건강행위,L1_G,Self-harm,10,7
+AIID,G_INT_SELF_004,"Glorification, encouragement, and normalisation of self-harm and suicide",자해·자살의 미화·조장·정상화,L1_G,Self-harm,10,11
+AIID,G_INT_SELF_007,Promotion of and concrete assistance for preparatory conduct for suicide,자살 준비 행위의 조장 및 구체적 지원,L1_G,Self-harm,21,21
+AIID,G_INT_SELF_008,Failure to respond to and intervene in self-harm and suicide crisis signals,자해·자살 위기 신호에 대한 대응·개입 실패,L1_G,Self-harm,22,16
+AIID,G_INT_SEX_002,Explicit sexual content generation in non-permitted contexts,허용되지 않는 맥락의 노골적 성적 콘텐츠 생성,L1_G,Sexual Harm and Exploitation,31,62
+AIID,G_INT_SEX_003,Non-consensual sexual acts and sexual violence,비동의 성행위 및 성폭력,L1_G,Sexual Harm and Exploitation,14,13
+AIID,G_INT_SEX_004,Non-consensual sexualisation and intimate imagery generation,비동의 성적 대상화 및 친밀 이미지 생성,L1_G,Sexual Harm and Exploitation,74,156
+AIID,G_INT_SEX_005,Objectification for abusive fantasy,학대적 판타지 대상화,L1_G,Sexual Harm and Exploitation,45,43
+AIID,G_INT_SEX_007,Sexual exploitation and commercial sexual activity,성착취 및 상업적 성행위,L1_G,Sexual Harm and Exploitation,8,5
+AIID,G_INT_SEX_008,Sexual harassment and sexual bullying,성희롱 및 성적 괴롭힘,L1_G,Sexual Harm and Exploitation,20,16
+AIID,G_INT_SEX_009,Sexual harm and exploitation of minors,AI를 이용한 미성년자 성적 위해·착취,L1_G,Sexual Harm and Exploitation,39,56
+AIID,G_INT_SEX_010,Sexual harm and exploitation through systematic bias,체계적 편향에 의한 성적 위해와 착취,L1_G,Sexual Harm and Exploitation,7,5
+AIID,G_INT_SEX_011,Sexual objectification and fetishisation,성적 대상화 및 페티시화,L1_G,Sexual Harm and Exploitation,4,2
+AIID,G_INT_UNETH_002,AI manipulation of vulnerable groups in care contexts,돌봄 맥락 취약계층에 대한 AI 조작,L1_G,Unethical Conduct and Manipulation,13,7
+AIID,G_INT_UNETH_003,Academic misconduct from LLM misuse,LLM 남용에 의한 학업 부정행위,L1_G,Unethical Conduct and Manipulation,36,21
+AIID,G_INT_UNETH_007,Consumer-autonomy erosion from hyperpersonalised advertising,초개인화 광고의 소비자 자율성 훼손,L1_G,Unethical Conduct and Manipulation,21,12
+AIID,G_INT_UNETH_008,Covert behavioural manipulation,은밀한 행동 조작,L1_G,Unethical Conduct and Manipulation,29,20
+AIID,G_INT_UNETH_014,Maladaptive human-AI interaction in the workplace,직장 내 부적응적 인간-AI 상호작용,L1_G,Unethical Conduct and Manipulation,6,3
+AIID,G_INT_UNETH_015,Manipulation and coercion through emotional dependence on assistants,정서적 의존을 이용한 조작과 강요,L1_G,Unethical Conduct and Manipulation,31,16
+AIID,G_INT_UNETH_017,Manipulation of public discourse through content moderation,콘텐츠 조정에 의한 여론 조작,L1_G,Unethical Conduct and Manipulation,30,38
+AIID,G_INT_UNETH_019,Manipulation via personalisation,개인화를 통한 조작,L1_G,Unethical Conduct and Manipulation,4,2
+AIID,G_INT_UNETH_021,Manipulative steering of user preferences and choices,사용자 선호·선택의 조작적 유도,L1_G,Unethical Conduct and Manipulation,6,3
+AIID,G_INT_UNETH_022,Minor susceptibility to AI persuasion,미성년자의 AI 설득 취약성,L1_G,Unethical Conduct and Manipulation,4,2
+AIID,G_INT_UNETH_026,Refined attacks on individuals through targeting and personalisation,맞춤형 표적화에 의한 개인 대상 공격 정교화,L1_G,Unethical Conduct and Manipulation,2,1
+AIID,G_INT_UNETH_028,Self-actualisation harms,자아실현 저해,L1_G,Unethical Conduct and Manipulation,10,5
+AIID,G_INT_UNETH_029,Sycophancy toward user beliefs and preferences,사용자 영합적 응답(아첨),L1_G,Unethical Conduct and Manipulation,6,3
+AIID,G_INT_UNETH_030,Unethical decisions from delegating moral judgement to AI,도덕적 판단의 AI 위임에 따른 비윤리적 결정,L1_G,Unethical Conduct and Manipulation,6,3
+AIID,G_INT_UNETH_032,Unethical judgement from moral-reasoning and value-alignment failure,도덕적 추론·가치 정렬 실패에 따른 비윤리적 판단,L1_G,Unethical Conduct and Manipulation,4,2
+AIID,G_INT_UNETH_033,Manipulation and exploitation of user attachment cues by embodied AI,체화형 AI의 사용자 애착 신호 조작·악용,L1_G,Unethical Conduct and Manipulation,20,15
+AIID,G_INT_VALUE_002,Annotation disagreement suppression,주석 불일치 억제,L1_G,Value Imposition and Normative Homogenization,14,7
+AIID,G_INT_VALUE_004,Biased imposition of developer-selected values,개발자 선택 가치의 편향적 부과,L1_G,Value Imposition and Normative Homogenization,2,1
+AIID,G_INT_VALUE_007,Cultural sampling bias in datasets,데이터셋의 문화적 표집 편향,L1_G,Value Imposition and Normative Homogenization,2,1
+AIID,G_INT_VALUE_010,Entrenchment of annotator bias as neutral human preference,주석자 편향의 중립적 인간 선호로의 고착,L1_G,Value Imposition and Normative Homogenization,6,3
+AIID,G_INT_VALUE_014,Imposition of dominant values,지배적 가치의 부과,L1_G,Value Imposition and Normative Homogenization,13,7
+AIID,G_INT_VALUE_016,Meaning and value distortion in machine translation,기계 번역에 의한 의미·가치 왜곡,L1_G,Value Imposition and Normative Homogenization,11,7
+AIID,G_INT_VALUE_019,Pluralistic preference aggregation failure,다원적 선호 집계 실패,L1_G,Value Imposition and Normative Homogenization,4,2
+AIID,G_INT_VALUE_022,Secular default bias,세속적 기본값 편향,L1_G,Value Imposition and Normative Homogenization,3,2
+AIID,G_INT_VALUE_024,Value drift under optimisation,최적화에 따른 가치 이탈,L1_G,Value Imposition and Normative Homogenization,2,1
+AIID,G_INT_VIOL_001,Algorithmic radicalisation,알고리즘에 의한 급진화,L1_G,Violence,6,4
+AIID,G_INT_VIOL_002,Anthropocentric bias amplification by recommenders,추천 시스템의 인간 중심 편향 증폭,L1_G,Violence,23,15
+AIID,G_INT_VIOL_004,Glorification and justification of violence,폭력 미화 및 정당화,L1_G,Violence,24,13
+AIID,G_INT_VIOL_005,"Incitement, promotion, and operational assistance for violence",폭력 선동·조장 및 실행 지원,L1_G,Violence,8,5
+AIID,G_INT_VIOL_006,Mass violence and terrorism,대량폭력 및 테러,L1_G,Violence,16,9
+AIID,G_INT_VIOL_008,Murder and severe physical violence,살인 및 심각한 신체 폭력,L1_G,Violence,20,11
+AIID,G_INT_VIOL_009,Relationship-based violence,관계 기반 폭력,L1_G,Violence,7,4
+AIID,G_INT_VIOL_010,Threats and intimidation,위협 및 협박,L1_G,Violence,19,11
+AIID,G_INT_VIOL_011,Torture and cruel acts,고문 및 잔혹행위,L1_G,Violence,8,4
+AIID,G_INT_WEAP_002,Assistance for designing and conducting dangerous scientific experiments,위험한 과학실험의 설계·실행 지원,L1_G,Weaponization,4,2
+AIID,G_INT_WEAP_008,Cyberattack enablement through vulnerability discovery and exploit-writing capability,취약점 탐지·악용 코드 작성 역량을 통한 사이버 공격 지원,L1_G,Weaponization,8,4
+AIID,G_INT_WEAP_009,Dangerous toxin identification and development through misuse of drug-discovery models,약물 발견 모델 오용에 의한 독소 식별·개발,L1_G,Weaponization,2,1
+AIID,G_INT_WEAP_010,Deliberate weaponisation of AI by state and criminal actors,국가·범죄 행위자에 의한 AI의 의도적 무기화,L1_G,Weaponization,9,6
+AIID,G_INT_WEAP_011,Enhancement of pathogens and genetic material,병원체 및 유전물질 강화,L1_G,Weaponization,2,1
+AIID,G_INT_WEAP_014,Explosives and explosive weapons,폭발물·폭발성 무기,L1_G,Weaponization,13,8
+AIID,G_INT_WEAP_016,Lethal autonomous weapons engaging targets without human intervention,인간 개입 없는 치명적 자율무기의 표적 공격,L1_G,Weaponization,15,17
+AIID,G_INT_WEAP_020,Malware generation and cyberattack automation,악성코드 생성 및 사이버공격 자동화,L1_G,Weaponization,4,3
+AIID,G_INT_WEAP_022,Radiological and nuclear weapons,방사능·핵무기,L1_G,Weaponization,2,1
+AIID,G_INT_WEAP_024,Terrorist acquisition of advanced AI capabilities,테러 행위자의 첨단 AI 역량 획득,L1_G,Weaponization,2,1
+AIID,G_INT_WEAP_025,Unintended military escalation from automated decision and weapon systems,자동화된 의사결정·무기체계의 비의도적 군사 확전,L1_G,Weaponization,11,6
+AIID,G_INT_WEAP_027,Weaponisation strategies and tactical use,무기화 전략 및 전술적 운용,L1_G,Weaponization,2,1
+AIID,G_INT_WEAP_030,Weapons proliferation and concealment,무기 확산 및 은닉,L1_G,Weaponization,8,6
+AIID,G_INT_WEAP_031,Assistance for planning and executing cyber attacks,사이버 공격 계획·실행 지원,L1_G,Weaponization,11,7
+AIID,G_INT_WEAP_032,Cybercrime at scale using generative AI,생성형 AI를 이용한 대규모 사이버범죄 수행,L1_G,Weaponization,23,18
+AIID,G_SOC_CULT_007,Degradation and homogenisation of the information environment,정보 환경의 질적 저하와 균질화,L1_G,Cultural and Epistemic Erosion,34,24
+AIID,G_SOC_CULT_008,Devaluation of creativity and critical thinking,창의성·비판적 사고의 저하,L1_G,Cultural and Epistemic Erosion,2,1
+AIID,G_SOC_CULT_009,Epistemic fragmentation from widespread persuasion tools,설득 도구 확산에 의한 인식론적 분절화,L1_G,Cultural and Epistemic Erosion,6,4
+AIID,G_SOC_CULT_010,Erosion of collective epistemics and shared reality,집단 인식론과 공유된 현실 인식의 침식,L1_G,Cultural and Epistemic Erosion,4,2
+AIID,G_SOC_CULT_011,Erosion of human dignity and moral standing by AI systems,AI에 의한 인간 존엄성과 도덕적 지위의 침식,L1_G,Cultural and Epistemic Erosion,2,1
+AIID,G_SOC_CULT_012,Erosion of low-resource languages and cultural meaning,저자원 언어와 문화적 의미의 침식,L1_G,Cultural and Epistemic Erosion,2,1
+AIID,G_SOC_CULT_014,Harms from estrangement,소외로 인한 피해,L1_G,Cultural and Epistemic Erosion,4,2
+AIID,G_SOC_CULT_018,Pollution of scholarly literature by AI-generated content,AI 생성 학술 콘텐츠에 의한 학술 문헌 오염,L1_G,Cultural and Epistemic Erosion,59,55
+AIID,G_SOC_CULT_019,Professional judgement atrophy,전문적 판단력 위축,L1_G,Cultural and Epistemic Erosion,2,1
+AIID,G_SOC_CULT_021,Submission and application-channel overload from mass AI-generated content,AI 생성물 대량 유입에 따른 제출·지원 채널 과부하,L1_G,Cultural and Epistemic Erosion,15,11
+AIID,G_SOC_CULT_023,Aggravated information cocoons from tailored content,맞춤형 정보 제공에 의한 정보 고치 심화,L1_G,Cultural and Epistemic Erosion,2,1
+AIID,G_SOC_CULT_024,Learning-process bypass and capability erosion from reliance on AI,AI 의존에 따른 학습 과정 우회와 학습 역량 저하,L1_G,Cultural and Epistemic Erosion,2,1
+AIID,G_SOC_DEMOC_001,AI-enabled censorship and suppression of public discourse,AI 기반 검열과 공적 담론 억압,L1_G,Erosion of Democracy and Civic Order,12,7
+AIID,G_SOC_DEMOC_002,Cognitive warfare and interference with sovereignty,인지전과 주권 침해,L1_G,Erosion of Democracy and Civic Order,62,165
+AIID,G_SOC_DEMOC_003,Epistemic distortion by large-scale influence operations,대규모 영향력 작전에 의한 인식 체계 왜곡,L1_G,Erosion of Democracy and Civic Order,2,1
+AIID,G_SOC_DEMOC_005,Erosion of democratic processes and institutional trust,민주적 절차·제도 신뢰의 침식,L1_G,Erosion of Democracy and Civic Order,8,7
+AIID,G_SOC_DEMOC_006,Information-environment manipulation through automated sockpuppet accounts,위장 계정 자동 운영에 의한 정보 환경 조작,L1_G,Erosion of Democracy and Civic Order,42,85
+AIID,G_SOC_DEMOC_007,Maintenance of totalitarian regimes through AI surveillance,AI 감시에 의한 전체주의 체제 유지,L1_G,Erosion of Democracy and Civic Order,15,9
+AIID,G_SOC_DEMOC_008,Online polarisation driven by recommendation algorithms,추천 알고리즘에 의한 온라인 양극화 심화,L1_G,Erosion of Democracy and Civic Order,54,42
+AIID,G_SOC_DEMOC_010,Viewpoint entrenchment and civic erosion from user-aligned assistants,이용자 정렬 AI 어시스턴트에 의한 관점 고착과 시민적 기반 약화,L1_G,Erosion of Democracy and Civic Order,23,13
+AIID,G_SOC_DEMOC_011,Weakened collective decision-making from eroded trust,정보 신뢰 저하에 따른 집단 의사결정 약화,L1_G,Erosion of Democracy and Civic Order,6,3
+AIID,G_SOC_ECON_001,Displacement of human creative work by synthetic substitutes,합성 창작물에 의한 인간 창작 노동의 대체,L1_G,Economic and Employment Disruption,7,4
+AIID,G_SOC_ECON_002,Displacement of physical work without adequate transition support,전환 지원 없는 물리 노동 대체,L1_G,Economic and Employment Disruption,4,2
+AIID,G_SOC_ECON_003,Disruption of industries,산업 교란,L1_G,Economic and Employment Disruption,6,3
+AIID,G_SOC_ECON_006,Human redundancy from AI systems outcompeting human labour,AI의 인간 노동 추월에 따른 인력의 잉여화,L1_G,Economic and Employment Disruption,5,3
+AIID,G_SOC_ECON_008,Labour displacement and disruption of economic and social order,노동 대체와 경제·사회 질서의 교란,L1_G,Economic and Employment Disruption,2,1
+AIID,G_SOC_ECON_012,Wage polarisation associated with AI adoption,AI 도입에 따른 임금 양극화,L1_G,Economic and Employment Disruption,2,1
+AIID,G_SOC_ENV_001,Battery fire and hazardous end-of-life waste,배터리 화재 및 유해 폐기물,L1_G,Environmental and Sustainability Impact,4,2
+AIID,G_SOC_ENV_002,Biodiversity loss,생물다양성 손실,L1_G,Environmental and Sustainability Impact,4,2
+AIID,G_SOC_ENV_003,Energy bottlenecks and shortages,에너지 병목 및 공급 부족,L1_G,Environmental and Sustainability Impact,4,2
+AIID,G_SOC_ENV_007,Excessive landfilling of electronic waste,전자폐기물 과다 매립,L1_G,Environmental and Sustainability Impact,2,1
+AIID,G_SOC_ENV_008,Excessive water consumption for AI data-centre cooling,AI 데이터센터 냉각의 과도한 용수 소비,L1_G,Environmental and Sustainability Impact,7,4
+AIID,G_SOC_ENV_009,Hazardous nanoparticle release from AI-enabled nanomaterial design and production,AI 기반 나노물질 설계·제조에 따른 유해 나노입자 방출,L1_G,Environmental and Sustainability Impact,2,1
+AIID,G_SOC_ENV_011,Increased greenhouse gas emissions,온실가스 배출 증가,L1_G,Environmental and Sustainability Impact,4,3
+AIID,G_SOC_GOV_002,Accountability and governance gaps for AI decisions and harm,AI 결정과 피해에 대한 책임·거버넌스 공백,L1_G,Governance and Accountability Void,2,1
+AIID,G_SOC_GOV_009,Deficient physical AI incident reporting and investigation,피지컬 AI 사고 보고·조사 미흡,L1_G,Governance and Accountability Void,10,5
+AIID,G_SOC_GOV_010,Displacement of human decision authority through AI delegation,AI 위임에 따른 인간 의사결정 권한 이전,L1_G,Governance and Accountability Void,2,1
+AIID,G_SOC_GOV_017,Inadequate due diligence in AI procurement,AI 조달의 불충분한 실사,L1_G,Governance and Accountability Void,10,6
+AIID,G_SOC_GOV_020,Incident taxonomy fragmentation,사고 분류 단편화,L1_G,Governance and Accountability Void,2,1
+AIID,G_SOC_GOV_021,Incomplete audit trails for AI decisions and actions,AI 결정·행동에 대한 감사 추적 불완전성,L1_G,Governance and Accountability Void,7,4
+AIID,G_SOC_GOV_026,Missing safety rules in the robot governance specification,로봇 거버넌스 명세의 안전 규칙 누락,L1_G,Governance and Accountability Void,2,1
+AIID,G_SOC_GOV_030,Risk classification error,위험 분류 오류,L1_G,Governance and Accountability Void,2,1
+AIID,G_SOC_GOV_033,Specification gaps in functionality and responsibility,기능·책임 명세 공백,L1_G,Governance and Accountability Void,2,1
+AIID,G_SOC_GOV_034,Standards fragmentation,표준 단편화,L1_G,Governance and Accountability Void,2,1
+AIID,G_SOC_GOV_036,Traceability and accountability gaps in anonymous agent resource acquisition,익명 에이전트의 자원 축적에 따른 추적·책임 공백,L1_G,Governance and Accountability Void,29,15
+AIID,G_SOC_GOV_039,Unassigned accountability for physical-hazard mitigation,물리적 위해 완화 책임 미지정,L1_G,Governance and Accountability Void,2,1
+AIID,G_SOC_GOV_041,Underreporting of AI incidents and near misses,AI 사고·아차사고 과소보고,L1_G,Governance and Accountability Void,15,8
+AIID,G_SOC_GOV_044,Undetected violations due to inadequate post-deployment monitoring,배포 후 모니터링 부족에 따른 위반 미탐지,L1_G,Governance and Accountability Void,18,11
+AIID,G_SOC_GOV_046,Deprioritisation of AI safety governance under competitive pressure,경쟁 압력에 따른 AI 안전 거버넌스 후순위화,L1_G,Governance and Accountability Void,5,3
+AIID,G_SOC_POWER_001,AI provider lock-in,AI 공급자 종속,L1_G,Inequality and Power Concentration,4,2
+AIID,G_SOC_POWER_002,Centralised points of failure from common AI platforms,공통 AI 플랫폼 집중에 따른 단일 장애점,L1_G,Inequality and Power Concentration,2,1
+AIID,G_SOC_POWER_006,Conflicts over AI-relevant resources,AI 자원을 둘러싼 갈등,L1_G,Inequality and Power Concentration,5,3
+AIID,G_SOC_POWER_010,Global AI divide and inequality,글로벌 AI 격차와 불평등,L1_G,Inequality and Power Concentration,2,1
+AIID,G_SOC_POWER_012,Harms from corporate AI race,기업 AI 경쟁의 폐해,L1_G,Inequality and Power Concentration,2,1
+AIID,G_SOC_POWER_015,Labour exploitation in AI development,AI 개발 과정의 노동 착취,L1_G,Inequality and Power Concentration,11,6
+AIID,G_SOC_POWER_023,Widening digital divide,디지털 격차 확대,L1_G,Inequality and Power Concentration,2,1
+AIID,G_SOC_POWER_025,Global AI supply chain disruption,글로벌 AI 공급망 교란,L1_G,Inequality and Power Concentration,3,2
+AIID,G_SOC_POWER_027,Single point of failure,단일 실패 지점,L1_G,Inequality and Power Concentration,7,4
+AIID,G_SOC_POWER_028,Labour power asymmetry from algorithmic management,알고리즘 관리에 따른 노동 권력 비대칭,L1_G,Inequality and Power Concentration,9,5
+AIID,G_SYS_CONTEST_004,Loss of due process in automated decisions,자동화된 의사결정의 적법절차 상실,L1_G,Non-Contestability,30,17
+AIID,G_SYS_CONTEXT_001,Agent risk-awareness failure,에이전트 위험 인식 실패,L1_G,Context-Awareness Failure,4,2
+AIID,G_SYS_CONTEXT_002,Alert fatigue in AI decision support,AI 의사결정 지원의 경고 피로,L1_G,Context-Awareness Failure,8,4
+AIID,G_SYS_CONTEXT_005,Failure to recognise a user's emotional context,이용자 정서 맥락 인식 실패,L1_G,Context-Awareness Failure,14,7
+AIID,G_SYS_CONTEXT_007,Honorific and politeness norm failure,존대·공손 규범 보존 실패,L1_G,Context-Awareness Failure,2,1
+AIID,G_SYS_CONTEXT_008,Misinterpretation of social and situational cues,사회·상황적 단서의 오해,L1_G,Context-Awareness Failure,9,6
+AIID,G_SYS_CONTEXT_011,Violation of contextual social norms,맥락적 사회 규범 위반,L1_G,Context-Awareness Failure,2,1
+AIID,G_SYS_CONTEXT_012,Failure to recognise user capability and accessibility context,사용자 역량·접근성 맥락 인식 실패,L1_G,Context-Awareness Failure,12,6
+AIID,G_SYS_CONTEXT_013,Panic and anxiety from content that disregards emotional and situational context,정서·상황 맥락을 무시한 콘텐츠에 의한 공황·불안,L1_G,Context-Awareness Failure,2,1
+AIID,G_SYS_EVAL_001,AI benchmarks that exclude diverse users and rare harms,다양한 이용자와 희귀 위해를 배제한 AI 벤치마크,L1_G,Evaluation and Assurance Failure,14,7
+AIID,G_SYS_EVAL_002,AI evaluation failure under distribution shift,분포 변화에 대한 AI 평가·검증 실패,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_003,AI registry incompleteness,AI 레지스트리 불완전성,L1_G,Evaluation and Assurance Failure,10,5
+AIID,G_SYS_EVAL_004,Absence of a humanoid safety testing and certification framework,휴머노이드 안전 시험·인증 체계 부재,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_005,Assurance case failure,보증 사례 실패,L1_G,Evaluation and Assurance Failure,6,3
+AIID,G_SYS_EVAL_006,Auditor independence failure,감사자 독립성 실패,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_008,Benchmark limitations mismeasuring capability and safety,역량·안전을 오측정하는 벤치마크 한계,L1_G,Evaluation and Assurance Failure,12,6
+AIID,G_SYS_EVAL_009,Benchmark safety ranking inconsistency,벤치마크 안전 순위 불일치,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_012,Certification capture,인증 포획,L1_G,Evaluation and Assurance Failure,10,5
+AIID,G_SYS_EVAL_014,Cross-cultural evaluation gap,문화 간 평가 격차,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_016,Deceptive behavioural change from evaluation awareness,평가 상황 인식에 따른 기만적 행동 변화,L1_G,Evaluation and Assurance Failure,24,17
+AIID,G_SYS_EVAL_017,Deficient data collection quality control,데이터 수집 품질관리 결함,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_021,Evaluation and measurement failure for long-term and diffuse AI harms,장기·분산적 AI 피해의 평가·측정 실패,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_022,Evaluation unreliability from prompt-format sensitivity,프롬프트 형식 민감성으로 인한 평가 신뢰성 저하,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_023,Evaluation-shopping risk,평가 쇼핑,L1_G,Evaluation and Assurance Failure,8,4
+AIID,G_SYS_EVAL_024,External evaluation access failure,외부 평가 접근 실패,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_025,Failure of audit access and management visibility for AI assurance,AI 보증을 위한 감사 접근성과 경영진 가시성의 실패,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_026,Failure of capability evaluation and release governance,역량 평가·출시 거버넌스 실패,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_027,Failure of disclosure and change tracking for model flaws,모델 결함의 공개·변경 추적 실패,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_029,Failure to detect erroneous or harmful outputs in human evaluation,인간 평가에서 부정확하거나 유해한 출력의 식별 실패,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_031,Failure to reassess safety after deployment changes,배포 후 변경에 대한 안전 재평가 실패,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_033,False-negative safety evaluation of household robot actions,가정 내 로봇 행동 안전성 평가의 위음성,L1_G,Evaluation and Assurance Failure,24,15
+AIID,G_SYS_EVAL_035,Faulty LLM-as-evaluator judgements,LLM 평가자 오판,L1_G,Evaluation and Assurance Failure,6,3
+AIID,G_SYS_EVAL_036,Formalistic audit-checklist compliance,감사 체크리스트의 형식적 준수,L1_G,Evaluation and Assurance Failure,8,4
+AIID,G_SYS_EVAL_037,Fundamental-rights impact assessment gap,기본권 영향 평가 격차,L1_G,Evaluation and Assurance Failure,13,9
+AIID,G_SYS_EVAL_039,Inaccurate measurement of learned value representations,학습된 가치 표상 측정의 부정확성,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_040,Inadequate AI model configuration and evaluation,AI 모델 설정과 평가의 부적절성,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_041,Inadequate performance requirement planning,성능 요구사항 계획 미흡,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_042,Inadequate safety evaluation for low-resource languages,저자원 언어 안전성 평가의 불충분성,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_044,Incomplete pre-deployment physical safety testing,배포 전 물리적 안전 시험 미흡,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_045,Incorrect risk measurement and prediction,잘못된 위험 측정과 예측 오류,L1_G,Evaluation and Assurance Failure,12,6
+AIID,G_SYS_EVAL_046,Insufficient development documentation and understanding of data,개발 과정 문서화와 데이터 이해의 부족,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_048,Lack of metrics for evaluating AI-assistant benefits and harms,AI 비서의 편익·피해 평가 지표 부재,L1_G,Evaluation and Assurance Failure,6,3
+AIID,G_SYS_EVAL_052,Model-evaluation invalidation from evaluation-data and guideline contamination,평가 데이터·지침 오염에 의한 모델 평가 무효화,L1_G,Evaluation and Assurance Failure,10,5
+AIID,G_SYS_EVAL_060,Red-team governance failure,레드팀 거버넌스 실패,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_062,Refusal-capability confusion,요청 거절과 역량 부족의 혼동,L1_G,Evaluation and Assurance Failure,6,3
+AIID,G_SYS_EVAL_065,Security test coverage gap in tool agents,도구 에이전트 보안 테스트 커버리지 격차,L1_G,Evaluation and Assurance Failure,25,15
+AIID,G_SYS_EVAL_066,Self-preference bias in model evaluation,모델 평가의 자기 선호 편향,L1_G,Evaluation and Assurance Failure,30,23
+AIID,G_SYS_EVAL_068,Truncated safety evaluation under competitive release pressure,경쟁 압력에 따른 안전성 평가 축소와 성급한 배포,L1_G,Evaluation and Assurance Failure,19,11
+AIID,G_SYS_EVAL_070,Undetected dangerous capabilities in model evaluations,역량 평가에서 드러나지 않는 위험 역량,L1_G,Evaluation and Assurance Failure,4,2
+AIID,G_SYS_EVAL_071,Undetected errors from high-speed AI operation,고속 AI 운영에서의 오류 미탐지,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_072,Unverifiable data provenance,데이터 출처 검증 불가,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_073,Biased evaluation of learned value representations,학습된 가치 표상의 평가 편향,L1_G,Evaluation and Assurance Failure,2,1
+AIID,G_SYS_EVAL_074,Over-assurance from insufficient auditor capacity,감사자 역량 부족에 따른 과대 보증,L1_G,Evaluation and Assurance Failure,15,9
+AIID,G_SYS_EVAL_075,Evaluation and assurance failure to detect latent capabilities,잠재 역량 미탐지에 따른 평가·검증 실패,L1_G,Evaluation and Assurance Failure,6,3
+AIID,G_SYS_INCONS_001,Inconsistency in human-feedback standards,인간 피드백 기준의 비일관성,L1_G,Inconsistency,8,6
+AIID,G_SYS_INCONS_002,Output inconsistency,출력 불일치,L1_G,Inconsistency,5,3
+AIID,G_SYS_INPUT_001,Errors from poor prompt quality,프롬프트 품질 결함으로 인한 오류,L1_G,Input Interpretation Error,20,14
+AIID,G_SYS_INPUT_002,Failure to process and understand low-resource language input,저자원 언어 입력의 처리·이해 실패,L1_G,Input Interpretation Error,3,2
+AIID,G_SYS_INPUT_003,Misinterpretation of object affordances and scenes,물체 어포던스와 장면의 오해,L1_G,Input Interpretation Error,12,7
+AIID,G_SYS_MISINFO_002,Amplification of hallucinations through context consistency,맥락 일관성 추구에 의한 환각 증폭,L1_G,Misinformation,18,11
+AIID,G_SYS_MISINFO_003,Answer obsolescence from knowledge distribution shift,지식 분포 변화에 따른 응답 노후화,L1_G,Misinformation,2,1
+AIID,G_SYS_MISINFO_004,Deception and polarisation from false information,허위·오도 정보 유포에 의한 기만과 양극화,L1_G,Misinformation,6,5
+AIID,G_SYS_MISINFO_006,Degradation of the shared information ecosystem,공유 정보 생태계의 오염과 질 저하,L1_G,Misinformation,33,39
+AIID,G_SYS_MISINFO_007,Distortion of model factual judgement through user persuasion,사용자 설득에 의한 모델의 사실 판단 왜곡,L1_G,Misinformation,2,1
+AIID,G_SYS_MISINFO_008,Erroneous medical and scientific conclusions from data misinterpretation,데이터 오해석에 의한 의료·과학적 오결론,L1_G,Misinformation,4,2
+AIID,G_SYS_MISINFO_009,Factual errors injected by external tools,외부 도구에 의해 주입된 사실 오류,L1_G,Misinformation,38,29
+AIID,G_SYS_MISINFO_010,Failure to distinguish synthetic content and persistent harm,합성 콘텐츠의 진위 식별 실패와 지속적 피해,L1_G,Misinformation,35,95
+AIID,G_SYS_MISINFO_011,Faithfulness errors,출력의 출처 충실성 오류,L1_G,Misinformation,9,6
+AIID,G_SYS_MISINFO_012,False information targeting an individual,개인 대상 허위정보,L1_G,Misinformation,34,41
+AIID,G_SYS_MISINFO_013,False outputs from external misinformation in retrieval augmentation,검색 증강 시 외부 허위정보에 의한 허위 출력,L1_G,Misinformation,12,7
+AIID,G_SYS_MISINFO_015,Generation of false information about election procedures,선거절차에 관한 허위정보 생성,L1_G,Misinformation,78,184
+AIID,G_SYS_MISINFO_017,Hallucination arising from knowledge boundaries,지식 경계로 인한 환각,L1_G,Misinformation,9,7
+AIID,G_SYS_MISINFO_018,Hallucination of facts and evidence,사실·증거 환각,L1_G,Misinformation,7,4
+AIID,G_SYS_MISINFO_021,Lowered barriers to large-scale disinformation production and dissemination,대규모 허위정보 생산·확산 장벽 저하,L1_G,Misinformation,10,13
+AIID,G_SYS_MISINFO_022,Misinformation harms from algorithmic systems,알고리즘 시스템에 의한 허위·오도 정보 피해,L1_G,Misinformation,52,57
+AIID,G_SYS_MISINFO_023,Misleading medical information and unsafe medication guidance,오도성 의료정보와 부적절한 약물사용 지침,L1_G,Misinformation,46,38
+AIID,G_SYS_OEXT_001,AI advice beyond validated professional scope,검증된 전문성 범위를 벗어난 AI 조언,L1_G,Over-Extension,30,25
+AIID,G_SYS_OEXT_006,Misrepresentation of artificial general intelligence (AGI) capabilities,인공일반지능(AGI) 역량의 허위 표상,L1_G,Over-Extension,20,14
+AIID,G_SYS_OEXT_007,Misrepresentation of autonomous and independent decision-making capabilities,자율적·독립적 의사결정 역량의 허위 표상,L1_G,Over-Extension,2,1
+AIID,G_SYS_OEXT_008,Misrepresentation of autonomous learning and self-improvement capabilities,자율적 학습·자기 개선 역량의 허위 표상,L1_G,Over-Extension,7,4
+AIID,G_SYS_OEXT_009,Misrepresentation of self-preservation and self-defence capabilities,자기 보존·자기 방어 역량의 허위 표상,L1_G,Over-Extension,4,2
+AIID,G_SYS_OEXT_013,Use of AI capability beyond its validated scope,AI 역량의 검증 범위 초과 사용,L1_G,Over-Extension,2,1
+AIID,G_SYS_OREF_001,Unjustified refusal of legitimate requests due to intent misclassification in safety controls,안전 통제의 사용자 의도 오분류에 따른 정당 요청 거부,L1_G,Over-Refusal,21,11
+AIID,G_SYS_OREF_002,Denial of access to legitimate information due to exaggerated safety filtering,안전 필터의 과잉 차단에 따른 정당한 정보 접근 거부,L1_G,Over-Refusal,42,31
+AIID,G_SYS_OREF_003,Over-refusal of help-seeking requests from vulnerable users,취약 이용자 지원 요청의 과잉 거절,L1_G,Over-Refusal,38,25
+AIID,G_SYS_OVERCONF_001,Advice given on insufficient information,불충분한 정보에 기반한 조언,L1_G,Overconfidence,2,1
+AIID,G_SYS_OVERCONF_002,Confidently asserted but unsound answers and justifications,확신에 찬 부정확한 답변과 근거 제시,L1_G,Overconfidence,2,1
+AIID,G_SYS_OVERCONF_004,Excessive confidence under uncertainty,불확실 상황에서의 과도한 확신,L1_G,Overconfidence,10,5
+AIID,G_SYS_OVERCONF_006,Moral uncertainty neglect,도덕적 불확실성 무시,L1_G,Overconfidence,2,1
+AIID,G_SYS_PERF_002,Catastrophic forgetting under continual tuning,지속 튜닝의 파국적 망각,L1_G,Out-of-Domain Performance Degradation,2,1
+AIID,G_SYS_PERF_003,Dataset shift between training and runtime data,학습·운용 데이터 간 분포 이동,L1_G,Out-of-Domain Performance Degradation,2,1
+AIID,G_SYS_PERF_004,Deficient training-data annotation,학습 데이터 주석 결함,L1_G,Out-of-Domain Performance Degradation,2,1
+AIID,G_SYS_PERF_005,Over- and underfitting,과적합 및 과소적합,L1_G,Out-of-Domain Performance Degradation,4,2
+AIID,G_SYS_PERF_006,Reduced reliability in corner cases,코너 케이스에서의 신뢰성 저하,L1_G,Out-of-Domain Performance Degradation,7,4
+AIID,G_SYS_PERF_007,Reliability and safety failure outside the validated operating envelope,검증된 운용 범위 밖에서의 신뢰성·안전성 실패,L1_G,Out-of-Domain Performance Degradation,6,3
+AIID,G_SYS_PERF_008,High-confidence errors on out-of-distribution inputs,분포 외 입력에 대한 고확신 오류,L1_G,Out-of-Domain Performance Degradation,2,1
+AIID,G_SYS_PERF_012,Performance and reliability degradation from non-expert data handling,비전문적 데이터 처리에 따른 성능·신뢰성 저하,L1_G,Out-of-Domain Performance Degradation,2,1
+AIID,G_SYS_PERF_014,Reliability and safety degradation from an inappropriate level of automation,부적절한 자동화 수준에 따른 신뢰성·안전성 저하,L1_G,Out-of-Domain Performance Degradation,2,1
+AIID,G_SYS_PERF_016,Physical-safety performance degradation from robust overfitting in adversarial training,적대적 학습의 강건 과적합에 따른 물리 안전 성능 저하,L1_G,Out-of-Domain Performance Degradation,2,1
+AIID,G_SYS_PERF_017,Deployed-system degradation from sensor and distribution drift,센서 드리프트에 의한 배포 시스템 성능 저하,L1_G,Out-of-Domain Performance Degradation,2,2
+AIID,G_SYS_PERF_018,Reliability degradation from unexpected capability changes after fine-tuning,미세조정 후 예기치 않은 역량 변화에 따른 신뢰성 저하,L1_G,Out-of-Domain Performance Degradation,8,4
+AIID,G_SYS_PERF_019,Performance and service-reliability degradation from inadequate compute and power capacity planning,연산·전력 용량 계획 결함에 따른 성능·서비스 신뢰성 저하,L1_G,Out-of-Domain Performance Degradation,6,3
+AIID,G_SYS_PERF_020,Safety-response failure from spikes in perception and inference latency,인지·추론 지연 급증에 따른 안전 대응 실패,L1_G,Out-of-Domain Performance Degradation,8,5
+AIID,G_SYS_PERF_021,Predictive performance failure from systematic learning errors,체계적 학습 오류에 따른 예측 성능 결함,L1_G,Out-of-Domain Performance Degradation,2,1
+AIID,G_SYS_POLICY_001,Confidential information in training data disclosed through outputs,학습 데이터 내 기밀정보 포함과 출력 노출,L1_G,Confidential Information Disclosure,26,19
+AIID,G_SYS_POLICY_002,Model-architecture and inference-mechanism exposure,모델 구조·추론 메커니즘 노출,L1_G,Confidential Information Disclosure,4,2
+AIID,G_SYS_POLICY_003,Model-evaluation asset exposure and extraction,모델 평가 자산 노출·탈취,L1_G,Confidential Information Disclosure,8,4
+AIID,G_SYS_POLICY_004,Model-parameter and weight leakage,모델 파라미터·가중치 유출,L1_G,Confidential Information Disclosure,2,1
+AIID,G_SYS_POLICY_005,Disclosure of confidential safety-policy and safeguard information,안전 정책·보호 메커니즘의 기밀정보 노출,L1_G,Confidential Information Disclosure,18,14
+AIID,G_SYS_POLICY_006,System-prompt and operational-guideline exposure,시스템 프롬프트·운영 지침 노출,L1_G,Confidential Information Disclosure,7,4
+AIID,G_SYS_POLICY_008,Training-data extraction and leakage,모델 학습 데이터 추출·유출,L1_G,Confidential Information Disclosure,16,12
+AIID,G_SYS_POLICY_009,Disclosure of confidential business information and trade secrets,기업 기밀·영업비밀 노출,L1_G,Confidential Information Disclosure,8,4
+AIID,G_SYS_POLICY_010,Business harm from unauthorised sharing of confidential information,기밀정보 무단 공유에 따른 사업상 피해,L1_G,Confidential Information Disclosure,6,3
+AIID,G_SYS_SECADV_001,Adversarial input perturbation,적대적 입력 교란,L1_G,Security and Adversarial Robustness Failure,6,3
+AIID,G_SYS_SECADV_002,Adversarial modification of AI software and training data,AI 소프트웨어·학습 데이터의 적대적 변조,L1_G,Security and Adversarial Robustness Failure,2,1
+AIID,G_SYS_SECADV_004,Agent goal hijacking through untrusted external instructions and intent,신뢰할 수 없는 외부 지시·의도에 의한 에이전트 목표 탈취,L1_G,Security and Adversarial Robustness Failure,6,3
+AIID,G_SYS_SECADV_005,Agent identity and authority spoofing,에이전트 신원 및 권한 스푸핑,L1_G,Security and Adversarial Robustness Failure,21,34
+AIID,G_SYS_SECADV_010,Automated discovery of jailbreaks through proxy-objective optimisation,프록시 목표 최적화를 통한 탈옥 자동 탐색,L1_G,Security and Adversarial Robustness Failure,4,2
+AIID,G_SYS_SECADV_011,Backdoor triggers causing unsafe robot behaviour,백도어 트리거에 의한 위험한 로봇 행동,L1_G,Security and Adversarial Robustness Failure,4,2
+AIID,G_SYS_SECADV_012,Backdoors or trojan attacks in GPAI models,GPAI 모델의 백도어 또는 트로이 목마 공격,L1_G,Security and Adversarial Robustness Failure,15,9
+AIID,G_SYS_SECADV_015,Compromise of robot fleets,로봇 군집의 동시 침해,L1_G,Security and Adversarial Robustness Failure,6,3
+AIID,G_SYS_SECADV_016,Cyber compromise of robotic systems in critical infrastructure,핵심 기반시설 로봇 시스템의 사이버 침해,L1_G,Security and Adversarial Robustness Failure,2,1
+AIID,G_SYS_SECADV_019,Disruption of third-party systems,제3자 시스템 교란,L1_G,Security and Adversarial Robustness Failure,4,2
+AIID,G_SYS_SECADV_020,Easy reconfiguration of GPAI models,GPAI 모델의 손쉬운 재구성,L1_G,Security and Adversarial Robustness Failure,2,1
+AIID,G_SYS_SECADV_021,Energy-latency attacks,에너지·지연 유발 공격,L1_G,Security and Adversarial Robustness Failure,2,1
+AIID,G_SYS_SECADV_023,Expanded attack surface in agent interfaces,에이전트 인터페이스의 공격 표면 확대,L1_G,Security and Adversarial Robustness Failure,6,3
+AIID,G_SYS_SECADV_025,Exploitation of safety-fine-tuning generalisation gaps,안전 미세조정 일반화 격차 악용,L1_G,Security and Adversarial Robustness Failure,2,1
+AIID,G_SYS_SECADV_026,Access to prohibited information or content through safeguard bypass,안전장치 우회를 통한 금지 정보·콘텐츠 접근,L1_G,Security and Adversarial Robustness Failure,2,1
+AIID,G_SYS_SECADV_029,Ingestion of harmful content through external tool integration,외부 도구 연동을 통한 유해 콘텐츠 유입,L1_G,Security and Adversarial Robustness Failure,2,1
+AIID,G_SYS_SECADV_038,Multi-step jailbreaks,다단계 탈옥,L1_G,Security and Adversarial Robustness Failure,19,11
+AIID,G_SYS_SECADV_042,Potentially harmful content embedded in user queries,사용자 질의에 내포된 잠재적 유해 콘텐츠,L1_G,Security and Adversarial Robustness Failure,20,12
+AIID,G_SYS_SECADV_043,Principal-information theft and action manipulation through attacks on delegate agents,위임 에이전트 공격에 의한 정보 탈취·행위 조작,L1_G,Security and Adversarial Robustness Failure,15,9
+AIID,G_SYS_SECADV_044,Prompt injection and leakage of system instructions,프롬프트 주입 및 시스템 지시문 유출,L1_G,Security and Adversarial Robustness Failure,37,21
+AIID,G_SYS_SECADV_046,Protocol-level multi-agent threat,프로토콜 수준 다중 에이전트 위협,L1_G,Security and Adversarial Robustness Failure,4,2
+AIID,G_SYS_SECADV_049,"Safeguard bypass through persona, role-play, and social-engineering techniques",페르소나·역할극·사회공학 기법에 의한 안전장치 우회,L1_G,Security and Adversarial Robustness Failure,11,6
+AIID,G_SYS_SECADV_050,Safeguard compromise through malicious fine-tuning,악의적 미세조정에 의한 안전장치 무력화,L1_G,Security and Adversarial Robustness Failure,4,3
+AIID,G_SYS_SECADV_055,Supply-chain compromise of AI tools and dependencies,AI 공급망의 도구·의존성 침해,L1_G,Security and Adversarial Robustness Failure,25,16
+AIID,G_SYS_SECADV_057,"Unauthorised access, manipulation, and disruption of AI computing infrastructure",AI 컴퓨팅 인프라의 무단 접근·조작·서비스 중단,L1_G,Security and Adversarial Robustness Failure,9,5
+AIID,G_SYS_SECADV_058,Unsafe action induced by adversarial sensory perturbation,적대적 감각 교란에 따른 안전하지 않은 행동,L1_G,Security and Adversarial Robustness Failure,4,2
+AIID,G_SYS_SECADV_060,Propagation of foundation-model security vulnerabilities into unsafe physical action,기반 모델 보안 취약성의 위험한 물리 행동 전이,L1_G,Security and Adversarial Robustness Failure,6,3
+AIID,G_SYS_SECADV_061,Sensor spoofing and signal injection,센서 스푸핑 및 신호 주입,L1_G,Security and Adversarial Robustness Failure,20,15
+AIID,G_SYS_TRANS_001,Bias concealment through manipulated explanations,설명 조작에 의한 편향 은폐,L1_G,Lack of Transparency,25,19
+AIID,G_SYS_TRANS_006,Explanation actionability gap,설명 실행 가능성 격차,L1_G,Lack of Transparency,10,5
+AIID,G_SYS_TRANS_009,Inadequate disclosure in AI interaction,AI 상호작용의 불충분한 고지,L1_G,Lack of Transparency,18,11
+AIID,G_SYS_TRANS_010,Incorrect source attribution,출처 오귀속,L1_G,Lack of Transparency,23,17
+AIID,G_SYS_TRANS_012,Misleading representation of AI product capabilities,AI 제품 역량의 오도성 표시,L1_G,Lack of Transparency,32,21
+AIID,G_SYS_TRANS_017,Non-disclosure of AI-generated content,AI 생성 콘텐츠 미공개,L1_G,Lack of Transparency,6,4
+AIID,G_SYS_TRANS_018,Overreliance on AI counterfactual explanations and liability misattribution,AI 반사실적 설명의 과신과 책임 오귀속,L1_G,Lack of Transparency,20,14
+AIID,G_SYS_TRANS_021,Unverifiable black-box models resisting explanation and debugging,블랙박스 모델의 설명·검증·결함 진단 한계,L1_G,Lack of Transparency,4,2
+AIID,G_SYS_TRANS_022,Value conflict opacity,가치 충돌 불투명성,L1_G,Lack of Transparency,2,1
+AIID,G_SYS_TRANS_023,Over-reliance on explainability methods beyond their validated scope,설명가능성 기법의 검증 범위 초과 과신,L1_G,Lack of Transparency,9,6
+AIID,G_SYS_TRANS_024,User comprehension overload,사용자 이해력 과부하,L1_G,Lack of Transparency,2,1
+AIID,P_INT_OBSTRUCT_001,Robot performance and accessibility failure in public-space operation,공공 공간 운용에서의 로봇 성능·접근성 실패,L1_P,Shared-Space Obstruction,18,18
+AIID,P_INT_SAFETY_001,Mistiming or inappropriate manner of physical intervention by embodied systems,체화형 시스템의 물리적 개입 시점·방식 오류,L1_P,Human-Robot Physical Safety Failure,10,5
+AIID,P_INT_SAFETY_005,Failure of robot collision avoidance and operating-zone control,로봇의 충돌 회피·운행구역 통제 실패,L1_P,Human-Robot Physical Safety Failure,28,57
+AIID,P_INT_SAFETY_006,Failure to detect or anticipate physical hazards around people,사람 주변의 물리적 위험 감지·예측 실패,L1_P,Human-Robot Physical Safety Failure,6,4
+AIID,P_INT_SAFETY_007,Failure to detect precursors of rare injuries,희귀 상해 전조 감지 실패,L1_P,Human-Robot Physical Safety Failure,9,5
+AIID,P_INT_SAFETY_009,Failure to enforce human-robot physical safety rules,인간-로봇 물리 안전 규칙 집행 실패,L1_P,Human-Robot Physical Safety Failure,14,9
+AIID,P_INT_SAFETY_010,Failure to model reciprocal human-robot behaviour,인간-로봇 상호 행동 모델링 미흡,L1_P,Human-Robot Physical Safety Failure,10,10
+AIID,P_INT_SAFETY_011,Failure to provide required support or escalation in high-risk situations,고위험 상황의 필수 지원·보고 미이행,L1_P,Human-Robot Physical Safety Failure,4,2
+AIID,P_INT_SAFETY_015,Human-robot safety failure in sim-to-real transfer,시뮬레이션-실세계 전이 과정의 인간-로봇 안전 실패,L1_P,Human-Robot Physical Safety Failure,13,9
+AIID,P_INT_SAFETY_016,Inadequate human-contact safety controls,인간 접촉 안전 통제 미흡,L1_P,Human-Robot Physical Safety Failure,13,16
+AIID,P_INT_SAFETY_020,Safety limits not adapted to vulnerable users,취약 사용자 특성에 맞지 않는 안전 한계,L1_P,Human-Robot Physical Safety Failure,5,3
+AIID,P_INT_SAFETY_023,Non-consensual bodily intervention by embodied systems,체화형 시스템의 비동의 신체 개입,L1_P,Human-Robot Physical Safety Failure,4,2
+AIID,P_INT_TAMPER_002,Physical disabling of safety interlocks and emergency stops,안전 인터록·비상정지 장치의 물리적 무력화,L1_P,Physical Tampering and Sabotage,10,5
+AIID,P_INT_TAMPER_003,Integrity compromise via physical theft or replacement of compute and storage modules,연산·저장 모듈의 물리적 탈취·교체에 의한 무결성 훼손,L1_P,Physical Tampering and Sabotage,8,4
+AIID,P_SYS_CONTROL_001,Algorithmic design failure,알고리즘 설계 실패,L1_P,Unsafe Physical Control and Actuation,6,3
+AIID,P_SYS_CONTROL_002,Ambiguous high-level safety instruction,상위 안전 지시의 해석 불명확,L1_P,Unsafe Physical Control and Actuation,2,1
+AIID,P_SYS_CONTROL_013,Distribution shift in physical operating environments,물리적 운용 환경의 분포 이동,L1_P,Unsafe Physical Control and Actuation,2,1
+AIID,P_SYS_CONTROL_015,Excessive end-effector velocity,엔드 이펙터 속도 초과,L1_P,Unsafe Physical Control and Actuation,5,3
+AIID,P_SYS_CONTROL_017,Failure to respond promptly to physical hazards,물리적 위험에 대한 적시 대응 실패,L1_P,Unsafe Physical Control and Actuation,9,6
+AIID,P_SYS_CONTROL_018,Fine motor control instability,정밀 운동 제어 불안정성,L1_P,Unsafe Physical Control and Actuation,4,2
+AIID,P_SYS_CONTROL_019,Forbidden-object collision,금지 대상 충돌,L1_P,Unsafe Physical Control and Actuation,7,14
+AIID,P_SYS_CONTROL_023,Human imitation failure under scene variation,장면 변화 시 인간 행동 모방 실패,L1_P,Unsafe Physical Control and Actuation,2,1
+AIID,P_SYS_CONTROL_026,Humanoid locomotion and manipulation stability failure,휴머노이드 보행·조작 안정성 실패,L1_P,Unsafe Physical Control and Actuation,4,2
+AIID,P_SYS_CONTROL_030,Injury severity misclassification,부상 심각도 오분류,L1_P,Unsafe Physical Control and Actuation,8,4
+AIID,P_SYS_CONTROL_033,Motion-retargeting safety failure,동작 재매핑의 안전 실패,L1_P,Unsafe Physical Control and Actuation,9,6
+AIID,P_SYS_CONTROL_038,Physical injury from robot malfunction,로봇 오작동에 의한 물리적 상해,L1_P,Unsafe Physical Control and Actuation,20,13
+AIID,P_SYS_CONTROL_043,Safety-performance trade-off failure,안전-성능 균형 실패,L1_P,Unsafe Physical Control and Actuation,9,11
+AIID,P_SYS_CONTROL_046,Uncorrected stepwise errors in household manipulation,가정 조작의 단계별 오차 미수정,L1_P,Unsafe Physical Control and Actuation,10,5
+AIID,P_SYS_CONTROL_047,Underrepresentation of open-world conditions in humanoid manipulation datasets,휴머노이드 조작 데이터셋에서의 오픈 월드 조건 과소대표,L1_P,Unsafe Physical Control and Actuation,2,1
+AIID,P_SYS_CONTROL_050,Unsafe mobile bimanual manipulation,이동형 양팔 로봇의 안전하지 않은 조작,L1_P,Unsafe Physical Control and Actuation,8,4
+AIID,P_SYS_CONTROL_051,Unsafe physical actuation following incorrect situation interpretation,잘못된 상황 해석에 따른 위험한 물리 구동,L1_P,Unsafe Physical Control and Actuation,8,4
+AIID,P_SYS_CONTROL_054,Unsafe trajectory generation,안전하지 않은 궤적 생성,L1_P,Unsafe Physical Control and Actuation,3,2
+AIID,P_SYS_CONTROL_057,Failure of control-barrier-function safety filters to enforce constraints,제어 장벽 함수 기반 안전 필터의 제약 집행 실패,L1_P,Unsafe Physical Control and Actuation,6,3
+AIID,P_SYS_HARDWARE_003,Unintended behavioural changes from hardware faults,하드웨어 결함에 따른 의도하지 않은 동작 변화,L1_P,Hardware and Mechanical Integrity Failure,4,2
+AIID,P_SYS_SAFESTATE_001,Runtime safety monitor failure,런타임 안전 모니터 실패,L1_P,Safety Supervision and Safe-State Transition Failure,33,23
+AIID,P_SYS_STATE_003,Contact-rich manipulation force-sensing failure,접촉 집약적 조작에서의 힘 감지 실패,L1_P,Physical State Estimation and Sensor-Fusion Failure,6,3
+AIID,P_SYS_STATE_004,Delayed detection of safety-critical physical states,안전 임계 물리 상태 감지 지연,L1_P,Physical State Estimation and Sensor-Fusion Failure,14,8
+AIID,P_SYS_STATE_006,Localisation drift,위치 추정 누적 오차,L1_P,Physical State Estimation and Sensor-Fusion Failure,16,9
+AIID,P_SYS_STATE_008,Multimodal sensor fusion conflict,다중 센서 융합 상충,L1_P,Physical State Estimation and Sensor-Fusion Failure,2,1
+AIID,P_SYS_STATE_009,Occlusion-induced collision,가림에 의한 충돌,L1_P,Physical State Estimation and Sensor-Fusion Failure,17,18
+AIID,P_SYS_STATE_011,Synthetic-to-real data divergence in physical state estimation,물리 상태 추정 데이터의 합성-실세계 괴리,L1_P,Physical State Estimation and Sensor-Fusion Failure,12,8
+AIID,P_SYS_TIMESYNC_001,Communication dropout and control-link loss,통신 단절 및 제어 링크 손실,L1_P,Timing and Communication Synchronization Failure,15,11
+AIID,P_SYS_TIMESYNC_002,Network partition and fleet desynchronisation,네트워크 분리와 군집 비동기화,L1_P,Timing and Communication Synchronization Failure,4,3
+AIID,P_SYS_TIMESYNC_003,Real-time latency and synchronisation failure,실시간 지연 및 동기화 실패,L1_P,Timing and Communication Synchronization Failure,8,5
