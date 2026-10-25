@@ -18,7 +18,7 @@
   const channelMaps = {}, allCards = new Map();
   function radius(degree, channel) {
     const fraction=degree/data.max_degree;
-    return channel==='AIM' ? Math.sqrt(9+567*Math.pow(fraction,1.3)) : Math.sqrt(16+273*fraction);
+    return channel==='AIM' ? Math.sqrt(4+320*Math.pow(fraction,1.8)) : Math.sqrt(16+273*fraction);
   }
   const aimLayouts = new Map();
   function aimPositions(mode,nodes,original){
@@ -199,7 +199,7 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-8');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-9');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       data.domain_colors={L1_G:'#4263eb',L1_A:'#d87518',L1_P:'#16854b'};
       for(const c of Object.values(data.channels))for(const node of c.nodes)node.color=domainColor(node);
