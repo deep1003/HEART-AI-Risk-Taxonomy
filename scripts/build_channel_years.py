@@ -35,7 +35,7 @@ for ch,c in base['channels'].items():
             nodes.append(node)
         candidates=set()
         for domain in ['L1_G','L1_A','L1_P']:
-            candidates.update(sorted((id for id in g if cards[id]['domain']==domain),key=lambda id:(-g.degree(id),id))[:25])
+            candidates.update(sorted((id for id in g if cards[id]['domain']==domain),key=lambda id:(-counts[id],id))[:25])
         shown=sorted((p for p in pairs if set(p)<=candidates),key=lambda p:(-pairs[p],p))[:240]
         edges=[{'source':a,'target':b,'count':v,'per_1000':v/len(indices)*1000} for (a,b),v in sorted(pairs.items())]
         output[str(year)]={'n':len(indices),'nodes':nodes,'edges':edges,'node_count':len(g),'edge_count':len(pairs),'cross_rate':cross/len(indices),'overview':{'ids':sorted({k for p in shown for k in p}),'edges':shown}}

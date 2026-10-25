@@ -95,7 +95,7 @@ def main():
         assert g.number_of_edges()==(7052 if channel=='AIM' else 2808)
         candidates=set()
         for domain in DOMAINS:
-            ranked=sorted((i for i in g if cards[i]['L1_ID']==domain),key=lambda i:(-g.degree(i),i))
+            ranked=sorted((i for i in g if cards[i]['L1_ID']==domain),key=lambda i:(-counts[i],i))
             candidates.update(ranked[:25])
         candidates.add(BRIDGE)
         induced=sorted(((a,b,g[a][b]['count']) for a,b in g.edges if a in candidates and b in candidates),key=lambda e:(-e[2],e[0],e[1]))[:240]

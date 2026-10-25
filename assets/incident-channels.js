@@ -48,7 +48,7 @@
     return `M ${p[0]} ${p[1]} Q ${(p[0]+q[0])/2-dy*.22} ${(p[1]+q[1])/2+dx*.22} ${q[0]} ${q[1]}`;
   }
   function view(channel) {
-    const c=channelData(channel),mode=byId('incident-view').value,layout=selectedYear[channel]===null?data.layouts.overview:data.layouts.all,key=mode+'-'+(selectedYear[channel]||'all');
+    const c=channelData(channel),mode=byId('incident-view').value,layout=selectedYear[channel]===null?{...data.layouts.all,...data.layouts.overview}:data.layouts.all,key=mode+'-'+(selectedYear[channel]||'all');
     if(mode==='all')return {nodes:c.nodes,edges:c.edges,positions:channel==='AIM'?aimPositions(key,c.nodes,data.layouts.all):data.layouts.all,label:'Full channel network'};
     const ids=new Set(c.overview.ids),links=new Set(c.overview.edges.map(p=>p.join('|')));
     return {nodes:c.nodes.filter(n=>ids.has(n.id)),edges:c.edges.filter(e=>links.has([e.source,e.target].join('|'))),positions:channel==='AIM'?aimPositions(key,c.nodes.filter(n=>ids.has(n.id)),layout):layout,label:'Overview'};
@@ -111,7 +111,7 @@
     const scale=Math.max(.1,Math.min(rect.width/1200,rect.height/680)),font=12/(scale*z.k),lineHeight=font*1.18;
     const screen=p=>[(p[0]-600)*z.k+600+z.x,(p[1]-340)*z.k+340+z.y];
     const visible=graph.nodes.filter(n=>{const p=screen(graph.positions[n.id]);return p[0]>0&&p[0]<1200&&p[1]>0&&p[1]<680;});
-    const ranked=[...visible].filter(n=>matches(n)||n.id===selected).sort((a,b)=>Number(b.id===selected)-Number(a.id===selected)||b.degree-a.degree||a.id.localeCompare(b.id));
+    const ranked=[...visible].filter(n=>matches(n)||n.id===selected).sort((a,b)=>Number(b.id===selected)-Number(a.id===selected)||b.activations-a.activations||a.id.localeCompare(b.id));
     const limit=z.k>=2.8?ranked.length:z.k>=1.8?35:12,placed=[];let markup='',count=0;
     for(const node of ranked){
       if(count>=limit)break;
@@ -230,11 +230,11 @@
       renderGraph(channel);
     }
     byId('incident-network-metrics').innerHTML=`<table><caption>Full-network metrics used in the paper</caption><thead><tr><th>Channel</th><th>Cards</th><th>Ties</th><th>Cross-domain ties</th><th>Permutation O/E</th><th>Domain assortativity</th></tr></thead><tbody>${['AIM','AIID'].map(ch=>{const c=data.channels[ch];return `<tr><td>${ch}</td><td>${fmt(c.node_count)}</td><td>${fmt(c.edge_count)}</td><td>${percent(c.cross_edge_rate)}</td><td>${c.permutation_OE.toFixed(2)}</td><td>${c.assortativity.toFixed(2)}</td></tr>`;}).join('')}</tbody></table>`;
-    byId('incident-data-table').innerHTML=`<table><caption>All activated cards by channel, ordered by degree</caption><thead><tr><th>Channel</th><th>Card ID</th><th>Risk name</th><th>Domain</th><th>Degree</th><th>Observed incident count</th></tr></thead><tbody>${['AIM','AIID'].flatMap(ch=>[...data.channels[ch].nodes].sort((a,b)=>b.degree-a.degree||a.id.localeCompare(b.id)).map(n=>`<tr><td>${ch}</td><td><code>${escape(n.id)}</code></td><td>${escape(n.name)}</td><td>${escape(domainNames[n.domain])}</td><td>${fmt(n.degree)}</td><td>${fmt(n.activations)}</td></tr>`)).join('')}</tbody></table>`;
+    byId('incident-data-table').innerHTML=`<table><caption>All activated cards by channel, ordered by observed incident count</caption><thead><tr><th>Channel</th><th>Card ID</th><th>Risk name</th><th>Domain</th><th>Observed incident count</th><th>Degree</th></tr></thead><tbody>${['AIM','AIID'].flatMap(ch=>[...data.channels[ch].nodes].sort((a,b)=>b.activations-a.activations||a.id.localeCompare(b.id)).map(n=>`<tr><td>${ch}</td><td><code>${escape(n.id)}</code></td><td>${escape(n.name)}</td><td>${escape(domainNames[n.domain])}</td><td>${fmt(n.activations)}</td><td>${fmt(n.degree)}</td></tr>`)).join('')}</tbody></table>`;
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-17');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-18');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       const yearlyResponse=await fetch('data/incidents/channels/years.json?v=20261025-years-1');
       if(!yearlyResponse.ok)throw new Error('Annual network data unavailable');annualData=await yearlyResponse.json();
