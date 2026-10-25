@@ -71,6 +71,9 @@ function applyFilters() {
   el('active-heading').textContent = heading;
   el('active-path').textContent = path;
   el('active-path').hidden = !path;
+  const panel = el('l3-category-definition');
+  panel.innerHTML = l3 ? window.HEARTL3.html(l3) : '';
+  panel.hidden = !panel.innerHTML;
   syncTreeSelection();
   renderCards();
 }
@@ -100,6 +103,7 @@ function openCard(card) {
     <h2 id="dialog-title">${esc(card.L4_Name_en)} (${esc(card.L4_Name_ko)})</h2>
     <div class="hierarchy">${esc(hierarchy(card))}</div>
     <section class="detail-section"><h3>Risk definition</h3><p>${esc(card.Risk_Definition_en)}</p><p lang="ko">${esc(card.Risk_Definition_ko)}</p></section>
+    ${window.HEARTL3.html(card.L3_ID)}
     ${attributeSection}
     <section class="detail-section"><h3>Evidence reference</h3><a class="evidence-link" href="${esc(card.Evidence_URL)}" target="_blank" rel="noopener noreferrer">${esc(card.Evidence_Reference_Title)}</a><p>${referenceMeta}</p><blockquote>${esc(card.Evidence_Quote)}</blockquote><p class="source-note">${esc(card.Evidence_Quote_Location)}</p></section>
     <section class="detail-section"><h3>Future assessment fields</h3><div class="future-fields"><div class="future-field"><span>Probability</span></div><div class="future-field"><span>Severity</span></div></div></section>`;
@@ -107,6 +111,7 @@ function openCard(card) {
 }
 
 async function start() {
+  await window.HEARTL3.ready;
   const response = await fetch('data/heart_l4_risk_cards.json?v=taxonomy-55-20261019');
   if (!response.ok) throw new Error(`Dataset request failed: ${response.status}`);
   state.cards = (await response.json()).map(preferEvidencePDF);

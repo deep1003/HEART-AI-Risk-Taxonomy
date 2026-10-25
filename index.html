@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/institution.css">
   <link rel="stylesheet" href="assets/semantic-space.css?v=l4-color-mark-20261025">
   <link rel="stylesheet" href="assets/explorer-layout.css?v=logo-black-20261025">
+  <style>.l3-definition-panel{margin:0 0 24px;padding:4px 22px 12px;border:1px solid #dce1e8;border-radius:12px;background:#f8fafc;overflow-wrap:anywhere}.l3-definition p{line-height:1.65}.l3-definition .source-note{font-size:13px;color:#596579}.l3-definition-panel[hidden]{display:none}</style>
 </head>
 <body>
   <header class="site-header">
@@ -48,6 +49,7 @@
             <label><span>L3 category</span><select id="l3-filter"><option value="">All L3 categories</option></select></label>
           </div>
           <div id="active-path" class="active-path" hidden></div>
+          <div id="l3-category-definition" class="l3-definition-panel" hidden></div>
           <div id="card-grid" class="card-grid" aria-busy="true"></div>
           <button id="load-more" class="load-more" type="button" hidden>Load more</button>
         </div>
@@ -76,7 +78,8 @@
 
   <footer class="site-footer publisher-footer"><div class="publisher-identity"><a class="kt-logo-link" href="https://corp.kt.com/eng/" target="_blank" rel="noopener noreferrer" aria-label="KT Corporation official website"><img src="assets/kt-logo-light.svg" alt="KT" width="40" height="40"></a><div><p class="publisher-name">Frontier AI Lab, KT Corporation</p><a class="publisher-contact" href="mailto:responsible.ai@kt.com">responsible.ai@kt.com</a></div></div></footer>
   <script src="assets/evidence-pdf-links.js?v=verified-20261010" defer></script>
-  <script src="assets/app.js?v=taxonomy-55-20261019" defer></script>
-  <script src="assets/semantic-space.js?v=oversight-agentic-20261025" defer></script>
+  <script src="assets/l3-definitions.js?v=20261025" defer></script>
+  <script src="assets/app.js?v=l3-definitions-20261025" defer></script>
+  <script src="assets/semantic-space.js?v=l3-definitions-20261025" defer></script>
 </body>
 </html>
