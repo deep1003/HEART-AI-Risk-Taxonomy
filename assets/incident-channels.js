@@ -4,7 +4,7 @@
   const escape = value => String(value ?? '').replace(/[&<>"']/g, x => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
   const fmt = value => Number(value).toLocaleString('en-US');
   const percent = value => `${(value*100).toFixed(1)}%`;
-  const domainPalettes = {L1_G:['#2546b8','#3155cc','#4263eb','#5878e4','#7390ee'],L1_A:['#a94f0c','#bf6010','#d87518','#e58c33','#eda451'],L1_P:['#126438','#187843','#16854b','#29995d','#43ac72']};
+  const domainPalettes = {L1_G:['#2546b8','#3155cc','#4263eb','#5878e4','#7390ee'],L1_A:['#a94f0c','#bf6010','#d87518','#e58c33','#eda451'],L1_P:['#006b59','#00816b','#00977e','#21aa94','#48bdab']};
   function domainColor(node){
     const family=node.id.replace(/_[^_]+$/,'');
     const hash=Array.from(family).reduce((value,char)=>(value*31+char.charCodeAt(0))>>>0,0);
@@ -234,13 +234,13 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-18');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-19');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       const yearlyResponse=await fetch('data/incidents/channels/years.json?v=20261025-years-2');
       if(!yearlyResponse.ok)throw new Error('Annual network data unavailable');annualData=await yearlyResponse.json();
       for(const meta of Object.values(annualData))for(const c of Object.values(meta.years))for(const n of c.nodes)n.color=domainColor(n);
       data.max_activations=Math.max(...Object.values(data.channels).flatMap(c=>c.nodes.map(n=>n.activations)));
-      data.domain_colors={L1_G:'#4263eb',L1_A:'#d87518',L1_P:'#16854b'};
+      // Domain anchors match semantic_space.json, the AI risk space source.
       for(const c of Object.values(data.channels))for(const node of c.nodes)node.color=domainColor(node);
       for(const c of Object.values(data.channels)){
         for(const node of c.nodes){
