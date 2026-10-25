@@ -53,7 +53,7 @@ The detail panel reports normalized degree centrality and exact normalized betwe
 
 Node sizing uses observed incident counts with a common scale across channels. SVG radius is sqrt(6.25 + 317.75 * count / maximum count), where the maximum is taken over both full channel networks. Thus area above the minimum visible area is linear in counts. Counts represent retrieved incident records, not population prevalence. Centrality metrics and within-channel ranks remain available in the detail panel.
 
-Display adjustment. AIID radii use a 1.25 multiplier for readability. AIM retains its count-based radius scale and starts with a modest left/up translation. Fit and reset restore these channel-specific defaults. Compare exact counts across channels in the detail panel rather than comparing areas directly.
+Display adjustment. AIID radii use a 1.5625 multiplier (125% of the preceding 1.25 display multiplier) for readability. AIM retains its count-based radius scale and starts with a modest left/up translation. Fit and reset restore these channel-specific defaults. Compare exact counts across channels in the detail panel rather than comparing areas directly.
 
 ## Annual network navigation
 
