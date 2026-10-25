@@ -7,7 +7,8 @@
   const domainNames = {L1_G:'General AI',L1_A:'Agentic AI',L1_P:'Physical AI'};
   let data, selected = null, activeChannel = 'AIM', incidentLimit = 15, selectionToken = 0;
   const incidentCache = new Map();
-  const zoom = {AIM:{k:1,x:0,y:0},AIID:{k:1,x:0,y:0}};
+  const baseZoom = 1.25;
+  const zoom = {AIM:{k:baseZoom,x:0,y:0},AIID:{k:baseZoom,x:0,y:0}};
   const channelMaps = {}, allCards = new Map();
   function radius(degree) { return Math.sqrt(16+(289-16)*degree/data.max_degree); }
   function edgePath(p,q) {
@@ -61,7 +62,7 @@
   function applyZoom(channel){
     const z=zoom[channel],panel=byId(`panel-${channel}`);
     panel.querySelector('.network-content').setAttribute('transform',`translate(${600+z.x} ${340+z.y}) scale(${z.k}) translate(-600 -340)`);
-    panel.querySelector('.zoom-level').textContent=`${Math.round(z.k*100)}%`;
+    panel.querySelector('.zoom-level').textContent=`${Math.round(z.k/baseZoom*100)}%`;
     renderLabels(channel);
   }
   function wrapName(name,limit=30){
@@ -121,7 +122,7 @@
       const samples=Array.from({length:Math.min(9,colors.length)},(_,i)=>colors[Math.round(i*(colors.length-1)/Math.max(1,Math.min(9,colors.length)-1))]);
       return `<div class="overview-domain"><h3><i style="background:${data.domain_colors[domain]}"></i>${domainNames[domain]}<span>${data.inventory.domains[domain]} cards</span></h3><p>${descriptions[domain]}</p><div class="overview-shades" aria-label="${domainNames[domain]} semantic color examples">${samples.map(color=>`<i style="background:${color}"></i>`).join('')}</div></div>`;
     }).join('');
-    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Colors use the same L1/L3 semantic shades as AI risk space. Neighboring shades reflect semantic relationships among risk families; they do not encode severity or occurrence rates.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more distinct neighboring risk cards in the full channel network.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Risk names appear automatically as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
+    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Colors use the same L1/L3 semantic shades as AI risk space. Neighboring shades reflect semantic relationships among risk families; they do not encode severity or occurrence rates.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more distinct neighboring risk cards in the full channel network.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
     box.scrollTop=0;
   }
   async function incidentData(channel){
@@ -159,7 +160,7 @@
     for(const channel of ['AIM','AIID']){
       const panel=byId(`panel-${channel}`),svg=panel.querySelector('svg');let drag=null;
       panel.querySelectorAll('[data-zoom]').forEach(button=>button.addEventListener('click',()=>{
-        const z=zoom[channel];if(button.dataset.zoom==='fit')zoom[channel]={k:1,x:0,y:0};else z.k=Math.max(.6,Math.min(5,z.k*(button.dataset.zoom==='in'?1.25:.8)));applyZoom(channel);
+        const z=zoom[channel];if(button.dataset.zoom==='fit')zoom[channel]={k:baseZoom,x:0,y:0};else z.k=Math.max(.6,Math.min(5,z.k*(button.dataset.zoom==='in'?1.25:.8)));applyZoom(channel);
       }));
       svg.addEventListener('pointerdown',event=>{if(event.target.closest('.incident-node')||event.pointerType==='touch')return;drag={clientX:event.clientX,clientY:event.clientY,x:zoom[channel].x,y:zoom[channel].y};svg.setPointerCapture(event.pointerId);svg.classList.add('is-panning');});
       svg.addEventListener('pointermove',event=>{if(!drag)return;const rect=svg.getBoundingClientRect();zoom[channel].x=drag.x+(event.clientX-drag.clientX)*1200/rect.width;zoom[channel].y=drag.y+(event.clientY-drag.clientY)*680/rect.height;applyZoom(channel);});
@@ -172,7 +173,7 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-4');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-5');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       for(const channel of ['AIM','AIID']){
         channelMaps[channel]=new Map(data.channels[channel].nodes.map(n=>[n.id,n]));
@@ -184,8 +185,8 @@
       byId('incident-search').addEventListener('input',()=>{renderMatches();for(const channel of ['AIM','AIID'])renderGraph(channel);});
       byId('incident-domain').addEventListener('change',()=>{renderMatches();for(const channel of ['AIM','AIID'])renderGraph(channel);});
       byId('incident-labels').addEventListener('change',()=>{for(const channel of ['AIM','AIID'])renderGraph(channel);});
-      byId('incident-view').addEventListener('change',()=>{clearSelection();for(const channel of ['AIM','AIID']){zoom[channel]={k:1,x:0,y:0};renderGraph(channel);}});
-      byId('incident-reset').addEventListener('click',()=>{clearSelection();byId('incident-search').value='';byId('incident-domain').value='';byId('incident-view').value='overview';byId('incident-labels').checked=false;renderMatches();for(const channel of ['AIM','AIID']){zoom[channel]={k:1,x:0,y:0};renderGraph(channel);}});
+      byId('incident-view').addEventListener('change',()=>{clearSelection();for(const channel of ['AIM','AIID']){zoom[channel]={k:baseZoom,x:0,y:0};renderGraph(channel);}});
+      byId('incident-reset').addEventListener('click',()=>{clearSelection();byId('incident-search').value='';byId('incident-domain').value='';byId('incident-view').value='overview';byId('incident-labels').checked=false;renderMatches();for(const channel of ['AIM','AIID']){zoom[channel]={k:baseZoom,x:0,y:0};renderGraph(channel);}});
     }catch(error){byId('incident-networks').innerHTML='<p role="alert">The networks could not load. Reload this page or use the aggregate downloads under the methods section.</p>';byId('incident-networks').setAttribute('aria-busy','false');console.error(error);}
   }
   start();
