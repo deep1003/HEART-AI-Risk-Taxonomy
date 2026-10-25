@@ -125,7 +125,12 @@ async function start() {
 
 el('search').addEventListener('input', applyFilters);
 el('domain-filter').addEventListener('input', () => { state.l2 = ''; el('l3-filter').value = ''; applyFilters(); });
-el('l3-filter').addEventListener('input', () => { state.l2 = ''; applyFilters(); });
+el('l3-filter').addEventListener('input', () => {
+  state.l2 = '';
+  const selected = state.cards.find(card => card.L3_ID === el('l3-filter').value);
+  if (selected) el('domain-filter').value = selected.L1_Name_en;
+  applyFilters();
+});
 el('taxonomy-tree').addEventListener('click', event => {
   const l1 = event.target.closest('[data-l1]');
   const l2 = event.target.closest('[data-l2]');
