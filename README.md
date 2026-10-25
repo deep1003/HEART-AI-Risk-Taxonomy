@@ -54,3 +54,5 @@ python3 scripts/test_scale_law_diagnostics.py
 ## Current L3 definitions
 
 The current bilingual definitions of all 55 L3 categories are synchronized with the root Appendix A of the Overleaf Technical Report as downloaded on 25 October 2026. The explorer and card details share `data/heart_l3_categories.json`. A CSV export and `data/l3_definitions_manifest.json` provide the complete catalog and source checksum. Category IDs, hierarchy, all 622 L4 cards, computed semantic positions, evaluation inputs and incident data remain unchanged. Historical releases retain their original definitions.
+
+The current 37-page report is [HEART Technical Report, 25 October 2026](reports/HEART_Technical_Report_20261025.pdf) with its [source archive](reports/HEART_Technical_Report_20261025_source.zip). Earlier report links above refer to preserved historical releases.

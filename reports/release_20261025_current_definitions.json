@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-25",
+  "pdf_pages": 37,
+  "l3_categories": 55,
+  "l4_cards": 622,
+  "definition_source": "root appendix_a.tex",
+  "files": {
+    "HEART_Technical_Report_20261025.pdf": {
+      "bytes": 5661597,
+      "sha256": "34d8641f47e2f098ae12d3653a101aa3e70521eac6bb3cdf0859c502885e4813"
+    },
+    "HEART_Technical_Report_20261025_source.zip": {
+      "bytes": 26248624,
+      "sha256": "1707d5bcab46bc97333fb69d1ade8e441ce50e24e28a675777b91f208fee1d41"
+    }
+  }
+}

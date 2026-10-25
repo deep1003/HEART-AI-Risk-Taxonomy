@@ -11,7 +11,7 @@
   function html(id) {
     const category = categories.get(id);
     if (!category) return '';
-    return `<section class="detail-section l3-definition"><h3>L3 category definition</h3><p class="source-note">${escape(category.L3_ID)} · ${escape(category.L3_Name_en)} · <span lang="ko">${escape(category.L3_Name_ko)}</span></p><p>${escape(category.L3_Definition_en)}</p><p lang="ko">${escape(category.L3_Definition_ko)}</p><p class="source-note">Definitions revised 25 October 2026 · <a href="data/heart_l3_categories.csv" download>Download all 55 definitions as CSV</a> · <a href="data/heart_l3_categories.json" download>JSON</a></p></section>`;
+    return `<section class="detail-section l3-definition"><h3>L3 category definition</h3><p class="source-note">${escape(category.L3_ID)} · ${escape(category.L3_Name_en)} · <span lang="ko">${escape(category.L3_Name_ko)}</span></p><p>${escape(category.L3_Definition_en)}</p><p lang="ko">${escape(category.L3_Definition_ko)}</p><p class="source-note">Definitions revised 25 October 2026 · <a href="data/heart_l3_categories.csv" download>Download all 55 definitions as CSV</a> · <a href="data/heart_l3_categories.json" download>JSON</a> · <a href="data/HEART_L3_Definitions.xlsx" download>Excel</a></p></section>`;
   }
   window.HEARTL3 = {ready, html};
 })();
