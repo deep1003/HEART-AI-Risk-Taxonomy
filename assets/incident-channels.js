@@ -236,7 +236,7 @@
     try{
       const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-18');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
-      const yearlyResponse=await fetch('data/incidents/channels/years.json?v=20261025-years-1');
+      const yearlyResponse=await fetch('data/incidents/channels/years.json?v=20261025-years-2');
       if(!yearlyResponse.ok)throw new Error('Annual network data unavailable');annualData=await yearlyResponse.json();
       for(const meta of Object.values(annualData))for(const c of Object.values(meta.years))for(const n of c.nodes)n.color=domainColor(n);
       data.max_activations=Math.max(...Object.values(data.channels).flatMap(c=>c.nodes.map(n=>n.activations)));
