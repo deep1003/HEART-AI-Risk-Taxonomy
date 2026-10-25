@@ -35,15 +35,25 @@
   ],
   "display": {
     "selection": "25 highest-degree cards per domain, then 240 strongest induced links; remove displayed isolates",
-    "layout": "joint force layout shared across both channels; collision separation; seed 20261021",
+    "layout": "Vertically stacked 1200x680 shared layouts with stronger repulsion and overview node-boundary clearance of 22 units; seed 20261021",
     "node_size": "area proportional to full-channel degree with minimum area",
     "edge_width": "co-activation count per 1000 channel incidents; shared scale",
     "edge_shape": "quadratic curves with 0.22 perpendicular midpoint displacement",
     "colors": "exact L4 fills and L1 legend colors from existing AI risk space"
   },
+  "spacing_comparison": {
+    "AIM": {
+      "before": 33.96032302672204,
+      "after": 47.68968192194472
+    },
+    "AIID": {
+      "before": 32.99751958143155,
+      "after": 46.153971930918345
+    }
+  },
   "browser_checks": {
-    "desktop": "both channel graphs rendered; card selection compares channels; ID search and all-card mode verified",
-    "mobile": "390px viewport; panels stacked; no document horizontal overflow; methods closed by default",
-    "overview_node_collisions": 0
+    "stacked_panels": "Both panels have identical x and width; AIID top is below AIM bottom",
+    "viewbox": "1200x680 in both plots",
+    "statistics": "Network metrics match previous release within floating-point tolerance"
   }
 }

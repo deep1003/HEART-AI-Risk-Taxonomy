@@ -22,10 +22,10 @@
     const ids=new Set([selected]);
     for(const channel of ['AIM','AIID'])neighbors(channel,selected).slice(0,20).forEach(e=>ids.add(e.id));
     const surrounding=[...ids].filter(id=>id!==selected).sort((a,b)=>allCards.get(a).domain.localeCompare(allCards.get(b).domain)||a.localeCompare(b));
-    focusPositions={[selected]:[400,310]};
+    focusPositions={[selected]:[600,340]};
     surrounding.forEach((id,i)=>{
       const angle=-Math.PI/2+2*Math.PI*i/surrounding.length;
-      focusPositions[id]=[400+305*Math.cos(angle),310+244*Math.sin(angle)];
+      focusPositions[id]=[600+475*Math.cos(angle),340+260*Math.sin(angle)];
     });
   }
   function view(channel) {
@@ -81,7 +81,7 @@
     }
     applyZoom(channel);
   }
-  function applyZoom(channel){const z=zoom[channel];byId(`panel-${channel}`).querySelector('.network-content').setAttribute('transform',`translate(${400+z.x} ${310+z.y}) scale(${z.k}) translate(-400 -310)`);}
+  function applyZoom(channel){const z=zoom[channel];byId(`panel-${channel}`).querySelector('.network-content').setAttribute('transform',`translate(${600+z.x} ${340+z.y}) scale(${z.k}) translate(-600 -340)`);}
   function showTip(channel,id,event){
     const panel=byId(`panel-${channel}`),stage=panel.querySelector('.network-stage'),tip=panel.querySelector('.incident-tip'),node=channelMaps[channel].get(id);
     tip.innerHTML=`<code>${escape(node.id)}</code><strong>${escape(node.name)}</strong><span>${escape(domainNames[node.domain])} · ${fmt(node.degree)} neighbors<br>${fmt(node.activations)} mapped incidents</span>`;
@@ -117,7 +117,7 @@
   function mount(){
     byId('incident-networks').innerHTML=['AIM','AIID'].map(channel=>{
       const c=data.channels[channel];
-      return `<section class="channel-panel" id="panel-${channel}" aria-labelledby="heading-${channel}"><div class="channel-heading"><div><h2 id="heading-${channel}">${channel==='AIM'?'OECD AIM':'AI Incident Database'}</h2><p>${channel==='AIM'?'Primary channel · news-based reporting':'Secondary channel · editorially curated'}<br>Snapshot ${c.snapshot} · event years ${c.year_min}–${c.year_max}</p></div><span class="channel-count">${fmt(c.n)} incidents</span></div><div class="network-toolbar"><span class="display-count"></span><div><button data-zoom="in" type="button" aria-label="Zoom in ${channel}">+</button><button data-zoom="out" type="button" aria-label="Zoom out ${channel}">−</button><button data-zoom="fit" type="button" aria-label="Fit ${channel} network">Fit</button></div></div><div class="network-stage"><svg viewBox="0 0 800 620" aria-labelledby="heading-${channel}" aria-describedby="description-${channel}"><desc id="description-${channel}">Risk-card co-activation network. Colored circles represent General, Agentic, and Physical risks; larger nodes have more distinct neighbors. Curved links indicate cards retrieved for the same reported incident. Nodes are keyboard accessible.</desc><g class="network-content"></g></svg><div class="incident-tip" role="tooltip" hidden></div></div><div class="network-foot"><span><strong>${fmt(c.node_count)}</strong> activated cards</span><span><strong>${fmt(c.edge_count)}</strong> distinct ties</span><span><strong>${percent(c.cross_rate)}</strong> cross-domain incidents</span></div></section>`;
+      return `<section class="channel-panel" id="panel-${channel}" aria-labelledby="heading-${channel}"><div class="channel-heading"><div><h2 id="heading-${channel}">${channel==='AIM'?'OECD AIM':'AI Incident Database'}</h2><p>${channel==='AIM'?'Primary channel · news-based reporting':'Secondary channel · editorially curated'}<br>Snapshot ${c.snapshot} · event years ${c.year_min}–${c.year_max}</p></div><span class="channel-count">${fmt(c.n)} incidents</span></div><div class="network-toolbar"><span class="display-count"></span><div><button data-zoom="in" type="button" aria-label="Zoom in ${channel}">+</button><button data-zoom="out" type="button" aria-label="Zoom out ${channel}">−</button><button data-zoom="fit" type="button" aria-label="Fit ${channel} network">Fit</button></div></div><div class="network-stage"><svg viewBox="0 0 1200 680" aria-labelledby="heading-${channel}" aria-describedby="description-${channel}"><desc id="description-${channel}">Risk-card co-activation network. Colored circles represent General, Agentic, and Physical risks; larger nodes have more distinct neighbors. Curved links indicate cards retrieved for the same reported incident. Nodes are keyboard accessible.</desc><g class="network-content"></g></svg><div class="incident-tip" role="tooltip" hidden></div></div><div class="network-foot"><span><strong>${fmt(c.node_count)}</strong> activated cards</span><span><strong>${fmt(c.edge_count)}</strong> distinct ties</span><span><strong>${percent(c.cross_rate)}</strong> cross-domain incidents</span></div></section>`;
     }).join('');
     byId('incident-networks').setAttribute('aria-busy','false');
     for(const channel of ['AIM','AIID']){
@@ -126,7 +126,7 @@
         const z=zoom[channel];if(button.dataset.zoom==='fit')zoom[channel]={k:1,x:0,y:0};else z.k=Math.max(.6,Math.min(5,z.k*(button.dataset.zoom==='in'?1.25:.8)));applyZoom(channel);
       }));
       svg.addEventListener('pointerdown',event=>{if(event.target.closest('.incident-node')||event.pointerType==='touch')return;drag={clientX:event.clientX,clientY:event.clientY,x:zoom[channel].x,y:zoom[channel].y};svg.setPointerCapture(event.pointerId);svg.classList.add('is-panning');});
-      svg.addEventListener('pointermove',event=>{if(!drag)return;const rect=svg.getBoundingClientRect();zoom[channel].x=drag.x+(event.clientX-drag.clientX)*800/rect.width;zoom[channel].y=drag.y+(event.clientY-drag.clientY)*620/rect.height;applyZoom(channel);});
+      svg.addEventListener('pointermove',event=>{if(!drag)return;const rect=svg.getBoundingClientRect();zoom[channel].x=drag.x+(event.clientX-drag.clientX)*1200/rect.width;zoom[channel].y=drag.y+(event.clientY-drag.clientY)*680/rect.height;applyZoom(channel);});
       svg.addEventListener('pointerup',()=>{drag=null;svg.classList.remove('is-panning');});svg.addEventListener('pointercancel',()=>{drag=null;svg.classList.remove('is-panning');});
       svg.addEventListener('wheel',event=>{if(!(event.ctrlKey||event.metaKey))return;event.preventDefault();zoom[channel].k=Math.max(.6,Math.min(5,zoom[channel].k*(event.deltaY<0?1.1:.9)));applyZoom(channel);},{passive:false});
       renderGraph(channel);
@@ -136,7 +136,7 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-1');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-2');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       for(const channel of ['AIM','AIID']){
         channelMaps[channel]=new Map(data.channels[channel].nodes.map(n=>[n.id,n]));

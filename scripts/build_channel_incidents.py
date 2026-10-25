@@ -32,24 +32,24 @@ def shared_layout(graph, radii):
     g.add_edges_from(sorted(graph.edges()))
     for u,v in g.edges:
         g[u][v]['weight'] = graph[u][v]['weight'] ** .35
-    raw = nx.spring_layout(g, seed=SEED, weight='weight', iterations=400, k=1.7 / np.sqrt(len(g)))
+    raw = nx.spring_layout(g, seed=SEED, weight='weight', iterations=500, k=2.3 / np.sqrt(len(g)))
     pts = np.array([raw[i] for i in ids])
     pts = (pts-pts.min(0)) / np.maximum(pts.max(0)-pts.min(0),1e-9)
-    pts = pts * np.array([690,510]) + np.array([55,55])
+    pts = pts * np.array([1040,550]) + np.array([80,65])
     rng = np.random.default_rng(SEED)
-    for _ in range(130):
+    for _ in range(180):
         moved=False
         for i in range(len(ids)):
             delta=pts[i+1:]-pts[i]
             dist=np.linalg.norm(delta,axis=1)
-            minimum=np.array([radii[ids[i]]+radii[j]+7 for j in ids[i+1:]])
+            minimum=np.array([radii[ids[i]]+radii[j]+(22 if len(ids)<=120 else 10) for j in ids[i+1:]])
             for z in np.flatnonzero(dist<minimum):
                 j=i+1+z
                 direction=delta[z]/dist[z] if dist[z]>1e-9 else rng.normal(size=2)
                 direction=direction/max(np.linalg.norm(direction),1e-9)
                 shift=direction*(minimum[z]-dist[z])*.51
                 pts[i]-=shift;pts[j]+=shift;moved=True
-        pts=np.clip(pts,[28,28],[772,592])
+        pts=np.clip(pts,[35,35],[1165,645])
         if not moved:break
     return {i:[round(float(x),3) for x in p] for i,p in zip(ids,pts)}
 
@@ -136,7 +136,7 @@ def main():
         assert np.isclose(channels[ch]['cross_edge_rate'],row.cross_edge_rate)
         assert np.isclose(channels[ch]['assortativity'],row.assortativity_r)
         channels[ch]['permutation_OE']=float(row.O_over_E)
-    payload={'version':'20261025-channels-1','seed':SEED,'inventory':{'cards':622,'families':55,'domains':{'L1_G':491,'L1_A':68,'L1_P':63}},'domain_colors':semantic['l1_colors'],'bridge':BRIDGE,'max_degree':max_degree,'max_edge_rate':max(e['per_1000'] for c in channels.values() for e in c['edges']),'layouts':layouts,'channels':channels,'provenance':{'analytic_records_sha256':digest(recpath),'frozen_edges_sha256':digest(edgepath),'inventory_sha256':digest(ROOT/'data/heart_l4_risk_cards.json'),'semantic_style_sha256':digest(ROOT/'data/semantic_space.json'),'mapping':'BGE-M3 dense cosine, non-circular title + description + AI-system, top three','network':'Undirected unweighted topology, with co-activation counts retained as edge attributes'}}
+    payload={'version':'20261025-channels-2','seed':SEED,'inventory':{'cards':622,'families':55,'domains':{'L1_G':491,'L1_A':68,'L1_P':63}},'domain_colors':semantic['l1_colors'],'bridge':BRIDGE,'max_degree':max_degree,'max_edge_rate':max(e['per_1000'] for c in channels.values() for e in c['edges']),'layouts':layouts,'channels':channels,'provenance':{'analytic_records_sha256':digest(recpath),'frozen_edges_sha256':digest(edgepath),'inventory_sha256':digest(ROOT/'data/heart_l4_risk_cards.json'),'semantic_style_sha256':digest(ROOT/'data/semantic_space.json'),'mapping':'BGE-M3 dense cosine, non-circular title + description + AI-system, top three','network':'Undirected unweighted topology, with co-activation counts retained as edge attributes'}}
     out=ROOT/'data/incidents/channels';out.mkdir(parents=True,exist_ok=True)
     (out/'networks.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n')
     for name,rows in [('nodes.csv',node_rows),('edges.csv',edge_rows)]:

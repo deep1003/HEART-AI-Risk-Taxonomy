@@ -26,7 +26,7 @@ The overview starts with the 25 highest-degree nodes per domain plus the control
 
 L4 colors come directly from `data/semantic_space.json`. The same card has the same fill as in AI risk space, including semantic shades across L3 families. The domain legend uses the existing L1 anchor colors. Nodes are circles with white borders, and edges follow the existing quadratic-curve convention. A red outline identifies `A_INT_OVERSIGHT_003` without changing its fill.
 
-Node area increases linearly with full-channel degree above a minimum area. Edge width increases with the square root of pair co-activation rate per 1,000 channel incidents. Both panels share these visual scales. The joint force layout uses a fixed seed and a collision-separation pass. Common cards retain shared coordinates for channel comparisons. Layout distances are not calibrated semantic, causal, or geographic distances.
+Node area increases linearly with full-channel degree above a minimum area. Edge width increases with the square root of pair co-activation rate per 1,000 channel incidents. Both panels share these visual scales. The graphs are stacked vertically. The joint force layout uses a 1200-by-680 canvas, stronger repulsion, and a collision-separation pass with 22 extra coordinate units between overview node boundaries. Common cards retain shared coordinates for channel comparisons. Layout distances are not calibrated semantic, causal, or geographic distances.
 
 ## Files
 
