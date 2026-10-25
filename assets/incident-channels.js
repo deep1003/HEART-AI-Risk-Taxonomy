@@ -5,7 +5,7 @@
   const fmt = value => Number(value).toLocaleString('en-US');
   const percent = value => `${(value*100).toFixed(1)}%`;
   const domainNames = {L1_G:'General AI',L1_A:'Agentic AI',L1_P:'Physical AI'};
-  let data, selected = null, activeChannel = 'AIM', incidentLimit = 15, selectionToken = 0;
+  let data, selected = null, activeChannel = 'AIID', incidentLimit = 15, selectionToken = 0;
   const incidentCache = new Map();
   const baseZoom = 1.25;
   const zoom = {AIM:{k:baseZoom,x:0,y:0},AIID:{k:baseZoom,x:0,y:0}};
@@ -172,9 +172,9 @@
     box.querySelectorAll('[data-match]').forEach(button=>button.addEventListener('click',()=>select(button.dataset.match)));
   }
   function mount(){
-    byId('incident-networks').innerHTML=['AIM','AIID'].map(channel=>{
+    byId('incident-networks').innerHTML=['AIID','AIM'].map(channel=>{
       const c=data.channels[channel];
-      return `<section class="channel-panel" id="panel-${channel}" aria-labelledby="heading-${channel}"><div class="channel-heading"><div><h2 id="heading-${channel}">${channel==='AIM'?'OECD AIM':'AI Incident Database'}</h2><p>${channel==='AIM'?'Primary channel · news-based reporting':'Secondary channel · editorially curated'}<br>Snapshot ${c.snapshot} · event years ${c.year_min}–${c.year_max}</p></div><span class="channel-count">${fmt(c.n)} incidents</span></div><div class="network-toolbar"><span class="display-count"></span><div><span class="zoom-level" aria-live="polite">100%</span><button data-zoom="in" type="button" aria-label="Zoom in ${channel}">+</button><button data-zoom="out" type="button" aria-label="Zoom out ${channel}">−</button><button data-zoom="fit" type="button" aria-label="Fit ${channel} network">Fit</button></div></div><div class="network-stage"><svg viewBox="0 0 1200 680" aria-labelledby="heading-${channel}" aria-describedby="description-${channel}"><desc id="description-${channel}">Risk-card co-activation network. Colored circles represent General, Agentic, and Physical risks; larger nodes have more distinct neighbors. Curved links indicate cards retrieved for the same reported incident. Nodes are keyboard accessible.</desc><g class="network-content"></g></svg><div class="incident-tip" role="tooltip" hidden></div></div><div class="network-foot"><span><strong>${fmt(c.node_count)}</strong> activated cards</span><span><strong>${fmt(c.edge_count)}</strong> distinct ties</span><span><strong>${percent(c.cross_rate)}</strong> cross-domain incidents</span></div></section>`;
+      return `<section class="channel-panel" id="panel-${channel}" aria-labelledby="heading-${channel}"><div class="channel-heading"><div><h2 id="heading-${channel}">${channel==='AIM'?'OECD AIMD':'AI Incident Database (AIID)'}</h2><p>${channel==='AIM'?'Primary channel · news-based reporting':'Secondary channel · editorially curated'}<br>Snapshot ${c.snapshot} · event years ${c.year_min}–${c.year_max}</p></div><span class="channel-count">${fmt(c.n)} incidents</span></div><div class="network-toolbar"><span class="display-count"></span><div><span class="zoom-level" aria-live="polite">100%</span><button data-zoom="in" type="button" aria-label="Zoom in ${channel}">+</button><button data-zoom="out" type="button" aria-label="Zoom out ${channel}">−</button><button data-zoom="fit" type="button" aria-label="Fit ${channel} network">Fit</button></div></div><div class="network-stage"><svg viewBox="0 0 1200 680" aria-labelledby="heading-${channel}" aria-describedby="description-${channel}"><desc id="description-${channel}">Risk-card co-activation network. Colored circles represent General, Agentic, and Physical risks; larger nodes have more distinct neighbors. Curved links indicate cards retrieved for the same reported incident. Nodes are keyboard accessible.</desc><g class="network-content"></g></svg><div class="incident-tip" role="tooltip" hidden></div></div><div class="network-foot"><span><strong>${fmt(c.node_count)}</strong> activated cards</span><span><strong>${fmt(c.edge_count)}</strong> distinct ties</span><span><strong>${percent(c.cross_rate)}</strong> cross-domain incidents</span></div></section>`;
     }).join('');
     byId('incident-networks').setAttribute('aria-busy','false');
     for(const channel of ['AIM','AIID']){
@@ -193,7 +193,7 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-6');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-7');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       for(const channel of ['AIM','AIID']){
         channelMaps[channel]=new Map(data.channels[channel].nodes.map(n=>[n.id,n]));
