@@ -4,6 +4,12 @@
   const escape = value => String(value ?? '').replace(/[&<>"']/g, x => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
   const fmt = value => Number(value).toLocaleString('en-US');
   const percent = value => `${(value*100).toFixed(1)}%`;
+  const domainPalettes = {L1_G:['#2546b8','#3155cc','#4263eb','#5878e4','#7390ee'],L1_A:['#a94f0c','#bf6010','#d87518','#e58c33','#eda451'],L1_P:['#126438','#187843','#16854b','#29995d','#43ac72']};
+  function domainColor(node){
+    const family=node.id.replace(/_[^_]+$/,'');
+    const hash=Array.from(family).reduce((value,char)=>(value*31+char.charCodeAt(0))>>>0,0);
+    const palette=domainPalettes[node.domain];return palette[hash%palette.length];
+  }
   const domainNames = {L1_G:'General AI',L1_A:'Agentic AI',L1_P:'Physical AI'};
   let data, selected = null, activeChannel = 'AIID', incidentLimit = 15, selectionToken = 0;
   const incidentCache = new Map();
@@ -140,9 +146,9 @@
     const domainRows=['L1_G','L1_A','L1_P'].map(domain=>{
       const colors=[...new Set([...allCards.values()].filter(n=>n.domain===domain).map(n=>n.color))].sort();
       const samples=Array.from({length:Math.min(9,colors.length)},(_,i)=>colors[Math.round(i*(colors.length-1)/Math.max(1,Math.min(9,colors.length)-1))]);
-      return `<div class="overview-domain"><h3><i style="background:${data.domain_colors[domain]}"></i>${domainNames[domain]}<span>${data.inventory.domains[domain]} cards</span></h3><p>${descriptions[domain]}</p><div class="overview-shades" aria-label="${domainNames[domain]} semantic color examples">${samples.map(color=>`<i style="background:${color}"></i>`).join('')}</div></div>`;
+      return `<div class="overview-domain"><h3><i style="background:${data.domain_colors[domain]}"></i>${domainNames[domain]}<span>${data.inventory.domains[domain]} cards</span></h3><p>${descriptions[domain]}</p><div class="overview-shades" aria-label="${domainNames[domain]} L3 color examples">${samples.map(color=>`<i style="background:${color}"></i>`).join('')}</div></div>`;
     }).join('');
-    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Colors use the same L1/L3 semantic shades as AI risk space. Neighboring shades reflect semantic relationships among risk families; they do not encode severity or occurrence rates.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more distinct neighboring risk cards in the full channel network. OECD AIM uses an expanded size range to make degree differences easier to see.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
+    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Blue identifies General AI, orange identifies Agentic AI, and green identifies Physical AI. Shades distinguish L3 families within each domain and do not encode severity, occurrence rates, or semantic distance.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more distinct neighboring risk cards in the full channel network. OECD AIM uses an expanded size range to make degree differences easier to see.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
     box.scrollTop=0;
   }
   async function incidentData(channel){
@@ -193,8 +199,10 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-7');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-8');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
+      data.domain_colors={L1_G:'#4263eb',L1_A:'#d87518',L1_P:'#16854b'};
+      for(const c of Object.values(data.channels))for(const node of c.nodes)node.color=domainColor(node);
       for(const channel of ['AIM','AIID']){
         channelMaps[channel]=new Map(data.channels[channel].nodes.map(n=>[n.id,n]));
         for(const node of data.channels[channel].nodes)if(!allCards.has(node.id))allCards.set(node.id,node);
