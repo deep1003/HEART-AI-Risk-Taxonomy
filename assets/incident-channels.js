@@ -14,10 +14,11 @@
   let data, selected = null, activeChannel = 'AIID', incidentLimit = 15, selectionToken = 0;
   const incidentCache = new Map();
   const baseZoom = 1.25;
-  const zoom = {AIM:{k:baseZoom,x:0,y:0},AIID:{k:baseZoom,x:0,y:0}};
+  const defaultZoom = channel => ({k:baseZoom,x:channel==='AIM'?-45:0,y:channel==='AIM'?-40:0});
+  const zoom = {AIM:defaultZoom('AIM'),AIID:defaultZoom('AIID')};
   const channelMaps = {}, allCards = new Map();
-  function radius(activations) {
-    return Math.sqrt(6.25+317.75*activations/data.max_activations);
+  function radius(activations, channel) {
+    return Math.sqrt(6.25+317.75*activations/data.max_activations)*(channel==='AIID'?1.25:1);
   }
   const aimLayouts = new Map();
   function aimPositions(mode,nodes,original){
@@ -65,7 +66,7 @@
     }
     for(const node of [...graph.nodes].sort((a,b)=>a.degree-b.degree)){
       const pos=graph.positions[node.id];if(!pos)continue;
-      const r=radius(node.activations),alpha=opacity(node);
+      const r=radius(node.activations,channel),alpha=opacity(node);
       if(node.id===data.bridge)markup+=`<circle class="incident-halo" cx="${pos[0]}" cy="${pos[1]}" r="${r+4}" style="opacity:${alpha}"/>`;
       if(node.id===selected)markup+=`<circle class="incident-halo selected" cx="${pos[0]}" cy="${pos[1]}" r="${r+7}"/>`;
       markup+=`<circle class="incident-node" data-id="${escape(node.id)}" cx="${pos[0]}" cy="${pos[1]}" r="${r}" fill="${escape(node.color)}" opacity="${alpha}" role="button" tabindex="0" aria-pressed="${node.id===selected}" aria-label="${escape(node.id+' · '+node.name+' · '+fmt(node.activations)+' observed incidents')}"><title>${escape(node.name)}</title></circle>`;
@@ -107,13 +108,13 @@
     const limit=z.k>=2.8?ranked.length:z.k>=1.8?35:12,placed=[];let markup='',count=0;
     for(const node of ranked){
       if(count>=limit)break;
-      const p=graph.positions[node.id],r=radius(node.activations),lines=wrapName(node.name),w=Math.max(...lines.map(l=>l.length))*font*.55+font*.6,h=lines.length*lineHeight+font*.4,gap=font*.65;
+      const p=graph.positions[node.id],r=radius(node.activations,channel),lines=wrapName(node.name),w=Math.max(...lines.map(l=>l.length))*font*.55+font*.6,h=lines.length*lineHeight+font*.4,gap=font*.65;
       const options=[{x:p[0]+r+gap,y:p[1]-h/2},{x:p[0]-w/2,y:p[1]-r-gap-h},{x:p[0]-r-gap-w,y:p[1]-h/2},{x:p[0]-w/2,y:p[1]+r+gap}];
       const box=options.find(b=>{
         const lo=screen([b.x,b.y]),hi=screen([b.x+w,b.y+h]);
         if(lo[0]<8||lo[1]<8||hi[0]>1192||hi[1]>672)return false;
         if(placed.some(q=>b.x<q.x+q.w&&b.x+w>q.x&&b.y<q.y+q.h&&b.y+h>q.y))return false;
-        return !visible.some(other=>{const q=graph.positions[other.id],rr=radius(other.activations)+font*.2;const x=Math.max(b.x,Math.min(q[0],b.x+w)),y=Math.max(b.y,Math.min(q[1],b.y+h));return Math.hypot(x-q[0],y-q[1])<rr;});
+        return !visible.some(other=>{const q=graph.positions[other.id],rr=radius(other.activations,channel)+font*.2;const x=Math.max(b.x,Math.min(q[0],b.x+w)),y=Math.max(b.y,Math.min(q[1],b.y+h));return Math.hypot(x-q[0],y-q[1])<rr;});
       });
       if(!box)continue;placed.push({...box,w,h});count++;
       markup+=`<text class="incident-node-label" data-label-id="${escape(node.id)}" x="${box.x}" y="${box.y+font}" style="font-size:${font}px;stroke-width:${font*.3}px">${lines.map((line,i)=>`<tspan x="${box.x}" dy="${i?lineHeight:0}">${escape(line)}</tspan>`).join('')}</text>`;
@@ -147,7 +148,7 @@
       const samples=Array.from({length:Math.min(9,colors.length)},(_,i)=>colors[Math.round(i*(colors.length-1)/Math.max(1,Math.min(9,colors.length)-1))]);
       return `<div class="overview-domain"><h3><i style="background:${data.domain_colors[domain]}"></i>${domainNames[domain]}<span>${data.inventory.domains[domain]} cards</span></h3><p>${descriptions[domain]}</p><div class="overview-shades" aria-label="${domainNames[domain]} L3 color examples">${samples.map(color=>`<i style="background:${color}"></i>`).join('')}</div></div>`;
     }).join('');
-    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Blue identifies General AI, orange identifies Agentic AI, and green identifies Physical AI. Shades distinguish L3 families within each domain and do not encode severity, occurrence rates, or semantic distance.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more observed incident records. Both graphs use the same count-to-area scale, with a minimum visible size for rare cards. Counts refer to records associated with each card, not population incidence rates.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
+    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Blue identifies General AI, orange identifies Agentic AI, and green identifies Physical AI. Shades distinguish L3 families within each domain and do not encode severity, occurrence rates, or semantic distance.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more observed incident records. Each graph uses a count-to-area scale with a minimum visible size. AIID node radii are enlarged by 25% for readability, so compare counts in the detail panel across channels. Counts refer to records associated with each card, not population incidence rates.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
     box.scrollTop=0;
   }
   async function incidentData(channel){
@@ -186,7 +187,7 @@
     for(const channel of ['AIM','AIID']){
       const panel=byId(`panel-${channel}`),svg=panel.querySelector('svg');let drag=null;
       panel.querySelectorAll('[data-zoom]').forEach(button=>button.addEventListener('click',()=>{
-        const z=zoom[channel];if(button.dataset.zoom==='fit')zoom[channel]={k:baseZoom,x:0,y:0};else z.k=Math.max(.6,Math.min(5,z.k*(button.dataset.zoom==='in'?1.25:.8)));applyZoom(channel);
+        const z=zoom[channel];if(button.dataset.zoom==='fit')zoom[channel]=defaultZoom(channel);else z.k=Math.max(.6,Math.min(5,z.k*(button.dataset.zoom==='in'?1.25:.8)));applyZoom(channel);
       }));
       svg.addEventListener('pointerdown',event=>{if(event.target.closest('.incident-node')||event.pointerType==='touch')return;drag={clientX:event.clientX,clientY:event.clientY,x:zoom[channel].x,y:zoom[channel].y};svg.setPointerCapture(event.pointerId);svg.classList.add('is-panning');});
       svg.addEventListener('pointermove',event=>{if(!drag)return;const rect=svg.getBoundingClientRect();zoom[channel].x=drag.x+(event.clientX-drag.clientX)*1200/rect.width;zoom[channel].y=drag.y+(event.clientY-drag.clientY)*680/rect.height;applyZoom(channel);});
@@ -199,7 +200,7 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-14');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-15');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       data.max_activations=Math.max(...Object.values(data.channels).flatMap(c=>c.nodes.map(n=>n.activations)));
       data.domain_colors={L1_G:'#4263eb',L1_A:'#d87518',L1_P:'#16854b'};
@@ -221,8 +222,8 @@
       byId('incident-search').addEventListener('input',()=>{renderMatches();for(const channel of ['AIM','AIID'])renderGraph(channel);});
       byId('incident-domain').addEventListener('change',()=>{renderMatches();for(const channel of ['AIM','AIID'])renderGraph(channel);});
       byId('incident-labels').addEventListener('change',()=>{for(const channel of ['AIM','AIID'])renderGraph(channel);});
-      byId('incident-view').addEventListener('change',()=>{clearSelection();for(const channel of ['AIM','AIID']){zoom[channel]={k:baseZoom,x:0,y:0};renderGraph(channel);}});
-      byId('incident-reset').addEventListener('click',()=>{clearSelection();byId('incident-search').value='';byId('incident-domain').value='';byId('incident-view').value='overview';byId('incident-labels').checked=false;renderMatches();for(const channel of ['AIM','AIID']){zoom[channel]={k:baseZoom,x:0,y:0};renderGraph(channel);}});
+      byId('incident-view').addEventListener('change',()=>{clearSelection();for(const channel of ['AIM','AIID']){zoom[channel]=defaultZoom(channel);renderGraph(channel);}});
+      byId('incident-reset').addEventListener('click',()=>{clearSelection();byId('incident-search').value='';byId('incident-domain').value='';byId('incident-view').value='overview';byId('incident-labels').checked=false;renderMatches();for(const channel of ['AIM','AIID']){zoom[channel]=defaultZoom(channel);renderGraph(channel);}});
     }catch(error){byId('incident-networks').innerHTML='<p role="alert">The networks could not load. Reload this page or use the aggregate downloads under the methods section.</p>';byId('incident-networks').setAttribute('aria-busy','false');console.error(error);}
   }
   start();
