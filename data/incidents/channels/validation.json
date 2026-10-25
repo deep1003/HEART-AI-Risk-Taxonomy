@@ -5,7 +5,7 @@
     "analytic_records_sha256": "8218e3e14cc17fe522e01552036b5435832adf2891f5226ff249bea5a57fe901",
     "frozen_edges_sha256": "0a6e7e575fd29cbbcf70237972e82cdc51c23f658d0c41ece234c0adfe8c1814",
     "inventory_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
-    "semantic_style_sha256": "d5f34131b87ae76184470d048ea185d7072fe34a6c4a338dbc323b352ab53d44",
+    "semantic_style_sha256": "a3c7ad06d5b5e46ce5b61d1ba66558316242cab31de3e23f3d8a70f2d84a3a90",
     "mapping": "BGE-M3 dense cosine, non-circular title + description + AI-system, top three",
     "network": "Undirected unweighted topology, with co-activation counts retained as edge attributes"
   },

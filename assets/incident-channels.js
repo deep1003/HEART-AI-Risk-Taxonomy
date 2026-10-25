@@ -234,9 +234,9 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-21');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-22');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
-      const colorResponse=await fetch('data/semantic_space.json?v=taxonomy-55-20261019');
+      const colorResponse=await fetch('data/semantic_space.json?v=oversight-agentic-20261025');
       if(!colorResponse.ok)throw new Error('AI risk space colors unavailable');
       const colorSource=await colorResponse.json();
       for(const point of colorSource.points)cardColors.set(point.id,point.color);

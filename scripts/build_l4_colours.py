@@ -51,6 +51,8 @@ def main():
         l = float(np.clip((1-weight)*l+weight*nl+coordinates[i,1]*.14,.30,.72))
         s = float(np.clip((1-weight)*s+weight*ns+coordinates[i,2]*.16,.45,.95))
         colour = '#' + ''.join(f'{round(value*255):02x}' for value in colorsys.hls_to_rgb(h,l,s))
+        if card['L4_ID'] == 'A_INT_OVERSIGHT_003':
+            colour = '#d87518'  # Preserve the reviewed Agentic domain color after reassignment.
         output.append({'id':card['L4_ID'], 'l3':card['L3_ID'], 'color':colour,
                        'semantic_coordinates':coordinates[i].tolist(),
                        'neighbour_l3':categories[neighbour]['L3_ID'], 'neighbour_mix_weight':weight,
