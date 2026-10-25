@@ -50,3 +50,5 @@ The right panel is reserved from the initial render. It initially displays an Ov
 ## Selected-card centrality
 
 The detail panel reports normalized degree centrality and exact normalized betweenness for the active channel. Both use the full undirected, unweighted channel network rather than the displayed overview. Degree centrality is distinct neighbors divided by n minus one. Betweenness excludes endpoints and uses the undirected normalization factor 2 divided by (n minus one) times (n minus two). Values switch with the source tab. Regenerate the added fields with `python scripts/add_channel_centrality.py`.
+
+Node sizing uses mapped incident counts with a common scale across channels. SVG radius is sqrt(6.25 + 317.75 * count / maximum count), where the maximum is taken over both full channel networks. Thus area above the minimum visible area is linear in counts. Counts represent retrieved incident records, not population prevalence. Centrality metrics and within-channel ranks remain available in the detail panel.

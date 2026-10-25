@@ -16,9 +16,8 @@
   const baseZoom = 1.25;
   const zoom = {AIM:{k:baseZoom,x:0,y:0},AIID:{k:baseZoom,x:0,y:0}};
   const channelMaps = {}, allCards = new Map();
-  function radius(degree, channel) {
-    const fraction=degree/data.max_degree;
-    return channel==='AIM' ? Math.sqrt(4+320*Math.pow(fraction,1.8)) : Math.sqrt(16+273*fraction);
+  function radius(activations) {
+    return Math.sqrt(6.25+317.75*activations/data.max_activations);
   }
   const aimLayouts = new Map();
   function aimPositions(mode,nodes,original){
@@ -29,7 +28,7 @@
       for(let i=0;i<ordered.length;i++)for(let j=i+1;j<ordered.length;j++){
         const a=ordered[i],b=ordered[j],p=points[a.id],q=points[b.id];
         const dx=q[0]-p[0],dy=q[1]-p[1],distance=Math.hypot(dx,dy)||.001;
-        const minimum=radius(a.degree,'AIM')+radius(b.degree,'AIM')+20;
+        const minimum=radius(a.activations)+radius(b.activations)+20;
         if(distance>=minimum)continue;
         const shift=(minimum-distance)*.35,ux=dx/distance,uy=dy/distance;
         p[0]-=ux*shift;p[1]-=uy*shift;q[0]+=ux*shift;q[1]+=uy*shift;
@@ -66,7 +65,7 @@
     }
     for(const node of [...graph.nodes].sort((a,b)=>a.degree-b.degree)){
       const pos=graph.positions[node.id];if(!pos)continue;
-      const r=radius(node.degree,channel),alpha=opacity(node);
+      const r=radius(node.activations),alpha=opacity(node);
       if(node.id===data.bridge)markup+=`<circle class="incident-halo" cx="${pos[0]}" cy="${pos[1]}" r="${r+4}" style="opacity:${alpha}"/>`;
       if(node.id===selected)markup+=`<circle class="incident-halo selected" cx="${pos[0]}" cy="${pos[1]}" r="${r+7}"/>`;
       markup+=`<circle class="incident-node" data-id="${escape(node.id)}" cx="${pos[0]}" cy="${pos[1]}" r="${r}" fill="${escape(node.color)}" opacity="${alpha}" role="button" tabindex="0" aria-pressed="${node.id===selected}" aria-label="${escape(node.id+' · '+node.name+' · '+fmt(node.activations)+' mapped incidents')}"><title>${escape(node.name)}</title></circle>`;
@@ -108,13 +107,13 @@
     const limit=z.k>=2.8?ranked.length:z.k>=1.8?35:12,placed=[];let markup='',count=0;
     for(const node of ranked){
       if(count>=limit)break;
-      const p=graph.positions[node.id],r=radius(node.degree,channel),lines=wrapName(node.name),w=Math.max(...lines.map(l=>l.length))*font*.55+font*.6,h=lines.length*lineHeight+font*.4,gap=font*.65;
+      const p=graph.positions[node.id],r=radius(node.activations),lines=wrapName(node.name),w=Math.max(...lines.map(l=>l.length))*font*.55+font*.6,h=lines.length*lineHeight+font*.4,gap=font*.65;
       const options=[{x:p[0]+r+gap,y:p[1]-h/2},{x:p[0]-w/2,y:p[1]-r-gap-h},{x:p[0]-r-gap-w,y:p[1]-h/2},{x:p[0]-w/2,y:p[1]+r+gap}];
       const box=options.find(b=>{
         const lo=screen([b.x,b.y]),hi=screen([b.x+w,b.y+h]);
         if(lo[0]<8||lo[1]<8||hi[0]>1192||hi[1]>672)return false;
         if(placed.some(q=>b.x<q.x+q.w&&b.x+w>q.x&&b.y<q.y+q.h&&b.y+h>q.y))return false;
-        return !visible.some(other=>{const q=graph.positions[other.id],rr=radius(other.degree)+font*.2;const x=Math.max(b.x,Math.min(q[0],b.x+w)),y=Math.max(b.y,Math.min(q[1],b.y+h));return Math.hypot(x-q[0],y-q[1])<rr;});
+        return !visible.some(other=>{const q=graph.positions[other.id],rr=radius(other.activations)+font*.2;const x=Math.max(b.x,Math.min(q[0],b.x+w)),y=Math.max(b.y,Math.min(q[1],b.y+h));return Math.hypot(x-q[0],y-q[1])<rr;});
       });
       if(!box)continue;placed.push({...box,w,h});count++;
       markup+=`<text class="incident-node-label" data-label-id="${escape(node.id)}" x="${box.x}" y="${box.y+font}" style="font-size:${font}px;stroke-width:${font*.3}px">${lines.map((line,i)=>`<tspan x="${box.x}" dy="${i?lineHeight:0}">${escape(line)}</tspan>`).join('')}</text>`;
@@ -148,7 +147,7 @@
       const samples=Array.from({length:Math.min(9,colors.length)},(_,i)=>colors[Math.round(i*(colors.length-1)/Math.max(1,Math.min(9,colors.length)-1))]);
       return `<div class="overview-domain"><h3><i style="background:${data.domain_colors[domain]}"></i>${domainNames[domain]}<span>${data.inventory.domains[domain]} cards</span></h3><p>${descriptions[domain]}</p><div class="overview-shades" aria-label="${domainNames[domain]} L3 color examples">${samples.map(color=>`<i style="background:${color}"></i>`).join('')}</div></div>`;
     }).join('');
-    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Blue identifies General AI, orange identifies Agentic AI, and green identifies Physical AI. Shades distinguish L3 families within each domain and do not encode severity, occurrence rates, or semantic distance.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more distinct neighboring risk cards in the full channel network. OECD AIM uses an expanded size range to make degree differences easier to see.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
+    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Blue identifies General AI, orange identifies Agentic AI, and green identifies Physical AI. Shades distinguish L3 families within each domain and do not encode severity, occurrence rates, or semantic distance.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more mapped incident records. Both graphs use the same count-to-area scale, with a minimum visible size for rare cards. These are recorded mappings, not population incidence rates.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
     box.scrollTop=0;
   }
   async function incidentData(channel){
@@ -181,7 +180,7 @@
   function mount(){
     byId('incident-networks').innerHTML=['AIID','AIM'].map(channel=>{
       const c=data.channels[channel];
-      return `<section class="channel-panel" id="panel-${channel}" aria-labelledby="heading-${channel}"><div class="channel-heading"><div><h2 id="heading-${channel}">${channel==='AIM'?'OECD AIMD':'AI Incident Database (AIID)'}</h2><p>${channel==='AIM'?'Primary channel · news-based reporting':'Secondary channel · editorially curated'}<br>Snapshot ${c.snapshot} · event years ${c.year_min}–${c.year_max}</p></div><span class="channel-count">${fmt(c.n)} incidents</span></div><div class="network-toolbar"><span class="display-count"></span><div><span class="zoom-level" aria-live="polite">100%</span><button data-zoom="in" type="button" aria-label="Zoom in ${channel}">+</button><button data-zoom="out" type="button" aria-label="Zoom out ${channel}">−</button><button data-zoom="fit" type="button" aria-label="Fit ${channel} network">Fit</button></div></div><div class="network-stage"><svg viewBox="0 0 1200 680" aria-labelledby="heading-${channel}" aria-describedby="description-${channel}"><desc id="description-${channel}">Risk-card co-activation network. Colored circles represent General, Agentic, and Physical risks; larger nodes have more distinct neighbors. Curved links indicate cards retrieved for the same reported incident. Nodes are keyboard accessible.</desc><g class="network-content"></g></svg><div class="incident-tip" role="tooltip" hidden></div></div><div class="network-foot"><span><strong>${fmt(c.node_count)}</strong> activated cards</span><span><strong>${fmt(c.edge_count)}</strong> distinct ties</span><span><strong>${percent(c.cross_rate)}</strong> cross-domain incidents</span></div></section>`;
+      return `<section class="channel-panel" id="panel-${channel}" aria-labelledby="heading-${channel}"><div class="channel-heading"><div><h2 id="heading-${channel}">${channel==='AIM'?'OECD AIMD':'AI Incident Database (AIID)'}</h2><p>${channel==='AIM'?'Primary channel · news-based reporting':'Secondary channel · editorially curated'}<br>Snapshot ${c.snapshot} · event years ${c.year_min}–${c.year_max}</p></div><span class="channel-count">${fmt(c.n)} incidents</span></div><div class="network-toolbar"><span class="display-count"></span><div><span class="zoom-level" aria-live="polite">100%</span><button data-zoom="in" type="button" aria-label="Zoom in ${channel}">+</button><button data-zoom="out" type="button" aria-label="Zoom out ${channel}">−</button><button data-zoom="fit" type="button" aria-label="Fit ${channel} network">Fit</button></div></div><div class="network-stage"><svg viewBox="0 0 1200 680" aria-labelledby="heading-${channel}" aria-describedby="description-${channel}"><desc id="description-${channel}">Risk-card co-activation network. Colored circles represent General, Agentic, and Physical risks; larger nodes have more mapped incident records. Curved links indicate cards retrieved for the same reported incident. Nodes are keyboard accessible.</desc><g class="network-content"></g></svg><div class="incident-tip" role="tooltip" hidden></div></div><div class="network-foot"><span><strong>${fmt(c.node_count)}</strong> activated cards</span><span><strong>${fmt(c.edge_count)}</strong> distinct ties</span><span><strong>${percent(c.cross_rate)}</strong> cross-domain incidents</span></div></section>`;
     }).join('');
     byId('incident-networks').setAttribute('aria-busy','false');
     for(const channel of ['AIM','AIID']){
@@ -200,8 +199,9 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-12');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-13');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
+      data.max_activations=Math.max(...Object.values(data.channels).flatMap(c=>c.nodes.map(n=>n.activations)));
       data.domain_colors={L1_G:'#4263eb',L1_A:'#d87518',L1_P:'#16854b'};
       for(const c of Object.values(data.channels))for(const node of c.nodes)node.color=domainColor(node);
       for(const c of Object.values(data.channels)){
