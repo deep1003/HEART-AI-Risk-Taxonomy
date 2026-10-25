@@ -22,7 +22,7 @@ A revelation ratio divides a domain's share of card assignments by its share of 
 
 ## Display
 
-The overview starts with the 25 highest-degree nodes per domain plus the control-transfer card, retains the 240 strongest induced ties, and removes displayed isolates. The full view includes all active nodes and edges. Selecting a card preserves the graph layout and viewport, and opens a left-hand incident list with the source title, exact source summary, date, and original incident URL. The list switches between AIM and AIID and loads 15 entries at a time. Zooming in reveals full risk-name labels with collision-aware placement. Filtering never recomputes the reported full-network statistics.
+The overview starts with the 25 highest-degree nodes per domain plus the control-transfer card, retains the 240 strongest induced ties, and removes displayed isolates. The full view includes all active nodes and edges. Selecting a card preserves the graph layout and viewport, and opens a persistent right-hand incident panel with the source title, exact source summary, date, and original incident URL. The list switches between AIM and AIID and loads 15 entries at a time. Zooming in reveals full risk-name labels with collision-aware placement. Filtering never recomputes the reported full-network statistics.
 
 L4 colors come directly from `data/semantic_space.json`. The same card has the same fill as in AI risk space, including semantic shades across L3 families. The domain legend uses the existing L1 anchor colors. Nodes are circles with white borders, and edges follow the existing quadratic-curve convention. A red outline identifies `A_INT_OVERSIGHT_003` without changing its fill.
 
@@ -44,3 +44,5 @@ python scripts/build_channel_incident_details.py --inputs /path/to/frozen/channe
 ```
 
 This second script joins the existing public `source_records.csv.gz` to the paper’s frozen records by channel-specific ID. It asserts 12,200 exact title/description/AI-system hash matches and checks that every card’s list length equals its activation count. The generated `incidents-AIM.json` and `incidents-AIID.json` are fetched only when that source is selected. `incident_details_validation.json` records the input/output hashes and counts. Source descriptions are shown with source attribution, and all incident links retain their original OECD AIM or AIID URLs.
+
+The right panel is reserved from the initial render. It initially displays an Overview with inventory counts, L1/L3 semantic color examples, and explanations of node size, curved links, the bridge ring, and zoom labels. Selecting a node replaces the Overview with its incidents without changing graph width. The Overview button restores the introduction.

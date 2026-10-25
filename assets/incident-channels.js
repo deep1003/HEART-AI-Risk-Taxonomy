@@ -105,13 +105,24 @@
   function hideTip(channel){byId(`panel-${channel}`).querySelector('.incident-tip').hidden=true;}
   function select(id,channel=activeChannel){
     selected=id;activeChannel=channelMaps[channel].has(id)?channel:(channel==='AIM'?'AIID':'AIM');incidentLimit=15;
-    byId('incident-workspace').classList.add('has-selection');byId('incident-selection').hidden=false;
+    byId('incident-workspace').classList.add('has-selection');byId('incident-selection').scrollTop=0;
     for(const ch of ['AIM','AIID']){hideTip(ch);renderGraph(ch);}
     renderSelection();
   }
   function clearSelection(){
-    selectionToken++;selected=null;byId('incident-selection').hidden=true;byId('incident-workspace').classList.remove('has-selection');
+    selectionToken++;selected=null;byId('incident-workspace').classList.remove('has-selection');renderOverview();
     for(const ch of ['AIM','AIID'])renderGraph(ch);
+  }
+  function renderOverview(){
+    const box=byId('incident-selection');
+    const descriptions={L1_G:'Model outputs, information, privacy, and broader social harms.',L1_A:'Planning, tool use, autonomous action, and human oversight.',L1_P:'Physical sensing, control, hardware, and embodied interaction.'};
+    const domainRows=['L1_G','L1_A','L1_P'].map(domain=>{
+      const colors=[...new Set([...allCards.values()].filter(n=>n.domain===domain).map(n=>n.color))].sort();
+      const samples=Array.from({length:Math.min(9,colors.length)},(_,i)=>colors[Math.round(i*(colors.length-1)/Math.max(1,Math.min(9,colors.length)-1))]);
+      return `<div class="overview-domain"><h3><i style="background:${data.domain_colors[domain]}"></i>${domainNames[domain]}<span>${data.inventory.domains[domain]} cards</span></h3><p>${descriptions[domain]}</p><div class="overview-shades" aria-label="${domainNames[domain]} semantic color examples">${samples.map(color=>`<i style="background:${color}"></i>`).join('')}</div></div>`;
+    }).join('');
+    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Colors use the same L1/L3 semantic shades as AI risk space. Neighboring shades reflect semantic relationships among risk families; they do not encode severity or occurrence rates.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more distinct neighboring risk cards in the full channel network.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Risk names appear automatically as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
+    box.scrollTop=0;
   }
   async function incidentData(channel){
     if(!incidentCache.has(channel))incidentCache.set(channel,fetch(`data/incidents/channels/incidents-${channel}.json?v=20261025-details-1`).then(r=>{if(!r.ok)throw new Error('Incident records unavailable');return r.json();}).catch(error=>{incidentCache.delete(channel);throw error;}));
@@ -120,7 +131,7 @@
   async function renderSelection(){
     if(!selected)return;
     const id=selected,ch=activeChannel,token=++selectionToken,card=allCards.get(id),box=byId('incident-selection'),oldScroll=box.scrollTop;
-    box.innerHTML=`<div class="selection-heading"><div><span>Selected L4 risk</span><h2>${escape(card.name)}</h2></div><button type="button" class="close-selection" aria-label="Close incident list">×</button></div><div class="selection-body"><div class="selected-meta"><code>${escape(card.id)}</code><span>${escape(domainNames[card.domain])}</span></div><p class="selected-korean" lang="ko">${escape(card.name_ko)}</p><details class="selected-definition"><summary>Risk definition</summary><p>${escape(card.definition)}</p></details><div class="incident-source-tabs" role="group" aria-label="Incident source">${['AIM','AIID'].map(channel=>{const n=channelMaps[channel].get(id)?.activations||0;return `<button type="button" data-source="${channel}" aria-pressed="${channel===ch}" ${n?'':'disabled'}>${channel==='AIM'?'OECD AIM':'AIID'} <span>${fmt(n)}</span></button>`;}).join('')}</div><div id="incident-list"><p role="status">Loading source incident summaries…</p></div></div>`;
+    box.innerHTML=`<div class="selection-heading"><div><span>Selected L4 risk</span><h2>${escape(card.name)}</h2></div><button type="button" class="close-selection" aria-label="Show overview">Overview</button></div><div class="selection-body"><div class="selected-meta"><code>${escape(card.id)}</code><span>${escape(domainNames[card.domain])}</span></div><p class="selected-korean" lang="ko">${escape(card.name_ko)}</p><details class="selected-definition"><summary>Risk definition</summary><p>${escape(card.definition)}</p></details><div class="incident-source-tabs" role="group" aria-label="Incident source">${['AIM','AIID'].map(channel=>{const n=channelMaps[channel].get(id)?.activations||0;return `<button type="button" data-source="${channel}" aria-pressed="${channel===ch}" ${n?'':'disabled'}>${channel==='AIM'?'OECD AIM':'AIID'} <span>${fmt(n)}</span></button>`;}).join('')}</div><div id="incident-list"><p role="status">Loading source incident summaries…</p></div></div>`;
     box.querySelector('.close-selection').addEventListener('click',clearSelection);
     box.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{activeChannel=button.dataset.source;incidentLimit=15;box.scrollTop=0;renderSelection();}));
     try{
@@ -161,13 +172,14 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-3');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-4');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       for(const channel of ['AIM','AIID']){
         channelMaps[channel]=new Map(data.channels[channel].nodes.map(n=>[n.id,n]));
         for(const node of data.channels[channel].nodes)if(!allCards.has(node.id))allCards.set(node.id,node);
       }
       mount();
+      renderOverview();
       window.addEventListener('resize',()=>{for(const channel of ['AIM','AIID'])renderLabels(channel);});
       byId('incident-search').addEventListener('input',()=>{renderMatches();for(const channel of ['AIM','AIID'])renderGraph(channel);});
       byId('incident-domain').addEventListener('change',()=>{renderMatches();for(const channel of ['AIM','AIID'])renderGraph(channel);});
