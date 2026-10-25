@@ -22,7 +22,7 @@ A revelation ratio divides a domain's share of card assignments by its share of 
 
 ## Display
 
-The overview starts with the 25 highest-degree nodes per domain plus the control-transfer card, retains the 240 strongest induced ties, and removes displayed isolates. The full view includes all active nodes and edges. The selected-card view shows up to 20 strongest neighbors per channel in a common circular arrangement. Filtering never recomputes the reported full-network statistics.
+The overview starts with the 25 highest-degree nodes per domain plus the control-transfer card, retains the 240 strongest induced ties, and removes displayed isolates. The full view includes all active nodes and edges. Selecting a card preserves the graph layout and viewport, and opens a left-hand incident list with the source title, exact source summary, date, and original incident URL. The list switches between AIM and AIID and loads 15 entries at a time. Zooming in reveals full risk-name labels with collision-aware placement. Filtering never recomputes the reported full-network statistics.
 
 L4 colors come directly from `data/semantic_space.json`. The same card has the same fill as in AI risk space, including semantic shades across L3 families. The domain legend uses the existing L1 anchor colors. Nodes are circles with white borders, and edges follow the existing quadratic-curve convention. A red outline identifies `A_INT_OVERSIGHT_003` without changing its fill.
 
@@ -35,4 +35,12 @@ Node area increases linearly with full-channel degree above a minimum area. Edge
 - `edges.csv` contains each card pair, its co-activation count, its per-1,000 rate, and cross-domain status.
 - `validation.json` contains input hashes, counts, checks, seed, and rendering definitions.
 
-No incident text, personal source metadata, or human-adjudication material is included in these new assets. Historical downloads elsewhere in the website are not inputs to these graphs.
+The incident-detail assets contain titles and summaries from the existing public source-record release, with original database URLs and source attribution. Their title/description/AI-system hashes match every frozen mapping input. Underlying source article full texts and human-adjudication material are not exported.
+
+## Linked incident details
+
+```bash
+python scripts/build_channel_incident_details.py --inputs /path/to/frozen/channel-inputs
+```
+
+This second script joins the existing public `source_records.csv.gz` to the paper’s frozen records by channel-specific ID. It asserts 12,200 exact title/description/AI-system hash matches and checks that every card’s list length equals its activation count. The generated `incidents-AIM.json` and `incidents-AIID.json` are fetched only when that source is selected. `incident_details_validation.json` records the input/output hashes and counts. Source descriptions are shown with source attribution, and all incident links retain their original OECD AIM or AIID URLs.

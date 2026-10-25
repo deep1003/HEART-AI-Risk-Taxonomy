@@ -1,0 +1,29 @@
+{
+  "source_records_sha256": "15ccbbeaf69d173fed464a98c34ff46ebe013ff9177e4c9b8f158a974c3d4b73",
+  "channel_records_sha256": "8218e3e14cc17fe522e01552036b5435832adf2891f5226ff249bea5a57fe901",
+  "mapping_sha256": "0a6e7e575fd29cbbcf70237972e82cdc51c23f658d0c41ece234c0adfe8c1814",
+  "exact_text_hash_matches": 12200,
+  "channels": {
+    "AIM": {
+      "records": 10449,
+      "linked_cards": 516,
+      "sha256": "5ec3dc6f670d8d67a14ee150858a9e8a70f8873309cce50e8fc360092f565a14",
+      "bytes": 5790334
+    },
+    "AIID": {
+      "records": 1751,
+      "linked_cards": 459,
+      "sha256": "d1b95096a6b43bf9daed1eef848d7a1cc2d6d6101147195821561325d7a72d71",
+      "bytes": 1010155
+    }
+  },
+  "interaction_checks": {
+    "node_click": "Same graph and viewport retained; related source summaries shown in left sidebar",
+    "source_switch": "A_INT_OVERSIGHT_003 lists AIM 644 and AIID 93 records",
+    "pagination": "15 initial entries and 30 after Show 15 more",
+    "automatic_labels": "12 full risk-name labels appear at 125% zoom",
+    "details_view_removed": true,
+    "mobile": "Left drawer fits narrow viewport, source tabs and incident links visible, no document overflow",
+    "single_record": "A_INT_CONFLICT_001 shows one AIID incident in list form"
+  }
+}
