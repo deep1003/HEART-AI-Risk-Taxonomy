@@ -101,10 +101,12 @@ def main():
         induced=sorted(((a,b,g[a][b]['count']) for a,b in g.edges if a in candidates and b in candidates),key=lambda e:(-e[2],e[0],e[1]))[:240]
         shown=set(i for a,b,_ in induced for i in (a,b))
         overview[channel]={'ids':sorted(shown),'edges':[[a,b] for a,b,_ in induced]}
+        degree_centrality=nx.degree_centrality(g)
+        betweenness_centrality=nx.betweenness_centrality(g,normalized=True,weight=None,endpoints=False)
         nodes=[]
         for i in sorted(g):
             c=cards[i];activation=counts[i]
-            node={'id':i,'name':c['L4_Name_en'],'name_ko':c['L4_Name_ko'],'definition':c['Risk_Definition_en'],'domain':c['L1_ID'],'family':c['L3_Name_en'],'color':color[i],'degree':g.degree(i),'activations':activation}
+            node={'id':i,'name':c['L4_Name_en'],'name_ko':c['L4_Name_ko'],'definition':c['Risk_Definition_en'],'domain':c['L1_ID'],'family':c['L3_Name_en'],'color':color[i],'degree':g.degree(i),'degree_centrality':degree_centrality[i],'betweenness_centrality':betweenness_centrality[i],'activations':activation}
             nodes.append(node)
             node_rows.append({'channel':channel,**{k:v for k,v in node.items() if k not in ['definition','color']}})
         links=[]

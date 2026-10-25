@@ -46,3 +46,7 @@ python scripts/build_channel_incident_details.py --inputs /path/to/frozen/channe
 This second script joins the existing public `source_records.csv.gz` to the paper’s frozen records by channel-specific ID. It asserts 12,200 exact title/description/AI-system hash matches and checks that every card’s list length equals its activation count. The generated `incidents-AIM.json` and `incidents-AIID.json` are fetched only when that source is selected. `incident_details_validation.json` records the input/output hashes and counts. Source descriptions are shown with source attribution, and all incident links retain their original OECD AIM or AIID URLs.
 
 The right panel is reserved from the initial render. It initially displays an Overview with inventory counts, L1/L3 semantic color examples, and explanations of node size, curved links, the bridge ring, and zoom labels. Selecting a node replaces the Overview with its incidents without changing graph width. The Overview button restores the introduction.
+
+## Selected-card centrality
+
+The detail panel reports normalized degree centrality and exact normalized betweenness for the active channel. Both use the full undirected, unweighted channel network rather than the displayed overview. Degree centrality is distinct neighbors divided by n minus one. Betweenness excludes endpoints and uses the undirected normalization factor 2 divided by (n minus one) times (n minus two). Values switch with the source tab. Regenerate the added fields with `python scripts/add_channel_centrality.py`.
