@@ -159,7 +159,7 @@
     if(!selected)return;
     const id=selected,ch=activeChannel,token=++selectionToken,card=allCards.get(id),box=byId('incident-selection'),oldScroll=box.scrollTop;
     const metrics=channelMaps[ch].get(id);
-    box.innerHTML=`<div class="selection-heading"><div><span>Selected L4 risk</span><h2>${escape(card.name)}</h2></div><button type="button" class="close-selection" aria-label="Show overview">Overview</button></div><div class="selection-body"><div class="selected-meta"><code>${escape(card.id)}</code><span>${escape(domainNames[card.domain])}</span></div><p class="selected-korean" lang="ko">${escape(card.name_ko)}</p><details class="selected-definition"><summary>Risk definition</summary><p>${escape(card.definition)}</p></details><div class="incident-source-tabs" role="group" aria-label="Incident source">${['AIM','AIID'].map(channel=>{const n=channelMaps[channel].get(id)?.activations||0;return `<button type="button" data-source="${channel}" aria-pressed="${channel===ch}" ${n?'':'disabled'}>${channel==='AIM'?'OECD AIM':'AIID'} <span>${fmt(n)}</span></button>`;}).join('')}</div><div class="selected-centrality" aria-label="Full-channel network centrality"><div><span>Degree centrality</span><strong>${metrics.degree_centrality.toFixed(4)}</strong><small>${fmt(metrics.degree)} distinct neighbors</small></div><div><span>Betweenness centrality</span><strong>${metrics.betweenness_centrality.toFixed(4)}</strong><small>Normalized shortest-path score</small></div></div><p class="centrality-note">Calculated on the full ${ch==='AIM'?'OECD AIMD':'AIID'} network of ${fmt(data.channels[ch].node_count)} activated cards, using unweighted links.</p><div id="incident-list"><p role="status">Loading source incident summaries…</p></div></div>`;
+    box.innerHTML=`<div class="selection-heading"><div><span>Selected L4 risk</span><h2>${escape(card.name)}</h2></div><button type="button" class="close-selection" aria-label="Show overview">Overview</button></div><div class="selection-body"><div class="selected-meta"><code>${escape(card.id)}</code><span>${escape(domainNames[card.domain])}</span></div><p class="selected-korean" lang="ko">${escape(card.name_ko)}</p><details class="selected-definition"><summary>Risk definition</summary><p>${escape(card.definition)}</p></details><div class="incident-source-tabs" role="group" aria-label="Incident source">${['AIM','AIID'].map(channel=>{const n=channelMaps[channel].get(id)?.activations||0;return `<button type="button" data-source="${channel}" aria-pressed="${channel===ch}" ${n?'':'disabled'}>${channel==='AIM'?'OECD AIM':'AIID'} <span>${fmt(n)}</span></button>`;}).join('')}</div><div class="selected-centrality" aria-label="Full-channel network centrality"><div><span>Degree centrality</span><strong>${metrics.degree_centrality.toFixed(4)} <em class="centrality-rank">#${metrics.degree_rank} / ${data.channels[ch].node_count}</em></strong><small>${fmt(metrics.degree)} distinct neighbors</small></div><div><span>Betweenness centrality</span><strong>${metrics.betweenness_centrality.toFixed(4)} <em class="centrality-rank">#${metrics.betweenness_rank} / ${data.channels[ch].node_count}</em></strong><small>Normalized shortest-path score</small></div></div><p class="centrality-note">Calculated on the full ${ch==='AIM'?'OECD AIMD':'AIID'} network of ${fmt(data.channels[ch].node_count)} activated cards, using unweighted links. Ranks are descending; ties share the same rank.</p><div id="incident-list"><p role="status">Loading source incident summaries…</p></div></div>`;
     box.querySelector('.close-selection').addEventListener('click',clearSelection);
     box.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{activeChannel=button.dataset.source;incidentLimit=15;box.scrollTop=0;renderSelection();}));
     try{
@@ -200,10 +200,17 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-11');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-12');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
       data.domain_colors={L1_G:'#4263eb',L1_A:'#d87518',L1_P:'#16854b'};
       for(const c of Object.values(data.channels))for(const node of c.nodes)node.color=domainColor(node);
+      for(const c of Object.values(data.channels)){
+        for(const node of c.nodes){
+          node.degree_rank=1+c.nodes.filter(other=>other.degree>node.degree).length;
+          const score=Number(node.betweenness_centrality.toFixed(12));
+          node.betweenness_rank=1+c.nodes.filter(other=>Number(other.betweenness_centrality.toFixed(12))>score).length;
+        }
+      }
       for(const channel of ['AIM','AIID']){
         channelMaps[channel]=new Map(data.channels[channel].nodes.map(n=>[n.id,n]));
         for(const node of data.channels[channel].nodes)if(!allCards.has(node.id))allCards.set(node.id,node);
