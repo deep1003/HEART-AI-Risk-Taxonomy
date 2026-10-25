@@ -4,11 +4,11 @@
   const escape = value => String(value ?? '').replace(/[&<>"']/g, x => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
   const fmt = value => Number(value).toLocaleString('en-US');
   const percent = value => `${(value*100).toFixed(1)}%`;
-  const domainPalettes = {L1_G:['#2546b8','#3155cc','#4263eb','#5878e4','#7390ee'],L1_A:['#a94f0c','#bf6010','#d87518','#e58c33','#eda451'],L1_P:['#006b59','#00816b','#00977e','#21aa94','#48bdab']};
+  const cardColors = new Map();
   function domainColor(node){
-    const family=node.id.replace(/_[^_]+$/,'');
-    const hash=Array.from(family).reduce((value,char)=>(value*31+char.charCodeAt(0))>>>0,0);
-    const palette=domainPalettes[node.domain];return palette[hash%palette.length];
+    const color=cardColors.get(node.id);
+    if(!color)throw new Error(`Missing AI risk space color for ${node.id}`);
+    return color;
   }
   const domainNames = {L1_G:'General AI',L1_A:'Agentic AI',L1_P:'Physical AI'};
   let data, selected = null, activeChannel = 'AIID', incidentLimit = 15, selectionToken = 0;
@@ -155,7 +155,7 @@
       const samples=Array.from({length:Math.min(9,colors.length)},(_,i)=>colors[Math.round(i*(colors.length-1)/Math.max(1,Math.min(9,colors.length)-1))]);
       return `<div class="overview-domain"><h3><i style="background:${data.domain_colors[domain]}"></i>${domainNames[domain]}<span>${data.inventory.domains[domain]} cards</span></h3><p>${descriptions[domain]}</p><div class="overview-shades" aria-label="${domainNames[domain]} L3 color examples">${samples.map(color=>`<i style="background:${color}"></i>`).join('')}</div></div>`;
     }).join('');
-    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Blue identifies General AI, orange identifies Agentic AI, and green identifies Physical AI. Shades distinguish L3 families within each domain and do not encode severity, occurrence rates, or semantic distance.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more observed incident records. Each graph uses a count-to-area scale with a minimum visible size. AIID node radii are enlarged by 25% for readability, so compare counts in the detail panel across channels. Counts refer to records associated with each card, not population incidence rates.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
+    box.innerHTML=`<div class="selection-heading"><div><span>AI risk incidents</span><h2>Overview</h2></div></div><div class="selection-body overview-body"><p class="overview-instruction">Select a node to read its L4 risk name and the related incident titles, descriptions, and source links here.</p><div class="overview-inventory"><strong>622</strong><span>L4 risk cards · 55 L3 families</span></div><h3 class="overview-section-title">Node colors</h3>${domainRows}<p class="overview-color-note">Each L4 card uses exactly the same color as in AI risk space. Domain legend anchors are blue for General AI, orange for Agentic AI, and green for Physical AI. Individual card shades follow the shared semantic color scheme and may blend near domain boundaries; they do not encode severity or occurrence rates.</p><h3 class="overview-section-title">Reading the networks</h3><ul class="overview-encodings"><li><strong>Node size</strong><span>Larger circles have more observed incident records. Each graph uses a count-to-area scale with a minimum visible size. AIID node radii are enlarged by 25% for readability, so compare counts in the detail panel across channels. Counts refer to records associated with each card, not population incidence rates.</span></li><li><strong>Curved links</strong><span>Cards retrieved for the same incident. Thicker links indicate more co-activations per 1,000 channel incidents.</span></li><li><strong class="overview-bridge-title"><i></i>Red ring</strong><span>Automated-driving control-transfer failure, the highlighted bridge between domains.</span></li><li><strong>Zoom</strong><span>Use + and − to enlarge or reduce the graph. Key risk names are visible at the default 100% view; more names appear as you zoom in.</span></li></ul><p class="overview-color-note">The two graphs keep OECD AIM and AIID separate. Their records reveal reported candidate risks rather than population incidence or causal pathways.</p></div>`;
     box.scrollTop=0;
   }
   async function incidentData(channel){
@@ -234,8 +234,13 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-19');
+      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-20');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
+      const colorResponse=await fetch('data/semantic_space.json?v=taxonomy-55-20261019');
+      if(!colorResponse.ok)throw new Error('AI risk space colors unavailable');
+      const colorSource=await colorResponse.json();
+      for(const point of colorSource.points)cardColors.set(point.id,point.color);
+      data.domain_colors=colorSource.l1_colors;
       const yearlyResponse=await fetch('data/incidents/channels/years.json?v=20261025-years-2');
       if(!yearlyResponse.ok)throw new Error('Annual network data unavailable');annualData=await yearlyResponse.json();
       for(const meta of Object.values(annualData))for(const c of Object.values(meta.years))for(const n of c.nodes)n.color=domainColor(n);
