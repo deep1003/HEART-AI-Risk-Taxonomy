@@ -1758,7 +1758,7 @@
     "review_exclude": [
       "G_SOC_GOV_024",
       "A_SYS_AUTH_009",
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       "A_SYS_AUTH_012"
     ],
     "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -1812,7 +1812,7 @@
           "reason": "Excessive granted authority does not itself show control resistance or escape."
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
         },
         {

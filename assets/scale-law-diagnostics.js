@@ -70,7 +70,7 @@
 
   async function load(){
     try{
-      const response=await fetch('data/scale_law_diagnostics.json?v=20261021');
+      const response=await fetch('data/scale_law_diagnostics.json?v=classification-20261026');
       if(!response.ok)throw new Error('Diagnostics data could not be loaded.');
       data=await response.json();
       document.getElementById('node-count').textContent=data.node_count.toLocaleString();

@@ -31,7 +31,6 @@ ID_MAP = {
     "P_SYS_CONTROL_052": "P_SYS_TASKPLAN_002",
     "P_SYS_CONTROL_016": "P_SYS_TASKPLAN_001",
     "P_SYS_CONTROL_042": "P_SYS_SAFESTATE_001",
-    "P_SYS_CONTROL_003": "A_INT_OVERSIGHT_003",
     "A_SYS_AUTH_023": "A_SYS_EXEC_002",
 }
 
@@ -77,8 +76,8 @@ def main() -> None:
     assert len({card["L3_ID"] for card in cards}) == 55
     assert Counter(card["L1_Name_en"] for card in cards) == {
         "General AI": 491,
-        "Agentic AI": 68,
-        "Physical AI": 63,
+        "Agentic AI": 67,
+        "Physical AI": 64,
     }
     source_hash = hashlib.sha256(cards_raw).hexdigest()
 

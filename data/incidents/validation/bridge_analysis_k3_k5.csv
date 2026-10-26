@@ -19,7 +19,7 @@ semantic,3,17,G_SYS_OVERCONF_004,Excessive confidence under uncertainty,L1_G,0.0
 semantic,3,18,G_SYS_MISINFO_011,Faithfulness errors,L1_G,0.014381774069480944,19,1,0.05263157894736842
 semantic,3,19,G_INT_UNETH_015,Manipulation and coercion through emotional dependence on assistants,L1_G,0.012783708680666717,23,1,0.043478260869565216
 semantic,3,20,G_INT_ALLOC_004,Denial of welfare benefits and entitlements,L1_G,0.011860553662608384,12,1,0.08333333333333333
-incident,3,1,A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,L1_A,0.07814486151276819,152,136,0.8947368421052632
+incident,3,1,P_SYS_CONTROL_003,Automated-driving control-transfer failure,L1_P,0.07814486151276819,152,136,0.8947368421052632
 incident,3,2,G_SYS_MISINFO_023,Misleading medical information and unsafe medication guidance,L1_G,0.03862090964420843,144,16,0.1111111111111111
 incident,3,3,G_INT_ILLEGAL_003,Criminal assistance by AI agents,L1_G,0.033022504640127744,162,23,0.1419753086419753
 incident,3,4,G_INT_PRIV_001,AI-enabled mass and unlawful public surveillance,L1_G,0.03162769939072587,156,17,0.10897435897435898
@@ -59,7 +59,7 @@ semantic,5,17,G_SYS_OVERCONF_004,Excessive confidence under uncertainty,L1_G,0.0
 semantic,5,18,G_SYS_MISINFO_011,Faithfulness errors,L1_G,0.012935434547333825,19,1,0.05263157894736842
 semantic,5,19,G_SYS_POLICY_001,Confidential information in training data disclosed through outputs,L1_G,0.01205650045796325,25,0,0.0
 semantic,5,20,G_INT_ALLOC_013,Increased labour burden,L1_G,0.011750661601185021,18,0,0.0
-incident,5,1,A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,L1_A,0.03610140776244225,238,211,0.8865546218487395
+incident,5,1,P_SYS_CONTROL_003,Automated-driving control-transfer failure,L1_P,0.03610140776244225,238,211,0.8865546218487395
 incident,5,2,G_SYS_MISINFO_023,Misleading medical information and unsafe medication guidance,L1_G,0.021188290919328612,245,36,0.1469387755102041
 incident,5,3,G_SYS_MISINFO_022,Misinformation harms from algorithmic systems,L1_G,0.016800302450132115,235,19,0.08085106382978724
 incident,5,4,G_INT_ILLEGAL_010,"Harassment, defamation, and extortion via multimodal deepfakes",L1_G,0.01650826374614532,241,19,0.07883817427385892

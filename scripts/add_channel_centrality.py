@@ -21,7 +21,7 @@ for channel, source in data['channels'].items():
         node['betweenness_centrality'] = between[node['id']]
         assert 0 <= degree[node['id']] <= 1 and 0 <= between[node['id']] <= 1
         metrics[channel, node['id']] = node
-    print(channel, len(graph), metrics[channel, 'A_INT_OVERSIGHT_003']['degree_centrality'], metrics[channel, 'A_INT_OVERSIGHT_003']['betweenness_centrality'])
+    print(channel, len(graph), metrics[channel, 'P_SYS_CONTROL_003']['degree_centrality'], metrics[channel, 'P_SYS_CONTROL_003']['betweenness_centrality'])
 data['centrality_definition'] = {'network': 'Full undirected unweighted channel network, including all activated cards', 'degree_centrality': 'Distinct neighbors / (activated cards - 1)', 'betweenness_centrality': 'Exact shortest-path betweenness, normalized by 2 / ((n - 1) * (n - 2)); endpoints excluded; disconnected pairs contribute zero'}
 path.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')))
 path = folder / 'nodes.csv'

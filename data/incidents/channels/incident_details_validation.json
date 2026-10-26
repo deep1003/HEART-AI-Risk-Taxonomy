@@ -19,7 +19,7 @@
   },
   "interaction_checks": {
     "node_click": "Same graph and viewport retained; related source summaries shown in left sidebar",
-    "source_switch": "A_INT_OVERSIGHT_003 lists AIM 644 and AIID 93 records",
+    "source_switch": "P_SYS_CONTROL_003 lists AIM 644 and AIID 93 records",
     "pagination": "15 initial entries and 30 after Show 15 more",
     "automatic_labels": "12 full risk-name labels appear at 125% zoom",
     "details_view_removed": true,

@@ -1,6 +1,6 @@
 {
-  "source_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
-  "definitions_sha256": "51ac1d564d5c9dcfc4089b90d0abe07da52d8b595b4398e767efca38578f6227",
+  "source_sha256": "a019eb99082a9c760cf2400c8abcf67fc8a94241c7e3cb255367d3eb2c6f550b",
+  "definitions_sha256": "ed73cc2845dee76d7535d47e4d9cb7839a619f9e76ea77fb2a7aa671949d184d",
   "model_revision": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
   "dimensions": 1024,
   "query_sha256": "8ac34c0b8a9edc9b05a4fc46fa2a9d141cb601a55b79be8522671536909ad9f5",
@@ -2376,7 +2376,7 @@
           "cosine": 0.593759
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.593045
         },
         {
@@ -4780,7 +4780,7 @@
           "cosine": 0.55906
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.558581
         },
         {
@@ -7738,7 +7738,7 @@
           "cosine": 0.55041
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.550293
         },
         {
@@ -10450,7 +10450,7 @@
           "cosine": 0.626948
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.626818
         },
         {
@@ -13632,7 +13632,7 @@
           "cosine": 0.598522
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.598422
         },
         {
@@ -14513,7 +14513,7 @@
       "review_exclude": [
         "G_SOC_GOV_024",
         "A_SYS_AUTH_009",
-        "A_INT_OVERSIGHT_003",
+        "P_SYS_CONTROL_003",
         "A_SYS_AUTH_012"
       ],
       "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -14567,7 +14567,7 @@
             "reason": "Excessive granted authority does not itself show control resistance or escape."
           },
           {
-            "id": "A_INT_OVERSIGHT_003",
+            "id": "P_SYS_CONTROL_003",
             "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
           },
           {
@@ -14606,7 +14606,7 @@
           "cosine": 0.731966
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.726932
         },
         {
@@ -18509,7 +18509,7 @@
           "cosine": 0.583351
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.583334
         },
         {
@@ -20272,7 +20272,7 @@
           "cosine": 0.570621
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.570383
         },
         {
@@ -22925,7 +22925,6 @@
         "A_INT_COORD_005",
         "A_INT_OVERSIGHT_001",
         "A_INT_OVERSIGHT_002",
-        "A_INT_OVERSIGHT_003",
         "A_SYS_AUTH_001",
         "A_SYS_AUTH_002",
         "A_SYS_AUTH_003",
@@ -22987,6 +22986,7 @@
       "quote": "Physical AI",
       "quote_location": "L1_Name_en column",
       "ids": [
+        "P_SYS_CONTROL_003",
         "P_INT_OBSTRUCT_001",
         "P_INT_SAFETY_001",
         "P_INT_SAFETY_005",
@@ -24562,7 +24562,7 @@
           "cosine": 0.539552
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.539491
         },
         {
@@ -27123,7 +27123,7 @@
           "cosine": 0.545978
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.545974
         },
         {
@@ -29328,7 +29328,7 @@
           "cosine": 0.476339
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.476239
         },
         {
@@ -32971,7 +32971,7 @@
           "cosine": 0.597795
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.597373
         },
         {
@@ -35712,7 +35712,7 @@
           "cosine": 0.529954
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.529414
         },
         {
@@ -38237,7 +38237,7 @@
           "cosine": 0.58626
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.586069
         },
         {

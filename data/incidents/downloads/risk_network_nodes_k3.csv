@@ -6,7 +6,7 @@ G_INT_WEAP_026,Weaponisation of robotic capabilities,G_INT_WEAP,L1_G,98,29,196,0
 P_INT_OBSTRUCT_001,Robot performance and accessibility failure in public-space operation,P_INT_OBSTRUCT,L1_P,56,36,112,0.003053994,0.002413794,1
 P_SYS_CONTROL_038,Physical injury from robot malfunction,P_SYS_CONTROL,L1_P,29,32,58,0.002913648,0.002214673,1
 A_INT_CASCADE_006,Multi-agent system failure and cascading error propagation,A_INT_CASCADE,L1_A,5,7,10,0.001224419,0.000122677,1
-A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,A_INT_OVERSIGHT,L1_A,576,132,1152,0.009098446,0.068375944,1
+P_SYS_CONTROL_003,Automated-driving control-transfer failure,P_SYS_CONTROL,L1_P,576,132,1152,0.009098446,0.068375944,1
 P_INT_SAFETY_006,Failure to detect or anticipate physical hazards around people,P_INT_SAFETY,L1_P,128,56,256,0.003499502,0.006139114,1
 G_INT_VIOL_008,Murder and severe physical violence,G_INT_VIOL,L1_G,323,101,646,0.004009812,0.011075091,13
 G_INT_WEAP_016,Lethal autonomous weapons engaging targets without human intervention,G_INT_WEAP,L1_G,311,80,622,0.004281168,0.011577439,13

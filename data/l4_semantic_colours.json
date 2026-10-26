@@ -1,8 +1,8 @@
 {
-  "source_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
+  "source_sha256": "a019eb99082a9c760cf2400c8abcf67fc8a94241c7e3cb255367d3eb2c6f550b",
   "model_revision": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
-  "l3_palette_sha256": "6db0a32a3e6740967bcebb4364532680e77601134b3e58a5eca4a11e74f2e9a5",
-  "method": "Solid L4 colours: existing L3 seed; nearest other L3 definition blend up to 30%; within-assigned-L3 PCA hue \u00b119.8 degrees, lightness \u00b10.14, saturation \u00b10.16. All inputs are fixed semantic embeddings, not degree, severity, probability or random IDs.",
+  "l3_palette_sha256": "c6eb297e23ac539bfb6be96ca57c08c8f6c32afa0017fbb555a41a0b19a96bf0",
+  "method": "Solid L4 colours: existing L3 seed; nearest other L3 definition blend up to 30%; within-assigned-L3 PCA hue ±19.8 degrees, lightness ±0.14, saturation ±0.16. All inputs are fixed semantic embeddings, not degree, severity, probability or random IDs.",
   "points": [
     {
       "id": "A_INT_CASCADE_001",
@@ -8111,19 +8111,19 @@
       "neighbour_l3_cosine": 0.7312748432159424
     },
     {
-      "id": "A_INT_OVERSIGHT_003",
-      "l3": "A_INT_OVERSIGHT",
-      "color": "#d87518",
+      "id": "P_SYS_CONTROL_003",
+      "l3": "P_SYS_CONTROL",
+      "color": "#00977e",
       "semantic_coordinates": [
         0.4091200530529022,
         0.2083919495344162,
         -0.26859891414642334
       ],
       "neighbour_l3": "P_INT_SAFETY",
-      "neighbour_mix_weight": 0.13067076977336334,
-      "assigned_l3_cosine": 0.736644446849823,
+      "neighbour_mix_weight": 0.1306698905506578,
+      "assigned_l3_cosine": 0.7366451621055603,
       "neighbour_l3_cosine": 0.7210946083068848,
-      "color_override": "Assigned Agentic domain anchor; reviewed correction of inherited cross-domain color."
+      "color_override": "Physical AI domain anchor following classification correction on 26 October 2026."
     },
     {
       "id": "P_SYS_CONTROL_006",

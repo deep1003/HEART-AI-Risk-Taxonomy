@@ -11,7 +11,7 @@
       "input_hashes": {
         "HEART_L4_Risk_Cards_Master.csv": "5caed9d0e88cba5e346ea9537174bd104de875325751263dc72a0d1560b1379a",
         "embodied_subset_audit.csv.gz": "65b0f3aa98573d024195819b67dc4d3bc67cc661cc4407c2bae995b76132fb69",
-        "heart_bge_m3_embeddings.npz": "e777f94c9c3a26896545e1df066adf75eb329eeea37c31b96d475d8ff083520d",
+        "heart_bge_m3_embeddings.npz": "5cf3ba2e00e7c8b510b16aa461fd432dcf55edfa3fdfe3f42602cb48f719b932",
         "mit_ai_risk_records.csv": "648896194be0d59b7bfad64f211e768aa88ecc234f9a54b61126a14cdd8bb3f6",
         "mit_bge_m3_embeddings.npz": "701c59b2294c8216eaadfd7414ccc18e89b2c3b0d10d9042ea09b251f7b7dd18",
         "mit_incident_tracker.jsonl": "31d73abc7237e5c2ddd0b8f20f7bdffc612d2ad1c63fe6ed5c8e9332a1ba9776",

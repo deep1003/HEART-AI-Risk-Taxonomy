@@ -2,7 +2,7 @@
   "schema_version": "2.0",
   "card_count": 622,
   "source_file": "heart_l4_risk_cards.json",
-  "source_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
+  "source_sha256": "a019eb99082a9c760cf2400c8abcf67fc8a94241c7e3cb255367d3eb2c6f550b",
   "method": {
     "embedding_model": "BAAI/bge-m3 (Ollama bge-m3:latest)",
     "model_revision": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
@@ -23,13 +23,14 @@
     "connected_components": 1,
     "modularity": 0.562975,
     "text_sha256": "bd39eee1aa0afb8d2c71d93e2afece1cffc3d1773f666a0c8b4d475720c1375a",
-    "embedding_sha256": "e777f94c9c3a26896545e1df066adf75eb329eeea37c31b96d475d8ff083520d",
+    "embedding_sha256": "5cf3ba2e00e7c8b510b16aa461fd432dcf55edfa3fdfe3f42602cb48f719b932",
     "limitations": "Exploratory semantic proximity only, not causal propagation or validated deployment applicability. Graph communities are not reassigned L3 categories. No EM is run.",
     "keyword_mapping": "Source-grounded semantic retrieval, not validated classification accuracy. Cosine thresholds and documented expert scope corrections are exploratory. L1 domain filters use existing human-approved taxonomy assignments. No EM or remapping.",
     "keyword_query_sha256": "8ac34c0b8a9edc9b05a4fc46fa2a9d141cb601a55b79be8522671536909ad9f5",
     "node_colour": "Solid L4 colours: existing L3 seed; nearest other L3 definition blend up to 30%; within-assigned-L3 PCA hue ±19.8 degrees, lightness ±0.14, saturation ±0.16. All inputs are fixed semantic embeddings, not degree, severity, probability or random IDs.",
     "colour_limitations": "Semantic colour proximity is approximate, not a distance-preserving map or classification confidence. Cross-domain colour does not change human-approved L1/L2/L3 assignments. No claim of 47 perceptually distinguishable classes.",
-    "taxonomy_sync": "55 human-validated L3 categories; 622 L4 cards; graph coordinates and edges preserved for unchanged risk texts, with the validated ID migration applied."
+    "taxonomy_sync": "55 human-validated L3 categories; 622 L4 cards; graph coordinates and edges preserved for unchanged risk texts, with the validated ID migration applied.",
+    "classification_correction": "26 October 2026. One card reassigned from Agentic Interaction to Physical System under P_SYS_CONTROL_003. Card text, vectors, coordinates and semantic edges are unchanged."
   },
   "points": [
     {
@@ -5823,14 +5824,14 @@
       "color": "#288a71"
     },
     {
-      "id": "A_INT_OVERSIGHT_003",
+      "id": "P_SYS_CONTROL_003",
       "x": 0.7565789,
       "y": 0.1186219,
-      "cluster": "A_INT_OVERSIGHT",
+      "cluster": "P_SYS_CONTROL",
       "degree": 8,
       "strength": 5.983485,
       "graph_community": "community-3",
-      "color": "#d87518"
+      "color": "#00977e"
     },
     {
       "id": "P_SYS_CONTROL_006",
@@ -7696,7 +7697,7 @@
     ],
     [
       "A_SYS_AUTH_019",
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       0.754165
     ],
     [
@@ -18331,7 +18332,7 @@
     ],
     [
       "G_SOC_GOV_024",
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       0.74828
     ],
     [
@@ -18781,7 +18782,7 @@
     ],
     [
       "G_SOC_GOV_035",
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       0.750087
     ],
     [
@@ -18821,7 +18822,7 @@
     ],
     [
       "G_SOC_GOV_039",
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       0.743838
     ],
     [
@@ -22826,7 +22827,7 @@
     ],
     [
       "G_SYS_PERF_014",
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       0.743713
     ],
     [
@@ -23981,7 +23982,7 @@
     ],
     [
       "P_INT_SAFETY_006",
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       0.754172
     ],
     [
@@ -24715,12 +24716,12 @@
       0.668543
     ],
     [
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       "P_SYS_CONTROL_017",
       0.748062
     ],
     [
-      "A_INT_OVERSIGHT_003",
+      "P_SYS_CONTROL_003",
       "P_SYS_TASKPLAN_002",
       0.741168
     ],
@@ -25456,12 +25457,11 @@
       "id": "A_INT_OVERSIGHT",
       "name": "Human Oversight and Control-Transfer Failure",
       "label": "Human Oversight and Control-Transfer Failure",
-      "x": 0.47337840000000003,
-      "y": -0.25163806666666666,
+      "x": 0.33177815,
+      "y": -0.43676804999999996,
       "ids": [
         "A_INT_OVERSIGHT_001",
-        "A_INT_OVERSIGHT_002",
-        "A_INT_OVERSIGHT_003"
+        "A_INT_OVERSIGHT_002"
       ]
     },
     {
@@ -27443,8 +27443,8 @@
       "id": "P_SYS_CONTROL",
       "name": "Unsafe Physical Control and Actuation",
       "label": "Unsafe Physical Control and Actuation",
-      "x": 0.86496275,
-      "y": -0.05667648214285714,
+      "x": 0.8612253758620689,
+      "y": -0.05063171034482759,
       "ids": [
         "P_SYS_CONTROL_001",
         "P_SYS_CONTROL_002",
@@ -27473,7 +27473,8 @@
         "P_SYS_CONTROL_054",
         "P_SYS_CONTROL_055",
         "P_SYS_CONTROL_056",
-        "P_SYS_CONTROL_057"
+        "P_SYS_CONTROL_057",
+        "P_SYS_CONTROL_003"
       ]
     },
     {
@@ -30593,7 +30594,7 @@
           "cosine": 0.593759
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.593045
         },
         {
@@ -32997,7 +32998,7 @@
           "cosine": 0.55906
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.558581
         },
         {
@@ -35955,7 +35956,7 @@
           "cosine": 0.55041
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.550293
         },
         {
@@ -38667,7 +38668,7 @@
           "cosine": 0.626948
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.626818
         },
         {
@@ -41849,7 +41850,7 @@
           "cosine": 0.598522
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.598422
         },
         {
@@ -42730,7 +42731,7 @@
       "review_exclude": [
         "G_SOC_GOV_024",
         "A_SYS_AUTH_009",
-        "A_INT_OVERSIGHT_003",
+        "P_SYS_CONTROL_003",
         "A_SYS_AUTH_012"
       ],
       "threshold_status": "AI-specialist-reviewed exploratory threshold, not independently calibrated accuracy",
@@ -42784,7 +42785,7 @@
             "reason": "Excessive granted authority does not itself show control resistance or escape."
           },
           {
-            "id": "A_INT_OVERSIGHT_003",
+            "id": "P_SYS_CONTROL_003",
             "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
           },
           {
@@ -42823,7 +42824,7 @@
           "cosine": 0.731966
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.726932
         },
         {
@@ -46726,7 +46727,7 @@
           "cosine": 0.583351
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.583334
         },
         {
@@ -48489,7 +48490,7 @@
           "cosine": 0.570621
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.570383
         },
         {
@@ -51142,7 +51143,6 @@
         "A_INT_COORD_005",
         "A_INT_OVERSIGHT_001",
         "A_INT_OVERSIGHT_002",
-        "A_INT_OVERSIGHT_003",
         "A_SYS_AUTH_001",
         "A_SYS_AUTH_002",
         "A_SYS_AUTH_003",
@@ -51204,6 +51204,7 @@
       "quote": "Physical AI",
       "quote_location": "L1_Name_en column",
       "ids": [
+        "P_SYS_CONTROL_003",
         "P_INT_OBSTRUCT_001",
         "P_INT_SAFETY_001",
         "P_INT_SAFETY_005",
@@ -52779,7 +52780,7 @@
           "cosine": 0.539552
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.539491
         },
         {
@@ -55340,7 +55341,7 @@
           "cosine": 0.545978
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.545974
         },
         {
@@ -57545,7 +57546,7 @@
           "cosine": 0.476339
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.476239
         },
         {
@@ -61188,7 +61189,7 @@
           "cosine": 0.597795
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.597373
         },
         {
@@ -63929,7 +63930,7 @@
           "cosine": 0.529954
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.529414
         },
         {
@@ -66454,7 +66455,7 @@
           "cosine": 0.58626
         },
         {
-          "id": "A_INT_OVERSIGHT_003",
+          "id": "P_SYS_CONTROL_003",
           "cosine": 0.586069
         },
         {
@@ -67567,7 +67568,7 @@
         "P_INT_TAMPER_002",
         "P_SYS_CONTROL_001",
         "P_SYS_CONTROL_002",
-        "A_INT_OVERSIGHT_003",
+        "P_SYS_CONTROL_003",
         "P_SYS_CONTROL_006",
         "P_SYS_TIMESYNC_001",
         "P_SYS_CONTROL_013",

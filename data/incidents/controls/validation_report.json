@@ -30,7 +30,7 @@
     {
       "check": "input hash: heart_bge_m3_embeddings.npz",
       "status": "PASS",
-      "detail": "e777f94c9c3a26896545e1df066adf75eb329eeea37c31b96d475d8ff083520d"
+      "detail": "5cf3ba2e00e7c8b510b16aa461fd432dcf55edfa3fdfe3f42602cb48f719b932"
     },
     {
       "check": "input exists: mit_ai_risk_records.csv",

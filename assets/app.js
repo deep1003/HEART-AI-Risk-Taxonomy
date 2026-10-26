@@ -112,7 +112,7 @@ function openCard(card) {
 
 async function start() {
   await window.HEARTL3.ready;
-  const response = await fetch('data/heart_l4_risk_cards.json?v=taxonomy-55-20261019');
+  const response = await fetch('data/heart_l4_risk_cards.json?v=classification-20261026');
   if (!response.ok) throw new Error(`Dataset request failed: ${response.status}`);
   state.cards = (await response.json()).map(preferEvidencePDF);
   state.cards.sort((a,b) => domainOrder[a.L1_Name_en] - domainOrder[b.L1_Name_en] || a.L3_ID.localeCompare(b.L3_ID) || a.L4_ID.localeCompare(b.L4_ID));

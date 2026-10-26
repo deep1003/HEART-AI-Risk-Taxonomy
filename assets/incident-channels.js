@@ -159,7 +159,7 @@
     box.scrollTop=0;
   }
   async function incidentData(channel){
-    if(!incidentCache.has(channel))incidentCache.set(channel,fetch(`data/incidents/channels/incidents-${channel}.json?v=20261025-details-1`).then(r=>{if(!r.ok)throw new Error('Incident records unavailable');return r.json();}).catch(error=>{incidentCache.delete(channel);throw error;}));
+    if(!incidentCache.has(channel))incidentCache.set(channel,fetch(`data/incidents/channels/incidents-${channel}.json?v=classification-20261026`).then(r=>{if(!r.ok)throw new Error('Incident records unavailable');return r.json();}).catch(error=>{incidentCache.delete(channel);throw error;}));
     return incidentCache.get(channel);
   }
   async function renderSelection(){
@@ -234,14 +234,14 @@
   }
   async function start(){
     try{
-      const response=await fetch('data/incidents/channels/networks.json?v=20261025-channels-23');
+      const response=await fetch('data/incidents/channels/networks.json?v=classification-20261026');
       if(!response.ok)throw new Error('Network data unavailable');data=await response.json();
-      const colorResponse=await fetch('data/semantic_space.json?v=oversight-agentic-20261025');
+      const colorResponse=await fetch('data/semantic_space.json?v=classification-20261026');
       if(!colorResponse.ok)throw new Error('AI risk space colors unavailable');
       const colorSource=await colorResponse.json();
       for(const point of colorSource.points)cardColors.set(point.id,point.color);
       data.domain_colors=colorSource.l1_colors;
-      const yearlyResponse=await fetch('data/incidents/channels/years.json?v=20261025-years-2');
+      const yearlyResponse=await fetch('data/incidents/channels/years.json?v=classification-20261026');
       if(!yearlyResponse.ok)throw new Error('Annual network data unavailable');annualData=await yearlyResponse.json();
       for(const meta of Object.values(annualData))for(const c of Object.values(meta.years))for(const n of c.nodes)n.color=domainColor(n);
       data.max_activations=Math.max(...Object.values(data.channels).flatMap(c=>c.nodes.map(n=>n.activations)));

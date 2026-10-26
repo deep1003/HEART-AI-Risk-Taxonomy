@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-10-26",
+    "old_id": "A_INT_OVERSIGHT_003",
+    "new_id": "P_SYS_CONTROL_003",
+    "classification": [
+      "L1_P",
+      "P_SYS",
+      "P_SYS_CONTROL"
+    ],
+    "basis": "User-authorized correction to the supplied spreadsheet classification",
+    "scope": "Website inventory, risk-space and incident-network labels, and current downloadable data. Card names, definitions and evidence remain unchanged. Incident candidate selections, vectors, graph coordinates and edges are retained."
+  }
+]

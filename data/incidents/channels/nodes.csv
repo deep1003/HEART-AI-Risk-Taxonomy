@@ -6,7 +6,7 @@ AIID,G_INT_SEX_004,Non-consensual sexualisation and intimate imagery generation,
 AIID,G_INT_ILLEGAL_011,Identity theft and document forgery,신원 도용 및 문서 위조,L1_G,Other Unlawful Activity,57,116,0.12445414847161572,0.02605511475843913
 AIID,G_SYS_MISINFO_010,Failure to distinguish synthetic content and persistent harm,합성 콘텐츠의 진위 식별 실패와 지속적 피해,L1_G,Misinformation,35,95,0.07641921397379912,0.004331624373165034
 AIID,G_INT_PRIV_029,"Unauthorised commercial use of name, image, and likeness",이름·이미지·초상의 무단 상업적 이용,L1_G,Privacy Violation,51,94,0.11135371179039301,0.011398755540882337
-AIID,A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,자율주행 제어권 인계 실패,L1_A,Human Oversight and Control-Transfer Failure,55,93,0.12008733624454147,0.06562244263955977
+AIID,P_SYS_CONTROL_003,Automated-driving control-transfer failure,자율주행 제어권 인계 실패,L1_P,Unsafe Physical Control and Actuation,55,93,0.12008733624454147,0.06562244263955977
 AIID,G_SOC_DEMOC_006,Information-environment manipulation through automated sockpuppet accounts,위장 계정 자동 운영에 의한 정보 환경 조작,L1_G,Erosion of Democracy and Civic Order,42,85,0.09170305676855894,0.01303648766356308
 AIID,G_INT_POL_007,Political misinformation and manipulation of public opinion,정치적 허위정보 및 여론조작,L1_G,Political Bias and Manipulation,30,67,0.06550218340611354,0.010081785060231217
 AIID,G_INT_PRIV_003,Biometric identification and tracking privacy harms,생체인식 식별·추적에 의한 프라이버시 침해,L1_G,Privacy Violation,47,62,0.10262008733624453,0.02061605586347107
@@ -466,7 +466,7 @@ AIM,G_SOC_DEMOC_002,Cognitive warfare and interference with sovereignty,인지�
 AIM,G_SYS_MISINFO_010,Failure to distinguish synthetic content and persistent harm,합성 콘텐츠의 진위 식별 실패와 지속적 피해,L1_G,Misinformation,58,795,0.11262135922330097,0.0032104761347698275
 AIM,G_INT_SEX_002,Explicit sexual content generation in non-permitted contexts,허용되지 않는 맥락의 노골적 성적 콘텐츠 생성,L1_G,Sexual Harm and Exploitation,86,779,0.1669902912621359,0.006141490735041555
 AIM,G_INT_ILLEGAL_003,Criminal assistance by AI agents,AI 에이전트의 범죄 조력,L1_G,Other Unlawful Activity,153,672,0.29708737864077667,0.03960539568635964
-AIM,A_INT_OVERSIGHT_003,Automated-driving control-transfer failure,자율주행 제어권 인계 실패,L1_A,Human Oversight and Control-Transfer Failure,151,644,0.29320388349514565,0.0972566913792057
+AIM,P_SYS_CONTROL_003,Automated-driving control-transfer failure,자율주행 제어권 인계 실패,L1_P,Unsafe Physical Control and Actuation,151,644,0.29320388349514565,0.0972566913792057
 AIM,G_SYS_MISINFO_022,Misinformation harms from algorithmic systems,알고리즘 시스템에 의한 허위·오도 정보 피해,L1_G,Misinformation,105,625,0.20388349514563106,0.01651840477760243
 AIM,G_INT_ILLEGAL_011,Identity theft and document forgery,신원 도용 및 문서 위조,L1_G,Other Unlawful Activity,94,547,0.1825242718446602,0.00848074180823661
 AIM,G_INT_ILLEGAL_008,Financial crimes and fraud,금융 범죄 및 사기,L1_G,Other Unlawful Activity,100,538,0.1941747572815534,0.012392903886861864

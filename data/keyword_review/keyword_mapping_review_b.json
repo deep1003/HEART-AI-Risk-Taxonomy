@@ -47,7 +47,7 @@
         "reason": "Excessive granted authority does not itself show control resistance or escape."
       },
       {
-        "id": "A_INT_OVERSIGHT_003",
+        "id": "P_SYS_CONTROL_003",
         "reason": "Time-critical driving handoff failure is a local safety malfunction; no persistent unrecoverable AI control loss."
       },
       {

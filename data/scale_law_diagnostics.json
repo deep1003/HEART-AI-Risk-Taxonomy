@@ -6,10 +6,10 @@
   "edge_count": 3807,
   "graph_rule": "Union of each card’s eight closest cosine neighbours, cosine >= 0.60; no artificial links",
   "source": {
-    "semantic_space_sha256": "d5f34131b87ae76184470d048ea185d7072fe34a6c4a338dbc323b352ab53d44",
-    "risk_cards_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420",
-    "embedding_sha256": "e777f94c9c3a26896545e1df066adf75eb329eeea37c31b96d475d8ff083520d",
-    "taxonomy_source_sha256": "16844aab833c33f399a62ef4c573484e2527ab14c69b56267e8c466db879d420"
+    "semantic_space_sha256": "a146bdfa3df04c4a5f86e55c842da92cbda79d385168b77bdf4aca9d058bbc4e",
+    "risk_cards_sha256": "a019eb99082a9c760cf2400c8abcf67fc8a94241c7e3cb255367d3eb2c6f550b",
+    "embedding_sha256": "5cf3ba2e00e7c8b510b16aa461fd432dcf55edfa3fdfe3f42602cb48f719b932",
+    "taxonomy_source_sha256": "a019eb99082a9c760cf2400c8abcf67fc8a94241c7e3cb255367d3eb2c6f550b"
   },
   "settings": {
     "seed": 20261021,
@@ -2661,16 +2661,16 @@
     "lognormal_sigma": 0.9922734332422786
   },
   "cross_domain": {
-    "edge_count": 546,
-    "edge_share": 0.1434200157604413,
-    "within_domain_edge_count": 3261,
+    "edge_count": 544,
+    "edge_share": 0.14289466771736276,
+    "within_domain_edge_count": 3263,
     "l1_pair_counts": {
-      "Agentic AI ↔ Agentic AI": 239,
-      "Agentic AI ↔ General AI": 329,
-      "Agentic AI ↔ Physical AI": 37,
+      "Agentic AI ↔ Agentic AI": 238,
+      "Agentic AI ↔ General AI": 325,
+      "Agentic AI ↔ Physical AI": 35,
       "General AI ↔ General AI": 2728,
-      "General AI ↔ Physical AI": 180,
-      "Physical AI ↔ Physical AI": 294
+      "General AI ↔ Physical AI": 184,
+      "Physical AI ↔ Physical AI": 297
     }
   },
   "rankings": [
@@ -2955,8 +2955,8 @@
         "Agentic AI": 4,
         "Physical AI": 17
       },
-      "cross_domain_edges": 11,
-      "cross_domain_share": 0.39285714285714285,
+      "cross_domain_edges": 10,
+      "cross_domain_share": 0.35714285714285715,
       "domains_reached": 3
     },
     {
@@ -3012,9 +3012,9 @@
         "Agentic AI": 1,
         "Physical AI": 20
       },
-      "cross_domain_edges": 7,
-      "cross_domain_share": 0.25925925925925924,
-      "domains_reached": 3
+      "cross_domain_edges": 6,
+      "cross_domain_share": 0.2222222222222222,
+      "domains_reached": 2
     },
     {
       "id": "G_SYS_MISINFO_006",
@@ -3924,9 +3924,9 @@
         "Agentic AI": 10,
         "Physical AI": 0
       },
-      "cross_domain_edges": 9,
-      "cross_domain_share": 0.47368421052631576,
-      "domains_reached": 2
+      "cross_domain_edges": 10,
+      "cross_domain_share": 0.5263157894736842,
+      "domains_reached": 3
     },
     {
       "id": "G_INT_ALLOC_013",
@@ -4893,8 +4893,8 @@
         "Agentic AI": 2,
         "Physical AI": 12
       },
-      "cross_domain_edges": 3,
-      "cross_domain_share": 0.2,
+      "cross_domain_edges": 2,
+      "cross_domain_share": 0.13333333333333333,
       "domains_reached": 3
     },
     {
@@ -5009,7 +5009,7 @@
       },
       "cross_domain_edges": 5,
       "cross_domain_share": 0.3333333333333333,
-      "domains_reached": 3
+      "domains_reached": 2
     },
     {
       "id": "G_SYS_INPUT_003",
@@ -8467,7 +8467,7 @@
       },
       "cross_domain_edges": 3,
       "cross_domain_share": 0.3,
-      "domains_reached": 3
+      "domains_reached": 2
     },
     {
       "id": "G_SYS_POLICY_006",
@@ -9930,7 +9930,7 @@
       },
       "cross_domain_edges": 7,
       "cross_domain_share": 0.7777777777777778,
-      "domains_reached": 3
+      "domains_reached": 2
     },
     {
       "id": "G_SYS_TRANS_018",
@@ -12175,13 +12175,13 @@
       "domains_reached": 2
     },
     {
-      "id": "A_INT_OVERSIGHT_003",
+      "id": "P_SYS_CONTROL_003",
       "name_en": "Automated-driving control-transfer failure",
       "name_ko": "자율주행 제어권 인계 실패",
-      "l1_id": "L1_A",
-      "l1_name": "Agentic AI",
-      "l3_id": "A_INT_OVERSIGHT",
-      "l3_name": "Human Oversight and Control-Transfer Failure",
+      "l1_id": "L1_P",
+      "l1_name": "Physical AI",
+      "l3_id": "P_SYS_CONTROL",
+      "l3_name": "Unsafe Physical Control and Actuation",
       "degree": 8,
       "strength": 5.983485,
       "neighbor_domains": {
@@ -12189,8 +12189,8 @@
         "Agentic AI": 1,
         "Physical AI": 3
       },
-      "cross_domain_edges": 7,
-      "cross_domain_share": 0.875,
+      "cross_domain_edges": 5,
+      "cross_domain_share": 0.625,
       "domains_reached": 3
     },
     {
@@ -14499,5 +14499,6 @@
     "The union-of-eight-neighbors rule mechanically constrains the lower degree distribution.",
     "Results depend on risk-card wording, BGE-M3 embeddings, cosine threshold, and retained taxonomy inventory.",
     "Network centrality does not measure probability, severity, impact, or regulatory priority."
-  ]
+  ],
+  "classification_correction": "2026-10-26. Domain labels and per-card cross-domain counts refreshed; degree, strength, graph topology and their fitted distributions are unchanged."
 }

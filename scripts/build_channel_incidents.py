@@ -18,7 +18,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 SEED = 20261021
-BRIDGE = 'A_INT_OVERSIGHT_003'
+BRIDGE = 'P_SYS_CONTROL_003'
 DOMAINS = {'L1_G': 'General AI', 'L1_A': 'Agentic AI', 'L1_P': 'Physical AI'}
 
 def digest(path):
@@ -67,7 +67,7 @@ def main():
     color={p['id']:p['color'] for p in semantic['points']}
     assert len(cards)==622
     assert len({c['L3_ID'] for c in inventory})==55
-    assert Counter(c['L1_ID'] for c in inventory)=={'L1_G':491,'L1_A':68,'L1_P':63}
+    assert Counter(c['L1_ID'] for c in inventory)=={'L1_G':491,'L1_A':67,'L1_P':64}
     assert records.canonical_incident_id.is_unique
     assert len(records)==12200
     assert records.channel.value_counts().to_dict()=={'AIM':10449,'AIID':1751}
@@ -138,7 +138,7 @@ def main():
         assert np.isclose(channels[ch]['cross_edge_rate'],row.cross_edge_rate)
         assert np.isclose(channels[ch]['assortativity'],row.assortativity_r)
         channels[ch]['permutation_OE']=float(row.O_over_E)
-    payload={'version':'20261025-channels-2','seed':SEED,'inventory':{'cards':622,'families':55,'domains':{'L1_G':491,'L1_A':68,'L1_P':63}},'domain_colors':semantic['l1_colors'],'bridge':BRIDGE,'max_degree':max_degree,'max_edge_rate':max(e['per_1000'] for c in channels.values() for e in c['edges']),'layouts':layouts,'channels':channels,'provenance':{'analytic_records_sha256':digest(recpath),'frozen_edges_sha256':digest(edgepath),'inventory_sha256':digest(ROOT/'data/heart_l4_risk_cards.json'),'semantic_style_sha256':digest(ROOT/'data/semantic_space.json'),'mapping':'BGE-M3 dense cosine, non-circular title + description + AI-system, top three','network':'Undirected unweighted topology, with co-activation counts retained as edge attributes'}}
+    payload={'version':'20261025-channels-2','seed':SEED,'inventory':{'cards':622,'families':55,'domains':{'L1_G':491,'L1_A':67,'L1_P':64}},'domain_colors':semantic['l1_colors'],'bridge':BRIDGE,'max_degree':max_degree,'max_edge_rate':max(e['per_1000'] for c in channels.values() for e in c['edges']),'layouts':layouts,'channels':channels,'provenance':{'analytic_records_sha256':digest(recpath),'frozen_edges_sha256':digest(edgepath),'inventory_sha256':digest(ROOT/'data/heart_l4_risk_cards.json'),'semantic_style_sha256':digest(ROOT/'data/semantic_space.json'),'mapping':'BGE-M3 dense cosine, non-circular title + description + AI-system, top three','network':'Undirected unweighted topology, with co-activation counts retained as edge attributes'}}
     out=ROOT/'data/incidents/channels';out.mkdir(parents=True,exist_ok=True)
     (out/'networks.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n')
     for name,rows in [('nodes.csv',node_rows),('edges.csv',edge_rows)]:
