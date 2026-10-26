@@ -74,6 +74,11 @@ def main():
     top=edges[edges['rank']<=3].copy()
     assert top.groupby('canonical_incident_id').size().eq(3).all()
     assert not top.duplicated(['canonical_incident_id','L4_ID']).any()
+    # Apply the current classification to frozen selections without remapping evidence.
+    top['L4_ID'] = top['L4_ID'].replace({'A_INT_OVERSIGHT_003': 'P_SYS_CONTROL_003'})
+    restored = top['L4_ID'].eq('P_SYS_CONTROL_003')
+    top.loc[restored, 'L1_ID'] = 'L1_P'
+    top.loc[restored, 'L4_Name_en'] = cards['P_SYS_CONTROL_003']['L4_Name_en']
     assert set(top.L4_ID)<=set(cards)
     for _,row in top.drop_duplicates('L4_ID').iterrows():
         assert cards[row.L4_ID]['L1_ID']==row.L1_ID
